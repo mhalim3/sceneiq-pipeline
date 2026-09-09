@@ -9,6 +9,7 @@ and writes the emit + review payloads.
 from __future__ import annotations
 
 import logging
+import math
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
@@ -18,6 +19,7 @@ from .gemini import GeminiClient, SchemaViolation
 from .models import Anchor, CardRecord
 from .pipeline.anchors import discover_anchors
 from .pipeline.assemble import assemble_card
+from .pipeline.leads import wikipedia_leads
 from .pipeline.research import research_anchor
 from .pipeline.validate import validate_card
 
@@ -77,8 +79,13 @@ def run(title_prompt: str, cfg: config.PipelineConfig | None = None, api_key: st
     client = GeminiClient(api_key=api_key)
     t0 = time.time()
 
+    leads = ""
+    if cfg.use_wikipedia_leads:
+        log.info("Stage 0/4: fetching Wikipedia discovery leads (C-tier, leads only) ...")
+        leads = wikipedia_leads(title_prompt, timeout_s=cfg.http_timeout_s)
+
     log.info("Stage 1/4: discovering scene anchors for %r ...", title_prompt)
-    film_info, anchors = discover_anchors(client, title_prompt, cfg)
+    film_info, anchors = discover_anchors(client, title_prompt, cfg, leads=leads)
     log.info("  film: %s (%s), %s anchors proposed",
              film_info["title"], film_info["year"], len(anchors))
 
@@ -94,13 +101,28 @@ def run(title_prompt: str, cfg: config.PipelineConfig | None = None, api_key: st
     emitted.sort(key=lambda r: r.card.runtime_fraction)
     emitted = emitted[: cfg.max_cards]
 
-    # Title coverage policy (PRD): >= min cards and >= 1 per runtime third.
-    thirds = {1: 0, 2: 0, 3: 0}
+    # Title sufficiency requirements (PRD, MVP, movies):
+    #   1. >= 1 approved card per 10 minutes of runtime, rounded up
+    #   2. >= 6 approved cards for a feature-length title
+    #   3. >= 1 card in each runtime quartile (titles > 40 min)
+    #   4. <= 40% of approved cards in any single quartile
+    #   5. >= 2 distinct fact categories
+    runtime_min = film_info.get("runtime_minutes") or 0
+    quartiles = {1: 0, 2: 0, 3: 0, 4: 0}
     for r in emitted:
-        thirds[r.card.runtime_third] += 1
-    enabled = len(emitted) >= cfg.min_cards_to_enable and (
-        not cfg.require_card_per_third or all(v > 0 for v in thirds.values())
-    )
+        quartiles[r.card.runtime_quartile] += 1
+    categories = {r.card.fact_category for r in emitted}
+    density_target = math.ceil(runtime_min / cfg.minutes_per_card) if runtime_min else cfg.min_cards_to_enable
+    rules = {
+        "cards_per_10_min": len(emitted) >= density_target,
+        "min_six_cards": len(emitted) >= cfg.min_cards_to_enable,
+        "card_in_each_quartile": runtime_min <= cfg.quartile_min_runtime
+        or all(v > 0 for v in quartiles.values()),
+        "max_40pct_single_quartile": bool(emitted)
+        and max(quartiles.values()) / len(emitted) <= cfg.max_quartile_share,
+        "min_two_categories": len(categories) >= cfg.min_categories,
+    }
+    enabled = all(rules.values())
 
     report = {
         "film": film_info,
@@ -108,9 +130,10 @@ def run(title_prompt: str, cfg: config.PipelineConfig | None = None, api_key: st
         "titleEnablement": {
             "sceneiq_enabled": enabled,
             "approved_cards": len(emitted),
-            "min_required": cfg.min_cards_to_enable,
-            "cards_per_runtime_third": thirds,
-            "policy": "≥{} approved cards with ≥1 per runtime third".format(cfg.min_cards_to_enable),
+            "density_target": density_target,
+            "cards_per_runtime_quartile": quartiles,
+            "distinct_categories": sorted(categories),
+            "rules": rules,
         },
         "runStats": {
             "anchors_proposed": len(anchors),

@@ -2,15 +2,21 @@
 
 Order of checks (cheap and deterministic first, LLM judge last):
   1. contract        — field counts, category enum (code)
-  2. url_provenance  — every beat URL resolves; redirects unwrapped (code+http)
+  2. url_provenance  — every beat URL resolves; redirects unwrapped; video
+                       sources get their caption transcript fetched as the
+                       searchable body (code+http)
   3. domain_tier     — A/B/C per registered domain (code)
-  4. judge           — claim entailment, evidence class per source, scene
-                       anchoring, spoiler boundary, safety, non-obviousness
+  4. judge           — claim entailment + supporting passage per beat,
+                       evidence class per source, PRD 6-dimension rubric
+                       (0/1/2), spoiler boundary as earliest-safe fraction
                        (fast model, temperature 0)
-  5. verbatim        — named entities appear in fetched source bodies
-                       (code+http; flag by default, reject in strict mode)
+  5. verbatim        — named entities appear in fetched bodies; video-sourced
+                       claims additionally need entities in a TEXT source
+                       (PRD cross-modal corroboration)
   6. emission        — 1 primary/direct source OR 2 independent reputable
                        editorial sources; C never supports (code)
+  7. disposition     — PRD card-disposition rule: rubric 2s on accuracy and
+                       grounding, >=1 elsewhere, non-gating average >=1.5
 
 Failing any hard gate rejects the card. No partial credit.
 """
@@ -19,15 +25,26 @@ from __future__ import annotations
 
 import html
 import re
+from urllib.parse import parse_qs, urlparse
 
 import httpx
 
 from .. import config
 from ..gemini import GeminiClient
-from ..models import EvidencePacket, SceneFactCard, SourceRef, ValidationResult
+from ..models import EvidencePacket, SceneFactCard, ValidationResult
 from ..tiers import classify_domain, independent, registered_domain
 
 _UA = {"User-Agent": "Mozilla/5.0 (Macintosh) SceneIQ-validator/0.1"}
+
+_RUBRIC_DIMS = [
+    "factual_accuracy",      # gating: must be 2
+    "scene_grounding",       # gating: must be 2
+    "primitive_conformance", # non-gating: >= 1
+    "viewer_value",          # non-gating: >= 1
+    "clarity",               # non-gating: >= 1
+    "spoiler_safety",        # non-gating floor >= 1; hard gate separately
+]
+_SCORE = {"type": "integer", "minimum": 0, "maximum": 2}
 
 _JUDGE_SCHEMA = {
     "type": "object",
@@ -39,9 +56,10 @@ _JUDGE_SCHEMA = {
                 "properties": {
                     "index": {"type": "integer"},
                     "entailed": {"type": "boolean"},
+                    "supporting_passage": {"type": "string"},
                     "notes": {"type": "string"},
                 },
-                "required": ["index", "entailed"],
+                "required": ["index", "entailed", "supporting_passage"],
             },
         },
         "sources": {
@@ -59,10 +77,13 @@ _JUDGE_SCHEMA = {
                 "required": ["url", "evidence_class"],
             },
         },
-        "scene_anchored": {"type": "boolean"},
-        "spoiler_safe": {"type": "boolean"},
+        "rubric": {
+            "type": "object",
+            "properties": {d: _SCORE for d in _RUBRIC_DIMS},
+            "required": list(_RUBRIC_DIMS),
+        },
+        "earliest_safe_fraction": {"type": "number"},
         "safety_pass": {"type": "boolean"},
-        "non_obvious": {"type": "boolean"},
         "category_correct": {"type": "boolean"},
         "named_entities": {"type": "array", "items": {"type": "string"}},
         "notes": {"type": "string"},
@@ -70,10 +91,9 @@ _JUDGE_SCHEMA = {
     "required": [
         "beats",
         "sources",
-        "scene_anchored",
-        "spoiler_safe",
+        "rubric",
+        "earliest_safe_fraction",
         "safety_pass",
-        "non_obvious",
         "category_correct",
         "named_entities",
     ],
@@ -81,7 +101,7 @@ _JUDGE_SCHEMA = {
 
 _JUDGE_PROMPT = """You are the validation judge for SceneIQ, Tubi's pause-screen surface. \
 Judge this candidate Scene Fact card strictly. A wrong card is worse than no card. \
-When uncertain on any check, fail that check.
+When uncertain on any check, score low / fail.
 
 FILM: {film_title} ({film_year})
 CARD ANCHOR SCENE (~{timecode}, runtime fraction {fraction}): {scene_description}
@@ -102,31 +122,96 @@ SOURCES cited by the card:
 {source_list}
 
 Evaluate:
-1. beats — for each beat (by index), is every material claim (names, places, numbers, \
+
+1. beats — for each beat (by index): is every material claim (names, places, numbers, \
 quotes, causal claims) directly supported by the evidence packet? Hedges must be \
-preserved, not stripped. Overstated = not entailed.
+preserved, not stripped. Overstated = not entailed. For each beat, copy into \
+supporting_passage the exact passage from the evidence packet that supports it \
+(empty string if none does — which means not entailed).
+
 2. sources — classify each cited source's evidence class FOR THE CLAIMS IT SUPPORTS: \
-"primary_direct" (the filmmakers/talent/studio or a domain authority directly attest, \
-e.g. commentary, on-record interview where the participant makes the claim, permit \
-records, ASC/ASCAP), "reputable_editorial" (reported coverage by an established \
-publication), or "discovery" (wiki/fan/db/listicle — leads only).
-3. scene_anchored — does the card point at something a viewer paused at THIS scene \
-can see or hear?
-4. spoiler_safe — true only if the card reveals NOTHING about plot after runtime \
-fraction {fraction}. Foreshadowing payoffs count as spoilers.
+"primary_direct" (the filmmakers/talent/studio or a domain authority directly attest: \
+commentary, an on-record interview where the participant makes the claim, permit \
+records, ASC/ASCAP — an editorial article COUNTS as primary when it directly quotes \
+the relevant participant making this claim), "reputable_editorial" (reported coverage \
+by an established publication without a direct participant statement), or "discovery" \
+(wiki/fan/db/listicle — leads only, never support).
+
+3. rubric — score each dimension 0 (fail), 1 (partial), or 2 (meets bar), per the \
+SceneIQ evaluation rubric:
+- factual_accuracy: 2 = all material claims accurate and entailed by cited sources; \
+1 = core claim true but a material detail weakly supported or overstated; 0 = any \
+unsupported, contradicted, or misleading claim.
+- scene_grounding: 2 = clearly points to a recognizable element visible/audible in \
+THIS scene and rewards pausing there; 1 = connection indirect or hard to spot; 0 = \
+not tied to the anchor scene.
+- primitive_conformance: 2 = cleanly fits the Scene Fact definition (insider detail \
+about the film's world explaining something on screen — NOT casting stories, career \
+trivia, industry gossip); 1 = fits loosely with some generic/disallowed material; \
+0 = does not satisfy the definition.
+- viewer_value: 2 = specific, surprising, likely to prompt exploration; 1 = mildly \
+interesting; 0 = generic or obvious.
+- clarity: 2 = concise, natural, tells the viewer what to notice; 1 = understandable \
+but verbose or imprecise; 0 = confusing or unfindable.
+- spoiler_safety: 2 = fully safe at the anchor timecode; 1 = borderline wording; \
+0 = reveals later plot, outcomes, or significance.
+
+4. earliest_safe_fraction — the earliest runtime fraction (0.0-1.0) at which this \
+card could be shown without spoiling anything. If safe at its anchor, use the anchor \
+fraction {fraction} or lower.
+
 5. safety_pass — G-rated wording; no disparaging, demeaning, or unsubstantiated \
-negative claims about talent, filmmakers, studios, or partners; no PII.
-6. non_obvious — would a casual viewer NOT already know this from watching?
-7. category_correct — does factCategory fit?
-8. named_entities — list every proper name, title, and specific number a fact-checker \
+negative claims about talent, filmmakers, studios, or partners; no PII; does not \
+restate or amplify mature material.
+
+6. category_correct — does factCategory fit?
+
+7. named_entities — list every proper name, title, and specific number a fact-checker \
 must find verbatim in the sources."""
 
 
-def _resolve_sources(card: SceneFactCard, cfg: config.PipelineConfig) -> None:
-    """Unwrap grounding redirect URLs, mark resolution, re-tier by final domain.
+def _youtube_video_id(url: str) -> str | None:
+    p = urlparse(url)
+    host = (p.hostname or "").removeprefix("www.")
+    if host == "youtu.be":
+        return p.path.lstrip("/") or None
+    if host.endswith("youtube.com"):
+        return (parse_qs(p.query).get("v") or [None])[0]
+    return None
 
-    Beats keep pointing at their source via URL; we remap them to final URLs.
+
+def _fetch_transcript(url: str) -> str:
+    """PRD: transcripts are the searchable layer for video sources.
+
+    Best effort via the YouTube caption API; '' when unavailable (no captions,
+    library missing, or network refusal) — the cross-modal rule then governs.
     """
+    vid = _youtube_video_id(url)
+    if not vid:
+        return ""
+    try:
+        from youtube_transcript_api import YouTubeTranscriptApi
+    except ImportError:
+        return ""
+    try:
+        api = YouTubeTranscriptApi()
+        fetched = api.fetch(vid)          # v1.x API
+        snippets = getattr(fetched, "snippets", fetched)
+        return " ".join(s.text for s in snippets).lower()
+    except AttributeError:
+        try:
+            data = YouTubeTranscriptApi.get_transcript(vid)   # v0.x API
+            return " ".join(d["text"] for d in data).lower()
+        except Exception:
+            return ""
+    except Exception:
+        return ""
+
+
+def _resolve_sources(card: SceneFactCard, cfg: config.PipelineConfig) -> None:
+    """Unwrap grounding redirect URLs, mark resolution, re-tier by final
+    domain, set modality, and fetch searchable bodies (HTML text, or caption
+    transcript for video sources)."""
     url_map: dict[str, str] = {}
     with httpx.Client(
         follow_redirects=True, timeout=cfg.http_timeout_s, headers=_UA, verify=True
@@ -140,11 +225,17 @@ def _resolve_sources(card: SceneFactCard, cfg: config.PipelineConfig) -> None:
                 src.url = final
                 src.domain = registered_domain(final)
                 src.tier = classify_domain(final)
-                if cfg.fetch_source_bodies and src.resolved and "text" in (
-                    resp.headers.get("content-type", "")
-                ):
-                    body = re.sub(r"<[^>]+>", " ", resp.text)
-                    src._body = html.unescape(re.sub(r"\s+", " ", body)).lower()  # type: ignore[attr-defined]
+                src.modality = "video" if src.domain in config.VIDEO_DOMAINS else "text"
+                if cfg.fetch_source_bodies and src.resolved:
+                    if src.modality == "video":
+                        transcript = _fetch_transcript(final)
+                        if transcript:
+                            src._body = transcript  # type: ignore[attr-defined]
+                            src.body_kind = "transcript"
+                    elif "text" in resp.headers.get("content-type", ""):
+                        body = re.sub(r"<[^>]+>", " ", resp.text)
+                        src._body = html.unescape(re.sub(r"\s+", " ", body)).lower()  # type: ignore[attr-defined]
+                        src.body_kind = "html"
             except httpx.HTTPError:
                 src.resolved = False
     for beat in card.fact_beats:
@@ -154,8 +245,7 @@ def _resolve_sources(card: SceneFactCard, cfg: config.PipelineConfig) -> None:
             beat.source_url = url_map.get(beat.source_url, beat.source_url)
 
 
-def _verbatim_check(card: SceneFactCard, entities: list[str]) -> tuple[list[str], list[str]]:
-    bodies = [getattr(s, "_body", "") for s in card.sources if getattr(s, "_body", "")]
+def _entity_hits(entities: list[str], bodies: list[str]) -> tuple[list[str], list[str]]:
     hits, misses = [], []
     for ent in entities:
         needle = ent.lower().strip()
@@ -188,12 +278,11 @@ def validate_card(
         result.rejection_reasons.append("contract: field counts/category/URLs out of spec")
         return result
 
-    # 2. URL provenance.
+    # 2. URL provenance (+ modality, bodies, transcripts).
     _resolve_sources(card, cfg)
     cited_urls = {b.source_url for b in card.fact_beats}
     cited = [s for s in card.sources if s.url in cited_urls]
     if not cited:
-        # Beat URLs the model wrote that aren't in the grounding set at all.
         checks["url_provenance"] = False
         result.rejection_reasons.append("url_provenance: cited URLs not in grounding sources")
         return result
@@ -208,7 +297,7 @@ def validate_card(
 
     # 4. LLM judge.
     beats_txt = "\n".join(f"  [{i}] {b.text} (source: {b.source_url})" for i, b in enumerate(card.fact_beats))
-    src_txt = "\n".join(f"- {s.url} [domain tier {s.tier}]" for s in cited)
+    src_txt = "\n".join(f"- {s.url} [domain tier {s.tier}, {s.modality}]" for s in cited)
     judge = client.structured(
         cfg.fast_model,
         _JUDGE_PROMPT.format(
@@ -230,34 +319,48 @@ def validate_card(
         temperature=cfg.judge_temperature,
     )
     result.judge_notes = judge.get("notes", "")
+    rubric = {d: int(judge["rubric"].get(d, 0)) for d in _RUBRIC_DIMS}
+    result.rubric = rubric
+
+    # Attach per-beat supporting passages (PRD review-record requirement).
+    for jb in judge["beats"]:
+        i = jb["index"]
+        if 0 <= i < len(card.fact_beats):
+            card.fact_beats[i].supporting_passage = jb.get("supporting_passage", "")
 
     unsupported = [b["index"] for b in judge["beats"] if not b["entailed"]]
     checks["claim_entailment"] = not unsupported
-    checks["scene_anchoring"] = judge["scene_anchored"]
-    checks["spoiler_boundary"] = judge["spoiler_safe"]
+    checks["spoiler_boundary"] = rubric["spoiler_safety"] >= 1 and (
+        judge["earliest_safe_fraction"] <= card.runtime_fraction + 0.02
+    )
     checks["safety"] = judge["safety_pass"]
-    checks["non_obvious"] = judge["non_obvious"]
     checks["taxonomy"] = judge["category_correct"]
     if unsupported:
         result.rejection_reasons.append(f"claim_entailment: beats {unsupported} not supported")
-    if not judge["scene_anchored"]:
-        result.rejection_reasons.append("scene_anchoring: not tied to visible/audible element")
-    if not judge["spoiler_safe"]:
-        result.rejection_reasons.append("spoiler_boundary: reveals later plot")
+    if not checks["spoiler_boundary"]:
+        result.rejection_reasons.append(
+            "spoiler_boundary: card only safe from fraction "
+            f"{judge['earliest_safe_fraction']:.2f}, anchored at {card.runtime_fraction:.2f}"
+        )
     if not judge["safety_pass"]:
         result.rejection_reasons.append("safety: maturity/partner-safety failure")
-    if not judge["non_obvious"]:
-        result.rejection_reasons.append("value: obvious/generic content")
     if not judge["category_correct"]:
         result.rejection_reasons.append("taxonomy: category mismatch")
+    card.spoiler_boundary_fraction = min(
+        float(judge["earliest_safe_fraction"]), card.runtime_fraction
+    ) if checks["spoiler_boundary"] else float(judge["earliest_safe_fraction"])
 
     # Attach judge evidence classes to sources.
     by_url = {s["url"]: s["evidence_class"] for s in judge.get("sources", [])}
     for s in cited:
         s.evidence_class = by_url.get(s.url, s.evidence_class)
 
-    # 5. Verbatim entity check.
-    hits, misses = _verbatim_check(card, judge.get("named_entities", []))
+    # 5. Verbatim entity check + cross-modal corroboration.
+    entities = judge.get("named_entities", [])
+    all_bodies = [getattr(s, "_body", "") for s in cited if getattr(s, "_body", "")]
+    text_bodies = [getattr(s, "_body", "") for s in cited
+                   if getattr(s, "_body", "") and s.modality == "text"]
+    hits, misses = _entity_hits(entities, all_bodies)
     for s in cited:
         s.verbatim_hits, s.verbatim_misses = hits, misses
     if misses:
@@ -269,6 +372,23 @@ def validate_card(
             result.flags.append(f"verbatim: could not confirm {misses} in fetched bodies")
     else:
         checks["verbatim"] = True
+
+    # PRD cross-modal rule: when support rests on video, every named entity
+    # must also appear in a text source.
+    video_supported = any(s.modality == "video" and s.evidence_class == "primary_direct"
+                          for s in cited)
+    text_supported = any(s.modality == "text" and s.tier != "C"
+                         and s.evidence_class in ("primary_direct", "reputable_editorial")
+                         for s in cited)
+    if cfg.require_cross_modal and video_supported and not text_supported and entities:
+        _, text_misses = _entity_hits(entities, text_bodies)
+        checks["cross_modal"] = not text_misses
+        if text_misses:
+            result.rejection_reasons.append(
+                f"cross_modal: video-sourced entities lack a text source {text_misses}"
+            )
+    else:
+        checks["cross_modal"] = True
 
     # 6. Emission rules. C-tier never supports. One primary/direct source, or
     # two independent reputable-editorial sources on A/B domains.
@@ -285,6 +405,25 @@ def validate_card(
             f"reputable editorial sources (got {len(primaries)} primary, "
             f"{len(editorial)} independent editorial)"
         )
+
+    # 7. Card disposition (PRD): rubric gates on top of the hard checks.
+    if rubric["factual_accuracy"] < 2:
+        result.rejection_reasons.append(
+            f"rubric: factual_accuracy {rubric['factual_accuracy']}/2 (must be 2)"
+        )
+    if rubric["scene_grounding"] < 2:
+        result.rejection_reasons.append(
+            f"rubric: scene_grounding {rubric['scene_grounding']}/2 (must be 2)"
+        )
+    non_gating = ["primitive_conformance", "viewer_value", "clarity", "spoiler_safety"]
+    low = [d for d in non_gating if rubric[d] < 1]
+    if low:
+        result.rejection_reasons.append(f"rubric: {low} scored 0")
+    avg = sum(rubric[d] for d in non_gating) / len(non_gating)
+    checks["rubric_disposition"] = not low and avg >= 1.5 and \
+        rubric["factual_accuracy"] == 2 and rubric["scene_grounding"] == 2
+    if avg < 1.5 and not low:
+        result.rejection_reasons.append(f"rubric: non-gating average {avg:.2f} < 1.5")
 
     result.passed = not result.rejection_reasons
     return result

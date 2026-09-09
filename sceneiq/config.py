@@ -42,10 +42,17 @@ class PipelineConfig:
     max_anchors: int = 12
     # Cap on emitted (approved) cards.
     max_cards: int = 10
-    # PRD "Initial title coverage policy": >= 6 approved cards, >= 1 per
-    # runtime third, else the title ships without the surface.
+    # PRD "Title sufficiency requirements" (MVP, movies only):
+    #   - >= 1 approved card per `minutes_per_card` of runtime, rounded up
+    #   - >= `min_cards_to_enable` approved cards for a feature-length title
+    #   - >= 1 card per runtime quartile for titles > `quartile_min_runtime` min
+    #   - <= `max_quartile_share` of cards in any single quartile
+    #   - >= `min_categories` distinct fact categories
     min_cards_to_enable: int = 6
-    require_card_per_third: bool = True
+    minutes_per_card: int = 10
+    quartile_min_runtime: int = 40
+    max_quartile_share: float = 0.40
+    min_categories: int = 2
     # Parallelism for per-anchor research/assembly/validation.
     max_workers: int = 4
     # Strict mode hard-rejects cards whose named entities can't be verbatim-
@@ -62,6 +69,12 @@ class PipelineConfig:
     # HTTP validation.
     http_timeout_s: float = 10.0
     fetch_source_bodies: bool = True
+    # PRD "Handling video and audio sources": a video may be the primary
+    # source for a claim, but any named person or number must also appear in
+    # a text source (cross-modal corroboration).
+    require_cross_modal: bool = True
+    # Wikipedia API discovery leads (C-tier: seed anchors, never support cards).
+    use_wikipedia_leads: bool = True
     extra: dict = field(default_factory=dict)
 
 
@@ -119,6 +132,15 @@ B_TIER_DOMAINS = {
     "screenrant.com",        # borderline; judge downgrades listicle content
     "polygon.com",
     "harvardlawrecord.org",
+}
+
+# Video platforms: tier stays judge-decided (an official studio or GQ channel
+# clip can carry primary evidence), but modality becomes "video", which
+# triggers transcript fetching and the cross-modal corroboration rule.
+VIDEO_DOMAINS = {
+    "youtube.com",
+    "youtu.be",
+    "vimeo.com",
 }
 
 # C tier: discovery / lead sources only. Can never support emission.

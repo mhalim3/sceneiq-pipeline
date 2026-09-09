@@ -40,7 +40,15 @@ For each anchor give: the scene (what's on screen), the specific anchor element,
 approximate timecode and runtime fraction (0.0-1.0), the closest category, and a \
 search hint describing what an insider fact about it would look like.
 
-Also state the film's approximate runtime in minutes."""
+Also state the film's approximate runtime in minutes.
+{leads_block}"""
+
+_LEADS_BLOCK = """
+DISCOVERY LEADS (Wikipedia — C-tier, lead-generation ONLY). These excerpts may \
+suggest anchors worth proposing, but nothing here counts as evidence; every claim \
+must be independently verified against qualified sources later in the pipeline:
+
+{leads}"""
 
 _ANCHOR_SCHEMA = {
     "type": "object",
@@ -83,12 +91,16 @@ NARRATIVE:
 
 
 def discover_anchors(
-    client: GeminiClient, title_prompt: str, cfg: config.PipelineConfig
+    client: GeminiClient, title_prompt: str, cfg: config.PipelineConfig, leads: str = ""
 ) -> tuple[dict, list[Anchor]]:
     """Returns (film_info, anchors)."""
     grounded = client.grounded(
         cfg.deep_model,
-        _DISCOVERY_PROMPT.format(title_prompt=title_prompt, max_anchors=cfg.max_anchors),
+        _DISCOVERY_PROMPT.format(
+            title_prompt=title_prompt,
+            max_anchors=cfg.max_anchors,
+            leads_block=_LEADS_BLOCK.format(leads=leads) if leads else "",
+        ),
         temperature=cfg.discovery_temperature,
     )
     data = client.structured(

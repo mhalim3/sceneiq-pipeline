@@ -86,32 +86,61 @@ Failing any hard gate rejects the card — no partial credit, matching the
 Stage 1 "Clearance" model in the PRD. Every rejection carries a machine-
 readable reason so failure modes can be aggregated for the source-yield study.
 
-## Where PRD requirements live in code
+## PRD alignment status
+
+Scope note: **movies only** — episodic content is out of scope for this cut.
+
+### Aligned
 
 | PRD requirement | Where |
 |---|---|
+| Common evidence-first workflow; taxonomy as labels, not generators | single anchor→research→assemble path |
 | 7-category taxonomy | `config.FACT_CATEGORIES`, enforced in schemas + judge |
-| Card contract | `models.SceneFactCard.to_contract_dict()` |
+| Card contract (+ `sourceModality`, `spoilerBoundary`) | `models.SceneFactCard.to_contract_dict()` |
 | Source tiers A/B/C | `config.*_TIER_DOMAINS`, `tiers.classify_domain` |
-| Evidence classes (primary/editorial/discovery) | judge in `pipeline/validate.py` |
-| Emission rules (1 primary or 2 independent editorial) | `validate.py` step 6 |
-| Independence requirement | `tiers.independent` (registered-domain collapse) |
-| Spoiler boundary (timecode-relative) | judge check 4, uses anchor runtime fraction |
-| No AI-invented content | entailment per beat + abstention in assembly |
-| G-rated / partner safety | judge check 5 |
-| Title coverage policy (≥6 cards, per-third) | `orchestrator.run` finalizer |
+| Evidence classes by nature of evidence, not platform | judge in `pipeline/validate.py` (editorial article with direct participant quote → primary) |
+| Emission rules (1 primary or 2 independent editorial; C never supports) | `validate.py` step 6 |
+| Discovery leads (Wikipedia API, C-tier, seed-only) | `pipeline/leads.py` |
+| Spoiler boundary (timecode-relative, earliest-safe fraction) | judge output → card `spoilerBoundary` |
+| No AI-invented content / abstention | entailment per beat + abstain in assembly |
+| G-rated maturity / partner & talent safety | judge `safety_pass` |
+| 6-dimension 0/1/2 rubric + card disposition rule (2s on accuracy & grounding, ≥1 elsewhere, avg ≥1.5) | `validate.py` step 7 |
+| Per-claim supporting passage in review record | judge `supporting_passage` → `claim_evidence` in review.json |
+| Video sources: transcript as searchable layer + cross-modal corroboration | `_fetch_transcript` + `cross_modal` check |
+| Title sufficiency (1 card/10 min, ≥6 cards, quartile coverage, ≤40%/quartile, ≥2 categories) | `orchestrator.run` finalizer, per-rule report |
+| Source-yield study metrics (per title, never blended) | `python -m sceneiq report` |
 | Deep/fast model split, schema mode, tenacity retries | `gemini.py` |
-| Review surface JSON | `<title>.review.json` |
 
-## Known gaps vs. the PRD (deliberate for this cut)
+### Not aligned — called out
 
-- **Scene anchoring is search-derived**, not VLM-verified — the anchor check is
-  an LLM judgment until Tubi Moments is integrated.
-- **Verbatim matching** is best-effort against fetched HTML; paywalls and video
-  sources flag rather than verify (PRD's own ASR caveat). Use
-  `--strict-verbatim` to hard-gate it.
-- **Video citations** (`sourceTimestamp`/`sourceModality`) not yet in the contract.
-- Cross-domain **syndication detection** relies on the judge; no dedicated
-  anti-circular tracer yet.
+- **Scene grounding is LLM-judged, not VLM-verified.** The PRD's "present in
+  the anchored scene, checked against VLM output" check needs Tubi Moments;
+  until then the judge scores `scene_grounding` from a search-derived scene
+  description. This is the biggest precision risk in the current cut.
+- **Source independence is registered-domain only.** The PRD's anti-syndication
+  rule ("not derived from the same press release/interview") has no dedicated
+  tracer; two outlets quoting one interview can still count as independent.
+- **IMDb licensed data (A-tier credits) is not integrated.** IMDb prohibits
+  scraping and has no free API; the PRD requires IMDb Essential Metadata via
+  AWS Data Exchange — a licensing decision. Wikipedia leads partially fill the
+  discovery role; TMDb's free API is the other interim option.
+- **`sourceTimestamp` is always null.** Modality is tracked and transcripts are
+  fetched, but citation in-points need transcript-to-claim alignment work.
+- **No gold-set machinery.** Dev/frozen-regression/held-out/adversarial sets,
+  regression runs, and the two-reviewer human rubric are process assets that
+  don't exist yet; the automated rubric is a stand-in, not a replacement — the
+  PRD's viewer-safe precision thresholds are measured by humans, not by this
+  pipeline grading itself.
+- **Human review is not optional yet.** Per PRD Phase A, nothing this pipeline
+  emits should reach a viewer without per-card human review until thresholds
+  are met on a frozen regression set.
 - Easter Egg pipeline not included (stretch goal; slots in as a sibling of
   `pipeline/assemble.py` behind the same validator).
+
+### Verbatim-check caveat
+
+Named-entity matching runs against fetched HTML or YouTube caption transcripts;
+paywalls and bot-blocking (403s) mean flag-don't-reject by default. Use
+`--strict-verbatim` to hard-gate. ASR noise on proper nouns (the PRD's own
+caveat) is partially mitigated by the cross-modal rule: video-sourced entities
+must also appear in a text source.

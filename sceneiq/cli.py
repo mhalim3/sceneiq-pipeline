@@ -35,12 +35,30 @@ def _slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:60] or "title"
 
 
+def _report_main(argv: list[str]) -> int:
+    from . import report as report_mod
+
+    p = argparse.ArgumentParser(
+        prog="sceneiq report",
+        description="Aggregate review.json files into source-yield study metrics.",
+    )
+    p.add_argument("-o", "--out-dir", default="data/outputs")
+    args = p.parse_args(argv)
+    json.dump(report_mod.aggregate(args.out_dir), sys.stdout, indent=2, ensure_ascii=False)
+    print()
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
+    argv = sys.argv[1:] if argv is None else argv
+    if argv and argv[0] == "report":
+        return _report_main(argv[1:])
+
     p = argparse.ArgumentParser(
         prog="sceneiq",
         description="SceneIQ Scene Fact pipeline: movie prompt in, sourced scene facts out.",
     )
-    p.add_argument("prompt", help='Movie prompt, e.g. "Legally Blonde (2001)"')
+    p.add_argument("prompt", help='Movie prompt, e.g. "Legally Blonde (2001)" — or "report" to aggregate outputs')
     p.add_argument("--max-anchors", type=int, default=12, help="candidate anchors to research")
     p.add_argument("--max-cards", type=int, default=10, help="cap on emitted cards")
     p.add_argument("--workers", type=int, default=4, help="parallel anchor workers")
@@ -95,10 +113,13 @@ def main(argv: list[str] | None = None) -> int:
         f"in {stats['elapsed_seconds']}s",
         file=sys.stderr,
     )
+    failed_rules = [k for k, v in en["rules"].items() if not v]
     print(
         f"SceneIQ enablement: {'YES' if en['sceneiq_enabled'] else 'NO'} "
-        f"(thirds: {en['cards_per_runtime_third']})\n"
-        f"wrote {cards_path} and {review_path}\n",
+        f"(quartiles: {en['cards_per_runtime_quartile']}, "
+        f"categories: {en['distinct_categories']})"
+        + (f"\n  failed rules: {', '.join(failed_rules)}" if failed_rules else "")
+        + f"\nwrote {cards_path} and {review_path}\n",
         file=sys.stderr,
     )
     json.dump(report["sceneFacts"], sys.stdout, indent=2, ensure_ascii=False)
