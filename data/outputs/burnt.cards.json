@@ -1,0 +1,129 @@
+{
+  "film": {
+    "title": "Burnt",
+    "year": 2015,
+    "runtime_minutes": 101,
+    "input_prompt": "Burnt (2015)"
+  },
+  "sceneFacts": [
+    {
+      "proactivePrompt": "Ever wonder how Bradley Cooper prepared for this intense scene?",
+      "factCategory": "actor",
+      "factHeader": "Bradley Cooper learned how to 'annihilate' a kitchen.",
+      "factBeats": [
+        {
+          "text": "To prepare for his character's violent outburst, Bradley Cooper asked chef consultant Marcus Wareing for a demonstration.",
+          "sourceUrl": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/"
+        },
+        {
+          "text": "Wareing 'absolutely annihilated the whole kitchen' to show Cooper how to portray the intense scene.",
+          "sourceUrl": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/"
+        },
+        {
+          "text": "The chef drew on his own past experiences to inspire the actor's performance.",
+          "sourceUrl": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/"
+        }
+      ],
+      "followUps": [
+        "What other chefs consulted on the film?",
+        "How else did Bradley Cooper prepare for his role?",
+        "Where was this restaurant scene filmed?"
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "During the restaurant's chaotic opening night, Adam has a violent outburst, throwing plates and screaming at his staff.",
+        "anchorElement": "A smashed dinner plate.",
+        "approxTimecode": "00:35:00",
+        "runtimeFraction": 0.35,
+        "runtimeThird": 2
+      }
+    },
+    {
+      "proactivePrompt": "Ever wonder about this Burger King?",
+      "factCategory": "filming",
+      "factHeader": "This Burger King was a real filming location.",
+      "factBeats": [
+        {
+          "text": "Director John Wells confirmed that the production filmed \"right across the street right here at the Burger King\" in Leicester Square.",
+          "sourceUrl": "https://www.youtube.com/watch?v=D5heZPveK_8"
+        },
+        {
+          "text": "Actor Bradley Cooper reportedly spent a Sunday evening at this Burger King, learning to cook fries and flip burgers as part of his preparation for the film.",
+          "sourceUrl": "https://www.mirror.co.uk/3am/celebrity-news/what-whooper-bradley-cooper-stuns-3928690"
+        },
+        {
+          "text": "Customers at the Burger King were reportedly served by Bradley Cooper during his preparation for the role.",
+          "sourceUrl": "https://www.mirror.co.uk/3am/celebrity-news/what-whooper-bradley-cooper-stuns-3928690"
+        },
+        {
+          "text": "Background extras were cast to sit inside the Burger King, pretending to be customers during filming.",
+          "sourceUrl": "https://universalextras.co.uk/extras/our-productions/burnt/"
+        }
+      ],
+      "followUps": [
+        "What other London locations were used?",
+        "How else did Bradley Cooper prepare for his role?",
+        "Was this Burger King open to the public during filming?"
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "Adam is confronted by his former drug dealer's thugs outside a Burger King in Leicester Square.",
+        "anchorElement": "The Burger King restaurant in the background.",
+        "approxTimecode": "00:55:00",
+        "runtimeFraction": 0.55,
+        "runtimeThird": 2
+      }
+    },
+    {
+      "proactivePrompt": "Ever wonder about the real meaning behind this shared meal?",
+      "factCategory": "filming",
+      "factHeader": "The \"family meal\" scene was designed as a pivotal moment for Adam's acceptance.",
+      "factBeats": [
+        {
+          "text": "Culinary advisor Mario Batali stated that Adam sharing a family meal with his staff was intended to be the most \"crystallized moment\" of him finally joining the team.",
+          "sourceUrl": "https://www.blackfilm.com/read/burnt-press-conference-interview-with-bradley-cooper-and-sienna-miller/"
+        },
+        {
+          "text": "Batali explained that the scene aimed to convey the satisfaction of the whole team realizing Adam was truly part of their family.",
+          "sourceUrl": "https://www.blackfilm.com/read/burnt-press-conference-interview-with-bradley-cooper-and-sienna-miller/"
+        },
+        {
+          "text": "Actor Bradley Cooper noted he hadn't experienced this tradition in his own restaurant work, underscoring the insider knowledge from the film's culinary consultants.",
+          "sourceUrl": "https://www.blackfilm.com/read/burnt-press-conference-interview-with-bradley-cooper-and-sienna-miller/"
+        }
+      ],
+      "followUps": [
+        "What other culinary traditions are shown in the film?",
+        "How else does the film use food to tell its story?",
+        "What's the significance of a \"family meal\" in real restaurant kitchens?"
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "In the film's final moments, the entire kitchen staff sits down together to share a simple meal, signifying their newfound unity and Adam's redemption.",
+        "anchorElement": "The communal \"family meal\" shared by the chefs.",
+        "approxTimecode": "01:40:00",
+        "runtimeFraction": 0.99,
+        "runtimeThird": 3
+      }
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 3,
+    "min_required": 6,
+    "cards_per_runtime_third": {
+      "1": 0,
+      "2": 2,
+      "3": 1
+    },
+    "policy": "≥6 approved cards with ≥1 per runtime third"
+  },
+  "runStats": {
+    "anchors_proposed": 17,
+    "cards_emitted": 3,
+    "cards_rejected": 14,
+    "errors": 0,
+    "elapsed_seconds": 187.4,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

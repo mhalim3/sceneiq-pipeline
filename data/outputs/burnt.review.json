@@ -1,0 +1,562 @@
+{
+  "film": {
+    "title": "Burnt",
+    "year": 2015,
+    "runtime_minutes": 101,
+    "input_prompt": "Burnt (2015)"
+  },
+  "candidates": [
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "Adam gathers his hand-picked team of chefs in the newly renovated kitchen of The Langham for the first time.",
+        "anchor_element": "The pristine, state-of-the-art kitchen set.",
+        "runtime_fraction": 0.28,
+        "approx_timecode": "00:28:00",
+        "category_guess": "set_design",
+        "search_hint": "Designing the kitchen set for Bradley Cooper's 'Burnt'.",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "proactivePrompt": "Ever wonder about the uniforms in a professional kitchen?",
+        "factCategory": "costume/prop",
+        "factHeader": "The professional chef's uniforms in Burnt were meticulously chosen.",
+        "factBeats": [
+          {
+            "text": "The specialized uniform company Bragard supplied the professional chef's uniforms seen in the film Burnt.",
+            "sourceUrl": "https://fashionista.com/2015/10/lyn-paolo-costumes-burnt"
+          },
+          {
+            "text": "Costume designer Lyn Paolo selected different uniform silhouettes from Bragard's collections to help differentiate the characters.",
+            "sourceUrl": "https://fashionista.com/2015/10/lyn-paolo-costumes-burnt"
+          },
+          {
+            "text": "To create individuality for the chefs, who were mostly in the same white uniforms, the costume designer used accessories and collaborated with the hair and makeup departments.",
+            "sourceUrl": "https://fashionista.com/2015/10/lyn-paolo-costumes-burnt"
+          }
+        ],
+        "followUps": [
+          "What other costume details are in this scene?",
+          "Tell me more about the costume designer, Lyn Paolo.",
+          "Are Bragard uniforms used in other films?"
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Adam visits the restaurant where Helene is the sous chef and is visibly impressed by her skills and command of the kitchen.",
+          "anchorElement": "Helene's professional chef's uniform.",
+          "approxTimecode": "00:12:00",
+          "runtimeFraction": 0.12,
+          "runtimeThird": 1
+        }
+      },
+      "anchor": {
+        "scene_description": "Adam visits the restaurant where Helene is the sous chef and is visibly impressed by her skills and command of the kitchen.",
+        "anchor_element": "Helene's professional chef's uniform.",
+        "runtime_fraction": 0.12,
+        "approx_timecode": "00:12:00",
+        "category_guess": "costume/prop",
+        "search_hint": "Costume design for chefs in the movie 'Burnt'.",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://fashionista.com/2015/10/lyn-paolo-costumes-burnt",
+          "title": "fashionista.com",
+          "domain": "fashionista.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "resolved": false,
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "url_provenance": false
+        },
+        "rejection_reasons": [
+          "url_provenance: unresolved ['https://fashionista.com/2015/10/lyn-paolo-costumes-burnt']"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "Adam Jones, now in a clean suit, walks purposefully into The Langham hotel in London, ready to restart his career.",
+        "anchor_element": "The exterior of The Langham hotel.",
+        "runtime_fraction": 0.05,
+        "approx_timecode": "00:05:00",
+        "category_guess": "location",
+        "search_hint": "Filming 'Burnt' at The Langham London hotel.",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "Adam has a tense but revealing therapy session with Dr. Rosshilde, who monitors his sobriety.",
+        "anchor_element": "Dr. Rosshilde's elegantly appointed office.",
+        "runtime_fraction": 0.48,
+        "approx_timecode": "00:48:00",
+        "category_guess": "actor",
+        "search_hint": "Emma Thompson's role as a therapist in 'Burnt'.",
+        "runtime_third": 2
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "proactivePrompt": "Ever wonder how Bradley Cooper prepared for this intense scene?",
+        "factCategory": "actor",
+        "factHeader": "Bradley Cooper learned how to 'annihilate' a kitchen.",
+        "factBeats": [
+          {
+            "text": "To prepare for his character's violent outburst, Bradley Cooper asked chef consultant Marcus Wareing for a demonstration.",
+            "sourceUrl": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/"
+          },
+          {
+            "text": "Wareing 'absolutely annihilated the whole kitchen' to show Cooper how to portray the intense scene.",
+            "sourceUrl": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/"
+          },
+          {
+            "text": "The chef drew on his own past experiences to inspire the actor's performance.",
+            "sourceUrl": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/"
+          }
+        ],
+        "followUps": [
+          "What other chefs consulted on the film?",
+          "How else did Bradley Cooper prepare for his role?",
+          "Where was this restaurant scene filmed?"
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "During the restaurant's chaotic opening night, Adam has a violent outburst, throwing plates and screaming at his staff.",
+          "anchorElement": "A smashed dinner plate.",
+          "approxTimecode": "00:35:00",
+          "runtimeFraction": 0.35,
+          "runtimeThird": 2
+        }
+      },
+      "anchor": {
+        "scene_description": "During the restaurant's chaotic opening night, Adam has a violent outburst, throwing plates and screaming at his staff.",
+        "anchor_element": "A smashed dinner plate.",
+        "runtime_fraction": 0.35,
+        "approx_timecode": "00:35:00",
+        "category_guess": "filming",
+        "search_hint": "Choreographing the kitchen meltdown scene in 'Burnt' (2015).",
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/",
+          "title": "luxuryrestaurantguide.com",
+          "domain": "luxuryrestaurantguide.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "resolved": true,
+          "verbatim_hits": [
+            "Bradley Cooper",
+            "Marcus Wareing",
+            "Burnt"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "url_provenance": true,
+          "domain_tier": true,
+          "claim_entailment": true,
+          "scene_anchoring": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "non_obvious": true,
+          "taxonomy": true,
+          "verbatim": true,
+          "emission_policy": true
+        },
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "In a gritty New Orleans oyster bar, a determined Adam Jones shucks his one-millionth oyster, marking the end of his self-imposed penance.",
+        "anchor_element": "A single oyster on the half shell.",
+        "runtime_fraction": 0.02,
+        "approx_timecode": "00:02:30",
+        "category_guess": "costume/prop",
+        "search_hint": "What is the significance of shucking one million oysters for a chef?",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "In the early morning hours at a bustling fish market, Adam and Helene have a candid conversation, and a mutual respect begins to form.",
+        "anchor_element": "The array of fresh fish and seafood on display.",
+        "runtime_fraction": 0.42,
+        "approx_timecode": "00:42:00",
+        "category_guess": "location",
+        "search_hint": "Filming 'Burnt' at Billingsgate Fish Market.",
+        "runtime_third": 2
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "In a moment of unexpected kindness, Adam presents a beautifully decorated birthday cake to Helene's daughter, Lily.",
+        "anchor_element": "The elaborate birthday cake.",
+        "runtime_fraction": 0.61,
+        "approx_timecode": "01:02:00",
+        "category_guess": "costume/prop",
+        "search_hint": "Food stylist for 'Burnt' movie birthday cake.",
+        "runtime_third": 2
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "Adam is visited by a prominent food critic, Simone, with whom he shares a complicated past.",
+        "anchor_element": "Simone's (Uma Thurman) stylish and distinctive outfit.",
+        "runtime_fraction": 0.67,
+        "approx_timecode": "01:08:00",
+        "category_guess": "actor",
+        "search_hint": "Uma Thurman's cameo role in 'Burnt' (2015).",
+        "runtime_third": 3
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "During a crucial service with suspected Michelin inspectors, Michel sabotages a sauce with cayenne pepper as revenge on Adam.",
+        "anchor_element": "A pot of sauce being secretly spiced.",
+        "runtime_fraction": 0.79,
+        "approx_timecode": "01:20:00",
+        "category_guess": "filming",
+        "search_hint": "Thematic significance of food sabotage in chef movies.",
+        "runtime_third": 3
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "After his latest failure, a broken Adam finds unexpected solace and support from his rival, Reece.",
+        "anchor_element": "Reece's kitchen in the early morning light.",
+        "runtime_fraction": 0.84,
+        "approx_timecode": "01:25:00",
+        "category_guess": "actor",
+        "search_hint": "The dynamic between Bradley Cooper's and Matthew Rhys's characters in 'Burnt'.",
+        "runtime_third": 3
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "proactivePrompt": "Ever wonder about this Burger King?",
+        "factCategory": "filming",
+        "factHeader": "This Burger King was a real filming location.",
+        "factBeats": [
+          {
+            "text": "Director John Wells confirmed that the production filmed \"right across the street right here at the Burger King\" in Leicester Square.",
+            "sourceUrl": "https://www.youtube.com/watch?v=D5heZPveK_8"
+          },
+          {
+            "text": "Actor Bradley Cooper reportedly spent a Sunday evening at this Burger King, learning to cook fries and flip burgers as part of his preparation for the film.",
+            "sourceUrl": "https://www.mirror.co.uk/3am/celebrity-news/what-whooper-bradley-cooper-stuns-3928690"
+          },
+          {
+            "text": "Customers at the Burger King were reportedly served by Bradley Cooper during his preparation for the role.",
+            "sourceUrl": "https://www.mirror.co.uk/3am/celebrity-news/what-whooper-bradley-cooper-stuns-3928690"
+          },
+          {
+            "text": "Background extras were cast to sit inside the Burger King, pretending to be customers during filming.",
+            "sourceUrl": "https://universalextras.co.uk/extras/our-productions/burnt/"
+          }
+        ],
+        "followUps": [
+          "What other London locations were used?",
+          "How else did Bradley Cooper prepare for his role?",
+          "Was this Burger King open to the public during filming?"
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Adam is confronted by his former drug dealer's thugs outside a Burger King in Leicester Square.",
+          "anchorElement": "The Burger King restaurant in the background.",
+          "approxTimecode": "00:55:00",
+          "runtimeFraction": 0.55,
+          "runtimeThird": 2
+        }
+      },
+      "anchor": {
+        "scene_description": "Adam is confronted by his former drug dealer's thugs outside a Burger King in Leicester Square.",
+        "anchor_element": "The Burger King restaurant in the background.",
+        "runtime_fraction": 0.55,
+        "approx_timecode": "00:55:00",
+        "category_guess": "location",
+        "search_hint": "'Burnt' filming locations Leicester Square.",
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=D5heZPveK_8",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "resolved": true,
+          "verbatim_hits": [
+            "John Wells",
+            "Burger King",
+            "Leicester Square",
+            "Bradley Cooper",
+            "Sunday evening",
+            "fries",
+            "burgers"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://universalextras.co.uk/extras/our-productions/burnt/",
+          "title": "universalextras.co.uk",
+          "domain": "universalextras.co.uk",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "resolved": true,
+          "verbatim_hits": [
+            "John Wells",
+            "Burger King",
+            "Leicester Square",
+            "Bradley Cooper",
+            "Sunday evening",
+            "fries",
+            "burgers"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.mirror.co.uk/3am/celebrity-news/what-whooper-bradley-cooper-stuns-3928690",
+          "title": "mirror.co.uk",
+          "domain": "mirror.co.uk",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "resolved": true,
+          "verbatim_hits": [
+            "John Wells",
+            "Burger King",
+            "Leicester Square",
+            "Bradley Cooper",
+            "Sunday evening",
+            "fries",
+            "burgers"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.hellomagazine.com/film/2014072920176/bradley-cooper-london-burger-king-new-film-role/",
+          "title": "hellomagazine.com",
+          "domain": "hellomagazine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "resolved": true,
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "url_provenance": true,
+          "domain_tier": true,
+          "claim_entailment": true,
+          "scene_anchoring": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "non_obvious": true,
+          "taxonomy": true,
+          "verbatim": true,
+          "emission_policy": true
+        },
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "Adam's ex-girlfriend, Anne Marie, gives him his old set of chef's knives, a symbolic gesture of forgiveness and encouragement.",
+        "anchor_element": "The custom set of chef's knives.",
+        "runtime_fraction": 0.89,
+        "approx_timecode": "01:30:00",
+        "category_guess": "costume/prop",
+        "search_hint": "Significance of a chef's personal knives.",
+        "runtime_third": 3
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "The kitchen staff works together in perfect harmony, a stark contrast to their earlier dysfunction, as they prepare the final, crucial meal.",
+        "anchor_element": "The synchronized plating of a signature dish.",
+        "runtime_fraction": 0.97,
+        "approx_timecode": "01:38:00",
+        "category_guess": "filming",
+        "search_hint": "Chef consultants who trained the actors for 'Burnt'.",
+        "runtime_third": 3
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "proactivePrompt": "Ever wonder about the real meaning behind this shared meal?",
+        "factCategory": "filming",
+        "factHeader": "The \"family meal\" scene was designed as a pivotal moment for Adam's acceptance.",
+        "factBeats": [
+          {
+            "text": "Culinary advisor Mario Batali stated that Adam sharing a family meal with his staff was intended to be the most \"crystallized moment\" of him finally joining the team.",
+            "sourceUrl": "https://www.blackfilm.com/read/burnt-press-conference-interview-with-bradley-cooper-and-sienna-miller/"
+          },
+          {
+            "text": "Batali explained that the scene aimed to convey the satisfaction of the whole team realizing Adam was truly part of their family.",
+            "sourceUrl": "https://www.blackfilm.com/read/burnt-press-conference-interview-with-bradley-cooper-and-sienna-miller/"
+          },
+          {
+            "text": "Actor Bradley Cooper noted he hadn't experienced this tradition in his own restaurant work, underscoring the insider knowledge from the film's culinary consultants.",
+            "sourceUrl": "https://www.blackfilm.com/read/burnt-press-conference-interview-with-bradley-cooper-and-sienna-miller/"
+          }
+        ],
+        "followUps": [
+          "What other culinary traditions are shown in the film?",
+          "How else does the film use food to tell its story?",
+          "What's the significance of a \"family meal\" in real restaurant kitchens?"
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "In the film's final moments, the entire kitchen staff sits down together to share a simple meal, signifying their newfound unity and Adam's redemption.",
+          "anchorElement": "The communal \"family meal\" shared by the chefs.",
+          "approxTimecode": "01:40:00",
+          "runtimeFraction": 0.99,
+          "runtimeThird": 3
+        }
+      },
+      "anchor": {
+        "scene_description": "In the film's final moments, the entire kitchen staff sits down together to share a simple meal, signifying their newfound unity and Adam's redemption.",
+        "anchor_element": "The communal \"family meal\" shared by the chefs.",
+        "runtime_fraction": 0.99,
+        "approx_timecode": "01:40:00",
+        "category_guess": "historical",
+        "search_hint": "The tradition of 'family meals' in high-end restaurants.",
+        "runtime_third": 3
+      },
+      "sources": [
+        {
+          "url": "https://www.blackfilm.com/read/burnt-press-conference-interview-with-bradley-cooper-and-sienna-miller/",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "resolved": true,
+          "verbatim_hits": [
+            "Mario Batali",
+            "Adam",
+            "Bradley Cooper",
+            "Burnt",
+            "blackfilm.com"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "url_provenance": true,
+          "domain_tier": true,
+          "claim_entailment": true,
+          "scene_anchoring": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "non_obvious": true,
+          "taxonomy": true,
+          "verbatim": true,
+          "emission_policy": true
+        },
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "Adam dines at the futuristic, molecular-gastronomy-focused restaurant of his rival, Reece, observing the elaborate and technical dishes.",
+        "anchor_element": "The sous-vide machine in Reece's kitchen.",
+        "runtime_fraction": 0.2,
+        "approx_timecode": "00:20:00",
+        "category_guess": "set_design",
+        "search_hint": "Influence of molecular gastronomy on 'Burnt' movie set design.",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "The kitchen is on high alert as two unassuming diners, believed to be the Michelin inspectors, take their seats in the restaurant.",
+        "anchor_element": "The small, discreet notebooks used by the \"inspectors.\"",
+        "runtime_fraction": 0.94,
+        "approx_timecode": "01:35:00",
+        "category_guess": "historical",
+        "search_hint": "How do real Michelin inspectors operate?",
+        "runtime_third": 3
+      },
+      "sources": [],
+      "validation": null
+    }
+  ]
+}
