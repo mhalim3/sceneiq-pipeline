@@ -399,6 +399,19 @@ def validate_card(
     for s in cited:
         s.evidence_class = by_url.get(s.url, s.evidence_class)
 
+    # Guardrail: a video source with no fetchable transcript is unverifiable —
+    # the judge's "primary" classification rests entirely on search-time
+    # descriptions of the video. It cannot carry primary (or editorial)
+    # weight; downgrade to discovery (lead only) in BOTH modes.
+    for s in cited:
+        if s.modality == "video" and s.body_kind != "transcript" \
+                and s.evidence_class in ("primary_direct", "reputable_editorial"):
+            result.flags.append(
+                f"video_downgrade: {s.url} has no transcript; "
+                f"{s.evidence_class} claim is unverifiable -> discovery"
+            )
+            s.evidence_class = "discovery"
+
     # 5. Verbatim entity check + cross-modal corroboration.
     entities = judge.get("named_entities", [])
     all_bodies = [getattr(s, "_body", "") for s in cited if getattr(s, "_body", "")]

@@ -126,6 +126,12 @@ Scope note: **movies only** — episodic content is out of scope for this cut.
   discovery role; TMDb's free API is the other interim option.
 - **`sourceTimestamp` is always null.** Modality is tracked and transcripts are
   fetched, but citation in-points need transcript-to-claim alignment work.
+- **Video content is verified via caption transcripts, not by watching.**
+  A video source with no fetchable transcript is downgraded to discovery
+  (lead-only) regardless of the judge's classification — its content is
+  unverifiable. True video verification (Gemini video-understanding on the
+  YouTube URL, returning a timestamp) is a Phase 4 optimization, gated to
+  already-passing cards to bound cost.
 - **No gold-set machinery.** Dev/frozen-regression/held-out/adversarial sets,
   regression runs, and the two-reviewer human rubric are process assets that
   don't exist yet; the automated rubric is a stand-in, not a replacement — the
