@@ -84,17 +84,33 @@ def run(title_prompt: str, cfg: config.PipelineConfig | None = None, api_key: st
         log.info("Stage 0/4: fetching Wikipedia discovery leads (C-tier, leads only) ...")
         leads = wikipedia_leads(title_prompt, timeout_s=cfg.http_timeout_s)
 
-    log.info("Stage 1/4: discovering scene anchors for %r ...", title_prompt)
-    film_info, anchors = discover_anchors(client, title_prompt, cfg, leads=leads)
-    log.info("  film: %s (%s), %s anchors proposed",
-             film_info["title"], film_info["year"], len(anchors))
-
-    log.info("Stage 2-4: research -> assembly -> validation (%d workers) ...", cfg.max_workers)
     records: list[CardRecord] = []
-    with ThreadPoolExecutor(max_workers=cfg.max_workers) as pool:
-        futures = [pool.submit(_process_anchor, client, film_info, a, cfg) for a in anchors]
-        for f in as_completed(futures):
-            records.append(f.result())
+    explored: list[str] = []
+    film_info: dict = {}
+    anchors_proposed = 0
+    for p in range(max(1, cfg.passes)):
+        pass_label = f"pass {p + 1}/{cfg.passes}" if cfg.passes > 1 else ""
+        log.info("Stage 1/4: discovering scene anchors for %r %s...", title_prompt, pass_label)
+        fi, anchors = discover_anchors(client, title_prompt, cfg, leads=leads, explored=explored)
+        film_info = film_info or fi
+        # Drop near-duplicates of anchors already explored in earlier passes.
+        anchors = [
+            a for a in anchors
+            if not any(
+                SequenceMatcher(None, a.anchor_element.lower(), e.lower()).ratio() > 0.8
+                for e in explored
+            )
+        ]
+        explored.extend(a.anchor_element for a in anchors)
+        anchors_proposed += len(anchors)
+        log.info("  film: %s (%s), %s new anchors",
+                 film_info["title"], film_info["year"], len(anchors))
+
+        log.info("Stage 2-4: research -> assembly -> validation (%d workers) ...", cfg.max_workers)
+        with ThreadPoolExecutor(max_workers=cfg.max_workers) as pool:
+            futures = [pool.submit(_process_anchor, client, film_info, a, cfg) for a in anchors]
+            for f in as_completed(futures):
+                records.append(f.result())
 
     emitted = [r for r in records if r.status == "emitted"]
     emitted = _dedup(emitted)
@@ -124,9 +140,17 @@ def run(title_prompt: str, cfg: config.PipelineConfig | None = None, api_key: st
     }
     enabled = all(rules.values())
 
+    scene_facts = []
+    for r in emitted:
+        d = r.card.to_contract_dict()
+        d["wouldPassStrict"] = bool(
+            r.validation and r.validation.checks.get("would_pass_strict")
+        )
+        scene_facts.append(d)
+
     report = {
         "film": film_info,
-        "sceneFacts": [r.card.to_contract_dict() for r in emitted],
+        "sceneFacts": scene_facts,
         "titleEnablement": {
             "sceneiq_enabled": enabled,
             "approved_cards": len(emitted),
@@ -136,8 +160,14 @@ def run(title_prompt: str, cfg: config.PipelineConfig | None = None, api_key: st
             "rules": rules,
         },
         "runStats": {
-            "anchors_proposed": len(anchors),
+            "evidence_mode": cfg.evidence_mode,
+            "passes": cfg.passes,
+            "anchors_proposed": anchors_proposed,
             "cards_emitted": len(emitted),
+            "would_pass_strict": sum(
+                1 for r in emitted
+                if r.validation and r.validation.checks.get("would_pass_strict")
+            ),
             "cards_rejected": sum(1 for r in records if r.status == "rejected"),
             "errors": sum(1 for r in records if r.status == "error"),
             "elapsed_seconds": round(time.time() - t0, 1),

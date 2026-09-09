@@ -19,6 +19,19 @@ Order of checks (cheap and deterministic first, LLM judge last):
                        grounding, >=1 elsewhere, non-gating average >=1.5
 
 Failing any hard gate rejects the card. No partial credit.
+
+Evidence modes (cfg.evidence_mode):
+  strict  — PRD-exact: any unsupported beat or unresolved URL rejects the
+            card; emission needs 1 primary OR 2 independent A/B editorial;
+            rubric disposition requires 2s on accuracy+grounding, >=1
+            elsewhere, non-gating average >=1.5.
+  relaxed — exploration mode for the source-yield phase: beats that are
+            unsupported or cite unresolved URLs are DROPPED (card survives
+            with >=3 remaining); emission accepts 1 reputable editorial
+            source on any non-C domain; rubric floors are >=1; cross-modal
+            and taxonomy downgrade to flags. Safety and spoiler gates are
+            identical in both modes. Every relaxed pass also computes the
+            strict verdict and records it as checks["would_pass_strict"].
 """
 
 from __future__ import annotations
@@ -278,6 +291,8 @@ def validate_card(
         result.rejection_reasons.append("contract: field counts/category/URLs out of spec")
         return result
 
+    relaxed = cfg.evidence_mode == "relaxed"
+
     # 2. URL provenance (+ modality, bodies, transcripts).
     _resolve_sources(card, cfg)
     cited_urls = {b.source_url for b in card.fact_beats}
@@ -286,10 +301,10 @@ def validate_card(
         checks["url_provenance"] = False
         result.rejection_reasons.append("url_provenance: cited URLs not in grounding sources")
         return result
-    unresolved = [s.url for s in cited if not s.resolved]
+    unresolved = {s.url for s in cited if not s.resolved}
     checks["url_provenance"] = not unresolved
-    if unresolved:
-        result.rejection_reasons.append(f"url_provenance: unresolved {unresolved}")
+    if unresolved and not relaxed:
+        result.rejection_reasons.append(f"url_provenance: unresolved {sorted(unresolved)}")
         return result
 
     # 3. Domain tier (recorded; enforcement happens in emission step).
@@ -328,15 +343,11 @@ def validate_card(
         if 0 <= i < len(card.fact_beats):
             card.fact_beats[i].supporting_passage = jb.get("supporting_passage", "")
 
-    unsupported = [b["index"] for b in judge["beats"] if not b["entailed"]]
-    checks["claim_entailment"] = not unsupported
+    # Spoiler boundary and safety: identical hard gates in BOTH modes.
     checks["spoiler_boundary"] = rubric["spoiler_safety"] >= 1 and (
         judge["earliest_safe_fraction"] <= card.runtime_fraction + 0.02
     )
     checks["safety"] = judge["safety_pass"]
-    checks["taxonomy"] = judge["category_correct"]
-    if unsupported:
-        result.rejection_reasons.append(f"claim_entailment: beats {unsupported} not supported")
     if not checks["spoiler_boundary"]:
         result.rejection_reasons.append(
             "spoiler_boundary: card only safe from fraction "
@@ -344,11 +355,44 @@ def validate_card(
         )
     if not judge["safety_pass"]:
         result.rejection_reasons.append("safety: maturity/partner-safety failure")
-    if not judge["category_correct"]:
-        result.rejection_reasons.append("taxonomy: category mismatch")
     card.spoiler_boundary_fraction = min(
         float(judge["earliest_safe_fraction"]), card.runtime_fraction
     ) if checks["spoiler_boundary"] else float(judge["earliest_safe_fraction"])
+
+    checks["taxonomy"] = judge["category_correct"]
+    if not judge["category_correct"]:
+        if relaxed:
+            result.flags.append("taxonomy: category mismatch")
+        else:
+            result.rejection_reasons.append("taxonomy: category mismatch")
+
+    # Claim entailment. Strict: any unsupported beat rejects. Relaxed: beats
+    # that are unsupported or cite a dead URL are dropped; the card survives
+    # only if >= 3 supported beats remain (contract minimum).
+    unsupported = {b["index"] for b in judge["beats"] if not b["entailed"]}
+    dead_url_beats = {i for i, b in enumerate(card.fact_beats) if b.source_url in unresolved}
+    bad_beats = unsupported | dead_url_beats
+    checks["claim_entailment"] = not unsupported
+    if bad_beats:
+        if relaxed:
+            kept = [b for i, b in enumerate(card.fact_beats) if i not in bad_beats]
+            if len(kept) >= 3:
+                card.fact_beats = kept
+                result.flags.append(
+                    f"relaxed: dropped beats {sorted(bad_beats)} (unsupported or dead URL)"
+                )
+            else:
+                result.rejection_reasons.append(
+                    f"claim_entailment: only {len(kept)} supported beats remain (need 3)"
+                )
+        else:
+            result.rejection_reasons.append(
+                f"claim_entailment: beats {sorted(unsupported)} not supported"
+            )
+
+    # Re-derive cited sources from the surviving beats.
+    cited_urls = {b.source_url for b in card.fact_beats}
+    cited = [s for s in card.sources if s.url in cited_urls]
 
     # Attach judge evidence classes to sources.
     by_url = {s["url"]: s["evidence_class"] for s in judge.get("sources", [])}
@@ -374,56 +418,103 @@ def validate_card(
         checks["verbatim"] = True
 
     # PRD cross-modal rule: when support rests on video, every named entity
-    # must also appear in a text source.
+    # must also appear in a text source. Flag-only in relaxed mode.
     video_supported = any(s.modality == "video" and s.evidence_class == "primary_direct"
                           for s in cited)
     text_supported = any(s.modality == "text" and s.tier != "C"
                          and s.evidence_class in ("primary_direct", "reputable_editorial")
                          for s in cited)
+    cross_modal_ok = True
     if cfg.require_cross_modal and video_supported and not text_supported and entities:
         _, text_misses = _entity_hits(entities, text_bodies)
-        checks["cross_modal"] = not text_misses
+        cross_modal_ok = not text_misses
         if text_misses:
-            result.rejection_reasons.append(
-                f"cross_modal: video-sourced entities lack a text source {text_misses}"
-            )
+            if relaxed:
+                checks["cross_modal"] = "flagged"
+                result.flags.append(
+                    f"cross_modal: video-sourced entities lack a text source {text_misses}"
+                )
+            else:
+                checks["cross_modal"] = False
+                result.rejection_reasons.append(
+                    f"cross_modal: video-sourced entities lack a text source {text_misses}"
+                )
+        else:
+            checks["cross_modal"] = True
     else:
         checks["cross_modal"] = True
 
-    # 6. Emission rules. C-tier never supports. One primary/direct source, or
-    # two independent reputable-editorial sources on A/B domains.
+    # 6. Emission rules. C-tier never supports in either mode.
+    #    strict:  1 primary/direct OR 2 independent A/B reputable editorial
+    #    relaxed: 1 primary/direct OR 1 reputable editorial on any non-C domain
     supporting = [s for s in cited if s.tier != "C"]
     primaries = [s for s in supporting if s.evidence_class == "primary_direct"]
-    editorial = independent(
+    editorial_strict = independent(
         [s for s in supporting if s.evidence_class == "reputable_editorial" and s.tier in ("A", "B")]
     )
-    emission_ok = bool(primaries) or len(editorial) >= 2
+    editorial_relaxed = independent(
+        [s for s in supporting if s.evidence_class == "reputable_editorial"]
+    )
+    strict_emission = bool(primaries) or len(editorial_strict) >= 2
+    relaxed_emission = bool(primaries) or len(editorial_relaxed) >= 1
+    emission_ok = relaxed_emission if relaxed else strict_emission
     checks["emission_policy"] = emission_ok
     if not emission_ok:
         result.rejection_reasons.append(
-            "emission_policy: needs 1 primary/direct source or 2 independent "
-            f"reputable editorial sources (got {len(primaries)} primary, "
-            f"{len(editorial)} independent editorial)"
+            "emission_policy: needs 1 primary/direct source or "
+            + ("1 reputable editorial source" if relaxed else
+               "2 independent reputable editorial sources")
+            + f" (got {len(primaries)} primary, {len(editorial_relaxed)} editorial)"
         )
 
-    # 7. Card disposition (PRD): rubric gates on top of the hard checks.
-    if rubric["factual_accuracy"] < 2:
-        result.rejection_reasons.append(
-            f"rubric: factual_accuracy {rubric['factual_accuracy']}/2 (must be 2)"
-        )
-    if rubric["scene_grounding"] < 2:
-        result.rejection_reasons.append(
-            f"rubric: scene_grounding {rubric['scene_grounding']}/2 (must be 2)"
-        )
+    # 7. Card disposition. Strict = PRD rule; relaxed = floors of 1 on the
+    #    gating dimensions, low value dims flagged not fatal.
     non_gating = ["primitive_conformance", "viewer_value", "clarity", "spoiler_safety"]
-    low = [d for d in non_gating if rubric[d] < 1]
-    if low:
-        result.rejection_reasons.append(f"rubric: {low} scored 0")
     avg = sum(rubric[d] for d in non_gating) / len(non_gating)
-    checks["rubric_disposition"] = not low and avg >= 1.5 and \
-        rubric["factual_accuracy"] == 2 and rubric["scene_grounding"] == 2
-    if avg < 1.5 and not low:
-        result.rejection_reasons.append(f"rubric: non-gating average {avg:.2f} < 1.5")
+    strict_rubric_ok = (
+        rubric["factual_accuracy"] == 2
+        and rubric["scene_grounding"] == 2
+        and all(rubric[d] >= 1 for d in non_gating)
+        and avg >= 1.5
+    )
+    if relaxed:
+        for dim in ("factual_accuracy", "scene_grounding"):
+            if rubric[dim] < 1:
+                result.rejection_reasons.append(f"rubric: {dim} {rubric[dim]}/2 (must be >=1)")
+        low = [d for d in ("primitive_conformance", "viewer_value", "clarity") if rubric[d] < 1]
+        if low:
+            result.flags.append(f"rubric low (relaxed): {low}")
+        checks["rubric_disposition"] = (
+            rubric["factual_accuracy"] >= 1 and rubric["scene_grounding"] >= 1
+        )
+    else:
+        if rubric["factual_accuracy"] < 2:
+            result.rejection_reasons.append(
+                f"rubric: factual_accuracy {rubric['factual_accuracy']}/2 (must be 2)"
+            )
+        if rubric["scene_grounding"] < 2:
+            result.rejection_reasons.append(
+                f"rubric: scene_grounding {rubric['scene_grounding']}/2 (must be 2)"
+            )
+        low = [d for d in non_gating if rubric[d] < 1]
+        if low:
+            result.rejection_reasons.append(f"rubric: {low} scored 0")
+        elif avg < 1.5:
+            result.rejection_reasons.append(f"rubric: non-gating average {avg:.2f} < 1.5")
+        checks["rubric_disposition"] = strict_rubric_ok
+
+    # Strict shadow verdict — recorded in every mode so relaxed output can be
+    # re-gated later without re-running the pipeline.
+    checks["would_pass_strict"] = bool(
+        strict_emission
+        and strict_rubric_ok
+        and not unsupported
+        and not unresolved
+        and checks["spoiler_boundary"]
+        and checks["safety"]
+        and judge["category_correct"]
+        and cross_modal_ok
+    )
 
     result.passed = not result.rejection_reasons
     return result

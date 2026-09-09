@@ -59,8 +59,13 @@ def main(argv: list[str] | None = None) -> int:
         description="SceneIQ Scene Fact pipeline: movie prompt in, sourced scene facts out.",
     )
     p.add_argument("prompt", help='Movie prompt, e.g. "Legally Blonde (2001)" — or "report" to aggregate outputs')
-    p.add_argument("--max-anchors", type=int, default=12, help="candidate anchors to research")
+    p.add_argument("--max-anchors", type=int, default=12, help="candidate anchors per pass")
     p.add_argument("--max-cards", type=int, default=10, help="cap on emitted cards")
+    p.add_argument("--passes", type=int, default=1,
+                   help="discovery passes; anchors dedupe across passes, approved cards merge")
+    p.add_argument("--evidence", choices=["relaxed", "strict"], default="relaxed",
+                   help="relaxed: 1 editorial source suffices, weak beats drop; "
+                        "strict: PRD-exact gates (safety/spoiler identical in both)")
     p.add_argument("--workers", type=int, default=4, help="parallel anchor workers")
     p.add_argument("--strict-verbatim", action="store_true",
                    help="hard-reject cards whose named entities aren't verbatim in fetched source bodies")
@@ -82,6 +87,8 @@ def main(argv: list[str] | None = None) -> int:
     cfg = config.PipelineConfig(
         max_anchors=args.max_anchors,
         max_cards=args.max_cards,
+        passes=args.passes,
+        evidence_mode=args.evidence,
         max_workers=args.workers,
         strict_verbatim=args.strict_verbatim,
         deep_model=args.deep_model,
@@ -110,7 +117,9 @@ def main(argv: list[str] | None = None) -> int:
         f"\n{report['film']['title']} ({report['film']['year']}): "
         f"{en['approved_cards']} approved / {stats['anchors_proposed']} anchors "
         f"({stats['cards_rejected']} rejected, {stats['errors']} errors) "
-        f"in {stats['elapsed_seconds']}s",
+        f"in {stats['elapsed_seconds']}s "
+        f"[{stats['evidence_mode']} mode, {stats['passes']} pass(es); "
+        f"{stats['would_pass_strict']}/{en['approved_cards']} would pass strict]",
         file=sys.stderr,
     )
     failed_rules = [k for k, v in en["rules"].items() if not v]

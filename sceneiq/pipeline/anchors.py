@@ -41,7 +41,14 @@ approximate timecode and runtime fraction (0.0-1.0), the closest category, and a
 search hint describing what an insider fact about it would look like.
 
 Also state the film's approximate runtime in minutes.
-{leads_block}"""
+{avoid_block}{leads_block}"""
+
+_AVOID_BLOCK = """
+ALREADY-EXPLORED ANCHORS (from earlier passes). Do NOT propose these or close \
+variants — propose anchors about DIFFERENT scenes, elements, and categories:
+
+{explored}
+"""
 
 _LEADS_BLOCK = """
 DISCOVERY LEADS (Wikipedia — C-tier, lead-generation ONLY). These excerpts may \
@@ -91,14 +98,23 @@ NARRATIVE:
 
 
 def discover_anchors(
-    client: GeminiClient, title_prompt: str, cfg: config.PipelineConfig, leads: str = ""
+    client: GeminiClient,
+    title_prompt: str,
+    cfg: config.PipelineConfig,
+    leads: str = "",
+    explored: list[str] | None = None,
 ) -> tuple[dict, list[Anchor]]:
-    """Returns (film_info, anchors)."""
+    """Returns (film_info, anchors). `explored` lists anchor elements from
+    earlier passes that this pass must avoid."""
+    avoid = ""
+    if explored:
+        avoid = _AVOID_BLOCK.format(explored="\n".join(f"- {e}" for e in explored))
     grounded = client.grounded(
         cfg.deep_model,
         _DISCOVERY_PROMPT.format(
             title_prompt=title_prompt,
             max_anchors=cfg.max_anchors,
+            avoid_block=avoid,
             leads_block=_LEADS_BLOCK.format(leads=leads) if leads else "",
         ),
         temperature=cfg.discovery_temperature,

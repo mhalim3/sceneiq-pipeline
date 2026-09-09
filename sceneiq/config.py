@@ -55,6 +55,16 @@ class PipelineConfig:
     min_categories: int = 2
     # Parallelism for per-anchor research/assembly/validation.
     max_workers: int = 4
+    # Discovery passes: each pass proposes anchors avoiding already-explored
+    # elements; approved cards merge across passes (raises yield on titles
+    # where single-pass anchor variance is the bottleneck).
+    passes: int = 1
+    # Evidence mode. "strict" = PRD emission policy + full rubric disposition.
+    # "relaxed" = exploration mode for the source-yield phase: one reputable
+    # editorial source suffices, unsupported beats drop instead of killing
+    # the card, rubric floors are >=1. Safety and spoiler gates are IDENTICAL
+    # in both modes — never loosened. Relaxed cards record wouldPassStrict.
+    evidence_mode: str = "relaxed"
     # Strict mode hard-rejects cards whose named entities can't be verbatim-
     # matched in a fetched source body. Default flags them instead, because
     # page fetches are flaky and ASR/paywall noise causes false rejects

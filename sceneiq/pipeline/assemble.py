@@ -75,9 +75,17 @@ numbers, dates, or causal claims. Preserve hedges ("reportedly").
 - No plot information from later in the film than this scene.
 - No casting drama, feuds, career-arc trivia, or negative claims about talent/partners.
 - G-rated content only.
-- ABSTAIN (abstain: true, with a reason) if the evidence says NO QUALIFIED EVIDENCE \
+{abstain_rule}"""
+
+_ABSTAIN_STRICT = """- ABSTAIN (abstain: true, with a reason) if the evidence says NO QUALIFIED EVIDENCE \
 FOUND, is too thin for 3 supported beats, is generic/obvious, or cannot be tied to \
 this scene. Abstaining is the correct output for weak evidence — never pad."""
+
+_ABSTAIN_RELAXED = """- ABSTAIN (abstain: true, with a reason) only if the evidence says NO QUALIFIED \
+EVIDENCE FOUND or genuinely cannot support 3 specific beats tied to this scene. If \
+the evidence contains at least one specific, sourced, non-obvious detail about the \
+anchor element, BUILD THE CARD — downstream validation will gate it. Do not pad \
+beats with claims the evidence doesn't make."""
 
 
 def assemble_card(
@@ -99,6 +107,7 @@ def assemble_card(
             anchor_element=packet.anchor.anchor_element,
             findings=packet.findings,
             source_list=source_list,
+            abstain_rule=_ABSTAIN_RELAXED if cfg.evidence_mode == "relaxed" else _ABSTAIN_STRICT,
         ),
         _CARD_SCHEMA,
         temperature=cfg.assembly_temperature,
