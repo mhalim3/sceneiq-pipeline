@@ -39,6 +39,7 @@ class Anchor:
     approx_timecode: str              # "~00:22" style, best effort
     category_guess: str               # one of the 7 categories
     search_hint: str                  # what to look for in sources
+    search_queries: list = field(default_factory=list)  # runnable queries (<=4)
 
     @property
     def runtime_third(self) -> int:
@@ -73,6 +74,8 @@ class FactBeat:
     text: str
     source_url: str
     source_index: int = -1            # index into card.sources after validation
+    verbatim_anchor: str = ""         # 6-20 word span copied verbatim from source
+    source_timestamp: str = ""        # "MM:SS–MM:SS" in-point for video sources
     supporting_passage: str = ""      # PRD: source passage per material claim
 
     def to_dict(self):
@@ -132,7 +135,7 @@ class SceneFactCard:
                 "text": b.text,
                 "sourceUrl": b.source_url,
                 "sourceModality": src.modality if src else "text",
-                "sourceTimestamp": None,   # video in-point; needs transcript alignment
+                "sourceTimestamp": b.source_timestamp or None,
             })
         return {
             "proactivePrompt": self.proactive_prompt,
@@ -160,6 +163,8 @@ class ValidationResult:
     checks: dict = field(default_factory=dict)     # check name -> pass/fail/flag
     # PRD human-evaluation rubric, automated: dimension -> 0 | 1 | 2
     rubric: dict = field(default_factory=dict)
+    # Viewer-POV curiosity judgment (interestingness/obviousness/appeal/pull)
+    curiosity: dict = field(default_factory=dict)
     rejection_reasons: list = field(default_factory=list)
     flags: list = field(default_factory=list)      # non-fatal warnings
     judge_notes: str = ""

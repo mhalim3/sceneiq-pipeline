@@ -85,6 +85,18 @@ class PipelineConfig:
     require_cross_modal: bool = True
     # Wikipedia API discovery leads (C-tier: seed anchors, never support cards).
     use_wikipedia_leads: bool = True
+    # Fetch-then-write source bank (scene-sense architecture): per anchor, run
+    # up to `queries_per_anchor` explicit searches, fetch bodies, keep the top
+    # `sources_per_anchor` by tier.
+    queries_per_anchor: int = 3
+    sources_per_anchor: int = 8
+    # Per-beat verbatim anchor must fuzzy-match its source body at this ratio.
+    verbatim_anchor_min_ratio: float = 0.8
+    # Viewer-POV curiosity judge (PRD Stage 2 value selection). A "reject"
+    # verdict kills the card in both modes; composite below the minimum kills
+    # in strict and flags in relaxed.
+    use_curiosity_judge: bool = True
+    curiosity_min_composite: float = 0.5
     extra: dict = field(default_factory=dict)
 
 
@@ -151,6 +163,22 @@ VIDEO_DOMAINS = {
     "youtube.com",
     "youtu.be",
     "vimeo.com",
+}
+
+# Never fetched as evidence sources: C-tier by policy (can never support a
+# card) and social/aggregator noise. Wikipedia already feeds discovery leads.
+SKIP_FETCH_DOMAINS = {
+    "wikipedia.org",
+    "wikimedia.org",
+    "pinterest.com",
+    "reddit.com",
+    "fandom.com",
+    "wikia.com",
+    "facebook.com",
+    "instagram.com",
+    "tiktok.com",
+    "x.com",
+    "twitter.com",
 }
 
 # C tier: discovery / lead sources only. Can never support emission.

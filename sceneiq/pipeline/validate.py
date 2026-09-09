@@ -1,63 +1,46 @@
 """Stage 4: Shared validation layer.
 
-Order of checks (cheap and deterministic first, LLM judge last):
-  1. contract        — field counts, category enum (code)
-  2. url_provenance  — every beat URL resolves; redirects unwrapped; video
-                       sources get their caption transcript fetched as the
-                       searchable body (code+http)
-  3. domain_tier     — A/B/C per registered domain (code)
-  4. judge           — claim entailment + supporting passage per beat,
-                       evidence class per source, PRD 6-dimension rubric
-                       (0/1/2), spoiler boundary as earliest-safe fraction
-                       (fast model, temperature 0)
-  5. verbatim        — named entities appear in fetched bodies; video-sourced
-                       claims additionally need entities in a TEXT source
-                       (PRD cross-modal corroboration)
-  6. emission        — 1 primary/direct source OR 2 independent reputable
-                       editorial sources; C never supports (code)
-  7. disposition     — PRD card-disposition rule: rubric 2s on accuracy and
-                       grounding, >=1 elsewhere, non-gating average >=1.5
+Sources arrive from research already fetched (bodies + transcripts), so this
+stage does no HTTP. Order of checks:
 
-Failing any hard gate rejects the card. No partial credit.
+  1. contract          — field counts, category enum (code)
+  2. source_binding    — every beat cites a fetched source AND its 6-20 word
+                         verbatim anchor fuzzy-matches that source's body at
+                         >= cfg.verbatim_anchor_min_ratio (code)
+  3. judge             — claim entailment + supporting passage per beat,
+                         evidence class per source, PRD 6-dimension rubric,
+                         spoiler boundary (fast model, temperature 0)
+  4. verbatim/x-modal  — named entities in bodies; video-sourced entities
+                         also need a text source (code)
+  5. emission          — C never supports; strict: 1 primary OR 2 independent
+                         A/B editorial; relaxed: 1 primary OR 1 editorial
+  6. disposition       — PRD rubric rule (strict) / floors of 1 (relaxed)
 
-Evidence modes (cfg.evidence_mode):
-  strict  — PRD-exact: any unsupported beat or unresolved URL rejects the
-            card; emission needs 1 primary OR 2 independent A/B editorial;
-            rubric disposition requires 2s on accuracy+grounding, >=1
-            elsewhere, non-gating average >=1.5.
-  relaxed — exploration mode for the source-yield phase: beats that are
-            unsupported or cite unresolved URLs are DROPPED (card survives
-            with >=3 remaining); emission accepts 1 reputable editorial
-            source on any non-C domain; rubric floors are >=1; cross-modal
-            and taxonomy downgrade to flags. Safety and spoiler gates are
-            identical in both modes. Every relaxed pass also computes the
-            strict verdict and records it as checks["would_pass_strict"].
+Relaxed mode drops bad beats (binding or entailment failures) instead of
+rejecting, provided >= 3 beats survive. Safety and spoiler gates are identical
+in both modes. Video timestamps attach from transcript segments per beat.
 """
 
 from __future__ import annotations
 
-import html
-import re
-from urllib.parse import parse_qs, urlparse
-
-import httpx
-
 from .. import config
+from ..fetch import attach_timestamp, best_substring_ratio
 from ..gemini import GeminiClient
 from ..models import EvidencePacket, SceneFactCard, ValidationResult
-from ..tiers import classify_domain, independent, registered_domain
-
-_UA = {"User-Agent": "Mozilla/5.0 (Macintosh) SceneIQ-validator/0.1"}
+from ..tiers import independent
 
 _RUBRIC_DIMS = [
-    "factual_accuracy",      # gating: must be 2
-    "scene_grounding",       # gating: must be 2
-    "primitive_conformance", # non-gating: >= 1
-    "viewer_value",          # non-gating: >= 1
-    "clarity",               # non-gating: >= 1
-    "spoiler_safety",        # non-gating floor >= 1; hard gate separately
+    "factual_accuracy",
+    "scene_grounding",
+    "primitive_conformance",
+    "viewer_value",
+    "clarity",
+    "spoiler_safety",
 ]
 _SCORE = {"type": "integer", "minimum": 0, "maximum": 2}
+# Must match assembly's _BODY_EXCERPT_CHARS: the judge must see the same
+# evidence the writer saw, or true beats past the window read as hallucinated.
+_JUDGE_EXCERPT_CHARS = 9000
 
 _JUDGE_SCHEMA = {
     "type": "object",
@@ -113,8 +96,8 @@ _JUDGE_SCHEMA = {
 }
 
 _JUDGE_PROMPT = """You are the validation judge for SceneIQ, Tubi's pause-screen surface. \
-Judge this candidate Scene Fact card strictly. A wrong card is worse than no card. \
-When uncertain on any check, score low / fail.
+Judge this candidate Scene Fact card strictly against the FETCHED SOURCE BODIES below. \
+A wrong card is worse than no card. When uncertain on any check, score low / fail.
 
 FILM: {film_title} ({film_year})
 CARD ANCHOR SCENE (~{timecode}, runtime fraction {fraction}): {scene_description}
@@ -128,44 +111,37 @@ factBeats:
 {beats}
 followUps: {follow_ups}
 
-EVIDENCE PACKET the card was built from:
-{findings}
-
-SOURCES cited by the card:
-{source_list}
+FETCHED SOURCE BODIES cited by the card:
+{source_blocks}
 
 Evaluate:
 
 1. beats — for each beat (by index): is every material claim (names, places, numbers, \
-quotes, causal claims) directly supported by the evidence packet? Hedges must be \
+quotes, causal claims) directly supported by the cited source body? Hedges must be \
 preserved, not stripped. Overstated = not entailed. For each beat, copy into \
-supporting_passage the exact passage from the evidence packet that supports it \
-(empty string if none does — which means not entailed).
+supporting_passage the exact passage from the source body that supports it (empty \
+string if none does — which means not entailed).
 
-2. sources — classify each cited source's evidence class FOR THE CLAIMS IT SUPPORTS: \
-"primary_direct" (the filmmakers/talent/studio or a domain authority directly attest: \
-commentary, an on-record interview where the participant makes the claim, permit \
-records, ASC/ASCAP — an editorial article COUNTS as primary when it directly quotes \
-the relevant participant making this claim), "reputable_editorial" (reported coverage \
-by an established publication without a direct participant statement), or "discovery" \
-(wiki/fan/db/listicle — leads only, never support).
+2. sources — classify each source's evidence class FOR THE CLAIMS IT SUPPORTS: \
+"primary_direct" (filmmakers/talent/studio or a domain authority directly attest — \
+including an article or transcript that directly quotes the relevant participant \
+making this claim), "reputable_editorial" (reported coverage by an established \
+publication without a direct participant statement), or "discovery" (wiki/fan/db/\
+listicle — leads only, never support).
 
-3. rubric — score each dimension 0 (fail), 1 (partial), or 2 (meets bar), per the \
-SceneIQ evaluation rubric:
-- factual_accuracy: 2 = all material claims accurate and entailed by cited sources; \
+3. rubric — score each dimension 0 (fail), 1 (partial), or 2 (meets bar):
+- factual_accuracy: 2 = all material claims accurate and entailed by the bodies; \
 1 = core claim true but a material detail weakly supported or overstated; 0 = any \
 unsupported, contradicted, or misleading claim.
 - scene_grounding: 2 = clearly points to a recognizable element visible/audible in \
-THIS scene and rewards pausing there; 1 = connection indirect or hard to spot; 0 = \
-not tied to the anchor scene.
+THIS scene and rewards pausing there; 1 = connection indirect; 0 = not tied to the scene.
 - primitive_conformance: 2 = cleanly fits the Scene Fact definition (insider detail \
 about the film's world explaining something on screen — NOT casting stories, career \
-trivia, industry gossip); 1 = fits loosely with some generic/disallowed material; \
-0 = does not satisfy the definition.
+trivia, industry gossip); 1 = loose fit; 0 = does not satisfy the definition.
 - viewer_value: 2 = specific, surprising, likely to prompt exploration; 1 = mildly \
 interesting; 0 = generic or obvious.
-- clarity: 2 = concise, natural, tells the viewer what to notice; 1 = understandable \
-but verbose or imprecise; 0 = confusing or unfindable.
+- clarity: 2 = concise, tells the viewer what to notice; 1 = verbose or imprecise; \
+0 = confusing.
 - spoiler_safety: 2 = fully safe at the anchor timecode; 1 = borderline wording; \
 0 = reveals later plot, outcomes, or significance.
 
@@ -173,89 +149,23 @@ but verbose or imprecise; 0 = confusing or unfindable.
 card could be shown without spoiling anything. If safe at its anchor, use the anchor \
 fraction {fraction} or lower.
 
-5. safety_pass — G-rated wording; no disparaging, demeaning, or unsubstantiated \
-negative claims about talent, filmmakers, studios, or partners; no PII; does not \
-restate or amplify mature material.
+5. safety_pass — G-rated wording; no disparaging or unsubstantiated negative claims \
+about talent, filmmakers, studios, or partners; no PII; does not restate or amplify \
+mature material. Quoted profanity FAILS even when censored or bleeped ("You b----!" \
+is not G-rated); a card whose payoff is an expletive line fails.
 
 6. category_correct — does factCategory fit?
 
 7. named_entities — list every proper name, title, and specific number a fact-checker \
-must find verbatim in the sources."""
+must find in the sources."""
 
 
-def _youtube_video_id(url: str) -> str | None:
-    p = urlparse(url)
-    host = (p.hostname or "").removeprefix("www.")
-    if host == "youtu.be":
-        return p.path.lstrip("/") or None
-    if host.endswith("youtube.com"):
-        return (parse_qs(p.query).get("v") or [None])[0]
-    return None
-
-
-def _fetch_transcript(url: str) -> str:
-    """PRD: transcripts are the searchable layer for video sources.
-
-    Best effort via the YouTube caption API; '' when unavailable (no captions,
-    library missing, or network refusal) — the cross-modal rule then governs.
-    """
-    vid = _youtube_video_id(url)
-    if not vid:
-        return ""
-    try:
-        from youtube_transcript_api import YouTubeTranscriptApi
-    except ImportError:
-        return ""
-    try:
-        api = YouTubeTranscriptApi()
-        fetched = api.fetch(vid)          # v1.x API
-        snippets = getattr(fetched, "snippets", fetched)
-        return " ".join(s.text for s in snippets).lower()
-    except AttributeError:
-        try:
-            data = YouTubeTranscriptApi.get_transcript(vid)   # v0.x API
-            return " ".join(d["text"] for d in data).lower()
-        except Exception:
-            return ""
-    except Exception:
-        return ""
-
-
-def _resolve_sources(card: SceneFactCard, cfg: config.PipelineConfig) -> None:
-    """Unwrap grounding redirect URLs, mark resolution, re-tier by final
-    domain, set modality, and fetch searchable bodies (HTML text, or caption
-    transcript for video sources)."""
-    url_map: dict[str, str] = {}
-    with httpx.Client(
-        follow_redirects=True, timeout=cfg.http_timeout_s, headers=_UA, verify=True
-    ) as http:
-        for src in card.sources:
-            try:
-                resp = http.get(src.url)
-                final = str(resp.url)
-                src.resolved = resp.status_code < 400
-                url_map[src.url] = final
-                src.url = final
-                src.domain = registered_domain(final)
-                src.tier = classify_domain(final)
-                src.modality = "video" if src.domain in config.VIDEO_DOMAINS else "text"
-                if cfg.fetch_source_bodies and src.resolved:
-                    if src.modality == "video":
-                        transcript = _fetch_transcript(final)
-                        if transcript:
-                            src._body = transcript  # type: ignore[attr-defined]
-                            src.body_kind = "transcript"
-                    elif "text" in resp.headers.get("content-type", ""):
-                        body = re.sub(r"<[^>]+>", " ", resp.text)
-                        src._body = html.unescape(re.sub(r"\s+", " ", body)).lower()  # type: ignore[attr-defined]
-                        src.body_kind = "html"
-            except httpx.HTTPError:
-                src.resolved = False
-    for beat in card.fact_beats:
-        if 0 <= beat.source_index < len(card.sources):
-            beat.source_url = card.sources[beat.source_index].url
-        else:
-            beat.source_url = url_map.get(beat.source_url, beat.source_url)
+def _judge_source_blocks(cited: list) -> str:
+    blocks = []
+    for s in cited:
+        body = getattr(s, "_body", "")[:_JUDGE_EXCERPT_CHARS]
+        blocks.append(f"--- {s.url} [tier {s.tier}, {s.modality}]\n{body}")
+    return "\n\n".join(blocks)
 
 
 def _entity_hits(entities: list[str], bodies: list[str]) -> tuple[list[str], list[str]]:
@@ -264,7 +174,7 @@ def _entity_hits(entities: list[str], bodies: list[str]) -> tuple[list[str], lis
         needle = ent.lower().strip()
         if not needle:
             continue
-        (hits if any(needle in b for b in bodies) else misses).append(ent)
+        (hits if any(needle in b.lower() for b in bodies) else misses).append(ent)
     return hits, misses
 
 
@@ -277,6 +187,8 @@ def validate_card(
 ) -> ValidationResult:
     result = ValidationResult(passed=False)
     checks = result.checks
+    relaxed = cfg.evidence_mode == "relaxed"
+    src_by_url = {s.url: s for s in card.sources}
 
     # 1. Contract.
     contract_ok = (
@@ -284,35 +196,38 @@ def validate_card(
         and 2 <= len(card.follow_ups) <= 3
         and card.fact_category in config.FACT_CATEGORIES
         and bool(card.proactive_prompt and card.fact_header)
-        and all(b.source_url for b in card.fact_beats)
+        and all(b.source_url in src_by_url for b in card.fact_beats)
     )
     checks["contract"] = contract_ok
     if not contract_ok:
-        result.rejection_reasons.append("contract: field counts/category/URLs out of spec")
+        result.rejection_reasons.append("contract: field counts/category/sources out of spec")
         return result
 
-    relaxed = cfg.evidence_mode == "relaxed"
+    # 2. Source binding: per-beat verbatim anchor must fuzzy-match its cited
+    # source's fetched body. Also attach video timestamps while we're here.
+    binding_bad: set[int] = set()
+    for i, b in enumerate(card.fact_beats):
+        src = src_by_url[b.source_url]
+        body = getattr(src, "_body", "")
+        if not b.verbatim_anchor or not body:
+            binding_bad.add(i)
+            continue
+        ratio = best_substring_ratio(b.verbatim_anchor, body)
+        if ratio < cfg.verbatim_anchor_min_ratio:
+            binding_bad.add(i)
+            continue
+        if src.modality == "video":
+            b.source_timestamp = attach_timestamp(
+                b.verbatim_anchor, getattr(src, "_segments", [])
+            )
+    checks["source_binding"] = not binding_bad
 
-    # 2. URL provenance (+ modality, bodies, transcripts).
-    _resolve_sources(card, cfg)
-    cited_urls = {b.source_url for b in card.fact_beats}
-    cited = [s for s in card.sources if s.url in cited_urls]
-    if not cited:
-        checks["url_provenance"] = False
-        result.rejection_reasons.append("url_provenance: cited URLs not in grounding sources")
-        return result
-    unresolved = {s.url for s in cited if not s.resolved}
-    checks["url_provenance"] = not unresolved
-    if unresolved and not relaxed:
-        result.rejection_reasons.append(f"url_provenance: unresolved {sorted(unresolved)}")
-        return result
-
-    # 3. Domain tier (recorded; enforcement happens in emission step).
-    checks["domain_tier"] = True
-
-    # 4. LLM judge.
-    beats_txt = "\n".join(f"  [{i}] {b.text} (source: {b.source_url})" for i, b in enumerate(card.fact_beats))
-    src_txt = "\n".join(f"- {s.url} [domain tier {s.tier}, {s.modality}]" for s in cited)
+    # 3. LLM judge over the cited source bodies.
+    cited = [src_by_url[u] for u in {b.source_url for b in card.fact_beats}]
+    beats_txt = "\n".join(
+        f"  [{i}] {b.text} (source: {b.source_url}; anchor: \"{b.verbatim_anchor}\")"
+        for i, b in enumerate(card.fact_beats)
+    )
     judge = client.structured(
         cfg.fast_model,
         _JUDGE_PROMPT.format(
@@ -327,8 +242,7 @@ def validate_card(
             header=card.fact_header,
             beats=beats_txt,
             follow_ups=card.follow_ups,
-            findings=packet.findings,
-            source_list=src_txt,
+            source_blocks=_judge_source_blocks(cited),
         ),
         _JUDGE_SCHEMA,
         temperature=cfg.judge_temperature,
@@ -337,7 +251,6 @@ def validate_card(
     rubric = {d: int(judge["rubric"].get(d, 0)) for d in _RUBRIC_DIMS}
     result.rubric = rubric
 
-    # Attach per-beat supporting passages (PRD review-record requirement).
     for jb in judge["beats"]:
         i = jb["index"]
         if 0 <= i < len(card.fact_beats):
@@ -366,12 +279,10 @@ def validate_card(
         else:
             result.rejection_reasons.append("taxonomy: category mismatch")
 
-    # Claim entailment. Strict: any unsupported beat rejects. Relaxed: beats
-    # that are unsupported or cite a dead URL are dropped; the card survives
-    # only if >= 3 supported beats remain (contract minimum).
+    # Beat survival: binding failures + entailment failures. Strict rejects;
+    # relaxed drops bad beats if >= 3 remain.
     unsupported = {b["index"] for b in judge["beats"] if not b["entailed"]}
-    dead_url_beats = {i for i, b in enumerate(card.fact_beats) if b.source_url in unresolved}
-    bad_beats = unsupported | dead_url_beats
+    bad_beats = unsupported | binding_bad
     checks["claim_entailment"] = not unsupported
     if bad_beats:
         if relaxed:
@@ -379,40 +290,32 @@ def validate_card(
             if len(kept) >= 3:
                 card.fact_beats = kept
                 result.flags.append(
-                    f"relaxed: dropped beats {sorted(bad_beats)} (unsupported or dead URL)"
+                    f"relaxed: dropped beats {sorted(bad_beats)} "
+                    "(binding or entailment failure)"
                 )
             else:
                 result.rejection_reasons.append(
-                    f"claim_entailment: only {len(kept)} supported beats remain (need 3)"
+                    f"claim_entailment: only {len(kept)} bound+supported beats remain (need 3)"
                 )
         else:
-            result.rejection_reasons.append(
-                f"claim_entailment: beats {sorted(unsupported)} not supported"
-            )
+            if binding_bad:
+                result.rejection_reasons.append(
+                    f"source_binding: beats {sorted(binding_bad)} verbatim anchor "
+                    f"not found in source body (min ratio {cfg.verbatim_anchor_min_ratio})"
+                )
+            if unsupported:
+                result.rejection_reasons.append(
+                    f"claim_entailment: beats {sorted(unsupported)} not supported"
+                )
 
-    # Re-derive cited sources from the surviving beats.
-    cited_urls = {b.source_url for b in card.fact_beats}
-    cited = [s for s in card.sources if s.url in cited_urls]
-
-    # Attach judge evidence classes to sources.
+    # Re-derive cited sources from surviving beats; attach evidence classes.
+    cited = [src_by_url[u] for u in {b.source_url for b in card.fact_beats}]
     by_url = {s["url"]: s["evidence_class"] for s in judge.get("sources", [])}
     for s in cited:
         s.evidence_class = by_url.get(s.url, s.evidence_class)
 
-    # Guardrail: a video source with no fetchable transcript is unverifiable —
-    # the judge's "primary" classification rests entirely on search-time
-    # descriptions of the video. It cannot carry primary (or editorial)
-    # weight; downgrade to discovery (lead only) in BOTH modes.
-    for s in cited:
-        if s.modality == "video" and s.body_kind != "transcript" \
-                and s.evidence_class in ("primary_direct", "reputable_editorial"):
-            result.flags.append(
-                f"video_downgrade: {s.url} has no transcript; "
-                f"{s.evidence_class} claim is unverifiable -> discovery"
-            )
-            s.evidence_class = "discovery"
-
-    # 5. Verbatim entity check + cross-modal corroboration.
+    # 4. Named-entity verbatim + cross-modal corroboration. (Video sources
+    # always carry transcripts — research drops caption-less videos.)
     entities = judge.get("named_entities", [])
     all_bodies = [getattr(s, "_body", "") for s in cited if getattr(s, "_body", "")]
     text_bodies = [getattr(s, "_body", "") for s in cited
@@ -430,8 +333,6 @@ def validate_card(
     else:
         checks["verbatim"] = True
 
-    # PRD cross-modal rule: when support rests on video, every named entity
-    # must also appear in a text source. Flag-only in relaxed mode.
     video_supported = any(s.modality == "video" and s.evidence_class == "primary_direct"
                           for s in cited)
     text_supported = any(s.modality == "text" and s.tier != "C"
@@ -457,9 +358,7 @@ def validate_card(
     else:
         checks["cross_modal"] = True
 
-    # 6. Emission rules. C-tier never supports in either mode.
-    #    strict:  1 primary/direct OR 2 independent A/B reputable editorial
-    #    relaxed: 1 primary/direct OR 1 reputable editorial on any non-C domain
+    # 5. Emission rules. C-tier never supports in either mode.
     supporting = [s for s in cited if s.tier != "C"]
     primaries = [s for s in supporting if s.evidence_class == "primary_direct"]
     editorial_strict = independent(
@@ -480,8 +379,7 @@ def validate_card(
             + f" (got {len(primaries)} primary, {len(editorial_relaxed)} editorial)"
         )
 
-    # 7. Card disposition. Strict = PRD rule; relaxed = floors of 1 on the
-    #    gating dimensions, low value dims flagged not fatal.
+    # 6. Card disposition.
     non_gating = ["primitive_conformance", "viewer_value", "clarity", "spoiler_safety"]
     avg = sum(rubric[d] for d in non_gating) / len(non_gating)
     strict_rubric_ok = (
@@ -490,8 +388,18 @@ def validate_card(
         and all(rubric[d] >= 1 for d in non_gating)
         and avg >= 1.5
     )
+    # Beats were dropped in relaxed mode: the judge scored the PRE-drop card,
+    # so a factual_accuracy driven down by now-removed beats is stale. The
+    # surviving beats are all bound + entailed by construction.
+    beats_were_dropped = relaxed and bad_beats and not result.rejection_reasons
     if relaxed:
-        for dim in ("factual_accuracy", "scene_grounding"):
+        factual_floor_dims = ("scene_grounding",) if beats_were_dropped else (
+            "factual_accuracy", "scene_grounding")
+        if beats_were_dropped and rubric["factual_accuracy"] < 1:
+            result.flags.append(
+                "rubric: factual_accuracy scored pre-drop; surviving beats are entailed"
+            )
+        for dim in factual_floor_dims:
             if rubric[dim] < 1:
                 result.rejection_reasons.append(f"rubric: {dim} {rubric[dim]}/2 (must be >=1)")
         low = [d for d in ("primitive_conformance", "viewer_value", "clarity") if rubric[d] < 1]
@@ -516,13 +424,12 @@ def validate_card(
             result.rejection_reasons.append(f"rubric: non-gating average {avg:.2f} < 1.5")
         checks["rubric_disposition"] = strict_rubric_ok
 
-    # Strict shadow verdict — recorded in every mode so relaxed output can be
-    # re-gated later without re-running the pipeline.
+    # Strict shadow verdict — recorded in every mode.
     checks["would_pass_strict"] = bool(
         strict_emission
         and strict_rubric_ok
         and not unsupported
-        and not unresolved
+        and not binding_bad
         and checks["spoiler_boundary"]
         and checks["safety"]
         and judge["category_correct"]

@@ -7,44 +7,38 @@
   },
   "sceneFacts": [
     {
-      "proactivePrompt": "Ever wonder where Elle's vibrant sorority house was really filmed?",
-      "factCategory": "location",
-      "factHeader": "The Delta Nu Sorority House is a Historic California Landmark",
+      "proactivePrompt": "See how a real sorority inspired Delta Nu's pink look.",
+      "factCategory": "set_design",
+      "factHeader": "Delta Nu's Signature Pink",
       "factBeats": [
         {
-          "text": "The exterior of the Delta Nu sorority house in Legally Blonde was filmed at the Villa del Sol d'Oro in Sierra Madre, California.",
-          "sourceUrl": "https://villadelsoldoro.org/filming-photography/",
+          "text": "Costume designer Sophie de Rakoff and Reese Witherspoon visited a sorority house for research while prepping for the film.",
+          "sourceUrl": "https://www.thenewdaily.com.au/entertainment/movies/2021/07/11/legally-blonde-movie-feminist",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "The Villa del Sol d'Oro's own website lists Legally Blonde among the films shot on its premises, confirming its use for the sorority house.",
-          "sourceUrl": "https://villadelsoldoro.org/filming-photography/",
+          "text": "During their visit, they observed that everyone at the real sorority was wearing pink.",
+          "sourceUrl": "https://www.thenewdaily.com.au/entertainment/movies/2021/07/11/legally-blonde-movie-feminist",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "Production designer Missy Stewart described the intended aesthetic for the fictional sorority house as 'California mission style'.",
-          "sourceUrl": "https://www.apartmenttherapy.com/legally-blonde-production-designer-interview-36944120",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Stewart explained the design choice was meant to emphasize 'sunny days and greenery' with a colorful palette, matching Elle's vibrant personality.",
-          "sourceUrl": "https://www.apartmenttherapy.com/legally-blonde-production-designer-interview-36944120",
+          "text": "This observation became a \"throughline for the movie\" and a key part of the overall aesthetic.",
+          "sourceUrl": "https://www.thenewdaily.com.au/entertainment/movies/2021/07/11/legally-blonde-movie-feminist",
           "sourceModality": "text",
           "sourceTimestamp": null
         }
       ],
       "followUps": [
-        "What other films were shot at this location?",
-        "How did the production team find this specific villa?",
-        "What other design choices were made to reflect Elle's personality?"
+        "What other details were inspired?",
+        "Was the house always pink?",
+        "Who designed the Delta Nu house?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "The film's opening sequence at the Delta Nu sorority house, establishing Elle's vibrant college life.",
-        "anchorElement": "The Delta Nu sorority house exterior.",
-        "approxTimecode": "0:02",
+        "sceneDescription": "The film opens on the bustling, pink-infused Delta Nu sorority house as Elle Woods prepares for her big date with Warner.",
+        "anchorElement": "The exterior of the sorority house.",
+        "approxTimecode": "~00:02",
         "runtimeFraction": 0.02,
         "runtimeThird": 1,
         "runtimeQuartile": 1
@@ -55,260 +49,266 @@
       "wouldPassStrict": true
     },
     {
-      "proactivePrompt": "Ever wonder where Elle got dumped?",
+      "proactivePrompt": "See where Elle Woods really went to \"Harvard\"?",
       "factCategory": "location",
-      "factHeader": "The restaurant where Warner breaks up with Elle is a real Beverly Hills spot.",
+      "factHeader": "\"Harvard\" campus scenes filmed in California",
       "factBeats": [
         {
-          "text": "It's located at 9018 Burton Way in Beverly Hills.",
+          "text": "While the story places Elle Woods at Harvard, the university itself didn't allow filming on its campus.",
+          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/legally-blonde-behind-the-scenes-facts_uk_6a468bc4e4b03060a84cc7d1",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Instead, the production filmed the \"Harvard\" campus scenes at various institutes across California.",
+          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/legally-blonde-behind-the-scenes-facts_uk_6a468bc4e4b03060a84cc7d1",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "This particular scene, where Elle arrives and picks up her class schedule, was shot on the patio of Kerckhoff Hall at UCLA.",
           "sourceUrl": "https://giggster.com/guide/movie-location/where-was-legally-blonde-filmed",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "While the interior was filmed at Il Cielo, the fairy-lit exterior seen in the film was recreated on the campus of UCLA.",
+          "text": "Another \"Harvard\" square seen in the film was the rector's house of All Saints Church in Pasadena.",
           "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
           "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Il Cielo is known as one of the most romantic places to eat in Los Angeles.",
-          "sourceUrl": "https://www.youtube.com/watch?v=g1fyPNVqZMU",
-          "sourceModality": "video",
           "sourceTimestamp": null
         }
       ],
       "followUps": [
-        "Is Il Cielo still open today?",
-        "What other movies were filmed in Beverly Hills?",
-        "Where else was Legally Blonde filmed?"
+        "Why didn't Stanford allow filming?",
+        "What other schools said no?",
+        "Where were the classrooms filmed?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "Warner breaks up with Elle at a romantic, upscale restaurant, telling her he needs someone \"serious.\"",
-        "anchorElement": "The restaurant where Warner and Elle have their final date.",
-        "approxTimecode": "0:06",
-        "runtimeFraction": 0.06,
+        "sceneDescription": "Elle Woods arrives at \"Harvard\" for the first time and attends student orientation in a manicured, brick-lined quad.",
+        "anchorElement": "The university campus portrayed as Harvard.",
+        "approxTimecode": "~00:18",
+        "runtimeFraction": 0.19,
         "runtimeThird": 1,
         "runtimeQuartile": 1
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.06
+        "earliestSafeFraction": 0.19
       },
       "wouldPassStrict": false
     },
     {
-      "proactivePrompt": "Ever wonder where Elle Woods really went to Harvard?",
-      "factCategory": "location",
-      "factHeader": "Harvard's Campus Was Actually Southern California",
+      "proactivePrompt": "Discover the inspiration behind Elle's iconic pink style.",
+      "factCategory": "costume/prop",
+      "factHeader": "Elle's colorful laptop reflects her unique style.",
       "factBeats": [
         {
-          "text": "Despite being set at Harvard University, the majority of 'Legally Blonde' was filmed at various Southern California universities.",
-          "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
+          "text": "Costume designer Sophie de Rakoff established Elle's signature pink aesthetic after observing sorority life during research for the film.",
+          "sourceUrl": "https://www.thenewdaily.com.au/entertainment/movies/2021/07/11/legally-blonde-movie-feminist",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "For scenes depicting Elle's arrival and class schedule pickup, Kerckhoff Hall at the University of California, Los Angeles (UCLA) was used.",
-          "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
+          "text": "This \"broad and varied palette\" was largely due to Elle's \"ever-changing wardrobe\" throughout the film.",
+          "sourceUrl": "http://www.dvdmg.com/legallyblonde.shtml",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "The California Institute of Technology (Caltech) in Pasadena also served as a stand-in for parts of Harvard's campus.",
-          "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "The Bovard Administration Building at the University of Southern California (USC) can also be spotted in the background of some campus scenes.",
-          "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
+          "text": "The author of the original novel, Amanda Brown, also embraced a similar personal style, writing her manuscript on pink paper with a pink furry pen.",
+          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/legally-blonde-behind-the-scenes-facts_uk_6a468bc4e4b03060a84cc7d1",
           "sourceModality": "text",
           "sourceTimestamp": null
         }
       ],
       "followUps": [
-        "Which other films used real university campuses?",
-        "What was the production designer's vision for Harvard?",
-        "Where else was Legally Blonde filmed?"
+        "What inspired the book?",
+        "Who designed Elle's outfits?",
+        "Where was Harvard filmed?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "Elle arrives at Harvard, standing out from the muted tones of the other students with her bright pink outfits and bubbly personality.",
-        "anchorElement": "The various campus buildings standing in for Harvard University.",
-        "approxTimecode": "0:17",
-        "runtimeFraction": 0.18,
+        "sceneDescription": "In her first class, Elle pulls out a colorful, curvaceous laptop that starkly contrasts with the sea of black PCs used by her classmates.",
+        "anchorElement": "The iBook G3 \"Tangerine\" laptop used by Elle Woods.",
+        "approxTimecode": "~00:24",
+        "runtimeFraction": 0.25,
         "runtimeThird": 1,
-        "runtimeQuartile": 1
+        "runtimeQuartile": 2
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.18
+        "earliestSafeFraction": 0.25
       },
-      "wouldPassStrict": false
+      "wouldPassStrict": true
     },
     {
-      "proactivePrompt": "Ever wonder where Paulette's salon was really located?",
-      "factCategory": "location",
-      "factHeader": "Neptune's Beauty Nook was a real California storefront.",
+      "proactivePrompt": "How did Elle's signature pink style come to be?",
+      "factCategory": "costume/prop",
+      "factHeader": "Sophie de Rakoff's pink-everything decision",
       "factBeats": [
         {
-          "text": "The exterior of \"Neptune's Beauty Nook\" was a real storefront, not a studio set.",
-          "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
+          "text": "Costume designer Sophie de Rakoff and Reese Witherspoon conducted research at a sorority house.",
+          "sourceUrl": "https://www.thenewdaily.com.au/entertainment/movies/2021/07/11/legally-blonde-movie-feminist",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "The production team transformed what was an empty storefront into the memorable beauty salon for the movie.",
-          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-legally-blonde-filmed",
+          "text": "During their visit, they observed that everyone in the sorority house was wearing pink.",
+          "sourceUrl": "https://www.thenewdaily.com.au/entertainment/movies/2021/07/11/legally-blonde-movie-feminist",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "While the film is largely set in Massachusetts, the majority of the production, including this salon, took place in and around Los Angeles.",
-          "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
+          "text": "This observation established pink as a key aesthetic for Elle Woods' personality and identity in the movie.",
+          "sourceUrl": "https://www.thenewdaily.com.au/entertainment/movies/2021/07/11/legally-blonde-movie-feminist",
           "sourceModality": "text",
           "sourceTimestamp": null
         }
       ],
       "followUps": [
-        "Where else in California did they film Legally Blonde?",
-        "What's at this address now?",
-        "Was the interior of the salon also a real location?"
+        "What other outfits did Elle wear?",
+        "Who designed Elle's costumes?",
+        "What inspired the film's story?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "Elle befriends Paulette at her salon, \"Neptune's Beauty Nook,\" finding a non-judgmental friend in her new environment.",
-        "anchorElement": "The \"Neptune's Beauty Nook\" salon set.",
-        "approxTimecode": "0:33",
-        "runtimeFraction": 0.34,
+        "sceneDescription": "Tricked by Vivian, Elle arrives at a party in a pink Playboy bunny costume, only to find no one else is dressed up.",
+        "anchorElement": "The design of the pink Playboy bunny outfit.",
+        "approxTimecode": "~00:35",
+        "runtimeFraction": 0.36,
         "runtimeThird": 2,
         "runtimeQuartile": 2
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.34
+        "earliestSafeFraction": 0.36
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "proactivePrompt": "Uncover the spontaneous reaction to Enrique.",
+      "factCategory": "actor",
+      "factHeader": "Greg Serano's Enrique Inspired Improvised Line",
+      "factBeats": [
+        {
+          "text": "Enrique's denial of his relationship during testimony prompted a dramatic, improvised line from his boyfriend.",
+          "sourceUrl": "https://www.businessinsider.com/legally-blonde-ali-larter-film-secrets-screenwriters-interview-2021-6",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Actor Jason Christopher, who played Enrique's boyfriend, created the line \"You b----!\"",
+          "sourceUrl": "https://www.businessinsider.com/legally-blonde-ali-larter-film-secrets-screenwriters-interview-2021-6",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Christopher improvised this outburst during rehearsals for the scene.",
+          "sourceUrl": "https://www.businessinsider.com/legally-blonde-ali-larter-film-secrets-screenwriters-interview-2021-6",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        }
+      ],
+      "followUps": [
+        "Who is Jason Christopher?",
+        "What other lines were improvised?",
+        "Tell me more about Enrique."
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "The prosecution's \"star witness,\" Enrique Salvatore, gives his dramatic (and false) testimony about having an affair with Brooke.",
+        "anchorElement": "The performance and characterization of Enrique by actor Greg Serano.",
+        "approxTimecode": "01:18:00",
+        "runtimeFraction": 0.81,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.81
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "proactivePrompt": "Discover how the trial changed from the book.",
+      "factCategory": "filming",
+      "factHeader": "The murder trial wasn't in the original script",
+      "factBeats": [
+        {
+          "text": "The film is based on a 2001 novel by Amanda Brown, which was inspired by her own life experiences at Stanford Law School.",
+          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/legally-blonde-behind-the-scenes-facts_uk_6a468bc4e4b03060a84cc7d1",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Screenwriters Karen McCullah and Kirsten Smith were brought on to adapt the book for the screen.",
+          "sourceUrl": "https://scriptmag.com/style-and-structure-in-legally-blonde",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "In the original manuscript, the central legal case was not a murder trial, and Elle ended up with a professor.",
+          "sourceUrl": "https://www.thenewdaily.com.au/entertainment/movies/2021/07/11/legally-blonde-movie-feminist",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        }
+      ],
+      "followUps": [
+        "What else changed from the book?",
+        "Who is Amanda Brown?",
+        "What was the original ending?"
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "After Elle gets Enrique to reveal his boyfriend's name is Chuck, a man in the gallery stands up and furiously outs himself.",
+        "anchorElement": "The on-screen action of Chuck (the boyfriend) standing up and yelling \"You bitch!\" at Enrique.",
+        "approxTimecode": "01:23:00",
+        "runtimeFraction": 0.86,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.86
       },
       "wouldPassStrict": false
     },
     {
-      "proactivePrompt": "Did you catch the detail on Bruiser's game-day shirt?",
+      "proactivePrompt": "What's the story behind Elle's iconic pink suit?",
       "factCategory": "costume/prop",
-      "factHeader": "Bruiser's pink velour shirt was a custom creation.",
+      "factHeader": "Elle's pink suit was a statement.",
       "factBeats": [
         {
-          "text": "The bubble-gum pink velour shirt worn by Bruiser was embellished with faceted magenta sequins.",
-          "sourceUrl": "https://www.juliensauctions.com/en/items/102264/legally-blonde-bruiser-woods-custom-made-costume",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "The sequins on the shirt were arranged and sewn to resemble floral blossoms.",
-          "sourceUrl": "https://www.juliensauctions.com/en/items/102264/legally-blonde-bruiser-woods-custom-made-costume",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "This custom Y2K number was worn by the canine actor, Moonie, as Bruiser Woods.",
-          "sourceUrl": "https://www.juliensauctions.com/en/items/102264/legally-blonde-bruiser-woods-custom-made-costume",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Bruiser wears this outfit when Elle watches Warner play football.",
-          "sourceUrl": "https://www.juliensauctions.com/en/items/102264/legally-blonde-bruiser-woods-custom-made-costume",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        }
-      ],
-      "followUps": [
-        "What other outfits did Bruiser wear?",
-        "Tell me more about the costumes in the film.",
-        "Who designed Bruiser's wardrobe?"
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "Elle tries to get Warner's attention at a touch football game by studying nearby.",
-        "anchorElement": "Bruiser's custom pink velour shirt with magenta sequins, worn by the canine actor, Moonie.",
-        "approxTimecode": "00:58:30",
-        "runtimeFraction": 0.61,
-        "runtimeThird": 2,
-        "runtimeQuartile": 3
-      },
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.61
-      },
-      "wouldPassStrict": true
-    },
-    {
-      "proactivePrompt": "Ever wonder where this courtroom scene was really filmed?",
-      "factCategory": "location",
-      "factHeader": "The Historic Courthouse Behind Elle's Trial",
-      "factBeats": [
-        {
-          "text": "The pivotal courtroom scenes in Legally Blonde were filmed on location at the Old Orange County Courthouse in Santa Ana, California.",
-          "sourceUrl": "https://www.travelsantaana.com/media/film/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "This historic building, dedicated in 1901, is a popular choice for film productions.",
-          "sourceUrl": "https://www.travelsantaana.com/media/film/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Specifically, Courtroom No. 1, which is beautifully restored, is highly prized by filmmakers.",
-          "sourceUrl": "https://www.travelsantaana.com/media/film/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        }
-      ],
-      "followUps": [
-        "What other movies were filmed here?",
-        "Tell me more about the Old Orange County Courthouse.",
-        "Who was the production designer for this film?"
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "The murder trial begins, with key scenes taking place in a large, wood-paneled courtroom.",
-        "anchorElement": "The main courtroom set.",
-        "approxTimecode": "1:10",
-        "runtimeFraction": 0.73,
-        "runtimeThird": 3,
-        "runtimeQuartile": 3
-      },
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": true
-    },
-    {
-      "proactivePrompt": "Ever wonder about the meaning behind Elle's iconic pink courtroom outfit?",
-      "factCategory": "costume/prop",
-      "factHeader": "Elle's final pink outfit was a deliberate statement of self-acceptance.",
-      "factBeats": [
-        {
-          "text": "Costume designer Sophie de Rakoff confirmed that Elle's bright pink courtroom outfit was chosen to represent her embracing her authentic self.",
+          "text": "When Elle Woods entered the courtroom in head-to-toe pink, she was upholding a cinematic tradition of using the color to intersect femininity and power.",
           "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "The outfit was intended to be a statement of confidence and self-knowledge, refusing to let others diminish her.",
+          "text": "Her outfit included a pink dress with a satin sash, cuffs, and lapels, paired with pink sandals, a pink bag, pink lips, and pink nails.",
           "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "The creative team decided pink would be Elle's signature color after visiting real-life sorority houses.",
-          "sourceUrl": "https://en.wikipedia.org/wiki/Legally_Blonde",
+          "text": "The design subtly referenced traditional male suiting with the shape of the cuffs and lapels, and even included sparkly cufflinks.",
+          "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Costume designer Sophie de Rakoff stated that Elle \"needed to be her most true self at this moment.\"",
+          "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "This entire outfit was a statement of Elle's confidence, self-knowledge, and refusal to let others diminish her.",
+          "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
           "sourceModality": "text",
           "sourceTimestamp": null
         }
       ],
       "followUps": [
-        "What other outfits define Elle's journey?",
-        "How did the costume designer choose other colors for the film?",
-        "What was the inspiration for Elle's overall style?"
+        "What other outfits did Elle wear?",
+        "Who designed Elle's costumes?",
+        "What does pink symbolize in film?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "For her victorious moment in court, Elle wears a powerful, monochromatic bright pink dress, fully embracing her identity.",
-        "anchorElement": "Elle's final pink courtroom outfit.",
-        "approxTimecode": "1:26",
+        "sceneDescription": "For her final cross-examination, Elle appears in her element, wearing a powerful, monochromatic pink suit.",
+        "anchorElement": "The design of Elle's final pink courtroom outfit.",
+        "approxTimecode": "~01:26",
         "runtimeFraction": 0.9,
         "runtimeThird": 3,
         "runtimeQuartile": 4
@@ -316,55 +316,55 @@
       "spoilerBoundary": {
         "earliestSafeFraction": 0.9
       },
-      "wouldPassStrict": true
+      "wouldPassStrict": false
     },
     {
-      "proactivePrompt": "Ever wonder where Elle's graduation was really filmed?",
+      "proactivePrompt": "Spot the real-world location of Elle's graduation.",
       "factCategory": "location",
-      "factHeader": "Elle's Harvard graduation was actually filmed in London.",
+      "factHeader": "Elle's Harvard graduation was filmed across the pond.",
       "factBeats": [
         {
-          "text": "The graduation ceremony, where Elle Woods delivers her valedictory speech, was filmed at Dulwich College in London.",
-          "sourceUrl": "https://www.mentalfloss.com/entertainment/movies/15-snappy-facts-about-legally-blonde",
+          "text": "The final graduation ceremony was added to the film after test audiences were unsatisfied with earlier endings.",
+          "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "This unusual location was chosen because lead actress Reese Witherspoon was already in England filming another movie.",
-          "sourceUrl": "https://thecinemaholic.com/where-was-legally-blonde-filmed/",
+          "text": "Test audiences didn't want the story to end with Elle getting a boyfriend, which was an earlier version of the finale.",
+          "sourceUrl": "https://perezhilton.com/legally-blonde-very-different-ending-oral-history/",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "The entire graduation sequence was a last-minute addition, created after test audiences wanted a more conclusive ending for Elle.",
-          "sourceUrl": "https://en.wikipedia.org/wiki/Legally_Blonde",
+          "text": "By the time the graduation ending was decided, Reese Witherspoon was already in London filming another movie.",
+          "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "Both Witherspoon and co-star Luke Wilson wore wigs for the scene, having changed their hairstyles for other film roles.",
-          "sourceUrl": "https://www.mentalfloss.com/entertainment/movies/15-snappy-facts-about-legally-blonde",
+          "text": "The \"rousing finale\" of Elle's graduation speech was filmed at Dulwich College in London.",
+          "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
           "sourceModality": "text",
           "sourceTimestamp": null
         }
       ],
       "followUps": [
-        "What other scenes were filmed in unexpected places?",
-        "Tell me more about the original ending.",
-        "Why did Reese Witherspoon wear a wig?"
+        "What were other endings?",
+        "Where was Harvard filmed?",
+        "What is Dulwich College?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "The film flashes forward to Elle's graduation, where she is the class-elected speaker, delivering a powerful commencement address.",
-        "anchorElement": "The graduation ceremony location.",
-        "approxTimecode": "1:29",
-        "runtimeFraction": 0.93,
+        "sceneDescription": "The film concludes two years later with Elle giving the valedictorian speech at her graduation ceremony.",
+        "anchorElement": "The filming location for the graduation ceremony.",
+        "approxTimecode": "~01:30",
+        "runtimeFraction": 0.94,
         "runtimeThird": 3,
         "runtimeQuartile": 4
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.93
+        "earliestSafeFraction": 0.94
       },
-      "wouldPassStrict": false
+      "wouldPassStrict": true
     }
   ],
   "titleEnablement": {
@@ -372,32 +372,35 @@
     "approved_cards": 8,
     "density_target": 10,
     "cards_per_runtime_quartile": {
-      "1": 3,
-      "2": 1,
-      "3": 2,
-      "4": 2
+      "1": 2,
+      "2": 2,
+      "3": 0,
+      "4": 4
     },
     "distinct_categories": [
+      "actor",
       "costume/prop",
-      "location"
+      "filming",
+      "location",
+      "set_design"
     ],
     "rules": {
       "cards_per_10_min": false,
       "min_six_cards": true,
-      "card_in_each_quartile": true,
-      "max_40pct_single_quartile": true,
+      "card_in_each_quartile": false,
+      "max_40pct_single_quartile": false,
       "min_two_categories": true
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 2,
-    "anchors_proposed": 21,
+    "anchors_proposed": 18,
     "cards_emitted": 8,
-    "would_pass_strict": 4,
-    "cards_rejected": 13,
+    "would_pass_strict": 5,
+    "cards_rejected": 10,
     "errors": 0,
-    "elapsed_seconds": 278.6,
+    "elapsed_seconds": 620.7,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

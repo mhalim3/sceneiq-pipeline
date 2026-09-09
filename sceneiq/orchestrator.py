@@ -8,8 +8,10 @@ and writes the emit + review payloads.
 
 from __future__ import annotations
 
+import hashlib
 import logging
 import math
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
@@ -19,6 +21,7 @@ from .gemini import GeminiClient, SchemaViolation
 from .models import Anchor, CardRecord
 from .pipeline.anchors import discover_anchors
 from .pipeline.assemble import assemble_card
+from .pipeline.curiosity import judge_curiosity
 from .pipeline.leads import wikipedia_leads
 from .pipeline.research import research_anchor
 from .pipeline.validate import validate_card
@@ -42,6 +45,28 @@ def _process_anchor(
         record.card = card
         result = validate_card(client, film_info, card, packet, cfg)
         record.validation = result
+
+        # Stage 2 value selection: viewer-POV curiosity judge, run only on
+        # cards that survived the factual gates.
+        if result.passed and cfg.use_curiosity_judge:
+            cur = judge_curiosity(client, card, cfg)
+            result.curiosity = cur
+            if cur["verdict"] == "reject":
+                result.passed = False
+                result.rejection_reasons.append(f"curiosity: {cur['reasoning']}")
+            elif cur["composite"] < cfg.curiosity_min_composite:
+                if cfg.evidence_mode == "strict":
+                    result.passed = False
+                    result.rejection_reasons.append(
+                        f"curiosity: composite {cur['composite']} < {cfg.curiosity_min_composite}"
+                    )
+                else:
+                    result.flags.append(
+                        f"curiosity: composite {cur['composite']} below bar (relaxed)"
+                    )
+            elif cur["verdict"] == "approve_with_edit":
+                result.flags.append(f"curiosity edit suggestion: {cur['suggested_edit']}")
+
         record.status = "emitted" if result.passed else "rejected"
         mark = "✓" if result.passed else "✗"
         log.info("  %s %s — %s", mark, anchor.anchor_element,
@@ -55,11 +80,28 @@ def _process_anchor(
     return record
 
 
+_STOPWORDS = {
+    "the", "a", "an", "is", "was", "were", "in", "of", "that", "this", "to",
+    "for", "on", "at", "by", "with", "as", "its", "his", "her", "their",
+}
+
+
+def _semantic_key(r: CardRecord) -> str:
+    """Scene-agnostic dedup key (scene-sense approach): normalized header +
+    beat text with stopwords removed, hashed. Catches the same fact anchored
+    to two different scenes."""
+    text = (r.card.fact_header + " " + " ".join(b.text for b in r.card.fact_beats)).lower()
+    tokens = [t for t in re.split(r"[^a-z0-9]+", text) if t and t not in _STOPWORDS]
+    return hashlib.sha256(" ".join(sorted(set(tokens))).encode()).hexdigest()[:16]
+
+
 def _dedup(records: list[CardRecord]) -> list[CardRecord]:
-    """Drop emitted cards whose headers are near-duplicates (keep first)."""
+    """Semantic-key collision first, fuzzy header similarity second."""
     kept: list[CardRecord] = []
+    seen_keys: set[str] = set()
     for r in records:
-        dup = any(
+        key = _semantic_key(r)
+        dup = key in seen_keys or any(
             SequenceMatcher(
                 None, r.card.fact_header.lower(), k.card.fact_header.lower()
             ).ratio() > 0.75
@@ -70,6 +112,7 @@ def _dedup(records: list[CardRecord]) -> list[CardRecord]:
             if r.validation:
                 r.validation.rejection_reasons.append("dedup: near-duplicate of an emitted card")
         else:
+            seen_keys.add(key)
             kept.append(r)
     return kept
 

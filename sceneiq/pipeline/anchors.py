@@ -26,8 +26,13 @@ moment: a location, garment, prop, set, song, person on screen, action, or techn
 
 Rules:
 - Anchors must be physically observable in the frame (or audible) at that moment.
+- Be SPECIFIC. "Sophie de Rakoff's pink-everything decision" — not "costume design". \
+"The bend-and-snap origin at a Los Angeles bar" — not "the bend and snap". Prefer \
+specific named-person stories, quantified production facts, or surprising creative \
+decisions. Fewer, deeper anchors beat more, shallower ones.
 - Spread anchors across the WHOLE runtime: roughly a third in the first third of the \
 film, a third in the middle, a third in the final act. Do not cluster in the opening act.
+- Cover diverse categories where the film supports it — do not cluster in one.
 - Prefer anchors where insider knowledge likely exists (real filming locations, \
 licensed songs, notable costumes/props, filming techniques, historical grounding, \
 actors visible in the scene).
@@ -37,8 +42,10 @@ historical, costume/prop.
 career-arc trivia, anything not tied to what is on screen.
 
 For each anchor give: the scene (what's on screen), the specific anchor element, an \
-approximate timecode and runtime fraction (0.0-1.0), the closest category, and a \
-search hint describing what an insider fact about it would look like.
+approximate timecode and runtime fraction (0.0-1.0), the closest category, a search \
+hint describing what an insider fact would look like, and 2-4 search_queries a \
+search engine could actually run — not "tell me about production". Include the film \
+title in at least one query per anchor.
 
 Also state the film's approximate runtime in minutes.
 {avoid_block}{leads_block}"""
@@ -74,6 +81,11 @@ _ANCHOR_SCHEMA = {
                     "approx_timecode": {"type": "string"},
                     "category_guess": {"type": "string", "enum": config.FACT_CATEGORIES},
                     "search_hint": {"type": "string"},
+                    "search_queries": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "maxItems": 4,
+                    },
                 },
                 "required": [
                     "scene_description",
@@ -82,6 +94,7 @@ _ANCHOR_SCHEMA = {
                     "approx_timecode",
                     "category_guess",
                     "search_hint",
+                    "search_queries",
                 ],
             },
         },
@@ -139,6 +152,7 @@ def discover_anchors(
             approx_timecode=a["approx_timecode"],
             category_guess=a["category_guess"],
             search_hint=a["search_hint"],
+            search_queries=list(a.get("search_queries") or [])[:4],
         )
         for a in data.get("anchors", [])
     ][: cfg.max_anchors]

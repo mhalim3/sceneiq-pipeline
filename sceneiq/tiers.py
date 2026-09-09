@@ -36,9 +36,12 @@ def classify_domain(url: str) -> str:
         return "B"
     if dom in config.C_TIER_DOMAINS:
         return "C"
-    # Subdomain-level checks (e.g. en.wikipedia.org already handled by
-    # registered domain; youtube handled as unknown -> judge decides, since
-    # an official studio/GQ channel video can be primary evidence).
+    # Government records (film permits, city open data) are domain authorities
+    # per the PRD's A-tier examples (NYC Open Data, FilmLA).
+    if dom.endswith(".gov"):
+        return "A"
+    # Otherwise unknown -> judge decides, since an official studio/GQ channel
+    # video can be primary evidence despite an unranked domain.
     return "unknown"
 
 
