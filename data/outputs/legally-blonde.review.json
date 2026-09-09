@@ -1,0 +1,733 @@
+{
+  "film": {
+    "title": "Legally Blonde",
+    "year": 2001,
+    "runtime_minutes": 96,
+    "input_prompt": "Legally Blonde (2001)"
+  },
+  "candidates": [
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "Elle's big date with Warner Huntington III, where she expects a proposal but is unceremoniously dumped.",
+        "anchor_element": "The romantic, candlelit restaurant.",
+        "runtime_fraction": 0.06,
+        "approx_timecode": "0:06:00",
+        "category_guess": "location",
+        "search_hint": "What Beverly Hills restaurant was used for the breakup scene in Legally Blonde?",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "The opening sequence at the Delta Nu sorority house where Elle gets ready for her date.",
+        "anchor_element": "The Delta Nu sorority house.",
+        "runtime_fraction": 0.02,
+        "approx_timecode": "0:01:30",
+        "category_guess": "location",
+        "search_hint": "What mansion was used as the filming location for the Delta Nu sorority house in Legally Blonde?",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "In her first class, Elle is unprepared and introduces herself with the iconic line, \"Woods, comma, Elle.\" She is using a distinctive, colorful laptop.",
+        "anchor_element": "Elle's orange Apple iBook G3 laptop.",
+        "runtime_fraction": 0.22,
+        "approx_timecode": "0:21:00",
+        "category_guess": "costume/prop",
+        "search_hint": "Why was the tangerine Apple iBook G3 'Clamshell' chosen as Elle Woods' laptop?",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "proactivePrompt": "Curious about the story behind Elle's iconic bunny costume?",
+        "factCategory": "costume/prop",
+        "factHeader": "Elle's Playboy Bunny costume had a unique fitting location.",
+        "factBeats": [
+          {
+            "text": "The fitting for Elle Woods' memorable Playboy Bunny costume was held in the back room of a Los Angeles lingerie store.",
+            "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "Costume designer Sophie de Rakoff recalled doing the fitting at Trashy Lingerie on La Cienega.",
+            "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "De Rakoff described the fitting room as being \"with all the bras and the weird people wandering around.\"",
+            "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          }
+        ],
+        "followUps": [
+          "What other costumes were challenging to create?",
+          "Who designed the costumes for the film?",
+          "Where did they find inspiration for Elle's outfits?"
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Vivian tricks Elle into attending a party in a costume, where Elle arrives dressed as a Playboy Bunny.",
+          "anchorElement": "The Playboy Bunny costume.",
+          "approxTimecode": "0:33:00",
+          "runtimeFraction": 0.34,
+          "runtimeThird": 2,
+          "runtimeQuartile": 2
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.34
+        }
+      },
+      "anchor": {
+        "scene_description": "Vivian tricks Elle into attending a party in a costume, where Elle arrives dressed as a Playboy Bunny.",
+        "anchor_element": "The Playboy Bunny costume.",
+        "runtime_fraction": 0.34,
+        "approx_timecode": "0:33:00",
+        "category_guess": "costume/prop",
+        "search_hint": "Inspiration and design details for Elle Woods' Playboy Bunny costume.",
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+          "title": "bustle.com",
+          "domain": "bustle.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Elle Woods",
+            "Sophie de Rakoff",
+            "Trashy Lingerie",
+            "La Cienega"
+          ],
+          "verbatim_misses": [
+            "Playboy Bunny",
+            "Los Angeles"
+          ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The fitting for Elle Woods' memorable Playboy Bunny costume was held in the back room of a Los Angeles lingerie store.",
+          "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+          "supporting_passage": "This was our first movie, so we went and did the fitting at Trashy Lingerie on La Cienega in the back room with all the bras and the weird people wandering around."
+        },
+        {
+          "beat": "Costume designer Sophie de Rakoff recalled doing the fitting at Trashy Lingerie on La Cienega.",
+          "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+          "supporting_passage": "This was our first movie, so we went and did the fitting at Trashy Lingerie on La Cienega in the back room with all the bras and the weird people wandering around."
+        },
+        {
+          "beat": "De Rakoff described the fitting room as being \"with all the bras and the weird people wandering around.\"",
+          "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+          "supporting_passage": "This was our first movie, so we went and did the fitting at Trashy Lingerie on La Cienega in the back room with all the bras and the weird people wandering around."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "url_provenance": true,
+          "domain_tier": true,
+          "claim_entailment": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "rejection_reasons": [],
+        "flags": [
+          "verbatim: could not confirm ['Playboy Bunny', 'Los Angeles'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "proactivePrompt": "Curious about the story behind Elle's signature style?",
+        "factCategory": "costume/prop",
+        "factHeader": "Elle's iconic pink sequin bikini was a deliberate part of her character's style.",
+        "factBeats": [
+          {
+            "text": "Costume designer Sophie de Rakoff created Elle Woods' personal style with precision.",
+            "sourceUrl": "https://www.thezoereport.com/culture/elle-costume-designer",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "Everything Elle wore, including her sequined bikini, was part of this carefully constructed wardrobe.",
+            "sourceUrl": "https://www.thezoereport.com/culture/elle-costume-designer",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "The sequined bikini became as recognizable as the character herself, reflecting the impact of her unique look.",
+            "sourceUrl": "https://www.thezoereport.com/culture/elle-costume-designer",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          }
+        ],
+        "followUps": [
+          "What other outfits defined Elle's look?",
+          "How did costumes help tell Elle's story?"
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Elle creates her unique Harvard video admissions essay, which includes her posing in a pool.",
+          "anchorElement": "Elle's sparkling pink sequin bikini.",
+          "approxTimecode": "0:12:00",
+          "runtimeFraction": 0.13,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.13
+        }
+      },
+      "anchor": {
+        "scene_description": "Elle creates her unique Harvard video admissions essay, which includes her posing in a pool.",
+        "anchor_element": "Elle's sparkling pink sequin bikini.",
+        "runtime_fraction": 0.13,
+        "approx_timecode": "0:12:00",
+        "category_guess": "costume/prop",
+        "search_hint": "Who designed the pink sequin bikini for Reese Witherspoon in Legally Blonde's Harvard video?",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.thezoereport.com/culture/elle-costume-designer",
+          "title": "thezoereport.com",
+          "domain": "thezoereport.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Elle Woods",
+            "Sophie de Rakoff",
+            "Harvard",
+            "Playboy",
+            "The Zoe Report"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Costume designer Sophie de Rakoff created Elle Woods' personal style with precision.",
+          "sourceUrl": "https://www.thezoereport.com/culture/elle-costume-designer",
+          "supporting_passage": "Costume designer Sophie de Rakoff built Elle's personal style so precisely that everything she wore, from her sequined bikini to her pink Playboy bunny outfit, became as recognizable as the character herself."
+        },
+        {
+          "beat": "Everything Elle wore, including her sequined bikini, was part of this carefully constructed wardrobe.",
+          "sourceUrl": "https://www.thezoereport.com/culture/elle-costume-designer",
+          "supporting_passage": "Costume designer Sophie de Rakoff built Elle's personal style so precisely that everything she wore, from her sequined bikini to her pink Playboy bunny outfit, became as recognizable as the character herself."
+        },
+        {
+          "beat": "The sequined bikini became as recognizable as the character herself, reflecting the impact of her unique look.",
+          "sourceUrl": "https://www.thezoereport.com/culture/elle-costume-designer",
+          "supporting_passage": "Costume designer Sophie de Rakoff built Elle's personal style so precisely that everything she wore, from her sequined bikini to her pink Playboy bunny outfit, became as recognizable as the character herself."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "url_provenance": true,
+          "domain_tier": true,
+          "claim_entailment": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "proactivePrompt": "Ever wonder about the story behind Elle's iconic pink suit?",
+        "factCategory": "costume/prop",
+        "factHeader": "Elle's Iconic Pink Suit Was Fitted in a Lingerie Shop",
+        "factBeats": [
+          {
+            "text": "Costume designer Sophie de Rakoff fitted Elle's memorable pink leather driving suit in the stockroom of a Los Angeles lingerie shop.",
+            "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "De Rakoff conceived the outfit as a literal and unique interpretation of what Elle Woods would deem appropriate for driving to Harvard.",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Legally_Blonde",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "This leather driving costume would later become actress Reese Witherspoon's favorite ensemble from the film.",
+            "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          }
+        ],
+        "followUps": [
+          "Tell me more about the costume designer.",
+          "What other outfits did Elle wear?",
+          "What was the inspiration for Elle's style?"
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Elle arrives at Harvard Law School for the first time, standing out in a head-to-toe pink leather outfit, with her dog Bruiser in a matching sweater.",
+          "anchorElement": "The pink leather driving suit.",
+          "approxTimecode": "0:17:00",
+          "runtimeFraction": 0.18,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.18
+        }
+      },
+      "anchor": {
+        "scene_description": "Elle arrives at Harvard Law School for the first time, standing out in a head-to-toe pink leather outfit, with her dog Bruiser in a matching sweater.",
+        "anchor_element": "The pink leather driving suit.",
+        "runtime_fraction": 0.18,
+        "approx_timecode": "0:17:00",
+        "category_guess": "costume/prop",
+        "search_hint": "Details on the costume design and creation of Elle Woods' pink leather arrival outfit.",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+          "title": "bustle.com",
+          "domain": "bustle.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Sophie de Rakoff",
+            "Elle Woods",
+            "Harvard",
+            "Los Angeles",
+            "Trashy Lingerie",
+            "La Cienega",
+            "Reese Witherspoon",
+            "Legally Blonde",
+            "2001"
+          ],
+          "verbatim_misses": [
+            "October 2023"
+          ]
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Legally_Blonde",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org",
+          "tier": "C",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Sophie de Rakoff",
+            "Elle Woods",
+            "Harvard",
+            "Los Angeles",
+            "Trashy Lingerie",
+            "La Cienega",
+            "Reese Witherspoon",
+            "Legally Blonde",
+            "2001"
+          ],
+          "verbatim_misses": [
+            "October 2023"
+          ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Costume designer Sophie de Rakoff fitted Elle's memorable pink leather driving suit in the stockroom of a Los Angeles lingerie shop.",
+          "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+          "supporting_passage": "In an October 2023 interview, de Rakoff described fitting the famous bunny costume for another scene, stating, \"I was fitting her for another costume at the same time — it was the leather driving costume.\" She specified this took place \"at Trashy Lingerie on La Cienega in the back room with all the bras and the weird people wandering around.\""
+        },
+        {
+          "beat": "De Rakoff conceived the outfit as a literal and unique interpretation of what Elle Woods would deem appropriate for driving to Harvard.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Legally_Blonde",
+          "supporting_passage": "De Rakoff explained her character-based approach to the film's costumes: \"So, I took each situation and interpreted what would be appropriate in a unique way. Driving to Harvard? A leather driving suit.\""
+        },
+        {
+          "beat": "This leather driving costume would later become actress Reese Witherspoon's favorite ensemble from the film.",
+          "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
+          "supporting_passage": "When discussing the fitting at Trashy Lingerie, de Rakoff referred to the leather driving costume as \"A 'fit that would one day become Witherspoon's favorite Elle Woods ensemble.\""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "url_provenance": true,
+          "domain_tier": true,
+          "claim_entailment": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 1,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "rejection_reasons": [
+          "rubric: factual_accuracy 0/2 (must be 2)"
+        ],
+        "flags": [
+          "verbatim: could not confirm ['October 2023'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "The murder trial of Brooke Taylor-Windham begins.",
+        "anchor_element": "The main courtroom.",
+        "runtime_fraction": 0.71,
+        "approx_timecode": "1:08:00",
+        "category_guess": "location",
+        "search_hint": "Which historic courthouse was the filming location for the trial in Legally Blonde?",
+        "runtime_third": 3
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "proactivePrompt": "Ever wonder where Paulette's salon was located?",
+        "factCategory": "location",
+        "factHeader": "Paulette's 'Neptune's Beauty Nook' was a real storefront.",
+        "factBeats": [
+          {
+            "text": "Paulette's 'Neptune's Beauty Nook' was filmed at a real storefront location.",
+            "sourceUrl": "https://giggster.com/guide/movie-location/where-was-legally-blonde-filmed",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "The specific address for the salon was 625 South Myrtle Avenue in Monrovia, California.",
+            "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMxRnN6oT9s4Tr8lydUqXd6-9StMaOyd90IF92EqUJC8cTyjCR2dD1K63iTHcNwpdVhiZWj8EH-Nno-i5UqppYkW4TH317V43UJy4UdZXu7hAgtacPC_ulgKd05mS8pwoAG69wK2SOjV-I-du4sl2ysNCwA_0=",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "The beauty salon set was created inside an empty storefront at this address.",
+            "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMxRnN6oT9s4Tr8lydUqXd6-9StMaOyd90IF92EqUJC8cTyjCR2dD1K63iTHcNwpdVhiZWj8EH-Nno-i5UqppYkW4TH317V43UJy4UdZXu7hAgtacPC_ulgKd05mS8pwoAG69wK2SOjV-I-du4sl2ysNCwA_0=",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          }
+        ],
+        "followUps": [
+          "What other real-world locations were used in the film?",
+          "Did the salon still exist after filming?",
+          "Tell me more about Monrovia, California."
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Elle befriends manicurist Paulette Bonafonté at her salon, \"Neptune's Beauty Nook.\"",
+          "anchorElement": "The \"Neptune's Beauty Nook\" salon set.",
+          "approxTimecode": "0:38:00",
+          "runtimeFraction": 0.4,
+          "runtimeThird": 2,
+          "runtimeQuartile": 2
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.0
+        }
+      },
+      "anchor": {
+        "scene_description": "Elle befriends manicurist Paulette Bonafonté at her salon, \"Neptune's Beauty Nook.\"",
+        "anchor_element": "The \"Neptune's Beauty Nook\" salon set.",
+        "runtime_fraction": 0.4,
+        "approx_timecode": "0:38:00",
+        "category_guess": "location",
+        "search_hint": "Where was the 'Neptune's Beauty Nook' salon filmed for Legally Blonde?",
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMxRnN6oT9s4Tr8lydUqXd6-9StMaOyd90IF92EqUJC8cTyjCR2dD1K63iTHcNwpdVhiZWj8EH-Nno-i5UqppYkW4TH317V43UJy4UdZXu7hAgtacPC_ulgKd05mS8pwoAG69wK2SOjV-I-du4sl2ysNCwA_0=",
+          "title": "seeing-stars.com",
+          "domain": "google.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": false,
+          "body_kind": "",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://giggster.com/guide/movie-location/where-was-legally-blonde-filmed",
+          "title": "giggster.com",
+          "domain": "giggster.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Paulette's 'Neptune's Beauty Nook' was filmed at a real storefront location.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-legally-blonde-filmed",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The specific address for the salon was 625 South Myrtle Avenue in Monrovia, California.",
+          "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMxRnN6oT9s4Tr8lydUqXd6-9StMaOyd90IF92EqUJC8cTyjCR2dD1K63iTHcNwpdVhiZWj8EH-Nno-i5UqppYkW4TH317V43UJy4UdZXu7hAgtacPC_ulgKd05mS8pwoAG69wK2SOjV-I-du4sl2ysNCwA_0=",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The beauty salon set was created inside an empty storefront at this address.",
+          "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMxRnN6oT9s4Tr8lydUqXd6-9StMaOyd90IF92EqUJC8cTyjCR2dD1K63iTHcNwpdVhiZWj8EH-Nno-i5UqppYkW4TH317V43UJy4UdZXu7hAgtacPC_ulgKd05mS8pwoAG69wK2SOjV-I-du4sl2ysNCwA_0=",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "url_provenance": false
+        },
+        "rubric": {},
+        "rejection_reasons": [
+          "url_provenance: unresolved ['https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMxRnN6oT9s4Tr8lydUqXd6-9StMaOyd90IF92EqUJC8cTyjCR2dD1K63iTHcNwpdVhiZWj8EH-Nno-i5UqppYkW4TH317V43UJy4UdZXu7hAgtacPC_ulgKd05mS8pwoAG69wK2SOjV-I-du4sl2ysNCwA_0=']"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "The defense team, including Elle, visits their client, Brooke Taylor-Windham, at a women's prison.",
+        "anchor_element": "The prison visiting room.",
+        "runtime_fraction": 0.61,
+        "approx_timecode": "0:59:00",
+        "category_guess": "location",
+        "search_hint": "What real prison was used for the jail scenes in Legally Blonde?",
+        "runtime_third": 2
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "proactivePrompt": "There's a powerful reason Elle chose pink for her final courtroom look.",
+        "factCategory": "costume/prop",
+        "factHeader": "Elle's pink dress was a deliberate statement of self-acceptance.",
+        "factBeats": [
+          {
+            "text": "Costume designer Sophie de Rakoff deliberately chose Elle's bright pink dress for her final courtroom summation.",
+            "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "De Rakoff stated that Elle \"needed to be her most true self at this moment.\"",
+            "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "By returning to her signature color in a professional setting, Elle was making a statement about confidence and self-knowledge.",
+            "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          },
+          {
+            "text": "The dress symbolized Elle's refusal to let other people \"dim her light.\"",
+            "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+            "sourceModality": "text",
+            "sourceTimestamp": null
+          }
+        ],
+        "followUps": [
+          "What other outfits had hidden meanings?",
+          "How did Elle's style evolve throughout the film?",
+          "Who was the costume designer for Legally Blonde?"
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "For her final summation in court, Elle wears a bright pink, professional dress, embracing her identity.",
+          "anchorElement": "Elle's final pink courtroom dress.",
+          "approxTimecode": "1:26:00",
+          "runtimeFraction": 0.9,
+          "runtimeThird": 3,
+          "runtimeQuartile": 4
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.9
+        }
+      },
+      "anchor": {
+        "scene_description": "For her final summation in court, Elle wears a bright pink, professional dress, embracing her identity.",
+        "anchor_element": "Elle's final pink courtroom dress.",
+        "runtime_fraction": 0.9,
+        "approx_timecode": "1:26:00",
+        "category_guess": "costume/prop",
+        "search_hint": "Who designed Elle Woods' final pink dress for the courtroom victory scene?",
+        "runtime_third": 3
+      },
+      "sources": [
+        {
+          "url": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+          "title": "tomandlorenzo.com",
+          "domain": "tomandlorenzo.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Elle Woods",
+            "Sophie de Rakoff",
+            "Legally Blonde",
+            "Tom + Lorenzo",
+            "2001",
+            "2020",
+            "07"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Costume designer Sophie de Rakoff deliberately chose Elle's bright pink dress for her final courtroom summation.",
+          "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+          "supporting_passage": "The decision for Elle Woods to wear a bright pink dress during her victorious courtroom summation was a deliberate choice to show the character embracing her authentic self at her most pivotal moment. Attributed to: Sophie de Rakoff, Costume Designer"
+        },
+        {
+          "beat": "De Rakoff stated that Elle \"needed to be her most true self at this moment.\"",
+          "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+          "supporting_passage": "Supporting quote: In an article analyzing the film's costumes, the publication quotes de Rakoff directly: “She needed to be her most true self at this moment.”"
+        },
+        {
+          "beat": "By returning to her signature color in a professional setting, Elle was making a statement about confidence and self-knowledge.",
+          "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+          "supporting_passage": "The article elaborates that by returning to her signature color in a professional setting, Elle was making a statement about \"confidence, self-knowledge, and the refusal to have other people dim her light.\""
+        },
+        {
+          "beat": "The dress symbolized Elle's refusal to let other people \"dim her light.\"",
+          "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
+          "supporting_passage": "The article elaborates that by returning to her signature color in a professional setting, Elle was making a statement about \"confidence, self-knowledge, and the refusal to have other people dim her light.\""
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "url_provenance": true,
+          "domain_tier": true,
+          "claim_entailment": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "Two years later, Elle gives the valedictorian speech at her Harvard Law graduation ceremony.",
+        "anchor_element": "The graduation hall location.",
+        "runtime_fraction": 0.96,
+        "approx_timecode": "1:32:00",
+        "category_guess": "location",
+        "search_hint": "Why was the graduation scene filmed at Dulwich College in London, and what challenges did it present?",
+        "runtime_third": 3
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null
+    }
+  ]
+}
