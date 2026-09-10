@@ -73,6 +73,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--content-id", metavar="CONTENT_ID",
                    help="fetch Moments scene rows from Databricks by Tubi content_id (see sceneiq/databricks_moments.py "
                         "for required env vars); implies --moments on the fetched file")
+    p.add_argument("--title-lookup", action="store_true",
+                   help="resolve the prompt to a Tubi content_id via the Databricks content "
+                        "table, then fetch its Moments rows (full chain: title -> content_id -> scenes)")
     p.add_argument("--strict-verbatim", action="store_true",
                    help="hard-reject cards whose named entities aren't verbatim in fetched source bodies")
     p.add_argument("--deep-model", default=config.DEEP_MODEL)
@@ -103,9 +106,28 @@ def main(argv: list[str] | None = None) -> int:
 
     moments_path = args.moments
     try:
-        if args.content_id:
+        content_id = args.content_id
+        if args.title_lookup and not content_id:
+            from .databricks_moments import resolve_content_id
+            # Strip a trailing "(year)" for the name match.
+            bare_title = re.sub(r"\s*\(\d{4}\)\s*$", "", args.prompt)
+            matches = resolve_content_id(bare_title)
+            movies = [m for m in matches if str(m.get("content_type", "")).upper() == "MOVIE"]
+            candidates = movies or matches
+            if not candidates:
+                print(f"error: no content_id found for {bare_title!r}", file=sys.stderr)
+                return 2
+            if len(candidates) > 1:
+                print(f"multiple matches for {bare_title!r} — rerun with --content-id:", file=sys.stderr)
+                for m in candidates:
+                    print(f"  {m.get('content_id')}: {m.get('content_name')} ({m.get('content_type')})",
+                          file=sys.stderr)
+                return 2
+            content_id = str(candidates[0]["content_id"])
+            print(f"resolved {bare_title!r} -> content_id {content_id}", file=sys.stderr)
+        if content_id:
             from .databricks_moments import fetch_moments
-            moments_path = str(fetch_moments(args.content_id))
+            moments_path = str(fetch_moments(content_id))
         result = orchestrator.run(args.prompt, cfg, moments_path=moments_path)
     except RuntimeError as e:
         print(f"error: {e}", file=sys.stderr)

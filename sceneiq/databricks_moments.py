@@ -4,17 +4,17 @@ Replaces the manual query-and-download loop. Requires:
   pip install databricks-sql-connector
 
 Environment (put them in the project .env — it's gitignored):
-  DATABRICKS_SERVER_HOSTNAME   e.g. tubi-prod.cloud.databricks.com
+  DATABRICKS_HOST              e.g. tubi-dev.cloud.databricks.com
+                               (DATABRICKS_SERVER_HOSTNAME also accepted)
   DATABRICKS_HTTP_PATH         SQL warehouse path, e.g. /sql/1.0/warehouses/abc123
   DATABRICKS_TOKEN             personal access token
-  SCENEIQ_MOMENTS_QUERY        optional override; default queries
-                               core_dev.tubidw.tubi_moments_scene_catalog
+  DATABRICKS_CATALOG           default core_dev
+  DATABRICKS_SCHEMA            default tubidw
+  DATABRICKS_CONTENT_TABLE     default content_info (title -> content_id lookup)
+  SCENEIQ_MOMENTS_QUERY        optional full-query override
 
 The result rows are cached as data/moments/<content_id>.csv — the same format
 as a manual Databricks CSV export, consumed by moments.load_moments_csv.
-
-Finding the content_id for a title: `tubi-cms ax content-titles ...` (the
-tubi-cms CLI resolves titles against Athena) or CMSUI search.
 """
 
 from __future__ import annotations
@@ -29,9 +29,64 @@ log = logging.getLogger("sceneiq")
 _CACHE_DIR = Path("data/moments")
 
 _DEFAULT_QUERY = (
-    "select * from core_dev.tubidw.tubi_moments_scene_catalog "
+    "select * from {catalog}.{schema}.tubi_moments_scene_catalog "
     "where content_id = {content_id}"
 )
+
+
+def _env(name: str, default: str = "") -> str:
+    return os.environ.get(name, default)
+
+
+def _host() -> str:
+    return _env("DATABRICKS_HOST") or _env("DATABRICKS_SERVER_HOSTNAME")
+
+
+def _connect():
+    try:
+        from databricks import sql as dbsql
+    except ImportError as e:
+        raise RuntimeError(
+            "databricks-sql-connector is not installed. Run:\n"
+            "  pip install databricks-sql-connector"
+        ) from e
+    missing = [n for n, v in [
+        ("DATABRICKS_HOST", _host()),
+        ("DATABRICKS_HTTP_PATH", _env("DATABRICKS_HTTP_PATH")),
+        ("DATABRICKS_TOKEN", _env("DATABRICKS_TOKEN")),
+    ] if not v]
+    if missing:
+        raise RuntimeError(f"Missing env vars for Databricks: {missing}")
+    return dbsql.connect(
+        server_hostname=_host(),
+        http_path=_env("DATABRICKS_HTTP_PATH"),
+        access_token=_env("DATABRICKS_TOKEN"),
+    )
+
+
+def _run_query(query: str) -> tuple[list[str], list]:
+    with _connect() as conn:
+        with conn.cursor() as cur:
+            cur.execute(query)
+            columns = [d[0] for d in cur.description]
+            return columns, cur.fetchall()
+
+
+def resolve_content_id(title: str) -> list[dict]:
+    """Look up candidate content_ids for a title in the content table."""
+    catalog = _env("DATABRICKS_CATALOG", "core_dev")
+    schema = _env("DATABRICKS_SCHEMA", "tubidw")
+    table = _env("DATABRICKS_CONTENT_TABLE", "content_info")
+    safe_title = title.replace("'", "''")
+    query = (
+        f"select content_id, content_name, content_type "
+        f"from {catalog}.{schema}.{table} "
+        f"where lower(content_name) like lower('%{safe_title}%') "
+        f"limit 10"
+    )
+    log.info("  resolving title %r via %s.%s.%s", title, catalog, schema, table)
+    columns, rows = _run_query(query)
+    return [dict(zip(columns, r)) for r in rows]
 
 
 def fetch_moments(content_id: str, refresh: bool = False) -> Path:
@@ -47,32 +102,15 @@ def fetch_moments(content_id: str, refresh: bool = False) -> Path:
         log.info("  moments cache hit: %s", cached)
         return cached
 
-    try:
-        from databricks import sql as dbsql
-    except ImportError as e:
-        raise RuntimeError(
-            "databricks-sql-connector is not installed. Run:\n"
-            "  pip install databricks-sql-connector"
-        ) from e
-
-    missing = [k for k in ("DATABRICKS_SERVER_HOSTNAME", "DATABRICKS_HTTP_PATH",
-                           "DATABRICKS_TOKEN") if not os.environ.get(k)]
-    if missing:
-        raise RuntimeError(f"Missing env vars for Databricks Moments fetch: {missing}")
-
-    query = os.environ.get("SCENEIQ_MOMENTS_QUERY", _DEFAULT_QUERY).format(
-        content_id=content_id, title_id=content_id
+    query = _env("SCENEIQ_MOMENTS_QUERY") or _DEFAULT_QUERY
+    query = query.format(
+        content_id=content_id,
+        title_id=content_id,
+        catalog=_env("DATABRICKS_CATALOG", "core_dev"),
+        schema=_env("DATABRICKS_SCHEMA", "tubidw"),
     )
     log.info("  querying Databricks: content_id=%s", content_id)
-    with dbsql.connect(
-        server_hostname=os.environ["DATABRICKS_SERVER_HOSTNAME"],
-        http_path=os.environ["DATABRICKS_HTTP_PATH"],
-        access_token=os.environ["DATABRICKS_TOKEN"],
-    ) as conn:
-        with conn.cursor() as cur:
-            cur.execute(query)
-            columns = [d[0] for d in cur.description]
-            rows = cur.fetchall()
+    columns, rows = _run_query(query)
     if not rows:
         raise RuntimeError(f"No Moments rows returned for content_id={content_id}")
 
