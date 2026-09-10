@@ -128,6 +128,86 @@ def _dedup(records: list[CardRecord]) -> list[CardRecord]:
     return kept
 
 
+_TOPIC_DEDUP_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "groups": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "indices": {"type": "array", "items": {"type": "integer"}},
+                    "keep_index": {"type": "integer"},
+                    "story": {"type": "string"},
+                },
+                "required": ["indices", "keep_index", "story"],
+            },
+        },
+    },
+    "required": ["groups"],
+}
+
+_TOPIC_DEDUP_PROMPT = """You are deduplicating pause-screen fact cards for the film \
+{film_title}. Some cards below tell the SAME underlying story in different wordings \
+(e.g. four variations of "the cast cooked for real in a fully functional kitchen").
+
+CARDS:
+{card_list}
+
+Group cards that tell substantially the same story — the same core fact or the same \
+production narrative. Two cards are the same story even when details differ slightly. \
+They are DIFFERENT stories when each has a distinct headline fact a viewer would \
+experience as new (e.g. "Cooper based his character on three chefs" vs "a Michelin \
+chef scored the film's realism 9/10" are different even though both involve realism).
+
+Report ONLY groups of 2 or more cards. For each group choose keep_index — prefer \
+cards marked strict=True, then the card with the most specific, distinct details. \
+Unique cards must not appear in any group."""
+
+
+def _topic_dedup(client: GeminiClient, cfg: config.PipelineConfig,
+                 film_info: dict, records: list[CardRecord]) -> list[CardRecord]:
+    if len(records) < 2:
+        return records
+    card_list = "\n".join(
+        f"[{i}] (strict={bool(r.validation and r.validation.checks.get('would_pass_strict'))}) "
+        f"SHORT: {r.card.short_version} | LONG: {r.card.long_description[:300]}"
+        for i, r in enumerate(records)
+    )
+    try:
+        data = client.structured(
+            cfg.fast_model,
+            _TOPIC_DEDUP_PROMPT.format(
+                film_title=film_info.get("title", ""), card_list=card_list
+            ),
+            _TOPIC_DEDUP_SCHEMA,
+            temperature=0.0,
+        )
+    except SchemaViolation:
+        return records  # dedup is best-effort; never lose cards to a bad call
+    drop: dict[int, str] = {}
+    for g in data.get("groups", []):
+        indices = [i for i in g.get("indices", []) if 0 <= i < len(records)]
+        keep = g.get("keep_index")
+        if len(indices) < 2 or keep not in indices:
+            continue
+        for i in indices:
+            if i != keep and i not in drop:
+                drop[i] = g.get("story", "same story")
+    kept = []
+    for i, r in enumerate(records):
+        if i in drop:
+            r.status = "rejected"
+            if r.validation:
+                r.validation.rejection_reasons.append(
+                    f"dedup: same story as a kept card ({drop[i]})"
+                )
+            log.info("  ✗ topic-dedup: %s (%s)", r.card.short_version, drop[i])
+        else:
+            kept.append(r)
+    return kept
+
+
 def run(
     title_prompt: str,
     cfg: config.PipelineConfig | None = None,
@@ -189,6 +269,8 @@ def run(
 
     emitted = [r for r in records if r.status == "emitted"]
     emitted = _dedup(emitted)
+    if cfg.use_topic_dedup:
+        emitted = _topic_dedup(client, cfg, film_info, emitted)
     emitted.sort(key=lambda r: r.card.runtime_fraction)
     emitted = emitted[: cfg.max_cards]
 

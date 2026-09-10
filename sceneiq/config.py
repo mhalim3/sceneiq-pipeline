@@ -102,6 +102,11 @@ class PipelineConfig:
     sources_per_anchor: int = 8
     # Per-beat verbatim anchor must fuzzy-match its source body at this ratio.
     verbatim_anchor_min_ratio: float = 0.8
+    # Topic-cluster dedup: an LLM pass over the approved set that collapses
+    # cards telling the same underlying story in different wordings (string
+    # dedup can't catch "actors cooked for real" x4). Keeps the strongest
+    # card per story.
+    use_topic_dedup: bool = True
     # Viewer-POV curiosity judge. ADVISORY by default: scores and verdicts
     # are recorded in the review file to triage human review, but never
     # reject a card — viewer value is scored manually by reviewers per the
