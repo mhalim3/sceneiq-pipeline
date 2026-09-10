@@ -67,6 +67,12 @@ def main(argv: list[str] | None = None) -> int:
                    help="relaxed: 1 editorial source suffices, weak beats drop; "
                         "strict: PRD-exact gates (safety/spoiler identical in both)")
     p.add_argument("--workers", type=int, default=8, help="parallel anchor workers")
+    p.add_argument("--moments", metavar="PATH",
+                   help="Tubi Moments JSON for this title — real scene data replaces "
+                        "model-reconstructed scene structure and timecodes")
+    p.add_argument("--databricks-title", metavar="TITLE_ID",
+                   help="fetch Moments JSON from Databricks (see sceneiq/databricks_moments.py "
+                        "for required env vars); implies --moments on the fetched file")
     p.add_argument("--strict-verbatim", action="store_true",
                    help="hard-reject cards whose named entities aren't verbatim in fetched source bodies")
     p.add_argument("--deep-model", default=config.DEEP_MODEL)
@@ -95,8 +101,12 @@ def main(argv: list[str] | None = None) -> int:
         fast_model=args.fast_model,
     )
 
+    moments_path = args.moments
     try:
-        result = orchestrator.run(args.prompt, cfg)
+        if args.databricks_title:
+            from .databricks_moments import fetch_moments
+            moments_path = str(fetch_moments(args.databricks_title))
+        result = orchestrator.run(args.prompt, cfg, moments_path=moments_path)
     except RuntimeError as e:
         print(f"error: {e}", file=sys.stderr)
         return 2

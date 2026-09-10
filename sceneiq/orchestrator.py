@@ -20,7 +20,8 @@ from . import config
 from .fetch import FetchCache
 from .gemini import GeminiClient, SchemaViolation
 from .models import Anchor, CardRecord
-from .pipeline.anchors import discover_anchors
+from .moments import TitleMoments, load_moments
+from .pipeline.anchors import discover_anchors, discover_anchors_from_moments
 from .pipeline.assemble import assemble_card
 from .pipeline.curiosity import judge_curiosity
 from .pipeline.leads import wikipedia_leads
@@ -127,15 +128,27 @@ def _dedup(records: list[CardRecord]) -> list[CardRecord]:
     return kept
 
 
-def run(title_prompt: str, cfg: config.PipelineConfig | None = None, api_key: str | None = None) -> dict:
+def run(
+    title_prompt: str,
+    cfg: config.PipelineConfig | None = None,
+    api_key: str | None = None,
+    moments_path: str | None = None,
+) -> dict:
     cfg = cfg or config.PipelineConfig()
     client = GeminiClient(api_key=api_key)
     t0 = time.time()
 
+    moments: TitleMoments | None = None
+    if moments_path:
+        moments = load_moments(moments_path)
+        log.info("Tubi Moments loaded: %s — %d scenes, %d min",
+                 moments.title, len(moments.scenes), moments.runtime_minutes)
+
     leads = ""
     if cfg.use_wikipedia_leads:
         log.info("Stage 0/4: fetching Wikipedia discovery leads (C-tier, leads only) ...")
-        leads = wikipedia_leads(title_prompt, timeout_s=cfg.http_timeout_s)
+        leads = wikipedia_leads(moments.title if moments else title_prompt,
+                                timeout_s=cfg.http_timeout_s)
 
     # Discovery for pass N+1 only needs pass N's anchor LIST (the avoid-list),
     # not its card results — so each pass's anchors are submitted to a shared
@@ -150,7 +163,10 @@ def run(title_prompt: str, cfg: config.PipelineConfig | None = None, api_key: st
         for p in range(max(1, cfg.passes)):
             pass_label = f"pass {p + 1}/{cfg.passes}" if cfg.passes > 1 else ""
             log.info("Stage 1/4: discovering scene anchors for %r %s...", title_prompt, pass_label)
-            fi, anchors = discover_anchors(client, title_prompt, cfg, leads=leads, explored=explored)
+            if moments:
+                fi, anchors = discover_anchors_from_moments(client, moments, cfg, explored=explored)
+            else:
+                fi, anchors = discover_anchors(client, title_prompt, cfg, leads=leads, explored=explored)
             film_info = film_info or fi
             # Drop near-duplicates of anchors already explored in earlier passes.
             anchors = [
