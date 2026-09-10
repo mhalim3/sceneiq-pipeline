@@ -108,7 +108,8 @@ Scope note: **movies only** — episodic content is out of scope for this cut.
 | Per-claim supporting passage in review record | judge `supporting_passage` → `claim_evidence` in review.json |
 | Video sources: transcript as searchable layer + cross-modal corroboration | `_fetch_transcript` + `cross_modal` check |
 | Title sufficiency (1 card/10 min, ≥6 cards, quartile coverage, ≤40%/quartile, ≥2 categories) | `orchestrator.run` finalizer, per-rule report |
-| Source-yield study metrics (per title, never blended) | `python -m sceneiq report` |
+| Source-yield study metrics (per title, never blended) | `python -m sceneiq report` — cards/hour, approval by category AND evidence class, thirds+quartiles, rejection buckets |
+| Viewer value scored by humans (PRD rubric) | `humanReview` block per candidate in review.json; report aggregates human scores; model curiosity scores are advisory triage only (`curiosity_gating=False`) |
 | Deep/fast model split, schema mode, tenacity retries | `gemini.py` |
 
 ### Not aligned — called out

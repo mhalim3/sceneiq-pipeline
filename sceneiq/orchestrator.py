@@ -48,25 +48,33 @@ def _process_anchor(
         result = validate_card(client, film_info, card, packet, cfg)
         record.validation = result
 
-        # Stage 2 value selection: viewer-POV curiosity judge, run only on
-        # cards that survived the factual gates.
+        # Viewer-value triage: curiosity judge runs on cards that survived
+        # the factual gates. Advisory by default — scores land in the review
+        # record to prioritize human review; viewer value is scored manually
+        # per the PRD rubric. cfg.curiosity_gating restores model gating.
         if result.passed and cfg.use_curiosity_judge:
             cur = judge_curiosity(client, card, cfg)
             result.curiosity = cur
-            if cur["verdict"] == "reject":
-                result.passed = False
-                result.rejection_reasons.append(f"curiosity: {cur['reasoning']}")
-            elif cur["composite"] < cfg.curiosity_min_composite:
-                if cfg.evidence_mode == "strict":
+            if cfg.curiosity_gating:
+                if cur["verdict"] == "reject":
                     result.passed = False
-                    result.rejection_reasons.append(
-                        f"curiosity: composite {cur['composite']} < {cfg.curiosity_min_composite}"
-                    )
-                else:
+                    result.rejection_reasons.append(f"curiosity: {cur['reasoning']}")
+                elif cur["composite"] < cfg.curiosity_min_composite:
+                    if cfg.evidence_mode == "strict":
+                        result.passed = False
+                        result.rejection_reasons.append(
+                            f"curiosity: composite {cur['composite']} < {cfg.curiosity_min_composite}"
+                        )
+                    else:
+                        result.flags.append(
+                            f"curiosity: composite {cur['composite']} below bar (relaxed)"
+                        )
+            else:
+                if cur["verdict"] != "approve":
                     result.flags.append(
-                        f"curiosity: composite {cur['composite']} below bar (relaxed)"
+                        f"curiosity (advisory): {cur['verdict']} — {cur['reasoning']}"
                     )
-            elif cur["verdict"] == "approve_with_edit":
+            if cur.get("suggested_edit"):
                 result.flags.append(f"curiosity edit suggestion: {cur['suggested_edit']}")
 
         record.status = "emitted" if result.passed else "rejected"

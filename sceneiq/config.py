@@ -102,10 +102,13 @@ class PipelineConfig:
     sources_per_anchor: int = 8
     # Per-beat verbatim anchor must fuzzy-match its source body at this ratio.
     verbatim_anchor_min_ratio: float = 0.8
-    # Viewer-POV curiosity judge (PRD Stage 2 value selection). A "reject"
-    # verdict kills the card in both modes; composite below the minimum kills
-    # in strict and flags in relaxed.
+    # Viewer-POV curiosity judge. ADVISORY by default: scores and verdicts
+    # are recorded in the review file to triage human review, but never
+    # reject a card — viewer value is scored manually by reviewers per the
+    # PRD human rubric. Set curiosity_gating=True to let the model gate
+    # (pre-manual-review behavior).
     use_curiosity_judge: bool = True
+    curiosity_gating: bool = False
     curiosity_min_composite: float = 0.5
     extra: dict = field(default_factory=dict)
 

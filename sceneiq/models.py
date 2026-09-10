@@ -200,4 +200,21 @@ class CardRecord:
                 for b in (self.card.fact_beats if self.card else [])
             ],
             "validation": self.validation.to_dict() if self.validation else None,
+            # Manual scoring slot (PRD human rubric, 0/1/2 per dimension).
+            # Reviewers fill this in; `sceneiq report` aggregates human
+            # viewer-value scores from here. Model curiosity scores under
+            # validation.curiosity are advisory triage only.
+            "humanReview": {
+                "state": "pending",          # pending | approved | rejected | escalate
+                "reviewer": None,
+                "scores": {
+                    "factual_accuracy_sourcing": None,
+                    "scene_relevance_grounding": None,
+                    "primitive_conformance": None,
+                    "viewer_value": None,
+                    "clarity_findability": None,
+                    "spoiler_safety": None,
+                },
+                "notes": None,
+            },
         }
