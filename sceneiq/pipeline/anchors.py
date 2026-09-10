@@ -205,6 +205,7 @@ def discover_anchors_from_moments(
         "title": moments.title,
         "year": data.get("film_year"),
         "runtime_minutes": moments.runtime_minutes,
+        "duration_sec": moments.duration_sec,
         "input_prompt": moments.title,
         "anchor_source": "tubi_moments",
     }
@@ -218,6 +219,7 @@ def discover_anchors_from_moments(
                 scene_description=scene.as_context(),
                 anchor_element=a["anchor_element"],
                 runtime_fraction=scene.runtime_fraction,
+                end_fraction=scene.end_fraction,
                 approx_timecode=scene.start_time,
                 category_guess=a["category_guess"],
                 search_hint=a["search_hint"],

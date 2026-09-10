@@ -24,7 +24,7 @@ _CARD_SCHEMA = {
             "properties": {
                 "shortVersion": {"type": "string"},
                 "longDescription": {"type": "string"},
-                "factCategory": {"type": "string", "enum": config.FACT_CATEGORIES},
+                "factCategory": {"type": "string", "enum": config.FACT_CATEGORIES + ["general"]},
                 "factBeats": {
                     "type": "array",
                     "items": {
@@ -84,11 +84,11 @@ costume designers, named crew).
 - Preserve hedges ("reportedly") — never upgrade a claim beyond its source.
 
 HARD RULES:
+- {scene_rule}
 - Every fact must be about {film_title} SPECIFICALLY — this production, this cast, \
 this location, this song. Generic facts about filmmaking, prop design, or industry \
 practice that do not concern this film are NOT Scene Facts; if that's all the \
 sources offer, ABSTAIN.
-- The card must point at the anchor element visible/audible in THIS scene.
 - No plot information from later in the film than this scene.
 - No casting drama, feuds, career-arc trivia, or negative claims about talent/partners.
 - factCategory: one of actor, music, location, set_design, filming, historical, costume/prop.
@@ -130,6 +130,14 @@ def assemble_card(
             scene_description=packet.anchor.scene_description,
             anchor_element=packet.anchor.anchor_element,
             source_blocks=_source_blocks(packet),
+            scene_rule=(
+                "The card must point at the anchor element visible/audible in THIS scene."
+                if packet.anchor.scope == "scene" else
+                "This is a GENERAL title card, shown at any point during the film: the "
+                "fact must be about the film as a whole (production, records, myths it "
+                "created, reception). No scene tie is required. factCategory may be "
+                "'general' when none of the 7 fits."
+            ),
             abstain_rule=_ABSTAIN_RELAXED if cfg.evidence_mode == "relaxed" else _ABSTAIN_STRICT,
         ),
         _CARD_SCHEMA,
@@ -154,6 +162,8 @@ def assemble_card(
         fact_category=c["factCategory"],
         fact_beats=beats,
         follow_ups=c["followUps"],
+        scope=packet.anchor.scope,
+        scene_end_fraction=packet.anchor.end_fraction,
         scene_description=packet.anchor.scene_description,
         anchor_element=packet.anchor.anchor_element,
         runtime_fraction=packet.anchor.runtime_fraction,

@@ -26,6 +26,7 @@ from .pipeline.assemble import assemble_card
 from .pipeline.curiosity import judge_curiosity
 from .pipeline.leads import wikipedia_leads
 from .pipeline.research import research_anchor
+from .pipeline.title_sweep import title_sweep
 from .pipeline.validate import validate_card
 
 log = logging.getLogger("sceneiq")
@@ -208,6 +209,70 @@ def _topic_dedup(client: GeminiClient, cfg: config.PipelineConfig,
     return kept
 
 
+def _schedule(emitted: list[CardRecord], duration_s: float,
+              cfg: config.PipelineConfig) -> dict:
+    """Assign exact display windows to every card.
+
+    Scene cards: [scene start, scene end + pad], floored at their spoiler
+    boundary. General cards: fill every timeline gap they're spoiler-eligible
+    for; leftover generals get [spoiler floor, end]. Returns the coverage
+    report engineers need: covered fraction + any uncovered gaps.
+    """
+    if duration_s <= 0:
+        return {"fraction": 0.0, "uncovered": []}
+    scene_records = [r for r in emitted if r.card.scope == "scene"]
+    general_records = [r for r in emitted if r.card.scope == "general"]
+
+    for r in scene_records:
+        c = r.card
+        start = max(c.runtime_fraction, c.spoiler_boundary_fraction) * duration_s
+        end = (c.scene_end_fraction or 0.0) * duration_s
+        if end <= start:
+            end = start + 120.0
+        end = min(end + cfg.scene_card_pad_s, duration_s)
+        c.display_windows = [[round(start, 1), round(end, 1)]]
+
+    # Merge covered intervals, find gaps.
+    ivs = sorted(w for r in scene_records for w in r.card.display_windows)
+    merged: list[list[float]] = []
+    for a, b in ivs:
+        if merged and a <= merged[-1][1]:
+            merged[-1][1] = max(merged[-1][1], b)
+        else:
+            merged.append([a, b])
+    gaps, cursor = [], 0.0
+    for a, b in merged:
+        if a > cursor:
+            gaps.append([cursor, a])
+        cursor = max(cursor, b)
+    if cursor < duration_s:
+        gaps.append([cursor, duration_s])
+
+    uncovered = []
+    for r in general_records:
+        r.card.display_windows = []
+    for gap in gaps:
+        eligible = [r for r in general_records
+                    if r.card.spoiler_boundary_fraction * duration_s <= gap[0] + 1.0]
+        if eligible:
+            # Least-loaded general card takes the gap (spread the filler).
+            pick = min(eligible, key=lambda r: len(r.card.display_windows))
+            pick.card.display_windows.append([round(gap[0], 1), round(gap[1], 1)])
+        else:
+            uncovered.append([round(gap[0], 1), round(gap[1], 1)])
+    # Generals that filled nothing are still showable across their safe span.
+    for r in general_records:
+        if not r.card.display_windows:
+            floor = r.card.spoiler_boundary_fraction * duration_s
+            r.card.display_windows = [[round(floor, 1), round(duration_s, 1)]]
+
+    uncovered_len = sum(b - a for a, b in uncovered)
+    return {
+        "fraction": round(1.0 - uncovered_len / duration_s, 4),
+        "uncovered": uncovered,
+    }
+
+
 def run(
     title_prompt: str,
     cfg: config.PipelineConfig | None = None,
@@ -264,6 +329,24 @@ def run(
                 pool.submit(_process_anchor, client, film_info, a, cfg, cache)
                 for a in anchors
             ]
+            # Title-level fact sweep (once, after film identity is known):
+            # search-first facts, anchored to a Moments scene when supported,
+            # otherwise GENERAL cards the player may show at any time.
+            if p == 0 and cfg.use_title_sweep:
+                log.info("Stage 1b: title-level fact sweep ...")
+                sweep_anchors = [
+                    a for a in title_sweep(client, film_info, cfg, moments=moments)
+                    if not any(
+                        SequenceMatcher(None, a.anchor_element.lower(), e.lower()).ratio() > 0.8
+                        for e in explored
+                    )
+                ]
+                explored.extend(a.anchor_element for a in sweep_anchors)
+                anchors_proposed += len(sweep_anchors)
+                futures += [
+                    pool.submit(_process_anchor, client, film_info, a, cfg, cache)
+                    for a in sweep_anchors
+                ]
         for f in as_completed(futures):
             records.append(f.result())
 
@@ -271,29 +354,37 @@ def run(
     emitted = _dedup(emitted)
     if cfg.use_topic_dedup:
         emitted = _topic_dedup(client, cfg, film_info, emitted)
-    emitted.sort(key=lambda r: r.card.runtime_fraction)
-    emitted = emitted[: cfg.max_cards]
+    # Scene cards sort by position and respect max_cards; general cards are
+    # kept in full (bounded by sweep_facts_max) — they're the coverage filler.
+    scene_records = sorted(
+        (r for r in emitted if r.card.scope == "scene"),
+        key=lambda r: r.card.runtime_fraction,
+    )[: cfg.max_cards]
+    general_records = [r for r in emitted if r.card.scope == "general"]
+    emitted = scene_records + general_records
 
-    # Title sufficiency requirements (PRD, MVP, movies):
-    #   1. >= 1 approved card per 10 minutes of runtime, rounded up
-    #   2. >= 6 approved cards for a feature-length title
-    #   3. >= 1 card in each runtime quartile (titles > 40 min)
-    #   4. <= 40% of approved cards in any single quartile
-    #   5. >= 2 distinct fact categories
+    # Display schedule: exact windows for the player, 100% coverage target.
+    duration_s = float(film_info.get("duration_sec") or (film_info.get("runtime_minutes") or 0) * 60)
+    coverage = _schedule(emitted, duration_s, cfg)
+
+    # Title sufficiency requirements (PRD, MVP, movies). Position rules apply
+    # to scene-scoped cards; density counts everything; full-time coverage is
+    # the new engineering requirement.
     runtime_min = film_info.get("runtime_minutes") or 0
     quartiles = {1: 0, 2: 0, 3: 0, 4: 0}
-    for r in emitted:
+    for r in scene_records:
         quartiles[r.card.runtime_quartile] += 1
-    categories = {r.card.fact_category for r in emitted}
+    categories = {r.card.fact_category for r in emitted if r.card.fact_category != "general"}
     density_target = math.ceil(runtime_min / cfg.minutes_per_card) if runtime_min else cfg.min_cards_to_enable
     rules = {
         "cards_per_10_min": len(emitted) >= density_target,
         "min_six_cards": len(emitted) >= cfg.min_cards_to_enable,
         "card_in_each_quartile": runtime_min <= cfg.quartile_min_runtime
         or all(v > 0 for v in quartiles.values()),
-        "max_40pct_single_quartile": bool(emitted)
-        and max(quartiles.values()) / len(emitted) <= cfg.max_quartile_share,
+        "max_40pct_single_quartile": bool(scene_records)
+        and max(quartiles.values()) / len(scene_records) <= cfg.max_quartile_share,
         "min_two_categories": len(categories) >= cfg.min_categories,
+        "full_time_coverage": coverage["fraction"] >= 0.999,
     }
     enabled = all(rules.values())
 
@@ -311,9 +402,12 @@ def run(
         "titleEnablement": {
             "sceneiq_enabled": enabled,
             "approved_cards": len(emitted),
+            "scene_cards": len(scene_records),
+            "general_cards": len(general_records),
             "density_target": density_target,
             "cards_per_runtime_quartile": quartiles,
             "distinct_categories": sorted(categories),
+            "timeCoverage": coverage,
             "rules": rules,
         },
         "runStats": {

@@ -47,6 +47,8 @@ class MomentScene:
     start_seconds: float
     runtime_fraction: float
     summary: str
+    end_seconds: float = 0.0
+    end_fraction: float = 0.0
     setting: str = ""
     characters: list = field(default_factory=list)
     celebrities: list = field(default_factory=list)
@@ -141,15 +143,18 @@ def load_moments_csv(path: str | Path) -> TitleMoments:
     scenes = []
     for i, r in enumerate(rows):
         start = float(r.get("scene_start_ts") or 0.0)
+        end_s = float(r.get("scene_end_ts") or 0.0)
         themes = _json_list(r.get("iab_tier1_list", "")) + _json_list(r.get("iab_tier2_list", ""))
         scenes.append(
             MomentScene(
                 scene_index=i,
                 scene_type="content",
                 start_time=_seconds_to_hms(start),
-                end_time=_seconds_to_hms(float(r.get("scene_end_ts") or 0.0)),
+                end_time=_seconds_to_hms(end_s),
                 start_seconds=start,
                 runtime_fraction=min(1.0, start / duration) if duration else 0.0,
+                end_seconds=end_s,
+                end_fraction=min(1.0, end_s / duration) if duration else 0.0,
                 summary=r.get("description", "") or "",
                 celebrities=_json_list(r.get("cast_list", "")),
                 themes=themes + _json_list(r.get("sentiment_list", "")),
@@ -165,6 +170,7 @@ def load_moments_json(path: str | Path) -> TitleMoments:
     for s in data.get("scenes", []):
         sd = (s.get("content_desc") or {}).get("structured_data") or {}
         start_s = _hms_to_seconds(s.get("start_time", ""))
+        end_s = _hms_to_seconds(s.get("end_time", ""))
         scenes.append(
             MomentScene(
                 scene_index=int(s.get("scene_index", len(scenes))),
@@ -173,6 +179,8 @@ def load_moments_json(path: str | Path) -> TitleMoments:
                 end_time=s.get("end_time", ""),
                 start_seconds=start_s,
                 runtime_fraction=min(1.0, start_s / duration) if duration else 0.0,
+                end_seconds=end_s,
+                end_fraction=min(1.0, end_s / duration) if duration else 0.0,
                 summary=s.get("summary") or sd.get("scene_summary", "") or "",
                 setting=str(sd.get("setting", "") or ""),
                 characters=list(sd.get("characters") or []),

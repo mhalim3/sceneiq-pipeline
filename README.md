@@ -40,7 +40,13 @@ Options:
 
 Outputs:
 
-- **stdout** — the `sceneFacts` array (card contract JSON)
+- **stdout** — the `sceneFacts` array (card contract JSON). Cards carry
+  `scope` ("scene" | "general"), `shortVersion`/`longDescription`, and
+  `displayWindows` — the exact [start, end] segments during which the player
+  may show each card. Scene cards get their scene window (+pad); general
+  cards (title-level facts, no scene tie) fill every remaining gap, floored
+  at their spoiler boundary. `titleEnablement.timeCoverage` reports covered
+  fraction and any uncovered gaps; full coverage is an enablement rule.
 - `data/outputs/<title>.cards.json` — cards + title-enablement decision + run stats
 - `data/outputs/<title>.review.json` — every candidate's full journey (anchor,
   evidence packet, sources with tiers/evidence classes, per-check validation

@@ -102,6 +102,15 @@ class PipelineConfig:
     sources_per_anchor: int = 8
     # Per-beat verbatim anchor must fuzzy-match its source body at this ratio.
     verbatim_anchor_min_ratio: float = 0.8
+    # Title-level fact sweep: broad searches for the title's most-documented
+    # facts (myths the film created, records, production-wide details), each
+    # anchored to a Moments scene when one supports it, else emitted as a
+    # GENERAL card the player may show at any time after its spoiler floor.
+    use_title_sweep: bool = True
+    sweep_facts_max: int = 8
+    # Scene cards display from their scene start through scene end plus this
+    # padding (seconds). General cards fill the remaining timeline gaps.
+    scene_card_pad_s: float = 60.0
     # Topic-cluster dedup: an LLM pass over the approved set that collapses
     # cards telling the same underlying story in different wordings (string
     # dedup can't catch "actors cooked for real" x4). Keeps the strongest

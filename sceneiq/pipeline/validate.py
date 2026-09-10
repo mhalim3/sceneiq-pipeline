@@ -106,6 +106,7 @@ A wrong card is worse than no card. When uncertain on any check, score low / fai
 FILM: {film_title} ({film_year})
 CARD ANCHOR SCENE (~{timecode}, runtime fraction {fraction}): {scene_description}
 ANCHOR ELEMENT: {anchor_element}
+{scope_note}
 
 CANDIDATE CARD:
 factCategory: {category}
@@ -212,7 +213,9 @@ def validate_card(
     contract_ok = (
         3 <= len(card.fact_beats) <= 5
         and 2 <= len(card.follow_ups) <= 3
-        and card.fact_category in config.FACT_CATEGORIES
+        and card.fact_category in (
+            config.FACT_CATEGORIES + (["general"] if card.scope == "general" else [])
+        )
         and bool(card.short_version and card.long_description)
         and len(card.short_version) <= 80
         and all(b.source_url in src_by_url for b in card.fact_beats)
@@ -265,6 +268,14 @@ def validate_card(
             fraction=round(card.runtime_fraction, 2),
             scene_description=card.scene_description,
             anchor_element=card.anchor_element,
+            scope_note=(
+                "" if card.scope == "scene" else
+                "NOTE: this is a GENERAL card, not tied to a scene — the player may "
+                "show it at ANY point in the film. Score scene_grounding 2 when the "
+                "fact suits any-time display (a fact about the film as a whole). For "
+                "earliest_safe_fraction, report the earliest point at which showing "
+                "this fact spoils nothing (0.0 when it never spoils)."
+            ),
             short_version=card.short_version,
             category=card.fact_category,
             long_description=card.long_description,
@@ -285,9 +296,14 @@ def validate_card(
             card.fact_beats[i].supporting_passage = jb.get("supporting_passage", "")
 
     # Spoiler boundary and safety: identical hard gates in BOTH modes.
-    checks["spoiler_boundary"] = rubric["spoiler_safety"] >= 1 and (
-        judge["earliest_safe_fraction"] <= card.runtime_fraction + 0.02
-    )
+    # General cards never fail on position — their spoiler floor instead
+    # constrains the display windows the scheduler assigns them.
+    if card.scope == "general":
+        checks["spoiler_boundary"] = rubric["spoiler_safety"] >= 1
+    else:
+        checks["spoiler_boundary"] = rubric["spoiler_safety"] >= 1 and (
+            judge["earliest_safe_fraction"] <= card.runtime_fraction + 0.02
+        )
     checks["safety"] = judge["safety_pass"]
     if not checks["spoiler_boundary"]:
         result.rejection_reasons.append(
@@ -296,9 +312,12 @@ def validate_card(
         )
     if not judge["safety_pass"]:
         result.rejection_reasons.append("safety: maturity/partner-safety failure")
-    card.spoiler_boundary_fraction = min(
-        float(judge["earliest_safe_fraction"]), card.runtime_fraction
-    ) if checks["spoiler_boundary"] else float(judge["earliest_safe_fraction"])
+    if card.scope == "general":
+        card.spoiler_boundary_fraction = max(0.0, float(judge["earliest_safe_fraction"]))
+    else:
+        card.spoiler_boundary_fraction = min(
+            float(judge["earliest_safe_fraction"]), card.runtime_fraction
+        ) if checks["spoiler_boundary"] else float(judge["earliest_safe_fraction"])
 
     checks["taxonomy"] = judge["category_correct"]
     if not judge["category_correct"]:

@@ -37,9 +37,12 @@ class Anchor:
     anchor_element: str               # the specific thing the fact points at
     runtime_fraction: float           # 0.0-1.0 position in the film
     approx_timecode: str              # "~00:22" style, best effort
-    category_guess: str               # one of the 7 categories
+    category_guess: str               # one of the 7 categories (or "general")
     search_hint: str                  # what to look for in sources
     search_queries: list = field(default_factory=list)  # runnable queries (<=4)
+    end_fraction: float = 0.0         # scene end position (0 = unknown)
+    scope: str = "scene"              # scene | general
+    origin: str = "anchor_discovery"  # anchor_discovery | title_sweep
 
     @property
     def runtime_third(self) -> int:
@@ -94,6 +97,12 @@ class SceneFactCard:
     fact_category: str
     fact_beats: list                  # list[FactBeat], 3-5 (internal)
     follow_ups: list                  # list[str] (internal, not in contract)
+    scope: str = "scene"              # scene | general
+    scene_end_fraction: float = 0.0   # scene end (0 = unknown; scene scope)
+    # Display schedule, filled by the finalizer: list of [start_s, end_s]
+    # windows during which the player may show this card. Scene cards get
+    # their scene window; general cards fill coverage gaps.
+    display_windows: list = field(default_factory=list)
     # anchoring metadata (would come from Tubi Moments in production)
     scene_description: str = ""
     anchor_element: str = ""
@@ -142,19 +151,42 @@ class SceneFactCard:
                 "modality": src.modality if src else "text",
                 "timestamp": b.source_timestamp or None,
             })
-        return {
-            "factCategory": self.fact_category,
-            "shortVersion": self.short_version,
-            "longDescription": self.long_description,
-            "sources": sources,
-            "sceneAnchor": {
+        def _hms(sec: float) -> str:
+            sec = max(0, int(sec))
+            h, rem = divmod(sec, 3600)
+            m, s = divmod(rem, 60)
+            return f"{h:02d}:{m:02d}:{s:02d}"
+
+        scene_anchor = None
+        if self.scope == "scene":
+            scene_anchor = {
                 "sceneDescription": self.scene_description,
                 "anchorElement": self.anchor_element,
                 "approxTimecode": self.approx_timecode,
                 "runtimeFraction": round(self.runtime_fraction, 3),
                 "runtimeThird": self.runtime_third,
                 "runtimeQuartile": self.runtime_quartile,
-            },
+            }
+        return {
+            "scope": self.scope,
+            "factCategory": self.fact_category,
+            "shortVersion": self.short_version,
+            "longDescription": self.long_description,
+            "sources": sources,
+            "sceneAnchor": scene_anchor,
+            # For engineers: the exact windows during which the player may
+            # show this card. Guaranteed within [0, runtime]; the union of
+            # all cards' windows covers the full runtime when timeCoverage
+            # in titleEnablement reports 1.0.
+            "displayWindows": [
+                {
+                    "startSeconds": round(a, 1),
+                    "endSeconds": round(b, 1),
+                    "startTimecode": _hms(a),
+                    "endTimecode": _hms(b),
+                }
+                for a, b in self.display_windows
+            ],
             "spoilerBoundary": {
                 "earliestSafeFraction": round(self.spoiler_boundary_fraction, 3),
             },
