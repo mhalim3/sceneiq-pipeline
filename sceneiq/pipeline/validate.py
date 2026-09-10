@@ -81,6 +81,7 @@ _JUDGE_SCHEMA = {
         "earliest_safe_fraction": {"type": "number"},
         "safety_pass": {"type": "boolean"},
         "category_correct": {"type": "boolean"},
+        "summary_entailed": {"type": "boolean"},
         "named_entities": {"type": "array", "items": {"type": "string"}},
         "notes": {"type": "string"},
     },
@@ -91,6 +92,7 @@ _JUDGE_SCHEMA = {
         "earliest_safe_fraction",
         "safety_pass",
         "category_correct",
+        "summary_entailed",
         "named_entities",
     ],
 }
@@ -104,10 +106,10 @@ CARD ANCHOR SCENE (~{timecode}, runtime fraction {fraction}): {scene_description
 ANCHOR ELEMENT: {anchor_element}
 
 CANDIDATE CARD:
-proactivePrompt: {prompt}
 factCategory: {category}
-factHeader: {header}
-factBeats:
+shortVersion (on-screen line): {short_version}
+longDescription (expanded fact): {long_description}
+factBeats (internal verification units):
 {beats}
 followUps: {follow_ups}
 
@@ -157,7 +159,11 @@ is not G-rated); a card whose payoff is an expletive line fails.
 6. category_correct — does factCategory fit?
 
 7. named_entities — list every proper name, title, and specific number a fact-checker \
-must find in the sources."""
+must find in the sources.
+
+8. summary_entailed — true only if BOTH shortVersion and longDescription contain no \
+claim, name, number, or implication beyond what the entailed beats state. They are \
+rewrites of the beats, never expansions."""
 
 
 def _judge_source_blocks(cited: list) -> str:
@@ -190,18 +196,28 @@ def validate_card(
     relaxed = cfg.evidence_mode == "relaxed"
     src_by_url = {s.url: s for s in card.sources}
 
-    # 1. Contract.
+    # 1. Contract. shortVersion: 50-60 target, 80 hard cap.
     contract_ok = (
         3 <= len(card.fact_beats) <= 5
         and 2 <= len(card.follow_ups) <= 3
         and card.fact_category in config.FACT_CATEGORIES
-        and bool(card.proactive_prompt and card.fact_header)
+        and bool(card.short_version and card.long_description)
+        and len(card.short_version) <= 80
         and all(b.source_url in src_by_url for b in card.fact_beats)
     )
     checks["contract"] = contract_ok
     if not contract_ok:
-        result.rejection_reasons.append("contract: field counts/category/sources out of spec")
+        if len(card.short_version or "") > 80:
+            result.rejection_reasons.append(
+                f"contract: shortVersion {len(card.short_version)} chars (hard cap 80)"
+            )
+        else:
+            result.rejection_reasons.append("contract: field counts/category/sources out of spec")
         return result
+    if len(card.short_version) > 60:
+        result.flags.append(
+            f"shortVersion {len(card.short_version)} chars (target 50-60, cap 80)"
+        )
 
     # 2. Source binding: per-beat verbatim anchor must fuzzy-match its cited
     # source's fetched body. Also attach video timestamps while we're here.
@@ -237,9 +253,9 @@ def validate_card(
             fraction=round(card.runtime_fraction, 2),
             scene_description=card.scene_description,
             anchor_element=card.anchor_element,
-            prompt=card.proactive_prompt,
+            short_version=card.short_version,
             category=card.fact_category,
-            header=card.fact_header,
+            long_description=card.long_description,
             beats=beats_txt,
             follow_ups=card.follow_ups,
             source_blocks=_judge_source_blocks(cited),
@@ -279,6 +295,14 @@ def validate_card(
         else:
             result.rejection_reasons.append("taxonomy: category mismatch")
 
+    # The viewer-facing text may not exceed the verified beats — hard in
+    # both modes, since the summaries ARE the display surface now.
+    checks["summary_entailment"] = judge["summary_entailed"]
+    if not judge["summary_entailed"]:
+        result.rejection_reasons.append(
+            "summary_entailment: shortVersion/longDescription claim beyond the beats"
+        )
+
     # Beat survival: binding failures + entailment failures. Strict rejects;
     # relaxed drops bad beats if >= 3 remain.
     unsupported = {b["index"] for b in judge["beats"] if not b["entailed"]}
@@ -291,7 +315,8 @@ def validate_card(
                 card.fact_beats = kept
                 result.flags.append(
                     f"relaxed: dropped beats {sorted(bad_beats)} "
-                    "(binding or entailment failure)"
+                    "(binding or entailment failure) — review that shortVersion/"
+                    "longDescription don't restate the dropped claims"
                 )
             else:
                 result.rejection_reasons.append(
@@ -433,6 +458,7 @@ def validate_card(
         and checks["spoiler_boundary"]
         and checks["safety"]
         and judge["category_correct"]
+        and judge["summary_entailed"]
         and cross_modal_ok
     )
 

@@ -101,7 +101,7 @@ def _semantic_key(r: CardRecord) -> str:
     """Scene-agnostic dedup key (scene-sense approach): normalized header +
     beat text with stopwords removed, hashed. Catches the same fact anchored
     to two different scenes."""
-    text = (r.card.fact_header + " " + " ".join(b.text for b in r.card.fact_beats)).lower()
+    text = (r.card.short_version + " " + " ".join(b.text for b in r.card.fact_beats)).lower()
     tokens = [t for t in re.split(r"[^a-z0-9]+", text) if t and t not in _STOPWORDS]
     return hashlib.sha256(" ".join(sorted(set(tokens))).encode()).hexdigest()[:16]
 
@@ -114,7 +114,7 @@ def _dedup(records: list[CardRecord]) -> list[CardRecord]:
         key = _semantic_key(r)
         dup = key in seen_keys or any(
             SequenceMatcher(
-                None, r.card.fact_header.lower(), k.card.fact_header.lower()
+                None, r.card.short_version.lower(), k.card.short_version.lower()
             ).ratio() > 0.75
             for k in kept
         )

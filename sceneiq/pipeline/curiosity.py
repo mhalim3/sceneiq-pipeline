@@ -38,10 +38,8 @@ sources, no scores. Only the card.
 THE SCENE YOU PAUSED ON: {scene_description}
 
 THE CARD:
-Hook: {prompt}
-Header: {header}
-Beats:
-{beats}
+On-screen line: {short_version}
+Expanded (on tap): {long_description}
 Follow-ups: {follow_ups}
 
 RATE 1-5:
@@ -71,14 +69,12 @@ concrete surprising detail: REJECT.
 def judge_curiosity(
     client: GeminiClient, card: SceneFactCard, cfg: config.PipelineConfig
 ) -> dict:
-    beats = "\n".join(f"  - {b.text}" for b in card.fact_beats)
     resp = client.structured(
         cfg.fast_model,
         _JUDGE_PROMPT.format(
             scene_description=card.scene_description,
-            prompt=card.proactive_prompt,
-            header=card.fact_header,
-            beats=beats,
+            short_version=card.short_version,
+            long_description=card.long_description,
             follow_ups=" / ".join(card.follow_ups),
         ),
         _JUDGE_SCHEMA,

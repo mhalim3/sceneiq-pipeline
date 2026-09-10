@@ -22,9 +22,9 @@ _CARD_SCHEMA = {
         "card": {
             "type": "object",
             "properties": {
-                "proactivePrompt": {"type": "string"},
+                "shortVersion": {"type": "string"},
+                "longDescription": {"type": "string"},
                 "factCategory": {"type": "string", "enum": config.FACT_CATEGORIES},
-                "factHeader": {"type": "string"},
                 "factBeats": {
                     "type": "array",
                     "items": {
@@ -39,7 +39,7 @@ _CARD_SCHEMA = {
                 },
                 "followUps": {"type": "array", "items": {"type": "string"}},
             },
-            "required": ["proactivePrompt", "factCategory", "factHeader", "factBeats", "followUps"],
+            "required": ["shortVersion", "longDescription", "factCategory", "factBeats", "followUps"],
         },
     },
     "required": ["abstain"],
@@ -60,20 +60,23 @@ SOURCES (cite beats ONLY from these, by index; each shows its fetched body text)
 {source_blocks}
 
 STYLE — match the best film-magazine writing:
-- factHeader: <= 8 words, hook-first, viewer register. "Sophie de Rakoff's pink-everything \
-decision" not "The costume design of the film". Proper noun in the first 2 words when possible.
-- proactivePrompt: <= 10 words, a curious nudge a paused viewer taps. Vary the phrasing — \
-never default to "Ever wonder...". G-rated.
 - factBeats: prefer 4 to 5 single-sentence beats (minimum 3) that tell a micro-story in \
 order. Each beat must be traceable to its cited source body, and each includes \
 verbatimAnchor: a 6-20 word span COPIED VERBATIM from that source's body text supporting \
-the beat.
+the beat. Beats are the verification layer — write them first, carefully.
 - Each beat states ONLY what the text around its verbatim anchor says. Copy names, \
 numbers, and reasons exactly — if the source says Stanford refused, write Stanford, \
 never substitute a different university, person, or motive. Do not merge facts from \
 two sources into one beat.
-- followUps: 2 to 3 natural viewer next-questions, <= 10 words each, phrased as what a \
-curious viewer would ask next.
+- longDescription: 2 to 4 sentences that merge the beats into one flowing paragraph. \
+It must contain NO claim that is not in the beats — it is a rewrite of them, not an \
+expansion. Viewer register, past tense for behind-the-scenes.
+- shortVersion: ONE punchy on-screen statement of the fact itself. Aim for 50-60 \
+characters, HARD MAXIMUM 80. Like "Cooper shucked every oyster himself in the opening \
+scene." — a concrete fact statement, not a teaser, not clickbait. G-rated. It must be \
+fully supported by the beats.
+- followUps: 2 to 3 natural viewer next-questions, <= 10 words each (internal, for \
+value scoring).
 - Use CHARACTER names for what's on screen, REAL names for BTS figures (directors, \
 costume designers, named crew).
 - Don't re-describe the scene the viewer is watching; deliver only NEW information.
@@ -142,9 +145,9 @@ def assemble_card(
         if 0 <= b.get("sourceIndex", -1) < len(packet.sources)
     ]
     return SceneFactCard(
-        proactive_prompt=c["proactivePrompt"],
+        short_version=(c["shortVersion"] or "").strip(),
+        long_description=(c["longDescription"] or "").strip(),
         fact_category=c["factCategory"],
-        fact_header=c["factHeader"],
         fact_beats=beats,
         follow_ups=c["followUps"],
         scene_description=packet.anchor.scene_description,

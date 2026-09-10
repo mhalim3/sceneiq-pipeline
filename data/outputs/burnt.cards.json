@@ -8,39 +8,20 @@
   },
   "sceneFacts": [
     {
-      "proactivePrompt": "Where was this posh restaurant filmed?",
       "factCategory": "location",
-      "factHeader": "Langham, London's Roux at the Landau",
-      "factBeats": [
+      "shortVersion": "The film's restaurant scenes were shot at The Langham, London.",
+      "longDescription": "The restaurant scenes in Burnt were filmed on location at The Langham, London, with the hotel's own restaurant, The Roux at The Landau, appearing throughout the movie. For authenticity, a fully functioning kitchen was built specifically for the film, designed to operate like a real professional kitchen. Michelin-starred chef and restaurateur Marcus Wareing served as the chef consultant, ensuring the culinary details were accurate.",
+      "sources": [
         {
-          "text": "The upscale restaurant where Adam Jones works was filmed at The Langham, London.",
-          "sourceUrl": "https://mixmeetings.com/showoff/starring-bradley-cooper-new-movie-burnt-dished-out-exclusively-at-the-langham-hong-kong/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://hotelsmag.com/news/hong-kong-hotel-serves-burnt-dishes/",
+          "modality": "text",
+          "timestamp": null
         },
         {
-          "text": "Specifically, the hotel’s restaurant, The Roux at the Landau, appears throughout the film.",
-          "sourceUrl": "https://mixmeetings.com/showoff/starring-bradley-cooper-new-movie-burnt-dished-out-exclusively-at-the-langham-hong-kong/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "In the film, Adam Jones and Helene work as chefs in a fine dining restaurant at Langham’s Hotel in London.",
-          "sourceUrl": "https://www.fcsi.org/foodservice-consultant/worldwide/burnt-a-foodservice-perspective/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Daniel Brühl's character, Tony, runs this posh restaurant, which belongs to his father.",
-          "sourceUrl": "https://tvortravels.wordpress.com/2016/02/02/traveling-through-the-movies-london-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
+          "modality": "text",
+          "timestamp": null
         }
-      ],
-      "followUps": [
-        "What kind of food do they serve?",
-        "Is The Langham a real hotel?",
-        "Who is Daniel Brühl's character?"
       ],
       "sceneAnchor": {
         "sceneDescription": "[scene 14] 00:04:38–00:04:58\nsummary: A man wearing sunglasses enters a busy, upscale restaurant and is warmly greeted by a doorman and another man, suggesting a friendly reunion in a sophisticated environment.",
@@ -56,81 +37,20 @@
       "wouldPassStrict": true
     },
     {
-      "proactivePrompt": "Uncover the truth behind Adam's intense street fight.",
       "factCategory": "actor",
-      "factHeader": "Adam Jones's debt to French drug lords.",
-      "factBeats": [
+      "shortVersion": "Bradley Cooper based his chef character on three real chefs.",
+      "longDescription": "Bradley Cooper based his character, Adam Jones, on a combination of three celebrity chefs. He spent time with Marcus Wareing, Gordon Ramsay, and Marco Pierre White to research the role, incorporating their physical traits and characteristics into his performance. Consultant chef Marcus Wareing also helped teach the core actors, including Cooper, how to cook and act like chefs.",
+      "sources": [
         {
-          "text": "Adam Jones is \"freshly beaten by a couple of French drug lords.\"",
-          "sourceUrl": "https://www.mashed.com/612701/the-scene-in-burnt-that-went-too-far/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/bradley-cooper-inspired-by-gordon-ramsay-for-burnt-role/articleshow/49204658.cms",
+          "modality": "text",
+          "timestamp": null
         },
         {
-          "text": "The reason for the physical altercation is that Adam \"apparently still owes money to\" them.",
-          "sourceUrl": "https://www.mashed.com/612701/the-scene-in-burnt-that-went-too-far/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "This beating leaves Adam with a \"bloody face,\" a visible consequence of the encounter.",
-          "sourceUrl": "https://www.mashed.com/612701/the-scene-in-burnt-that-went-too-far/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.thecaterer.com/news/burnt-marcus-wareing-on-teaching-bradley-cooper-to-act-like-a-chef",
+          "modality": "text",
+          "timestamp": null
         }
-      ],
-      "followUps": [
-        "Who are these drug lords?",
-        "What is Adam's past with them?",
-        "Where else was the film shot?"
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 22] 00:07:17–00:07:35\nsummary: The clip shows two men running through city streets and alleys, culminating in a physical fight in a secluded courtyard, creating a tense and suspenseful atmosphere.",
-        "anchorElement": "physical fight in a secluded courtyard",
-        "approxTimecode": "00:07:17",
-        "runtimeFraction": 0.072,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.07
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "proactivePrompt": "How did Bradley Cooper prepare for his role?",
-      "factCategory": "actor",
-      "factHeader": "Bradley Cooper's Real-Life Chef Training",
-      "factBeats": [
-        {
-          "text": "Before acting, Bradley Cooper worked as a busboy, waiter, and prep cook in various restaurants.",
-          "sourceUrl": "https://sentinelcolorado.com/a-town-magazine/review-bradley-cooper-rolls-up-his-sleeves-for-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "He once cut and cleaned 620 chickens and nine boxes of peppers in a single day as a prep cook.",
-          "sourceUrl": "https://sentinelcolorado.com/a-town-magazine/review-bradley-cooper-rolls-up-his-sleeves-for-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "For the film, Cooper trained with Claire Smythe, executive chef of London’s three-Michelin-star Restaurant Gordon Ramsay.",
-          "sourceUrl": "https://sentinelcolorado.com/a-town-magazine/review-bradley-cooper-rolls-up-his-sleeves-for-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Cooper insisted on performing all cooking scenes himself, with no stunt doubles or insert shots of other people's hands.",
-          "sourceUrl": "https://sentinelcolorado.com/a-town-magazine/review-bradley-cooper-rolls-up-his-sleeves-for-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        }
-      ],
-      "followUps": [
-        "What other chefs consulted on the film?",
-        "Did Sienna Miller also train?",
-        "Is the restaurant real?"
       ],
       "sceneAnchor": {
         "sceneDescription": "[scene 29] 00:09:39–00:09:58\nsummary: Two men engage in a friendly conversation outside a restaurant about marinating lamb and working for food, with a casual and warm atmosphere in an urban street setting.\ncast on screen: Bradley Cooper",
@@ -143,42 +63,23 @@
       "spoilerBoundary": {
         "earliestSafeFraction": 0.095
       },
-      "wouldPassStrict": false
+      "wouldPassStrict": true
     },
     {
-      "proactivePrompt": "Wonder how real the kitchen action was?",
       "factCategory": "filming",
-      "factHeader": "Bradley Cooper cooked for real",
-      "factBeats": [
+      "shortVersion": "Actors learned to cook, preparing all food seen in the film for real.",
+      "longDescription": "Chef consultant Marcus Wareing was involved in every element of the food in the film, from kitchen design to recipe writing. To ensure authenticity, the actors learned how to cook, and all food preparation seen in the movie was done for real, without cooking doubles. Wareing worked closely with the core actors, including Bradley Cooper and Sienna Miller, to make them look believable as chefs.",
+      "sources": [
         {
-          "text": "Bradley Cooper, as Adam Jones, performed all his own cooking in the film.",
-          "sourceUrl": "https://aknextphase.com/tag/marcus-wareing/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://revolutionwatch.com/marcus-wareing-great-british-chef/",
+          "modality": "text",
+          "timestamp": null
         },
         {
-          "text": "During filming, all scenes of food preparation were done for real, including the hazards that come with an active kitchen.",
-          "sourceUrl": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "The entire cast, including Bradley Cooper, literally cooked on set to create an authentic kitchen atmosphere.",
-          "sourceUrl": "https://www.greatbritishchefs.com/features/marcus-wareing-burnt-interview",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Michelin-starred chef Marcus Wareing designed the kitchen set, advising on its layout and necessary equipment.",
-          "sourceUrl": "https://www.greatbritishchefs.com/features/marcus-wareing-burnt-interview",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://weminoredinfilm.com/2016/01/28/burnt-film-review-bradley-cooper-sienna-millers-performances-deserved-a-better-script/",
+          "modality": "text",
+          "timestamp": null
         }
-      ],
-      "followUps": [
-        "Who trained the actors?",
-        "What other chefs consulted?",
-        "Was the kitchen functional?"
       ],
       "sceneAnchor": {
         "sceneDescription": "[scene 29] 00:09:39–00:09:58\nsummary: Two men engage in a friendly conversation outside a restaurant about marinating lamb and working for food, with a casual and warm atmosphere in an urban street setting.\ncast on screen: Bradley Cooper",
@@ -194,225 +95,136 @@
       "wouldPassStrict": true
     },
     {
-      "proactivePrompt": "Discover how the film's kitchen scenes achieved their realism.",
-      "factCategory": "filming",
-      "factHeader": "Real chefs consulted on the film's kitchen scenes.",
-      "factBeats": [
+      "factCategory": "actor",
+      "shortVersion": "Uma Thurman plays the snooty food critic Simone Forth.",
+      "longDescription": "In the film, Uma Thurman portrays Simone Forth, a snooty food critic. She is one of several A-list stars who make brief appearances in the movie.",
+      "sources": [
         {
-          "text": "Wareing also designed the kitchen set, advising on its layout and the specific equipment needed.",
-          "sourceUrl": "https://www.greatbritishchefs.com/features/marcus-wareing-burnt-interview",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.thewrap.com/bradley-cooper-sienna-miller-uma-thurman-are-smoking-hot-at-burnt-nyc-premiere-photos/",
+          "modality": "text",
+          "timestamp": null
         },
         {
-          "text": "He trained the actors, including Bradley Cooper and Sienna Miller, to cook and move like real chefs.",
-          "sourceUrl": "https://www.tastingtable.com/691035/burnt-bradley-cooper-movie-chef-marcus-wareing-interview-best-new-movies/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "To enhance authenticity, the food being plated was dressed for real, intended to be eaten.",
-          "sourceUrl": "https://www.tastingtable.com/691035/burnt-bradley-cooper-movie-chef-marcus-wareing-interview-best-new-movies/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
+          "modality": "text",
+          "timestamp": null
         }
       ],
-      "followUps": [
-        "Who played Adam Jones?",
-        "What other films feature chefs?",
-        "Where was the restaurant set?"
-      ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 59] 00:19:39–00:19:49\nsummary: The video shows close-up shots of food preparation and plating in a professional kitchen, followed by a wide view of a busy, elegant restaurant where patrons are dining and interacting in a calm, sophisticated atmosphere.",
-        "anchorElement": "food preparation and plating",
-        "approxTimecode": "00:19:39",
-        "runtimeFraction": 0.194,
+        "sceneDescription": "[scene 44] 00:14:38–00:14:59\nsummary: The clip shows a tense conversation involving a restaurant critic who is dissatisfied with the food, set in an urban environment with people entering a building, conveying a mood of frustration and critique.\ncast on screen: Uma Thurman",
+        "anchorElement": "Uma Thurman",
+        "approxTimecode": "00:14:38",
+        "runtimeFraction": 0.145,
         "runtimeThird": 1,
         "runtimeQuartile": 1
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.19
+        "earliestSafeFraction": 0.14
       },
       "wouldPassStrict": false
     },
     {
-      "proactivePrompt": "See how the actors mastered their kitchen roles?",
       "factCategory": "filming",
-      "factHeader": "Cooper and Miller learned real culinary skills",
-      "factBeats": [
+      "shortVersion": "The kitchen set was fully functional, with real chefs as extras.",
+      "longDescription": "The kitchen set was built to be fully functional for the movie. Consultant chef Marcus Wareing ensured it operated like a real professional kitchen. During filming, all food preparation scenes were done for real, and some of the extras seen working in the kitchen were genuine chefs.",
+      "sources": [
         {
-          "text": "To ensure authenticity, all food preparation scenes in Burnt were filmed using real food.",
-          "sourceUrl": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
+          "modality": "text",
+          "timestamp": null
         },
         {
-          "text": "Sienna Miller, who plays Helene, learned to fillet a turbot like a professional for her role.",
-          "sourceUrl": "https://www.showbiz411.com/2015/10/25/bradley-cooper-on-controversial-burnt-scene-with-matthew-rhys-it-just-sort-of-happened",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Bradley Cooper, playing Adam Jones, shucked \"about a thousand oysters\" for the film's opening scene.",
-          "sourceUrl": "https://www.showbiz411.com/2015/10/25/bradley-cooper-on-controversial-burnt-scene-with-matthew-rhys-it-just-sort-of-happened",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Cooper noted that only ten of those oysters were pre-loosened by professional chefs on set.",
-          "sourceUrl": "https://www.showbiz411.com/2015/10/25/bradley-cooper-on-controversial-burnt-scene-with-matthew-rhys-it-just-sort-of-happened",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
+          "modality": "text",
+          "timestamp": null
         }
       ],
-      "followUps": [
-        "Who were the culinary consultants?",
-        "Did other actors learn to cook?",
-        "Where was the market filmed?"
-      ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 81] 00:27:19–00:27:36\nsummary: The video depicts a calm, rainy setting where people handle seafood and a man smiles gently, followed by a woman cleaning a sign on a door, suggesting a behind-the-scenes look at a restaurant or hospitality venue with a peaceful and caring atmosphere.",
-        "anchorElement": "handle seafood",
-        "approxTimecode": "00:27:19",
-        "runtimeFraction": 0.27,
+        "sceneDescription": "[scene 95] 00:31:39–00:32:06\nsummary: The clip shows a tense moment in a professional kitchen with chefs in white uniforms, followed by scenes in a formal dining area, conveying a mood of stress and urgency in a restaurant setting.\ncast on screen: Bradley Cooper",
+        "anchorElement": "chefs in white uniforms",
+        "approxTimecode": "00:31:39",
+        "runtimeFraction": 0.313,
         "runtimeThird": 1,
         "runtimeQuartile": 2
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.27
+        "earliestSafeFraction": 0.31
       },
       "wouldPassStrict": true
     },
     {
-      "proactivePrompt": "Discover how the film's kitchen came to life.",
       "factCategory": "filming",
-      "factHeader": "The kitchen was a fully functional set",
-      "factBeats": [
+      "shortVersion": "The film's kitchen realism earned a near-perfect score from a chef.",
+      "longDescription": "Michelin-starred chef Paul Liebrandt gave Bradley Cooper's portrayal in Burnt a near-perfect 9/10 accuracy score. Liebrandt specifically praised the film for its accurate depiction of the high standards and intense environment of a kitchen striving for Michelin stars. Cooper prepared for the role by training with renowned chefs, including Gordon Ramsay, to gain experience in a top kitchen. Consultant chef Marcus Wareing prepared all the recipes for the movie's fictional restaurant and ensured the kitchen set was fully functioning, making it work as a real kitchen.",
+      "sources": [
         {
-          "text": "The film's kitchen was a fully functioning set, built specifically for the movie to replicate a real restaurant environment.",
-          "sourceUrl": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://screenrant.com/burnt-movie-bradley-cooper-performance-chef-expert-accuracy-response/",
+          "modality": "text",
+          "timestamp": null
         },
         {
-          "text": "To enhance authenticity, all food preparation scenes during filming were done for real, complete with active kitchen hazards.",
-          "sourceUrl": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://collider.com/burnt-bradley-cooper-performance/",
+          "modality": "text",
+          "timestamp": null
         },
         {
-          "text": "Consultant chef Marcus Wareing even turned the stoves on full during filming to make the actors genuinely hot and sweaty.",
-          "sourceUrl": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Wareing also taught the core actors, including Adam Jones and Helene, how to cook and move like professional chefs.",
-          "sourceUrl": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "To further immerse the cast, genuine chefs were hired to play minor roles in the cooking scenes.",
-          "sourceUrl": "https://www.acmodasi.com/amdb/movie/295964-burnt-2015",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
+          "modality": "text",
+          "timestamp": null
         }
       ],
-      "followUps": [
-        "Who was the consultant chef?",
-        "Did the actors really cook?",
-        "Where was the restaurant filmed?"
-      ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 125] 00:41:40–00:41:59\nsummary: The video depicts a busy restaurant setting with waitstaff preparing tables and chefs working in the kitchen, including a chef who appears stressed or contemplative, highlighting the intense and focused atmosphere of professional cooking.",
-        "anchorElement": "kitchen",
-        "approxTimecode": "00:41:40",
-        "runtimeFraction": 0.411,
+        "sceneDescription": "[scene 110] 00:36:39–00:36:58\nsummary: A man in a chef's uniform speaks determinedly about improving business at a restaurant, showing frustration and hope, while interacting with another man in a suit in a kitchen environment.",
+        "anchorElement": "improving business at a restaurant",
+        "approxTimecode": "00:36:39",
+        "runtimeFraction": 0.362,
         "runtimeThird": 2,
         "runtimeQuartile": 2
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.41
+        "earliestSafeFraction": 0.0
       },
-      "wouldPassStrict": true
+      "wouldPassStrict": false
     },
     {
-      "proactivePrompt": "See how they made the kitchen so real?",
-      "factCategory": "filming",
-      "factHeader": "Real kitchen, real heat for Adam Jones",
-      "factBeats": [
+      "factCategory": "costume/prop",
+      "shortVersion": "Newspaper props are designed with legible details for authenticity.",
+      "longDescription": "The newspaper article seen here is an example of a graphic prop, meticulously designed to add real-world credibility to the film's setting. Many such props are not central \"hero pieces\" but are created as background dressing. Graphic designers ensure authenticity by using real, legible copy and carefully selected paper types, which enhances the experience for both the cast and the audience.",
+      "sources": [
         {
-          "text": "Consultant chef Marcus Wareing ensured the kitchen set was fully functional, built specifically for the movie to operate like a real restaurant kitchen.",
-          "sourceUrl": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "All food preparation scenes were filmed for real, complete with the hazards of an active kitchen, and some extras were genuine chefs to add pressure.",
-          "sourceUrl": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Bradley Cooper, portraying Adam Jones, commanded the kitchen with a soldier-like intensity, fitting for the aggressive chef character.",
-          "sourceUrl": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "To make the actors appear genuinely exhausted, consultant Marcus Wareing turned the stoves on full, ensuring the set was hot and sweaty.",
-          "sourceUrl": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://eyeondesign.aiga.org/so-you-wanna-design-for-the-movies/",
+          "modality": "text",
+          "timestamp": null
         }
-      ],
-      "followUps": [
-        "Who was the culinary consultant?",
-        "Did Bradley Cooper cook for real?",
-        "What other chefs were involved?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 177] 00:58:39–00:58:57\nsummary: A young girl and a man in a chef's outfit share a moment at a restaurant table, with the girl showing curiosity and slight amusement while the man tastes food, set in a sophisticated dining environment.\ncast on screen: Bradley Cooper",
-        "anchorElement": "chef's outfit",
-        "approxTimecode": "00:58:39",
-        "runtimeFraction": 0.579,
+        "sceneDescription": "[scene 132] 00:43:50–00:44:13\nsummary: The clip shows a formal social gathering in a restaurant or bar where a sudden noise causes surprise; it then transitions to outdoor street scenes with people interacting and a man reading a newspaper article about a restaurant, creating a mood of curiosity and interest.",
+        "anchorElement": "newspaper article about a restaurant",
+        "approxTimecode": "00:43:50",
+        "runtimeFraction": 0.433,
         "runtimeThird": 2,
-        "runtimeQuartile": 3
+        "runtimeQuartile": 2
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.579
+        "earliestSafeFraction": 0.0
       },
-      "wouldPassStrict": true
+      "wouldPassStrict": false
     },
     {
-      "proactivePrompt": "Spot the actress who speaks French fluently.",
       "factCategory": "actor",
-      "factHeader": "Alicia Vikander's surprising linguistic skill",
-      "factBeats": [
+      "shortVersion": "Alicia Vikander plays Adam's ex, Anne Marie.",
+      "longDescription": "Alicia Vikander plays Anne Marie, the ex-girlfriend of chef Adam Jones. Anne Marie is also the daughter of Adam's former mentor, the deceased master chef Jean-Luc. She and Adam shared a past of excess that led to their mutual downfall. Her character appears in only two scenes in the film.",
+      "sources": [
         {
-          "text": "Alicia Vikander portrays Anne Marie, the daughter of Adam Jones's former boss.",
-          "sourceUrl": "https://howtosurviveinparis.wordpress.com/2015/11/09/my-review-of-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.eyeforfilm.co.uk/review/burnt-2015-film-review-by-anne-katrin-titze",
+          "modality": "text",
+          "timestamp": null
         },
         {
-          "text": "Anne Marie is also Adam's ex-girlfriend.",
-          "sourceUrl": "https://www.thewrap.com/burnt-review-bradley-cooper-sienna-miller-emma-thompson/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "The Swedish actress speaks French very well in the film.",
-          "sourceUrl": "https://howtosurviveinparis.wordpress.com/2015/11/09/my-review-of-burnt/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://dwchien.wordpress.com/2017/02/04/burnt-movie-review/",
+          "modality": "text",
+          "timestamp": null
         }
-      ],
-      "followUps": [
-        "What's her character's backstory?",
-        "Who is Adam's former boss?",
-        "What other languages does she speak?"
       ],
       "sceneAnchor": {
         "sceneDescription": "[scene 191] 01:03:18–01:03:36\nsummary: Two people meet at a funeral, discussing the death of a family member and one person's recovery from addiction, creating a somber and emotionally charged atmosphere.\ncast on screen: Alicia Vikander, Bradley Cooper",
@@ -428,46 +240,77 @@
       "wouldPassStrict": false
     },
     {
-      "proactivePrompt": "Uncover the real London locations that set the scene.",
-      "factCategory": "location",
-      "factHeader": "The Langham, London, hosted filming.",
-      "factBeats": [
+      "factCategory": "filming",
+      "shortVersion": "Actors cooked real food in a fully functioning kitchen.",
+      "longDescription": "The kitchen set for the film was a fully functioning environment, specially built for the movie. Consultant chef Marcus Wareing ensured that all food preparation scenes were done for real, with actors Bradley Cooper and Sienna Miller learning to cook and act like professional chefs. Miller, who worked the challenging fish station, became so proficient that she could have worked in a real kitchen. To enhance the realism, Wareing even turned the stoves on full to make the actors hot and sweaty.",
+      "sources": [
         {
-          "text": "The film \"Burnt\" was shot on location at The Langham, London.",
-          "sourceUrl": "https://hotelsmag.com/news/hong-kong-hotel-serves-burnt-dishes/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
+          "modality": "text",
+          "timestamp": null
         },
         {
-          "text": "The hotel’s restaurant, The Roux at the Landau, appears throughout the film.",
-          "sourceUrl": "https://hotelsmag.com/news/hong-kong-hotel-serves-burnt-dishes/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
+          "modality": "text",
+          "timestamp": null
         },
         {
-          "text": "Other London filming locations for \"Burnt\" included Blythe House and Al Enam Restaurant.",
-          "sourceUrl": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "sourceModality": "text",
-          "sourceTimestamp": null
+          "url": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://weminoredinfilm.com/2016/01/28/burnt-film-review-bradley-cooper-sienna-millers-performances-deserved-a-better-script/",
+          "modality": "text",
+          "timestamp": null
         }
       ],
-      "followUps": [
-        "What other London spots were used?",
-        "Was the kitchen also a real location?",
-        "Who designed the sets?"
+      "sceneAnchor": {
+        "sceneDescription": "[scene 221] 01:12:38–01:12:59\nsummary: The clip depicts a tense kitchen scene where a chef aggressively directs his team to prepare dishes with precision, creating a high-pressure and intense atmosphere among the staff.\ncast on screen: Bradley Cooper, Sienna Miller",
+        "anchorElement": "tense kitchen scene",
+        "approxTimecode": "01:12:38",
+        "runtimeFraction": 0.717,
+        "runtimeThird": 3,
+        "runtimeQuartile": 3
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.717
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "factCategory": "filming",
+      "shortVersion": "Actors learned real knife skills in an authentic kitchen.",
+      "longDescription": "To ensure authenticity, consultant chef Marcus Wareing designed a fully functional kitchen set and trained the actors to cook and act like real chefs. All food preparation scenes were performed for real by the cast, with Sienna Miller particularly committed to genuinely being a cook.",
+      "sources": [
+        {
+          "url": "https://www.thecaterer.com/news/burnt-marcus-wareing-on-teaching-bradley-cooper-to-act-like-a-chef",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
+          "modality": "text",
+          "timestamp": null
+        }
       ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 258] 01:24:39–01:25:00\nsummary: The video alternates between a busy professional kitchen with chefs preparing food and a man entering and sitting in a formal office, creating a mood of focused work and anticipation in both culinary and business environments.\ncast on screen: Sienna Miller",
-        "anchorElement": "formal office",
-        "approxTimecode": "01:24:39",
-        "runtimeFraction": 0.836,
+        "sceneDescription": "[scene 265] 01:26:57–01:27:19\nsummary: A person carefully unrolls a knife roll, inspects various knives, and examines one knife closely in a calm indoor setting, conveying a mood of focus and interest.",
+        "anchorElement": "knife roll",
+        "approxTimecode": "01:26:57",
+        "runtimeFraction": 0.859,
         "runtimeThird": 3,
         "runtimeQuartile": 4
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
+        "earliestSafeFraction": 0.859
       },
-      "wouldPassStrict": false
+      "wouldPassStrict": true
     }
   ],
   "titleEnablement": {
@@ -475,13 +318,14 @@
     "approved_cards": 10,
     "density_target": 11,
     "cards_per_runtime_quartile": {
-      "1": 5,
-      "2": 2,
+      "1": 4,
+      "2": 3,
       "3": 2,
       "4": 1
     },
     "distinct_categories": [
       "actor",
+      "costume/prop",
       "filming",
       "location"
     ],
@@ -489,7 +333,7 @@
       "cards_per_10_min": false,
       "min_six_cards": true,
       "card_in_each_quartile": true,
-      "max_40pct_single_quartile": false,
+      "max_40pct_single_quartile": true,
       "min_two_categories": true
     }
   },
@@ -498,10 +342,10 @@
     "passes": 2,
     "anchors_proposed": 24,
     "cards_emitted": 10,
-    "would_pass_strict": 5,
+    "would_pass_strict": 6,
     "cards_rejected": 14,
     "errors": 0,
-    "elapsed_seconds": 210.4,
+    "elapsed_seconds": 201.5,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

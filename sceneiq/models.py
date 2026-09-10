@@ -84,13 +84,16 @@ class FactBeat:
 
 @dataclass
 class SceneFactCard:
-    """PRD card contract for sceneFact."""
+    """Scene Fact card. Display contract per the pause-screen UI: a short
+    version (50-60 chars target, 80 hard cap) shown in the "In this scene"
+    panel, and a long description on expand. Beats remain the internal
+    verification unit (per-beat sourcing, verbatim anchors, entailment)."""
 
-    proactive_prompt: str
+    short_version: str                # on-screen line, <= 80 chars
+    long_description: str             # 2-4 sentence expanded fact
     fact_category: str
-    fact_header: str
-    fact_beats: list                  # list[FactBeat], 3-5
-    follow_ups: list                  # list[str], 2-3
+    fact_beats: list                  # list[FactBeat], 3-5 (internal)
+    follow_ups: list                  # list[str] (internal, not in contract)
     # anchoring metadata (would come from Tubi Moments in production)
     scene_description: str = ""
     anchor_element: str = ""
@@ -127,22 +130,23 @@ class SceneFactCard:
         return None
 
     def to_contract_dict(self):
-        """The viewer-facing card contract exactly as the PRD specifies."""
-        beats = []
+        """The viewer-facing card contract (pause-screen UI shape)."""
+        sources, seen = [], set()
         for b in self.fact_beats:
+            if b.source_url in seen:
+                continue
+            seen.add(b.source_url)
             src = self._source_by_url(b.source_url)
-            beats.append({
-                "text": b.text,
-                "sourceUrl": b.source_url,
-                "sourceModality": src.modality if src else "text",
-                "sourceTimestamp": b.source_timestamp or None,
+            sources.append({
+                "url": b.source_url,
+                "modality": src.modality if src else "text",
+                "timestamp": b.source_timestamp or None,
             })
         return {
-            "proactivePrompt": self.proactive_prompt,
             "factCategory": self.fact_category,
-            "factHeader": self.fact_header,
-            "factBeats": beats,
-            "followUps": list(self.follow_ups),
+            "shortVersion": self.short_version,
+            "longDescription": self.long_description,
+            "sources": sources,
             "sceneAnchor": {
                 "sceneDescription": self.scene_description,
                 "anchorElement": self.anchor_element,
