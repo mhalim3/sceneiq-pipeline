@@ -19,11 +19,18 @@ from pathlib import Path
 
 
 def _hms_to_seconds(s: str) -> float:
+    """Handles both H:MM:SS.mmm and MM:SS.mmm — Moments exports mix them."""
     if not s:
         return 0.0
     try:
-        h, m, rest = s.split(":")
-        return int(h) * 3600 + int(m) * 60 + float(rest)
+        parts = s.split(":")
+        if len(parts) == 3:
+            h, m, rest = parts
+            return int(h) * 3600 + int(m) * 60 + float(rest)
+        if len(parts) == 2:
+            m, rest = parts
+            return int(m) * 60 + float(rest)
+        return float(parts[0])
     except ValueError:
         return 0.0
 
