@@ -5,14 +5,17 @@ structure — anchors attach to real scenes, timecodes and runtime fractions
 come from the VLM record (code-assigned, not model-claimed), and the
 validation judge sees the actual scene contents.
 
-Schema matches the Tubi Moments export used by the scene-sense prototype:
-top-level {title, duration_sec, scenes[]}, each scene carrying start/end
-times, scene_type, summary, songs, and content_desc.structured_data with
-characters/celebrities/setting/key_objects/key_actions/dialogue_highlights.
+Two supported formats, dispatched by file extension:
+  .json — the scene-sense prototype export: {title, duration_sec, scenes[]}
+          with content_desc.structured_data per scene.
+  .csv  — a Databricks export of core_dev.tubidw.tubi_moments_scene_catalog:
+          one row per scene (scene_start_ts/scene_end_ts in float seconds,
+          description, cast_list, sentiment_list, IAB tiers, GARM labels).
 """
 
 from __future__ import annotations
 
+import csv
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -103,7 +106,58 @@ class TitleMoments:
         return [scenes[int(i * step)] for i in range(max_scenes)]
 
 
+def _seconds_to_hms(sec: float) -> str:
+    sec = max(0, int(sec))
+    h, rem = divmod(sec, 3600)
+    m, s = divmod(rem, 60)
+    return f"{h:02d}:{m:02d}:{s:02d}"
+
+
+def _json_list(raw: str) -> list:
+    """Parse warehouse list columns: '[\"A\",\"B\"]', 'null', or ''."""
+    raw = (raw or "").strip()
+    if not raw or raw == "null":
+        return []
+    try:
+        val = json.loads(raw)
+        return val if isinstance(val, list) else [val]
+    except json.JSONDecodeError:
+        return [raw]
+
+
 def load_moments(path: str | Path) -> TitleMoments:
+    if str(path).lower().endswith(".csv"):
+        return load_moments_csv(path)
+    return load_moments_json(path)
+
+
+def load_moments_csv(path: str | Path) -> TitleMoments:
+    """Databricks tubi_moments_scene_catalog export: one row per scene."""
+    rows = [r for r in csv.DictReader(Path(path).open()) if r.get("is_active", "true") == "true"]
+    rows.sort(key=lambda r: float(r.get("scene_start_ts") or 0.0))
+    duration = max((float(r.get("scene_end_ts") or 0.0) for r in rows), default=0.0)
+    title = rows[0].get("program_name") or rows[0].get("content_name", "") if rows else ""
+    scenes = []
+    for i, r in enumerate(rows):
+        start = float(r.get("scene_start_ts") or 0.0)
+        themes = _json_list(r.get("iab_tier1_list", "")) + _json_list(r.get("iab_tier2_list", ""))
+        scenes.append(
+            MomentScene(
+                scene_index=i,
+                scene_type="content",
+                start_time=_seconds_to_hms(start),
+                end_time=_seconds_to_hms(float(r.get("scene_end_ts") or 0.0)),
+                start_seconds=start,
+                runtime_fraction=min(1.0, start / duration) if duration else 0.0,
+                summary=r.get("description", "") or "",
+                celebrities=_json_list(r.get("cast_list", "")),
+                themes=themes + _json_list(r.get("sentiment_list", "")),
+            )
+        )
+    return TitleMoments(title=title, duration_sec=duration, scenes=scenes)
+
+
+def load_moments_json(path: str | Path) -> TitleMoments:
     data = json.loads(Path(path).read_text())
     duration = float(data.get("duration_sec") or 0.0)
     scenes = []

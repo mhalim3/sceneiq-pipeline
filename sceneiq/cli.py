@@ -70,8 +70,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--moments", metavar="PATH",
                    help="Tubi Moments JSON for this title — real scene data replaces "
                         "model-reconstructed scene structure and timecodes")
-    p.add_argument("--databricks-title", metavar="TITLE_ID",
-                   help="fetch Moments JSON from Databricks (see sceneiq/databricks_moments.py "
+    p.add_argument("--content-id", metavar="CONTENT_ID",
+                   help="fetch Moments scene rows from Databricks by Tubi content_id (see sceneiq/databricks_moments.py "
                         "for required env vars); implies --moments on the fetched file")
     p.add_argument("--strict-verbatim", action="store_true",
                    help="hard-reject cards whose named entities aren't verbatim in fetched source bodies")
@@ -103,9 +103,9 @@ def main(argv: list[str] | None = None) -> int:
 
     moments_path = args.moments
     try:
-        if args.databricks_title:
+        if args.content_id:
             from .databricks_moments import fetch_moments
-            moments_path = str(fetch_moments(args.databricks_title))
+            moments_path = str(fetch_moments(args.content_id))
         result = orchestrator.run(args.prompt, cfg, moments_path=moments_path)
     except RuntimeError as e:
         print(f"error: {e}", file=sys.stderr)
