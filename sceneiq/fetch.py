@@ -90,7 +90,28 @@ def youtube_video_id(url: str) -> str | None:
     return (parse_qs(p.query).get("v") or [None])[0]
 
 
-def fetch_youtube_transcript(url: str) -> tuple[bool, str, list[dict]]:
+def _run_with_timeout(fn, timeout_s: float, default):
+    """Run `fn` on a daemon thread with a hard deadline.
+
+    youtube_transcript_api has no network timeout of its own — one stuck
+    socket froze an entire pipeline run for 16 hours. The abandoned thread
+    leaks briefly but the run finishes.
+    """
+    out: dict = {}
+
+    def runner():
+        try:
+            out["v"] = fn()
+        except Exception:
+            pass
+
+    t = threading.Thread(target=runner, daemon=True)
+    t.start()
+    t.join(timeout_s)
+    return out.get("v", default)
+
+
+def fetch_youtube_transcript(url: str, timeout_s: float = 30.0) -> tuple[bool, str, list[dict]]:
     """Returns (ok, concatenated_text, segments[{text, start, duration}])."""
     vid = youtube_video_id(url)
     if not vid:
@@ -99,10 +120,13 @@ def fetch_youtube_transcript(url: str) -> tuple[bool, str, list[dict]]:
         from youtube_transcript_api import YouTubeTranscriptApi
     except ImportError:
         return False, "", []
-    try:
+
+    def _fetch():
         api = YouTubeTranscriptApi()
-        fetched = api.fetch(vid, languages=["en", "en-US", "en-GB"])
-    except Exception:
+        return api.fetch(vid, languages=["en", "en-US", "en-GB"])
+
+    fetched = _run_with_timeout(_fetch, timeout_s, None)
+    if fetched is None:
         return False, "", []
     segments = []
     for seg in fetched:

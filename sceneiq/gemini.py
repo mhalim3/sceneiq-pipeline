@@ -61,7 +61,12 @@ class GeminiClient:
                 f"{config.API_KEY_ENV} is not set. Export it before running:\n"
                 f"  export {config.API_KEY_ENV}=your-key"
             )
-        self._client = genai.Client(api_key=key)
+        # Hard request deadline (ms): the SDK's default is no timeout, and a
+        # single hung call stalls the whole worker pool.
+        self._client = genai.Client(
+            api_key=key,
+            http_options=types.HttpOptions(timeout=180_000),
+        )
 
     @_retry
     def grounded(self, model: str, prompt: str, temperature: float = 0.3) -> GroundedResult:
