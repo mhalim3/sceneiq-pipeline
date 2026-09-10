@@ -108,10 +108,11 @@ def main(argv: list[str] | None = None) -> int:
     try:
         content_id = args.content_id
         if args.title_lookup and not content_id:
-            from .databricks_moments import resolve_content_id
-            # Strip a trailing "(year)" for the name match.
+            from .databricks_moments import resolve_content_id_in_moments
+            # Strip a trailing "(year)" for the name match. Resolve against
+            # the Moments table itself — only ids with scene data matter.
             bare_title = re.sub(r"\s*\(\d{4}\)\s*$", "", args.prompt)
-            matches = resolve_content_id(bare_title)
+            matches = resolve_content_id_in_moments(bare_title)
             movies = [m for m in matches if str(m.get("content_type", "")).upper() == "MOVIE"]
             exact = [m for m in movies
                      if str(m.get("content_name", "")).lower() == bare_title.lower()]

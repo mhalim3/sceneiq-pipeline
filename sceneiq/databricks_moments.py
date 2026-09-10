@@ -92,6 +92,27 @@ def resolve_content_id(title: str) -> list[dict]:
     return [dict(zip(columns, r)) for r in rows]
 
 
+def resolve_content_id_in_moments(title: str) -> list[dict]:
+    """Resolve a title directly against the Moments table — content_info and
+    Moments use different id spaces for some titles (e.g. Burnt: 100050539
+    in content_info, 499410 in Moments), and only Moments-keyed ids matter
+    to this pipeline."""
+    catalog = _env("DATABRICKS_MOMENTS_CATALOG", "core_dev")
+    schema = _env("DATABRICKS_SCHEMA", "tubidw")
+    safe_title = title.replace("'", "''")
+    query = (
+        f"select content_id, content_name, content_type from ("
+        f"select distinct content_id, program_name as content_name, content_type "
+        f"from {catalog}.{schema}.tubi_moments_scene_catalog "
+        f"where lower(program_name) like lower('%{safe_title}%')) "
+        f"order by case when lower(content_name) = lower('{safe_title}') then 0 else 1 end "
+        f"limit 10"
+    )
+    log.info("  resolving title %r directly in moments catalog", title)
+    columns, rows = _run_query(query)
+    return [dict(zip(columns, r)) for r in rows]
+
+
 def fetch_moments(content_id: str, refresh: bool = False) -> Path:
     """Fetch Moments scene rows for `content_id`, cache as CSV, return path."""
     if not str(content_id).isdigit():
