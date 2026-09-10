@@ -113,7 +113,9 @@ def main(argv: list[str] | None = None) -> int:
             bare_title = re.sub(r"\s*\(\d{4}\)\s*$", "", args.prompt)
             matches = resolve_content_id(bare_title)
             movies = [m for m in matches if str(m.get("content_type", "")).upper() == "MOVIE"]
-            candidates = movies or matches
+            exact = [m for m in movies
+                     if str(m.get("content_name", "")).lower() == bare_title.lower()]
+            candidates = exact or movies or matches
             if not candidates:
                 print(f"error: no content_id found for {bare_title!r}", file=sys.stderr)
                 return 2

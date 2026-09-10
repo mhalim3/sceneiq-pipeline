@@ -82,6 +82,9 @@ def resolve_content_id(title: str) -> list[dict]:
         f"select content_id, content_name, content_type "
         f"from {catalog}.{schema}.{table} "
         f"where lower(content_name) like lower('%{safe_title}%') "
+        f"order by case when lower(content_name) = lower('{safe_title}') then 0 "
+        f"when lower(content_name) like lower('{safe_title}%') then 1 else 2 end, "
+        f"length(content_name) "
         f"limit 10"
     )
     log.info("  resolving title %r via %s.%s.%s", title, catalog, schema, table)
@@ -102,11 +105,13 @@ def fetch_moments(content_id: str, refresh: bool = False) -> Path:
         log.info("  moments cache hit: %s", cached)
         return cached
 
+    # The moments table lives in core_dev even where content_info is in
+    # core_prod — override with DATABRICKS_MOMENTS_CATALOG if it moves.
     query = _env("SCENEIQ_MOMENTS_QUERY") or _DEFAULT_QUERY
     query = query.format(
         content_id=content_id,
         title_id=content_id,
-        catalog=_env("DATABRICKS_CATALOG", "core_dev"),
+        catalog=_env("DATABRICKS_MOMENTS_CATALOG", "core_dev"),
         schema=_env("DATABRICKS_SCHEMA", "tubidw"),
     )
     log.info("  querying Databricks: content_id=%s", content_id)

@@ -133,7 +133,8 @@ def load_moments(path: str | Path) -> TitleMoments:
 
 def load_moments_csv(path: str | Path) -> TitleMoments:
     """Databricks tubi_moments_scene_catalog export: one row per scene."""
-    rows = [r for r in csv.DictReader(Path(path).open()) if r.get("is_active", "true") == "true"]
+    rows = [r for r in csv.DictReader(Path(path).open())
+            if str(r.get("is_active", "true")).strip().lower() in ("true", "1", "")]
     rows.sort(key=lambda r: float(r.get("scene_start_ts") or 0.0))
     duration = max((float(r.get("scene_end_ts") or 0.0) for r in rows), default=0.0)
     title = rows[0].get("program_name") or rows[0].get("content_name", "") if rows else ""
