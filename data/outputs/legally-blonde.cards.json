@@ -8,464 +8,446 @@
   },
   "sceneFacts": [
     {
-      "proactivePrompt": "What's the story behind Elle's pink look?",
-      "factCategory": "costume/prop",
-      "factHeader": "Sophie de Rakoff's pink-everything decision",
-      "factBeats": [
-        {
-          "text": "This early \"Barbie-pink\" style, including her halter dress, implied a sense of shallow frivolousness.",
-          "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Reese Witherspoon described Elle as the \"quintessential California sorority girl\" focused on fashion and grooming.",
-          "sourceUrl": "https://www.cinema.com/articles/584/legally-blonde-interview-with-reese-witherspoon.phtml",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Ultimately, Elle's pink outfits become a statement of confidence, refusing to let others dim her light.",
-          "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        }
-      ],
-      "followUps": [
-        "Who designed Elle's costumes?",
-        "What other pink outfits did Elle wear?",
-        "What was Reese Witherspoon's favorite outfit?"
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 5] 00:05:15.000–00:06:15.000\nsummary: Warner picks Elle up for their date, and she descends the stairs looking beautiful.\nsetting: {'location': 'Sorority house foyer', 'time_of_day': 'Night', 'era': 'Early 2000s'}\nobjects: Heavy wooden door, Door knocker, Sunglasses, Pink halter dress, Perfume bottle\nactions: Knocking on door; Descending staircase; Kissing; Spritzing perfume\ncast on screen: Reese Witherspoon, Matthew Davis, Alanna Ubach, Jessica Cauffiel\ndialogue: \"Wow. You look so beautiful.\" / \"So do you.\"",
-        "anchorElement": "Pink halter dress",
-        "approxTimecode": "00:05:15.000",
-        "runtimeFraction": 0.055,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.05
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "proactivePrompt": "What inspired Elle's unconventional video essay?",
+      "proactivePrompt": "Learn about the studio behind Elle Woods' story.",
       "factCategory": "filming",
-      "factHeader": "Elle's video essay was based on real life",
+      "factHeader": "MGM took a chance on this hit comedy",
       "factBeats": [
         {
-          "text": "The seemingly ridiculous toilet paper vote in Elle's Harvard admission video was based on a true event.",
-          "sourceUrl": "https://screenrant.com/legally-blonde-secrets-behind-scenes/",
+          "text": "MGM offered Robert Luketic the chance to direct Legally Blonde, which he eagerly accepted.",
+          "sourceUrl": "https://fictionmachine.com/2015/09/15/what-like-its-hard-legally-blonde-2001/",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "Screenwriter Karen McCullah Lutz wrote this scene into the movie based on her own sorority experiences.",
-          "sourceUrl": "https://screenrant.com/legally-blonde-secrets-behind-scenes/",
+          "text": "MGM was keen to sign up a film adaptation of Amanda Brown's novel, even though no publisher had expressed interest in the book.",
+          "sourceUrl": "https://fictionmachine.com/2015/09/15/what-like-its-hard-legally-blonde-2001/",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "Elle's application video also featured her wearing a tiny bikini.",
+          "text": "With a budget of only $18 million, Legally Blonde made a sizable profit for MGM.",
           "sourceUrl": "http://www.dvdmg.com/legallyblonde.shtml",
           "sourceModality": "text",
           "sourceTimestamp": null
+        }
+      ],
+      "followUps": [
+        "Who directed the film?",
+        "What was the budget?",
+        "How did the film perform?"
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 0] 00:00:00–00:00:10\nsummary: The video clip features the Metro Goldwyn Mayer (MGM) logo with a roaring lion animation on a black background, followed by a fade to black.",
+        "anchorElement": "MGM logo with a roaring lion",
+        "approxTimecode": "00:00:00",
+        "runtimeFraction": 0.0,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.0
+      },
+      "wouldPassStrict": false
+    },
+    {
+      "proactivePrompt": "Discover the details behind Elle's signature pink look.",
+      "factCategory": "costume/prop",
+      "factHeader": "Elle Woods's Iconic Pink Style",
+      "factBeats": [
+        {
+          "text": "When viewers first meet Elle Woods, she is wearing a \"pink prints charming\" look, complete with Barbie-style mules and a rhinestone heart.",
+          "sourceUrl": "https://www.whowhatwear.com/fashion/trends/legally-blonde-trends-2026",
+          "sourceModality": "text",
+          "sourceTimestamp": null
         },
         {
-          "text": "Her LSAT score of 179 placed her in the top 0.1 percent of test-takers.",
-          "sourceUrl": "https://www.moviebuff.com/legally-blonde-2001-latin-american-spanish",
+          "text": "The dress features a cloud print that enhances its fuchsia hue and adds personality to the outfit.",
+          "sourceUrl": "https://www.whowhatwear.com/fashion/trends/legally-blonde-trends-2026",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "The outfit's silhouette is a classic wrap-dress style, popular in the early 2000s.",
+          "sourceUrl": "https://www.whowhatwear.com/fashion/trends/legally-blonde-trends-2026",
           "sourceModality": "text",
           "sourceTimestamp": null
         }
       ],
       "followUps": [
-        "What was the original college choice?",
-        "How did Reese Witherspoon prepare?",
-        "What other scenes were real?"
+        "Who designed the costumes?",
+        "What inspired the pink?",
+        "Are there other iconic looks?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 17] 18:40.500–19:35.500\nsummary: The Harvard admissions committee reviews Elle's video essay and application. Despite some skepticism, they decide to admit her for diversity.\nsetting: {'location': 'Harvard Law School Admissions Boardroom', 'time_of_day': 'Day', 'era': 'Early 2000s'}\nobjects: CRT Television, Remote control, Admissions files and paperwork, Harvard Law coffee mugs\nactions: Watching a video essay; Reviewing academic credentials; Debating an applicant's merits; Making an admissions decision\ncast on screen: Reese Witherspoon\ndialogue: \"And that's why you should vote for me, Elle Woods, future lawyer for the class of 2004.\" / \"She also designed a line of faux fur panties for",
-        "anchorElement": "Elle's video essay",
-        "approxTimecode": "18:40.500",
-        "runtimeFraction": 0.194,
+        "sceneDescription": "[scene 14] 00:03:43–00:04:09\nsummary: A group of young women excitedly discuss a possible engagement at a lively outdoor party, sharing joyful anticipation and helping each other pick out outfits in a social, festive setting.\ncast on screen: Reese Witherspoon",
+        "anchorElement": "outfits",
+        "approxTimecode": "00:03:43",
+        "runtimeFraction": 0.039,
         "runtimeThird": 1,
         "runtimeQuartile": 1
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.19
+        "earliestSafeFraction": 0.039
       },
       "wouldPassStrict": false
     },
     {
-      "proactivePrompt": "See where Harvard Law's interior scenes were actually filmed.",
-      "factCategory": "filming",
-      "factHeader": "Harvard's Admissions Boardroom wasn't filmed at Harvard.",
+      "proactivePrompt": "Elle's major was more common than you think.",
+      "factCategory": "historical",
+      "factHeader": "Elle's fashion major had real-life roots.",
       "factBeats": [
         {
-          "text": "The interior scenes of Harvard University, including classrooms and this admissions boardroom, were not filmed at the actual Harvard campus.",
+          "text": "Elle's fashion merchandising major was considered an unconventional path for a law school applicant.",
+          "sourceUrl": "https://shpantherpress.com/opinion-elle-woods/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "However, the author of the \"Legally Blonde\" novel, Amanda Brown, also majored in fashion when she applied to Stanford Law.",
+          "sourceUrl": "https://shpantherpress.com/opinion-elle-woods/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Similarly, screenwriter Karen McCullah Lutz minored in fashion merchandising in college.",
+          "sourceUrl": "https://hlrecord.org/the-brains-behind-legally-blonde/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Law schools often seek diverse majors, making Elle's unique background an asset rather than a hindrance.",
+          "sourceUrl": "https://shpantherpress.com/opinion-elle-woods/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        }
+      ],
+      "followUps": [
+        "What inspired the book?",
+        "Where was the film shot?",
+        "Who wrote the screenplay?"
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 43] 00:13:38–00:13:58\nsummary: The clip shows a tense conversation between a man and a young woman by a pool and later in an office setting, discussing her academic achievements and major in fashion merchandising, highlighting conflict and disappointment about career expectations.",
+        "anchorElement": "academic achievements",
+        "approxTimecode": "00:13:38",
+        "runtimeFraction": 0.142,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.14
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "proactivePrompt": "How did the actors prepare for sorority life?",
+      "factCategory": "actor",
+      "factHeader": "Reese Witherspoon's \"anthropological study\" for sorority life",
+      "factBeats": [
+        {
+          "text": "Reese Witherspoon and Jessica Cauffiel prepared for their sorority roles by spending time with a real sorority.",
+          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/legally-blonde-behind-the-scenes-facts_uk_6a468bc4e4b03060a84cc7d1",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "They invited an entire sorority to dinner, offering to buy them free margaritas all night.",
+          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/legally-blonde-behind-the-scenes-facts_uk_6a468bc4e4b03060a84cc7d1",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "While the sorority girls \"got tanked,\" Witherspoon and Cauffiel stayed sober and took notes.",
+          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/legally-blonde-behind-the-scenes-facts_uk_6a468bc4e4b03060a84cc7d1",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Witherspoon described her time with the sorority girls as \"an anthropological study.\"",
+          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/legally-blonde-behind-the-scenes-facts_uk_6a468bc4e4b03060a84cc7d1",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        }
+      ],
+      "followUps": [
+        "What was Elle's sorority called?",
+        "Was the sorority house a real place?",
+        "What other scenes were based on real life?"
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 57] 00:18:17–00:18:41\nsummary: A group of young women excitedly celebrate a special event indoors, with one woman being lifted and cheered on by the others in a lively, festive environment filled with confetti and streamers.\ncast on screen: Reese Witherspoon",
+        "anchorElement": "confetti and streamers",
+        "approxTimecode": "00:18:17",
+        "runtimeFraction": 0.191,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.0
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "proactivePrompt": "Want to know more about Bruiser Woods?",
+      "factCategory": "actor",
+      "factHeader": "Bruiser Woods' real name was Moonie",
+      "factBeats": [
+        {
+          "text": "Elle Woods' loyal Chihuahua, Bruiser Woods, was played by a dog named Moonie.",
+          "sourceUrl": "https://www.latimes.com/entertainment/gossip/la-et-mg-reese-witherspoon-moonie-dies-legally-blonde-dog-bruiser-woods-20160311-htmlstory.html",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Moonie was a pup when he was cast as Elle's trusty sidekick and lap dog.",
+          "sourceUrl": "https://www.thewrap.com/bruiser-woods-legally-blonde-chihuahua-star-dies-at-18/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Animal trainer Sue Chip had the good fortune to train and work with Moonie on both \"Legally Blonde\" films.",
+          "sourceUrl": "https://www.latimes.com/entertainment/gossip/la-et-mg-reese-witherspoon-moonie-dies-legally-blonde-dog-bruiser-woods-20160311-htmlstory.html",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        }
+      ],
+      "followUps": [
+        "Who else was in the cast?",
+        "Tell me more about the filming.",
+        "What's the story behind the costumes?"
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 64] 00:20:35–00:20:59\nsummary: A person excitedly talks to their dog about moving to a new house near Harvard, showing scenes of the dog in a car and the person carrying belongings into a building, with shots of students walking on campus, creating a mood of anticipation and comfort.\ncast on screen: Reese Witherspoon",
+        "anchorElement": "dog",
+        "approxTimecode": "00:20:35",
+        "runtimeFraction": 0.215,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.21
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "proactivePrompt": "Discover where Elle Woods really went to law school.",
+      "factCategory": "location",
+      "factHeader": "Harvard's campus scenes were filmed in Los Angeles.",
+      "factBeats": [
+        {
+          "text": "The actual Harvard University in Cambridge, Massachusetts, was not used for most of the filming.",
           "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "Instead, many of the college's hallways and classrooms, including those depicting Harvard, were filmed at Rose City High School in Pasadena, California.",
-          "sourceUrl": "https://movie-locations.com/movies/l/Legally-Blonde.php",
+          "text": "The patio of Kerckhoff Hall at UCLA was used for some of the \"Harvard\" campus scenes.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-legally-blonde-filmed",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "Harvard University generally does not permit commercial film shooting on its campus, citing potential disruption.",
-          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2001-jul-22-ca-25120-story.html",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Ironically, while USC and UCLA refused to allow their names to be used in the film, both campuses were utilized to shoot many of the Harvard-based scenes.",
-          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2001-jul-22-ca-25120-story.html",
+          "text": "This location is also near where the \"lawn scene\" with students introducing themselves was filmed.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-legally-blonde-filmed",
           "sourceModality": "text",
           "sourceTimestamp": null
         }
       ],
       "followUps": [
-        "Where were the exterior Harvard shots filmed?",
-        "Who designed the sets for the film?",
-        "What other movies filmed at Rose City High?"
+        "Where were the classrooms filmed?",
+        "What other locations were used?",
+        "Was anything filmed in Massachusetts?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 17] 18:40.500–19:35.500\nsummary: The Harvard admissions committee reviews Elle's video essay and application. Despite some skepticism, they decide to admit her for diversity.\nsetting: {'location': 'Harvard Law School Admissions Boardroom', 'time_of_day': 'Day', 'era': 'Early 2000s'}\nobjects: CRT Television, Remote control, Admissions files and paperwork, Harvard Law coffee mugs\nactions: Watching a video essay; Reviewing academic credentials; Debating an applicant's merits; Making an admissions decision\ncast on screen: Reese Witherspoon\ndialogue: \"And that's why you should vote for me, Elle Woods, future lawyer for the class of 2004.\" / \"She also designed a line of faux fur panties for",
-        "anchorElement": "Harvard Law School Admissions Boardroom",
-        "approxTimecode": "18:40.500",
-        "runtimeFraction": 0.194,
+        "sceneDescription": "[scene 71] 00:22:46–00:22:59\nsummary: A young woman is speaking confidently about her achievements, including organizing a march and academic success, while sitting outdoors on a college campus with other students around, creating a casual and conversational mood.",
+        "anchorElement": "college campus",
+        "approxTimecode": "00:22:46",
+        "runtimeFraction": 0.237,
         "runtimeThird": 1,
         "runtimeQuartile": 1
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.19
+        "earliestSafeFraction": 0.237
       },
       "wouldPassStrict": false
     },
     {
-      "proactivePrompt": "What inspired Elle's iconic pink pen?",
-      "factCategory": "costume/prop",
-      "factHeader": "The Pink Pen's Real-Life Origin",
+      "proactivePrompt": "Learn about the actress playing this professor.",
+      "factCategory": "actor",
+      "factHeader": "Holland Taylor's Tough Professor Role",
       "factBeats": [
         {
-          "text": "The author of the Legally Blonde novel, Amanda Brown, wrote her manuscript using a pink furry pen.",
-          "sourceUrl": "https://www.businessinsider.com/legally-blonde-facts-2019-1",
+          "text": "Holland Taylor portrays Professor Stromwell, a character known for delivering powerful moments in the film.",
+          "sourceUrl": "https://www.fathomentertainment.com/blog/the-cast-of-legally-blonde-25-years-later/",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "Brown claimed an agent picked her book out of a slush pile solely because it was on pink paper.",
-          "sourceUrl": "https://www.businessinsider.com/legally-blonde-facts-2019-1",
+          "text": "Her character is described as a \"hard-ass\" Harvard Law professor.",
+          "sourceUrl": "https://www.elitedaily.com/p/will-professor-stromwell-be-in-legally-blonde-3-holland-taylor-sure-hopes-so-exclusive-9495573",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "In the film, Elle's furry, glittery pen embodies her loud femininity on her first day of law school.",
-          "sourceUrl": "https://reverseshot.org/symposiums/entry/2904/legally_blonde",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "While other students use laptops, Elle uses her pen to take notes in a tiny heart-shaped pink notebook.",
-          "sourceUrl": "https://reverseshot.org/symposiums/entry/2904/legally_blonde",
+          "text": "Professor Stromwell was initially tough on Harvard Law student Elle.",
+          "sourceUrl": "https://www.usmagazine.com/entertainment/news/holland-taylor-wants-to-reprise-her-role-in-legally-blonde-3/",
           "sourceModality": "text",
           "sourceTimestamp": null
         }
       ],
       "followUps": [
-        "What other props were inspired by real life?",
-        "What does Elle use later?",
-        "Who designed Elle's costumes?"
+        "Who else is in the cast?",
+        "What other roles has Holland Taylor played?",
+        "Was the film shot at Harvard?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 22] 25:29.500–00:28:44.000\nsummary: Elle attends her first class with the strict Professor Stromwell. She is called on but is unprepared, leading Stromwell to ask Vivian if Elle should be kicked out of class.\nsetting: {'location': 'Law school classroom', 'time_of_day': 'Day', 'era': 'Modern day'}\nobjects: Laptops, Chalkboard, Heart-shaped notepad, Fluffy pink pen, Textbooks\nactions: Lecturing; Cold calling; Admitting unpreparedness; Dismissing a student\ncast on screen: Reese Witherspoon, Holland Taylor, Selma Blair\ndialogue: \"The law is reason free from passion.\" / \"Um, actually, I wasn't aware that we had an assignment.\" / \"Would you support my decision to ask her to leave class and ",
-        "anchorElement": "Fluffy pink pen",
-        "approxTimecode": "25:29.500",
-        "runtimeFraction": 0.265,
+        "sceneDescription": "[scene 86] 00:27:39–00:27:56\nsummary: A young woman in a classroom setting reacts with surprise and amusement upon learning about an assignment from a teacher, creating a warm and lighthearted mood.\ncast on screen: Reese Witherspoon",
+        "anchorElement": "teacher",
+        "approxTimecode": "00:27:39",
+        "runtimeFraction": 0.288,
         "runtimeThird": 1,
         "runtimeQuartile": 2
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.265
+        "earliestSafeFraction": 0.288
       },
-      "wouldPassStrict": true
+      "wouldPassStrict": false
     },
     {
-      "proactivePrompt": "What kind of car does Elle drive?",
-      "factCategory": "costume/prop",
-      "factHeader": "Elle's Porsche is a specific model.",
+      "proactivePrompt": "Paulette's storyline almost took a wild turn.",
+      "factCategory": "actor",
+      "factHeader": "Paulette's iconic B-plot was a spontaneous invention",
       "factBeats": [
         {
-          "text": "The car Elle drives is a Porsche Boxster.",
-          "sourceUrl": "http://986forum.com/forums/boxster-general-discussions/25731-legally-blond-boxster.html",
+          "text": "Screenwriters Karen McCullah and Kirsten Smith wanted to give Jennifer Coolidge's character, Paulette, a significant secondary storyline.",
+          "sourceUrl": "https://www.cinemablend.com/movies/story-behind-legally-blonde-bend-and-snap-failed-b-plot-reese-witherspoon-jennifer-coolidge",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "It features a custom \"22BLONDE\" license plate.",
+          "text": "Early ideas for Paulette's B-plot included a crime, such as the nail salon being robbed.",
           "sourceUrl": "https://www.businessinsider.com/legally-blonde-ali-larter-film-secrets-screenwriters-interview-2021-6",
           "sourceModality": "text",
           "sourceTimestamp": null
         },
         {
-          "text": "Elle's arrival at Harvard in this car drew judgment from her classmates.",
-          "sourceUrl": "https://www.businessinsider.com/legally-blonde-ali-larter-film-secrets-screenwriters-interview-2021-6",
+          "text": "The writers found these crime plots \"tonally weird\" and instead decided to focus on Paulette's romantic life.",
+          "sourceUrl": "https://www.cbsnews.com/philadelphia/news/legally-blonde-how-the-bend-and-snap-came-to-be/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "This led to the creation of the \"Bend and Snap\" scene, which Kirsten Smith spontaneously invented at a bar.",
+          "sourceUrl": "https://www.cinemablend.com/news/2397102/how-legally-blondes-bend-and-snap-was-created",
           "sourceModality": "text",
           "sourceTimestamp": null
         }
       ],
       "followUps": [
-        "What does 'Boxster' mean?",
-        "What about the license plate?",
-        "What happened at Harvard?"
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 24] 00:31:42.500–00:32:08.000\nsummary: A devastated Elle drives erratically through the streets, crying, before pulling up to a beauty salon.\nsetting: {'location': \"City street, outside Neptune's Beauty Nook\", 'time_of_day': 'Day', 'era': 'Modern day'}\nobjects: Black Porsche convertible, Neptune's Beauty Nook sign, Purse\nactions: Driving frantically; Searching; Abruptly parking; Rushing out of a car\nsongs: {'start_time': '00:31:42.500', 'end_time': '00:32:08.000', 'title': '', 'artist': '', 'source': 'unknown'}\ncast on screen: Reese Witherspoon\ndialogue: \"Oh, thank God!\"",
-        "anchorElement": "Black Porsche convertible",
-        "approxTimecode": "00:31:42.500",
-        "runtimeFraction": 0.33,
-        "runtimeThird": 1,
-        "runtimeQuartile": 2
-      },
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.33
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "proactivePrompt": "Discover the story behind Elle's Harvard application.",
-      "factCategory": "costume/prop",
-      "factHeader": "Elle's iconic pink bikini helped her get into Harvard.",
-      "factBeats": [
-        {
-          "text": "Elle Woods wore this pink bikini in her Harvard Law School application video.",
-          "sourceUrl": "https://www.romper.com/p/reese-witherspoon-confirms-legally-blonde-3-in-the-most-elle-woods-way-ever-9324948",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Her acceptance into the prestigious law school revolved around the 'tiny bikini' she wore in her application video.",
-          "sourceUrl": "http://www.dvdmg.com/legallyblonde.shtml",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "This pink swimsuit has become an iconic part of Elle's character.",
-          "sourceUrl": "https://www.romper.com/p/reese-witherspoon-confirms-legally-blonde-3-in-the-most-elle-woods-way-ever-9324948",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Elle's overall style, including her pink clothes, reflected her 'Barbie Girl lifestyle'.",
-          "sourceUrl": "https://tomandlorenzo.com/2020/07/one-iconic-look-reese-witherspoons-pink-courtroom-dress-in-legally-blonde-2001/",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        }
-      ],
-      "followUps": [
-        "What other pink outfits did Elle wear?",
-        "Who designed Elle's costumes?",
-        "Where was the campus filmed?"
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 27] 00:36:31.000–00:37:02.500\nsummary: Warner plays football with his friends in the park. Elle studies nearby in a bikini and fur coat, making sure Warner notices her.\nsetting: {'location': 'Campus lawn', 'time_of_day': 'Day', 'era': 'Modern day'}\nobjects: Football, Red lounge chair, Pink fluffy jacket, Sparkly pink bikini top, Pink sunglasses, Book\nactions: Playing touch football; Setting up a lounge chair; Reading a book; Staring in amazement\nsongs: {'start_time': '00:36:31.000', 'end_time': '00:37:02.500', 'title': '', 'artist': '', 'source': 'unknown'}\ncast on screen: Reese Witherspoon, Matthew Davis\ndialogue: \"Whoa, bro. Who is that?\" / \"Warner, you know her?\" / \"Hi.\"",
-        "anchorElement": "Sparkly pink bikini top",
-        "approxTimecode": "00:36:31.000",
-        "runtimeFraction": 0.38,
-        "runtimeThird": 2,
-        "runtimeQuartile": 2
-      },
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.38
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "proactivePrompt": "Discover the story behind Elle's bunny costume.",
-      "factCategory": "costume/prop",
-      "factHeader": "Elle's Iconic Bunny Costume Had a Surprising Origin",
-      "factBeats": [
-        {
-          "text": "Costume designer Sophie de Rakoff considers Elle's bunny costume to have the most surprising story among all the film's outfits.",
-          "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "The famous ensemble was created in the stockroom of an intimates shop called Trashy Lingerie.",
-          "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "De Rakoff conducted fittings for the costume in the back room of the shop, amidst bras and other customers.",
-          "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "The shop specifically built the bunny outfit for the costume designer.",
-          "sourceUrl": "https://www.bustle.com/entertainment/sophie-de-rakoff-legally-blonde-bunny-costume",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        }
-      ],
-      "followUps": [
-        "Who is Sophie de Rakoff?",
-        "What other costumes were iconic?",
-        "What was the leather driving costume?"
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 31] 00:40:08.500–00:42:33.259\nsummary: Elle arrives at the party dressed as a Playboy bunny, quickly realizing she was tricked. She confronts Warner, who tells her she is not smart enough to get the internship.\nsetting: {'location': 'House party', 'time_of_day': 'Night', 'era': 'Modern day'}\nobjects: Playboy bunny costume, Wine glasses, Foosball table, Engagement ring\nactions: Arriving at a party; Staring in shock; Delivering a witty comeback; Discussing law school internships\nsongs: {'start_time': '00:40:08.500', 'end_time': '00:42:32.000', 'title': '', 'artist': '', 'source': 'unknown'}\ncast on screen: Reese Witherspoon, Selma Blair, Matthew Davis\ndialogue: \"Except when I dress up a",
-        "anchorElement": "Playboy bunny costume",
-        "approxTimecode": "00:40:08.500",
-        "runtimeFraction": 0.418,
-        "runtimeThird": 2,
-        "runtimeQuartile": 2
-      },
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.418
-      },
-      "wouldPassStrict": true
-    },
-    {
-      "proactivePrompt": "Did Harvard Law allow laptops?",
-      "factCategory": "set_design",
-      "factHeader": "Harvard Law's real-life laptop policy",
-      "factBeats": [
-        {
-          "text": "The prevalence of computers in the film's Harvard Law classrooms struck one real Harvard Law student as unusual.",
-          "sourceUrl": "https://www.rileyv.com/legallyblondeaf-blog/how-real-is-legally-blonde",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "This student, who attended the school 16 years after Elle Woods, was only allowed to use a laptop in two of their nine first-year courses.",
-          "sourceUrl": "https://www.rileyv.com/legallyblondeaf-blog/how-real-is-legally-blonde",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "They also doubted that professors were more \"tech-friendly\" in 2004, implying the film's depiction might not be accurate for its time.",
-          "sourceUrl": "https://www.rileyv.com/legallyblondeaf-blog/how-real-is-legally-blonde",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        }
-      ],
-      "followUps": [
-        "Was the campus real?",
-        "What else was inaccurate?",
-        "Did Elle's classes exist?"
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 33] 00:43:02.513–00:43:27.000\nsummary: Elle ignores Warner when he tries to help her reach a book in the library.\nsetting: {'location': 'Harvard University (Dorm room, campus, library)', 'time_of_day': 'Day/Indoors', 'era': 'Early 2000s'}\nobjects: Orange Apple iBook laptop, Stack of law books, Coffee cups, Library books\nactions: Typing on a laptop; Walking confidently; Carrying heavy books; Reaching for a book on a high shelf\nsongs: {'start_time': '00:43:02.513', 'end_time': '00:43:27.000', 'title': 'Watch Me Shine', 'artist': 'Joanna Pacitti', 'source': 'audio_recognition'}\ncast on screen: Reese Witherspoon\ndialogue: \"I love that sweater. It's Chanel.\" / \"Was she carrying books?\" / \"",
-        "anchorElement": "Orange Apple iBook laptop",
-        "approxTimecode": "00:43:02.513",
-        "runtimeFraction": 0.448,
-        "runtimeThird": 2,
-        "runtimeQuartile": 2
-      },
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.448
-      },
-      "wouldPassStrict": true
-    },
-    {
-      "proactivePrompt": "Notice the color Elle and Bruiser wear?",
-      "factCategory": "costume/prop",
-      "factHeader": "Elle's 'lawyerly' orange outfit",
-      "factBeats": [
-        {
-          "text": "Elle's outfits in the film often symbolize her journey and intentions.",
-          "sourceUrl": "https://scriptmag.com/style-and-structure-in-legally-blonde",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "After a pivotal party, Elle starts to incorporate orange into her wardrobe, signaling her commitment to law.",
-          "sourceUrl": "https://scriptmag.com/style-and-structure-in-legally-blonde",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "In this scene, as Elle takes on her first lawyerly role to help Paulette, her outfit reflects this new seriousness.",
-          "sourceUrl": "https://scriptmag.com/style-and-structure-in-legally-blonde",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Even Bruiser, Elle's Chihuahua, sports an orange outfit to support her in retrieving Paulette's dog.",
-          "sourceUrl": "https://scriptmag.com/style-and-structure-in-legally-blonde",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        }
-      ],
-      "followUps": [
-        "What other colors does Elle wear?",
-        "Did Reese Witherspoon keep her outfits?",
-        "What about Paulette's dog?"
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 38] 00:44:40.544–00:47:21.500\nsummary: Elle and Paulette confront Paulette's ex-boyfriend Dewey. Elle uses legal jargon to intimidate him into giving Paulette her dog back.\nsetting: {'location': 'Junkyard trailer park', 'time_of_day': 'Day', 'era': 'Modern day'}\nobjects: Black Porsche convertible, Airstream trailer, Chihuahua (Bruiser), Bulldog (Rufus)\nactions: Driving a convertible; Knocking on a trailer door; Confronting an ex-boyfriend; Using legal jargon\nsongs: {'start_time': '00:44:40.544', 'end_time': '00:44:52.000', 'title': 'Watch Me Shine', 'artist': 'Joanna Pacitti', 'source': 'audio_recognition'}\ncast on screen: Reese Witherspoon, Jennifer Coolidge\ndialogue: \"I'm Elle Woods",
-        "anchorElement": "Junkyard trailer park",
-        "approxTimecode": "00:44:40.544",
-        "runtimeFraction": 0.465,
-        "runtimeThird": 2,
-        "runtimeQuartile": 2
-      },
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.465
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "proactivePrompt": "Discover how this iconic move came to life.",
-      "factCategory": "filming",
-      "factHeader": "The 'Bend and Snap' was a spontaneous invention",
-      "factBeats": [
-        {
-          "text": "Screenwriters Kirsten Smith and Karen McCullah initially considered a crime plot for Paulette's storyline in the nail salon.",
-          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/heres-how-the-legally-blonde-bend-and-snap-came-to-be_n_5ac38135e4b09712fec47312?ri18n=true",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Karen McCullah then suggested that Elle could teach Paulette a move to get the UPS guy's attention.",
-          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/heres-how-the-legally-blonde-bend-and-snap-came-to-be_n_5ac38135e4b09712fec47312?ri18n=true",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Kirsten Smith spontaneously demonstrated the \"bend and snap\" move, describing its invention as a \"drunken moment in a bar.\"",
-          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/heres-how-the-legally-blonde-bend-and-snap-came-to-be_n_5ac38135e4b09712fec47312?ri18n=true",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        },
-        {
-          "text": "Director Robert Luketic decided to expand the move into a full musical number for the film.",
-          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/heres-how-the-legally-blonde-bend-and-snap-came-to-be_n_5ac38135e4b09712fec47312?ri18n=true",
-          "sourceModality": "text",
-          "sourceTimestamp": null
-        }
-      ],
-      "followUps": [
-        "Who choreographed the scene?",
+        "Who choreographed the Bend and Snap?",
         "What other scenes were improvised?",
-        "How else did writers develop the story?"
+        "What was the original ending?"
       ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 46] 00:54:38.500–00:56:29.000\nsummary: At the salon, Paulette is flustered when the handsome UPS guy arrives. Elle teaches her the \"bend and snap\" maneuver to get his attention.\nsetting: {'location': 'Nail salon', 'time_of_day': 'Day', 'era': 'Modern day'}\nobjects: UPS package, Electronic signature pad, Nail polish\nactions: Delivering a package; Signing for delivery; Demonstrating a flirting move\nsongs: {'start_time': '00:54:55.258', 'end_time': '00:56:36.000', 'title': \"That's the Way (I Like It)\", 'artist': 'KC and the Sunshine Band', 'source': 'subtitle_cue'}\ncast on screen: Reese Witherspoon, Jennifer Coolidge\ndialogue: \"He's got a package.\" / \"It's called the bend and snap.\"",
-        "anchorElement": "The 'bend and snap' maneuver",
-        "approxTimecode": "00:54:38.500",
-        "runtimeFraction": 0.569,
+        "sceneDescription": "[scene 107] 00:34:19–00:34:39\nsummary: Two women engage in a candid conversation in a colorful salon or beauty shop, with one expressing frustration and self-doubt while the other offers comfort and support, creating a mood of personal reflection and relational discussion.\ncast on screen: Reese Witherspoon, Jennifer Coolidge",
+        "anchorElement": "Jennifer Coolidge",
+        "approxTimecode": "00:34:19",
+        "runtimeFraction": 0.357,
         "runtimeThird": 2,
-        "runtimeQuartile": 3
+        "runtimeQuartile": 2
       },
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.569
+        "earliestSafeFraction": 0.357
+      },
+      "wouldPassStrict": false
+    },
+    {
+      "proactivePrompt": "Where did Harvard Law's courtroom scenes really film?",
+      "factCategory": "location",
+      "factHeader": "This courtroom is a historic California landmark",
+      "factBeats": [
+        {
+          "text": "The courtroom scenes for \"Legally Blonde\" were filmed in part at the old Orange County Courthouse.",
+          "sourceUrl": "https://orangecountytribune.com/2014/07/29/legally-blonde-met-legally-historic/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "This impressive red sandstone building is located in downtown Santa Ana, California.",
+          "sourceUrl": "https://orangecountytribune.com/2014/07/29/legally-blonde-met-legally-historic/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Courtroom No. 1 within the courthouse, beautifully restored to its original glory, is much prized by filmmakers.",
+          "sourceUrl": "https://orangecountytribune.com/2014/07/29/legally-blonde-met-legally-historic/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "The courthouse, which opened in 1901, is also listed on the National Register of Historic Places.",
+          "sourceUrl": "https://orangecountytribune.com/2014/07/29/legally-blonde-met-legally-historic/",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        }
+      ],
+      "followUps": [
+        "What other movies filmed here?",
+        "Is Harvard Law School accurately shown?",
+        "What's the courthouse's history?"
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 222] 01:12:16–01:12:39\nsummary: The video shows a tense courtroom scene where a man is being questioned about a secret relationship, with reactions from the audience and other courtroom participants, creating a mood of tension and intrigue in a formal legal environment.\ncast on screen: Matthew Davis, Selma Blair, Luke Wilson, Reese Witherspoon, Victor Garber",
+        "anchorElement": "courtroom scene",
+        "approxTimecode": "01:12:16",
+        "runtimeFraction": 0.753,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.0
+      },
+      "wouldPassStrict": false
+    },
+    {
+      "proactivePrompt": "Who is the woman on trial?",
+      "factCategory": "actor",
+      "factHeader": "Ali Larter plays the accused Brooke Taylor-Windham.",
+      "factBeats": [
+        {
+          "text": "Elle Woods defends exercise guru Brooke Taylor-Windham, played by Ali Larter, in this murder trial.",
+          "sourceUrl": "http://www.dvdmg.com/legallyblonde.shtml",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "The original script for Legally Blonde did not feature a murder trial.",
+          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/legally-blonde-behind-the-scenes-facts_uk_6a468bc4e4b03060a84cc7d1",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        },
+        {
+          "text": "Screenwriter Karen McCullah explained that the team made changes to the original plot.",
+          "sourceUrl": "https://www.huffingtonpost.co.uk/entry/legally-blonde-behind-the-scenes-facts_uk_6a468bc4e4b03060a84cc7d1",
+          "sourceModality": "text",
+          "sourceTimestamp": null
+        }
+      ],
+      "followUps": [
+        "Who is Karen McCullah?",
+        "What was the original plot?",
+        "Who else is in the cast?"
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 265] 01:26:37–01:26:59\nsummary: The clip shows a tense courtroom scene where a woman is emotionally testifying about shooting her father, causing shock and gasps from the crowd and intense reactions from others present.\ncast on screen: Luke Wilson, Selma Blair, Matthew Davis",
+        "anchorElement": "woman is emotionally testifying about shooting her father",
+        "approxTimecode": "01:26:37",
+        "runtimeFraction": 0.902,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.9
       },
       "wouldPassStrict": true
     }
@@ -475,15 +457,17 @@
     "approved_cards": 10,
     "density_target": 10,
     "cards_per_runtime_quartile": {
-      "1": 3,
-      "2": 6,
-      "3": 1,
-      "4": 0
+      "1": 6,
+      "2": 2,
+      "3": 0,
+      "4": 2
     },
     "distinct_categories": [
+      "actor",
       "costume/prop",
       "filming",
-      "set_design"
+      "historical",
+      "location"
     ],
     "rules": {
       "cards_per_10_min": true,
@@ -501,7 +485,7 @@
     "would_pass_strict": 4,
     "cards_rejected": 13,
     "errors": 0,
-    "elapsed_seconds": 233.2,
+    "elapsed_seconds": 236.4,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"
