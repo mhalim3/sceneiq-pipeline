@@ -158,7 +158,9 @@ fraction {fraction} or lower.
 5. safety_pass — G-rated wording; no disparaging or unsubstantiated negative claims \
 about talent, filmmakers, studios, or partners; no PII; does not restate or amplify \
 mature material. Quoted profanity FAILS even when censored or bleeped ("You b----!" \
-is not G-rated); a card whose payoff is an expletive line fails.
+is not G-rated); a card whose payoff is an expletive line fails. Quoting or \
+paraphrasing CRITICISM of the film — negative reviews, "critics called it..." — \
+FAILS: SceneIQ is an enrichment surface, never a venue for criticism of the title.
 
 6. category_correct — does factCategory fit?
 
