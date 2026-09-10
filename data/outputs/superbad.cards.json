@@ -1,0 +1,240 @@
+{
+  "film": {
+    "title": "Superbad",
+    "year": 2007,
+    "runtime_minutes": 113,
+    "input_prompt": "Superbad (2007)"
+  },
+  "sceneFacts": [
+    {
+      "factCategory": "location",
+      "shortVersion": "El Segundo High School served as Superbad's Clark Secondary.",
+      "longDescription": "The high school scenes in Superbad were filmed on location at El Segundo High School in California. The school's exterior features a Georgian revival style, contributing to the film's quintessential Californian setting. Established in 1927, the campus includes five main buildings with a brick facade. Filming took place while classes were in session, with the crew pausing when students were in the halls.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/superbad-filming-locations-explained/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://604now.com/things-you-didnt-know-vancouver-superbad/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "Seth and Evan walk through the halls of their high school at the start of the film.",
+        "anchorElement": "The high school building and campus.",
+        "approxTimecode": "0:05:00",
+        "runtimeFraction": 0.04,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.04
+      },
+      "wouldPassStrict": false
+    },
+    {
+      "factCategory": "music",
+      "shortVersion": "The Rapture's \"Echoes\" adds post-punk anxiety to the party.",
+      "longDescription": "The song \"Echoes\" by The Rapture is featured in the film, serving as \"late-night connective tissue\" during the party. Its bassline underscores the night's unraveling and quick cuts between locations, adding a sense of post-punk anxiety as the comedown approaches.",
+      "sources": [
+        {
+          "url": "https://www.soundtrackinfo.com/OST/superbad/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://stlyrics.org/s/superbad.htm",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "As Seth, Evan, and Fogell navigate the crowded house party, the song \"Echoes\" by The Rapture is playing prominently.",
+        "anchorElement": "The licensed song \"Echoes\" by The Rapture.",
+        "approxTimecode": "00:43:00",
+        "runtimeFraction": 0.38,
+        "runtimeThird": 2,
+        "runtimeQuartile": 2
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.38
+      },
+      "wouldPassStrict": false
+    },
+    {
+      "factCategory": "music",
+      "shortVersion": "Bill Hader improvised singing Van Halen's \"Panama.\"",
+      "longDescription": "While filming the joyride scene, Bill Hader improvised by singing Van Halen's \"Panama.\" Producer Judd Apatow immediately informed Hader that his ad-lib would cost the production a significant amount to license the song. The song choice was a stark contrast to the film's usual funky musical vibe, but it fit the scene.",
+      "sources": [
+        {
+          "url": "https://www.avclub.com/i-am-mclovin-how-superbad-became-the-biggest-hit-comedy-excerpt-andrew-buss",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "Officers Slater (Bill Hader) and Michaels (Seth Rogen) take McLovin on a joyride, doing donuts in a parking lot.",
+        "anchorElement": "The song \"Panama\" by Van Halen blasting from the police car stereo.",
+        "approxTimecode": "01:05:00",
+        "runtimeFraction": 0.57,
+        "runtimeThird": 2,
+        "runtimeQuartile": 3
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.57
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "factCategory": "location",
+      "shortVersion": "The chaotic party was filmed on Northridge's Community Street.",
+      "longDescription": "The chaotic house party Seth and Evan attend after Seth is hit by a car was filmed at a residence on Community Street in Northridge, California. This location is notable as it's on the same street as a house used in the Seth Rogen film \"Knocked Up.\" The smaller space of the house in the movie was intentionally used to raise the tension of the plot, making it easier for the characters to get caught stealing.",
+      "sources": [
+        {
+          "url": "https://filmoblivion.com/tag/northridge/page/2/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://screenrant.com/superbad-filming-locations-explained/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "After being picked up by a reckless driver, Seth and Evan arrive at a different, more chaotic house party.",
+        "anchorElement": "The real-world filming location of the second party.",
+        "approxTimecode": "01:10:00",
+        "runtimeFraction": 0.62,
+        "runtimeThird": 2,
+        "runtimeQuartile": 3
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.62
+      },
+      "wouldPassStrict": false
+    },
+    {
+      "factCategory": "location",
+      "shortVersion": "McLovin's bar was a real L.A. restaurant that closed in 2012.",
+      "longDescription": "The fictional \"Bailey's Bar And Grill\" where the police officers took Fogell was filmed at a real Los Angeles restaurant. This scene was filmed at the Buggy Whip Restaurant. The Buggy Whip Restaurant, located in Los Angeles, shut down in 2012.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/superbad-filming-locations-explained/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "The officers, now friends with McLovin, take him for a drink at a dive bar to celebrate their \"bust\".",
+        "anchorElement": "The real-world bar location.",
+        "approxTimecode": "1:20:00",
+        "runtimeFraction": 0.7,
+        "runtimeThird": 3,
+        "runtimeQuartile": 3
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.0
+      },
+      "wouldPassStrict": false
+    },
+    {
+      "factCategory": "actor",
+      "shortVersion": "McLovin's mom had to be on set for his love scene.",
+      "longDescription": "Christopher Mintz-Plasse was 17 years old during the filming of Superbad, making him an actual teenager. Due to his minor status, his mother was legally required to be on set while he filmed the love scene with Nicola. Mintz-Plasse described the experience as \"very, very surreal\" and \"definitely uncomfortable,\" noting he was a virgin at the time and \"had no idea what I was doing.\"",
+      "sources": [
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.ladbible.com/entertainment/christopher-mintzplasse-mum-watched-sex-scene-20221023",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "At Jules' party, Fogell (McLovin) has a sexual encounter with Nicola in a bedroom.",
+        "anchorElement": "The on-screen presence of actor Christopher Mintz-Plasse.",
+        "approxTimecode": "1:35:00",
+        "runtimeFraction": 0.83,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.83
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "factCategory": "music",
+      "shortVersion": "“Funk McLovin” by Lyle Workman & Bootsy Collins scores the end credits.",
+      "longDescription": "The end-credits song, “Funk McLovin,” was composed by Lyle Workman and Bootsy Collins. This track plays over the infamous locker-room sketch animations, serving as a strutting theme for the legend of McLovin. For the film's score, Workman reunited Bootsy and Catfish Collins with J.B.’s drummers Clyde Stubblefield and Jabo Starks for the recording sessions.",
+      "sources": [
+        {
+          "url": "https://stlyrics.org/s/superbad.htm",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "The end credits roll alongside the infamous phallic drawings from Seth's notebook.",
+        "anchorElement": "The custom-composed song \"Funk McLovin\" by Lyle Workman & Bootsy Collins.",
+        "approxTimecode": "01:48:00",
+        "runtimeFraction": 0.96,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.96
+      },
+      "wouldPassStrict": false
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 7,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 1,
+      "2": 1,
+      "3": 3,
+      "4": 2
+    },
+    "distinct_categories": [
+      "actor",
+      "location",
+      "music"
+    ],
+    "rules": {
+      "cards_per_10_min": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": false,
+      "min_two_categories": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 2,
+    "anchors_proposed": 21,
+    "cards_emitted": 7,
+    "would_pass_strict": 2,
+    "cards_rejected": 11,
+    "errors": 3,
+    "elapsed_seconds": 221.5,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

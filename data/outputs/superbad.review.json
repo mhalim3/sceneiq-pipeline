@@ -1,0 +1,4355 @@
+{
+  "film": {
+    "title": "Superbad",
+    "year": 2007,
+    "runtime_minutes": 113,
+    "input_prompt": "Superbad (2007)"
+  },
+  "candidates": [
+    {
+      "status": "error",
+      "card": {
+        "factCategory": "costume/prop",
+        "shortVersion": "Seth Rogen's real-life period blood incident inspired this scene.",
+        "longDescription": "The scene where Seth gets menstrual blood on his pants was based on a real-life experience of screenwriter Seth Rogen. Rogen recalled that the real incident \"essentially played out almost exactly like how it does in the movie,\" but at a high school dance. In real life, Rogen and his friends were in a locker room afterward and noticed red spots on their pants. They initially couldn't figure out what the cause of the spots was, thinking it might be wine or an exploded pen. The blood stain seen in the film was not real blood.",
+        "sources": [
+          {
+            "url": "https://www.cheatsheet.com/news/seth-rogen-admitted-the-crazy-adult-party-scene-in-superbad-was-based-on-real-life-experiences.html/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.ladbible.com/entertainment/film/carla-gallo-superbad-scene-40-year-old-virgin-089107-20250225",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "At a party, Seth dances with a girl and ends up with a large menstrual blood stain on his jeans.",
+          "anchorElement": "The period blood stain on Seth's (Jonah Hill's) jeans.",
+          "approxTimecode": "0:45:00",
+          "runtimeFraction": 0.4,
+          "runtimeThird": 2,
+          "runtimeQuartile": 2
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.0
+        }
+      },
+      "anchor": {
+        "scene_description": "At a party, Seth dances with a girl and ends up with a large menstrual blood stain on his jeans.",
+        "anchor_element": "The period blood stain on Seth's (Jonah Hill's) jeans.",
+        "runtime_fraction": 0.4,
+        "approx_timecode": "0:45:00",
+        "category_guess": "costume/prop",
+        "search_hint": "The practical effects story behind creating the fake blood stain, the specific materials used for the gag, and the number of takes required.",
+        "search_queries": [
+          "Superbad period blood scene details",
+          "how they made the blood stain in Superbad",
+          "Jonah Hill pants blood Superbad",
+          "Superbad costume department special effects"
+        ],
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://content.time.com/time/specials/2007/article/0,28804,1665692_1665693_1692410,00.html",
+          "title": "time.com",
+          "domain": "time.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ladbible.com/entertainment/film/carla-gallo-superbad-scene-40-year-old-virgin-089107-20250225",
+          "title": "ladbible.com",
+          "domain": "ladbible.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podcasts.apple.com/bs/podcast/superbad-2007-audio/id1710689578?i=1000639718947",
+          "title": "apple.com",
+          "domain": "apple.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.cheatsheet.com/news/seth-rogen-admitted-the-crazy-adult-party-scene-in-superbad-was-based-on-real-life-experiences.html/",
+          "title": "cheatsheet.com",
+          "domain": "cheatsheet.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thedirectorscommentary.wordpress.com/tag/judd-apatow/",
+          "title": "wordpress.com",
+          "domain": "wordpress.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The scene where Seth gets menstrual blood on his pants was based on a real-life experience of screenwriter Seth Rogen.",
+          "sourceUrl": "https://www.cheatsheet.com/news/seth-rogen-admitted-the-crazy-adult-party-scene-in-superbad-was-based-on-real-life-experiences.html/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Rogen recalled that the real incident \"essentially played out almost exactly like how it does in the movie,\" but at a high school dance.",
+          "sourceUrl": "https://www.cheatsheet.com/news/seth-rogen-admitted-the-crazy-adult-party-scene-in-superbad-was-based-on-real-life-experiences.html/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "In real life, Rogen and his friends were in a locker room afterward and noticed red spots on their pants.",
+          "sourceUrl": "https://www.cheatsheet.com/news/seth-rogen-admitted-the-crazy-adult-party-scene-in-superbad-was-based-on-real-life-experiences.html/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "They initially couldn't figure out what the cause of the spots was, thinking it might be wine or an exploded pen.",
+          "sourceUrl": "https://www.cheatsheet.com/news/seth-rogen-admitted-the-crazy-adult-party-scene-in-superbad-was-based-on-real-life-experiences.html/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The blood stain seen in the film was not real blood.",
+          "sourceUrl": "https://www.ladbible.com/entertainment/film/carla-gallo-superbad-scene-40-year-old-virgin-089107-20250225",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "factCategory": "location",
+        "shortVersion": "El Segundo High School served as Superbad's Clark Secondary.",
+        "longDescription": "The high school scenes in Superbad were filmed on location at El Segundo High School in California. The school's exterior features a Georgian revival style, contributing to the film's quintessential Californian setting. Established in 1927, the campus includes five main buildings with a brick facade. Filming took place while classes were in session, with the crew pausing when students were in the halls.",
+        "sources": [
+          {
+            "url": "https://screenrant.com/superbad-filming-locations-explained/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://604now.com/things-you-didnt-know-vancouver-superbad/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Seth and Evan walk through the halls of their high school at the start of the film.",
+          "anchorElement": "The high school building and campus.",
+          "approxTimecode": "0:05:00",
+          "runtimeFraction": 0.04,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.04
+        }
+      },
+      "anchor": {
+        "scene_description": "Seth and Evan walk through the halls of their high school at the start of the film.",
+        "anchor_element": "The high school building and campus.",
+        "runtime_fraction": 0.04,
+        "approx_timecode": "0:05:00",
+        "category_guess": "location",
+        "search_hint": "The real-world high school used for filming and any stories about shooting there, contrasting with the real Vancouver school Seth Rogen and Evan Goldberg attended.",
+        "search_queries": [
+          "Superbad 2007 high school filming location",
+          "El Segundo High School Superbad filming",
+          "Point Grey Secondary School Superbad inspiration"
+        ],
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-filming-locations-explained/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "El Segundo High School",
+            "Superbad",
+            "Clark Secondary",
+            "California",
+            "1927",
+            "Georgian revival"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "title": "giggster.com",
+          "domain": "giggster.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "El Segundo High School",
+            "Superbad",
+            "Clark Secondary",
+            "California",
+            "1927",
+            "Georgian revival"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.studiobinder.com/blog/superbad-script-screenplay-pdf-download/",
+          "title": "studiobinder.com",
+          "domain": "studiobinder.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://filmmakermagazine.com/2990-superbads-greg-mottola-speaks/",
+          "title": "filmmakermagazine.com",
+          "domain": "filmmakermagazine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://604now.com/things-you-didnt-know-vancouver-superbad/",
+          "title": "604now.com",
+          "domain": "604now.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "El Segundo High School",
+            "Superbad",
+            "Clark Secondary",
+            "California",
+            "1927",
+            "Georgian revival"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The high school scenes for Superbad were filmed on location at El Segundo High School in California.",
+          "sourceUrl": "https://screenrant.com/superbad-filming-locations-explained/",
+          "supporting_passage": "The movie filmed on location at El Segundo High School in Sherwood Forest, California."
+        },
+        {
+          "beat": "The school's design, with its Georgian revival exterior, helped create the film's quintessential Californian setting.",
+          "sourceUrl": "https://screenrant.com/superbad-filming-locations-explained/",
+          "supporting_passage": "exterior looks more similar to the Georgian revival style. Ultimately, this filming location helped build the pastiche setting for Superbad"
+        },
+        {
+          "beat": "El Segundo High School has five main buildings with a brick facade and has been around since 1927.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "supporting_passage": "This school has been around since 1927 and features five main buildings built with a brick facade."
+        },
+        {
+          "beat": "Filming at El Segundo High School occurred while classes were in session, with breaks taken when students were in the halls.",
+          "sourceUrl": "https://604now.com/things-you-didnt-know-vancouver-superbad/",
+          "supporting_passage": "it shot at El Segundo High School in California – while classes were in session and took breaks when students came out into the halls."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {
+          "interestingness": 5,
+          "obviousness": 1,
+          "mainstream_appeal": 4,
+          "follow_up_pull": 5,
+          "composite": 0.95,
+          "verdict": "approve",
+          "reasoning": "The card provides specific, non-obvious details about the filming location of a popular movie. The information about the school's architectural style and the unique filming process (pausing for students) adds significant interest. The explicit follow-up questions demonstrate a strong hook for further engagement, making me want to tap for more.",
+          "suggested_edit": ""
+        },
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "factCategory": "location",
+        "shortVersion": "Fogell's liquor store is a real Glendale market.",
+        "longDescription": "The liquor store where Fogell-McLovin is knocked out during an attempted robbery is called 'TJ's Liquor' in the film. This scene was filmed at the real-world 7 Days Food Store, located at 1700 Victory Boulevard in Glendale.",
+        "sources": [
+          {
+            "url": "https://movie-locations.com/movies/s/Superbad.php",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Fogell attempts to buy alcohol at a liquor store, which gets robbed, leading to his first encounter with the police.",
+          "anchorElement": "The real-world liquor store location.",
+          "approxTimecode": "0:30:00",
+          "runtimeFraction": 0.26,
+          "runtimeThird": 1,
+          "runtimeQuartile": 2
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.26
+        }
+      },
+      "anchor": {
+        "scene_description": "Fogell attempts to buy alcohol at a liquor store, which gets robbed, leading to his first encounter with the police.",
+        "anchor_element": "The real-world liquor store location.",
+        "runtime_fraction": 0.26,
+        "approx_timecode": "0:30:00",
+        "category_guess": "location",
+        "search_hint": "The name and address of the actual liquor store used for filming and any details about shooting the chaotic robbery and police arrival scene.",
+        "search_queries": [
+          "Superbad liquor store filming location",
+          "Good Shoppe liquor store Superbad Glendale",
+          "filming McLovin liquor store scene",
+          "Superbad 2007 production locations"
+        ],
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.slashfilm.com/496817/superbad-stars-talks-fame-green-hornet-superbad-sequel-and-more/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://scriptmag.com/features/seth-rogen-evan-goldberg-super-bad-script-to-screen",
+          "title": "scriptmag.com",
+          "domain": "scriptmag.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://consequence.net/2025/02/superbad-i-am-mclovin-book-excerpt/",
+          "title": "consequence.net",
+          "domain": "consequence.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20070810/features/superbadcast.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thedeclarationatcoloniahigh.com/56077/behind-the-scenes/behind-the-scenes-of-superbad/",
+          "title": "thedeclarationatcoloniahigh.com",
+          "domain": "thedeclarationatcoloniahigh.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movie-locations.com/movies/s/Superbad.php",
+          "title": "movie-locations.com",
+          "domain": "movie-locations.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Fogell",
+            "McLovin",
+            "7 Days Food Store",
+            "1700 Victory Boulevard",
+            "Glendale",
+            "Superbad"
+          ],
+          "verbatim_misses": [
+            "TJ's Liquor"
+          ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "In the film, the liquor store where Fogell-McLovin is knocked out during an attempted robbery is named 'TJ's Liquor'.",
+          "sourceUrl": "https://movie-locations.com/movies/s/Superbad.php",
+          "supporting_passage": "‘TJ’s Liquor’, where Fogell-McLovin gets knocked out during an attempted robbery and hooks up with ever-so-slightly deranged cops Michael ( Seth Rogen ) and Slater ( Bill Hader )."
+        },
+        {
+          "beat": "The real-world location for 'TJ's Liquor' is the 7 Days Food Store.",
+          "sourceUrl": "https://movie-locations.com/movies/s/Superbad.php",
+          "supporting_passage": "The liquor store is 7 Days Food Store, 1700 Victory Boulevard, Glendale ."
+        },
+        {
+          "beat": "This store is located at 1700 Victory Boulevard in Glendale.",
+          "sourceUrl": "https://movie-locations.com/movies/s/Superbad.php",
+          "supporting_passage": "The liquor store is 7 Days Food Store, 1700 Victory Boulevard, Glendale ."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)"
+        ],
+        "flags": [
+          "verbatim: could not confirm [\"TJ's Liquor\"] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "factCategory": "actor",
+        "shortVersion": "McLovin's mom had to be on set for his love scene.",
+        "longDescription": "Christopher Mintz-Plasse was 17 years old during the filming of Superbad, making him an actual teenager. Due to his minor status, his mother was legally required to be on set while he filmed the love scene with Nicola. Mintz-Plasse described the experience as \"very, very surreal\" and \"definitely uncomfortable,\" noting he was a virgin at the time and \"had no idea what I was doing.\"",
+        "sources": [
+          {
+            "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.ladbible.com/entertainment/christopher-mintzplasse-mum-watched-sex-scene-20221023",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "At Jules' party, Fogell (McLovin) has a sexual encounter with Nicola in a bedroom.",
+          "anchorElement": "The on-screen presence of actor Christopher Mintz-Plasse.",
+          "approxTimecode": "1:35:00",
+          "runtimeFraction": 0.83,
+          "runtimeThird": 3,
+          "runtimeQuartile": 4
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.83
+        }
+      },
+      "anchor": {
+        "scene_description": "At Jules' party, Fogell (McLovin) has a sexual encounter with Nicola in a bedroom.",
+        "anchor_element": "The on-screen presence of actor Christopher Mintz-Plasse.",
+        "runtime_fraction": 0.83,
+        "approx_timecode": "1:35:00",
+        "category_guess": "actor",
+        "search_hint": "The production rule that required Christopher Mintz-Plasse's mother to be on set during the filming of his character's sex scene because he was 17.",
+        "search_queries": [
+          "Christopher Mintz-Plasse mother on set Superbad",
+          "how old was Christopher Mintz-Plasse during Superbad filming",
+          "filming Superbad sex scenes minor",
+          "Superbad Nicola sex scene production"
+        ],
+        "runtime_third": 3
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Christopher Mintz-Plasse",
+            "Superbad",
+            "17",
+            "McLovin",
+            "Nicola",
+            "Aviva Baumann",
+            "The Rich Eisen Show"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20070810/features/superbadcast.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ladbible.com/entertainment/christopher-mintzplasse-mum-watched-sex-scene-20221023",
+          "title": "ladbible.com",
+          "domain": "ladbible.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Christopher Mintz-Plasse",
+            "Superbad",
+            "17",
+            "McLovin",
+            "Nicola",
+            "Aviva Baumann",
+            "The Rich Eisen Show"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Christopher Mintz-Plasse was 17 years old during the filming of Superbad, making him an actual teenager.",
+          "sourceUrl": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "supporting_passage": "newcomer Christopher Mintz-Plasse was an actual teenager during the filming of Superbad . At the age of 17"
+        },
+        {
+          "beat": "Because he was a minor, Mintz-Plasse's mother had to be on set while he filmed the love scene with Nicola.",
+          "sourceUrl": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "supporting_passage": "Because he was a minor, he actually had to have his mother on set while he filmed the scene"
+        },
+        {
+          "beat": "Mintz-Plasse described the moment as \"very, very surreal\" when his mother watched him film the scene.",
+          "sourceUrl": "https://www.ladbible.com/entertainment/christopher-mintzplasse-mum-watched-sex-scene-20221023",
+          "supporting_passage": "Mintz-Plasse, described the 'very, very surreal' moment his mum had to watch him film his infamous McLovin sex scene."
+        },
+        {
+          "beat": "He found the scene \"definitely uncomfortable\" as he was a virgin at the time and \"had no idea what I was doing.\"",
+          "sourceUrl": "https://www.ladbible.com/entertainment/christopher-mintzplasse-mum-watched-sex-scene-20221023",
+          "supporting_passage": "Yeah, it’s definitely uncomfortable when you’re – at the time, I was actually a virgin, so I had no idea what I was doing."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {
+          "interestingness": 5,
+          "obviousness": 1,
+          "mainstream_appeal": 5,
+          "follow_up_pull": 4,
+          "composite": 0.96,
+          "verdict": "approve",
+          "reasoning": "This card provides a highly interesting and non-obvious behind-the-scenes detail about a memorable scene and character. The personal discomfort of the young actor, combined with the legal requirement for his mother to be present, adds a unique layer to the viewing experience. This fact has broad mainstream appeal and the suggested follow-ups are relevant and encourage further engagement.",
+          "suggested_edit": ""
+        },
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "factCategory": "location",
+        "shortVersion": "McLovin's bar was a real L.A. restaurant that closed in 2012.",
+        "longDescription": "The fictional \"Bailey's Bar And Grill\" where the police officers took Fogell was filmed at a real Los Angeles restaurant. This scene was filmed at the Buggy Whip Restaurant. The Buggy Whip Restaurant, located in Los Angeles, shut down in 2012.",
+        "sources": [
+          {
+            "url": "https://screenrant.com/superbad-filming-locations-explained/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "The officers, now friends with McLovin, take him for a drink at a dive bar to celebrate their \"bust\".",
+          "anchorElement": "The real-world bar location.",
+          "approxTimecode": "1:20:00",
+          "runtimeFraction": 0.7,
+          "runtimeThird": 3,
+          "runtimeQuartile": 3
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.0
+        }
+      },
+      "anchor": {
+        "scene_description": "The officers, now friends with McLovin, take him for a drink at a dive bar to celebrate their \"bust\".",
+        "anchor_element": "The real-world bar location.",
+        "runtime_fraction": 0.7,
+        "approx_timecode": "1:20:00",
+        "category_guess": "location",
+        "search_hint": "The name and location of the bar near LAX used for filming, and any anecdotes about shooting the scene with the three actors.",
+        "search_queries": [
+          "Superbad bar scene with cops location",
+          "bar near LAX Superbad filming",
+          "McLovin bar scene location",
+          "Superbad filming locations bar"
+        ],
+        "runtime_third": 3
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-filming-locations-explained/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "McLovin",
+            "2012",
+            "Bailey's Bar And Grill",
+            "Fogell",
+            "Los Angeles",
+            "Buggy Whip Restaurant",
+            "police officers"
+          ],
+          "verbatim_misses": [
+            "L.A."
+          ]
+        },
+        {
+          "url": "https://scriptmag.com/features/seth-rogen-evan-goldberg-super-bad-script-to-screen",
+          "title": "scriptmag.com",
+          "domain": "scriptmag.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "title": "giggster.com",
+          "domain": "giggster.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://filmmakermagazine.com/2990-superbads-greg-mottola-speaks/",
+          "title": "filmmakermagazine.com",
+          "domain": "filmmakermagazine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.vice.com/en/article/the-surprisingly-dark-history-of-superbads-filming-location/",
+          "title": "vice.com",
+          "domain": "vice.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://content.time.com/time/specials/2007/article/0,28804,1665692_1665693_1692410,00.html",
+          "title": "time.com",
+          "domain": "time.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The fictional \"Bailey's Bar And Grill\" where the police officers take Fogell was filmed at a real Los Angeles restaurant.",
+          "sourceUrl": "https://screenrant.com/superbad-filming-locations-explained/",
+          "supporting_passage": "When driving Fogell to his party in Superbad , the police officers have to make a stop at a place called Bailey's Bar And Grill in order to stop a conflict. Once they get there, the cops bond with Fogell. When the perpetrator slips, they think Fogell took him out, so they decide to buy him a beer. Then, they watch the tape of the earlier robbery at the Liquor store. This scene was filmed at Buggy Whip Restaurant, a Los Angeles restaurant that no longer exists."
+        },
+        {
+          "beat": "This scene was filmed at the Buggy Whip Restaurant.",
+          "sourceUrl": "https://screenrant.com/superbad-filming-locations-explained/",
+          "supporting_passage": "This scene was filmed at Buggy Whip Restaurant, a Los Angeles restaurant that no longer exists."
+        },
+        {
+          "beat": "The Buggy Whip Restaurant, located in Los Angeles, shut down in 2012.",
+          "sourceUrl": "https://screenrant.com/superbad-filming-locations-explained/",
+          "supporting_passage": "This scene was filmed at Buggy Whip Restaurant, a Los Angeles restaurant that no longer exists. Buggy Whip shut down in 2012"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {
+          "interestingness": 4,
+          "obviousness": 1,
+          "mainstream_appeal": 4,
+          "follow_up_pull": 5,
+          "composite": 0.89,
+          "verdict": "approve",
+          "reasoning": "This card provides a specific, non-obvious piece of trivia about a real-world location used in a popular movie. The detail about the restaurant closing in 2012 adds a layer of interest and nostalgia. The suggested follow-ups are excellent and directly related, indicating strong engagement potential for viewers interested in the movie's production details.",
+          "suggested_edit": ""
+        },
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 61 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['L.A.'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "factCategory": "costume/prop",
+        "shortVersion": "Fogell's fake ID was a Hawaiian license with the single name \"McLovin.\"",
+        "longDescription": "Fogell decided to use the single name \"McLovin\" for his fake ID. This prop was designed as a Hawaiian driver's license. The photo on the ID was humorously described as looking like a \"future pedophile.\"",
+        "sources": [
+          {
+            "url": "https://www.stevepulaski.com/2026/02/01/superbad-2007-review/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://healthydadhacks.com/mclovin-fake-id-superbad-movie-review/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Fogell proudly presents his new fake ID, a Hawaiian driver's license with the single name \"McLovin\".",
+          "anchorElement": "The \"McLovin\" Hawaiian driver's license prop.",
+          "approxTimecode": "0:20:00",
+          "runtimeFraction": 0.18,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.18
+        }
+      },
+      "anchor": {
+        "scene_description": "Fogell proudly presents his new fake ID, a Hawaiian driver's license with the single name \"McLovin\".",
+        "anchor_element": "The \"McLovin\" Hawaiian driver's license prop.",
+        "runtime_fraction": 0.18,
+        "approx_timecode": "0:20:00",
+        "category_guess": "costume/prop",
+        "search_hint": "The story behind the design of the iconic prop ID, including the choice of name, state, birthdate, and any alternate designs considered.",
+        "search_queries": [
+          "Superbad McLovin ID prop story",
+          "origin of McLovin name Superbad",
+          "who designed the McLovin ID prop",
+          "McLovin Hawaii driver's license details"
+        ],
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://scriptmag.com/features/seth-rogen-evan-goldberg-super-bad-script-to-screen",
+          "title": "scriptmag.com",
+          "domain": "scriptmag.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.dvdmg.com/superbadbr.shtml",
+          "title": "dvdmg.com",
+          "domain": "dvdmg.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://healthydadhacks.com/mclovin-fake-id-superbad-movie-review/",
+          "title": "healthydadhacks.com",
+          "domain": "healthydadhacks.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "McLovin",
+            "Superbad",
+            "Steve Pulaski",
+            "Healthy Dad Hacks"
+          ],
+          "verbatim_misses": [
+            "Fogell",
+            "Hawaiian"
+          ]
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/superbad",
+          "title": "rottentomatoes.com",
+          "domain": "rottentomatoes.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20070810/features/superbadcast.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.stevepulaski.com/2026/02/01/superbad-2007-review/",
+          "title": "stevepulaski.com",
+          "domain": "stevepulaski.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "McLovin",
+            "Superbad",
+            "Steve Pulaski",
+            "Healthy Dad Hacks"
+          ],
+          "verbatim_misses": [
+            "Fogell",
+            "Hawaiian"
+          ]
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Fogell chose the single name \"McLovin\" for his fake ID.",
+          "sourceUrl": "https://www.stevepulaski.com/2026/02/01/superbad-2007-review/",
+          "supporting_passage": "Fogel opts for the mononym “McLovin” for his ID"
+        },
+        {
+          "beat": "The fake ID is a Hawaiian driver's license.",
+          "sourceUrl": "https://healthydadhacks.com/mclovin-fake-id-superbad-movie-review/",
+          "supporting_passage": "this McLovin Hawaii fake ID is still relevant and still funny !"
+        },
+        {
+          "beat": "The photo on Fogell's ID was described as looking like a \"future pedophile.\"",
+          "sourceUrl": "https://www.stevepulaski.com/2026/02/01/superbad-2007-review/",
+          "supporting_passage": "beyond the fact he looks like a “future pedophile” in the photo"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_boundary": true,
+          "safety": false,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "safety: maturity/partner-safety failure",
+          "claim_entailment: only 2 bound+supported beats remain (need 3)",
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)"
+        ],
+        "flags": [
+          "shortVersion 71 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['Fogell', 'Hawaiian'] in fetched bodies"
+        ],
+        "judge_notes": "The phrase 'future pedophile' is quoted in the long description and as a beat. While it's a quote from the film, it is not G-rated and amplifies mature material, causing a safety_pass failure. Both sources are personal blogs/product reviews, classifying them as 'discovery'."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "factCategory": "location",
+        "shortVersion": "The police car stunts were filmed at Cal State Northridge.",
+        "longDescription": "The iconic parking lot scene, featuring the police car stunts, was filmed at California State University, Northridge. The university was chosen for its modern architecture and close proximity to Los Angeles. Its contemporary buildings added a unique flavor to the campus, making it ideal for feature films like Superbad.",
+        "sources": [
+          {
+            "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "The police car spins donuts in a vast, empty parking lot with McLovin in the back seat.",
+          "anchorElement": "The parking lot location for the police car stunts.",
+          "approxTimecode": "0:56:00",
+          "runtimeFraction": 0.49,
+          "runtimeThird": 2,
+          "runtimeQuartile": 2
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.49
+        }
+      },
+      "anchor": {
+        "scene_description": "The police car spins donuts in a vast, empty parking lot with McLovin in the back seat.",
+        "anchor_element": "The parking lot location for the police car stunts.",
+        "runtime_fraction": 0.49,
+        "approx_timecode": "0:56:00",
+        "category_guess": "location",
+        "search_hint": "The specific university campus parking lot used for the stunt driving sequence and any details about its execution and filming.",
+        "search_queries": [
+          "Superbad police car donuts filming location",
+          "CSUN parking lot Superbad",
+          "filming Superbad car stunts",
+          "California State University Northridge Superbad scene"
+        ],
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "title": "giggster.com",
+          "domain": "giggster.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "California State University, Northridge",
+            "Los Angeles",
+            "Superbad"
+          ],
+          "verbatim_misses": [
+            "Cal State Northridge"
+          ]
+        },
+        {
+          "url": "https://consequence.net/2025/02/superbad-i-am-mclovin-book-excerpt/",
+          "title": "consequence.net",
+          "domain": "consequence.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://content.time.com/time/specials/2007/article/0,28804,1665692_1665693_1692410,00.html",
+          "title": "time.com",
+          "domain": "time.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movie-locations.com/movies/s/Superbad.php",
+          "title": "movie-locations.com",
+          "domain": "movie-locations.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The parking lot scene in Superbad was filmed at California State University, Northridge.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "supporting_passage": "The scene set in the parking lot at California State University, Northridge, is an iconic moment in the film."
+        },
+        {
+          "beat": "The university was selected as the filming location for this scene due to its close proximity to Los Angeles and its modern architecture.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "supporting_passage": "California State University, Northridge, was selected as the filming location for this scene because of its close proximity to Los Angeles and its modern architecture."
+        },
+        {
+          "beat": "The modern structure of the buildings added a unique flavor to the campus grounds, making it perfect for feature films such as Superbad.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "supporting_passage": "The modern structure of the buildings adds a unique flavor to the campus grounds, making it perfect for feature films such as Superbad."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 1,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)"
+        ],
+        "flags": [
+          "verbatim: could not confirm ['Cal State Northridge'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "error",
+      "card": {
+        "factCategory": "costume/prop",
+        "shortVersion": "Seth's notebook doodles were drawn by a co-writer's brother.",
+        "longDescription": "Evan Goldberg's brother, David Goldberg, an artist, was commissioned to create all the penis drawings for the movie while studying for law school. During filming, the production team used creative camera work, including a body double, to prevent the child actors from seeing the graphic drawings. The kids cast to play young Seth and young Becca had no idea what they were reacting to in these scenes. The actor who played young Seth in the flashback scene was Casey Margolis.",
+        "sources": [
+          {
+            "url": "https://www.slashfilm.com/969426/casting-kids-for-superbads-flashbacks-called-for-some-creative-camera-work/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.newsweek.com/superbad-movie-salary-money-young-jonah-hill-seth-casey-margolis-1672113",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "In home economics class, Seth is revealed to have filled his notepad with dozens of detailed penis drawings.",
+          "anchorElement": "The prop notebook filled with phallic drawings.",
+          "approxTimecode": "0:10:00",
+          "runtimeFraction": 0.09,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.0
+        }
+      },
+      "anchor": {
+        "scene_description": "In home economics class, Seth is revealed to have filled his notepad with dozens of detailed penis drawings.",
+        "anchor_element": "The prop notebook filled with phallic drawings.",
+        "runtime_fraction": 0.09,
+        "approx_timecode": "0:10:00",
+        "category_guess": "costume/prop",
+        "search_hint": "The origin story of the drawings: who actually drew them for the film, any specific instructions given, and the prop's journey.",
+        "search_queries": [
+          "who drew the dicks in Superbad",
+          "Superbad penis drawings prop artist",
+          "Seth Rogen Evan Goldberg Superbad drawings",
+          "Superbad home economics scene props"
+        ],
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.slashfilm.com/969426/casting-kids-for-superbads-flashbacks-called-for-some-creative-camera-work/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://ijustreadaboutthat.com/2008/07/13/david-goldberg-seth-rogen-evan-goldberg-superbad-the-drawings-2008/",
+          "title": "ijustreadaboutthat.com",
+          "domain": "ijustreadaboutthat.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://scriptmag.com/features/seth-rogen-evan-goldberg-super-bad-script-to-screen",
+          "title": "scriptmag.com",
+          "domain": "scriptmag.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.newsweek.com/superbad-movie-salary-money-young-jonah-hill-seth-casey-margolis-1672113",
+          "title": "newsweek.com",
+          "domain": "newsweek.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://dailycollegian.com/2008/04/superbad-point-counterpoint/",
+          "title": "dailycollegian.com",
+          "domain": "dailycollegian.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.abebooks.com/first-edition/Superbad-Drawings-Goldberg-David-Rogen-Seth/32249045262/bd",
+          "title": "abebooks.com",
+          "domain": "abebooks.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Evan Goldberg's brother, David Goldberg, an artist, was commissioned to create all the penis drawings for the movie in between studying for law school.",
+          "sourceUrl": "https://www.slashfilm.com/969426/casting-kids-for-superbads-flashbacks-called-for-some-creative-camera-work/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "During filming, the production team used creative camera work, including a body double, to prevent the child actors from seeing the graphic drawings.",
+          "sourceUrl": "https://www.slashfilm.com/969426/casting-kids-for-superbads-flashbacks-called-for-some-creative-camera-work/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The kids cast to play young Seth and young Becca had no idea what they were reacting to in the scenes featuring the drawings.",
+          "sourceUrl": "https://www.slashfilm.com/969426/casting-kids-for-superbads-flashbacks-called-for-some-creative-camera-work/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The actor who played young Seth in the flashback scene was Casey Margolis.",
+          "sourceUrl": "https://www.newsweek.com/superbad-movie-salary-money-young-jonah-hill-seth-casey-margolis-1672113",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "factCategory": "location",
+        "shortVersion": "The final scene was filmed at Fox Hills Mall in Culver City.",
+        "longDescription": "The final scene of Superbad, where Seth and Evan meet Jules and Becca, was filmed at the Fox Hills Mall. This mall is located in Culver City, California, and is now known as the Westfield Culver City Mall. The escalator Seth and Evan ride down at the film's end can also be seen in \"It's Always Sunny in Philadelphia.\"",
+        "sources": [
+          {
+            "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://globalfilmlocations.net/2016/06/21/superbad-film-locations/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://lafilminglocations.weebly.com/superbad.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://culveronfilm.com/superbad/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "The next day, Seth and Evan meet Jules and Becca at the mall, and the two best friends go their separate ways for the first time.",
+          "anchorElement": "The shopping mall setting for the film's final scene.",
+          "approxTimecode": "1:48:00",
+          "runtimeFraction": 0.95,
+          "runtimeThird": 3,
+          "runtimeQuartile": 4
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.95
+        }
+      },
+      "anchor": {
+        "scene_description": "The next day, Seth and Evan meet Jules and Becca at the mall, and the two best friends go their separate ways for the first time.",
+        "anchor_element": "The shopping mall setting for the film's final scene.",
+        "runtime_fraction": 0.95,
+        "approx_timecode": "1:48:00",
+        "category_guess": "location",
+        "search_hint": "The specific mall used for the film's concluding scene and any stories about filming the movie's bittersweet final moments there.",
+        "search_queries": [
+          "Superbad mall scene location",
+          "Fox Hills Mall Culver City Superbad",
+          "filming the end of Superbad",
+          "Superbad final scene location"
+        ],
+        "runtime_third": 3
+      },
+      "sources": [
+        {
+          "url": "https://screenrant.com/superbad-filming-locations-explained/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "title": "giggster.com",
+          "domain": "giggster.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Superbad",
+            "Fox Hills Mall",
+            "Culver City",
+            "Westfield Culver City Mall",
+            "Seth",
+            "Evan",
+            "Jules",
+            "Becca",
+            "California"
+          ],
+          "verbatim_misses": [
+            "It's Always Sunny in Philadelphia"
+          ]
+        },
+        {
+          "url": "https://www.cinemablend.com/movies/superbad-originally-had-a-different-ending-and-of-course-it-involved-boobs-and-f-bombs",
+          "title": "cinemablend.com",
+          "domain": "cinemablend.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.vice.com/en/article/the-surprisingly-dark-history-of-superbads-filming-location/",
+          "title": "vice.com",
+          "domain": "vice.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://globalfilmlocations.net/2016/06/21/superbad-film-locations/",
+          "title": "globalfilmlocations.net",
+          "domain": "globalfilmlocations.net",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Superbad",
+            "Fox Hills Mall",
+            "Culver City",
+            "Westfield Culver City Mall",
+            "Seth",
+            "Evan",
+            "Jules",
+            "Becca",
+            "California"
+          ],
+          "verbatim_misses": [
+            "It's Always Sunny in Philadelphia"
+          ]
+        },
+        {
+          "url": "https://culveronfilm.com/superbad/",
+          "title": "culveronfilm.com",
+          "domain": "culveronfilm.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Superbad",
+            "Fox Hills Mall",
+            "Culver City",
+            "Westfield Culver City Mall",
+            "Seth",
+            "Evan",
+            "Jules",
+            "Becca",
+            "California"
+          ],
+          "verbatim_misses": [
+            "It's Always Sunny in Philadelphia"
+          ]
+        },
+        {
+          "url": "https://lafilminglocations.weebly.com/superbad.html",
+          "title": "weebly.com",
+          "domain": "weebly.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Superbad",
+            "Fox Hills Mall",
+            "Culver City",
+            "Westfield Culver City Mall",
+            "Seth",
+            "Evan",
+            "Jules",
+            "Becca",
+            "California"
+          ],
+          "verbatim_misses": [
+            "It's Always Sunny in Philadelphia"
+          ]
+        },
+        {
+          "url": "https://moviemaps.org/movies/2w6",
+          "title": "moviemaps.org",
+          "domain": "moviemaps.org",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The final scene of Superbad, where Seth and Evan meet Jules and Becca, was filmed at the Fox Hills Mall.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "supporting_passage": "Seth and Evan meet Jules and Becca at the mall scene in Superbad 294 Fox Hills Mall, Culver City, CA 90230, USA The following day, Evan and Seth head to the shopping mall with a specific purpose. Evan wants to buy a new comforter to bring to Dartmouth, while Seth needs some new pants. While there, they run into Becca and Jules."
+        },
+        {
+          "beat": "This mall is located in Culver City, California.",
+          "sourceUrl": "https://globalfilmlocations.net/2016/06/21/superbad-film-locations/",
+          "supporting_passage": "Fox Hills Mall – 294 Fox Hills Mall, Culver City, California, USA (Mall)"
+        },
+        {
+          "beat": "The mall where the final scene was filmed is now known as the Westfield Culver City Mall.",
+          "sourceUrl": "https://lafilminglocations.weebly.com/superbad.html",
+          "supporting_passage": "The mall where the final scene was filmed is the Westfield Culver City Mall (Formerly the Fox Hills Mall) in Culver city"
+        },
+        {
+          "beat": "The escalator Seth and Evan ride down at the film's end can also be seen in \"It's Always Sunny in Philadelphia.\"",
+          "sourceUrl": "https://culveronfilm.com/superbad/",
+          "supporting_passage": "Fun Fact : The escalator they ride down at the film’s end can also be seen in It’s Always Sunny in Philadelphia ."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 1,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)"
+        ],
+        "flags": [
+          "verbatim: could not confirm [\"It's Always Sunny in Philadelphia\"] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "error",
+      "card": {
+        "factCategory": "historical",
+        "shortVersion": "Seth and Evan's sleeping bag talk was a drunken love confession.",
+        "longDescription": "After their party, Seth and Evan slept next to each other on the floor in sleeping bags, drunkenly confessing their love. Evan called their bond \"the most beautiful thing in the world,\" and Seth held him in his arms. The next morning, Seth woke up very nervous about the intimacy of the moment.",
+        "sources": [
+          {
+            "url": "https://www.pluggedin.com/movie-reviews/superbad/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "After a fight, Seth and Evan make up while drunk in their sleeping bags, admitting their fear of separating for college.",
+          "anchorElement": "The two sleeping bags, side-by-side, in the dark living room.",
+          "approxTimecode": "1:40:00",
+          "runtimeFraction": 0.88,
+          "runtimeThird": 3,
+          "runtimeQuartile": 4
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.0
+        }
+      },
+      "anchor": {
+        "scene_description": "After a fight, Seth and Evan make up while drunk in their sleeping bags, admitting their fear of separating for college.",
+        "anchor_element": "The two sleeping bags, side-by-side, in the dark living room.",
+        "runtime_fraction": 0.88,
+        "approx_timecode": "1:40:00",
+        "category_guess": "costume/prop",
+        "search_hint": "The filming techniques or directorial choices made to capture the intimacy and emotional turning point of this quiet, vulnerable scene.",
+        "search_queries": [
+          "Superbad sleeping bag scene filming",
+          "directing the emotional climax of Superbad",
+          "Jonah Hill Michael Cera sleeping bag scene",
+          "Greg Mottola Superbad directing techniques"
+        ],
+        "runtime_third": 3
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://au.rollingstone.com/movies/movie-news/michael-cera-superbad-interview-77769/",
+          "title": "rollingstone.com",
+          "domain": "rollingstone.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://scriptmag.com/features/seth-rogen-evan-goldberg-super-bad-script-to-screen",
+          "title": "scriptmag.com",
+          "domain": "scriptmag.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://filmmakermagazine.com/1277-greg-mottola-superbad/",
+          "title": "filmmakermagazine.com",
+          "domain": "filmmakermagazine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.pluggedin.com/movie-reviews/superbad/",
+          "title": "pluggedin.com",
+          "domain": "pluggedin.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.studiobinder.com/blog/superbad-script-screenplay-pdf-download/",
+          "title": "studiobinder.com",
+          "domain": "studiobinder.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://consequence.net/2025/02/superbad-i-am-mclovin-book-excerpt/",
+          "title": "consequence.net",
+          "domain": "consequence.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "After their party, Seth and Evan sleep next to each other on the floor in sleeping bags.",
+          "sourceUrl": "https://www.pluggedin.com/movie-reviews/superbad/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "They drunkenly confess how much they love each other in this moment.",
+          "sourceUrl": "https://www.pluggedin.com/movie-reviews/superbad/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Evan calls their bond 'the most beautiful thing in the world.'",
+          "sourceUrl": "https://www.pluggedin.com/movie-reviews/superbad/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Seth pats Evan on the cheek and holds him in his arms.",
+          "sourceUrl": "https://www.pluggedin.com/movie-reviews/superbad/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The next morning, Seth wakes up very nervous about the intimacy of the moment.",
+          "sourceUrl": "https://www.pluggedin.com/movie-reviews/superbad/",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "At the first party, Seth is tasked with bringing laundry detergent. He walks through the party holding a large, prominent bottle of Tide.",
+        "anchor_element": "The large, bright orange bottle of Tide laundry detergent used as a prop.",
+        "runtime_fraction": 0.31,
+        "approx_timecode": "00:35:00",
+        "category_guess": "costume/prop",
+        "search_hint": "Investigate whether the prominent placement of the Tide bottle was a deliberate product placement deal or a creative choice by the filmmakers for comedic or character-based reasons.",
+        "search_queries": [
+          "Tide detergent product placement in Superbad",
+          "Why does Seth bring Tide to the party in Superbad",
+          "Superbad prop master on laundry detergent",
+          "product placement in Judd Apatow movies"
+        ],
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "factCategory": "location",
+        "shortVersion": "The home economics class was filmed at El Segundo High School.",
+        "longDescription": "The high school scenes, including the home economics classroom, were filmed on location at El Segundo High School in El Segundo, California. The school, established in 1927, features five main buildings with a brick facade. Its interior design blends modern and Mediterranean styles, contrasting with a Georgian revival exterior.",
+        "sources": [
+          {
+            "url": "https://screenrant.com/superbad-filming-locations-explained/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Seth (Jonah Hill) complains to the teacher about his absent partner before getting paired with his crush, Jules (Emma Stone), to make tiramisu.",
+          "anchorElement": "The physical set and location of the home economics classroom.",
+          "approxTimecode": "00:08:15",
+          "runtimeFraction": 0.073,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.07
+        }
+      },
+      "anchor": {
+        "scene_description": "Seth (Jonah Hill) complains to the teacher about his absent partner before getting paired with his crush, Jules (Emma Stone), to make tiramisu.",
+        "anchor_element": "The physical set and location of the home economics classroom.",
+        "runtime_fraction": 0.073,
+        "approx_timecode": "00:08:15",
+        "category_guess": "location",
+        "search_hint": "Determine if the home economics classroom was a real, functioning classroom at the filming location (El Segundo High School) or a custom-built set.",
+        "search_queries": [
+          "Superbad home economics scene filming location",
+          "Was the Superbad high school a real school",
+          "set design Superbad classroom",
+          "filming at El Segundo High School for Superbad"
+        ],
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-filming-locations-explained/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "El Segundo High School",
+            "El Segundo, California",
+            "1927",
+            "Georgian revival",
+            "Superbad"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thegoodsreviews.com/superbad-2007/",
+          "title": "thegoodsreviews.com",
+          "domain": "thegoodsreviews.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "title": "giggster.com",
+          "domain": "giggster.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "El Segundo High School",
+            "El Segundo, California",
+            "1927",
+            "Georgian revival",
+            "Superbad"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/superbad",
+          "title": "rottentomatoes.com",
+          "domain": "rottentomatoes.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thedeclarationatcoloniahigh.com/56077/behind-the-scenes/behind-the-scenes-of-superbad/",
+          "title": "thedeclarationatcoloniahigh.com",
+          "domain": "thedeclarationatcoloniahigh.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The high school scenes, including the home economics class, were filmed on location at El Segundo High School.",
+          "sourceUrl": "https://screenrant.com/superbad-filming-locations-explained/",
+          "supporting_passage": "The movie filmed on location at El Segundo High School"
+        },
+        {
+          "beat": "El Segundo High School is located in El Segundo, California.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "supporting_passage": "El Segundo High School in El Segundo, California."
+        },
+        {
+          "beat": "The school's interior design blends modern and Mediterranean styles, while its exterior is Georgian revival.",
+          "sourceUrl": "https://screenrant.com/superbad-filming-locations-explained/",
+          "supporting_passage": "It looks both modern and Mediterranean on the inside while exterior looks more similar to the Georgian revival style."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "claim_entailment": false,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 62 chars (target 50-60, cap 80)",
+          "relaxed: dropped beats [3] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims"
+        ],
+        "judge_notes": "Beat 3 is not entailed because the cited source (ScreenRant) does not contain the supporting passage. The passage is found in the Giggster source, but the beat incorrectly cites ScreenRant. This leads to a factual accuracy failure and makes the summary not fully entailed."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "factCategory": "music",
+        "shortVersion": "Evan's impromptu song was originally by The Guess Who.",
+        "longDescription": "In this scene, Evan performs \"These Eyes\" in the basement at the party. The song was originally performed by the band The Guess Who. \"Coke heads\" at the party specifically made Evan sing this song.",
+        "sources": [
+          {
+            "url": "https://www.soundtrackinfo.com/OST/superbad/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "In a back room at the party, a group of men doing cocaine pressure Evan into singing. He reluctantly sings \"These Eyes\" by The Guess Who.",
+          "anchorElement": "The song \"These Eyes\" being performed by Michael Cera on screen.",
+          "approxTimecode": "00:41:00",
+          "runtimeFraction": 0.36,
+          "runtimeThird": 2,
+          "runtimeQuartile": 2
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.36
+        }
+      },
+      "anchor": {
+        "scene_description": "In a back room at the party, a group of men doing cocaine pressure Evan into singing. He reluctantly sings \"These Eyes\" by The Guess Who.",
+        "anchor_element": "The song \"These Eyes\" being performed by Michael Cera on screen.",
+        "runtime_fraction": 0.36,
+        "approx_timecode": "00:41:00",
+        "category_guess": "music",
+        "search_hint": "Explore the backstory of choosing this specific 1969 hit song for this awkward, comedic scene and the process of having Michael Cera perform it live.",
+        "search_queries": [
+          "Michael Cera sings \"These Eyes\" in Superbad",
+          "Why did Evan sing \"These Eyes\" in Superbad",
+          "The Guess Who song in Superbad party",
+          "Superbad cocaine room scene song"
+        ],
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movieweb.com/seth-rogen-evan-goldberg-greg-mottola-and-judd-apatow-make-a-film-that-is-superbad/",
+          "title": "movieweb.com",
+          "domain": "movieweb.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.dvdmg.com/superbadbr.shtml",
+          "title": "dvdmg.com",
+          "domain": "dvdmg.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundtrackinfo.com/OST/superbad/",
+          "title": "soundtrackinfo.com",
+          "domain": "soundtrackinfo.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Evan",
+            "Michael Cera",
+            "These Eyes",
+            "The Guess Who"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20070810/features/superbadcast.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://content.time.com/time/specials/2007/article/0,28804,1665692_1665693_1692410,00.html",
+          "title": "time.com",
+          "domain": "time.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Evan (Michael Cera) performs \"These Eyes\" in the basement at the party.",
+          "sourceUrl": "https://www.soundtrackinfo.com/OST/superbad/",
+          "supporting_passage": "Evan (Michael Cera) performs \"These Eyes\" in the basement at the party."
+        },
+        {
+          "beat": "The song \"These Eyes\" was originally performed by the band The Guess Who.",
+          "sourceUrl": "https://www.soundtrackinfo.com/OST/superbad/",
+          "supporting_passage": "It's originally performed by The Guess Who."
+        },
+        {
+          "beat": "The \"coke heads\" at the party made Evan sing the song.",
+          "sourceUrl": "https://www.soundtrackinfo.com/OST/superbad/",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": false,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "claim_entailment": false,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 1,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "safety: maturity/partner-safety failure",
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 2 bound+supported beats remain (need 3)",
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [],
+        "judge_notes": "Beat 2 is not entailed. The source only repeats a user's question containing the phrase \"coke heads\" but does not assert it as a fact. The longDescription includes this unsupported claim, making it not entailed. The shortVersion uses \"impromptu\" which is not explicitly stated in the beats. The term \"coke heads\" is not G-rated, failing the safety pass."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "factCategory": "music",
+        "shortVersion": "Bill Hader improvised singing Van Halen's \"Panama.\"",
+        "longDescription": "While filming the joyride scene, Bill Hader improvised by singing Van Halen's \"Panama.\" Producer Judd Apatow immediately informed Hader that his ad-lib would cost the production a significant amount to license the song. The song choice was a stark contrast to the film's usual funky musical vibe, but it fit the scene.",
+        "sources": [
+          {
+            "url": "https://www.avclub.com/i-am-mclovin-how-superbad-became-the-biggest-hit-comedy-excerpt-andrew-buss",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "Officers Slater (Bill Hader) and Michaels (Seth Rogen) take McLovin on a joyride, doing donuts in a parking lot.",
+          "anchorElement": "The song \"Panama\" by Van Halen blasting from the police car stereo.",
+          "approxTimecode": "01:05:00",
+          "runtimeFraction": 0.57,
+          "runtimeThird": 2,
+          "runtimeQuartile": 3
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.57
+        }
+      },
+      "anchor": {
+        "scene_description": "Officers Slater (Bill Hader) and Michaels (Seth Rogen) take McLovin on a joyride, doing donuts in a parking lot.",
+        "anchor_element": "The song \"Panama\" by Van Halen blasting from the police car stereo.",
+        "runtime_fraction": 0.57,
+        "approx_timecode": "01:05:00",
+        "category_guess": "music",
+        "search_hint": "Uncover the story behind licensing this iconic, high-energy Van Halen track for the police car stunt scene.",
+        "search_queries": [
+          "Van Halen \"Panama\" in Superbad cop car scene",
+          "Superbad police car donut scene song",
+          "licensing Van Halen music for movies",
+          "Bill Hader singing Panama in Superbad"
+        ],
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/michael-cera-and-christopher-mintzplasse-interview-superbad/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theringer.com/2017/08/30/pop-culture/superbad-ten-years-later-seth-rogen-judd-apatow",
+          "title": "theringer.com",
+          "domain": "theringer.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theringer.com/2018/10/19/movies/mid90s-jonah-hill-american-graffiti-dazed-confused-adventureland-generational-films",
+          "title": "theringer.com",
+          "domain": "theringer.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.avclub.com/i-am-mclovin-how-superbad-became-the-biggest-hit-comedy-excerpt-andrew-buss",
+          "title": "avclub.com",
+          "domain": "avclub.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Bill Hader",
+            "Van Halen",
+            "Panama",
+            "Judd Apatow",
+            "Superbad"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.slashfilm.com/496817/superbad-stars-talks-fame-green-hornet-superbad-sequel-and-more/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://scriptmag.com/features/seth-rogen-evan-goldberg-super-bad-script-to-screen",
+          "title": "scriptmag.com",
+          "domain": "scriptmag.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.bollywoodhungama.com/news/features/jonah-hill-immediately-hated-superbad-co-star-christopher-mintz-plasse-improvs-insulting-jonah-audition/",
+          "title": "bollywoodhungama.com",
+          "domain": "bollywoodhungama.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "While filming the scene, Bill Hader improvised by singing the song “Panama” by Van Halen.",
+          "sourceUrl": "https://www.avclub.com/i-am-mclovin-how-superbad-became-the-biggest-hit-comedy-excerpt-andrew-buss",
+          "supporting_passage": "While filming the scene, Hader improvised by singing the song “Panama” by Van Halen."
+        },
+        {
+          "beat": "Immediately after the take, producer Judd Apatow informed Hader that his ad-lib would cost the production a ton of money to license the song.",
+          "sourceUrl": "https://www.avclub.com/i-am-mclovin-how-superbad-became-the-biggest-hit-comedy-excerpt-andrew-buss",
+          "supporting_passage": "Immediately after the take, Apatow went over to Hader and let him know that the ad-lib just cost them a ton of money, as they now had to license the song."
+        },
+        {
+          "beat": "The choice of \"Panama\" was a stark contrast to the rest of the film’s funky musical vibe, but it fit the scene.",
+          "sourceUrl": "https://www.avclub.com/i-am-mclovin-how-superbad-became-the-biggest-hit-comedy-excerpt-andrew-buss",
+          "supporting_passage": "The choice is a stark contrast to the rest of the film’s funky musical vibe, but in the scene, it fits."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {
+          "interestingness": 4,
+          "obviousness": 2,
+          "mainstream_appeal": 5,
+          "follow_up_pull": 5,
+          "composite": 0.89,
+          "verdict": "approve",
+          "reasoning": "This card provides a specific, surprising, and entertaining behind-the-scenes detail involving well-known actors and a famous song. The fact that it was improvised and incurred a significant licensing cost is not at all obvious from watching the scene. It has high mainstream appeal and the suggested follow-ups are strong, inviting further engagement.",
+          "suggested_edit": ""
+        },
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "factCategory": "music",
+        "shortVersion": "The film's 70s funk soundtrack features \"Too Hot to Stop\" by The Bar-Kays.",
+        "longDescription": "The film's soundtrack aimed for a \"deliciously 70s vibe,\" filled with Blaxploitation and funky sounds. \"Too Hot to Stop\" by The Bar-Kays is one of the most recognized songs from the movie. To achieve this authentic sound, film composer Lyle Workman sought to hire the \"architects of that music.\" This effort led to reuniting legendary funk musicians, including Bootsy Collins and the original J.B.'s rhythm section, for the film's music.",
+        "sources": [
+          {
+            "url": "https://emmakwall.com/2016/07/22/superbad-ost/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.guitarworld.com/artists/bassists/how-bootsy-collins-and-james-brown-band-ended-up-playing-on-superbad",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "The film opens with stylized, 70s-inspired silhouette animations of the main characters dancing against colorful backgrounds.",
+          "anchorElement": "The funk song \"Too Hot to Stop\" by The Bar-Kays.",
+          "approxTimecode": "00:00:30",
+          "runtimeFraction": 0.004,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.0
+        }
+      },
+      "anchor": {
+        "scene_description": "The film opens with stylized, 70s-inspired silhouette animations of the main characters dancing against colorful backgrounds.",
+        "anchor_element": "The funk song \"Too Hot to Stop\" by The Bar-Kays.",
+        "runtime_fraction": 0.004,
+        "approx_timecode": "00:00:30",
+        "category_guess": "music",
+        "search_hint": "Investigate the creative decision to use a 1970s funk track to establish the tone for a 2007 teen comedy and how this specific track was selected.",
+        "search_queries": [
+          "Superbad opening credits song \"Too Hot to Stop\"",
+          "Why does Superbad use 70s funk music",
+          "Superbad director Greg Mottola on opening credits",
+          "The Bar-Kays \"Too Hot to Stop\" in movies"
+        ],
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/michael-cera-and-christopher-mintzplasse-interview-superbad/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://au.rollingstone.com/movies/movie-news/michael-cera-superbad-interview-77769/",
+          "title": "rollingstone.com",
+          "domain": "rollingstone.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://filmmakermagazine.com/1277-greg-mottola-superbad/",
+          "title": "filmmakermagazine.com",
+          "domain": "filmmakermagazine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://emmakwall.com/2016/07/22/superbad-ost/",
+          "title": "emmakwall.com",
+          "domain": "emmakwall.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Superbad",
+            "70s",
+            "Too Hot to Stop",
+            "Lyle Workman",
+            "Bootsy Collins",
+            "J.B.'s"
+          ],
+          "verbatim_misses": [
+            "The Bar-Kays"
+          ]
+        },
+        {
+          "url": "https://www.guitarworld.com/artists/bassists/how-bootsy-collins-and-james-brown-band-ended-up-playing-on-superbad",
+          "title": "guitarworld.com",
+          "domain": "guitarworld.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Superbad",
+            "70s",
+            "Too Hot to Stop",
+            "Lyle Workman",
+            "Bootsy Collins",
+            "J.B.'s"
+          ],
+          "verbatim_misses": [
+            "The Bar-Kays"
+          ]
+        },
+        {
+          "url": "http://www.blackfilm.com/20070810/features/superbadcast.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thestopbutton.com/2007/08/20/superbad-2007/",
+          "title": "thestopbutton.com",
+          "domain": "thestopbutton.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film's soundtrack has a \"deliciously 70s vibe\" and is \"bursting with Blaxploitation music and funky 70 sounds.\"",
+          "sourceUrl": "https://emmakwall.com/2016/07/22/superbad-ost/",
+          "supporting_passage": "Though set in the present day Superbad has a delicious ly 70s vibe. Though the main thing of course is the soundtrack. Which is just bursting with Blaxploitation music and funky 70 sounds….so superfly!"
+        },
+        {
+          "beat": "\"Too Hot to Stop\" by The Bar-Kays is one of the most recognized songs from the film.",
+          "sourceUrl": "https://emmakwall.com/2016/07/22/superbad-ost/",
+          "supporting_passage": "My two favourite tracks are ‘Too Hot to Stop’ by The Bar Keys, which is easily one of the most recognised songs from the film (it plays at the beginning whilst Seth and Evan are doing their little silhouetted dance which reminds me of Eddie and Richie from Bottom)."
+        },
+        {
+          "beat": "Film composer Lyle Workman wanted to hire the \"architects of that music\" to create the film's score.",
+          "sourceUrl": "https://www.guitarworld.com/artists/bassists/how-bootsy-collins-and-james-brown-band-ended-up-playing-on-superbad",
+          "supporting_passage": "“So my thought [was], ‘What if we actually hire those architects of that music and have them be the band?’” Workman continues."
+        },
+        {
+          "beat": "This led to reuniting Bootsy Collins and the original J.B.'s rhythm section for the film's music.",
+          "sourceUrl": "https://www.guitarworld.com/artists/bassists/how-bootsy-collins-and-james-brown-band-ended-up-playing-on-superbad",
+          "supporting_passage": "And, lo and behold, Superbad (the movie) ended up reuniting the original J.B.'s rhythm section with Bootsy and Phelps “Catfish” Collins, Jabo Starks, and Clyde Stubblefield, supplemented by Bernie Worrell."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 2 bound+supported beats remain (need 3)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 74 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['The Bar-Kays'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "factCategory": "music",
+        "shortVersion": "The Rapture's \"Echoes\" adds post-punk anxiety to the party.",
+        "longDescription": "The song \"Echoes\" by The Rapture is featured in the film, serving as \"late-night connective tissue\" during the party. Its bassline underscores the night's unraveling and quick cuts between locations, adding a sense of post-punk anxiety as the comedown approaches.",
+        "sources": [
+          {
+            "url": "https://www.soundtrackinfo.com/OST/superbad/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://stlyrics.org/s/superbad.htm",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "As Seth, Evan, and Fogell navigate the crowded house party, the song \"Echoes\" by The Rapture is playing prominently.",
+          "anchorElement": "The licensed song \"Echoes\" by The Rapture.",
+          "approxTimecode": "00:43:00",
+          "runtimeFraction": 0.38,
+          "runtimeThird": 2,
+          "runtimeQuartile": 2
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.38
+        }
+      },
+      "anchor": {
+        "scene_description": "As Seth, Evan, and Fogell navigate the crowded house party, the song \"Echoes\" by The Rapture is playing prominently.",
+        "anchor_element": "The licensed song \"Echoes\" by The Rapture.",
+        "runtime_fraction": 0.38,
+        "approx_timecode": "00:43:00",
+        "category_guess": "music",
+        "search_hint": "Find out how the filmmakers chose this specific indie dance-punk track to score the chaotic party atmosphere.",
+        "search_queries": [
+          "what song is playing at the first party in Superbad",
+          "\"Echoes\" by The Rapture in Superbad",
+          "Superbad party scene music supervision",
+          "soundtrack of Jules's party in Superbad"
+        ],
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.dvdmg.com/superbadbr.shtml",
+          "title": "dvdmg.com",
+          "domain": "dvdmg.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundtrackinfo.com/OST/superbad/",
+          "title": "soundtrackinfo.com",
+          "domain": "soundtrackinfo.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Rapture",
+            "Echoes"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://stlyrics.org/s/superbad.htm",
+          "title": "stlyrics.org",
+          "domain": "stlyrics.org",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Rapture",
+            "Echoes"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20070810/features/superbadcast.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://content.time.com/time/specials/2007/article/0,28804,1665692_1665693_1692410,00.html",
+          "title": "time.com",
+          "domain": "time.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The song \"Echoes\" by The Rapture is featured in the film.",
+          "sourceUrl": "https://www.soundtrackinfo.com/OST/superbad/",
+          "supporting_passage": "Echoes - The Rapture"
+        },
+        {
+          "beat": "It was used as \"late-night connective tissue\" in the movie.",
+          "sourceUrl": "https://stlyrics.org/s/superbad.htm",
+          "supporting_passage": "Late-night connective tissue"
+        },
+        {
+          "beat": "The song's bassline underscores the night's unraveling and quick cuts between locations.",
+          "sourceUrl": "https://stlyrics.org/s/superbad.htm",
+          "supporting_passage": "the bassline churn underscores the night’s unraveling and quick cuts between locations"
+        },
+        {
+          "beat": "It adds a \"post-punk anxiety\" to the scene, signaling a \"comedown.\"",
+          "sourceUrl": "https://stlyrics.org/s/superbad.htm",
+          "supporting_passage": "Post-punk anxiety under the jokes — you can feel the comedown coming"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {
+          "interestingness": 4,
+          "obviousness": 2,
+          "mainstream_appeal": 3,
+          "follow_up_pull": 5,
+          "composite": 0.79,
+          "verdict": "approve",
+          "reasoning": "The card successfully identifies a specific song and artist that many viewers would not know, and then provides a non-obvious, yet relatable, interpretation of its mood and narrative function within the scene. It avoids generic praise by linking the music directly to the 'night's unraveling' and 'comedown.' The suggested follow-ups are excellent, offering clear avenues for further exploration for viewers interested in music, artists, or genres.",
+          "suggested_edit": ""
+        },
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "factCategory": "costume/prop",
+        "shortVersion": "Evan's gray polo and green hoodie were designed by Debra McGuire.",
+        "longDescription": "Costume designer Debra McGuire, whose extensive credits include \"Superbad,\" created Evan's distinctive look. His screen-worn costume featured a gray polo shirt, brown Quicksilver corduroy pants, and a green hoodie. Evan wore this specific outfit while attempting to procure alcohol for the big party. The costume was later sold at auction, accompanied by a Columbia Pictures Certificate of Authenticity.",
+        "sources": [
+          {
+            "url": "https://www.printmag.com/fine-art/what-matters-to-debra-mcguire/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://propstore.com/product/superbad-2007/lot-416-seth-jonah-hill-and-fogells-christopher-mintz-plasse-screen-matched-costumes-with-evans-michael-cera-costume/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "In the opening scenes at school and in the convenience store, Evan (Michael Cera) wears a distinctive striped polo shirt and hoodie.",
+          "anchorElement": "The specific screen-worn polo shirt and hoodie combination.",
+          "approxTimecode": "00:05:00",
+          "runtimeFraction": 0.044,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.04
+        }
+      },
+      "anchor": {
+        "scene_description": "In the opening scenes at school and in the convenience store, Evan (Michael Cera) wears a distinctive striped polo shirt and hoodie.",
+        "anchor_element": "The specific screen-worn polo shirt and hoodie combination.",
+        "runtime_fraction": 0.044,
+        "approx_timecode": "00:05:00",
+        "category_guess": "costume/prop",
+        "search_hint": "Uncover details about the costume design, specifically whether this outfit was a vintage find or custom-made, and what it was meant to convey about Evan's character.",
+        "search_queries": [
+          "Michael Cera Superbad striped shirt costume",
+          "Superbad costume designer Debra McGuire on Evan's look",
+          "screen-worn Evan polo shirt Superbad",
+          "meaning of costumes in Superbad"
+        ],
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/michael-cera-and-christopher-mintzplasse-interview-superbad/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.printmag.com/fine-art/what-matters-to-debra-mcguire/",
+          "title": "printmag.com",
+          "domain": "printmag.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Debra McGuire",
+            "Superbad",
+            "Evan",
+            "gray polo shirt",
+            "green hoodie",
+            "brown Quicksilver corduroy pants",
+            "Columbia Pictures"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20070810/features/superbadcast.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://propstore.com/product/superbad-2007/lot-416-seth-jonah-hill-and-fogells-christopher-mintz-plasse-screen-matched-costumes-with-evans-michael-cera-costume/",
+          "title": "propstore.com",
+          "domain": "propstore.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Debra McGuire",
+            "Superbad",
+            "Evan",
+            "gray polo shirt",
+            "green hoodie",
+            "brown Quicksilver corduroy pants",
+            "Columbia Pictures"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://content.time.com/time/specials/2007/article/0,28804,1665692_1665693_1692410,00.html",
+          "title": "time.com",
+          "domain": "time.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podcasts.apple.com/bs/podcast/superbad-2007-audio/id1710689578?i=1000639718947",
+          "title": "apple.com",
+          "domain": "apple.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://carboncostume.com/title/superbad/",
+          "title": "carboncostume.com",
+          "domain": "carboncostume.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Costume designer Debra McGuire's credits include \"Superbad.\"",
+          "sourceUrl": "https://www.printmag.com/fine-art/what-matters-to-debra-mcguire/",
+          "supporting_passage": "Her credits include Anchorman , The 40-Year-Old Virgin , Knocked Up , Superbad"
+        },
+        {
+          "beat": "Evan's screen-worn costume featured a gray polo shirt, brown Quicksilver corduroy pants, and a green hoodie.",
+          "sourceUrl": "https://propstore.com/product/superbad-2007/lot-416-seth-jonah-hill-and-fogells-christopher-mintz-plasse-screen-matched-costumes-with-evans-michael-cera-costume/",
+          "supporting_passage": "The Evan costume consists of a gray polo shirt (size S), brown Quicksilver corduroy pants (size 32), and a green hoodie."
+        },
+        {
+          "beat": "He wore this specific costume while attempting to procure alcohol for the big party.",
+          "sourceUrl": "https://propstore.com/product/superbad-2007/lot-416-seth-jonah-hill-and-fogells-christopher-mintz-plasse-screen-matched-costumes-with-evans-michael-cera-costume/",
+          "supporting_passage": "Evan wore his costume while attempting to procure alcohol for the big party"
+        },
+        {
+          "beat": "The costume was later sold at auction and included a Columbia Pictures Certificate of Authenticity.",
+          "sourceUrl": "https://propstore.com/product/superbad-2007/lot-416-seth-jonah-hill-and-fogells-christopher-mintz-plasse-screen-matched-costumes-with-evans-michael-cera-costume/",
+          "supporting_passage": "Sold Mar 16 2024 SUPERBAD (2007) Entertainment Memorabilia Live Auction - March 2024 - Los Angeles Lot #416 - Seth (Jonah Hill) and Fogell's (Christopher Mintz-Plasse) Screen-Matched Costumes with Evan's (Michael Cera) Costume"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats"
+        ],
+        "flags": [
+          "shortVersion 65 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": "The summary_entailed is false because the shortVersion claims the items 'were designed by Debra McGuire' and the longDescription claims she 'created Evan's distinctive look'. While she is the costume designer for the film (Beat 0), the beats do not explicitly state she designed or created Evan's specific costume or look, only that her credits include the film and describe the costume. This is an implication/inference, not a direct statement from the beats."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "factCategory": "music",
+        "shortVersion": "Officer Slater dances to \"Pork and Beef\" by The Coup.",
+        "longDescription": "Officer Slater's impromptu dance at the party was set to \"Pork and Beef\" by the group The Coup. Viewers frequently asked about the rap song playing when the officer was dancing to the stereo. The song was often identified by its memorable lyrics.",
+        "sources": [
+          {
+            "url": "https://www.soundtrackinfo.com/OST/superbad/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "While breaking up the party, Officer Slater hears a song he likes and starts dancing with the partygoers.",
+          "anchorElement": "The song \"Pork and Beef\" by The Coup that Officer Slater dances to.",
+          "approxTimecode": "01:29:00",
+          "runtimeFraction": 0.8,
+          "runtimeThird": 3,
+          "runtimeQuartile": 4
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.8
+        }
+      },
+      "anchor": {
+        "scene_description": "While breaking up the party, Officer Slater hears a song he likes and starts dancing with the partygoers.",
+        "anchor_element": "The song \"Pork and Beef\" by The Coup that Officer Slater dances to.",
+        "runtime_fraction": 0.8,
+        "approx_timecode": "01:29:00",
+        "category_guess": "music",
+        "search_hint": "Explore the surprising choice of this politically charged, anti-police song by The Coup for a scene where a police officer dances enthusiastically.",
+        "search_queries": [
+          "song Bill Hader dances to at party in Superbad",
+          "The Coup \"Pork and Beef\" in Superbad",
+          "Superbad cop dancing scene song",
+          "meaning of \"Pork and Beef\" song in Superbad"
+        ],
+        "runtime_third": 3
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thegoodsreviews.com/superbad-2007/",
+          "title": "thegoodsreviews.com",
+          "domain": "thegoodsreviews.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.dvdmg.com/superbadbr.shtml",
+          "title": "dvdmg.com",
+          "domain": "dvdmg.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundtrackinfo.com/OST/superbad/",
+          "title": "soundtrackinfo.com",
+          "domain": "soundtrackinfo.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Officer Slater",
+            "Pork and Beef",
+            "The Coup"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://comedyslaps.wordpress.com/2025/01/15/superbad/",
+          "title": "wordpress.com",
+          "domain": "wordpress.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20070810/features/superbadcast.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The rap song that Officer Slater dances to at the party is \"Pork and Beef\" by The Coup.",
+          "sourceUrl": "https://www.soundtrackinfo.com/OST/superbad/",
+          "supporting_passage": "Q: What's the name of the rap song that the cop is dancing to for a brief second at the party near the end of the movie right before he and the other cop cock block McLovin? ( from Steven in Indianapolis ) A: \"Pork and Beef\" by The Coup. ( thanks to anthony, Chicago, IL )"
+        },
+        {
+          "beat": "Viewers inquired about the rap song playing when the officer was dancing to the stereo at the party.",
+          "sourceUrl": "https://www.soundtrackinfo.com/OST/superbad/",
+          "supporting_passage": "Q: What's the name of the rap song that the cop is dancing to for a brief second at the party near the end of the movie right before he and the other cop cock block McLovin? ( from Steven in Indianapolis ) A: \"Pork and Beef\" by The Coup. ( thanks to anthony, Chicago, IL )Q: What is the song playing when the cops come to the party and the officer is listening/dancing to the song on the stereo? It sounds like \"Don't trust the police\" ( from M SKI in MA ) A: \"Pork and Beef.\" See above. ( thanks to anthony, Chicago, IL )"
+        },
+        {
+          "beat": "The song was also identified by viewers who recalled lyrics such as \"...f*** the police, they'll have you face down in the middle of the street...\"",
+          "sourceUrl": "https://www.soundtrackinfo.com/OST/superbad/",
+          "supporting_passage": "Q: What song is playing when the two cops bust the party towards the end? It goes something like \"...f*** the police, they'll have you face down in the middle of the street...\"? ( from pj in ottawa ) A: \"Pork and Beef.\" ( thanks to anthony, Ottawa )"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "factCategory": "location",
+        "shortVersion": "The chaotic party was filmed on Northridge's Community Street.",
+        "longDescription": "The chaotic house party Seth and Evan attend after Seth is hit by a car was filmed at a residence on Community Street in Northridge, California. This location is notable as it's on the same street as a house used in the Seth Rogen film \"Knocked Up.\" The smaller space of the house in the movie was intentionally used to raise the tension of the plot, making it easier for the characters to get caught stealing.",
+        "sources": [
+          {
+            "url": "https://filmoblivion.com/tag/northridge/page/2/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://screenrant.com/superbad-filming-locations-explained/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "After being picked up by a reckless driver, Seth and Evan arrive at a different, more chaotic house party.",
+          "anchorElement": "The real-world filming location of the second party.",
+          "approxTimecode": "01:10:00",
+          "runtimeFraction": 0.62,
+          "runtimeThird": 2,
+          "runtimeQuartile": 3
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.62
+        }
+      },
+      "anchor": {
+        "scene_description": "After being picked up by a reckless driver, Seth and Evan arrive at a different, more chaotic house party.",
+        "anchor_element": "The real-world filming location of the second party.",
+        "runtime_fraction": 0.62,
+        "approx_timecode": "01:10:00",
+        "category_guess": "location",
+        "search_hint": "Identify the specific residential address in Northridge, Los Angeles, that served as the location for this memorable party sequence.",
+        "search_queries": [
+          "Superbad second party house filming location",
+          "17111 Community Street Northridge movies",
+          "filming locations Superbad Northridge",
+          "Superbad party scene house address"
+        ],
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-filming-locations-explained/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Northridge",
+            "Community Street",
+            "Seth",
+            "Evan",
+            "California",
+            "Knocked Up",
+            "Seth Rogen",
+            "Superbad",
+            "17111 Community Street",
+            "17711 Community St",
+            "91325",
+            "Joe Lo Truglio",
+            "Francis"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-behind-scenes-details-making-trivia/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://filmoblivion.com/tag/northridge/page/2/",
+          "title": "filmoblivion.com",
+          "domain": "filmoblivion.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Northridge",
+            "Community Street",
+            "Seth",
+            "Evan",
+            "California",
+            "Knocked Up",
+            "Seth Rogen",
+            "Superbad",
+            "17111 Community Street",
+            "17711 Community St",
+            "91325",
+            "Joe Lo Truglio",
+            "Francis"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://scriptmag.com/features/seth-rogen-evan-goldberg-super-bad-script-to-screen",
+          "title": "scriptmag.com",
+          "domain": "scriptmag.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.dvdmg.com/superbadbr.shtml",
+          "title": "dvdmg.com",
+          "domain": "dvdmg.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "title": "giggster.com",
+          "domain": "giggster.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://consequence.net/2025/02/superbad-i-am-mclovin-book-excerpt/",
+          "title": "consequence.net",
+          "domain": "consequence.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "This party house is located on Community Street in Northridge.",
+          "sourceUrl": "https://filmoblivion.com/tag/northridge/page/2/",
+          "supporting_passage": "The party house where Evan and Seth try yet again to steal alcohol can be found in Northridge. It’s located on the same street as the house from another Seth Rogen film, “Knocked Up.” LOCATION: 17711 Community St, Northridge, CA 91325"
+        },
+        {
+          "beat": "The house is on the same street as a house used in the Seth Rogen film \"Knocked Up.\"",
+          "sourceUrl": "https://filmoblivion.com/tag/northridge/page/2/",
+          "supporting_passage": "It’s located on the same street as the house from another Seth Rogen film, “Knocked Up.”"
+        },
+        {
+          "beat": "The smaller space of the house in the film was used to raise the plot's tension.",
+          "sourceUrl": "https://screenrant.com/superbad-filming-locations-explained/",
+          "supporting_passage": "The smaller space of this house means that it's easier to get caught stealing in the movie. This raises the tension of the plot and leads to a more impactful argument between Seth and Evan. Additionally, when Seth tries to get alcohol from the party, he must deal with far too many people for that small of a space. As such, he can't maneuver in and out quickly or easily."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {
+          "interestingness": 4,
+          "obviousness": 1,
+          "mainstream_appeal": 4,
+          "follow_up_pull": 5,
+          "composite": 0.89,
+          "verdict": "approve",
+          "reasoning": "The card provides specific, non-obvious details about the filming location, including a compelling connection to another well-known film ('Knocked Up') and a clear explanation of the creative intent behind the location choice (raising tension for stealing). This information is novel and adds value beyond what's visible on screen. The follow-up questions are highly relevant and encourage further exploration.",
+          "suggested_edit": ""
+        },
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 62 chars (target 50-60, cap 80)",
+          "relaxed: dropped beats [0] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "factCategory": "music",
+        "shortVersion": "“Funk McLovin” by Lyle Workman & Bootsy Collins scores the end credits.",
+        "longDescription": "The end-credits song, “Funk McLovin,” was composed by Lyle Workman and Bootsy Collins. This track plays over the infamous locker-room sketch animations, serving as a strutting theme for the legend of McLovin. For the film's score, Workman reunited Bootsy and Catfish Collins with J.B.’s drummers Clyde Stubblefield and Jabo Starks for the recording sessions.",
+        "sources": [
+          {
+            "url": "https://stlyrics.org/s/superbad.htm",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "The end credits roll alongside the infamous phallic drawings from Seth's notebook.",
+          "anchorElement": "The custom-composed song \"Funk McLovin\" by Lyle Workman & Bootsy Collins.",
+          "approxTimecode": "01:48:00",
+          "runtimeFraction": 0.96,
+          "runtimeThird": 3,
+          "runtimeQuartile": 4
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.96
+        }
+      },
+      "anchor": {
+        "scene_description": "The end credits roll alongside the infamous phallic drawings from Seth's notebook.",
+        "anchor_element": "The custom-composed song \"Funk McLovin\" by Lyle Workman & Bootsy Collins.",
+        "runtime_fraction": 0.96,
+        "approx_timecode": "01:48:00",
+        "category_guess": "music",
+        "search_hint": "Discover the story behind the collaboration between legendary funk bassist Bootsy Collins and composer Lyle Workman to create a signature theme for the film's breakout character.",
+        "search_queries": [
+          "Superbad end credits song Funk McLovin",
+          "Bootsy Collins Superbad soundtrack",
+          "Lyle Workman Bootsy Collins collaboration",
+          "Superbad score recording sessions"
+        ],
+        "runtime_third": 3
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://scriptmag.com/features/seth-rogen-evan-goldberg-super-bad-script-to-screen",
+          "title": "scriptmag.com",
+          "domain": "scriptmag.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popdisciple.com/interviews/lyle-workman",
+          "title": "popdisciple.com",
+          "domain": "popdisciple.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.dvdmg.com/superbadbr.shtml",
+          "title": "dvdmg.com",
+          "domain": "dvdmg.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundtrackinfo.com/OST/superbad/",
+          "title": "soundtrackinfo.com",
+          "domain": "soundtrackinfo.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://stlyrics.org/s/superbad.htm",
+          "title": "stlyrics.org",
+          "domain": "stlyrics.org",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Funk McLovin",
+            "Lyle Workman",
+            "Bootsy Collins",
+            "McLovin",
+            "Catfish Collins",
+            "J.B.’s",
+            "Clyde Stubblefield",
+            "Jabo Starks"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20070810/features/superbadcast.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The end-credits song, “Funk McLovin,” was composed by Lyle Workman and Bootsy Collins.",
+          "sourceUrl": "https://stlyrics.org/s/superbad.htm",
+          "supporting_passage": "End-credits cue: “Funk McLovin” (Lyle Workman & Bootsy Collins)"
+        },
+        {
+          "beat": "The track plays over the infamous locker-room sketch animations during the credits.",
+          "sourceUrl": "https://stlyrics.org/s/superbad.htm",
+          "supporting_passage": "Where it plays: Over the credits with the infamous locker-room sketch animations."
+        },
+        {
+          "beat": "It was designed as a strutting theme for the legend of McLovin.",
+          "sourceUrl": "https://stlyrics.org/s/superbad.htm",
+          "supporting_passage": "A strutting theme for the legend of McLovin."
+        },
+        {
+          "beat": "For the score, Lyle Workman reunited Bootsy and Catfish Collins with J.B.’s drummers Clyde Stubblefield and Jabo Starks.",
+          "sourceUrl": "https://stlyrics.org/s/superbad.htm",
+          "supporting_passage": "Composer–bandleader Lyle Workman cut original cues with Bootsy Collins , plus J.B.’s legends Phelps “Catfish” Collins , Clyde Stubblefield , and Jabo Starks , with Bernie Worrell adding keys — a once-in-a-movie funk summit."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {
+          "interestingness": 4,
+          "obviousness": 1,
+          "mainstream_appeal": 4,
+          "follow_up_pull": 4,
+          "composite": 0.85,
+          "verdict": "approve",
+          "reasoning": "The card offers specific, non-obvious details about the end-credits music, highlighting the involvement of legendary musicians like Bootsy Collins and members of the J.B.'s. The story of reuniting these artists for the film's score is inherently interesting and has mainstream appeal. The connection to McLovin's legend is also a good hook. The follow-up questions are relevant and invite further exploration into the music and its creators.",
+          "suggested_edit": ""
+        },
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 71 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "factCategory": "location",
+        "shortVersion": "Jules's party house was filmed in Brentwood, Los Angeles.",
+        "longDescription": "The party at Jules's house was filmed at 140 N Cliffwood Ave in Los Angeles. This scene was filmed in Brentwood, a wealthy neighborhood in west Los Angeles. The location offers views of lush gardens, sprawling greenery, and a quiet residential atmosphere.",
+        "sources": [
+          {
+            "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "In the aftermath of the final party, Seth and Evan are seen passed out in sleeping bags on the living room floor of the party house.",
+          "anchorElement": "The real-world filming location for the final party sequence.",
+          "approxTimecode": "01:38:00",
+          "runtimeFraction": 0.87,
+          "runtimeThird": 3,
+          "runtimeQuartile": 4
+        },
+        "spoilerBoundary": {
+          "earliestSafeFraction": 0.87
+        }
+      },
+      "anchor": {
+        "scene_description": "In the aftermath of the final party, Seth and Evan are seen passed out in sleeping bags on the living room floor of the party house.",
+        "anchor_element": "The real-world filming location for the final party sequence.",
+        "runtime_fraction": 0.87,
+        "approx_timecode": "01:38:00",
+        "category_guess": "location",
+        "search_hint": "Pinpoint the specific upscale Brentwood, Los Angeles residence used for the film's climactic party scene.",
+        "search_queries": [
+          "Superbad final party house location Brentwood",
+          "Jules's party house filming location Superbad",
+          "Brentwood filming locations Superbad",
+          "where was the final party in Superbad filmed"
+        ],
+        "runtime_third": 3
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/superbad-oral-history-15th-anniversary-jonah-hill-michael-cera-2022-8",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/superbad-filming-locations-explained/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://au.rollingstone.com/movies/movie-news/michael-cera-superbad-interview-77769/",
+          "title": "rollingstone.com",
+          "domain": "rollingstone.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.dvdmg.com/superbadbr.shtml",
+          "title": "dvdmg.com",
+          "domain": "dvdmg.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "title": "giggster.com",
+          "domain": "giggster.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Jules",
+            "140 N Cliffwood Ave",
+            "Los Angeles",
+            "Brentwood"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://podtail.com/en/podcast/film-director-s-commentary/superbad-2007-audio/",
+          "title": "podtail.com",
+          "domain": "podtail.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://content.time.com/time/specials/2007/article/0,28804,1665692_1665693_1692410,00.html",
+          "title": "time.com",
+          "domain": "time.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thedeclarationatcoloniahigh.com/56077/behind-the-scenes/behind-the-scenes-of-superbad/",
+          "title": "thedeclarationatcoloniahigh.com",
+          "domain": "thedeclarationatcoloniahigh.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The party at Jules's house was filmed at 140 N Cliffwood Ave in Los Angeles.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "supporting_passage": "Seth and Evan arrived at Jule's party scene in Superbad 140 N Cliffwood Ave, Los Angeles, CA 90049, USA"
+        },
+        {
+          "beat": "This scene was filmed in Brentwood, a wealthy neighborhood in west Los Angeles.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "supporting_passage": "It was filmed in a wealthy neighborhood, Brentwood, west Los Angeles."
+        },
+        {
+          "beat": "The location offers views of lush gardens, sprawling greenery, and a quiet residential atmosphere.",
+          "sourceUrl": "https://giggster.com/guide/movie-location/where-was-superbad-filmed",
+          "supporting_passage": "Once you arrive at your destination, you will find views of Brentwood's lush gardens, sprawling greenery, and a quiet residential atmosphere—the perfect spot for a classic Superbad-style party!"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_boundary": true,
+          "safety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [],
+        "judge_notes": "All beats are directly supported by the provided source text. However, the source is classified as 'discovery', which the instructions state are 'leads only, never support'. Therefore, the factual accuracy is scored 0, as the claims are not supported by a reputable source according to the rubric's definition."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    }
+  ]
+}
