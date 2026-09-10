@@ -59,7 +59,7 @@ def _run_query(client: GeminiClient, cfg: config.PipelineConfig, film_info: dict
     return q, grounded
 
 
-def _fetch_candidate(cand: dict, film_title: str, cfg: config.PipelineConfig,
+def _fetch_candidate(cand: dict, film_title: str, film_year, cfg: config.PipelineConfig,
                      cache: FetchCache) -> SourceRef | None:
     ok, final_url, body = cache.page(cand["url"])
     if not ok:
@@ -89,7 +89,7 @@ def _fetch_candidate(cand: dict, film_title: str, cfg: config.PipelineConfig,
         src.body_kind = "html"
         src._body = body                                # type: ignore[attr-defined]
         src._segments = []                              # type: ignore[attr-defined]
-    if not title_grounded(film_title, src._body):       # type: ignore[attr-defined]
+    if not title_grounded(film_title, src._body, year=film_year):  # type: ignore[attr-defined]
         return None
     return src
 
@@ -123,7 +123,7 @@ def research_anchor(
     film_title = str(film_info.get("title", ""))
     with ThreadPoolExecutor(max_workers=cfg.fetch_workers) as pool:
         fetched = pool.map(
-            lambda c: _fetch_candidate(c, film_title, cfg, cache), candidates
+            lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache), candidates
         )
         sources = [s for s in fetched if s is not None]
     # Same final URL can arrive via two redirect links — keep first.

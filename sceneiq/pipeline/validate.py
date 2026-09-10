@@ -82,6 +82,7 @@ _JUDGE_SCHEMA = {
         "safety_pass": {"type": "boolean"},
         "category_correct": {"type": "boolean"},
         "summary_entailed": {"type": "boolean"},
+        "film_specific": {"type": "boolean"},
         "named_entities": {"type": "array", "items": {"type": "string"}},
         "notes": {"type": "string"},
     },
@@ -93,6 +94,7 @@ _JUDGE_SCHEMA = {
         "safety_pass",
         "category_correct",
         "summary_entailed",
+        "film_specific",
         "named_entities",
     ],
 }
@@ -138,8 +140,10 @@ unsupported, contradicted, or misleading claim.
 - scene_grounding: 2 = clearly points to a recognizable element visible/audible in \
 THIS scene and rewards pausing there; 1 = connection indirect; 0 = not tied to the scene.
 - primitive_conformance: 2 = cleanly fits the Scene Fact definition (insider detail \
-about the film's world explaining something on screen — NOT casting stories, career \
-trivia, industry gossip); 1 = loose fit; 0 = does not satisfy the definition.
+about the film's world explaining something on screen); 1 = loose fit; 0 = does not \
+satisfy the definition. Automatic 0 for: plot summary or character backstory (what \
+happens in the story is not a Scene Fact), deleted scenes or alternate versions with \
+no visible on-screen artifact, casting stories, career trivia, industry gossip.
 - viewer_value: 2 = specific, surprising, likely to prompt exploration; 1 = mildly \
 interesting; 0 = generic or obvious.
 - clarity: 2 = concise, tells the viewer what to notice; 1 = verbose or imprecise; \
@@ -163,7 +167,13 @@ must find in the sources.
 
 8. summary_entailed — true only if BOTH shortVersion and longDescription contain no \
 claim, name, number, or implication beyond what the entailed beats state. They are \
-rewrites of the beats, never expansions."""
+rewrites of the beats, never expansions.
+
+9. film_specific — true only if the card's claims are specifically about THIS film \
+({film_title}): its production, cast, locations, music, or making-of. A card stating \
+generic industry practice (how newspaper props are usually made, how films typically \
+license songs) is NOT film-specific even when the prop or song appears in this \
+film's scene — the sources must attest facts about {film_title} itself."""
 
 
 def _judge_source_blocks(cited: list) -> str:
@@ -303,6 +313,13 @@ def validate_card(
             "summary_entailment: shortVersion/longDescription claim beyond the beats"
         )
 
+    # Generic industry facts are not Scene Facts — hard in both modes.
+    checks["film_specific"] = judge["film_specific"]
+    if not judge["film_specific"]:
+        result.rejection_reasons.append(
+            "film_specific: claims are generic industry practice, not about this film"
+        )
+
     # Beat survival: binding failures + entailment failures. Strict rejects;
     # relaxed drops bad beats if >= 3 remain.
     unsupported = {b["index"] for b in judge["beats"] if not b["entailed"]}
@@ -427,11 +444,18 @@ def validate_card(
         for dim in factual_floor_dims:
             if rubric[dim] < 1:
                 result.rejection_reasons.append(f"rubric: {dim} {rubric[dim]}/2 (must be >=1)")
-        low = [d for d in ("primitive_conformance", "viewer_value", "clarity") if rubric[d] < 1]
+        # Conformance is a floor even in relaxed mode: plot summaries and
+        # excluded content classes are not Scene Facts at any evidence bar.
+        if rubric["primitive_conformance"] < 1:
+            result.rejection_reasons.append(
+                f"rubric: primitive_conformance {rubric['primitive_conformance']}/2 (must be >=1)"
+            )
+        low = [d for d in ("viewer_value", "clarity") if rubric[d] < 1]
         if low:
             result.flags.append(f"rubric low (relaxed): {low}")
         checks["rubric_disposition"] = (
             rubric["factual_accuracy"] >= 1 and rubric["scene_grounding"] >= 1
+            and rubric["primitive_conformance"] >= 1
         )
     else:
         if rubric["factual_accuracy"] < 2:
@@ -459,6 +483,7 @@ def validate_card(
         and checks["safety"]
         and judge["category_correct"]
         and judge["summary_entailed"]
+        and judge["film_specific"]
         and cross_modal_ok
     )
 

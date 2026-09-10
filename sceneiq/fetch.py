@@ -201,10 +201,29 @@ class FetchCache:
         return result
 
 
-def title_grounded(film_title: str, body: str) -> bool:
-    """Cheap off-topic filter: body must contain >= half the title tokens."""
+def title_grounded(film_title: str, body: str, year: int | None = None) -> bool:
+    """Off-topic filter: body must contain >= half the title tokens.
+
+    Single-common-word titles ("Burnt") match far too much — a generic
+    prop-design article containing the word 'burnt' passes the token test.
+    For those, additionally require the release year or an explicit film
+    framing ("film", "movie") near a title mention.
+    """
+    lower = body.lower()
     tokens = [t for t in re.split(r"\W+", film_title.lower()) if len(t) >= 4]
     if not tokens:
         return True
-    hits = sum(1 for t in tokens if t in body.lower())
-    return hits >= max(1, len(tokens) // 2)
+    hits = sum(1 for t in tokens if t in lower)
+    if hits < max(1, len(tokens) // 2):
+        return False
+    if len(tokens) >= 2:
+        return True
+    # Single-token title: demand corroborating film context.
+    if year and str(year) in lower:
+        return True
+    token = tokens[0]
+    for m in re.finditer(re.escape(token), lower):
+        window = lower[max(0, m.start() - 80): m.end() + 80]
+        if "film" in window or "movie" in window or "(20" in window or "(19" in window:
+            return True
+    return False

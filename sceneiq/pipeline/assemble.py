@@ -84,6 +84,10 @@ costume designers, named crew).
 - Preserve hedges ("reportedly") — never upgrade a claim beyond its source.
 
 HARD RULES:
+- Every fact must be about {film_title} SPECIFICALLY — this production, this cast, \
+this location, this song. Generic facts about filmmaking, prop design, or industry \
+practice that do not concern this film are NOT Scene Facts; if that's all the \
+sources offer, ABSTAIN.
 - The card must point at the anchor element visible/audible in THIS scene.
 - No plot information from later in the film than this scene.
 - No casting drama, feuds, career-arc trivia, or negative claims about talent/partners.
