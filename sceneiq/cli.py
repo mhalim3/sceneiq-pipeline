@@ -66,7 +66,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--evidence", choices=["relaxed", "strict"], default="relaxed",
                    help="relaxed: 1 editorial source suffices, weak beats drop; "
                         "strict: PRD-exact gates (safety/spoiler identical in both)")
-    p.add_argument("--workers", type=int, default=4, help="parallel anchor workers")
+    p.add_argument("--workers", type=int, default=8, help="parallel anchor workers")
     p.add_argument("--strict-verbatim", action="store_true",
                    help="hard-reject cards whose named entities aren't verbatim in fetched source bodies")
     p.add_argument("--deep-model", default=config.DEEP_MODEL)

@@ -17,6 +17,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
 
 from . import config
+from .fetch import FetchCache
 from .gemini import GeminiClient, SchemaViolation
 from .models import Anchor, CardRecord
 from .pipeline.anchors import discover_anchors
@@ -30,11 +31,12 @@ log = logging.getLogger("sceneiq")
 
 
 def _process_anchor(
-    client: GeminiClient, film_info: dict, anchor: Anchor, cfg: config.PipelineConfig
+    client: GeminiClient, film_info: dict, anchor: Anchor, cfg: config.PipelineConfig,
+    cache: FetchCache,
 ) -> CardRecord:
     record = CardRecord(card=None, anchor=anchor, evidence=None, validation=None)
     try:
-        packet = research_anchor(client, film_info, anchor, cfg)
+        packet = research_anchor(client, film_info, anchor, cfg, cache=cache)
         record.evidence = packet
         card = assemble_card(client, film_info, packet, cfg)
         if card is None:
@@ -127,33 +129,39 @@ def run(title_prompt: str, cfg: config.PipelineConfig | None = None, api_key: st
         log.info("Stage 0/4: fetching Wikipedia discovery leads (C-tier, leads only) ...")
         leads = wikipedia_leads(title_prompt, timeout_s=cfg.http_timeout_s)
 
+    # Discovery for pass N+1 only needs pass N's anchor LIST (the avoid-list),
+    # not its card results — so each pass's anchors are submitted to a shared
+    # worker pool immediately and the next discovery runs while they process.
     records: list[CardRecord] = []
     explored: list[str] = []
     film_info: dict = {}
     anchors_proposed = 0
-    for p in range(max(1, cfg.passes)):
-        pass_label = f"pass {p + 1}/{cfg.passes}" if cfg.passes > 1 else ""
-        log.info("Stage 1/4: discovering scene anchors for %r %s...", title_prompt, pass_label)
-        fi, anchors = discover_anchors(client, title_prompt, cfg, leads=leads, explored=explored)
-        film_info = film_info or fi
-        # Drop near-duplicates of anchors already explored in earlier passes.
-        anchors = [
-            a for a in anchors
-            if not any(
-                SequenceMatcher(None, a.anchor_element.lower(), e.lower()).ratio() > 0.8
-                for e in explored
-            )
-        ]
-        explored.extend(a.anchor_element for a in anchors)
-        anchors_proposed += len(anchors)
-        log.info("  film: %s (%s), %s new anchors",
-                 film_info["title"], film_info["year"], len(anchors))
-
-        log.info("Stage 2-4: research -> assembly -> validation (%d workers) ...", cfg.max_workers)
-        with ThreadPoolExecutor(max_workers=cfg.max_workers) as pool:
-            futures = [pool.submit(_process_anchor, client, film_info, a, cfg) for a in anchors]
-            for f in as_completed(futures):
-                records.append(f.result())
+    cache = FetchCache(cfg.http_timeout_s)
+    with ThreadPoolExecutor(max_workers=cfg.max_workers) as pool:
+        futures = []
+        for p in range(max(1, cfg.passes)):
+            pass_label = f"pass {p + 1}/{cfg.passes}" if cfg.passes > 1 else ""
+            log.info("Stage 1/4: discovering scene anchors for %r %s...", title_prompt, pass_label)
+            fi, anchors = discover_anchors(client, title_prompt, cfg, leads=leads, explored=explored)
+            film_info = film_info or fi
+            # Drop near-duplicates of anchors already explored in earlier passes.
+            anchors = [
+                a for a in anchors
+                if not any(
+                    SequenceMatcher(None, a.anchor_element.lower(), e.lower()).ratio() > 0.8
+                    for e in explored
+                )
+            ]
+            explored.extend(a.anchor_element for a in anchors)
+            anchors_proposed += len(anchors)
+            log.info("  film: %s (%s), %s new anchors -> research/assembly/validation (%d workers)",
+                     film_info["title"], film_info["year"], len(anchors), cfg.max_workers)
+            futures += [
+                pool.submit(_process_anchor, client, film_info, a, cfg, cache)
+                for a in anchors
+            ]
+        for f in as_completed(futures):
+            records.append(f.result())
 
     emitted = [r for r in records if r.status == "emitted"]
     emitted = _dedup(emitted)

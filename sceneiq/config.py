@@ -16,6 +16,11 @@ from dataclasses import dataclass, field
 # validation.") ---
 DEEP_MODEL = os.environ.get("SCENEIQ_DEEP_MODEL", "gemini-2.5-pro")
 FAST_MODEL = os.environ.get("SCENEIQ_FAST_MODEL", "gemini-2.5-flash")
+# Research search calls are retrieval, not reasoning ("run this search,
+# describe results, never invent URLs") — the grounding citations come from
+# Google Search itself, and assembly reads fetched bodies, not the search
+# narrative. Flash is several times faster here at equivalent retrieval.
+RESEARCH_MODEL = os.environ.get("SCENEIQ_RESEARCH_MODEL", FAST_MODEL)
 
 API_KEY_ENV = "GEMINI_API_KEY"
 
@@ -53,8 +58,9 @@ class PipelineConfig:
     quartile_min_runtime: int = 40
     max_quartile_share: float = 0.40
     min_categories: int = 2
-    # Parallelism for per-anchor research/assembly/validation.
-    max_workers: int = 4
+    # Parallelism for per-anchor research/assembly/validation. The work is
+    # I/O-bound (API calls + HTTP), so this is limited by API rate tier.
+    max_workers: int = 8
     # Discovery passes: each pass proposes anchors avoiding already-explored
     # elements; approved cards merge across passes (raises yield on titles
     # where single-pass anchor variance is the bottleneck).
@@ -76,8 +82,12 @@ class PipelineConfig:
     discovery_temperature: float = 0.4
     assembly_temperature: float = 0.2
     judge_temperature: float = 0.0
+    deep_model_discovery: str = DEEP_MODEL   # anchor discovery keeps the deep model
+    research_model: str = RESEARCH_MODEL     # per-anchor search calls
     # HTTP validation.
     http_timeout_s: float = 10.0
+    # Concurrent URL fetches per anchor (shared run-level cache dedupes).
+    fetch_workers: int = 6
     fetch_source_bodies: bool = True
     # PRD "Handling video and audio sources": a video may be the primary
     # source for a claim, but any named person or number must also appear in

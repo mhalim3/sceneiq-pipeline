@@ -9,6 +9,7 @@ timestamp attachment.
 from __future__ import annotations
 
 import re
+import threading
 from difflib import SequenceMatcher
 from urllib.parse import parse_qs, urlparse
 
@@ -140,6 +141,40 @@ def attach_timestamp(quote_text: str, segments: list[dict]) -> str:
     if best_ratio >= 0.75 and best_start is not None:
         return f"{_hms(best_start)}–{_hms(best_end)}"
     return ""
+
+
+class FetchCache:
+    """Run-level, thread-safe cache for URL fetches and transcripts.
+
+    The same sources recur across anchors (one outlet's BTS article feeds
+    many anchors); without this, every anchor re-fetches them. Values are
+    identical to the underlying fetchers' returns, so cache hits are
+    quality-neutral. Rare duplicate fetches under race are benign.
+    """
+
+    def __init__(self, timeout_s: float):
+        self._timeout_s = timeout_s
+        self._lock = threading.Lock()
+        self._pages: dict[str, tuple[bool, str, str]] = {}
+        self._transcripts: dict[str, tuple[bool, str, list]] = {}
+
+    def page(self, url: str) -> tuple[bool, str, str]:
+        with self._lock:
+            if url in self._pages:
+                return self._pages[url]
+        result = fetch_url_text(url, self._timeout_s)
+        with self._lock:
+            self._pages[url] = result
+        return result
+
+    def transcript(self, url: str) -> tuple[bool, str, list]:
+        with self._lock:
+            if url in self._transcripts:
+                return self._transcripts[url]
+        result = fetch_youtube_transcript(url)
+        with self._lock:
+            self._transcripts[url] = result
+        return result
 
 
 def title_grounded(film_title: str, body: str) -> bool:
