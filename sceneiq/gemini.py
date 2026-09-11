@@ -17,6 +17,7 @@ import json
 import os
 from dataclasses import dataclass, field
 
+import httpx
 from google import genai
 from google.genai import types, errors
 from tenacity import (
@@ -42,7 +43,9 @@ class GroundedResult:
 def _is_transient(exc: BaseException) -> bool:
     if isinstance(exc, errors.APIError):
         return exc.code in (429, 500, 502, 503, 504)
-    return isinstance(exc, (ConnectionError, TimeoutError))
+    # Raw transport failures (DNS blips, read timeouts) surface as httpx
+    # exceptions, not APIError — they're exactly what retries are for.
+    return isinstance(exc, (ConnectionError, TimeoutError, httpx.TransportError))
 
 
 _retry = retry(

@@ -184,7 +184,7 @@ def _topic_dedup(client: GeminiClient, cfg: config.PipelineConfig,
             _TOPIC_DEDUP_SCHEMA,
             temperature=0.0,
         )
-    except SchemaViolation:
+    except Exception:
         return records  # dedup is best-effort; never lose cards to a bad call
     drop: dict[int, str] = {}
     for g in data.get("groups", []):
@@ -334,8 +334,13 @@ def run(
             # otherwise GENERAL cards the player may show at any time.
             if p == 0 and cfg.use_title_sweep:
                 log.info("Stage 1b: title-level fact sweep ...")
+                try:
+                    swept = title_sweep(client, film_info, cfg, moments=moments)
+                except Exception as e:  # sweep is additive — never kill the run
+                    log.warning("  title sweep failed (%s); continuing without it", e)
+                    swept = []
                 sweep_anchors = [
-                    a for a in title_sweep(client, film_info, cfg, moments=moments)
+                    a for a in swept
                     if not any(
                         SequenceMatcher(None, a.anchor_element.lower(), e.lower()).ratio() > 0.8
                         for e in explored

@@ -86,44 +86,6 @@
     },
     {
       "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "Alicia Vikander's role was added to the script at Harvey Weinstein's request.",
-      "longDescription": "Alicia Vikander portrays Anne Marie, the ex-girlfriend of Adam Jones and daughter of his former boss. Her character's role was not initially part of the script. The part was specifically added at the request of Harvey Weinstein.",
-      "sources": [
-        {
-          "url": "https://www.eyeforfilm.co.uk/review/burnt-2015-film-review-by-anne-katrin-titze",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.texasartfilm.net/burnt/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 191] 01:03:18–01:03:36\nsummary: Two people meet at a funeral, discussing the death of a family member and one person's recovery from addiction, creating a somber and emotionally charged atmosphere.\ncast on screen: Alicia Vikander, Bradley Cooper",
-        "anchorElement": "Alicia Vikander",
-        "approxTimecode": "01:03:18",
-        "runtimeFraction": 0.625,
-        "runtimeThird": 2,
-        "runtimeQuartile": 3
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 3798.8,
-          "endSeconds": 3876.2,
-          "startTimecode": "01:03:18",
-          "endTimecode": "01:04:36"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.625
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
       "factCategory": "location",
       "shortVersion": "The Langham Hotel in London was a key filming location.",
       "longDescription": "The film features a fine dining restaurant located at The Langham Hotel in London, specifically The Roux at the Landau. This restaurant appears throughout the film, and its dining room was staffed with at least 24 people working on the service side at any one time. Some of the extras in the film's kitchen and restaurant scenes were genuine chefs, adding to the authenticity.",
@@ -318,9 +280,9 @@
       "displayWindows": [
         {
           "startSeconds": 3597.2,
-          "endSeconds": 3798.8,
+          "endSeconds": 3876.2,
           "startTimecode": "00:59:57",
-          "endTimecode": "01:03:18"
+          "endTimecode": "01:04:36"
         },
         {
           "startSeconds": 4439.2,
@@ -337,14 +299,14 @@
   ],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 8,
-    "scene_cards": 5,
+    "approved_cards": 7,
+    "scene_cards": 4,
     "general_cards": 3,
     "density_target": 11,
     "cards_per_runtime_quartile": {
       "1": 1,
       "2": 0,
-      "3": 4,
+      "3": 3,
       "4": 0
     },
     "distinct_categories": [

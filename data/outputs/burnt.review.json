@@ -4850,7 +4850,7 @@
       }
     },
     {
-      "status": "emitted",
+      "status": "rejected",
       "card": {
         "scope": "scene",
         "factCategory": "filming",
@@ -5062,17 +5062,17 @@
         "judge_notes": ""
       },
       "humanReview": {
-        "state": "pending",
-        "reviewer": null,
+        "state": "rejected",
+        "reviewer": "mhalim",
         "scores": {
           "factual_accuracy_sourcing": null,
           "scene_relevance_grounding": null,
-          "primitive_conformance": null,
+          "primitive_conformance": 0,
           "viewer_value": null,
           "clarity_findability": null,
           "spoiler_safety": null
         },
-        "notes": null
+        "notes": "Casting story (excluded class) naming Harvey Weinstein — partner/talent safety. Pulled from output."
       }
     },
     {

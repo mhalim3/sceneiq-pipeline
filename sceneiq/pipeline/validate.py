@@ -144,7 +144,9 @@ THIS scene and rewards pausing there; 1 = connection indirect; 0 = not tied to t
 about the film's world explaining something on screen); 1 = loose fit; 0 = does not \
 satisfy the definition. Automatic 0 for: plot summary or character backstory (what \
 happens in the story is not a Scene Fact), deleted scenes or alternate versions with \
-no visible on-screen artifact, casting stories, career trivia, industry gossip.
+no visible on-screen artifact, casting stories (including roles added, cut, or cast \
+at an executive's or producer's request — script-development framing does not \
+exempt them), career trivia, industry gossip.
 - viewer_value: 2 = specific, surprising, likely to prompt exploration; 1 = mildly \
 interesting; 0 = generic or obvious.
 - clarity: 2 = concise, tells the viewer what to notice; 1 = verbose or imprecise; \
