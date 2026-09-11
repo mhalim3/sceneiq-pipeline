@@ -31,11 +31,15 @@ Options:
 
 | Flag | Default | Meaning |
 |---|---|---|
-| `--max-anchors` | 12 | candidate anchors researched per title |
-| `--max-cards` | 10 | cap on emitted cards |
-| `--workers` | 4 | parallel anchor workers |
-| `--strict-verbatim` | off | hard-reject when named entities aren't found verbatim in fetched source bodies (default: flag for review) |
-| `--deep-model` / `--fast-model` | gemini-2.5-pro / flash | also settable via `SCENEIQ_DEEP_MODEL` / `SCENEIQ_FAST_MODEL` |
+| `--title-lookup` | off | resolve the prompt to a content_id in the Moments catalog, fetch scenes from Databricks |
+| `--content-id` | — | fetch Moments scenes for an explicit Tubi content_id |
+| `--moments PATH` | — | use a local Moments export (CSV from the warehouse or prototype JSON) |
+| `--passes` | 1 | discovery passes; anchors dedupe across passes, approved cards merge |
+| `--evidence` | relaxed | `relaxed` or `strict` (safety/spoiler gates identical in both) |
+| `--max-anchors` | 12 | candidate anchors per pass |
+| `--max-cards` | 10 | cap on scene cards (general cards uncapped, bounded by sweep) |
+| `--workers` | 8 | parallel anchor workers |
+| `--strict-verbatim` | off | hard-reject on named-entity verbatim misses |
 | `-o, --out-dir` | `data/outputs` | where JSON lands |
 
 Outputs:
@@ -54,43 +58,48 @@ Outputs:
 
 ## Pipeline architecture
 
-```
-prompt
-  │
-  ▼
-[1] Anchor discovery        deep model + grounded search
-     scene structure, 12 candidate anchors across runtime thirds,
-     7-category taxonomy, hard-reject framing baked into the prompt
-  │                              (per-anchor, parallel ─────────────┐)
-  ▼
-[2] Evidence retrieval      deep model + grounded search
-     tiered source priority: primary/direct > reputable editorial;
-     wikis are leads only. "NO QUALIFIED EVIDENCE FOUND" is a valid answer.
-  │
-  ▼
-[3] Card assembly           fast model, schema mode
-     PRD card contract: proactivePrompt, factCategory, factHeader,
-     factBeats (3-5, each with sourceUrl), followUps (2-3).
-     Abstention is a first-class output.
-  │
-  ▼
-[4] Validation layer        code + fast model judge, temperature 0
-     contract → URL provenance (redirect unwrap) → domain tier (A/B/C) →
-     claim entailment per beat → scene anchoring → spoiler boundary →
-     G-rated/partner safety → non-obviousness → taxonomy →
-     verbatim entity check → emission policy
-     (1 primary/direct source OR 2 independent reputable editorial sources;
-      C-tier never supports; same-domain sources aren't independent)
-  │
-  ▼
-[5] Finalizer               code
-     dedup, runtime ordering, title coverage policy
-     (≥6 approved cards, ≥1 per runtime third, else sceneiq_enabled: false)
+```mermaid
+flowchart TD
+    A["Title prompt"] --> B["Databricks title lookup<br/>content_id resolved in the Moments catalog"]
+    B --> C["Tubi Moments scene data<br/>295-scene VLM record, real timecodes<br/>(cached CSV)"]
+    A -."no Moments coverage".-> W["Fallback: Wikipedia leads +<br/>Gemini scene reconstruction<br/>(timecodes are estimates)"]
+    C --> D["1a. Anchor discovery (per pass)<br/>model picks a scene_index per anchor;<br/>timecodes assigned in CODE from the VLM record"]
+    W --> D
+    C --> E["1b. Title-level fact sweep (once)<br/>broad searches, search-first;<br/>facts anchor to a scene or become GENERAL cards"]
+    D --> G
+    E --> G
+    subgraph PA["Per anchor — parallel workers, shared fetch cache"]
+        G["2. Research: explicit search queries via<br/>Google Search grounding (URLs only from<br/>grounding metadata); fetch page bodies +<br/>YouTube caption transcripts; title-grounding<br/>gate; tier A/B/C; top-8 source bank"]
+        G --> H["3. Assembly (schema mode)<br/>writes ONLY from fetched bodies;<br/>beats cite sources by index with 6-20 word<br/>VERBATIM anchors; shortVersion (cap 80) +<br/>longDescription; abstention is first-class"]
+        H --> I["4. Validation gates<br/>(table below)"]
+        I --> J["4b. Curiosity judge<br/>viewer-POV, source-blind — ADVISORY:<br/>triages human review, never rejects"]
+    end
+    J --> K["5. Finalizer<br/>string + semantic-key + LLM topic-cluster dedup;<br/>display-window scheduler (scene windows +<br/>general gap-fill); sufficiency rules"]
+    K --> L["cards.json — display contract:<br/>scope, shortVersion/longDescription,<br/>displayWindows, spoilerBoundary,<br/>wouldPassStrict, timeCoverage"]
+    K --> M["review.json — audit trail:<br/>evidence bodies, verbatim anchors,<br/>per-claim passages, rubric + curiosity<br/>scores, rejection reasons, humanReview slots"]
 ```
 
-Failing any hard gate rejects the card — no partial credit, matching the
-Stage 1 "Clearance" model in the PRD. Every rejection carries a machine-
-readable reason so failure modes can be aggregated for the source-yield study.
+### Validation gates (stage 4), in order
+
+| # | Gate | Mechanism | Relaxed mode | Strict mode |
+|---|---|---|---|---|
+| 1 | Contract | code: 3-5 beats, short <= 80 chars, category enum | reject | reject |
+| 2 | Source binding | code: per-beat verbatim anchor fuzzy-matches its fetched source body (>= 0.8); video beats get `sourceTimestamp` from transcript timing | drop bad beats (card survives with >= 3) | reject |
+| 3 | Claim entailment | judge (temp 0, same excerpts the writer saw): every name/number/causal claim supported; per-claim supporting passage extracted | drop bad beats | reject |
+| 4 | Summary entailment | judge: shortVersion/longDescription may not exceed the verified beats | reject | reject |
+| 5 | Film specificity | judge: generic industry practice is not a Scene Fact | reject | reject |
+| 6 | Conformance | judge rubric auto-0: plot summary, character backstory, casting stories (incl. executive-request framing), deleted scenes | reject | reject |
+| 7 | Spoiler boundary | judge `earliest_safe_fraction` vs anchor position (scene cards); general cards get a scheduling floor instead | reject | reject |
+| 8 | Safety | judge: G-rated (censored profanity fails), no talent/partner disparagement, quoting criticism of the title fails | reject | reject |
+| 9 | Verbatim entities + cross-modal | code: named entities string-checked in bodies; video-sourced entities need a text source | flag | flag (reject with `--strict-verbatim`) |
+| 10 | Emission policy | code: C-tier never supports; evidence classes judged per claim | 1 primary OR 1 editorial | 1 primary OR 2 independent A/B editorial |
+| 11 | Rubric disposition | judge 0/1/2 rubric | floors of 1 (accuracy, grounding, conformance) | 2s on accuracy+grounding, >= 1 elsewhere, avg >= 1.5 |
+
+Every card records `wouldPassStrict` (the full strict verdict) regardless of mode,
+so relaxed output can be re-gated without re-running. Viewer value is scored by
+humans in `review.json` (`humanReview` block); the model curiosity score only
+prioritizes review. Failing any hard gate rejects with a machine-readable reason,
+aggregated by `python -m sceneiq report`.
 
 ## PRD alignment status
 
