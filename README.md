@@ -5,11 +5,11 @@ Model PRD). You enter a movie prompt; the pipeline returns validated, sourced
 **Scene Fact** cards — insider details about things physically visible or
 audible on screen.
 
-**Tubi Moments stand-in:** scene anchoring normally comes from Tubi Moments VLM
-output. For now, Stage 1 uses Gemini grounded search to reconstruct the film's
-scene structure. When Moments is wired in, only `pipeline/anchors.py` changes —
-the rest of the pipeline consumes `Anchor` objects and doesn't care where they
-came from.
+**Tubi Moments is wired in:** with `--title-lookup` the prompt resolves to a
+content_id in the Moments catalog and real scene-by-scene VLM data (timecodes,
+cast, descriptions) drives anchoring, spoiler math, and display scheduling.
+Titles without Moments coverage fall back to Gemini scene reconstruction with
+clearly-estimated timecodes.
 
 ## Setup
 
