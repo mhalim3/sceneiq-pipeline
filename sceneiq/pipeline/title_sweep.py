@@ -65,11 +65,15 @@ _STRUCTURE_PROMPT = """From these research notes about {title} ({year}), extract
 {max_facts} distinct, specific candidate facts worth a pause-screen card.
 
 Rules:
-- Facts must be about THIS film specifically. No plot summary, no casting drama, \
-no generic industry practice.
-- Include both scene-tied facts AND general title facts (box office records, myths \
-the film created, production-wide details). Myth-corrections the film caused are \
-the highest-value class — flag those first.
+- Facts must be about THIS film specifically. NEVER propose: plot summary or \
+character story beats, casting stories (who turned down or almost got a role, who \
+requested a casting), or generic industry practice — downstream validation rejects \
+all of these unconditionally, so proposing them wastes a slot.
+- Include both scene-tied facts AND general title facts. ELIGIBLE general classes: \
+box office/reception records, title changes and production history, myths or false \
+beliefs the film created or corrected (highest value — flag first), real-world \
+impact (laws, trends, institutions the film affected), and production-wide details \
+attested by the filmmakers.
 - For each: a one-line fact_summary, the closest category ("general" when it isn't \
 tied to any on-screen element), 2-3 runnable search_queries (include the film title \
 in at least one), and scene_hint — what would be on screen when this fact is most \
