@@ -10,19 +10,62 @@
   "sceneFacts": [
     {
       "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "Michelin chef rated film's star pursuit 9/10 for accuracy.",
-      "longDescription": "Michelin-starred chef Paul Liebrandt reviewed fine-dining scenes from \"Burnt\" for Insider. He noted that common beliefs about Michelin inspector criteria, such as ordering a tasting menu or arriving early, were \"hearsay.\" Liebrandt emphasized that Michelin inspectors primarily look for consistency in all aspects of the dining experience. He ultimately rated the film's depiction of the pursuit of Michelin stars as a near-perfect 9 out of 10 for accuracy.",
+      "factCategory": "actor",
+      "shortVersion": "Bradley Cooper based his chef character on three real celebrity chefs.",
+      "longDescription": "Bradley Cooper based his character, Adam Jones, on a combination of three celebrity chefs. To prepare for the role, Cooper spent time with Marcus Wareing, Gordon Ramsay, and Marco Pierre White, incorporating their physical characteristics and \"little things\" into his performance. Consultant chef Marcus Wareing observed that Cooper, having just played a Navy SEAL, commanded the kitchen like a soldier.",
       "sources": [
         {
-          "url": "https://screenrant.com/burnt-movie-bradley-cooper-performance-chef-expert-accuracy-response/",
+          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/bradley-cooper-inspired-by-gordon-ramsay-for-burnt-role/articleshow/49204658.cms",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 29] 00:09:39–00:09:58\nsummary: Two men engage in a friendly conversation outside a restaurant about marinating lamb and working for food, with a casual and warm atmosphere in an urban street setting.\ncast on screen: Bradley Cooper",
+        "anchorElement": "Bradley Cooper",
+        "approxTimecode": "00:09:39",
+        "runtimeFraction": 0.095,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 579.3,
+          "endSeconds": 658.9,
+          "startTimecode": "00:09:39",
+          "endTimecode": "00:10:58"
+        }
+      ],
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.095
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Uma Thurman plays a food critic with a shifting British accent.",
+      "longDescription": "Uma Thurman portrays Simone, a food critic in the film. Her character speaks with a posh British accent that occasionally shifts to American. Simone's portrayal includes a dry personality and some funny lines.",
+      "sources": [
+        {
+          "url": "https://www.eyeforfilm.co.uk/review/burnt-2015-film-review-by-anne-katrin-titze",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://rickysfilmreviews.com/2015/11/12/burnt/",
           "modality": "text",
           "timestamp": null
         }
       ],
       "sceneAnchor": {
         "sceneDescription": "[scene 44] 00:14:38–00:14:59\nsummary: The clip shows a tense conversation involving a restaurant critic who is dissatisfied with the food, set in an urban environment with people entering a building, conveying a mood of frustration and critique.\ncast on screen: Uma Thurman",
-        "anchorElement": "A Michelin-star chef noted the film's depiction of Michelin inspector criteria (e.g., ordering tasting menu, arriving early) as \"hearsay,\" emphasizing the real focus on consistency.",
+        "anchorElement": "Uma Thurman",
         "approxTimecode": "00:14:38",
         "runtimeFraction": 0.145,
         "runtimeThird": 1,
@@ -43,12 +86,12 @@
     },
     {
       "scope": "scene",
-      "factCategory": "costume/prop",
-      "shortVersion": "Real chefs were extras in the film's kitchen.",
-      "longDescription": "To ensure authenticity, Lupt Utama served as the Assistant Costume Supervisor for \"Burnt.\" The film's kitchen set was built as a fully functioning kitchen, designed to work like a real restaurant. Real chefs were cast in minor roles in the cooking scenes, adding to the realism for the actors. Consultant chef Marcus Wareing even turned the stoves on full during filming to make the actors hot and sweaty.",
+      "factCategory": "actor",
+      "shortVersion": "Sienna Miller trained extensively to portray Helene as a real chef.",
+      "longDescription": "Sienna Miller aimed to portray her character, Helene, as a \"very real person,\" choosing not to wear makeup or act in an inauthentic way. She observed that women working in male-dominated kitchens \"have to be really tough and strong.\" Consultant chef Marcus Wareing praised Miller's dedication, stating she \"didn’t want to be seen to act like a cook, she wanted to be a cook.\" Wareing added that Miller \"put in so much effort and came to my kitchen on many occasions off her own back, in her own time.\"",
       "sources": [
         {
-          "url": "https://www.luptutama.com/designgallery/burnt",
+          "url": "https://www.blackfilm.com/read/burnt-press-conference-interview-with-bradley-cooper-and-sienna-miller/",
           "modality": "text",
           "timestamp": null
         },
@@ -56,107 +99,54 @@
           "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
           "modality": "text",
           "timestamp": null
-        },
-        {
-          "url": "https://www.acmodasi.com/amdb/movie/295964-burnt-2015",
-          "modality": "text",
-          "timestamp": null
         }
       ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 177] 00:58:39–00:58:57\nsummary: A young girl and a man in a chef's outfit share a moment at a restaurant table, with the girl showing curiosity and slight amusement while the man tastes food, set in a sophisticated dining environment.\ncast on screen: Bradley Cooper",
-        "anchorElement": "chef's outfit",
-        "approxTimecode": "00:58:39",
-        "runtimeFraction": 0.579,
-        "runtimeThird": 2,
-        "runtimeQuartile": 3
+        "sceneDescription": "[scene 88] 00:29:19–00:29:38\nsummary: A tense conversation takes place between a chef and a woman in an outdoor area near a restaurant, followed by scenes inside a kitchen with a man in a suit holding a ticket, suggesting a professional and somewhat confrontational mood.",
+        "anchorElement": "woman in an outdoor area",
+        "approxTimecode": "00:29:19",
+        "runtimeFraction": 0.29,
+        "runtimeThird": 1,
+        "runtimeQuartile": 2
       },
       "displayWindows": [
         {
-          "startSeconds": 3519.6,
-          "endSeconds": 3597.2,
-          "startTimecode": "00:58:39",
-          "endTimecode": "00:59:57"
+          "startSeconds": 1759.4,
+          "endSeconds": 1839.0,
+          "startTimecode": "00:29:19",
+          "endTimecode": "00:30:39"
         }
       ],
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.579
+        "earliestSafeFraction": 0.29
       },
       "wouldPassStrict": true
     },
     {
       "scope": "scene",
-      "factCategory": "location",
-      "shortVersion": "The Langham Hotel in London was a key filming location.",
-      "longDescription": "The film features a fine dining restaurant located at The Langham Hotel in London, specifically The Roux at the Landau. This restaurant appears throughout the film, and its dining room was staffed with at least 24 people working on the service side at any one time. Some of the extras in the film's kitchen and restaurant scenes were genuine chefs, adding to the authenticity.",
-      "sources": [
-        {
-          "url": "https://www.fcsi.org/foodservice-consultant/worldwide/burnt-a-foodservice-perspective/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://mixmeetings.com/showoff/starring-bradley-cooper-new-movie-burnt-dished-out-exclusively-at-the-langham-hong-kong/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 199] 01:05:46–01:06:14\nsummary: Two people sit and converse in a busy indoor market or restaurant setting, discussing a past relationship with a reflective and somewhat somber mood.\ncast on screen: Sienna Miller, Bradley Cooper",
-        "anchorElement": "busy indoor market or restaurant setting",
-        "approxTimecode": "01:05:46",
-        "runtimeFraction": 0.649,
-        "runtimeThird": 2,
-        "runtimeQuartile": 3
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 3946.2,
-          "endSeconds": 4034.1,
-          "startTimecode": "01:05:46",
-          "endTimecode": "01:07:14"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.649
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
       "factCategory": "filming",
-      "shortVersion": "Bradley Cooper and Sienna Miller cooked in a real, hot kitchen.",
-      "longDescription": "To create an authentic, high-pressure kitchen environment, the film's set was a fully functioning kitchen, designed to operate like a real restaurant. Consultant chef Marcus Wareing trained Bradley Cooper and Sienna Miller to genuinely cook and act like professional chefs. During filming, all food preparation was done for real, with actual chefs as extras, and Wareing even turned the stoves on full to make the actors hot and sweaty, enhancing the intense realism of their performances.",
+      "shortVersion": "Actors cooked for real in a functioning kitchen alongside real chefs.",
+      "longDescription": "The kitchen set for the film was a fully functioning kitchen, designed to be picked up and moved into any real restaurant. Consultant chef Marcus Wareing ensured the cast genuinely cooked during filming. To enhance realism and pressure, some extras were actual Michelin-starred chefs from London. Wareing even turned the stoves on full to make the actors hot and sweaty.",
       "sources": [
-        {
-          "url": "https://collider.com/burnt-movie-featurette-john-wells-bradley-cooper/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/",
-          "modality": "text",
-          "timestamp": null
-        },
         {
           "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
           "modality": "text",
           "timestamp": null
         },
         {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
+          "url": "https://www.greatbritishchefs.com/features/marcus-wareing-burnt-interview",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.reellifewithjane.com/2015/10/bradley-cooper-burnt-press-conference/",
           "modality": "text",
           "timestamp": null
         }
       ],
       "sceneAnchor": {
         "sceneDescription": "[scene 221] 01:12:38–01:12:59\nsummary: The clip depicts a tense kitchen scene where a chef aggressively directs his team to prepare dishes with precision, creating a high-pressure and intense atmosphere among the staff.\ncast on screen: Bradley Cooper, Sienna Miller",
-        "anchorElement": "chef aggressively directs his team",
+        "anchorElement": "All food preparation scenes were done for real, with genuine chefs sometimes acting as extras to add pressure to the actors during filming.",
         "approxTimecode": "01:12:38",
         "runtimeFraction": 0.717,
         "runtimeThird": 3,
@@ -171,33 +161,61 @@
         }
       ],
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
+        "earliestSafeFraction": 0.717
       },
       "wouldPassStrict": true
     },
     {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Chef Marcus Wareing ensured kitchen scenes were authentic.",
-      "longDescription": "Michelin-starred chef Marcus Wareing consulted on the film for seven years, starting with script development. His role included designing the kitchen set, creating menus, and training the actors to cook. Wareing ensured all food preparation was done for real, even turning up the heat on set to make the actors look like genuine chefs.",
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Bradley Cooper trained to act and cook like a real chef.",
+      "longDescription": "To prepare for his role as Adam Jones, Bradley Cooper and other core actors were taught to cook and act like professional chefs by consultant Marcus Wareing. Wareing observed that top actors like Cooper could embody the role, even learning to wear chef whites authentically. Cooper already possessed some cooking experience, which helped him portray the aggressive chef. Furthermore, all food preparation scenes in the movie were filmed with actual cooking to ensure realism.",
       "sources": [
-        {
-          "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
-          "modality": "text",
-          "timestamp": null
-        },
         {
           "url": "https://www.thecaterer.com/news/burnt-marcus-wareing-on-teaching-bradley-cooper-to-act-like-a-chef",
           "modality": "text",
           "timestamp": null
         },
         {
-          "url": "https://www.greatbritishchefs.com/features/marcus-wareing-burnt-interview",
+          "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
           "modality": "text",
           "timestamp": null
         },
         {
           "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 250] 01:22:17–01:22:28\nsummary: A man in a white lab coat stands in a sterile, bright room, reflecting on survival with a mix of relief and somberness, creating a contemplative mood.",
+        "anchorElement": "man in a white lab coat",
+        "approxTimecode": "01:22:17",
+        "runtimeFraction": 0.813,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 4937.6,
+          "endSeconds": 5008.0,
+          "startTimecode": "01:22:17",
+          "endTimecode": "01:23:28"
+        }
+      ],
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.0
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Burnt's opening was 4th worst for 3,000+ theater films.",
+      "longDescription": "Released in over 3,000 theaters, \"Burnt\" earned just over $5 million on its opening weekend, placing sixth overall. This made its opening numbers the fourth worst on record for a film playing in that many theaters.",
+      "sources": [
+        {
+          "url": "https://bombreport.com/yearly-breakdowns/2015-2/burnt/",
           "modality": "text",
           "timestamp": null
         }
@@ -206,88 +224,38 @@
       "displayWindows": [
         {
           "startSeconds": 0.0,
-          "endSeconds": 878.4,
+          "endSeconds": 579.3,
           "startTimecode": "00:00:00",
+          "endTimecode": "00:09:39"
+        },
+        {
+          "startSeconds": 658.9,
+          "endSeconds": 878.4,
+          "startTimecode": "00:10:58",
           "endTimecode": "00:14:38"
         },
         {
-          "startSeconds": 3876.2,
-          "endSeconds": 3946.2,
-          "startTimecode": "01:04:36",
-          "endTimecode": "01:05:46"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "The film was originally titled 'Chef' but had to change.",
-      "longDescription": "The film was initially intended to be titled \"Chef\", but this name was already claimed by a Jon Favreau movie. Pre-sales for this film, then called \"Chef\", occurred at Cannes simultaneously with Jon Favreau's \"Chef\" picture. Sony, who originally set up the project, issued a cease and desist letter regarding the competing title. Producers then considered \"Adam Jones\" as a title before ultimately deciding on \"Burnt\".",
-      "sources": [
-        {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://bombreport.com/yearly-breakdowns/2015-2/burnt/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
           "startSeconds": 959.4,
-          "endSeconds": 3519.6,
+          "endSeconds": 1759.4,
           "startTimecode": "00:15:59",
-          "endTimecode": "00:58:39"
+          "endTimecode": "00:29:19"
         },
         {
-          "startSeconds": 4034.1,
+          "startSeconds": 1839.0,
           "endSeconds": 4358.3,
-          "startTimecode": "01:07:14",
+          "startTimecode": "00:30:39",
           "endTimecode": "01:12:38"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Burnt's opening weekend was among the lowest on record.",
-      "longDescription": "Released in 3,003 theaters on October 30, 2015, \"Burnt\" pulled in just over $5 million during its opening weekend. This made it the fourth worst opening on record for a film playing in over 3,000 theaters. Despite this initial low performance, the film eventually managed to earn back its $20 million budget within a month of its release.",
-      "sources": [
-        {
-          "url": "https://bombreport.com/yearly-breakdowns/2015-2/burnt/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3597.2,
-          "endSeconds": 3876.2,
-          "startTimecode": "00:59:57",
-          "endTimecode": "01:04:36"
         },
         {
           "startSeconds": 4439.2,
-          "endSeconds": 6076.0,
+          "endSeconds": 4937.6,
           "startTimecode": "01:13:59",
+          "endTimecode": "01:22:17"
+        },
+        {
+          "startSeconds": 5008.0,
+          "endSeconds": 6076.0,
+          "startTimecode": "01:23:28",
           "endTimecode": "01:41:16"
         }
       ],
@@ -299,20 +267,19 @@
   ],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 7,
-    "scene_cards": 4,
-    "general_cards": 3,
+    "approved_cards": 6,
+    "scene_cards": 5,
+    "general_cards": 1,
     "density_target": 11,
     "cards_per_runtime_quartile": {
-      "1": 1,
-      "2": 0,
-      "3": 3,
-      "4": 0
+      "1": 2,
+      "2": 1,
+      "3": 1,
+      "4": 1
     },
     "distinct_categories": [
-      "costume/prop",
-      "filming",
-      "location"
+      "actor",
+      "filming"
     ],
     "timeCoverage": {
       "fraction": 1.0,
@@ -321,8 +288,8 @@
     "rules": {
       "cards_per_10_min": false,
       "min_six_cards": true,
-      "card_in_each_quartile": false,
-      "max_40pct_single_quartile": false,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
       "min_two_categories": true,
       "full_time_coverage": true
     }
@@ -330,12 +297,12 @@
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 2,
-    "anchors_proposed": 31,
-    "cards_emitted": 8,
-    "would_pass_strict": 3,
-    "cards_rejected": 23,
+    "anchors_proposed": 30,
+    "cards_emitted": 6,
+    "would_pass_strict": 4,
+    "cards_rejected": 24,
     "errors": 0,
-    "elapsed_seconds": 280.1,
+    "elapsed_seconds": 411.4,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"
