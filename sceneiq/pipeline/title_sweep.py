@@ -69,7 +69,8 @@ Rules:
 character story beats, casting stories (who turned down or almost got a role, who \
 requested a casting), or generic industry practice — downstream validation rejects \
 all of these unconditionally, so proposing them wastes a slot.
-- Include both scene-tied facts AND general title facts. ELIGIBLE general classes: \
+- MOST facts should be title-level context (Phase 3: title-level is the primary \
+card class; scene-tied facts enhance where available). ELIGIBLE general classes: \
 box office/reception records, title changes and production history, myths or false \
 beliefs the film created or corrected (highest value — flag first), real-world \
 impact (laws, trends, institutions the film affected), and production-wide details \

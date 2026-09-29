@@ -206,6 +206,7 @@ def discover_anchors_from_moments(
         "year": data.get("film_year"),
         "runtime_minutes": moments.runtime_minutes,
         "duration_sec": moments.duration_sec,
+        "content_rating": getattr(moments, "content_rating", ""),
         "input_prompt": moments.title,
         "anchor_source": "tubi_moments",
     }

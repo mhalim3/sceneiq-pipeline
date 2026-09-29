@@ -79,7 +79,8 @@ _JUDGE_SCHEMA = {
             "required": list(_RUBRIC_DIMS),
         },
         "earliest_safe_fraction": {"type": "number"},
-        "safety_pass": {"type": "boolean"},
+        "maturity_pass": {"type": "boolean"},
+        "propriety_pass": {"type": "boolean"},
         "category_correct": {"type": "boolean"},
         "summary_entailed": {"type": "boolean"},
         "film_specific": {"type": "boolean"},
@@ -91,7 +92,8 @@ _JUDGE_SCHEMA = {
         "sources",
         "rubric",
         "earliest_safe_fraction",
-        "safety_pass",
+        "maturity_pass",
+        "propriety_pass",
         "category_correct",
         "summary_entailed",
         "film_specific",
@@ -158,27 +160,47 @@ interesting; 0 = generic or obvious.
 card could be shown without spoiling anything. If safe at its anchor, use the anchor \
 fraction {fraction} or lower.
 
-5. safety_pass — G-rated wording; no disparaging or unsubstantiated negative claims \
-about talent, filmmakers, studios, or partners; no PII; does not restate or amplify \
-mature material. Quoted profanity FAILS even when censored or bleeped ("You b----!" \
-is not G-rated); a card whose payoff is an expletive line fails. Quoting or \
-paraphrasing CRITICISM of the film — negative reviews, "critics called it..." — \
-FAILS: SceneIQ is an enrichment surface, never a venue for criticism of the title.
+5. maturity_pass — {maturity_rule}
 
-6. category_correct — does factCategory fit?
+6. propriety_pass — FAILS on any of: gossip or interpersonal drama; legal matters \
+(lawsuits, arrests, charges, settlements); tragedies (deaths, accidents, or disasters \
+connected to the production or its talent); politically charged content; disparaging \
+or unsubstantiated negative claims about talent, filmmakers, studios, or partners; \
+quoting or paraphrasing criticism of the title ("critics called it..."); PII. \
+SceneIQ is an enrichment surface, never a venue for controversy.
 
-7. named_entities — list every proper name, title, and specific number a fact-checker \
+7. category_correct — does factCategory fit?
+
+8. named_entities — list every proper name, title, and specific number a fact-checker \
 must find in the sources.
 
-8. summary_entailed — true only if BOTH shortVersion and longDescription contain no \
+9. summary_entailed — true only if BOTH shortVersion and longDescription contain no \
 claim, name, number, or implication beyond what the entailed beats state. They are \
 rewrites of the beats, never expansions.
 
-9. film_specific — true only if the card's claims are specifically about THIS film \
+10. film_specific — true only if the card's claims are specifically about THIS film \
 ({film_title}): its production, cast, locations, music, or making-of. A card stating \
 generic industry practice (how newspaper props are usually made, how films typically \
 license songs) is NOT film-specific even when the prop or song appears in this \
 film's scene — the sources must attest facts about {film_title} itself."""
+
+
+def _maturity_rule(cfg: config.PipelineConfig, film_info: dict) -> str:
+    if cfg.maturity_standard == "title_rating":
+        rating = film_info.get("content_rating") or "the title's own rating"
+        return (
+            f"all user-facing text must be appropriate for a {rating}-rated title "
+            f"(this title is rated {rating}). Content must never exceed the title's "
+            "own rating, and must not restate or amplify mature material beyond what "
+            "the film itself presents."
+        )
+    return (
+        "all user-facing text must be G-RATED regardless of the title's rating. "
+        "Quoted profanity FAILS even when censored or bleeped (\"You b----!\" is "
+        "not G-rated); a card whose payoff is an expletive line fails. Do not "
+        "restate or amplify mature material even when it appears in the title, "
+        "scene, or source."
+    )
 
 
 def _judge_source_blocks(cited: list) -> str:
@@ -280,6 +302,7 @@ def validate_card(
             ),
             short_version=card.short_version,
             category=card.fact_category,
+            maturity_rule=_maturity_rule(cfg, film_info),
             long_description=card.long_description,
             beats=beats_txt,
             follow_ups=card.follow_ups,
@@ -306,14 +329,18 @@ def validate_card(
         checks["spoiler_boundary"] = rubric["spoiler_safety"] >= 1 and (
             judge["earliest_safe_fraction"] <= card.runtime_fraction + 0.02
         )
-    checks["safety"] = judge["safety_pass"]
+    checks["maturity"] = judge["maturity_pass"]
+    checks["propriety"] = judge["propriety_pass"]
     if not checks["spoiler_boundary"]:
         result.rejection_reasons.append(
             "spoiler_boundary: card only safe from fraction "
             f"{judge['earliest_safe_fraction']:.2f}, anchored at {card.runtime_fraction:.2f}"
         )
-    if not judge["safety_pass"]:
-        result.rejection_reasons.append("safety: maturity/partner-safety failure")
+    if not judge["maturity_pass"]:
+        result.rejection_reasons.append("maturity: content exceeds the maturity standard")
+    if not judge["propriety_pass"]:
+        result.rejection_reasons.append(
+            "propriety: gossip/legal/tragedy/political/disparagement content")
     if card.scope == "general":
         card.spoiler_boundary_fraction = max(0.0, float(judge["earliest_safe_fraction"]))
     else:
@@ -503,7 +530,8 @@ def validate_card(
         and not unsupported
         and not binding_bad
         and checks["spoiler_boundary"]
-        and checks["safety"]
+        and checks["maturity"]
+        and checks["propriety"]
         and judge["category_correct"]
         and judge["summary_entailed"]
         and judge["film_specific"]

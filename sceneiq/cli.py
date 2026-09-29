@@ -59,8 +59,8 @@ def main(argv: list[str] | None = None) -> int:
         description="SceneIQ Scene Fact pipeline: movie prompt in, sourced scene facts out.",
     )
     p.add_argument("prompt", help='Movie prompt, e.g. "Legally Blonde (2001)" — or "report" to aggregate outputs')
-    p.add_argument("--max-anchors", type=int, default=12, help="candidate anchors per pass")
-    p.add_argument("--max-cards", type=int, default=10, help="cap on emitted cards")
+    p.add_argument("--max-anchors", type=int, default=8, help="candidate anchors per pass")
+    p.add_argument("--max-cards", type=int, default=15, help="cap on scene cards (Phase 3 target: 12-15 total)")
     p.add_argument("--passes", type=int, default=1,
                    help="discovery passes; anchors dedupe across passes, approved cards merge")
     p.add_argument("--evidence", choices=["relaxed", "strict"], default="relaxed",

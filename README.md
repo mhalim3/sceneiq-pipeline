@@ -90,7 +90,8 @@ flowchart TD
 | 5 | Film specificity | judge: generic industry practice is not a Scene Fact | reject | reject |
 | 6 | Conformance | judge rubric auto-0: plot summary, character backstory, casting stories (incl. executive-request framing), deleted scenes | reject | reject |
 | 7 | Spoiler boundary | judge `earliest_safe_fraction` vs anchor position (scene cards); general cards get a scheduling floor instead | reject | reject |
-| 8 | Safety | judge: G-rated (censored profanity fails), no talent/partner disparagement, quoting criticism of the title fails | reject | reject |
+| 8 | Maturity | judge: G-rated by default (censored profanity fails); `maturity_standard=title_rating` switches to rating-matched using Moments content_ratings | reject | reject |
+| 8b | Propriety | judge: no gossip, legal matters, tragedies, politically charged content, talent/partner disparagement, or quoting criticism of the title | reject | reject |
 | 9 | Verbatim entities + cross-modal | code: named entities string-checked in bodies; video-sourced entities need a text source | flag | flag (reject with `--strict-verbatim`) |
 | 10 | Emission policy | code: C-tier never supports; evidence classes judged per claim | 1 primary OR 1 editorial | 1 primary OR 2 independent A/B editorial |
 | 11 | Rubric disposition | judge 0/1/2 rubric | floors of 1 (accuracy, grounding, conformance) | 2s on accuracy+grounding, >= 1 elsewhere, avg >= 1.5 |

@@ -83,6 +83,7 @@ class TitleMoments:
     title: str
     duration_sec: float
     scenes: list  # list[MomentScene]
+    content_rating: str = ""
 
     @property
     def runtime_minutes(self) -> int:
@@ -140,6 +141,7 @@ def load_moments_csv(path: str | Path) -> TitleMoments:
     rows.sort(key=lambda r: float(r.get("scene_start_ts") or 0.0))
     duration = max((float(r.get("scene_end_ts") or 0.0) for r in rows), default=0.0)
     title = rows[0].get("program_name") or rows[0].get("content_name", "") if rows else ""
+    rating = rows[0].get("content_ratings", "") if rows else ""
     scenes = []
     for i, r in enumerate(rows):
         start = float(r.get("scene_start_ts") or 0.0)
@@ -160,7 +162,8 @@ def load_moments_csv(path: str | Path) -> TitleMoments:
                 themes=themes + _json_list(r.get("sentiment_list", "")),
             )
         )
-    return TitleMoments(title=title, duration_sec=duration, scenes=scenes)
+    return TitleMoments(title=title, duration_sec=duration, scenes=scenes,
+                        content_rating=rating or "")
 
 
 def load_moments_json(path: str | Path) -> TitleMoments:

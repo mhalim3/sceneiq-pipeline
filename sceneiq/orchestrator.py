@@ -380,9 +380,11 @@ def run(
     for r in scene_records:
         quartiles[r.card.runtime_quartile] += 1
     categories = {r.card.fact_category for r in emitted if r.card.fact_category != "general"}
-    density_target = math.ceil(runtime_min / cfg.minutes_per_card) if runtime_min else cfg.min_cards_to_enable
+    # Phase 3 fact sufficiency: ~1 per 10 min, clamped to 12-15 per title.
+    raw_target = math.ceil(runtime_min / cfg.minutes_per_card) if runtime_min else cfg.density_min
+    density_target = max(cfg.density_min, min(cfg.density_max, raw_target))
     rules = {
-        "cards_per_10_min": len(emitted) >= density_target,
+        "fact_target_12_15": len(emitted) >= density_target,
         "min_six_cards": len(emitted) >= cfg.min_cards_to_enable,
         "card_in_each_quartile": runtime_min <= cfg.quartile_min_runtime
         or all(v > 0 for v in quartiles.values()),

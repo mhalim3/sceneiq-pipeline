@@ -44,9 +44,9 @@ FACT_CATEGORIES = [
 class PipelineConfig:
     # How many candidate anchors to discover per title. PRD topic clustering
     # proposes 6-12; we over-generate slightly since validation rejects hard.
-    max_anchors: int = 12
+    max_anchors: int = 8
     # Cap on emitted (approved) cards.
-    max_cards: int = 10
+    max_cards: int = 15
     # PRD "Title sufficiency requirements" (MVP, movies only):
     #   - >= 1 approved card per `minutes_per_card` of runtime, rounded up
     #   - >= `min_cards_to_enable` approved cards for a feature-length title
@@ -55,6 +55,10 @@ class PipelineConfig:
     #   - >= `min_categories` distinct fact categories
     min_cards_to_enable: int = 6
     minutes_per_card: int = 10
+    # Phase 3 fact sufficiency target: 12-15 facts per title (~1 per 10 min).
+    # density target = ceil(runtime/10) clamped to [density_min, density_max].
+    density_min: int = 12
+    density_max: int = 15
     quartile_min_runtime: int = 40
     max_quartile_share: float = 0.40
     min_categories: int = 2
@@ -93,6 +97,10 @@ class PipelineConfig:
     # source for a claim, but any named person or number must also appear in
     # a text source (cross-modal corroboration).
     require_cross_modal: bool = True
+    # Maturity gate standard: "g_rated" (every card G-rated, old PRD MVP) or
+    # "title_rating" (card fits the title's own rating, read from Moments
+    # content_ratings — Phase 3 spec). Ships g_rated until S&P signs off.
+    maturity_standard: str = "g_rated"
     # Wikipedia API discovery leads (C-tier: seed anchors, never support cards).
     use_wikipedia_leads: bool = True
     # Fetch-then-write source bank (scene-sense architecture): per anchor, run
@@ -107,7 +115,7 @@ class PipelineConfig:
     # anchored to a Moments scene when one supports it, else emitted as a
     # GENERAL card the player may show at any time after its spoiler floor.
     use_title_sweep: bool = True
-    sweep_facts_max: int = 8
+    sweep_facts_max: int = 12   # title-first: most facts are title-level context
     # Scene cards display from their scene start through scene end plus this
     # padding (seconds). General cards fill the remaining timeline gaps.
     scene_card_pad_s: float = 60.0
@@ -121,7 +129,7 @@ class PipelineConfig:
     # reject a card — viewer value is scored manually by reviewers per the
     # PRD human rubric. Set curiosity_gating=True to let the model gate
     # (pre-manual-review behavior).
-    use_curiosity_judge: bool = True
+    use_curiosity_judge: bool = False   # Phase 3: curiosity out of MVP scope
     curiosity_gating: bool = False
     curiosity_min_composite: float = 0.5
     extra: dict = field(default_factory=dict)
