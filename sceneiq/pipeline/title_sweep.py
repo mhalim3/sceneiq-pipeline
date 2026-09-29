@@ -20,28 +20,29 @@ from ..models import Anchor
 log = logging.getLogger("sceneiq")
 
 _SWEEP_QUERIES = [
-    "{title} {year} film production behind the scenes facts",
-    "{title} {year} movie myths inaccuracies what it got wrong",
-    "{title} {year} box office records reception trivia cast preparation",
+    "{title} {year} most interesting trivia fun facts",
+    "{title} {year} behind the scenes secrets on-set stories",
+    "{title} {year} what was real practical effects myths",
 ]
 
 # Later rounds search different angles — repeating the same queries returns
 # the same articles.
 _SWEEP_QUERIES_LATER = [
-    "{title} {year} director interview making of",
-    "{title} {year} soundtrack score licensing music",
-    "{title} {year} filming locations real places",
-    "{title} {year} costume production design details",
+    "{title} {year} director interview making of stories",
+    "{title} {year} soundtrack hidden details easter eggs",
+    "{title} {year} filming locations you can visit",
+    "{title} {year} props costumes how they made",
 ]
 
 _SWEEP_PROMPT = """Run a Google search for: {query}
 
-Report the most notable, well-documented facts about the film {title} ({year}) \
-that the results attest — production stories, records, corrections of popular \
-beliefs, real-world details. Include facts about the film as a whole (box office, \
-reception records, myths the film created) as well as scene-tied details. \
-Do NOT invent any URL — only describe what the search returned. Skip plot summary \
-and casting gossip."""
+Report the MOST INTERESTING facts about the film {title} ({year}) that the results \
+attest — the facts fan articles and trivia lists lead with, the ones a viewer would \
+retell at dinner. On-set stories, things that were secretly real (or secretly fake), \
+actor transformations, hidden connections, crafty production solves, myths the film \
+created or busted. Trivia sites and listicles are fine as LEADS here — every fact \
+gets independently verified against qualified sources later. Do NOT invent any URL — \
+only describe what the search returned. Skip plot summary and casting gossip."""
 
 _FACTS_SCHEMA = {
     "type": "object",
@@ -79,11 +80,13 @@ character story beats, casting stories (who turned down or almost got a role, wh
 requested a casting), or generic industry practice — downstream validation rejects \
 all of these unconditionally, so proposing them wastes a slot.
 - MOST facts should be title-level context (Phase 3: title-level is the primary \
-card class; scene-tied facts enhance where available). ELIGIBLE general classes: \
-box office/reception records, title changes and production history, myths or false \
-beliefs the film created or corrected (highest value — flag first), real-world \
-impact (laws, trends, institutions the film affected), and production-wide details \
-attested by the filmmakers.
+card class; scene-tied facts enhance where available).
+- RANK BY INTERESTINGNESS. Lead with the facts a viewer would retell: on-set \
+stories, secretly-real/secretly-fake reveals, actor transformations and real \
+skills, hidden connections to other films/places, crafty production solves, myths \
+the film created or busted, records with a visual payoff. Business facts (box \
+office, budgets, marketing spend, release scheduling) are LOW value — propose at \
+most ONE, and only if genuinely surprising.
 - Every fact must pass the "wait, really?" test: a concrete number, a first, a \
 hidden connection (this farm was also Smallville), a record, or a surprising \
 production solve. Skip facts a viewer would shrug at.

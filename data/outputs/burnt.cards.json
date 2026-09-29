@@ -12,11 +12,16 @@
     {
       "scope": "scene",
       "factCategory": "actor",
-      "shortVersion": "Bradley Cooper was a chef before playing one.",
-      "longDescription": "Bradley Cooper was a chef before playing one. He worked as a busboy and prep cook at restaurants in New Jersey.",
+      "shortVersion": "Bradley Cooper drew on his own chef experience for the role.",
+      "longDescription": "Bradley Cooper drew on his own chef experience for the role. He worked as a busboy and prep cook in Greek and Italian restaurants.",
       "sources": [
         {
           "url": "https://thecinemaholic.com/did-bradley-cooper-learn-cooking-for-burnt/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/bradley-cooper-inspired-by-gordon-ramsay-for-burnt-role/articleshow/49204658.cms",
           "modality": "text",
           "timestamp": null
         }
@@ -45,122 +50,107 @@
     {
       "scope": "scene",
       "factCategory": "actor",
-      "shortVersion": "Bradley Cooper went to great lengths to play Adam.",
-      "longDescription": "Bradley Cooper went to great lengths to play Adam. He even worked at a Burger King in London as part of his research.",
+      "shortVersion": "Adam Jones was inspired by real-life celebrity chefs.",
+      "longDescription": "Adam Jones was inspired by real-life celebrity chefs. Bradley Cooper based the character on a mixture of Marcus Wareing, Gordon Ramsay, and Marco Pierre White.",
       "sources": [
         {
-          "url": "https://www.blackfilm.com/read/burnt-press-conference-interview-with-bradley-cooper-and-sienna-miller/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.movies.ie/bradley-cooper-sienna-miller-interview-for-burnt/",
+          "url": "https://thecinemaholic.com/are-burnts-adam-jones-and-helene-sweeney-based-on-real-chefs/",
           "modality": "text",
           "timestamp": null
         }
       ],
       "sceneAnchor": {
-        "sceneDescription": "[scene 29] 00:09:39–00:09:58\nsummary: Two men engage in a friendly conversation outside a restaurant about marinating lamb and working for food, with a casual and warm atmosphere in an urban street setting.\ncast on screen: Bradley Cooper",
-        "anchorElement": "Burnt was Bradley Cooper's third box office flop in 2015, following Serena and Aloha.",
-        "approxTimecode": "00:09:39",
-        "runtimeFraction": 0.095,
+        "sceneDescription": "[scene 66] 00:21:56–00:22:18\nsummary: A tense interaction unfolds in a modern restaurant setting where a chef confronts a seated man, possibly a customer or colleague, amid criticism about food preparation, creating a mood of conflict and unease.\ncast on screen: Bradley Cooper",
+        "anchorElement": "Bradley Cooper's character, Adam Jones, in Burnt was not based on a single person but an amalgamation of real-life chefs like Gordon Ramsay, Marcus Wareing, Mario Batali, and Marco Pierre White.",
+        "approxTimecode": "00:21:56",
+        "runtimeFraction": 0.217,
         "runtimeThird": 1,
         "runtimeQuartile": 1
       },
       "displayWindows": [
         {
-          "startSeconds": 579.3,
-          "endSeconds": 658.9,
-          "startTimecode": "00:09:39",
-          "endTimecode": "00:10:58"
+          "startSeconds": 1316.6,
+          "endSeconds": 1398.9,
+          "startTimecode": "00:21:56",
+          "endTimecode": "00:23:18"
         }
       ],
       "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "music",
-      "shortVersion": "Hear that music? It's from the Donnie Darko score.",
-      "longDescription": "Hear that music? It's from the Donnie Darko score. Several scenes in Burnt borrow Michael Andrews' cult classic cues.",
-      "sources": [
-        {
-          "url": "https://stlyrics.org/b/burnt.htm",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 36] 00:11:58–00:12:19\nsummary: The clip shows a man and woman in a dimly lit room, followed by scenes of food preparation and a man eating in a casual restaurant environment, with a moody and contemplative atmosphere enhanced by the song lyrics about fear.",
-        "anchorElement": "Several scenes in Burnt incorporate cues from Michael Andrews' score for Donnie Darko, specifically \"Cellar Door,\" \"Carpathian Ridge,\" and \"Gretchen Ross.\"",
-        "approxTimecode": "00:11:58",
-        "runtimeFraction": 0.118,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 718.5,
-          "endSeconds": 799.3,
-          "startTimecode": "00:11:58",
-          "endTimecode": "00:13:19"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.118
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Adam Jones was a mix of real-life celebrity chefs.",
-      "longDescription": "Adam Jones was a mix of real-life celebrity chefs. Bradley Cooper based the character on Gordon Ramsay, Marcus Wareing, and Marco Pierre White.",
-      "sources": [
-        {
-          "url": "https://www.thecaterer.com/news/bradley-cooper-based-chef-movie-character-on-three-british-chefs",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 51] 00:16:59–00:17:17\nsummary: Two men are conversing in a dimly lit restaurant or dining room, discussing kitchen staff and a chef's potential, creating a mood of planning and anticipation in a professional culinary environment.\ncast on screen: Bradley Cooper",
-        "anchorElement": "The fictional character Adam Jones was heavily influenced by real chefs like Gordon Ramsay, Marcus Wareing, Mario Batali, and Marco Pierre White.",
-        "approxTimecode": "00:16:59",
-        "runtimeFraction": 0.168,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 1019.9,
-          "endSeconds": 1097.5,
-          "startTimecode": "00:16:59",
-          "endTimecode": "00:18:17"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.168
+        "earliestSafeFraction": 0.217
       },
       "wouldPassStrict": true
     },
     {
       "scope": "scene",
-      "factCategory": "set_design",
-      "shortVersion": "This kitchen set was a fully functioning, real kitchen.",
-      "longDescription": "This kitchen set was a fully functioning, real kitchen. Consultant chef Marcus Wareing ensured it worked as a real kitchen, even turning the stoves on full.",
+      "factCategory": "actor",
+      "shortVersion": "Bradley Cooper drew on his own recovery for Adam's journey.",
+      "longDescription": "Bradley Cooper drew on his own recovery for Adam's journey. The film explores Adam's struggle to overcome drug and alcohol addiction.",
+      "sources": [
+        {
+          "url": "https://thecinemaholic.com/is-burnt-based-on-the-true-story-of-a-chef/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 73] 00:24:33–00:24:59\nsummary: Two men engage in a tense conversation in a dimly lit cellar filled with wine crates, discussing a threatening email and a drug debt, while also debating the amount of tarragon in a dish, creating a mood of suspicion and conflict.",
+        "anchorElement": "Bradley Cooper, who has been sober since 2004, drew on his personal experience as a recovering addict to portray his character Adam Jones's struggles with addiction in \"Burnt.\"",
+        "approxTimecode": "00:24:33",
+        "runtimeFraction": 0.243,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 1473.8,
+          "endSeconds": 1559.4,
+          "startTimecode": "00:24:33",
+          "endTimecode": "00:25:59"
+        }
+      ],
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.24
+      },
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "filming",
+      "shortVersion": "Director John Wells filmed kitchen scenes up to fifteen times.",
+      "longDescription": "Director John Wells filmed kitchen scenes up to fifteen times. This helped the actors look like exhausted, drained chefs.",
+      "sources": [
+        {
+          "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 95] 00:31:39–00:32:06\nsummary: The clip shows a tense moment in a professional kitchen with chefs in white uniforms, followed by scenes in a formal dining area, conveying a mood of stress and urgency in a restaurant setting.\ncast on screen: Bradley Cooper",
+        "anchorElement": "Director John Wells filmed kitchen scenes up to fifteen times from various angles, a method that helped actors embody the drained and exhausted nature of real chefs.",
+        "approxTimecode": "00:31:39",
+        "runtimeFraction": 0.313,
+        "runtimeThird": 1,
+        "runtimeQuartile": 2
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 1899.3,
+          "endSeconds": 1986.0,
+          "startTimecode": "00:31:39",
+          "endTimecode": "00:33:06"
+        }
+      ],
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.31
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Helene's cooking skills? Sienna Miller trained hard to make them real.",
+      "longDescription": "Helene's cooking skills? Sienna Miller trained hard to make them real. She even cooked 70 turbots in one day during her preparation.",
       "sources": [
         {
           "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
@@ -168,14 +158,14 @@
           "timestamp": null
         },
         {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
+          "url": "https://www.liverpoolecho.co.uk/whats-on/film-news/southport-celebrity-chef-marcus-wareing-10344621",
           "modality": "text",
           "timestamp": null
         }
       ],
       "sceneAnchor": {
         "sceneDescription": "[scene 103] 00:34:18–00:34:38\nsummary: In a professional kitchen, chefs engage in a tense and somewhat confrontational exchange, with one chef instructing another to eat a dish while others observe, creating a charged and serious atmosphere.\ncast on screen: Bradley Cooper, Sienna Miller",
-        "anchorElement": "professional kitchen",
+        "anchorElement": "Sienna Miller was highly dedicated to her role as a sous chef in Burnt, with consultant chef Marcus Wareing noting she \"didn't want to be seen to act like a cook, she wanted to be a cook.\"",
         "approxTimecode": "00:34:18",
         "runtimeFraction": 0.339,
         "runtimeThird": 2,
@@ -197,28 +187,94 @@
     {
       "scope": "scene",
       "factCategory": "filming",
-      "shortVersion": "Gordon Ramsay produced, and a Michelin chef created the food.",
-      "longDescription": "Gordon Ramsay produced, and a Michelin chef created the food. Consultant chef Marcus Wareing prepared all the recipes for the movie.",
+      "shortVersion": "The kitchen's intense atmosphere earned a near-perfect accuracy score.",
+      "longDescription": "The kitchen's intense atmosphere earned a near-perfect accuracy score. Consultant chef Marcus Wareing even turned the stoves on full to make actors hot and sweaty.",
       "sources": [
+        {
+          "url": "https://screenrant.com/burnt-movie-bradley-cooper-performance-chef-expert-accuracy-response/",
+          "modality": "text",
+          "timestamp": null
+        },
         {
           "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
           "modality": "text",
           "timestamp": null
         },
         {
-          "url": "https://www.reellifewithjane.com/2015/10/bradley-cooper-burnt-press-conference/",
+          "url": "https://www.deliciousmagazine.co.uk/behind-the-scenes-marcus-wareing-on-burnt/",
           "modality": "text",
           "timestamp": null
-        },
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 221] 01:12:38–01:12:59\nsummary: The clip depicts a tense kitchen scene where a chef aggressively directs his team to prepare dishes with precision, creating a high-pressure and intense atmosphere among the staff.\ncast on screen: Bradley Cooper, Sienna Miller",
+        "anchorElement": "high-pressure and intense atmosphere",
+        "approxTimecode": "01:12:38",
+        "runtimeFraction": 0.717,
+        "runtimeThird": 3,
+        "runtimeQuartile": 3
+      },
+      "displayWindows": [
         {
-          "url": "https://www.luxuryrestaurantguide.com/blog/chef-marcus-wareing-on-how-he-taught-bradley-cooper-to-annihilate-a-kitchen-for-the-film-burnt/",
+          "startSeconds": 4358.3,
+          "endSeconds": 4439.2,
+          "startTimecode": "01:12:38",
+          "endTimecode": "01:13:59"
+        }
+      ],
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.0
+      },
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "location",
+      "shortVersion": "Adam's restaurant is a real London hotel restaurant.",
+      "longDescription": "Adam's restaurant is a real London hotel restaurant. The Langham, London, and its restaurant, The Roux at the Landau, were used for filming.",
+      "sources": [
+        {
+          "url": "https://hotelsmag.com/news/hong-kong-hotel-serves-burnt-dishes/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 280] 01:31:59–01:32:18\nsummary: The video shows a morning routine involving a kitchen and office setting, with people preparing food and interacting in a calm, professional environment, including shots of a bridge and urban river scene.\ncast on screen: Bradley Cooper",
+        "anchorElement": "\"Burnt\" filmed at real London locations, notably The Langham Hotel and its restaurant, The Roux at the Landau, which doubled as Adam Jones's restaurant.",
+        "approxTimecode": "01:31:59",
+        "runtimeFraction": 0.908,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 5519.1,
+          "endSeconds": 5598.6,
+          "startTimecode": "01:31:59",
+          "endTimecode": "01:33:18"
+        }
+      ],
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.0
+      },
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Bradley Cooper trained with a real three-Michelin-star chef.",
+      "longDescription": "Bradley Cooper trained with a real three-Michelin-star chef. He prepared for the role by studying the behavior of Clare Smyth.",
+      "sources": [
+        {
+          "url": "https://auralcrave.com/en/2022/12/18/burnt-explained-who-is-the-michelin-star-chef-based-on/",
           "modality": "text",
           "timestamp": null
         }
       ],
       "sceneAnchor": {
         "sceneDescription": "[scene 287] 01:34:19–01:34:37\nsummary: The video depicts chefs working diligently in a professional kitchen, preparing and artfully plating dishes, creating a focused and professional atmosphere.\ncast on screen: Bradley Cooper",
-        "anchorElement": "Gordon Ramsay was an executive producer on Burnt, and consultant chef Marcus Wareing created all the special dishes seen on screen.",
+        "anchorElement": "Bradley Cooper trained with three-Michelin-starred chef Clare Smyth to prepare for his role as Adam Jones in \"Burnt.\"",
         "approxTimecode": "01:34:19",
         "runtimeFraction": 0.931,
         "runtimeThird": 3,
@@ -235,21 +291,21 @@
       "spoilerBoundary": {
         "earliestSafeFraction": 0.0
       },
-      "wouldPassStrict": true
+      "wouldPassStrict": false
     },
     {
       "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The film's budget was reported as $20 million, but records show $32.7 million.",
-      "longDescription": "The film's budget was reported as $20 million, but records show $32.7 million. Louisiana film commission records indicated the higher figure.",
+      "factCategory": "music",
+      "shortVersion": "Burnt's score includes surprising cues from the Donnie Darko soundtrack.",
+      "longDescription": "Burnt's score includes surprising cues from the Donnie Darko soundtrack. Tracks like \"Cellar Door\" add a layer of unease to the film.",
       "sources": [
         {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
+          "url": "https://stlyrics.org/b/burnt.htm",
           "modality": "text",
           "timestamp": null
         },
         {
-          "url": "https://bombreport.com/yearly-breakdowns/2015-2/burnt/",
+          "url": "https://moviechat.org/tt2503944/Burnt/58c88ce7d1ea5c147078d9ce/How-did-they-get-away-with-stealing-songs-from-the-Donnie-Darko-Score",
           "modality": "text",
           "timestamp": null
         }
@@ -261,141 +317,25 @@
           "endSeconds": 579.3,
           "startTimecode": "00:00:00",
           "endTimecode": "00:09:39"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Burnt's distributor wanted a January release, but the board said no.",
-      "longDescription": "Burnt's distributor wanted a January release, but the board said no. The film was forced into an October slot to meet quarterly release quotas.",
-      "sources": [
-        {
-          "url": "https://bombreport.com/yearly-breakdowns/2015-2/burnt/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 658.9,
-          "endSeconds": 718.5,
-          "startTimecode": "00:10:58",
-          "endTimecode": "00:11:58"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Burnt had one of the worst opening weekends for a film in over 3,000 theaters.",
-      "longDescription": "Burnt had one of the worst opening weekends for a film in over 3,000 theaters. It pulled in just over $5 million, making it the 4th worst opening on record.",
-      "sources": [
-        {
-          "url": "https://bombreport.com/yearly-breakdowns/2015-2/burnt/",
-          "modality": "text",
-          "timestamp": null
         },
         {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
+          "startSeconds": 1398.9,
+          "endSeconds": 1473.8,
+          "startTimecode": "00:23:18",
+          "endTimecode": "00:24:33"
+        },
         {
-          "startSeconds": 799.3,
-          "endSeconds": 1019.9,
-          "startTimecode": "00:13:19",
-          "endTimecode": "00:16:59"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Burnt was in development for 10 years, almost starring Keanu Reeves.",
-      "longDescription": "Burnt was in development for 10 years, almost starring Keanu Reeves. David Fincher was also slated to direct the film at one point.",
-      "sources": [
-        {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1097.5,
+          "startSeconds": 1986.0,
           "endSeconds": 2058.7,
-          "startTimecode": "00:18:17",
+          "startTimecode": "00:33:06",
           "endTimecode": "00:34:18"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "location",
-      "shortVersion": "Burnt\" filmed in New Orleans, London, and Ealing Studios.",
-      "longDescription": "Burnt\" filmed in New Orleans, London, and Ealing Studios. The Langham Hotel in London was also a key filming location.",
-      "sources": [
-        {
-          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
-          "modality": "text",
-          "timestamp": null
         },
         {
-          "url": "https://mixmeetings.com/showoff/starring-bradley-cooper-new-movie-burnt-dished-out-exclusively-at-the-langham-hong-kong/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2138.8,
-          "endSeconds": 5659.7,
-          "startTimecode": "00:35:38",
-          "endTimecode": "01:34:19"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The studio spent over $20M on ads for Burnt.",
-      "longDescription": "The studio spent over $20M on ads for Burnt. This included $12.3 million just for television commercials.",
-      "sources": [
-        {
-          "url": "https://bombreport.com/yearly-breakdowns/2015-2/burnt/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
+          "startSeconds": 4439.2,
+          "endSeconds": 5519.1,
+          "startTimecode": "01:13:59",
+          "endTimecode": "01:31:59"
+        },
         {
           "startSeconds": 5737.9,
           "endSeconds": 6076.0,
@@ -407,36 +347,84 @@
         "earliestSafeFraction": 0.0
       },
       "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Gordon Ramsay didn't just inspire Adam Jones, he was a producer!",
+      "longDescription": "Gordon Ramsay didn't just inspire Adam Jones, he was a producer! Bradley Cooper even \"stole\" physical mannerisms from Ramsay and other chefs.",
+      "sources": [
+        {
+          "url": "https://www.deepfocusfilmstudies.com/burnt-movie.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/bradley-cooper-inspired-by-gordon-ramsay-for-burnt-role/articleshow/49204658.cms",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 658.9,
+          "endSeconds": 1316.6,
+          "startTimecode": "00:10:58",
+          "endTimecode": "00:21:56"
+        },
+        {
+          "startSeconds": 1559.4,
+          "endSeconds": 1899.3,
+          "startTimecode": "00:25:59",
+          "endTimecode": "00:31:39"
+        },
+        {
+          "startSeconds": 2138.8,
+          "endSeconds": 4358.3,
+          "startTimecode": "00:35:38",
+          "endTimecode": "01:12:38"
+        },
+        {
+          "startSeconds": 5598.6,
+          "endSeconds": 5659.7,
+          "startTimecode": "01:33:18",
+          "endTimecode": "01:34:19"
+        }
+      ],
+      "spoilerBoundary": {
+        "earliestSafeFraction": 0.0
+      },
+      "wouldPassStrict": true
     }
   ],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 12,
-    "scene_cards": 6,
-    "general_cards": 6,
+    "approved_cards": 10,
+    "scene_cards": 8,
+    "general_cards": 2,
     "density_target": 12,
     "cards_per_runtime_quartile": {
-      "1": 4,
-      "2": 1,
-      "3": 0,
-      "4": 1
+      "1": 3,
+      "2": 2,
+      "3": 1,
+      "4": 2
     },
     "distinct_categories": [
       "actor",
       "filming",
       "location",
-      "music",
-      "set_design"
+      "music"
     ],
     "timeCoverage": {
       "fraction": 1.0,
       "uncovered": []
     },
     "rules": {
-      "fact_target_12_15": true,
+      "fact_target_12_15": false,
       "min_six_cards": true,
-      "card_in_each_quartile": false,
-      "max_40pct_single_quartile": false,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
       "min_two_categories": true,
       "full_time_coverage": true
     }
@@ -444,12 +432,12 @@
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 32,
-    "cards_emitted": 12,
-    "would_pass_strict": 5,
-    "cards_rejected": 20,
+    "anchors_proposed": 35,
+    "cards_emitted": 10,
+    "would_pass_strict": 6,
+    "cards_rejected": 25,
     "errors": 0,
-    "elapsed_seconds": 434.9,
+    "elapsed_seconds": 523.3,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"
