@@ -25,6 +25,15 @@ _SWEEP_QUERIES = [
     "{title} {year} box office records reception trivia cast preparation",
 ]
 
+# Later rounds search different angles — repeating the same queries returns
+# the same articles.
+_SWEEP_QUERIES_LATER = [
+    "{title} {year} director interview making of",
+    "{title} {year} soundtrack score licensing music",
+    "{title} {year} filming locations real places",
+    "{title} {year} costume production design details",
+]
+
 _SWEEP_PROMPT = """Run a Google search for: {query}
 
 Report the most notable, well-documented facts about the film {title} ({year}) \
@@ -80,8 +89,15 @@ tied to any on-screen element), 2-3 runnable search_queries (include the film ti
 in at least one), and scene_hint — what would be on screen when this fact is most \
 relevant, or "any" for general facts.
 
-NOTES:
+{avoid_block}NOTES:
 {notes}"""
+
+_AVOID_BLOCK = """ALREADY-FOUND FACTS from earlier rounds. Do NOT repropose these or \
+close variants — every fact this round must be a DIFFERENT story:
+
+{found}
+
+"""
 
 _ANCHOR_SCHEMA = {
     "type": "object",
@@ -120,12 +136,15 @@ def title_sweep(
     film_info: dict,
     cfg: config.PipelineConfig,
     moments=None,
+    avoid: list | None = None,
+    round_n: int = 1,
 ) -> list[Anchor]:
     title = film_info.get("title", "")
     year = film_info.get("year", "")
 
+    queries = _SWEEP_QUERIES if round_n <= 1 else _SWEEP_QUERIES_LATER
     notes = []
-    for q in _SWEEP_QUERIES:
+    for q in queries:
         grounded = client.grounded(
             cfg.research_model,
             _SWEEP_PROMPT.format(query=q.format(title=title, year=year),
@@ -138,6 +157,9 @@ def title_sweep(
         cfg.fast_model,
         _STRUCTURE_PROMPT.format(title=title, year=year,
                                  max_facts=cfg.sweep_facts_max,
+                                 avoid_block=(_AVOID_BLOCK.format(
+                                     found="\n".join(f"- {a}" for a in avoid))
+                                     if avoid else ""),
                                  notes="\n\n---\n\n".join(notes)),
         _FACTS_SCHEMA,
         temperature=0.2,
@@ -200,6 +222,6 @@ def title_sweep(
                 origin="title_sweep",
             ))
     n_scene = sum(1 for a in anchors if a.scope == "scene")
-    log.info("  title sweep: %d facts (%d scene-anchored, %d general)",
-             len(anchors), n_scene, len(anchors) - n_scene)
+    log.info("  title sweep round %d: %d facts (%d scene-anchored, %d general)",
+             round_n, len(anchors), n_scene, len(anchors) - n_scene)
     return anchors

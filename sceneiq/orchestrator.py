@@ -355,9 +355,68 @@ def run(
         for f in as_completed(futures):
             records.append(f.result())
 
+        # Adaptive sweep: title-level facts are the primary card class, so
+        # when yield is short of the fact target, spend more sweep rounds
+        # (fresh query angles + avoid-list) rather than more scene passes.
+        # Stops when the target is met, a round approves nothing new, or
+        # max_sweep_rounds is exhausted.
+        runtime_min_early = film_info.get("runtime_minutes") or 0
+        target_early = max(cfg.density_min, min(
+            cfg.density_max,
+            math.ceil(runtime_min_early / cfg.minutes_per_card) if runtime_min_early else cfg.density_min,
+        ))
+
+        def _current_approved() -> list:
+            # Fully deduped view (string + semantic + topic-cluster), else
+            # pre-dedup inflation stops adaptive rounds that are still
+            # needed. Mutation is durable: a dupe stays rejected.
+            em = [r for r in records if r.status == "emitted"]
+            em = _dedup(em)
+            if cfg.use_topic_dedup and len(em) > 1:
+                em = _topic_dedup(client, cfg, film_info, em)
+            return em
+
+        approved_so_far = len(_current_approved())
+        sweep_round = 1
+        while (cfg.use_title_sweep
+               and approved_so_far < target_early
+               and sweep_round < cfg.max_sweep_rounds):
+            sweep_round += 1
+            log.info("Stage 1b: adaptive sweep round %d (%d/%d approved) ...",
+                     sweep_round, approved_so_far, target_early)
+            try:
+                swept = title_sweep(client, film_info, cfg, moments=moments,
+                                    avoid=explored, round_n=sweep_round)
+            except Exception as e:
+                log.warning("  sweep round %d failed (%s); stopping", sweep_round, e)
+                break
+            new_anchors = [
+                a for a in swept
+                if not any(
+                    SequenceMatcher(None, a.anchor_element.lower(), e.lower()).ratio() > 0.8
+                    for e in explored
+                )
+            ]
+            if not new_anchors:
+                log.info("  sweep round %d: dry (no new facts)", sweep_round)
+                break
+            explored.extend(a.anchor_element for a in new_anchors)
+            anchors_proposed += len(new_anchors)
+            round_futs = [
+                pool.submit(_process_anchor, client, film_info, a, cfg, cache)
+                for a in new_anchors
+            ]
+            for f in as_completed(round_futs):
+                records.append(f.result())
+            now_approved = len(_current_approved())
+            if now_approved <= approved_so_far:
+                log.info("  sweep round %d: nothing new approved — stopping", sweep_round)
+                break
+            approved_so_far = now_approved
+
     emitted = [r for r in records if r.status == "emitted"]
     emitted = _dedup(emitted)
-    if cfg.use_topic_dedup:
+    if cfg.use_topic_dedup and len(emitted) > 1:
         emitted = _topic_dedup(client, cfg, film_info, emitted)
     # Scene cards sort by position and respect max_cards; general cards are
     # kept in full (bounded by sweep_facts_max) — they're the coverage filler.

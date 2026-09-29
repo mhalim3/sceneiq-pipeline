@@ -116,6 +116,10 @@ class PipelineConfig:
     # GENERAL card the player may show at any time after its spoiler floor.
     use_title_sweep: bool = True
     sweep_facts_max: int = 12   # title-first: most facts are title-level context
+    # Adaptive sweep: after the first round, keep sweeping (with an
+    # avoid-list and fresh query angles) until the fact target is met, a
+    # round approves nothing new, or this many rounds have run.
+    max_sweep_rounds: int = 3
     # Scene cards display from their scene start through scene end plus this
     # padding (seconds). General cards fill the remaining timeline gaps.
     scene_card_pad_s: float = 60.0
