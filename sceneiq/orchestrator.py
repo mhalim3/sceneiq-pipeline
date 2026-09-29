@@ -209,6 +209,99 @@ def _topic_dedup(client: GeminiClient, cfg: config.PipelineConfig,
     return kept
 
 
+_CONSISTENCY_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "contradictions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "indices": {"type": "array", "items": {"type": "integer"}},
+                    "keep_index": {"type": "integer"},
+                    "issue": {"type": "string"},
+                },
+                "required": ["indices", "keep_index", "issue"],
+            },
+        },
+    },
+    "required": ["contradictions"],
+}
+
+_CONSISTENCY_PROMPT = """These pause-screen fact cards for the film {film_title} will all \
+be shown to the same viewer during one film. Find cards that CONTRADICT each other — \
+mutually incompatible factual claims (different numbers for the same quantity, \
+mutually exclusive statements about the same event).
+
+NOT contradictions: cards covering different aspects of the same topic, one card \
+being more specific than another, or complementary details. A card that CORRECTS a \
+reported figure (e.g. "records show the budget was actually X") contradicts a card \
+that flatly states the reported figure as fact.
+
+CARDS:
+{card_list}
+
+For each contradiction group, choose keep_index — the card whose claim rests on the \
+stronger evidence (prefer domain authorities and official records, then strict=True, \
+then the more specific claim). Report the issue in one sentence. Return an empty \
+list when the set is consistent."""
+
+
+def _consistency_check(client: GeminiClient, cfg: config.PipelineConfig,
+                       film_info: dict, records: list[CardRecord]) -> list[CardRecord]:
+    """Reject cards whose claims contradict a better-sourced card in the set.
+
+    Two individually-sourced cards can still disagree (e.g. one repeats the
+    reported budget, another corrects it from official records) — nothing
+    upstream compares cards to each other. Best-effort: a failed call never
+    drops cards."""
+    if len(records) < 2:
+        return records
+    card_list = "\n".join(
+        f"[{i}] (strict={bool(r.validation and r.validation.checks.get('would_pass_strict'))}, "
+        f"sources: {', '.join(sorted({b.source_url.split('/')[2] for b in r.card.fact_beats}))}) "
+        f"SHORT: {r.card.short_version} | LONG: {r.card.long_description[:300]}"
+        for i, r in enumerate(records)
+    )
+    try:
+        data = client.structured(
+            cfg.fast_model,
+            _CONSISTENCY_PROMPT.format(
+                film_title=film_info.get("title", ""), card_list=card_list
+            ),
+            _CONSISTENCY_SCHEMA,
+            temperature=0.0,
+        )
+    except Exception:
+        return records
+    drop: dict[int, str] = {}
+    keep_flag: dict[int, str] = {}
+    for g in data.get("contradictions", []):
+        indices = [i for i in g.get("indices", []) if 0 <= i < len(records)]
+        keep = g.get("keep_index")
+        if len(indices) < 2 or keep not in indices:
+            continue
+        issue = g.get("issue", "contradiction")
+        keep_flag[keep] = issue
+        for i in indices:
+            if i != keep and i not in drop:
+                drop[i] = issue
+    kept = []
+    for i, r in enumerate(records):
+        if i in drop:
+            r.status = "rejected"
+            if r.validation:
+                r.validation.rejection_reasons.append(f"consistency: {drop[i]}")
+            log.info("  ✗ consistency: %s (%s)", r.card.short_version, drop[i])
+        else:
+            if i in keep_flag and r.validation:
+                r.validation.flags.append(
+                    f"consistency: kept over a contradicting card — verify ({keep_flag[i]})"
+                )
+            kept.append(r)
+    return kept
+
+
 def _schedule(emitted: list[CardRecord], duration_s: float,
               cfg: config.PipelineConfig) -> dict:
     """Assign exact display windows to every card.
@@ -418,6 +511,8 @@ def run(
     emitted = _dedup(emitted)
     if cfg.use_topic_dedup and len(emitted) > 1:
         emitted = _topic_dedup(client, cfg, film_info, emitted)
+    if cfg.use_consistency_check and len(emitted) > 1:
+        emitted = _consistency_check(client, cfg, film_info, emitted)
     # Scene cards sort by position and respect max_cards; general cards are
     # kept in full (bounded by sweep_facts_max) — they're the coverage filler.
     scene_records = sorted(

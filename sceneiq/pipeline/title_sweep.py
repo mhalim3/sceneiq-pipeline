@@ -84,6 +84,9 @@ box office/reception records, title changes and production history, myths or fal
 beliefs the film created or corrected (highest value — flag first), real-world \
 impact (laws, trends, institutions the film affected), and production-wide details \
 attested by the filmmakers.
+- Every fact must pass the "wait, really?" test: a concrete number, a first, a \
+hidden connection (this farm was also Smallville), a record, or a surprising \
+production solve. Skip facts a viewer would shrug at.
 - For each: a one-line fact_summary, the closest category ("general" when it isn't \
 tied to any on-screen element), 2-3 runnable search_queries (include the film title \
 in at least one), and scene_hint — what would be on screen when this fact is most \

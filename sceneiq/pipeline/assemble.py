@@ -68,13 +68,20 @@ the beat. Beats are the verification layer — write them first, carefully.
 numbers, and reasons exactly — if the source says Stanford refused, write Stanford, \
 never substitute a different university, person, or motive. Do not merge facts from \
 two sources into one beat.
-- longDescription: 2 to 4 sentences that merge the beats into one flowing paragraph. \
-It must contain NO claim that is not in the beats — it is a rewrite of them, not an \
-expansion. Viewer register, past tense for behind-the-scenes.
-- shortVersion: ONE punchy on-screen statement of the fact itself. Aim for 50-60 \
-characters, HARD MAXIMUM 80. Like "Cooper shucked every oyster himself in the opening \
-scene." — a concrete fact statement, not a teaser, not clickbait. G-rated. It must be \
-fully supported by the beats.
+- shortVersion: ONE punchy line. Aim for 50-60 characters, HARD MAXIMUM 80. \
+Conversational, like a friend on the couch pointing at the screen. Open with a \
+pointing hook when the fact is about something visible ("Those creepy vines? \
+They're practical effects.", "Recognize this farm? Smallville was shot here, too.", \
+"That pumpkin prosthetic took 4 hours to put on."). Prefer concrete numbers, firsts, \
+and surprising specifics. Never encyclopedic ("The film's restaurant scenes were \
+shot at The Langham, London." is too flat — "You can book a table at Adam's \
+restaurant. It's real." is the register). G-rated, no clickbait, fully supported \
+by the beats.
+- longDescription: the shortVersion REPEATED VERBATIM, then exactly ONE extra payoff \
+sentence. Target ~120 characters total, maximum 160. The extra sentence delivers the \
+best remaining detail from the beats ("Those creepy vines? They're practical \
+effects. The wrapping around people was achieved by playing footage in reverse."). \
+No claim beyond the beats.
 - followUps: 2 to 3 natural viewer next-questions, <= 10 words each (internal, for \
 value scoring).
 - Use CHARACTER names for what's on screen, REAL names for BTS figures (directors, \

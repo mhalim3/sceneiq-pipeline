@@ -257,6 +257,10 @@ def validate_card(
         result.flags.append(
             f"shortVersion {len(card.short_version)} chars (target 50-60, cap 80)"
         )
+    if len(card.long_description) > 160:
+        result.flags.append(
+            f"longDescription {len(card.long_description)} chars (target ~120, max 160)"
+        )
 
     # 2. Source binding: per-beat verbatim anchor must fuzzy-match its cited
     # source's fetched body. Also attach video timestamps while we're here.

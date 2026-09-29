@@ -128,6 +128,9 @@ Rules:
 - Be SPECIFIC. "Sophie de Rakoff's pink-everything decision" — not "costume design". \
 Prefer specific named-person stories, quantified production facts, or surprising \
 creative decisions.
+- Every anchor must have "wait, really?" potential: a number, a first, a hidden \
+connection, a crafty on-set solve, a thing that is secretly real (or secretly fake). \
+If the likely fact reads like an encyclopedia entry, skip the anchor.
 - Spread anchors across the WHOLE runtime and across diverse categories.
 - Categories (choose closest): actor, music, location, set_design, filming, \
 historical, costume/prop.

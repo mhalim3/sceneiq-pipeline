@@ -128,6 +128,9 @@ class PipelineConfig:
     # dedup can't catch "actors cooked for real" x4). Keeps the strongest
     # card per story.
     use_topic_dedup: bool = True
+    # Cross-card consistency: one pass over the final approved set; a card
+    # contradicting a better-sourced card is rejected, the kept card flagged.
+    use_consistency_check: bool = True
     # Viewer-POV curiosity judge. ADVISORY by default: scores and verdicts
     # are recorded in the review file to triage human review, but never
     # reject a card — viewer value is scored manually by reviewers per the
