@@ -116,6 +116,11 @@ class PipelineConfig:
     # GENERAL card the player may show at any time after its spoiler floor.
     use_title_sweep: bool = True
     sweep_facts_max: int = 16   # wide first round avoids paying for adaptive rounds
+    # Title-level-only mode (current product direction): every card must be
+    # showable at any point in the film. Scene-anchor discovery is skipped
+    # entirely; the sweep is the sole card source and all cards are general.
+    # Scene machinery stays in the codebase for Phase 3+ (set False).
+    title_level_only: bool = True
     # Adaptive sweep: after the first round, keep sweeping (with an
     # avoid-list and fresh query angles) until the fact target is met, a
     # round approves nothing new, or this many rounds have run.

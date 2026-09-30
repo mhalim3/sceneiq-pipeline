@@ -68,20 +68,21 @@ the beat. Beats are the verification layer — write them first, carefully.
 numbers, and reasons exactly — if the source says Stanford refused, write Stanford, \
 never substitute a different university, person, or motive. Do not merge facts from \
 two sources into one beat.
-- shortVersion: ONE punchy line. Aim for 50-60 characters, HARD MAXIMUM 80. \
-Conversational, like a friend on the couch pointing at the screen. Open with a \
-pointing hook when the fact is about something visible ("Those creepy vines? \
-They're practical effects.", "Recognize this farm? Smallville was shot here, too.", \
-"That pumpkin prosthetic took 4 hours to put on."). Prefer concrete numbers, firsts, \
-and surprising specifics. Never encyclopedic ("The film's restaurant scenes were \
-shot at The Langham, London." is too flat — "You can book a table at Adam's \
-restaurant. It's real." is the register). G-rated, no clickbait, fully supported \
+- shortVersion: ONE concise, direct, attention-grabbing statement that clearly \
+explains the specific interesting point IMMEDIATELY. Aim for 50-60 characters, HARD \
+MAXIMUM 80. Lively, natural, and fun — never dry, robotic, or overly formal. \
+Playful wording is welcome but must never hide the actual fact. BANNED: empty \
+phrases like "was a wild one", "had an interesting experience", "was a big deal" — \
+unless the statement explains exactly why. GOOD: "Kevin Bacon finished his entire \
+role in just six days." BAD: "Kevin Bacon's role was a wild one." Prefer concrete \
+numbers, firsts, and surprising specifics. G-rated, no clickbait, fully supported \
 by the beats.
-- longDescription: the shortVersion REPEATED VERBATIM, then exactly ONE extra payoff \
-sentence. Target ~120 characters total, maximum 160. The extra sentence delivers the \
-best remaining detail from the beats ("Those creepy vines? They're practical \
-effects. The wrapping around people was achieved by playing footage in reverse."). \
-No claim beyond the beats.
+- longDescription: one or two sentences that ADD CONTEXT and show why the fact is \
+interesting, surprising, or unusual — not a verbatim echo of the short. Maximum 280 \
+characters. Example: short "Kevin Bacon finished his entire role in just six days." \
+long "Bacon's time on set was practically a blink-and-you'll-miss-it appearance — \
+he completed all of his work in only six days, an unusually short schedule for a \
+recognizable supporting actor." No claim beyond the beats.
 - followUps: 2 to 3 natural viewer next-questions, <= 10 words each (internal, for \
 value scoring).
 - Use CHARACTER names for what's on screen, REAL names for BTS figures (directors, \
@@ -97,8 +98,11 @@ this location, this song. Generic facts about filmmaking, prop design, or indust
 practice that do not concern this film are NOT Scene Facts; if that's all the \
 sources offer, ABSTAIN.
 - No plot information from later in the film than this scene.
-- No casting drama (almost-cast stories, demanded castings), feuds, or negative \
-claims about talent/partners. Director/cast filmography and franchise context are fine.
+- NO financial information: budget, box office, profitability, opening weekend, or \
+financial comparisons — abstain if that is all the sources offer.
+- Casting and development history ARE welcome (actors considered, roles that \
+changed, actors who dropped out, how the project developed). No on-set feuds, \
+gossip, or negative claims about talent/partners.
 - factCategory: one of actor, music, location, set_design, filming, historical, costume/prop.
 {abstain_rule}"""
 

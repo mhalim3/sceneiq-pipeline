@@ -76,25 +76,27 @@ _FACTS_SCHEMA = {
 _STRUCTURE_PROMPT = """From these research notes about {title} ({year}), extract up to \
 {max_facts} distinct, specific candidate facts worth a pause-screen card.
 
-Rules:
-- Facts must connect to THIS film. Director filmography ("the director also made \
-Deadpool 2"), franchise context (how characters/actors connect across the series, \
-spin-off firsts), and notable cast facts (returns, introductions, real-life \
-connections) ARE eligible — casual viewers love them. NEVER propose: plot summary \
-of THIS film, casting drama (who turned down or almost got a role, who demanded a \
-casting), on-set feuds, or generic industry practice.
-- MOST facts should be title-level context (Phase 3: title-level is the primary \
-card class; scene-tied facts enhance where available).
-- RANK BY INTERESTINGNESS. Lead with the facts a viewer would retell: on-set \
-stories, secretly-real/secretly-fake reveals, actor transformations and real \
-skills, hidden connections to other films/places/franchise entries, director and \
-cast crossovers, surprise cameos and post-credits details, crafty production \
-solves, myths the film created or busted. Business facts (box office, budgets, \
-marketing spend, release scheduling) are LOW value — propose at most ONE, and only \
-if genuinely surprising.
-- Every fact must pass the "wait, really?" test: a concrete number, a first, a \
-hidden connection (this farm was also Smallville), a record, or a surprising \
-production solve. Skip facts a viewer would shrug at.
+Rules (the title-level fact ruleset):
+- Facts must be directly connected to THIS film and understandable on their own, \
+at ANY point during the movie (never dependent on scene order).
+- ELIGIBLE classes — aim for a balanced mix, never forcing a category that has no \
+interesting fact: production (locations, schedule, delays, reshoots, title changes, \
+set construction, creative decisions); actors (preparation, training, reactions, \
+working experiences, previous roles, cast relationships); main characters \
+(inspirations, casting decisions, actor connections, unusual traits); casting and \
+development history (actors considered, roles that changed, actors who dropped \
+out, how the project developed); director/writer/producer comments; title-related \
+locations, objects, organizations, creatures, or concepts; the central setting \
+(how it was built, recreated, filmed); technical work (CGI, motion capture, \
+stunts, practical effects, camera tech, makeup, costumes, production design); \
+cultural impact.
+- BANNED: any financial information (budget, box office, profitability, opening \
+weekend, financial comparisons); plot summaries of this film; bare ratings or \
+review scores (reception only when the CONTRAST is interesting); awards unless \
+notable or surprising; basic encyclopedic facts (release year, director name, \
+studio, cast list alone); minor scene trivia; on-set feuds and gossip.
+- Every fact must be interesting, surprising, unusual, memorable, or informative — \
+something a viewer would retell. Skip facts a viewer would shrug at.
 - For each: a one-line fact_summary, the closest category ("general" when it isn't \
 tied to any on-screen element), 2-3 runnable search_queries (include the film title \
 in at least one), and scene_hint — what would be on screen when this fact is most \

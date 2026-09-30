@@ -417,13 +417,20 @@ def run(
     cache = FetchCache(cfg.http_timeout_s)
     with ThreadPoolExecutor(max_workers=cfg.max_workers) as pool:
         futures = []
-        scene_passes = max(1, cfg.passes) if moments else 0
-        if not moments:
-            # No Moments coverage: title-level facts only, spread across the
-            # runtime. No reconstructed scene anchors — estimated timecodes
-            # aren't worth shipping.
-            log.info("Stage 1: no Moments coverage — title-level-only mode")
-            film_info = identify_film(client, title_prompt, cfg)
+        title_only = cfg.title_level_only or not moments
+        scene_passes = 0 if title_only else max(1, cfg.passes)
+        if title_only:
+            # Title-level-only: every card must be showable at any point in
+            # the film. The sweep is the sole card source.
+            log.info("Stage 1: title-level-only mode")
+            film_info = identify_film(client, moments.title if moments else title_prompt, cfg)
+            if moments:
+                # Moments still supplies authoritative runtime and rating.
+                film_info.update({
+                    "runtime_minutes": moments.runtime_minutes,
+                    "duration_sec": moments.duration_sec,
+                    "content_rating": getattr(moments, "content_rating", ""),
+                })
             log.info("  film: %s (%s), %s min",
                      film_info["title"], film_info["year"], film_info["runtime_minutes"])
         for p in range(scene_passes):
@@ -453,7 +460,8 @@ def run(
         if cfg.use_title_sweep:
             log.info("Stage 1b: title-level fact sweep ...")
             try:
-                swept = title_sweep(client, film_info, cfg, moments=moments)
+                swept = title_sweep(client, film_info, cfg,
+                                    moments=None if title_only else moments)
             except Exception as e:  # sweep is additive — never kill the run
                 log.warning("  title sweep failed (%s); continuing without it", e)
                 swept = []
@@ -503,7 +511,8 @@ def run(
             log.info("Stage 1b: adaptive sweep round %d (%d/%d approved) ...",
                      sweep_round, approved_so_far, target_early)
             try:
-                swept = title_sweep(client, film_info, cfg, moments=moments,
+                swept = title_sweep(client, film_info, cfg,
+                                    moments=None if title_only else moments,
                                     avoid=explored, round_n=sweep_round)
             except Exception as e:
                 log.warning("  sweep round %d failed (%s); stopping", sweep_round, e)

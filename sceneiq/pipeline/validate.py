@@ -144,11 +144,14 @@ unsupported, contradicted, or misleading claim.
 THIS scene and rewards pausing there; 1 = connection indirect; 0 = not tied to the scene.
 - primitive_conformance: 2 = cleanly fits the Scene Fact definition (insider detail \
 about the film's world explaining something on screen); 1 = loose fit; 0 = does not \
-satisfy the definition. Director filmography, franchise connections, and notable \
-cast facts ARE conforming. Automatic 0 for: plot summary of THIS film (what happens \
-in this story is not a fact card), deleted scenes or alternate versions with no \
-visible on-screen artifact, casting drama (who turned down or almost got a role, \
-roles added or cut at an executive's demand), on-set feuds, industry gossip.
+satisfy the definition. Director filmography, franchise connections, notable cast \
+facts, and casting/development history (actors considered, roles that changed, \
+actors who dropped out, how the project developed) ARE conforming. Automatic 0 \
+for: ANY financial information (budget, box office, profitability, opening \
+weekend, financial comparisons); plot summary of THIS film; bare ratings or review \
+scores without an interesting reception contrast; basic encyclopedic facts \
+(release year, director name, studio, plain cast list); on-set feuds; industry \
+gossip.
 - viewer_value: 2 = specific, surprising, likely to prompt exploration; 1 = mildly \
 interesting; 0 = generic or obvious.
 - clarity: 2 = concise, tells the viewer what to notice; 1 = verbose or imprecise; \
@@ -177,8 +180,8 @@ SceneIQ is an enrichment surface, never a venue for controversy.
 must find in the sources.
 
 9. summary_entailed — true only if BOTH shortVersion and longDescription contain no \
-claim, name, number, or implication beyond what the entailed beats state. They are \
-rewrites of the beats, never expansions.
+claim, name, number, or implication beyond what the entailed beats state. The long \
+adds context and why-it's-interesting framing, but never new facts.
 
 10. film_specific — true if the card's claims connect concretely to THIS film \
 ({film_title}): its production, cast, locations, music, making-of, its director's \
@@ -259,9 +262,9 @@ def validate_card(
         result.flags.append(
             f"shortVersion {len(card.short_version)} chars (target 50-60, cap 80)"
         )
-    if len(card.long_description) > 160:
+    if len(card.long_description) > 280:
         result.flags.append(
-            f"longDescription {len(card.long_description)} chars (target ~120, max 160)"
+            f"longDescription {len(card.long_description)} chars (max ~280)"
         )
 
     # 2. Source binding: per-beat verbatim anchor must fuzzy-match its cited

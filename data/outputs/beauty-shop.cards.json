@@ -3,17 +3,17 @@
     "title": "Beauty Shop",
     "year": 2005,
     "runtime_minutes": 105,
-    "duration_sec": 6322.107458333333,
-    "content_rating": "PG_13",
     "input_prompt": "Beauty Shop",
-    "anchor_source": "tubi_moments"
+    "anchor_source": "title_only",
+    "duration_sec": 6322.107458333333,
+    "content_rating": "PG_13"
   },
   "sceneFacts": [
     {
-      "scope": "scene",
+      "scope": "general",
       "factCategory": "actor",
-      "shortVersion": "Kevin Bacon's role as Jorge was a wild one.",
-      "longDescription": "Kevin Bacon's role as Jorge was a wild one. He only worked on the film for six days.",
+      "shortVersion": "Kevin Bacon was almost unrecognizable as Jorge.",
+      "longDescription": "Kevin Bacon transformed into the flamboyant salon owner Jorge Christophe, complete with a terrible wig and a fake European accent, making him nearly unrecognizable to audiences.",
       "sources": [
         {
           "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
@@ -21,67 +21,41 @@
           "timestamp": null
         },
         {
-          "url": "https://nomorelatefeespodcast.com/episode/beauty-shop",
+          "url": "https://www.lololovesfilms.com/2016/04/movie-review-beauty-shop-2005.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
           "modality": "text",
           "timestamp": null
         }
       ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 31] 00:04:56–00:05:17\nsummary: The clip shows a casual, friendly interaction in a beauty salon where characters discuss Botox and compliment each other, creating a relaxed and sociable atmosphere.\ncast on screen: Queen Latifah, Mena Suvari, Kevin Bacon",
-        "anchorElement": "Kevin Bacon",
-        "approxTimecode": "00:04:56",
-        "runtimeFraction": 0.047,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
+      "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 296.2,
-          "endSeconds": 377.9,
-          "startTimecode": "00:04:56",
-          "endTimecode": "00:06:17"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Alicia Silverstone perfected a Blueridge, Georgia accent for Lynn.",
-      "longDescription": "Alicia Silverstone perfected a Blueridge, Georgia accent for Lynn. She worked with a dialect coach to get the specific sound for her character.",
-      "sources": [
+          "startSeconds": 0.0,
+          "endSeconds": 632.2,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:10:32"
+        },
         {
-          "url": "https://www.cbsnews.com/news/beauty-for-alicia-silverstone/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 62] 00:09:55–00:10:19\nsummary: The video shows a woman discussing plans for a large dinner party with caterers and play dates for kids, followed by scenes in a busy hair salon where a woman reacts with disgust to a hair treatment, reflecting a mix of social planning and personal conflict.\ncast on screen: Queen Latifah, Andie Macdowell, Alicia Silverstone",
-        "anchorElement": "Alicia Silverstone",
-        "approxTimecode": "00:09:55",
-        "runtimeFraction": 0.094,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 595.1,
-          "endSeconds": 679.3,
-          "startTimecode": "00:09:55",
-          "endTimecode": "00:11:19"
+          "startSeconds": 6322.1,
+          "endSeconds": 6322.1,
+          "startTimecode": "01:45:22",
+          "endTimecode": "01:45:22"
         }
       ],
       "wouldPassStrict": false
     },
     {
-      "scope": "scene",
+      "scope": "general",
       "factCategory": "actor",
-      "shortVersion": "Alfre Woodard's character recites Maya Angelou's \"Phenomenal Women.\"",
-      "longDescription": "Alfre Woodard's character recites Maya Angelou's \"Phenomenal Women.\" The other women in the shop join her when she quotes \"Still I Rise.\"",
+      "shortVersion": "Alfre Woodard showed her \"uninhibited wit\" in this film.",
+      "longDescription": "Known for her dramatic roles, Woodard's performance as Ms. Josephine allowed her to \"let loose\" and display a comedic side, a notable shift from her usual work.",
       "sources": [
         {
-          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "url": "https://www.rottentomatoes.com/celebrity/alfre_woodard",
           "modality": "text",
           "timestamp": null
         },
@@ -91,29 +65,96 @@
           "timestamp": null
         }
       ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 217] 00:34:59–00:35:19\nsummary: The video shows women in a hair salon engaging in conversation, sharing personal stories with a humorous tone, alongside close-up shots of a woman singing or speaking into a microphone, creating a lively and social atmosphere.\ncast on screen: Alicia Silverstone, Queen Latifah, Alfre Woodard",
-        "anchorElement": "Alfre Woodard",
-        "approxTimecode": "00:34:59",
-        "runtimeFraction": 0.332,
-        "runtimeThird": 1,
-        "runtimeQuartile": 2
-      },
+      "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 2099.2,
-          "endSeconds": 2179.2,
-          "startTimecode": "00:34:59",
-          "endTimecode": "00:36:19"
+          "startSeconds": 632.2,
+          "endSeconds": 1264.4,
+          "startTimecode": "00:10:32",
+          "endTimecode": "00:21:04"
         }
       ],
       "wouldPassStrict": false
     },
     {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Vanessa's actress, Paige Hurd, learned piano just for this role.",
-      "longDescription": "Vanessa's actress, Paige Hurd, learned piano just for this role. She had never played a lick of piano before filming.",
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Queen Latifah produced Beauty Shop to fully develop Gina's character.",
+      "longDescription": "As a producer, Queen Latifah aimed to flesh out Gina, who was only introduced in \"Barbershop 2,\" by portraying her as a nuanced, relatable single mother and showcasing diverse Black experiences.",
+      "sources": [
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1264.4,
+          "endSeconds": 1896.6,
+          "startTimecode": "00:21:04",
+          "endTimecode": "00:31:36"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "The cast went to beauty school to master their roles.",
+      "longDescription": "To ensure authenticity, the entire cast attended a beauty shop school, learning the real-life skills needed for their on-screen transformations.",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/news/beauty-for-alicia-silverstone/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1896.6,
+          "endSeconds": 2528.8,
+          "startTimecode": "00:31:36",
+          "endTimecode": "00:42:08"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Most of Beauty Shop was filmed in a Van Nuys studio.",
+      "longDescription": "While the film is set in Atlanta, only about a week of shooting took place there, with the majority recreated on a studio lot in Van Nuys, California.",
+      "sources": [
+        {
+          "url": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.darkhorizons.com/queen-latifah-for-beauty-shop/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2528.8,
+          "endSeconds": 3161.1,
+          "startTimecode": "00:42:08",
+          "endTimecode": "00:52:41"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "music",
+      "shortVersion": "Joe encourages Gina's piano prodigy daughter.",
+      "longDescription": "Djimon Hounsou's character, Joe, is not only an electrician but also a piano player who inspires Gina's daughter, Vanessa, a young piano prodigy attending a prestigious music academy.",
       "sources": [
         {
           "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
@@ -121,35 +162,10 @@
           "timestamp": null
         },
         {
-          "url": "http://www.jowharahfilms.com/aloha.html",
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
           "modality": "text",
           "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 419] 01:08:59–01:09:18\nsummary: The clip shows a warm, intimate scene where a man and a young girl are at a piano, receiving encouragement and musical guidance from a woman, creating a mood of learning and emotional connection in a cozy indoor environment.\ncast on screen: Queen Latifah",
-        "anchorElement": "young girl are at a piano",
-        "approxTimecode": "01:08:59",
-        "runtimeFraction": 0.655,
-        "runtimeThird": 2,
-        "runtimeQuartile": 3
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 4139.4,
-          "endSeconds": 4218.4,
-          "startTimecode": "01:08:59",
-          "endTimecode": "01:10:18"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "This film challenged stereotypes with its male stylist.",
-      "longDescription": "This film challenged stereotypes with its male stylist. He was a fashion-conscious Black man who was not gay, and his decision to date a white woman brought questions but not crisis.",
-      "sources": [
+        },
         {
           "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
           "modality": "text",
@@ -159,53 +175,153 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 0.0,
-          "endSeconds": 296.2,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:04:56"
-        },
-        {
-          "startSeconds": 377.9,
-          "endSeconds": 595.1,
-          "startTimecode": "00:06:17",
-          "endTimecode": "00:09:55"
-        },
-        {
-          "startSeconds": 679.3,
-          "endSeconds": 2099.2,
-          "startTimecode": "00:11:19",
-          "endTimecode": "00:34:59"
-        },
-        {
-          "startSeconds": 2179.2,
-          "endSeconds": 4139.4,
-          "startTimecode": "00:36:19",
-          "endTimecode": "01:08:59"
-        },
-        {
-          "startSeconds": 4218.4,
-          "endSeconds": 6322.1,
-          "startTimecode": "01:10:18",
-          "endTimecode": "01:45:22"
+          "startSeconds": 3161.1,
+          "endSeconds": 3793.3,
+          "startTimecode": "00:52:41",
+          "endTimecode": "01:03:13"
         }
       ],
       "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Beauty shops are \"cultural centerpieces\"",
+      "longDescription": "Queen Latifah, who also produced the film, highlighted how these salons serve as vital community hubs and a \"cultural home base\" for Black women.",
+      "sources": [
+        {
+          "url": "http://www.blackfilm.com/20040514/features/setvisitbeautyshop.shtml",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3793.3,
+          "endSeconds": 4425.5,
+          "startTimecode": "01:03:13",
+          "endTimecode": "01:13:45"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Djimon Hounsou's Joe subverts stereotypes as a fashion-conscious handyman.",
+      "longDescription": "Joe is a fashion-conscious handyman and aspiring piano player who becomes Gina's supportive love interest, challenging typical portrayals of Black men in film.",
+      "sources": [
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4425.5,
+          "endSeconds": 5057.7,
+          "startTimecode": "01:13:45",
+          "endTimecode": "01:24:17"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Kevin Bacon filmed his role as Jorge in just six days.",
+      "longDescription": "Kevin Bacon's time on set was brief but memorable; he completed all his scenes as the flamboyant salon owner Jorge in less than a week, enjoying the freedom to \"go wild\" with the character.",
+      "sources": [
+        {
+          "url": "https://nomorelatefeespodcast.com/episode/beauty-shop",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.pluggedin.com/movie-reviews/beautyshop/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5057.7,
+          "endSeconds": 5689.9,
+          "startTimecode": "01:24:17",
+          "endTimecode": "01:34:49"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Beauty shops are a safe space, like a therapist's couch.",
+      "longDescription": "Queen Latifah noted that the intimate setting of a beauty shop disarms women, allowing them to open up and share personal issues, making their hairdresser a kind of therapist.",
+      "sources": [
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5689.9,
+          "endSeconds": 6322.1,
+          "startTimecode": "01:34:49",
+          "endTimecode": "01:45:22"
+        }
+      ],
+      "wouldPassStrict": true
     }
   ],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 5,
-    "scene_cards": 4,
-    "general_cards": 1,
+    "approved_cards": 10,
+    "scene_cards": 0,
+    "general_cards": 10,
     "density_target": 12,
     "cards_per_runtime_quartile": {
-      "1": 2,
-      "2": 1,
-      "3": 1,
+      "1": 0,
+      "2": 0,
+      "3": 0,
       "4": 0
     },
     "distinct_categories": [
-      "actor"
+      "actor",
+      "filming",
+      "music"
     ],
     "timeCoverage": {
       "fraction": 1.0,
@@ -213,22 +329,22 @@
     },
     "rules": {
       "fact_target_12_15": false,
-      "min_six_cards": false,
-      "card_in_each_quartile": false,
-      "max_40pct_single_quartile": false,
-      "min_two_categories": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
       "full_time_coverage": true
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 26,
-    "cards_emitted": 5,
-    "would_pass_strict": 2,
-    "cards_rejected": 21,
+    "anchors_proposed": 41,
+    "cards_emitted": 10,
+    "would_pass_strict": 6,
+    "cards_rejected": 31,
     "errors": 0,
-    "elapsed_seconds": 395.5,
+    "elapsed_seconds": 461.0,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"
