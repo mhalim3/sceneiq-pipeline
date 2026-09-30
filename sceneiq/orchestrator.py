@@ -21,7 +21,8 @@ from .fetch import FetchCache
 from .gemini import GeminiClient, SchemaViolation
 from .models import Anchor, CardRecord
 from .moments import TitleMoments, load_moments
-from .pipeline.anchors import discover_anchors, discover_anchors_from_moments
+from .pipeline.anchors import (discover_anchors, discover_anchors_from_moments,
+                               identify_film)
 from .pipeline.assemble import assemble_card
 from .pipeline.curiosity import judge_curiosity
 from .pipeline.leads import wikipedia_leads
@@ -325,8 +326,26 @@ def _schedule(emitted: list[CardRecord], duration_s: float,
         end = min(end + cfg.scene_card_pad_s, duration_s)
         c.display_windows = [[round(start, 1), round(end, 1)]]
 
-    # Merge covered intervals, find gaps.
-    ivs = sorted(w for r in scene_records for w in r.card.display_windows)
+    # Title-level-only mode: no scene cards — partition the runtime into
+    # equal slots, one per general card, spread across the duration.
+    # Floor-sorted so spoiler-gated cards land later in the film.
+    if not scene_records and general_records:
+        gens = sorted(general_records,
+                      key=lambda r: r.card.spoiler_boundary_fraction)
+        n = len(gens)
+        seg = duration_s / n
+        for i, r in enumerate(gens):
+            start = i * seg
+            end = (i + 1) * seg if i < n - 1 else duration_s
+            floor = r.card.spoiler_boundary_fraction * duration_s
+            start = max(start, floor)
+            if start >= end:
+                start, end = max(floor, duration_s - seg), duration_s
+            r.card.display_windows = [[round(start, 1), round(end, 1)]]
+
+    # Merge covered intervals (scene windows + any pre-assigned general
+    # slots), find gaps.
+    ivs = sorted(w for r in emitted for w in r.card.display_windows)
     merged: list[list[float]] = []
     for a, b in ivs:
         if merged and a <= merged[-1][1]:
@@ -342,10 +361,10 @@ def _schedule(emitted: list[CardRecord], duration_s: float,
         gaps.append([cursor, duration_s])
 
     uncovered = []
-    for r in general_records:
-        r.card.display_windows = []
+    unassigned = [r for r in general_records if not r.card.display_windows]
     for gap in gaps:
-        eligible = [r for r in general_records
+        pool = unassigned or general_records
+        eligible = [r for r in pool
                     if r.card.spoiler_boundary_fraction * duration_s <= gap[0] + 1.0]
         if eligible:
             # Least-loaded general card takes the gap (spread the filler).
@@ -398,13 +417,19 @@ def run(
     cache = FetchCache(cfg.http_timeout_s)
     with ThreadPoolExecutor(max_workers=cfg.max_workers) as pool:
         futures = []
-        for p in range(max(1, cfg.passes)):
+        scene_passes = max(1, cfg.passes) if moments else 0
+        if not moments:
+            # No Moments coverage: title-level facts only, spread across the
+            # runtime. No reconstructed scene anchors — estimated timecodes
+            # aren't worth shipping.
+            log.info("Stage 1: no Moments coverage — title-level-only mode")
+            film_info = identify_film(client, title_prompt, cfg)
+            log.info("  film: %s (%s), %s min",
+                     film_info["title"], film_info["year"], film_info["runtime_minutes"])
+        for p in range(scene_passes):
             pass_label = f"pass {p + 1}/{cfg.passes}" if cfg.passes > 1 else ""
             log.info("Stage 1/4: discovering scene anchors for %r %s...", title_prompt, pass_label)
-            if moments:
-                fi, anchors = discover_anchors_from_moments(client, moments, cfg, explored=explored)
-            else:
-                fi, anchors = discover_anchors(client, title_prompt, cfg, leads=leads, explored=explored)
+            fi, anchors = discover_anchors_from_moments(client, moments, cfg, explored=explored)
             film_info = film_info or fi
             # Drop near-duplicates of anchors already explored in earlier passes.
             anchors = [
@@ -422,26 +447,26 @@ def run(
                 pool.submit(_process_anchor, client, film_info, a, cfg, cache)
                 for a in anchors
             ]
-            # Title-level fact sweep (once, after film identity is known):
-            # search-first facts, anchored to a Moments scene when supported,
-            # otherwise GENERAL cards the player may show at any time.
-            if p == 0 and cfg.use_title_sweep:
-                log.info("Stage 1b: title-level fact sweep ...")
-                try:
-                    swept = title_sweep(client, film_info, cfg, moments=moments)
-                except Exception as e:  # sweep is additive — never kill the run
-                    log.warning("  title sweep failed (%s); continuing without it", e)
-                    swept = []
-                sweep_anchors = [
-                    a for a in swept
-                    if not any(
-                        SequenceMatcher(None, a.anchor_element.lower(), e.lower()).ratio() > 0.8
-                        for e in explored
-                    )
-                ]
-                explored.extend(a.anchor_element for a in sweep_anchors)
-                anchors_proposed += len(sweep_anchors)
-                futures += [
+        # Title-level fact sweep (both modes; the PRIMARY card source in
+        # title-only mode): search-first facts, anchored to a Moments scene
+        # when supported, otherwise GENERAL cards shown at any time.
+        if cfg.use_title_sweep:
+            log.info("Stage 1b: title-level fact sweep ...")
+            try:
+                swept = title_sweep(client, film_info, cfg, moments=moments)
+            except Exception as e:  # sweep is additive — never kill the run
+                log.warning("  title sweep failed (%s); continuing without it", e)
+                swept = []
+            sweep_anchors = [
+                a for a in swept
+                if not any(
+                    SequenceMatcher(None, a.anchor_element.lower(), e.lower()).ratio() > 0.8
+                    for e in explored
+                )
+            ]
+            explored.extend(a.anchor_element for a in sweep_anchors)
+            anchors_proposed += len(sweep_anchors)
+            futures += [
                     pool.submit(_process_anchor, client, film_info, a, cfg, cache)
                     for a in sweep_anchors
                 ]
@@ -540,10 +565,14 @@ def run(
     rules = {
         "fact_target_12_15": len(emitted) >= density_target,
         "min_six_cards": len(emitted) >= cfg.min_cards_to_enable,
-        "card_in_each_quartile": runtime_min <= cfg.quartile_min_runtime
+        # Quartile distribution applies to scene cards only; in title-level-
+        # only mode (no Moments coverage) the rules are N/A and pass — the
+        # full-time-coverage rule guarantees the timeline is served.
+        "card_in_each_quartile": not scene_records
+        or runtime_min <= cfg.quartile_min_runtime
         or all(v > 0 for v in quartiles.values()),
-        "max_40pct_single_quartile": bool(scene_records)
-        and max(quartiles.values()) / len(scene_records) <= cfg.max_quartile_share,
+        "max_40pct_single_quartile": not scene_records
+        or max(quartiles.values()) / len(scene_records) <= cfg.max_quartile_share,
         "min_two_categories": len(categories) >= cfg.min_categories,
         "full_time_coverage": coverage["fraction"] >= 0.999,
     }

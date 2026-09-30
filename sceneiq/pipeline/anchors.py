@@ -178,6 +178,35 @@ _MOMENTS_ANCHOR_SCHEMA = {
 }
 
 
+_IDENTIFY_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "film_title": {"type": "string"},
+        "film_year": {"type": "integer"},
+        "runtime_minutes": {"type": "integer"},
+    },
+    "required": ["film_title", "film_year", "runtime_minutes"],
+}
+
+
+def identify_film(client: GeminiClient, title_prompt: str, cfg: config.PipelineConfig) -> dict:
+    """Title/year/runtime only — used in title-level-only mode (no Moments)."""
+    data = client.structured(
+        cfg.fast_model,
+        f'Identify this film precisely: "{title_prompt}". '
+        "Return its exact title, release year, and runtime in minutes.",
+        _IDENTIFY_SCHEMA,
+        temperature=0.0,
+    )
+    return {
+        "title": data.get("film_title", title_prompt),
+        "year": data.get("film_year"),
+        "runtime_minutes": data.get("runtime_minutes"),
+        "input_prompt": title_prompt,
+        "anchor_source": "title_only",
+    }
+
+
 def discover_anchors_from_moments(
     client: GeminiClient,
     moments,
