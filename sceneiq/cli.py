@@ -118,16 +118,21 @@ def main(argv: list[str] | None = None) -> int:
                      if str(m.get("content_name", "")).lower() == bare_title.lower()]
             candidates = exact or movies or matches
             if not candidates:
-                print(f"error: no content_id found for {bare_title!r}", file=sys.stderr)
-                return 2
-            if len(candidates) > 1:
+                # Not every title has Moments coverage — that's fine. Run in
+                # reconstruction mode (estimated timecodes, clearly labeled).
+                print(f"note: {bare_title!r} has no Moments coverage — "
+                      "continuing with reconstructed scene structure "
+                      "(timecodes are estimates)", file=sys.stderr)
+                candidates = None
+            if candidates and len(candidates) > 1:
                 print(f"multiple matches for {bare_title!r} — rerun with --content-id:", file=sys.stderr)
                 for m in candidates:
                     print(f"  {m.get('content_id')}: {m.get('content_name')} ({m.get('content_type')})",
                           file=sys.stderr)
                 return 2
-            content_id = str(candidates[0]["content_id"])
-            print(f"resolved {bare_title!r} -> content_id {content_id}", file=sys.stderr)
+            if candidates:
+                content_id = str(candidates[0]["content_id"])
+                print(f"resolved {bare_title!r} -> content_id {content_id}", file=sys.stderr)
         if content_id:
             from .databricks_moments import fetch_moments
             moments_path = str(fetch_moments(content_id))
