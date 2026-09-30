@@ -147,6 +147,26 @@ def main(argv: list[str] | None = None) -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     cards_path = out_dir / f"{slug}.cards.json"
     review_path = out_dir / f"{slug}.review.json"
+
+    # Overwrite guard: a run that produced zero cards (e.g. the Google Search
+    # grounding daily quota was exhausted mid-run) must never clobber a file
+    # that already holds good cards. Legitimately-empty titles still write the
+    # first time; only good->empty regressions are refused.
+    if not report.get("sceneFacts") and cards_path.exists():
+        try:
+            prior = json.loads(cards_path.read_text())
+            if prior.get("sceneFacts"):
+                print(
+                    f"REFUSING to overwrite {cards_path} "
+                    f"({len(prior['sceneFacts'])} existing cards) with a 0-card run "
+                    f"— likely a grounding-quota failure. Prior output kept.",
+                    file=sys.stderr,
+                )
+                json.dump(prior["sceneFacts"], sys.stdout, indent=2, ensure_ascii=False)
+                return 0
+        except (ValueError, OSError):
+            pass  # unreadable prior -> fall through and write the new one
+
     cards_path.write_text(json.dumps(report, indent=2, ensure_ascii=False))
     review_path.write_text(json.dumps(review, indent=2, ensure_ascii=False))
 
