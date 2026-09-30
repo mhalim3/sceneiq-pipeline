@@ -106,7 +106,12 @@ class PipelineConfig:
     # Fetch-then-write source bank (scene-sense architecture): per anchor, run
     # up to `queries_per_anchor` explicit searches, fetch bodies, keep the top
     # `sources_per_anchor` by tier.
-    queries_per_anchor: int = 3
+    # One grounded search per fact by default. The sweep already grounded to
+    # discover each fact; a single targeted research query returns 4-8
+    # candidate URLs to fetch and verify. Raising this multiplies grounded
+    # requests against the shared daily cap (5,000/day project-wide) with
+    # diminishing sourcing gains — was 3, cut to 1 to be a good sandbox citizen.
+    queries_per_anchor: int = 1
     sources_per_anchor: int = 8
     # Per-beat verbatim anchor must fuzzy-match its source body at this ratio.
     verbatim_anchor_min_ratio: float = 0.8
@@ -123,8 +128,10 @@ class PipelineConfig:
     title_level_only: bool = True
     # Adaptive sweep: after the first round, keep sweeping (with an
     # avoid-list and fresh query angles) until the fact target is met, a
-    # round approves nothing new, or this many rounds have run.
-    max_sweep_rounds: int = 3
+    # round approves nothing new, or this many rounds have run. Each round is
+    # 4 grounded searches; capped at 2 (wide round 1 + one top-up) to bound
+    # grounded requests against the shared daily cap — was 3.
+    max_sweep_rounds: int = 2
     # Scene cards display from their scene start through scene end plus this
     # padding (seconds). General cards fill the remaining timeline gaps.
     scene_card_pad_s: float = 60.0

@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import os
+import threading
 from dataclasses import dataclass, field
 
 import httpx
@@ -32,6 +33,18 @@ from . import config
 
 class SchemaViolation(Exception):
     """Model failed to produce schema-conformant JSON after retries."""
+
+
+class GroundingBudgetExhausted(Exception):
+    """The per-run grounded-request budget was reached. This is a self-imposed
+    cap so the pipeline can never silently drain the shared project-wide
+    Google Search grounding quota (tubi-gemini-sandbox: 5,000 grounded
+    requests/day, shared across the whole project)."""
+
+
+class GroundingQuotaExhausted(Exception):
+    """The project-wide daily grounding quota returned 429. It resets at
+    midnight PT; retrying within this run cannot help, so we fail fast."""
 
 
 @dataclass
@@ -70,17 +83,54 @@ class GeminiClient:
             api_key=key,
             http_options=types.HttpOptions(timeout=180_000),
         )
+        # Self-imposed cap on grounded (Google Search) requests per run. The
+        # grounding quota is a shared, project-wide daily pool (5,000/day on
+        # tubi-gemini-sandbox); this counter ensures one pipeline run can never
+        # drain it. 0 disables the cap. Thread-safe (research/sweep fan out).
+        self._grounded_budget = int(os.environ.get("SCENEIQ_GROUNDING_BUDGET", "800"))
+        self._grounded_calls = 0
+        self._grounded_lock = threading.Lock()
+
+    @property
+    def grounded_calls(self) -> int:
+        return self._grounded_calls
+
+    def grounded(self, model: str, prompt: str, temperature: float = 0.3) -> GroundedResult:
+        # Reserve one unit of budget BEFORE the (retried) call, so retries
+        # don't double-count and concurrent workers can't overshoot the cap.
+        with self._grounded_lock:
+            if self._grounded_budget and self._grounded_calls >= self._grounded_budget:
+                raise GroundingBudgetExhausted(
+                    f"per-run grounding budget of {self._grounded_budget} reached "
+                    f"(SCENEIQ_GROUNDING_BUDGET). Shared project cap is 5,000/day."
+                )
+            self._grounded_calls += 1
+        return self._grounded_call(model, prompt, temperature)
 
     @_retry
-    def grounded(self, model: str, prompt: str, temperature: float = 0.3) -> GroundedResult:
-        resp = self._client.models.generate_content(
-            model=model,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                tools=[types.Tool(google_search=types.GoogleSearch())],
-                temperature=temperature,
-            ),
-        )
+    def _grounded_call(self, model: str, prompt: str, temperature: float) -> GroundedResult:
+        try:
+            resp = self._client.models.generate_content(
+                model=model,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    tools=[types.Tool(google_search=types.GoogleSearch())],
+                    temperature=temperature,
+                ),
+            )
+        except errors.APIError as e:
+            # A 429 on a grounded call is the shared project-wide daily
+            # grounding cap (5,000/day), not a transient blip — it resets at
+            # midnight PT, so retrying within this run only wastes calls.
+            # Fail fast with a clear, non-retryable error.
+            if e.code == 429:
+                raise GroundingQuotaExhausted(
+                    "429 on Google Search grounding: the shared project daily "
+                    "cap (5,000 grounded requests/day on tubi-gemini-sandbox) is "
+                    "exhausted. It resets at midnight PT. Ungrounded calls still "
+                    "work. See docs/GROUNDING_QUOTA.md."
+                ) from e
+            raise
         sources = []
         try:
             gm = resp.candidates[0].grounding_metadata

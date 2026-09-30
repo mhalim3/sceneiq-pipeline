@@ -621,9 +621,12 @@ def run(
             "cards_rejected": sum(1 for r in records if r.status == "rejected"),
             "errors": sum(1 for r in records if r.status == "error"),
             "elapsed_seconds": round(time.time() - t0, 1),
+            "grounded_requests": client.grounded_calls,
             "models": {"deep": cfg.deep_model, "fast": cfg.fast_model},
         },
     }
+    log.info("grounded requests this title: %d (budget %s)",
+             client.grounded_calls, cfg.extra.get("grounding_budget", "800"))
     review = {
         "film": film_info,
         "candidates": [r.to_dict() for r in records],
