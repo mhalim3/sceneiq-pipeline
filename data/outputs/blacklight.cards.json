@@ -6,311 +6,12 @@
     "input_prompt": "Blacklight (2022)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Nick May made his feature screenwriting debut with Blacklight.",
-      "longDescription": "Nick May made his feature screenwriting debut with Blacklight. He co-wrote the screenplay and story for the film.",
-      "sources": [
-        {
-          "url": "https://bombreport.com/blacklight/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.slashfilm.com/727296/blacklight-release-date-cast-and-more/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 567.3,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:09:27"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Blacklight was one of the first major films to shoot during COVID-19.",
-      "longDescription": "Blacklight was one of the first major films to shoot during COVID-19. The crew had to invent safety protocols as they went along.",
-      "sources": [
-        {
-          "url": "https://www.theaureview.com/watch/interview-mark-williams-on-directing-blacklight-with-liam-neeson-and-filming-in-australia/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://screenrant.com/blacklight-movie-mark-williams-interview/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 567.3,
-          "endSeconds": 1134.5,
-          "startTimecode": "00:09:27",
-          "endTimecode": "00:18:54"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Blacklight was filmed in Australia, not D.C., with a car chase in Canberra.",
-      "longDescription": "Blacklight was filmed in Australia, not D.C., with a car chase in Canberra. Melbourne doubled for Washington D.C. locations.",
-      "sources": [
-        {
-          "url": "https://www.theaureview.com/watch/interview-mark-williams-on-directing-blacklight-with-liam-neeson-and-filming-in-australia/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://vicscreen.vic.gov.au/news/liam-neeson-thriller-blacklight-to-shoot-in-melbourne/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1134.5,
-          "endSeconds": 1701.8,
-          "startTimecode": "00:18:54",
-          "endTimecode": "00:28:21"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "No need to wait! Blacklight has no extra scenes after the credits.",
-      "longDescription": "No need to wait! Blacklight has no extra scenes after the credits. The film does not feature any additional scenes during or after its end credits.",
-      "sources": [
-        {
-          "url": "https://runpee.com/is-there-anything-extra-during-the-end-credits-of-blacklight/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://mediastinger.com/blacklight-2022-after-the-credits/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1701.8,
-          "endSeconds": 2269.1,
-          "startTimecode": "00:28:21",
-          "endTimecode": "00:37:49"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The film pulls a \"bait and switch\" with its main hero.",
-      "longDescription": "The film pulls a \"bait and switch\" with its main hero. Taylor John Smith's character initially seems like the protagonist before the focus shifts.",
-      "sources": [
-        {
-          "url": "https://moviesreview101.com/blacklight-2022-movie-review/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.flickeringmyth.com/movie-review-blacklight-2022/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2269.1,
-          "endSeconds": 2836.4,
-          "startTimecode": "00:37:49",
-          "endTimecode": "00:47:16"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Travis Block's OCD impacts his granddaughter, Natalie, who mimics his habits.",
-      "longDescription": "Travis Block's OCD impacts his granddaughter, Natalie, who mimics his habits. His daughter Amanda fears he's turning Natalie into a \"crazy person.\"",
-      "sources": [
-        {
-          "url": "https://www.pluggedin.com/movie-reviews/blacklight-2022/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.the-independent.com/news/liam-neeson-mark-williams-ptsd-alexandria-ocasiocortez-fbi-b2012622.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2836.4,
-          "endSeconds": 3403.6,
-          "startTimecode": "00:47:16",
-          "endTimecode": "00:56:43"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "That wild garbage truck chase? It was all real, no CGI.",
-      "longDescription": "That wild garbage truck chase? It was all real, no CGI. Director Mark Williams filmed the sequence practically on four streets in Canberra, Australia.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/blacklight-movie-mark-williams-interview/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.theaureview.com/watch/interview-mark-williams-on-directing-blacklight-with-liam-neeson-and-filming-in-australia/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3403.6,
-          "endSeconds": 3970.9,
-          "startTimecode": "00:56:43",
-          "endTimecode": "01:06:10"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The script for Blacklight was originally set in 1971.",
-      "longDescription": "The script for Blacklight was originally set in 1971. Director Mark Williams updated it to a contemporary setting, adding more action.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/blacklight-movie-mark-williams-interview/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3970.9,
-          "endSeconds": 4538.2,
-          "startTimecode": "01:06:10",
-          "endTimecode": "01:15:38"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "music",
-      "shortVersion": "An Oscar nominee composed the score for Blacklight.",
-      "longDescription": "An Oscar nominee composed the score for Blacklight. Mark Isham, known for films like 'Crash,' created the original music.",
-      "sources": [
-        {
-          "url": "https://filmmusicreporter.com/2022/02/02/blacklight-soundtrack-album-released/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4538.2,
-          "endSeconds": 5105.5,
-          "startTimecode": "01:15:38",
-          "endTimecode": "01:25:05"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Liam Neeson prefers to do his own stunts in Blacklight.",
-      "longDescription": "Liam Neeson prefers to do his own stunts in Blacklight. The action sequences were designed specifically for his physical capabilities.",
-      "sources": [
-        {
-          "url": "https://www.theaureview.com/watch/interview-mark-williams-on-directing-blacklight-with-liam-neeson-and-filming-in-australia/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5105.5,
-          "endSeconds": 5672.7,
-          "startTimecode": "01:25:05",
-          "endTimecode": "01:34:32"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Liam Neeson's action hero career started in his mid-50s with 'Taken'.",
-      "longDescription": "Liam Neeson's action hero career started in his mid-50s with 'Taken'. He was set to turn 70 when 'Blacklight' was released, still doing action.",
-      "sources": [
-        {
-          "url": "https://www.slashfilm.com/727296/blacklight-release-date-cast-and-more/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.theaureview.com/watch/interview-mark-williams-on-directing-blacklight-with-liam-neeson-and-filming-in-australia/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.whattowatch.com/watching-guides/blacklight-release-date-trailer-and-everything-we-know-about-the-liam-neeson-action-movie",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5672.7,
-          "endSeconds": 6240.0,
-          "startTimecode": "01:34:32",
-          "endTimecode": "01:44:00"
-        }
-      ],
-      "wouldPassStrict": false
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 11,
+    "approved_cards": 0,
     "scene_cards": 0,
-    "general_cards": 11,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -318,33 +19,34 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "filming",
-      "music"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          6240.0
+        ]
+      ]
     },
     "rules": {
       "fact_target_12_15": false,
-      "min_six_cards": true,
+      "min_six_cards": false,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 24,
-    "cards_emitted": 11,
-    "would_pass_strict": 4,
-    "cards_rejected": 13,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 487.5,
+    "elapsed_seconds": 8.7,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

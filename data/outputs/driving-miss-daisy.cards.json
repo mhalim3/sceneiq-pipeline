@@ -6,395 +6,12 @@
     "input_prompt": "Driving Miss Daisy (1989)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Jessica Tandy, 80, became the oldest Best Actress Oscar winner for this film.",
-      "longDescription": "Jessica Tandy, 80, became the oldest Best Actress Oscar winner for this film. She was 80 years and 295 days old when she received the award on March 29, 1990.",
-      "sources": [
-        {
-          "url": "https://www.guinnessworldrecords.com/world-records/oldest-oscar-winner-as-best-actress",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 424.3,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:07:04"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "\"Driving Miss Daisy\" won Best Picture, a rare feat without a director nod.",
-      "longDescription": "\"Driving Miss Daisy\" won Best Picture, a rare feat without a director nod. It was the first film since 1932 to do so.",
-      "sources": [
-        {
-          "url": "https://www.slashfilm.com/973440/the-controversy-that-clouded-driving-miss-daisys-commercial-success/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://thejamreport.com/2018/02/04/the-best-picture-project-driving-miss-daisy-1989/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.cinemasight.com/oscar-profile-375-bruce-beresford/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 424.3,
-          "endSeconds": 848.6,
-          "startTimecode": "00:07:04",
-          "endTimecode": "00:14:08"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "music",
-      "shortVersion": "Hans Zimmer's score was almost entirely electronic, with one live instrument.",
-      "longDescription": "Hans Zimmer's score was almost entirely electronic, with one live instrument. Only a solo clarinet was used, with the rest created on synthesizers.",
-      "sources": [
-        {
-          "url": "https://moviemusicuk.us/2019/12/19/driving-miss-daisy-hans-zimmer/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 848.6,
-          "endSeconds": 1272.9,
-          "startTimecode": "00:14:08",
-          "endTimecode": "00:21:12"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Driving Miss Daisy is the only Off-Broadway play to win Best Picture.",
-      "longDescription": "Driving Miss Daisy is the only Off-Broadway play to win Best Picture. Morgan Freeman originated his role as Hoke in the 1987 Off-Broadway play.",
-      "sources": [
-        {
-          "url": "https://www.slashfilm.com/973440/the-controversy-that-clouded-driving-miss-daisys-commercial-success/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://rtrlocations.blogspot.com/2020/05/driving-miss-daisy-1989.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://emanuellevy.com/review/driving-miss-daisy-1989-oscar-winner-3/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1272.9,
-          "endSeconds": 1697.1,
-          "startTimecode": "00:21:12",
-          "endTimecode": "00:28:17"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "costume/prop",
-      "shortVersion": "Miss Daisy's wardrobe was intentionally at least five years out of style.",
-      "longDescription": "Miss Daisy's wardrobe was intentionally at least five years out of style. Her floral housedresses, for example, were from the 1930s for scenes set in 1948.",
-      "sources": [
-        {
-          "url": "https://www.latimes.com/archives/la-xpm-1997-06-19-me-4932-story.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.latimes.com/archives/la-xpm-1990-02-28-vw-1649-story.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1697.1,
-          "endSeconds": 2121.4,
-          "startTimecode": "00:28:17",
-          "endTimecode": "00:35:21"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Morgan Freeman reportedly called his Hoke Colburn role a \"big mistake.\"",
-      "longDescription": "Morgan Freeman reportedly called his Hoke Colburn role a \"big mistake.\" He felt the character became too identifiable, leading audiences to expect that persona from him.",
-      "sources": [
-        {
-          "url": "https://movieweb.com/driving-miss-daisy-morgan-freeman-regrets-role-why/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2121.4,
-          "endSeconds": 2545.7,
-          "startTimecode": "00:35:21",
-          "endTimecode": "00:42:25"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "costume/prop",
-      "shortVersion": "Miss Daisy's 1955 Cadillac had AC, but she refused to use it.",
-      "longDescription": "Miss Daisy's 1955 Cadillac had AC, but she refused to use it. The car came factory-equipped with air conditioning, which Miss Daisy pointedly refuses to use.",
-      "sources": [
-        {
-          "url": "https://nowgeorgia.com/hollywood-history-rolls-into-clarkesville/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.schmitt.com/inventory/1955-cadillac-fleetwood-sixty-special-sedan/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://95octane.com/2014/01/13/miss-daisys-1949-hudson-commodore-8/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2545.7,
-          "endSeconds": 2970.0,
-          "startTimecode": "00:42:25",
-          "endTimecode": "00:49:30"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Driving Miss Daisy was a Best Picture winner made on a tiny $7.5M budget.",
-      "longDescription": "Driving Miss Daisy was a Best Picture winner made on a tiny $7.5M budget. This low cost, and no big stars, caught the Academy's attention.",
-      "sources": [
-        {
-          "url": "https://emanuellevy.com/review/featured-review/oscar-best-picture-worst-winners-driving-miss-daisy-1989-3/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://emanuellevy.com/review/driving-miss-daisy-1989-oscar-winner-3/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://thejamreport.com/2018/02/04/the-best-picture-project-driving-miss-daisy-1989/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2970.0,
-          "endSeconds": 3394.3,
-          "startTimecode": "00:49:30",
-          "endTimecode": "00:56:34"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "set_design",
-      "shortVersion": "\"Hollywood magic\" transformed a used clothing store into the Piggly Wiggly.",
-      "longDescription": "\"Hollywood magic\" transformed a used clothing store into the Piggly Wiggly. The production used a real-life Atlanta store called Rag-O-Rama.",
-      "sources": [
-        {
-          "url": "https://www.wideopencountry.com/where-was-driving-miss-daisy-filmed/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://rtrlocations.blogspot.com/2020/05/driving-miss-daisy-1989.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3394.3,
-          "endSeconds": 3818.6,
-          "startTimecode": "00:56:34",
-          "endTimecode": "01:03:38"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "costume/prop",
-      "shortVersion": "Boolie's suit lapels subtly show time passing, ending with '70s flair.",
-      "longDescription": "Boolie's suit lapels subtly show time passing, ending with '70s flair. His suit legs also became slightly flared.",
-      "sources": [
-        {
-          "url": "https://www.latimes.com/archives/la-xpm-1990-02-28-vw-1649-story.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3818.6,
-          "endSeconds": 4242.9,
-          "startTimecode": "01:03:38",
-          "endTimecode": "01:10:42"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "historical",
-      "shortVersion": "The synagogue in the film was based on a real 1958 bombing.",
-      "longDescription": "The synagogue in the film was based on a real 1958 bombing. The actual Temple in Atlanta was attacked by bombers on a Sunday morning.",
-      "sources": [
-        {
-          "url": "https://movie-locations.com/movies/d/Driving-Miss-Daisy.php",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4242.9,
-          "endSeconds": 4667.1,
-          "startTimecode": "01:10:42",
-          "endTimecode": "01:17:47"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Morgan Freeman won a Golden Globe for his role as Hoke Colburn.",
-      "longDescription": "Morgan Freeman won a Golden Globe for his role as Hoke Colburn. He also originated the role in the play before the film.",
-      "sources": [
-        {
-          "url": "https://www.filmsite.org/drivingmissdaisy.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.filmaffinity.com/us/movie-awards.php?movie-id=336490",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://chubbfellowship.yale.edu/fellow/morgan-freeman",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4667.1,
-          "endSeconds": 5091.4,
-          "startTimecode": "01:17:47",
-          "endTimecode": "01:24:51"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "set_design",
-      "shortVersion": "Miss Daisy's kitchen was gutted and rebuilt to look period-perfect.",
-      "longDescription": "Miss Daisy's kitchen was gutted and rebuilt to look period-perfect. Production Designer Bruno Rubeo found most period homes had modernized kitchens.",
-      "sources": [
-        {
-          "url": "https://hookedonhouses.net/2013/02/25/the-driving-miss-daisy-house-for-sale-in-atlanta/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5091.4,
-          "endSeconds": 5515.7,
-          "startTimecode": "01:24:51",
-          "endTimecode": "01:31:55"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "costume/prop",
-      "shortVersion": "Hoke's clothes were designed to look like hand-me-downs.",
-      "longDescription": "Hoke's clothes were designed to look like hand-me-downs. Costumer Elizabeth McBride said they were \"most likely hand-me-downs from people he worked for.\"",
-      "sources": [
-        {
-          "url": "https://www.latimes.com/archives/la-xpm-1990-02-28-vw-1649-story.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5515.7,
-          "endSeconds": 5940.0,
-          "startTimecode": "01:31:55",
-          "endTimecode": "01:39:00"
-        }
-      ],
-      "wouldPassStrict": true
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
-    "sceneiq_enabled": true,
-    "approved_cards": 14,
+    "sceneiq_enabled": false,
+    "approved_cards": 0,
     "scene_cards": 0,
-    "general_cards": 14,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -402,35 +19,34 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "costume/prop",
-      "historical",
-      "music",
-      "set_design"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          5940.0
+        ]
+      ]
     },
     "rules": {
-      "fact_target_12_15": true,
-      "min_six_cards": true,
+      "fact_target_12_15": false,
+      "min_six_cards": false,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 41,
-    "cards_emitted": 14,
-    "would_pass_strict": 5,
-    "cards_rejected": 27,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 741.5,
+    "elapsed_seconds": 9.2,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

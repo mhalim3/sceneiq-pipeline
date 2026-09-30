@@ -3,425 +3,52 @@
     "title": "The Spy Next Door",
     "year": 2010,
     "runtime_minutes": 94,
-    "duration_sec": 5661.02918983157,
-    "content_rating": "PG",
     "input_prompt": "The Spy Next Door",
-    "anchor_source": "tubi_moments"
+    "anchor_source": "title_only",
+    "duration_sec": 5661.02918983157,
+    "content_rating": "PG"
   },
-  "sceneFacts": [
-    {
-      "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "This lush outdoor scene was filmed in New Mexico.",
-      "longDescription": "This lush outdoor scene was filmed in New Mexico. Principal photography for The Spy Next Door began in late October and wrapped up in December 2008.",
-      "sources": [
-        {
-          "url": "https://thecinemaholic.com/where-was-the-spy-next-door-filmed/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 0] 00:00:00–00:00:01\nsummary: A person is seen walking and enjoying a lush green outdoor environment with trees and a pond, creating a peaceful and serene mood.",
-        "anchorElement": "Principal photography for *The Spy Next Door* was completed in less than three months, from late October to late December 2008, primarily in Rio Rancho, New Mexico.",
-        "approxTimecode": "00:00:00",
-        "runtimeFraction": 0.0,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 61.2,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:01:01"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Jackie Chan carefully considers his films' impact on kids.",
-      "longDescription": "Jackie Chan carefully considers his films' impact on kids. He even corrected a past film's message after realizing children were imitating his actions.",
-      "sources": [
-        {
-          "url": "http://superchanblog.blogspot.com/2010/01/interview-spy-next-door_12.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://screenrant.com/jackie-chan-drunken-master-2-legend-plan-change/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 13] 00:03:57–00:04:18\nsummary: The clip shows children in a car discussing a character named Bob, describing him as a boring pen importer and jokingly calling him a cyborg sent from the future, creating a playful and slightly tense mood.\ncast on screen: Madeline Carroll, Amber Valletta, Jackie Chan",
-        "anchorElement": "Jackie Chan consciously considers the impact his films have on children, even correcting past portrayals like drunkenness in *Drunken Master* after realizing children were imitating his actions.",
-        "approxTimecode": "00:03:57",
-        "runtimeFraction": 0.042,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 237.1,
-          "endSeconds": 318.1,
-          "startTimecode": "00:03:57",
-          "endTimecode": "00:05:18"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "Jackie Chan tore a hamstring filming this movie, not a stunt.",
-      "longDescription": "Jackie Chan tore a hamstring filming this movie, not a stunt. He attributed the injury to carelessness, specifically forgetting to warm up.",
-      "sources": [
-        {
-          "url": "http://superchanblog.blogspot.com/2010/01/interview-spy-next-door_12.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 13] 00:03:57–00:04:18\nsummary: The clip shows children in a car discussing a character named Bob, describing him as a boring pen importer and jokingly calling him a cyborg sent from the future, creating a playful and slightly tense mood.\ncast on screen: Madeline Carroll, Amber Valletta, Jackie Chan",
-        "anchorElement": "Jackie Chan suffered a hamstring tear during filming *The Spy Next Door* due to carelessness and forgetting to warm up, rather than a complex stunt.",
-        "approxTimecode": "00:03:57",
-        "runtimeFraction": 0.042,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 237.1,
-          "endSeconds": 318.1,
-          "startTimecode": "00:03:57",
-          "endTimecode": "00:05:18"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Billy Ray Cyrus plays spy Colton James, Bob Ho's pal.",
-      "longDescription": "Billy Ray Cyrus plays spy Colton James, Bob Ho's pal. When his character needs to be forceful, he carries a gun.",
-      "sources": [
-        {
-          "url": "https://www.fandango.com/the-spy-next-door-125648/cast-and-crew",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://dove.org/review/8185-the-spy-next-door/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://theboot.com/billy-ray-cyrus-scores-role-in-jackie-chan-flick/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 20] 00:06:18–00:06:38\nsummary: The clip shows a tense conversation among men in a corporate or security office environment discussing a suspicious plan involving sabotage at an oil refinery, with a mood of suspicion and urgency.\ncast on screen: Billy Ray Cyrus, Jackie Chan, George Lopez",
-        "anchorElement": "Billy Ray Cyrus",
-        "approxTimecode": "00:06:18",
-        "runtimeFraction": 0.067,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 378.6,
-          "endSeconds": 458.6,
-          "startTimecode": "00:06:18",
-          "endTimecode": "00:07:38"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "Director Brian Levant aimed for comic action, not violence.",
-      "longDescription": "Director Brian Levant aimed for comic action, not violence. He and Jackie Chan hoped to emulate films featuring comic tension.",
-      "sources": [
-        {
-          "url": "https://exclaim.ca/film/article/spy_next_door_-_directed_by_brian_levant",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "http://superchanblog.blogspot.com/2010/01/interview-spy-next-door_12.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.pluggedin.com/movie-reviews/spynextdoor/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 27] 00:08:39–00:08:58\nsummary: The clip shows a tense fight scene in an industrial setting involving multiple men, with one man in a suit observing while others engage in physical combat, creating a mood of urgency and danger.",
-        "anchorElement": "Director Brian Levant deliberately opted for \"comic action\" over violence in The Spy Next Door, emphasizing they \"weren't going for violence\" due to Jackie Chan's concern for children.",
-        "approxTimecode": "00:08:39",
-        "runtimeFraction": 0.092,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 520.0,
-          "endSeconds": 598.9,
-          "startTimecode": "00:08:40",
-          "endTimecode": "00:09:58"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Director Brian Levant called Jackie Chan a \"unique talent.\"",
-      "longDescription": "Director Brian Levant called Jackie Chan a \"unique talent.\" He also praised Chan's inventiveness and energy on set.",
-      "sources": [
-        {
-          "url": "https://www.girl.com.au/the-spy-next-door.htm",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 40] 00:12:57–00:13:17\nsummary: A man and woman engage in a warm, intimate conversation in a cozy indoor setting filled with art, discussing themes of marriage, honesty, and commitment with a mix of humor and sincerity.\ncast on screen: Amber Valletta, Jackie Chan",
-        "anchorElement": "Co-star Amber Valletta and director Brian Levant praised Jackie Chan's \"infectious\" energy, humor, and \"giant personality\" that transcended language barriers on set.",
-        "approxTimecode": "00:12:57",
-        "runtimeFraction": 0.137,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 777.1,
-          "endSeconds": 857.2,
-          "startTimecode": "00:12:57",
-          "endTimecode": "00:14:17"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "Jackie Chan got scratched by the cat he rescued on screen.",
-      "longDescription": "Jackie Chan got scratched by the cat he rescued on screen. The cat was not easy to work with and grabbed him a few times.",
-      "sources": [
-        {
-          "url": "http://superchanblog.blogspot.com/2010/01/interview-spy-next-door_12.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.americanhumane.org/production/spy-next-door-the/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 122] 00:39:57–00:40:18\nsummary: An adult male is playfully interacting with a young girl in a cozy bedroom setting, sharing a story or song he learned in China, creating a warm and intimate family moment.\ncast on screen: Jackie Chan",
-        "anchorElement": "Nora's cat, Ringo, is rescued from a roof by Jackie Chan's character using acrobatic skills and later falls asleep as he sings a Chinese lullaby.",
-        "approxTimecode": "00:39:57",
-        "runtimeFraction": 0.424,
-        "runtimeThird": 2,
-        "runtimeQuartile": 2
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 2397.8,
-          "endSeconds": 2478.9,
-          "startTimecode": "00:39:57",
-          "endTimecode": "00:41:18"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Ian's stunts? Will Shadley did them all himself.",
-      "longDescription": "Ian's stunts? Will Shadley did them all himself. He even worked with harnesses and wires for the role.",
-      "sources": [
-        {
-          "url": "https://moviemom.com/interview-2/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 252] 01:22:59–01:23:19\nsummary: The clip depicts a tense and chaotic home invasion or raid where armed officers enter a house, confront and detain individuals, while family members, including children, appear distressed and fearful.\ncast on screen: Madeline Carroll, Billy Ray Cyrus, George Lopez",
-        "anchorElement": "Child actor Will Shadley, who played Ian, performed all of his own stunts in *The Spy Next Door*, including working with harnesses and wires.",
-        "approxTimecode": "01:22:59",
-        "runtimeFraction": 0.88,
-        "runtimeThird": 3,
-        "runtimeQuartile": 4
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 4979.8,
-          "endSeconds": 5059.4,
-          "startTimecode": "01:22:59",
-          "endTimecode": "01:24:19"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "location",
-      "shortVersion": "That mall is actually a casino in Milwaukee, Wisconsin.",
-      "longDescription": "That mall is actually a casino in Milwaukee, Wisconsin. It's owned and run by the Forest County Potawatomi Community.",
-      "sources": [
-        {
-          "url": "https://thecinemaholic.com/where-was-the-spy-next-door-filmed/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 61.2,
-          "endSeconds": 237.1,
-          "startTimecode": "00:01:01",
-          "endTimecode": "00:03:57"
-        },
-        {
-          "startSeconds": 598.9,
-          "endSeconds": 777.1,
-          "startTimecode": "00:09:58",
-          "endTimecode": "00:12:57"
-        },
-        {
-          "startSeconds": 5059.4,
-          "endSeconds": 5661.0,
-          "startTimecode": "01:24:19",
-          "endTimecode": "01:34:21"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Jackie Chan's Dragon Heart Foundation has built 20 schools in China.",
-      "longDescription": "Jackie Chan's Dragon Heart Foundation has built 20 schools in China. He believes everyone should learn how to do charity.",
-      "sources": [
-        {
-          "url": "https://www.brightvibes.com/jackie-chan-movie-star-martial-artist-massive-philanthropist/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.looktothestars.org/celebrity/jackie-chan",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 318.1,
-          "endSeconds": 378.6,
-          "startTimecode": "00:05:18",
-          "endTimecode": "00:06:18"
-        },
-        {
-          "startSeconds": 857.2,
-          "endSeconds": 2397.8,
-          "startTimecode": "00:14:17",
-          "endTimecode": "00:39:57"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "This was Jackie Chan's first Hollywood family movie.",
-      "longDescription": "This was Jackie Chan's first Hollywood family movie. He had never worked with youngsters to this extent before.",
-      "sources": [
-        {
-          "url": "http://superchanblog.blogspot.com/2010/01/interview-spy-next-door_12.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://moriareviews.com/sciencefiction/spy-next-door-2010.htm",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 458.6,
-          "endSeconds": 520.0,
-          "startTimecode": "00:07:38",
-          "endTimecode": "00:08:40"
-        },
-        {
-          "startSeconds": 2478.9,
-          "endSeconds": 4979.8,
-          "startTimecode": "00:41:18",
-          "endTimecode": "01:22:59"
-        }
-      ],
-      "wouldPassStrict": true
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 11,
-    "scene_cards": 8,
-    "general_cards": 3,
+    "approved_cards": 0,
+    "scene_cards": 0,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
-      "1": 6,
-      "2": 1,
+      "1": 0,
+      "2": 0,
       "3": 0,
-      "4": 1
+      "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "filming",
-      "location"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          5661.0
+        ]
+      ]
     },
     "rules": {
       "fact_target_12_15": false,
-      "min_six_cards": true,
-      "card_in_each_quartile": false,
-      "max_40pct_single_quartile": false,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "min_six_cards": false,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 34,
-    "cards_emitted": 11,
-    "would_pass_strict": 5,
-    "cards_rejected": 23,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 590.1,
+    "elapsed_seconds": 9.1,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

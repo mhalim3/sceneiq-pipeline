@@ -3,15 +3,15 @@
     "title": "Lockdown",
     "year": 2000,
     "runtime_minutes": 105,
-    "input_prompt": "Lockdown",
+    "input_prompt": "Lockdown (2000)",
     "anchor_source": "title_only"
   },
   "sceneFacts": [
     {
       "scope": "general",
       "factCategory": "actor",
-      "shortVersion": "Dre's limp was real; the actor was shot days before filming.",
-      "longDescription": "Dre's limp was real; the actor was shot days before filming. Director John Luessenhop wrote De'Aundre Bonds' real-life injury into his character.",
+      "shortVersion": "De'Aundre Bonds' real-life limp was written into his character.",
+      "longDescription": "Bonds arrived on set for Lockdown days after being shot four times, and director John Luessenhop incorporated his real injury into the character he played.",
       "sources": [
         {
           "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
@@ -23,37 +23,9 @@
       "displayWindows": [
         {
           "startSeconds": 0.0,
-          "endSeconds": 1050.0,
+          "endSeconds": 900.0,
           "startTimecode": "00:00:00",
-          "endTimecode": "00:17:30"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Music mogul Master P was an executive producer on Lockdown.",
-      "longDescription": "Music mogul Master P was an executive producer on Lockdown. Actor Gabriel Casseus joined the film because of Master P's independent production approach.",
-      "sources": [
-        {
-          "url": "https://www.popmatters.com/lockdown-2496255811.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1050.0,
-          "endSeconds": 2100.0,
-          "startTimecode": "00:17:30",
-          "endTimecode": "00:35:00"
+          "endTimecode": "00:15:00"
         }
       ],
       "wouldPassStrict": true
@@ -61,8 +33,8 @@
     {
       "scope": "general",
       "factCategory": "filming",
-      "shortVersion": "Actors put ice cubes in their mouths to hide breath in the cold.",
-      "longDescription": "Actors put ice cubes in their mouths to hide breath in the cold. The film's director said the summer shoot was \"brutal\" with dry heat.",
+      "shortVersion": "\"Lockdown\" filmed in extreme heat and freezing cold.",
+      "longDescription": "The production of \"Lockdown\" endured both scorching New Mexico summers and the year's coldest day for reshoots, forcing actors to hide their breath with ice cubes.",
       "sources": [
         {
           "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
@@ -73,10 +45,10 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 2100.0,
-          "endSeconds": 3150.0,
-          "startTimecode": "00:35:00",
-          "endTimecode": "00:52:30"
+          "startSeconds": 900.0,
+          "endSeconds": 1800.0,
+          "startTimecode": "00:15:00",
+          "endTimecode": "00:30:00"
         }
       ],
       "wouldPassStrict": true
@@ -84,8 +56,8 @@
     {
       "scope": "general",
       "factCategory": "actor",
-      "shortVersion": "Director John Luessenhop got a \"clean slate\" for casting Lockdown.",
-      "longDescription": "Director John Luessenhop got a \"clean slate\" for casting Lockdown. He chose actors he felt would truly make the heartfelt drama work.",
+      "shortVersion": "Master P's independent spirit drew Gabriel Casseus to Lockdown.",
+      "longDescription": "Actor Gabriel Casseus was specifically drawn to the film because he admired Master P's independent approach to film distribution and wanted to be part of projects that challenged the norm.",
       "sources": [
         {
           "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
@@ -96,38 +68,10 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 3150.0,
-          "endSeconds": 4200.0,
-          "startTimecode": "00:52:30",
-          "endTimecode": "01:10:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "location",
-      "shortVersion": "Lockdown's prison scenes were filmed in a real, historic New Mexico prison.",
-      "longDescription": "Lockdown's prison scenes were filmed in a real, historic New Mexico prison. It was the site of 'the most infamous prison riot in American history'.",
-      "sources": [
-        {
-          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "http://www.geocities.ws/rbfilms/lockdown.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4200.0,
-          "endSeconds": 5250.0,
-          "startTimecode": "01:10:00",
-          "endTimecode": "01:27:30"
+          "startSeconds": 1800.0,
+          "endSeconds": 2700.0,
+          "startTimecode": "00:30:00",
+          "endTimecode": "00:45:00"
         }
       ],
       "wouldPassStrict": true
@@ -135,11 +79,34 @@
     {
       "scope": "general",
       "factCategory": "general",
-      "shortVersion": "\"Lockdown\" was filmed in 1999, but its release was delayed for years.",
-      "longDescription": "\"Lockdown\" was filmed in 1999, but its release was delayed for years. It faced \"many years of political and financial hassles\" before its 2003 U.S. debut.",
+      "shortVersion": "Director John Luessenhop initially feared a \"hip-hop prison film.\"",
+      "longDescription": "Luessenhop initially worried the script for Lockdown would be a generic \"hip-hop prison film\" but ultimately saw its potential as a \"heartfelt drama\" akin to Boyz n da Hood.",
       "sources": [
         {
-          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2700.0,
+          "endSeconds": 3600.0,
+          "startTimecode": "00:45:00",
+          "endTimecode": "01:00:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Lockdown finally hit U.S. theaters in 2003, three years late.",
+      "longDescription": "Despite being produced in 2000, the film faced \"political and financial hassles\" that delayed its U.S. theatrical debut until February 2003.",
+      "sources": [
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
           "modality": "text",
           "timestamp": null
         },
@@ -157,9 +124,65 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 5250.0,
+          "startSeconds": 3600.0,
+          "endSeconds": 4500.0,
+          "startTimecode": "01:00:00",
+          "endTimecode": "01:15:00"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "Filmed in a real prison, some extras were former inmates.",
+      "longDescription": "The prison scenes for 'Lockdown' were filmed at a former state penitentiary in New Mexico, a site known for a deadly riot. Some of the film's extras had even been incarcerated there when it was still active.",
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4500.0,
+          "endSeconds": 5400.0,
+          "startTimecode": "01:15:00",
+          "endTimecode": "01:30:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "\"Lockdown\" earned praise for its serious take on prison issues.",
+      "longDescription": "Critics lauded \"Lockdown\" for its sincere and melodramatic portrayal of systemic racism and degradation within the penal system, setting it apart from more sensational prison films.",
+      "sources": [
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5400.0,
           "endSeconds": 6300.0,
-          "startTimecode": "01:27:30",
+          "startTimecode": "01:30:00",
           "endTimecode": "01:45:00"
         }
       ],
@@ -168,9 +191,9 @@
   ],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 6,
+    "approved_cards": 7,
     "scene_cards": 0,
-    "general_cards": 6,
+    "general_cards": 7,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -199,12 +222,12 @@
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 23,
-    "cards_emitted": 6,
+    "anchors_proposed": 25,
+    "cards_emitted": 7,
     "would_pass_strict": 5,
     "cards_rejected": 17,
-    "errors": 0,
-    "elapsed_seconds": 359.9,
+    "errors": 1,
+    "elapsed_seconds": 447.8,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

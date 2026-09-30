@@ -12,15 +12,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "A persistent myth surrounding \"Poltergeist\" (1982) suggests a \"curse\" on the set, fueled by the tragic deaths of cast members Dominique Dunne and Heather O'Rourke, with the use of real skeletons often cited as a potential cause.",
+        "anchor_element": "The 1982 CBS television movie \"Dixie: Changing Habits\" featured Suzanne Pleshette and Cloris Leachman in starring roles.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "A persistent myth surrounding \"Poltergeist\" (1982) suggests a \"curse\" on the set, fueled by the tragic deaths of cast members Dominique Dunne and Heather O'Rourke, with the use of real skeletons often cited as a potential cause.",
+        "search_hint": "The 1982 CBS television movie \"Dixie: Changing Habits\" featured Suzanne Pleshette and Cloris Leachman in starring roles.",
         "search_queries": [
-          "Poltergeist curse myth",
-          "Dominique Dunne Heather O'Rourke Poltergeist",
-          "Poltergeist real skeletons curse"
+          "Suzanne Pleshette Dixie Changing Habits",
+          "Cloris Leachman 1982 TV movie",
+          "Dixie Changing Habits cast"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -49,15 +49,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "During the filming of John Carpenter's \"The Thing\" (1982), an improvised replica body for the Norris-Thing transformation unexpectedly exploded when a fire bar was lit nearby, due to its volatile contents.",
+        "anchor_element": "Oak Alley Plantation, a historic landmark where \"Dixie: Changing Habits\" was filmed, is a popular location for numerous film and television productions.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "During the filming of John Carpenter's \"The Thing\" (1982), an improvised replica body for the Norris-Thing transformation unexpectedly exploded when a fire bar was lit nearby, due to its volatile contents.",
+        "search_hint": "Oak Alley Plantation, a historic landmark where \"Dixie: Changing Habits\" was filmed, is a popular location for numerous film and television productions.",
         "search_queries": [
-          "The Thing 1982 exploding prop",
-          "Norris-Thing transformation accident",
-          "Rob Bottin on set accidents"
+          "Oak Alley Plantation film history",
+          "Movies filmed at Oak Alley",
+          "Oak Alley Plantation productions"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -86,163 +86,178 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Special effects artist Rob Bottin, responsible for the iconic creatures in John Carpenter's \"The Thing\" (1982), reportedly lived at Universal Studios for over a year during production, working seven days a week with virtually no breaks.",
+        "anchor_element": "John Carpenter's \"The Thing\" (1982) is widely celebrated as a masterpiece of practical effects, with its creature designs often considered unmatched even today.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Special effects artist Rob Bottin, responsible for the iconic creatures in John Carpenter's \"The Thing\" (1982), reportedly lived at Universal Studios for over a year during production, working seven days a week with virtually no breaks.",
-        "search_queries": [
-          "Rob Bottin The Thing dedication",
-          "The Thing 1982 special effects artist",
-          "John Carpenter Rob Bottin"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The CBS television movie \"Dixie: Changing Habits\" (1982), starring Suzanne Pleshette and Cloris Leachman, was filmed entirely on location at the renowned Oak Alley Plantation and in the French Quarter of New Orleans.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "The CBS television movie \"Dixie: Changing Habits\" (1982), starring Suzanne Pleshette and Cloris Leachman, was filmed entirely on location at the renowned Oak Alley Plantation and in the French Quarter of New Orleans.",
-        "search_queries": [
-          "Dixie: Changing Habits filming location",
-          "Oak Alley Plantation movies",
-          "1982 TV movie filmed in New Orleans"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "To create the illusion of Diana Freeling being dragged across the walls and ceilings in \"Poltergeist\" (1982), entire rooms were constructed on a mechanism that could spin, allowing for a fluid, single-take shot.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "To create the illusion of Diana Freeling being dragged across the walls and ceilings in \"Poltergeist\" (1982), entire rooms were constructed on a mechanism that could spin, allowing for a fluid, single-take shot.",
-        "search_queries": [
-          "Poltergeist spinning room effect",
-          "how Poltergeist bedroom scene was filmed",
-          "Poltergeist practical effects"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The memorable burning title effect for John Carpenter's \"The Thing\" (1982) was ingeniously created using an animation cell placed behind a smoke-filled fish tank, covered with a plastic garbage bag, which was then ignited.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "The memorable burning title effect for John Carpenter's \"The Thing\" (1982) was ingeniously created using an animation cell placed behind a smoke-filled fish tank, covered with a plastic garbage bag, which was then ignited.",
-        "search_queries": [
-          "The Thing 1982 opening titles effect",
-          "how The Thing title was made",
-          "John Carpenter title sequence"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "John Carpenter's \"The Thing\" (1982) is widely celebrated for its groundbreaking and terrifying practical creature effects, which are often considered unmatched by modern CGI.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "John Carpenter's \"The Thing\" (1982) is widely celebrated for its groundbreaking and terrifying practical creature effects, which are often considered unmatched by modern CGI.",
+        "search_hint": "John Carpenter's \"The Thing\" (1982) is widely celebrated as a masterpiece of practical effects, with its creature designs often considered unmatched even today.",
         "search_queries": [
           "The Thing 1982 practical effects",
-          "Rob Bottin The Thing",
-          "best practical effects movies"
+          "Best practical effects movies",
+          "John Carpenter The Thing special effects"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "location",
+        "shortVersion": "Dixie: Changing Habits filmed entirely in New Orleans.",
+        "longDescription": "The 1982 CBS television movie, starring Suzanne Pleshette and Cloris Leachman, was shot entirely on location at the historic Oak Alley Plantation and in the French Quarter of New Orleans.",
+        "sources": [
+          {
+            "url": "https://oakalleyplantation.org/filmed-here/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 0.0,
+            "endSeconds": 2700.0,
+            "startTimecode": "00:00:00",
+            "endTimecode": "00:45:00"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The 1982 CBS television movie \"Dixie: Changing Habits\" was filmed entirely on location at the historic Oak Alley Plantation and in the French Quarter of New Orleans.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The 1982 CBS television movie \"Dixie: Changing Habits\" was filmed entirely on location at the historic Oak Alley Plantation and in the French Quarter of New Orleans.",
+        "search_queries": [
+          "Dixie Changing Habits filming locations",
+          "Oak Alley Plantation movies",
+          "Dixie Changing Habits 1982"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://oakalleyplantation.org/filmed-here/",
+          "title": "oakalleyplantation.org",
+          "domain": "oakalleyplantation.org",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Dixie: Changing Habits",
+            "1982",
+            "CBS",
+            "Suzanne Pleshette",
+            "Cloris Leachman",
+            "Oak Alley Plantation",
+            "French Quarter",
+            "New Orleans"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The 1982 CBS television movie, \"Dixie: Changing Habits,\" was released in September.",
+          "sourceUrl": "https://oakalleyplantation.org/filmed-here/",
+          "supporting_passage": "Dixie: Changing Habits September of 1982. For CBS television"
+        },
+        {
+          "beat": "The film starred Suzanne Pleshette and Cloris Leachman.",
+          "sourceUrl": "https://oakalleyplantation.org/filmed-here/",
+          "supporting_passage": "starring Suzanne Pleshette and Cloris Leachman"
+        },
+        {
+          "beat": "It was filmed entirely on location at Oak Alley Plantation and the French Quarter in New Orleans.",
+          "sourceUrl": "https://oakalleyplantation.org/filmed-here/",
+          "supporting_passage": "Filmed entirely on location at Oak Alley Plantation and the French Quarter in New Orleans"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Special effects artist Rob Bottin, only 22 years old during production, was given significant creative freedom by director John Carpenter for the creature designs in \"The Thing\" (1982).",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Special effects artist Rob Bottin, only 22 years old during production, was given significant creative freedom by director John Carpenter for the creature designs in \"The Thing\" (1982).",
+        "search_queries": [
+          "Rob Bottin The Thing creative freedom",
+          "John Carpenter Rob Bottin collaboration",
+          "The Thing 1982 special effects artist"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -271,15 +286,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Actor Keith David, who played Childs in \"The Thing\" (1982), consistently wears gloves after the first quarter of the film to conceal a broken hand in a cast, a detail often missed by viewers.",
+        "anchor_element": "The intense workload on \"The Thing\" (1982) led special effects artist Rob Bottin to check himself into a hospital due to exhaustion after filming.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Actor Keith David, who played Childs in \"The Thing\" (1982), consistently wears gloves after the first quarter of the film to conceal a broken hand in a cast, a detail often missed by viewers.",
+        "search_hint": "The intense workload on \"The Thing\" (1982) led special effects artist Rob Bottin to check himself into a hospital due to exhaustion after filming.",
         "search_queries": [
-          "Keith David The Thing gloves",
-          "Childs broken hand The Thing",
-          "The Thing 1982 hidden details"
+          "Rob Bottin exhaustion The Thing",
+          "The Thing 1982 production challenges",
+          "Rob Bottin health after The Thing"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -308,15 +323,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Oak Alley Plantation, the primary filming location for \"Dixie: Changing Habits\" (1982), has been a popular backdrop for numerous other productions, including \"Hush...Hush, Sweet Charlotte\" and Beyoncé's \"Déjà Vu\" music video.",
+        "anchor_element": "The iconic creature effects in \"The Thing\" (1982) were created using unusual materials like latex, foam rubber, creamed corn, strawberry jam, mayonnaise, and KY Jelly for slime and blood.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Oak Alley Plantation, the primary filming location for \"Dixie: Changing Habits\" (1982), has been a popular backdrop for numerous other productions, including \"Hush...Hush, Sweet Charlotte\" and Beyoncé's \"Déjà Vu\" music video.",
+        "search_hint": "The iconic creature effects in \"The Thing\" (1982) were created using unusual materials like latex, foam rubber, creamed corn, strawberry jam, mayonnaise, and KY Jelly for slime and blood.",
         "search_queries": [
-          "Oak Alley Plantation famous films",
-          "movies filmed at Oak Alley",
-          "Beyoncé Déjà Vu Oak Alley"
+          "The Thing 1982 creature effects materials",
+          "Rob Bottin unusual effects materials",
+          "Practical effects ingredients The Thing"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -345,15 +360,348 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Despite its later cult status, John Carpenter's \"The Thing\" (1982) was initially met with unfavorable critical and audience reactions, partly due to opening on the same day as \"Blade Runner\" and shortly after \"E.T. The Extra-Terrestrial.\"",
+        "anchor_element": "To create the effect of the Thing bursting through floorboards, a metal ball was rolled underneath using a high-speed winch and train tracks built beneath the set.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Despite its later cult status, John Carpenter's \"The Thing\" (1982) was initially met with unfavorable critical and audience reactions, partly due to opening on the same day as \"Blade Runner\" and shortly after \"E.T. The Extra-Terrestrial.\"",
+        "search_hint": "To create the effect of the Thing bursting through floorboards, a metal ball was rolled underneath using a high-speed winch and train tracks built beneath the set.",
         "search_queries": [
-          "The Thing 1982 box office failure",
-          "The Thing initial reception",
-          "John Carpenter critical reception"
+          "The Thing 1982 floorboards effect",
+          "Practical effects bursting through floor",
+          "The Thing 1982 production secrets"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Carbol, a thickening agent also found in Twinkies, was used to create the goo and slime for the creature effects in \"The Thing\" (1982).",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Carbol, a thickening agent also found in Twinkies, was used to create the goo and slime for the creature effects in \"The Thing\" (1982).",
+        "search_queries": [
+          "Carbol The Thing effects",
+          "Twinkies ingredient The Thing",
+          "The Thing 1982 goo effects"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The burning effect of the opening titles for \"The Thing\" (1982) was achieved by igniting a plastic garbage bag over a smoke-filled fish tank with an animation cell.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The burning effect of the opening titles for \"The Thing\" (1982) was achieved by igniting a plastic garbage bag over a smoke-filled fish tank with an animation cell.",
+        "search_queries": [
+          "The Thing 1982 opening titles effect",
+          "How The Thing title sequence was made",
+          "John Carpenter The Thing practical effects"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Reverse photography was cleverly used in \"The Thing\" (1982) for tentacle sequences, making it appear as if a tongue was lashing out when it was actually being pulled in.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Reverse photography was cleverly used in \"The Thing\" (1982) for tentacle sequences, making it appear as if a tongue was lashing out when it was actually being pulled in.",
+        "search_queries": [
+          "The Thing 1982 reverse photography",
+          "Practical effects tentacle scenes",
+          "John Carpenter The Thing filming techniques"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The iconic \"spider head\" creature in \"The Thing\" (1982) was a marionette operated by wires through a false ceiling, with its facial expressions radio-controlled.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The iconic \"spider head\" creature in \"The Thing\" (1982) was a marionette operated by wires through a false ceiling, with its facial expressions radio-controlled.",
+        "search_queries": [
+          "The Thing 1982 spider head puppet",
+          "Rob Bottin spider head effects",
+          "How was The Thing spider head made"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Due to the immense workload, legendary effects artist Stan Winston was brought in to create the \"Dog-Thing\" puppet for the kennel scene in \"The Thing\" (1982).",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Due to the immense workload, legendary effects artist Stan Winston was brought in to create the \"Dog-Thing\" puppet for the kennel scene in \"The Thing\" (1982).",
+        "search_queries": [
+          "Stan Winston The Thing Dog-Thing",
+          "Rob Bottin Stan Winston collaboration",
+          "The Thing 1982 kennel scene effects"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Despite its later acclaim as a horror classic, John Carpenter's \"The Thing\" (1982) initially flopped at the box office and received unfavorable critical and audience reactions.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Despite its later acclaim as a horror classic, John Carpenter's \"The Thing\" (1982) initially flopped at the box office and received unfavorable critical and audience reactions.",
+        "search_queries": [
+          "The Thing 1982 initial reception",
+          "Why The Thing flopped",
+          "The Thing 1982 critical backlash"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Early critics of \"The Thing\" (1982) panned its gory effects and bleak tone, with one reviewer controversially labeling director John Carpenter a \"pornographer of violence\" and Roger Ebert famously calling it a \"barf bag movie\".",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Early critics of \"The Thing\" (1982) panned its gory effects and bleak tone, with one reviewer controversially labeling director John Carpenter a \"pornographer of violence\" and Roger Ebert famously calling it a \"barf bag movie\".",
+        "search_queries": [
+          "The Thing 1982 critical backlash",
+          "John Carpenter pornographer of violence",
+          "Roger Ebert The Thing barf bag"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The poor initial box office performance of \"The Thing\" (1982) was partly attributed to its release alongside Steven Spielberg's \"E.T. the Extra-Terrestrial,\" as audiences preferred a family-friendly alien story.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The poor initial box office performance of \"The Thing\" (1982) was partly attributed to its release alongside Steven Spielberg's \"E.T. the Extra-Terrestrial,\" as audiences preferred a family-friendly alien story.",
+        "search_queries": [
+          "The Thing 1982 vs ET",
+          "Why The Thing failed box office",
+          "The Thing 1982 competition"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The CBS television movie \"Dixie: Changing Habits\" was filmed in September 1982, capturing the historic settings of Oak Alley Plantation and the French Quarter.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The CBS television movie \"Dixie: Changing Habits\" was filmed in September 1982, capturing the historic settings of Oak Alley Plantation and the French Quarter.",
+        "search_queries": [
+          "Dixie Changing Habits filming dates",
+          "When was Dixie Changing Habits filmed",
+          "Dixie Changing Habits 1982 production"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -382,8 +730,747 @@
       "card": {
         "scope": "general",
         "factCategory": "location",
-        "shortVersion": "This 1982 film was shot entirely at Oak Alley Plantation and the French Quarter.",
-        "longDescription": "This 1982 film was shot entirely at Oak Alley Plantation and the French Quarter. It was a CBS television production starring Suzanne Pleshette and Cloris Leachman.",
+        "shortVersion": "This film was shot entirely on location in New Orleans.",
+        "longDescription": "The comedy-drama was shot entirely at the historic Oak Alley Plantation and the vibrant French Quarter, bringing authentic New Orleans to the screen.",
+        "sources": [
+          {
+            "url": "https://oakalleyplantation.org/visit/filmed-here/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "\"Dixie: Changing Habits\" features an unusual premise for a comedy-drama, centering on a New Orleans madam sentenced to 90 days of house arrest in a convent.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "\"Dixie: Changing Habits\" features an unusual premise for a comedy-drama, centering on a New Orleans madam sentenced to 90 days of house arrest in a convent.",
+        "search_queries": [
+          "Dixie Changing Habits plot summary",
+          "Dixie Changing Habits premise",
+          "Suzanne Pleshette madam convent movie"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://bushwickdaily.com/community/80-years-on-the-plantation-who-we-really-are-in-films-1940-2020/",
+          "title": "bushwickdaily.com",
+          "domain": "bushwickdaily.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://oakalleyplantation.org/visit/filmed-here/",
+          "title": "oakalleyplantation.org",
+          "domain": "oakalleyplantation.org",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Dixie: Changing Habits",
+            "CBS",
+            "September",
+            "1982",
+            "Suzanne Pleshette",
+            "Cloris Leachman",
+            "Oak Alley Plantation",
+            "French Quarter",
+            "New Orleans"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://oakalleyplantation.org/filmed-here/",
+          "title": "oakalleyplantation.org",
+          "domain": "oakalleyplantation.org",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film, titled \"Dixie: Changing Habits,\" was a CBS television production.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "For CBS television"
+        },
+        {
+          "beat": "It was filmed in September of 1982.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "September of 1982."
+        },
+        {
+          "beat": "The production starred Suzanne Pleshette and Cloris Leachman.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "starring Suzanne Pleshette and Cloris Leachman."
+        },
+        {
+          "beat": "The movie was filmed entirely on location at Oak Alley Plantation and the French Quarter in New Orleans.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "Filmed entirely on location at Oak Alley Plantation and the French Quarter in New Orleans."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (The film was shot entirely on location in New Orleans, specifically at Oak Alley Plantation and the French Quarter, and details about its production (year, stars).)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "location",
+        "shortVersion": "This 1982 TV movie filmed entirely on location at Oak Alley.",
+        "longDescription": "The entire production of this 1982 CBS television movie, starring Suzanne Pleshette and Cloris Leachman, was shot on location at the historic Oak Alley Plantation and the French Quarter in New Orleans.",
+        "sources": [
+          {
+            "url": "https://oakalleyplantation.org/visit/filmed-here/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Oak Alley Plantation, a primary filming location for \"Dixie: Changing Habits,\" is famous for its quarter-mile-long alley of 28 magnificent live oak trees, some over 250 years old.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Oak Alley Plantation, a primary filming location for \"Dixie: Changing Habits,\" is famous for its quarter-mile-long alley of 28 magnificent live oak trees, some over 250 years old.",
+        "search_queries": [
+          "Oak Alley Plantation live oak trees age",
+          "Oak Alley Plantation famous alley",
+          "Dixie Changing Habits filming location details"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://blueskytraveler.com/new-orleans-oak-alley-plantation/",
+          "title": "blueskytraveler.com",
+          "domain": "blueskytraveler.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://oakalleyplantation.org/visit/filmed-here/",
+          "title": "oakalleyplantation.org",
+          "domain": "oakalleyplantation.org",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "1982",
+            "Oak Alley",
+            "CBS",
+            "Suzanne Pleshette",
+            "Cloris Leachman",
+            "Oak Alley Plantation",
+            "French Quarter",
+            "New Orleans",
+            "Dixie: Changing Habits"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://oakalleyplantation.org/filmed-here/",
+          "title": "oakalleyplantation.org",
+          "domain": "oakalleyplantation.org",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The 1982 television movie, titled \"Dixie: Changing Habits,\" was produced for CBS.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "Dixie: Changing Habits September of 1982. For CBS television"
+        },
+        {
+          "beat": "It starred Suzanne Pleshette and Cloris Leachman.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "starring Suzanne Pleshette and Cloris Leachman."
+        },
+        {
+          "beat": "The film was shot entirely on location at Oak Alley Plantation.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "Filmed entirely on location at Oak Alley Plantation"
+        },
+        {
+          "beat": "Additional filming for the movie took place in the French Quarter in New Orleans.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "and the French Quarter in New Orleans."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (The film was shot entirely on location in New Orleans, specifically at Oak Alley Plantation and the French Quarter, and details about its production (year, stars).)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "location",
+        "shortVersion": "Oak Alley Plantation is a popular film set.",
+        "longDescription": "The historic Louisiana plantation has hosted numerous productions, including this film, \"Interview with the Vampire,\" and a segment of \"Days of Our Lives.\"",
+        "sources": [
+          {
+            "url": "https://oakalleyplantation.org/visit/filmed-here/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 2700.0,
+            "endSeconds": 5400.0,
+            "startTimecode": "00:45:00",
+            "endTimecode": "01:30:00"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Beyond \"Dixie: Changing Habits,\" Oak Alley Plantation has been a backdrop for diverse productions, including \"Interview with the Vampire,\" \"Hush, Hush, Sweet Charlotte,\" and an NBC daytime television series.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Beyond \"Dixie: Changing Habits,\" Oak Alley Plantation has been a backdrop for diverse productions, including \"Interview with the Vampire,\" \"Hush, Hush, Sweet Charlotte,\" and an NBC daytime television series.",
+        "search_queries": [
+          "Oak Alley Plantation movies filmed",
+          "Interview with the Vampire filming location",
+          "Hush Hush Sweet Charlotte plantation"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://giggster.com/guide/movie-location/where-was-interview-with-the-vampire-filmed",
+          "title": "giggster.com",
+          "domain": "giggster.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ebsco.com/research-starters/history/hush-hush-sweet-charlotte-film/",
+          "title": "ebsco.com",
+          "domain": "ebsco.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movie-locations.com/movies/i/Interview-With-The-Vampire.php",
+          "title": "movie-locations.com",
+          "domain": "movie-locations.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://oakalleyplantation.org/visit/filmed-here/",
+          "title": "oakalleyplantation.org",
+          "domain": "oakalleyplantation.org",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Oak Alley Plantation",
+            "Louisiana",
+            "Days of Our Lives",
+            "Dixie: Changing Habits",
+            "French Quarter",
+            "New Orleans",
+            "Louis",
+            "1993",
+            "Tom Cruise",
+            "Brad Pitt",
+            "Hush Sweet Charlotte",
+            "Bette Davis",
+            "NBC",
+            "1984"
+          ],
+          "verbatim_misses": [
+            "Interview with the Vampire",
+            "September 1982",
+            "1964"
+          ]
+        },
+        {
+          "url": "https://oakalleyplantation.org/filmed-here/",
+          "title": "oakalleyplantation.org",
+          "domain": "oakalleyplantation.org",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "This film, titled \"Dixie: Changing Habits,\" was filmed entirely on location at Oak Alley Plantation and the French Quarter in New Orleans in September 1982.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "Dixie: Changing Habits September of 1982. For CBS television, starring Suzanne Pleshette and Cloris Leachman. Filmed entirely on location at Oak Alley Plantation and the French Quarter in New Orleans."
+        },
+        {
+          "beat": "Oak Alley Plantation also featured as Louis' homeplace in the 1993 production of \"Interview with a Vampire,\" starring Tom Cruise and Brad Pitt.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "Interview with a Vampire A Warner Brothers/Finewood Studios production, in conjunction with Geffen Pictures, starring Tom Cruise and Brad Pitt. Based on the Anne Rice best seller by the same name. The film featured Oak Alley as Louis’ homeplace. Some graveyard scenes and the loading dock scenes were filmed here as well. October 1993."
+        },
+        {
+          "beat": "A segment of the NBC daytime television series \"Days of our Lives\" filmed exterior shots and a balcony scene at the mansion in 1984.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "Days of our Lives Segment of NBC Daytime Television Series (“Soap Opera”) filmed at Oak Alley in mid 1984 during the World’s Fair in New Orleans. One day, dawn to dark, film session starring Peter Reckell (Bo Brady) and Kristian Alfonso (Hope Welch). Aired on NBC in August of 1984 with numerous flashbacks over the years. Exterior shots and a balcony scene at mansion."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 1,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "relaxed: dropped beats [2] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
+          "verbatim: could not confirm ['Interview with the Vampire', 'September 1982', '1964'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Character actor Kenneth McMillan, known for his roles in \"Dune\" and \"Ragtime,\" appeared in the 1982 TV movie \"Dixie: Changing Habits.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Character actor Kenneth McMillan, known for his roles in \"Dune\" and \"Ragtime,\" appeared in the 1982 TV movie \"Dixie: Changing Habits.\"",
+        "search_queries": [
+          "Kenneth McMillan Dixie Changing Habits",
+          "Dixie Changing Habits cast",
+          "Kenneth McMillan filmography"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Actress Judith Ivey, known for her stage work and later for roles in films like \"Brighton Beach Memoirs,\" played Sister Margaret in the 1982 TV movie \"Dixie: Changing Habits.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Actress Judith Ivey, known for her stage work and later for roles in films like \"Brighton Beach Memoirs,\" played Sister Margaret in the 1982 TV movie \"Dixie: Changing Habits.\"",
+        "search_queries": [
+          "Judith Ivey Dixie Changing Habits",
+          "Judith Ivey Sister Margaret",
+          "Dixie Changing Habits cast"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "location",
+        "shortVersion": "This TV movie filmed entirely on location in Louisiana.",
+        "longDescription": "The 1982 television movie, starring Suzanne Pleshette and Cloris Leachman, was shot entirely on location at Oak Alley Plantation and the French Quarter in New Orleans.",
+        "sources": [
+          {
+            "url": "https://oakalleyplantation.org/visit/filmed-here/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The 1982 television movie \"Dixie: Changing Habits\" uniquely combined elements of comedy, crime, and drama, exploring a madam's adjustment to a convent.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The 1982 television movie \"Dixie: Changing Habits\" uniquely combined elements of comedy, crime, and drama, exploring a madam's adjustment to a convent.",
+        "search_queries": [
+          "Dixie Changing Habits genre",
+          "Dixie Changing Habits comedy crime drama",
+          "1982 TV movie genres"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://oakalleyplantation.org/visit/filmed-here/",
+          "title": "oakalleyplantation.org",
+          "domain": "oakalleyplantation.org",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Dixie: Changing Habits",
+            "1982",
+            "CBS",
+            "Suzanne Pleshette",
+            "Cloris Leachman",
+            "Oak Alley Plantation",
+            "French Quarter",
+            "New Orleans",
+            "Louisiana"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://oakalleyplantation.org/filmed-here/",
+          "title": "oakalleyplantation.org",
+          "domain": "oakalleyplantation.org",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The 1982 television movie \"Dixie: Changing Habits\" was produced for CBS.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "Dixie: Changing Habits September of 1982. For CBS television"
+        },
+        {
+          "beat": "It starred Suzanne Pleshette and Cloris Leachman.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "starring Suzanne Pleshette and Cloris Leachman"
+        },
+        {
+          "beat": "The production filmed entirely on location at Oak Alley Plantation.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "Filmed entirely on location at Oak Alley Plantation"
+        },
+        {
+          "beat": "Scenes were also shot in the French Quarter of New Orleans.",
+          "sourceUrl": "https://oakalleyplantation.org/visit/filmed-here/",
+          "supporting_passage": "and the French Quarter in New Orleans"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (The 1982 TV movie 'Dixie: Changing Habits' was filmed entirely on location at Oak Alley Plantation and the French Quarter in New Orleans.)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "\"Losing Ground\" (1982) is a semi-autobiographical drama, drawing inspiration from the life and experiences of its writer and director, Kathleen Collins.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "\"Losing Ground\" (1982) is a semi-autobiographical drama, drawing inspiration from the life and experiences of its writer and director, Kathleen Collins.",
+        "search_queries": [
+          "Losing Ground semi-autobiographical",
+          "Kathleen Collins Losing Ground inspiration",
+          "Losing Ground 1982 facts"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "location",
+        "shortVersion": "The 1982 TV movie filmed at Oak Alley Plantation.",
+        "longDescription": "The 1982 CBS television movie, starring Suzanne Pleshette and Cloris Leachman, was shot entirely on location at Oak Alley Plantation and the French Quarter in New Orleans.",
         "sources": [
           {
             "url": "https://oakalleyplantation.org/filmed-here/",
@@ -396,15 +1483,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "In the 1982 film \"Poltergeist,\" actress JoBeth Williams discovered that the skeletons she was swimming with during the infamous pool scene were real human skeletons, reportedly used because they were more cost-effective than artificial ones at the time.",
+        "anchor_element": "Veteran actress Geraldine Fitzgerald, an Oscar nominee for \"Wuthering Heights,\" was part of the ensemble cast of the 1982 TV movie \"Dixie: Changing Habits.\"",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "In the 1982 film \"Poltergeist,\" actress JoBeth Williams discovered that the skeletons she was swimming with during the infamous pool scene were real human skeletons, reportedly used because they were more cost-effective than artificial ones at the time.",
+        "search_hint": "Veteran actress Geraldine Fitzgerald, an Oscar nominee for \"Wuthering Heights,\" was part of the ensemble cast of the 1982 TV movie \"Dixie: Changing Habits.\"",
         "search_queries": [
-          "Poltergeist real skeletons",
-          "JoBeth Williams pool scene skeletons",
-          "Poltergeist 1982 production facts"
+          "Geraldine Fitzgerald Dixie Changing Habits",
+          "Dixie Changing Habits cast",
+          "Geraldine Fitzgerald Wuthering Heights"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -412,6 +1499,18 @@
         "runtime_third": 1
       },
       "sources": [
+        {
+          "url": "https://bushwickdaily.com/community/80-years-on-the-plantation-who-we-really-are-in-films-1940-2020/",
+          "title": "bushwickdaily.com",
+          "domain": "bushwickdaily.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
         {
           "url": "https://oakalleyplantation.org/filmed-here/",
           "title": "oakalleyplantation.org",
@@ -422,45 +1521,62 @@
           "resolved": true,
           "body_kind": "html",
           "verbatim_hits": [
-            "1982",
             "Oak Alley Plantation",
-            "French Quarter",
+            "1982",
             "CBS",
             "Suzanne Pleshette",
             "Cloris Leachman",
-            "Dixie: Changing Habits",
-            "New Orleans"
+            "French Quarter",
+            "New Orleans",
+            "Dixie: Changing Habits"
           ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://oakalleyplantation.org/visit/filmed-here/",
+          "title": "oakalleyplantation.org",
+          "domain": "oakalleyplantation.org",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
           "verbatim_misses": []
         }
       ],
       "claim_evidence": [
         {
-          "beat": "The 1982 CBS television production \"Dixie: Changing Habits\" was filmed at Oak Alley Plantation.",
+          "beat": "The 1982 CBS television movie, \"Dixie: Changing Habits,\" was filmed in September.",
           "sourceUrl": "https://oakalleyplantation.org/filmed-here/",
-          "supporting_passage": "Dixie: Changing Habits September of 1982. For CBS television...filmed entirely on location at Oak Alley Plantation"
-        },
-        {
-          "beat": "The production also utilized the French Quarter in New Orleans for its filming locations.",
-          "sourceUrl": "https://oakalleyplantation.org/filmed-here/",
-          "supporting_passage": "filmed entirely on location at Oak Alley Plantation and the French Quarter in New Orleans."
+          "supporting_passage": "Dixie: Changing Habits September of 1982. For CBS television"
         },
         {
           "beat": "The film starred actresses Suzanne Pleshette and Cloris Leachman.",
           "sourceUrl": "https://oakalleyplantation.org/filmed-here/",
-          "supporting_passage": "For CBS television, starring Suzanne Pleshette and Cloris Leachman."
+          "supporting_passage": "starring Suzanne Pleshette and Cloris Leachman"
+        },
+        {
+          "beat": "It was filmed entirely on location at Oak Alley Plantation.",
+          "sourceUrl": "https://oakalleyplantation.org/filmed-here/",
+          "supporting_passage": "Filmed entirely on location at Oak Alley Plantation"
+        },
+        {
+          "beat": "Additional filming for the movie took place in the French Quarter of New Orleans.",
+          "sourceUrl": "https://oakalleyplantation.org/filmed-here/",
+          "supporting_passage": "and the French Quarter in New Orleans"
         }
       ],
       "validation": {
         "passed": false,
         "checks": {
           "contract": true,
-          "source_binding": false,
+          "source_binding": true,
           "spoiler_free": true,
           "maturity": true,
           "propriety": true,
-          "taxonomy": false,
-          "summary_entailment": false,
+          "taxonomy": true,
+          "summary_entailment": true,
           "film_specific": false,
           "claim_entailment": true,
           "verbatim": true,
@@ -474,25 +1590,20 @@
           "scene_grounding": 0,
           "primitive_conformance": 0,
           "viewer_value": 0,
-          "clarity": 0,
+          "clarity": 2,
           "spoiler_safety": 2
         },
         "curiosity": {},
         "rejection_reasons": [
-          "summary_entailment: shortVersion/longDescription claim beyond the beats",
           "film_specific: claims are generic industry practice, not about this film",
-          "claim_entailment: only 2 bound+supported beats remain (need 3)",
           "rubric: factual_accuracy 0/2 (must be >=1)",
           "rubric: scene_grounding 0/2 (must be >=1)",
           "rubric: primitive_conformance 0/2 (must be >=1)"
         ],
         "flags": [
-          "shortVersion 80 chars (target 50-60, cap 80)",
-          "longDescription 163 chars (target ~120, max 160)",
-          "taxonomy: category mismatch",
-          "rubric low (relaxed): ['viewer_value', 'clarity']"
+          "rubric low (relaxed): ['viewer_value']"
         ],
-        "judge_notes": "The candidate card is for the film \"The Plantation (1982)\". However, all the beats and the supporting source material refer to the 1982 CBS television production \"Dixie: Changing Habits\". This is a fundamental misattribution, making the card factually inaccurate for the specified film. While the individual beats are entailed by the source for \"Dixie: Changing Habits\", the card's summary (shortVersion and longDescription) incorrectly applies these facts to \"The Plantation\". This leads to low scores across most rubric dimensions, as the card is about the wrong film."
+        "judge_notes": "The card is about the film 'Dixie: Changing Habits (1982)', not 'The Plantation (1982)'. This fundamental error makes the card irrelevant and factually incorrect in the context of the film it is assigned to, leading to low scores for factual accuracy, scene grounding, primitive conformance, and viewer value, and a 'false' for film_specific."
       },
       "humanReview": {
         "state": "pending",
@@ -513,15 +1624,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The 1982 CBS television movie \"Dixie: Changing Habits\" starred acclaimed actresses Suzanne Pleshette and Cloris Leachman.",
+        "anchor_element": "\"Losing Ground\" (1982) holds historical significance as the first feature-length drama directed by an African-American woman since the 1920s.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "The 1982 CBS television movie \"Dixie: Changing Habits\" starred acclaimed actresses Suzanne Pleshette and Cloris Leachman.",
+        "search_hint": "\"Losing Ground\" (1982) holds historical significance as the first feature-length drama directed by an African-American woman since the 1920s.",
         "search_queries": [
-          "Dixie: Changing Habits cast",
-          "Suzanne Pleshette Cloris Leachman 1982 movie",
-          "Dixie: Changing Habits TV movie"
+          "Losing Ground first African American woman director",
+          "Kathleen Collins historical film",
+          "Losing Ground 1982 significance"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -550,15 +1661,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The film's primary location, Oak Alley Plantation, is famous for its quarter-mile alley of 28 evenly spaced oak trees, believed to be over 300 years old.",
+        "anchor_element": "Despite its groundbreaking nature, \"Losing Ground\" (1982) did not receive a theatrical release during director Kathleen Collins' lifetime, only playing on the film festival circuit.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "The film's primary location, Oak Alley Plantation, is famous for its quarter-mile alley of 28 evenly spaced oak trees, believed to be over 300 years old.",
+        "search_hint": "Despite its groundbreaking nature, \"Losing Ground\" (1982) did not receive a theatrical release during director Kathleen Collins' lifetime, only playing on the film festival circuit.",
         "search_queries": [
-          "Oak Alley Plantation 300 year old oaks",
-          "Dixie Changing Habits Oak Alley trees",
-          "Oak Alley Plantation famous features"
+          "Losing Ground theatrical release history",
+          "Kathleen Collins film festival",
+          "Losing Ground 1982 overlooked"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -587,15 +1698,237 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Star Suzanne Pleshette was widely recognized for her Emmy-nominated role as Emily Hartley in the popular sitcom \"The Bob Newhart Show\" (1972–1978).",
+        "anchor_element": "After director Kathleen Collins' untimely death, her daughter, Nina Collins, rediscovered and restored \"Losing Ground\" (1982) in 2015, leading to its critical re-evaluation.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Star Suzanne Pleshette was widely recognized for her Emmy-nominated role as Emily Hartley in the popular sitcom \"The Bob Newhart Show\" (1972–1978).",
+        "search_hint": "After director Kathleen Collins' untimely death, her daughter, Nina Collins, rediscovered and restored \"Losing Ground\" (1982) in 2015, leading to its critical re-evaluation.",
         "search_queries": [
-          "Suzanne Pleshette Emily Hartley Bob Newhart Show",
-          "Suzanne Pleshette Emmy nominations",
-          "Dixie Changing Habits cast trivia"
+          "Losing Ground restored Nina Collins",
+          "Kathleen Collins film rediscovery",
+          "Losing Ground 2015 re-release"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Upon its 2015 re-release, \"Losing Ground\" (1982) was hailed by critics as \"one of the most important and original American films of the second half of the 20th century.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Upon its 2015 re-release, \"Losing Ground\" (1982) was hailed by critics as \"one of the most important and original American films of the second half of the 20th century.\"",
+        "search_queries": [
+          "Losing Ground critical acclaim 2015",
+          "Losing Ground important American film",
+          "Kathleen Collins film legacy"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "In 2020, \"Losing Ground\" (1982) was selected for preservation in the National Film Registry by the Library of Congress, recognizing its cultural, historical, and aesthetic significance.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "In 2020, \"Losing Ground\" (1982) was selected for preservation in the National Film Registry by the Library of Congress, recognizing its cultural, historical, and aesthetic significance.",
+        "search_queries": [
+          "Losing Ground National Film Registry",
+          "Kathleen Collins Library of Congress",
+          "Losing Ground 1982 preservation"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "\"Losing Ground\" (1982) explores the tension between intellectual energy and creative intuition through its main characters, a philosophy professor and a painter.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "\"Losing Ground\" (1982) explores the tension between intellectual energy and creative intuition through its main characters, a philosophy professor and a painter.",
+        "search_queries": [
+          "Losing Ground themes",
+          "Kathleen Collins film philosophy art",
+          "Losing Ground 1982 meaning"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "A central theme in \"Losing Ground\" (1982) revolves around the concept of \"ecstasy,\" which protagonist Sara researches, stemming from the Greek for \"standing outside oneself.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "A central theme in \"Losing Ground\" (1982) revolves around the concept of \"ecstasy,\" which protagonist Sara researches, stemming from the Greek for \"standing outside oneself.\"",
+        "search_queries": [
+          "Losing Ground ecstasy meaning",
+          "Sara Losing Ground philosophy",
+          "Kathleen Collins film themes"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "\"Losing Ground\" (1982) was filmed on location in New York City and various towns in Rockland County, New York, including Nyack, Piermont, and Haverstraw.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "\"Losing Ground\" (1982) was filmed on location in New York City and various towns in Rockland County, New York, including Nyack, Piermont, and Haverstraw.",
+        "search_queries": [
+          "Losing Ground filming locations",
+          "Kathleen Collins New York film",
+          "Losing Ground 1982 production"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The leading role of Sara in \"Losing Ground\" (1982) was played by noted stage actress Seret Scott, in a character described by director Kathleen Collins as having \"Creole features\" and \"intense energy.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The leading role of Sara in \"Losing Ground\" (1982) was played by noted stage actress Seret Scott, in a character described by director Kathleen Collins as having \"Creole features\" and \"intense energy.\"",
+        "search_queries": [
+          "Seret Scott Losing Ground",
+          "Kathleen Collins Sara character description",
+          "Losing Ground 1982 cast"
         ],
         "end_fraction": 0.0,
         "scope": "general",

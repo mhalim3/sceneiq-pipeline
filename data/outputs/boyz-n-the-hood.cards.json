@@ -1,445 +1,54 @@
 {
   "film": {
-    "title": "Boyz N the Hood",
+    "title": "Boyz n the Hood",
     "year": 1991,
     "runtime_minutes": 112,
-    "duration_sec": 6733.058680561664,
-    "content_rating": "R",
     "input_prompt": "Boyz N the Hood",
-    "anchor_source": "tubi_moments"
+    "anchor_source": "title_only",
+    "duration_sec": 6733.058680561664,
+    "content_rating": "R"
   },
-  "sceneFacts": [
-    {
-      "scope": "scene",
-      "factCategory": "location",
-      "shortVersion": "Tre's house is a real home on Cimarron Street, built in 1923.",
-      "longDescription": "Tre's house is a real home on Cimarron Street, built in 1923. It has also appeared in other films like 'Don't Be a Menace to South Central While Drinking Your Juice in the Hood'.",
-      "sources": [
-        {
-          "url": "https://giggster.com/guide/movie-location/where-was-boyz-n-the-hood-filmed",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 90] 00:28:35–00:28:54\nsummary: A man gently encourages a young boy named Tre to come along, showing a caring and supportive interaction outside a house with a vintage car, conveying a mood of gentle reassurance mixed with the boy's reluctance.\ncast on screen: Laurence Fishburne",
-        "anchorElement": "The iconic houses of Tre, Ricky, and Doughboy in \"Boyz N the Hood\" were actual residences on Cimarron Street, built in 1923, and have since appeared in other films like \"Don't Be a Menace to South Central While Drinking Your Juice in the Hood\".",
-        "approxTimecode": "00:28:35",
-        "runtimeFraction": 0.255,
-        "runtimeThird": 1,
-        "runtimeQuartile": 2
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 1715.5,
-          "endSeconds": 1794.4,
-          "startTimecode": "00:28:35",
-          "endTimecode": "00:29:54"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "location",
-      "shortVersion": "Filming in South Central LA was a first for Hollywood.",
-      "longDescription": "Filming in South Central LA was a first for Hollywood. Director John Singleton insisted on telling his own story from the neighborhood.",
-      "sources": [
-        {
-          "url": "https://www.itsnicethat.com/articles/the-view-from-los-angeles-boyz-n-the-hood-graphic-design-film-100724",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://screenrant.com/behind-scenes-facts-about-making-boyz-n-the-hood/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://web.library.yale.edu/film/notes/fn00028",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 196] 01:05:15–01:05:37\nsummary: The clip shows a group of African American men discussing racial stereotypes and social issues related to drug trafficking, set in an outdoor urban neighborhood environment with a serious and contemplative mood.",
-        "anchorElement": "outdoor urban neighborhood environment",
-        "approxTimecode": "01:05:15",
-        "runtimeFraction": 0.582,
-        "runtimeThird": 2,
-        "runtimeQuartile": 3
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 3915.7,
-          "endSeconds": 3997.4,
-          "startTimecode": "01:05:15",
-          "endTimecode": "01:06:37"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Ice Cube's role as Doughboy was written just for him.",
-      "longDescription": "Ice Cube's role as Doughboy was written just for him. He channeled personal grief for emotional scenes, as this was his acting debut.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/behind-scenes-facts-about-making-boyz-n-the-hood/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.revolt.tv/article/how-boyz-n-the-hood-was-made-and-why-it-still-matters",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://richardluck.substack.com/p/straight-outta-compton-the-making",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 262] 01:29:22–01:30:19\nsummary: The clip shows a tense and sorrowful moment where a group of men are attending to a bloodied and possibly deceased individual in an urban alley, with a car parked nearby and a somber, anxious atmosphere.\ncast on screen: Cuba Gooding Jr., Morris Chestnut, Ice Cube",
-        "anchorElement": "Ice Cube",
-        "approxTimecode": "01:29:22",
-        "runtimeFraction": 0.796,
-        "runtimeThird": 3,
-        "runtimeQuartile": 4
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 5362.4,
-          "endSeconds": 5479.6,
-          "startTimecode": "01:29:22",
-          "endTimecode": "01:31:19"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "Doughboy's crew was based on a real L.A. street gang.",
-      "longDescription": "Doughboy's crew was based on a real L.A. street gang. The rival Crenshaw Mafia Bloods reportedly took issue with their depiction.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/behind-scenes-facts-about-making-boyz-n-the-hood/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 262] 01:29:22–01:30:19\nsummary: The clip shows a tense and sorrowful moment where a group of men are attending to a bloodied and possibly deceased individual in an urban alley, with a car parked nearby and a somber, anxious atmosphere.\ncast on screen: Cuba Gooding Jr., Morris Chestnut, Ice Cube",
-        "anchorElement": "A Bloods gang leader reportedly met with \"Boyz N the Hood\" producers to discuss a scene where Ice Cube's character was to shoot Bloods members, as it was planned near known gang territory.",
-        "approxTimecode": "01:29:22",
-        "runtimeFraction": 0.796,
-        "runtimeThird": 3,
-        "runtimeQuartile": 4
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 5362.4,
-          "endSeconds": 5479.6,
-          "startTimecode": "01:29:22",
-          "endTimecode": "01:31:19"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Furious and Tre had a surprisingly small age gap.",
-      "longDescription": "Furious and Tre had a surprisingly small age gap. Laurence Fishburne, who played Furious, was only about seven years older than Cuba Gooding Jr.",
-      "sources": [
-        {
-          "url": "https://www.watchmojo.com/articles/top-20-on-screen-parents-kids-with-surprisingly-small-age-gaps",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 270] 01:32:34–01:32:54\nsummary: The clip shows a tense and emotional scene where a young man with a bloodstained shirt is confronted by others about a shooting incident involving someone named Rick, set in a neighborhood environment with distressed individuals reacting to the violence.\ncast on screen: Laurence Fishburne, Cuba Gooding Jr.",
-        "anchorElement": "There were surprisingly small age gaps between actors playing family members in \"Boyz N the Hood\"; Laurence Fishburne (father) was only seven years older than Cuba Gooding Jr. (son), and Tyra Ferrell (mother) was only seven years older than Morris Chestnut and Ice Cube (her sons).",
-        "approxTimecode": "01:32:34",
-        "runtimeFraction": 0.825,
-        "runtimeThird": 3,
-        "runtimeQuartile": 4
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 5555.0,
-          "endSeconds": 5634.2,
-          "startTimecode": "01:32:35",
-          "endTimecode": "01:33:54"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "The director kept gunshots a secret for realistic reactions.",
-      "longDescription": "The director kept gunshots a secret for realistic reactions. One actor nearly got run over during a take.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/behind-scenes-facts-about-making-boyz-n-the-hood/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 295] 01:40:19–01:40:33\nsummary: The clip shows a tense and violent nighttime confrontation involving aggressive dialogue, a man firing a gun, and characters urgently trying to escape in a car, creating a mood of fear and conflict.",
-        "anchorElement": "To achieve more realistic reactions from the cast during intense scenes, director John Singleton intentionally kept the timing of gunshots a secret from the actors in \"Boyz N the Hood\".",
-        "approxTimecode": "01:40:19",
-        "runtimeFraction": 0.894,
-        "runtimeThird": 3,
-        "runtimeQuartile": 4
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 6019.1,
-          "endSeconds": 6093.2,
-          "startTimecode": "01:40:19",
-          "endTimecode": "01:41:33"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "The actor playing Chris was paralyzed in real life.",
-      "longDescription": "The actor playing Chris was paralyzed in real life. Redge Green's paralysis was due to a gunshot he experienced years before the film was released.",
-      "sources": [
-        {
-          "url": "https://movieweb.com/10-things-you-may-not-know-about-boyz-n-the-hood/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 1715.5,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:28:35"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "location",
-      "shortVersion": "That dead body scene? It was filmed near the Rodney King beating site.",
-      "longDescription": "That dead body scene? It was filmed near the Rodney King beating site. The location was just one mile from Florence and Normandie, where the beating occurred a year after the film's release.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/behind-scenes-facts-about-making-boyz-n-the-hood/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1794.4,
-          "endSeconds": 3915.7,
-          "startTimecode": "00:29:54",
-          "endTimecode": "01:05:15"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "John Singleton was the youngest and first Black Best Director Oscar nominee.",
-      "longDescription": "John Singleton was the youngest and first Black Best Director Oscar nominee. He was 24 years old at the time, a record still unbroken today.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/behind-scenes-facts-about-making-boyz-n-the-hood/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://web.library.yale.edu/film/notes/fn00028",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.nyfa.edu/student-resources/black-filmmakers-nominated-best-director/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3997.4,
-          "endSeconds": 5362.4,
-          "startTimecode": "01:06:37",
-          "endTimecode": "01:29:22"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Laurence Fishburne got the script from Singleton on Pee-Wee's Playhouse.",
-      "longDescription": "Laurence Fishburne got the script from Singleton on Pee-Wee's Playhouse. Singleton was working as a security guard when he gave Fishburne the script for his opinion.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/behind-scenes-facts-about-making-boyz-n-the-hood/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5479.6,
-          "endSeconds": 5555.0,
-          "startTimecode": "01:31:19",
-          "endTimecode": "01:32:35"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Ice Cube bombed his first audition for Doughboy.",
-      "longDescription": "Ice Cube bombed his first audition for Doughboy. He hadn't read the script, but director John Singleton gave him a second chance.",
-      "sources": [
-        {
-          "url": "https://americansongwriter.com/on-this-day-in-1991-rapper-ice-cube-made-his-acting-debut-in-a-role-written-specifically-for-him/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5634.2,
-          "endSeconds": 6019.1,
-          "startTimecode": "01:33:54",
-          "endTimecode": "01:40:19"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Hear those choppers? Singleton implied them to save money.",
-      "longDescription": "Hear those choppers? Singleton implied them to save money. He pitched the idea to the studio chief as a way to keep the budget modest.",
-      "sources": [
-        {
-          "url": "https://richardluck.substack.com/p/straight-outta-compton-the-making",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.moviefone.com/news/boyz-n-the-hood-facts/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://web.library.yale.edu/film/notes/fn00028",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 6093.2,
-          "endSeconds": 6733.1,
-          "startTimecode": "01:41:33",
-          "endTimecode": "01:52:13"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "John Singleton wrote this film's script as his USC senior thesis.",
-      "longDescription": "John Singleton wrote this film's script as his USC senior thesis. Columbia Pictures quickly bought it, and he insisted on directing.",
-      "sources": [
-        {
-          "url": "https://cinema.usc.edu/news/article.cfm?id=64087",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.theringer.com/2019/05/01/movies/john-singleton-boyz-n-the-hood-oral-history-ice-cube",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://enewspaper.latimes.com/infinity/article_share.aspx?guid=82a25676-f390-4852-91b8-4d74e59e69b6",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 6733.1,
-          "startTimecode": "00:00:00",
-          "endTimecode": "01:52:13"
-        }
-      ],
-      "wouldPassStrict": true
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 13,
-    "scene_cards": 6,
-    "general_cards": 7,
+    "approved_cards": 0,
+    "scene_cards": 0,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
-      "2": 1,
-      "3": 1,
-      "4": 4
+      "2": 0,
+      "3": 0,
+      "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "filming",
-      "location"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": -0.0,
+      "uncovered": [
+        [
+          0.0,
+          6733.1
+        ]
+      ]
     },
     "rules": {
-      "fact_target_12_15": true,
-      "min_six_cards": true,
-      "card_in_each_quartile": false,
-      "max_40pct_single_quartile": false,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "fact_target_12_15": false,
+      "min_six_cards": false,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 40,
-    "cards_emitted": 13,
-    "would_pass_strict": 5,
-    "cards_rejected": 27,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 646.6,
+    "elapsed_seconds": 59.7,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

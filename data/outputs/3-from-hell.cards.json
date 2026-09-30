@@ -6,314 +6,12 @@
     "input_prompt": "3 From Hell (2019)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Richard Brake's Foxy was a last-minute addition to the Firefly family.",
-      "longDescription": "Richard Brake's Foxy was a last-minute addition to the Firefly family. Director Rob Zombie created the character after Sid Haig fell ill before filming.",
-      "sources": [
-        {
-          "url": "https://www.revolvermag.com/music/rob-zombie-reveals-how-3-hell-nearly-went-hell/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 575.0,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:09:35"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "location",
-      "shortVersion": "The prison scenes were filmed at the Sybil Brand Institute.",
-      "longDescription": "The prison scenes were filmed at the Sybil Brand Institute. This former women's prison in Los Angeles is now used exclusively for filming.",
-      "sources": [
-        {
-          "url": "https://prisonphotography.org/tag/sybil-brand/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 575.0,
-          "endSeconds": 1150.0,
-          "startTimecode": "00:09:35",
-          "endTimecode": "00:19:10"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Danny Trejo returns as Rondo Chavez from The Devil's Rejects.",
-      "longDescription": "Danny Trejo returns as Rondo Chavez from The Devil's Rejects. Rob Zombie shared an image of Trejo as Rondo on his Facebook account.",
-      "sources": [
-        {
-          "url": "https://www.joblo.com/danny-trejo-returns-in-latest-image-from-rob-zombies-three-from-hell/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1150.0,
-          "endSeconds": 1725.0,
-          "startTimecode": "00:19:10",
-          "endTimecode": "00:28:45"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Sheri Moon Zombie's Baby Firefly is brilliantly unhinged.",
-      "longDescription": "Sheri Moon Zombie's Baby Firefly is brilliantly unhinged. Director Rob Zombie envisioned her character as having \"cracked\" after a decade in prison.",
-      "sources": [
-        {
-          "url": "https://screenanarchy.com/2019/09/3-from-hell-interview-rob-zombie-on-the-manson-family-spaghetti-westerns-lucha-libre-masks-and-more.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://pophorror.com/interview-with-3-from-hells-richard-brake/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1725.0,
-          "endSeconds": 2300.0,
-          "startTimecode": "00:28:45",
-          "endTimecode": "00:38:20"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "3 From Hell completes Rob Zombie's Firefly family trilogy.",
-      "longDescription": "3 From Hell completes Rob Zombie's Firefly family trilogy. It was released 14 years after the previous film, The Devil's Rejects.",
-      "sources": [
-        {
-          "url": "https://www.revolvermag.com/music/rob-zombie-reveals-how-3-hell-nearly-went-hell/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://rue-morgue.com/interview-rob-zombie-and-bill-moseley-on-3-from-hell/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2300.0,
-          "endSeconds": 2875.0,
-          "startTimecode": "00:38:20",
-          "endTimecode": "00:47:55"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Breaking Bad's Steven Gomez is a knife-thrower in 3 From Hell.",
-      "longDescription": "Breaking Bad's Steven Gomez is a knife-thrower in 3 From Hell. It's Steven Michael Quezada's first time working with director Rob Zombie.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/3-from-hell-movie-every-actor-cameo/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.joblo.com/kevin-jackson-and-steven-michael-quezada-are-also-in-3-from-hell-187/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2875.0,
-          "endSeconds": 3450.0,
-          "startTimecode": "00:47:55",
-          "endTimecode": "00:57:30"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "3 From Hell earned $1.92 million, extending its limited theatrical run.",
-      "longDescription": "3 From Hell earned $1.92 million, extending its limited theatrical run. It performed in the top five at the box office for each night it played.",
-      "sources": [
-        {
-          "url": "https://www.kerrang.com/rob-zombies-3-from-hell-made-1-92-million-in-theaters-will-return-for-one-more-night",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3450.0,
-          "endSeconds": 4025.0,
-          "startTimecode": "00:57:30",
-          "endTimecode": "01:07:05"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "3 From Hell had a budget of $3 million, less than half its predecessors.",
-      "longDescription": "3 From Hell had a budget of $3 million, less than half its predecessors. This limited budget impacted the film's resources and visual scope.",
-      "sources": [
-        {
-          "url": "https://horrornewsnetwork.net/3-from-hell-the-horror-news-network-review/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4025.0,
-          "endSeconds": 4600.0,
-          "startTimecode": "01:07:05",
-          "endTimecode": "01:16:40"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "music",
-      "shortVersion": "The soundtrack features classic rock and an original score.",
-      "longDescription": "The soundtrack features classic rock and an original score. It was released as a double LP vinyl set with an exclusive essay by Rob Zombie.",
-      "sources": [
-        {
-          "url": "https://www.ruemorguerecords.com/product/3-from-hell-soundtrack-2lp-black-satans-red-black-smoke-coloured-vinyl/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4600.0,
-          "endSeconds": 5175.0,
-          "startTimecode": "01:16:40",
-          "endTimecode": "01:26:15"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "historical",
-      "shortVersion": "Rob Zombie based the Firefly family's fan base on Charles Manson.",
-      "longDescription": "Rob Zombie based the Firefly family's fan base on Charles Manson. Manson was on the cover of Rolling Stone, becoming a superstar.",
-      "sources": [
-        {
-          "url": "https://www.revolvermag.com/music/rob-zombie-reveals-how-3-hell-nearly-went-hell/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://screenanarchy.com/2019/09/3-from-hell-interview-rob-zombie-on-the-manson-family-spaghetti-westerns-lucha-libre-masks-and-more.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5175.0,
-          "endSeconds": 5750.0,
-          "startTimecode": "01:26:15",
-          "endTimecode": "01:35:50"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Dee Wallace's character Greta is a 'way out there' prison guard.",
-      "longDescription": "Dee Wallace's character Greta is a 'way out there' prison guard. Her co-stars didn't even recognize her on set because of her character's look.",
-      "sources": [
-        {
-          "url": "https://www.joblo.com/sheri-moon-zombie-and-dee-wallace-pictured-on-the-set-of-3-from-hell/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.joblo.com/dee-wallace-says-her-3-from-hell-character-is-way-out-there/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5750.0,
-          "endSeconds": 6325.0,
-          "startTimecode": "01:35:50",
-          "endTimecode": "01:45:25"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "music",
-      "shortVersion": "In-A-Gadda-Da-Vida is 17 minutes long and has a Bill Moseley connection.",
-      "longDescription": "In-A-Gadda-Da-Vida is 17 minutes long and has a Bill Moseley connection. The song is featured on the soundtrack and was referenced by Moseley's character Chop Top in another film.",
-      "sources": [
-        {
-          "url": "https://www.joblo.com/score-and-soundtrack-for-rob-zombies-3-from-hell-coming-to-vinyl/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 6325.0,
-          "endSeconds": 6900.0,
-          "startTimecode": "01:45:25",
-          "endTimecode": "01:55:00"
-        }
-      ],
-      "wouldPassStrict": false
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
-    "sceneiq_enabled": true,
-    "approved_cards": 12,
+    "sceneiq_enabled": false,
+    "approved_cards": 0,
     "scene_cards": 0,
-    "general_cards": 12,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -321,35 +19,34 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "filming",
-      "historical",
-      "location",
-      "music"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          6900.0
+        ]
+      ]
     },
     "rules": {
-      "fact_target_12_15": true,
-      "min_six_cards": true,
+      "fact_target_12_15": false,
+      "min_six_cards": false,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 37,
-    "cards_emitted": 12,
-    "would_pass_strict": 5,
-    "cards_rejected": 25,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 613.3,
+    "elapsed_seconds": 9.4,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

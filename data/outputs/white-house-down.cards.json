@@ -6,415 +6,12 @@
     "input_prompt": "White House Down (2013)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [
-    {
-      "scope": "general",
-      "factCategory": "costume/prop",
-      "shortVersion": "The Presidential Seal in the film is a manipulated version due to copyright.",
-      "longDescription": "The Presidential Seal in the film is a manipulated version due to copyright. Filmmakers had to alter it slightly to make it legal for use.",
-      "sources": [
-        {
-          "url": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 561.4,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:09:21"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "costume/prop",
-      "shortVersion": "The Beast limo was designed from Cadillac Escalade headlights.",
-      "longDescription": "The Beast limo was designed from Cadillac Escalade headlights. The production team had no official data on the real presidential vehicle.",
-      "sources": [
-        {
-          "url": "https://www.latimes.com/business/autos/la-fi-hy-autos-the-beast-white-house-down-20130627-story.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 561.4,
-          "endSeconds": 1122.9,
-          "startTimecode": "00:09:21",
-          "endTimecode": "00:18:42"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Channing Tatum did most of his stunts, but was talked out of a 25-foot fall.",
-      "longDescription": "Channing Tatum did most of his stunts, but was talked out of a 25-foot fall. Filmmakers cited too many elements like falling glass for the dangerous stunt.",
-      "sources": [
-        {
-          "url": "https://collider.com/channing-tatum-white-house-down-interview/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.gamesradar.com/channing-tatum-not-being-able-to-do-the-biggest-stunts-in-white-house-down/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1122.9,
-          "endSeconds": 1684.3,
-          "startTimecode": "00:18:42",
-          "endTimecode": "00:28:04"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "set_design",
-      "shortVersion": "The White House was a 65% scale replica built on Montreal soundstages.",
-      "longDescription": "The White House was a 65% scale replica built on Montreal soundstages. The production even constructed two Oval Office sets, one for stunts and one for dialogue.",
-      "sources": [
-        {
-          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://collider.com/white-house-down-set-visit/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1684.3,
-          "endSeconds": 2245.7,
-          "startTimecode": "00:28:04",
-          "endTimecode": "00:37:25"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "This film earned more than its rival, but cost twice as much to make.",
-      "longDescription": "This film earned more than its rival, but cost twice as much to make. Its competitor, \"Olympus Has Fallen,\" was the bigger hit due to its lower budget.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/white-house-down-olympus-has-fallen-franchise-comparison-explainer/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2245.7,
-          "endSeconds": 2807.1,
-          "startTimecode": "00:37:25",
-          "endTimecode": "00:46:47"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Director Roland Emmerich was surprised to helm this film.",
-      "longDescription": "Director Roland Emmerich was surprised to helm this film. He had been prepping his sci-fi project, Singularity, when Sony offered him White House Down.",
-      "sources": [
-        {
-          "url": "https://collider.com/white-house-down-set-visit/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2807.1,
-          "endSeconds": 3368.6,
-          "startTimecode": "00:46:47",
-          "endTimecode": "00:56:08"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "set_design",
-      "shortVersion": "The production designer built 45 sets in just 2.5 months.",
-      "longDescription": "The production designer built 45 sets in just 2.5 months. This massive undertaking included the White House, Pentagon, and Capitol.",
-      "sources": [
-        {
-          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3368.6,
-          "endSeconds": 3930.0,
-          "startTimecode": "00:56:08",
-          "endTimecode": "01:05:30"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "John Cale's Die Hard homage was intentional.",
-      "longDescription": "John Cale's Die Hard homage was intentional. Channing Tatum said his character's name and outfit were a direct nod to John McClane.",
-      "sources": [
-        {
-          "url": "https://collider.com/channing-tatum-white-house-down-interview/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://collider.com/white-house-down-set-visit/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://spoilertown.com/white-house-down-2013/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3930.0,
-          "endSeconds": 4491.4,
-          "startTimecode": "01:05:30",
-          "endTimecode": "01:14:51"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Roland Emmerich destroyed the White House for the third time in this film.",
-      "longDescription": "Roland Emmerich destroyed the White House for the third time in this film. He first blew up the iconic building in 1996's Independence Day.",
-      "sources": [
-        {
-          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.female.com.au/channing-tatum-and-jamie-foxx-white-house-down.htm",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://tedium.co/2016/06/23/white-house-independence-day-explosion-scene/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4491.4,
-          "endSeconds": 5052.9,
-          "startTimecode": "01:14:51",
-          "endTimecode": "01:24:12"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "set_design",
-      "shortVersion": "That presidential helicopter? It was a custom-built replica.",
-      "longDescription": "That presidential helicopter? It was a custom-built replica. The production team had to build it because the government couldn't provide the real one.",
-      "sources": [
-        {
-          "url": "https://collider.com/white-house-down-set-visit/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5052.9,
-          "endSeconds": 5614.3,
-          "startTimecode": "01:24:12",
-          "endTimecode": "01:33:34"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Director Roland Emmerich found this film \"perfect\" for him.",
-      "longDescription": "Director Roland Emmerich found this film \"perfect\" for him. He appreciated its blend of action with fun and enjoyable elements.",
-      "sources": [
-        {
-          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.female.com.au/channing-tatum-and-jamie-foxx-white-house-down.htm",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://collider.com/white-house-down-set-visit/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5614.3,
-          "endSeconds": 6175.7,
-          "startTimecode": "01:33:34",
-          "endTimecode": "01:42:55"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Consultants helped ensure the film's secret tech felt real.",
-      "longDescription": "Consultants helped ensure the film's secret tech felt real. They advised on secret government structures and technologies to avoid jeopardizing national security.",
-      "sources": [
-        {
-          "url": "https://collider.com/white-house-down-set-visit/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.discovermagazine.com/a-secret-service-insiders-take-on-white-house-down-7951",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 6175.7,
-          "endSeconds": 6737.1,
-          "startTimecode": "01:42:55",
-          "endTimecode": "01:52:17"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "This blockbuster went from script to screen in just 14 months.",
-      "longDescription": "This blockbuster went from script to screen in just 14 months. The production was rushed to secure Channing Tatum as the lead.",
-      "sources": [
-        {
-          "url": "https://collider.com/white-house-down-set-visit/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 6737.1,
-          "endSeconds": 7298.6,
-          "startTimecode": "01:52:17",
-          "endTimecode": "02:01:38"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "This PG-13 film was designed as a fun, buddy-cop action-comedy.",
-      "longDescription": "This PG-13 film was designed as a fun, buddy-cop action-comedy. Director Roland Emmerich ensured it had 'barely any blood' despite 'insane violence'.",
-      "sources": [
-        {
-          "url": "https://collider.com/white-house-down-set-visit/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://editorial.rottentomatoes.com/article/parental-guidance-white-house-down-and-a-band-called-death/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://screencrush.com/white-house-down-olympus-has-fallen/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 7298.6,
-          "endSeconds": 7860.0,
-          "startTimecode": "02:01:38",
-          "endTimecode": "02:11:00"
-        }
-      ],
-      "wouldPassStrict": true
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
-    "sceneiq_enabled": true,
-    "approved_cards": 14,
+    "sceneiq_enabled": false,
+    "approved_cards": 0,
     "scene_cards": 0,
-    "general_cards": 14,
+    "general_cards": 0,
     "density_target": 14,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -422,34 +19,34 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "costume/prop",
-      "filming",
-      "set_design"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          7860.0
+        ]
+      ]
     },
     "rules": {
-      "fact_target_12_15": true,
-      "min_six_cards": true,
+      "fact_target_12_15": false,
+      "min_six_cards": false,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 24,
-    "cards_emitted": 14,
-    "would_pass_strict": 11,
-    "cards_rejected": 10,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 360.0,
+    "elapsed_seconds": 9.8,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

@@ -3,415 +3,52 @@
     "title": "Into the Blue",
     "year": 2005,
     "runtime_minutes": 110,
-    "duration_sec": 6618.6954166666665,
-    "content_rating": "PG_13",
     "input_prompt": "Into the Blue",
-    "anchor_source": "tubi_moments"
+    "anchor_source": "title_only",
+    "duration_sec": 6618.6954166666665,
+    "content_rating": "PG_13"
   },
-  "sceneFacts": [
-    {
-      "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "That shark is real! The director insisted on using wild sharks.",
-      "longDescription": "That shark is real! The director insisted on using wild sharks. Jessica Alba even had to push them away when they got too close.",
-      "sources": [
-        {
-          "url": "https://stuartcove.com/films/into-the-blue-films-almost-exclusively-with-stuart-coves/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.cbsnews.com/news/jessica-albas-into-the-blue/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "http://www.popentertainment.com/alba.htm",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 7] 00:02:19–00:02:26\nsummary: The video clip shows an underwater scene with a shark swimming near a sunken ship, creating a mysterious and suspenseful mood in a deep ocean environment.",
-        "anchorElement": "The extensive use of live sharks was facilitated by the Bahamas' established shark tourism industry, where the animals are accustomed to being hand-fed.",
-        "approxTimecode": "00:02:19",
-        "runtimeFraction": 0.021,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 139.6,
-          "endSeconds": 206.4,
-          "startTimecode": "00:02:19",
-          "endTimecode": "00:03:26"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "The actors braved chilly winter waters in their summer swimwear.",
-      "longDescription": "The actors braved chilly winter waters in their summer swimwear. Jessica Alba had expected to wear wetsuits, but the film's summer setting required minimal attire.",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/news/jessica-albas-into-the-blue/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "http://www.popentertainment.com/alba.htm",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "http://www.blackfilm.com/20050930/features/jessicaalba.shtml",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.ign.com/articles/2005/09/29/interview-jessica-alba",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 47] 00:16:11–00:16:39\nsummary: A man snorkels underwater in a clear ocean environment, closely observing marine life and the sandy seabed, creating a calm and exploratory mood.",
-        "anchorElement": "Despite the tropical setting, filming in the Bahamas during winter meant water temperatures were a chilly 70-72°F, leading actors in minimal swimwear to endure cold.",
-        "approxTimecode": "00:16:11",
-        "runtimeFraction": 0.147,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 971.9,
-          "endSeconds": 1059.0,
-          "startTimecode": "00:16:11",
-          "endTimecode": "00:17:39"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "set_design",
-      "shortVersion": "That sunken plane? The filmmakers sank two real DC3s for the movie.",
-      "longDescription": "That sunken plane? The filmmakers sank two real DC3s for the movie. A third DC3 was filmed in a warm molasses tank.",
-      "sources": [
-        {
-          "url": "https://stuartcove.com/films/into-the-blue-films-almost-exclusively-with-stuart-coves/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 63] 00:21:36–00:21:54\nsummary: Two men are snorkeling in the ocean when one spots an airplane, leading to a moment of surprise and curiosity in a bright, open water environment.\ncast on screen: Paul Walker",
-        "anchorElement": "one spots an airplane",
-        "approxTimecode": "00:21:36",
-        "runtimeFraction": 0.196,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 1296.0,
-          "endSeconds": 1374.0,
-          "startTimecode": "00:21:36",
-          "endTimecode": "00:22:54"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "Jared's incredible breath-holding was all Paul Walker.",
-      "longDescription": "Jared's incredible breath-holding was all Paul Walker. His co-star Jessica Alba found it challenging to match his underwater breath capacity.",
-      "sources": [
-        {
-          "url": "https://andersonvision.com/into-the-blue-2005-blu-ray-review/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.ign.com/articles/2005/09/29/interview-jessica-alba",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.bulletproofaction.com/2018/03/13/bullet-points-into-the-blue/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 63] 00:21:36–00:21:54\nsummary: Two men are snorkeling in the ocean when one spots an airplane, leading to a moment of surprise and curiosity in a bright, open water environment.\ncast on screen: Paul Walker",
-        "anchorElement": "Both Paul Walker and Jessica Alba underwent rigorous three-month training with professional divers to master breath control and freediving techniques.",
-        "approxTimecode": "00:21:36",
-        "runtimeFraction": 0.196,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 1296.0,
-          "endSeconds": 1374.0,
-          "startTimecode": "00:21:36",
-          "endTimecode": "00:22:54"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Jessica Alba refused to film a scene with a caged tiger shark.",
-      "longDescription": "Jessica Alba refused to film a scene with a caged tiger shark. She was not thrilled about the idea and \"yelled\" her reservations to the director.",
-      "sources": [
-        {
-          "url": "https://www.cheatsheet.com/news/jessica-alba-reveals-the-1-scene-she-refused-to-film-in-her-movie-career.html/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 126] 00:42:38–00:42:56\nsummary: The video shows uniformed divers preparing and conducting an underwater dive in a marine environment with sharks present, creating a tense and vigilant mood focused on safety and exploration.",
-        "anchorElement": "Jessica Alba refused to get into the water for a scene involving a caged tiger shark, citing safety concerns.",
-        "approxTimecode": "00:42:38",
-        "runtimeFraction": 0.387,
-        "runtimeThird": 2,
-        "runtimeQuartile": 2
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 2558.5,
-          "endSeconds": 2637.0,
-          "startTimecode": "00:42:38",
-          "endTimecode": "00:43:57"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Josh Brolin plays Derek Bates, a mustachioed treasure hunter.",
-      "longDescription": "Josh Brolin plays Derek Bates, a mustachioed treasure hunter. His character is a man desperate to reclaim his stake in the treasure buried at sea.",
-      "sources": [
-        {
-          "url": "https://sharpmagazine.com/2024/05/21/josh-brolin-interview-book-for-men-2024/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://collider.com/weapons-josh-brolin-into-the-blue/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 277] 01:32:57–01:33:16\nsummary: Two men engage in a lighthearted yet teasing conversation on a ship deck under clear skies, with one man smiling and laughing while the other listens intently, suggesting a casual, possibly competitive relationship in an outdoor maritime setting.\ncast on screen: Josh Brolin, Paul Walker",
-        "anchorElement": "Josh Brolin",
-        "approxTimecode": "01:32:57",
-        "runtimeFraction": 0.843,
-        "runtimeThird": 3,
-        "runtimeQuartile": 4
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 5577.2,
-          "endSeconds": 5656.0,
-          "startTimecode": "01:32:57",
-          "endTimecode": "01:34:16"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Paul Walker was fearless with the live sharks, even getting \"raspberries.\"",
-      "longDescription": "Paul Walker was fearless with the live sharks, even getting \"raspberries.\" Their sandpaper-like skin would leave marks on his body when they bumped him.",
-      "sources": [
-        {
-          "url": "http://www.popentertainment.com/alba.htm",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 139.6,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:02:19"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Jessica Alba's Flipper role helped her hold her breath for 1:20.",
-      "longDescription": "Jessica Alba's Flipper role helped her hold her breath for 1:20. She started free diving during her time on \"The New Adventures of Flipper.\"",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/news/jessica-albas-into-the-blue/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 206.4,
-          "endSeconds": 971.9,
-          "startTimecode": "00:03:26",
-          "endTimecode": "00:16:11"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Jessica Alba thought filming Into the Blue would be a Bahamas vacation.",
-      "longDescription": "Jessica Alba thought filming Into the Blue would be a Bahamas vacation. She quickly realized they were shooting in winter with wild sharks and no wetsuits.",
-      "sources": [
-        {
-          "url": "http://www.popentertainment.com/alba.htm",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1059.0,
-          "endSeconds": 1296.0,
-          "startTimecode": "00:17:39",
-          "endTimecode": "00:21:36"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Into the Blue is an MGM Studios remake of the 70s hit, The Deep.",
-      "longDescription": "Into the Blue is an MGM Studios remake of the 70s hit, The Deep. This updated storyline was directed by John Stockwell.",
-      "sources": [
-        {
-          "url": "https://stuartcove.com/films/into-the-blue-films-almost-exclusively-with-stuart-coves/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1374.0,
-          "endSeconds": 2558.5,
-          "startTimecode": "00:22:54",
-          "endTimecode": "00:42:38"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "That silver bikini top? It attracted sharks to Jessica Alba.",
-      "longDescription": "That silver bikini top? It attracted sharks to Jessica Alba. Filmmakers didn't realize it could look like small fish to the sharks.",
-      "sources": [
-        {
-          "url": "https://www.ign.com/articles/2005/09/29/interview-jessica-alba",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/etimes/trending/the-colours-that-attract-sharks-fastest-in-the-ocean-how-contrast-increases-your-visibility/articleshow/125525246.cms",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2637.0,
-          "endSeconds": 5577.2,
-          "startTimecode": "00:43:57",
-          "endTimecode": "01:32:57"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Jessica Alba trained in the Cayman Islands to free dive for her role.",
-      "longDescription": "Jessica Alba trained in the Cayman Islands to free dive for her role. She also brushed up on her scuba diving skills during the intensive training.",
-      "sources": [
-        {
-          "url": "http://www.popentertainment.com/alba.htm",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5656.0,
-          "endSeconds": 6618.7,
-          "startTimecode": "01:34:16",
-          "endTimecode": "01:50:18"
-        }
-      ],
-      "wouldPassStrict": false
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 12,
-    "scene_cards": 6,
-    "general_cards": 6,
+    "approved_cards": 0,
+    "scene_cards": 0,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
-      "1": 4,
-      "2": 1,
+      "1": 0,
+      "2": 0,
       "3": 0,
-      "4": 1
+      "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "filming",
-      "set_design"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": -0.0,
+      "uncovered": [
+        [
+          0.0,
+          6618.7
+        ]
+      ]
     },
     "rules": {
-      "fact_target_12_15": true,
-      "min_six_cards": true,
-      "card_in_each_quartile": false,
-      "max_40pct_single_quartile": false,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "fact_target_12_15": false,
+      "min_six_cards": false,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 33,
-    "cards_emitted": 12,
-    "would_pass_strict": 10,
-    "cards_rejected": 21,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 623.7,
+    "elapsed_seconds": 9.0,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

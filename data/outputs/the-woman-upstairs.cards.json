@@ -9,10 +9,20 @@
   "sceneFacts": [
     {
       "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Victoria and Mooney's bond was a surprise to them both.",
-      "longDescription": "Victoria and Mooney's bond was a surprise to them both. They were two lonely people from different worlds who recognized themselves in each other.",
+      "factCategory": "actor",
+      "shortVersion": "Katharine Hepburn was a Golden Globe nominee for The Man Upstairs.",
+      "longDescription": "Hepburn was nominated for Best Actress in a TV Movie at the 1993 Golden Globes for her role as Victoria Browne, showcasing her enduring talent.",
       "sources": [
+        {
+          "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://goldenglobes.com/person/katharine-hepburn/",
+          "modality": "text",
+          "timestamp": null
+        },
         {
           "url": "https://www.latimes.com/archives/la-xpm-1992-12-05-ca-1188-story.html",
           "modality": "text",
@@ -28,7 +38,7 @@
           "endTimecode": "01:30:00"
         }
       ],
-      "wouldPassStrict": false
+      "wouldPassStrict": true
     }
   ],
   "titleEnablement": {
@@ -43,7 +53,9 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [],
+    "distinct_categories": [
+      "actor"
+    ],
     "timeCoverage": {
       "fraction": 1.0,
       "uncovered": []
@@ -60,12 +72,12 @@
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 25,
+    "anchors_proposed": 18,
     "cards_emitted": 1,
-    "would_pass_strict": 0,
-    "cards_rejected": 24,
+    "would_pass_strict": 1,
+    "cards_rejected": 17,
     "errors": 0,
-    "elapsed_seconds": 420.7,
+    "elapsed_seconds": 279.3,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

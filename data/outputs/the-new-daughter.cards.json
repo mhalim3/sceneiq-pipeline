@@ -9,17 +9,12 @@
   "sceneFacts": [
     {
       "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Ivana Baquero's first US role after Pan's Labyrinth.",
-      "longDescription": "Ivana Baquero's first US role after Pan's Labyrinth. She wanted to prove she could play an American girl.",
+      "factCategory": "filming",
+      "shortVersion": "The film's setting moved from Ireland to the Deep South.",
+      "longDescription": "Director Luis Berdejo and screenwriter John Travis significantly reworked the source material, changing the original Irish rectory setting to a Deep Southern house in South Carolina.",
       "sources": [
         {
-          "url": "https://www.fangoria.com/exclusive-interview-ivana-baquero-daughter-of-the-fear/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://bloody-disgusting.com/news/20157/spanish-star-ivana-baquero-becomes-the-new-daughter-exclusive-interview/",
+          "url": "https://bloody-disgusting.com/editorials/3761803/i-was-a-teenage-monster-reappraising-the-new-daughter-starring-kevin-costner/",
           "modality": "text",
           "timestamp": null
         }
@@ -33,21 +28,21 @@
           "endTimecode": "00:11:15"
         }
       ],
-      "wouldPassStrict": true
+      "wouldPassStrict": false
     },
     {
       "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The New Daughter is Kevin Costner's only traditional horror film.",
-      "longDescription": "The New Daughter is Kevin Costner's only traditional horror film. He was known for dramas and blockbusters, rarely venturing into the horror genre.",
+      "factCategory": "actor",
+      "shortVersion": "Ivana Baquero's accent raised questions.",
+      "longDescription": "Ivana Baquero, a Spanish actress, worked with a dialect coach for her role as Louisa, but her background still led to questions about her casting.",
       "sources": [
         {
-          "url": "https://screenrant.com/new-daughter-kevin-costner-only-horror-movie/",
+          "url": "https://bloody-disgusting.com/news/20157/spanish-star-ivana-baquero-becomes-the-new-daughter-exclusive-interview/",
           "modality": "text",
           "timestamp": null
         },
         {
-          "url": "https://movieweb.com/kevin-costner-horror-movie-the-new-daughter-free-on-tubi/",
+          "url": "https://bloody-disgusting.com/news/13238/kevin-costner-talks-the-new-daughter/",
           "modality": "text",
           "timestamp": null
         }
@@ -61,26 +56,16 @@
           "endTimecode": "00:22:30"
         }
       ],
-      "wouldPassStrict": false
+      "wouldPassStrict": true
     },
     {
       "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Director Luis Berdejo treated his first feature like a longer short film.",
-      "longDescription": "Director Luis Berdejo treated his first feature like a longer short film. He said he only knew one way to make things: to serve the story.",
+      "factCategory": "actor",
+      "shortVersion": "Costner needed a nightlight for 15 years.",
+      "longDescription": "Kevin Costner's deep-seated aversion to horror films began in childhood after seeing \"Hush...Hush, Sweet Charlotte,\" leading him to need a nightlight for 15 years.",
       "sources": [
         {
-          "url": "https://screenanarchy.com/2008/11/luis-berdejo-talks-the-new-daughter.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://bloody-disgusting.com/news/20157/spanish-star-ivana-baquero-becomes-the-new-daughter-exclusive-interview/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://bloody-disgusting.com/editorials/3761803/i-was-a-teenage-monster-reappraising-the-new-daughter-starring-kevin-costner/",
+          "url": "https://bloody-disgusting.com/news/13238/kevin-costner-talks-the-new-daughter/",
           "modality": "text",
           "timestamp": null
         }
@@ -98,12 +83,12 @@
     },
     {
       "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Kevin Costner isn't a fan of horror films.",
-      "longDescription": "Kevin Costner isn't a fan of horror films. He once needed a nightlight for 15 years after seeing one as a child.",
+      "factCategory": "filming",
+      "shortVersion": "Director Luis Berdejo played with his child actors",
+      "longDescription": "Director Luis Berdejo fostered a playful environment on set, rehearsing and playing with child actors Ivana Baquero and Gattlin Griffith to build a natural relationship for the screen.",
       "sources": [
         {
-          "url": "https://bloody-disgusting.com/news/13238/kevin-costner-talks-the-new-daughter/",
+          "url": "https://screenanarchy.com/2008/11/luis-berdejo-talks-the-new-daughter.html",
           "modality": "text",
           "timestamp": null
         }
@@ -121,17 +106,17 @@
     },
     {
       "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The film's \"ballsy\" ending was a point of contention for studios.",
-      "longDescription": "The film's \"ballsy\" ending was a point of contention for studios. Director Luis Berdejo and writer John Travis fought to keep it.",
+      "factCategory": "location",
+      "shortVersion": "The New Daughter filmed across South Carolina.",
+      "longDescription": "The horror film utilized diverse locations across the state, including Charleston's historic district, the College of Charleston, and the real-life Wedge Plantation.",
       "sources": [
         {
-          "url": "http://horror-movie-a-day.blogspot.com/2009/12/new-daughter.html",
+          "url": "https://charlestondaily.net/10-movies-that-filmed-scenes-in-charleston-south-carolina/",
           "modality": "text",
           "timestamp": null
         },
         {
-          "url": "https://screenrant.com/new-daughter-movie-ending-explanation-kevin-costner/",
+          "url": "https://bloody-disgusting.com/editorials/3761803/i-was-a-teenage-monster-reappraising-the-new-daughter-starring-kevin-costner/",
           "modality": "text",
           "timestamp": null
         }
@@ -149,12 +134,22 @@
     },
     {
       "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Director Luis Berdejo reworked the film's mythology for its new setting.",
-      "longDescription": "Director Luis Berdejo reworked the film's mythology for its new setting. He adapted the creatures from Irish fairy folk to local \"mound-walkers\" in South Carolina.",
+      "factCategory": "actor",
+      "shortVersion": "Kevin Costner's rare villain role led to this film.",
+      "longDescription": "Costner's acclaimed villainous turn in \"Mr. Brooks\" helped him land the lead in \"The New Daughter,\" his only true horror movie.",
       "sources": [
         {
           "url": "https://bloody-disgusting.com/editorials/3761803/i-was-a-teenage-monster-reappraising-the-new-daughter-starring-kevin-costner/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.slashfilm.com/656223/remembering-mr-brooks-the-bonkers-thriller-where-kevin-costner-is-a-serial-killer-with-an-imaginary-friend/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://screenrant.com/new-daughter-kevin-costner-only-horror-movie/",
           "modality": "text",
           "timestamp": null
         }
@@ -168,13 +163,13 @@
           "endTimecode": "01:07:30"
         }
       ],
-      "wouldPassStrict": false
+      "wouldPassStrict": true
     },
     {
       "scope": "general",
-      "factCategory": "costume/prop",
-      "shortVersion": "The \"mound-walkers\" were brought to life by a creature performer.",
-      "longDescription": "The \"mound-walkers\" were brought to life by a creature performer. This actor wore a full body suit and facial makeup to portray the horrifying, human-like beings.",
+      "factCategory": "general",
+      "shortVersion": "Casting for the film's monsters required specific physical traits.",
+      "longDescription": "The terrifying \"mound-walkers\" were brought to life by performers who had to be ultra-thin and wear extensive makeup and full body suits.",
       "sources": [
         {
           "url": "https://www.looper.com/1395175/the-new-daughter-explained-kevin-costner/",
@@ -200,12 +195,12 @@
     },
     {
       "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Director Luis Berdejo loves telling stories through kids' eyes.",
-      "longDescription": "Director Luis Berdejo loves telling stories through kids' eyes. He's drawn to their world, innocence, honesty, and courage.",
+      "factCategory": "general",
+      "shortVersion": "The New Daughter adapted its monsters from Irish folklore.",
+      "longDescription": "The film changed the original story's Irish fairy folk into \"mound-walkers\" to create a local mythology for its South Carolina setting, fabricating an alternate history for North American earthworks.",
       "sources": [
         {
-          "url": "https://screenanarchy.com/2008/11/luis-berdejo-talks-the-new-daughter.html",
+          "url": "https://bloody-disgusting.com/editorials/3761803/i-was-a-teenage-monster-reappraising-the-new-daughter-starring-kevin-costner/",
           "modality": "text",
           "timestamp": null
         }
@@ -219,7 +214,7 @@
           "endTimecode": "01:30:00"
         }
       ],
-      "wouldPassStrict": true
+      "wouldPassStrict": false
     }
   ],
   "titleEnablement": {
@@ -236,8 +231,8 @@
     },
     "distinct_categories": [
       "actor",
-      "costume/prop",
-      "filming"
+      "filming",
+      "location"
     ],
     "timeCoverage": {
       "fraction": 1.0,
@@ -255,12 +250,12 @@
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 34,
+    "anchors_proposed": 40,
     "cards_emitted": 8,
     "would_pass_strict": 4,
-    "cards_rejected": 26,
+    "cards_rejected": 32,
     "errors": 0,
-    "elapsed_seconds": 476.4,
+    "elapsed_seconds": 642.3,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

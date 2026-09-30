@@ -8,19 +8,679 @@
   },
   "candidates": [
     {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "The title \"Delivery Girl\" refers to multiple characters.",
+        "longDescription": "Creator Kate Krieger intended for the series to feature a different \"delivery girl\" in each episode, each struggling to embrace their true identity.",
+        "sources": [
+          {
+            "url": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.advocate.com/television/2019/1/29/sex-drugs-and-catholicism-explored-innovative-new-series",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 0.0,
+            "endSeconds": 300.0,
+            "startTimecode": "00:00:00",
+            "endTimecode": "00:05:00"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The title \"Delivery Girl\" for the 2019 Sundance series is symbolic, referring to its characters as \"messengers\" who lead double lives and impact those they meet.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The title \"Delivery Girl\" for the 2019 Sundance series is symbolic, referring to its characters as \"messengers\" who lead double lives and impact those they meet.",
+        "search_queries": [
+          "Delivery Girl 2019 symbolic meaning",
+          "Kate Krieger Delivery Girl title meaning",
+          "Delivery Girl characters messengers"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+          "title": "sundance.org",
+          "domain": "sundance.org",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Delivery Girl",
+            "Trisha",
+            "Kate Krieger"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.advocate.com/television/2019/1/29/sex-drugs-and-catholicism-explored-innovative-new-series",
+          "title": "advocate.com",
+          "domain": "advocate.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Delivery Girl",
+            "Trisha",
+            "Kate Krieger"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.weaudition.com/katekrieger",
+          "title": "weaudition.com",
+          "domain": "weaudition.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "title": "incluvie.com",
+          "domain": "incluvie.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
+          "title": "newyorktheaterfestival.com",
+          "domain": "newyorktheaterfestival.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The series title \"Delivery Girl\" refers to Trisha, a woman who leads a double life while selling drugs.",
+          "sourceUrl": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+          "supporting_passage": "Delivery Girl / U.S.A (Director and screenwriter: Kate Krieger) — Trisha is a woman struggling with her identity, living in a fiercely Catholic household leading a double life, selling drugs to make ends meet and carrying on an affair."
+        },
+        {
+          "beat": "Trisha's journey is presented as the \"first of many delivery girls\" in the series.",
+          "sourceUrl": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+          "supporting_passage": "She fights for the courage to embrace her future as the first of many delivery girls."
+        },
+        {
+          "beat": "Creator Kate Krieger intended to play a different \"delivery girl\" in each episode of the series.",
+          "sourceUrl": "https://www.advocate.com/television/2019/1/29/sex-drugs-and-catholicism-explored-innovative-new-series",
+          "supporting_passage": "The series features Krieger playing a different delivery girl in each episode."
+        },
+        {
+          "beat": "Each \"delivery girl\" character was designed to be a complex woman struggling to own her truth.",
+          "sourceUrl": "https://www.advocate.com/television/2019/1/29/sex-drugs-and-catholicism-explored-innovative-new-series",
+          "supporting_passage": "To that end, every character portrayed in Delivery Girl will be a complex woman who struggles with owning her truth, before ultimately embracing it."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Kate Krieger created, wrote, directed, and starred in this pilot.",
+        "longDescription": "Kate Krieger was the driving creative force behind 'Delivery Girl,' serving as its creator, writer, director, and lead actor for the television pilot.",
+        "sources": [
+          {
+            "url": "https://www.weaudition.com/katekrieger",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Kate Krieger was the sole creative force behind the 2019 Sundance episodic series \"Delivery Girl,\" serving as its creator, writer, director, and lead star.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Kate Krieger was the sole creative force behind the 2019 Sundance episodic series \"Delivery Girl,\" serving as its creator, writer, director, and lead star.",
+        "search_queries": [
+          "Kate Krieger Delivery Girl 2019 Sundance",
+          "Delivery Girl 2019 creator writer director star",
+          "Kate Krieger multi-hyphenate filmmaker"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.weaudition.com/katekrieger",
+          "title": "weaudition.com",
+          "domain": "weaudition.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kate Krieger",
+            "Delivery Girl",
+            "Sundance Film Festival",
+            "2019"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "title": "incluvie.com",
+          "domain": "incluvie.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
+          "title": "newyorktheaterfestival.com",
+          "domain": "newyorktheaterfestival.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kate Krieger",
+            "Delivery Girl",
+            "Sundance Film Festival",
+            "2019"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Kate Krieger wrote, directed, and starred in the television pilot for \"Delivery Girl.\"",
+          "sourceUrl": "https://www.weaudition.com/katekrieger",
+          "supporting_passage": "*I wrote, directed and starred in a TV pilot that debuted at the SUNDANCE FILM FESTIVAL (2019)."
+        },
+        {
+          "beat": "Her passion for slice-of-life stories and nuanced characters inspired her to create the pilot.",
+          "sourceUrl": "https://www.weaudition.com/katekrieger",
+          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
+        },
+        {
+          "beat": "\"Delivery Girl\" was a television pilot of Kate Krieger's own creation.",
+          "sourceUrl": "https://newyorktheaterfestival.com/people/kate-krieger/",
+          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in Delivery Girl, a television pilot of her own creation."
+        },
+        {
+          "beat": "The pilot made its debut at the 2019 Sundance Film Festival.",
+          "sourceUrl": "https://www.weaudition.com/katekrieger",
+          "supporting_passage": "Much to her pleasant surprise, \"Delivery Girl\" made its debut at the 2019 Sundance Film Festival."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (Kate Krieger's multi-faceted role in the creation of the pilot, including her inspiration and specific roles.)"
+        ],
+        "flags": [
+          "shortVersion 65 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Kate Krieger's passion birthed \"Delivery Girl\"",
+        "longDescription": "Inspired by her love for slice-of-life stories and nuanced characters, Kate Krieger wrote, directed, and starred in \"Delivery Girl,\" a television pilot of her own creation.",
+        "sources": [
+          {
+            "url": "https://www.weaudition.com/katekrieger",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Kate Krieger developed the characters for her 2019 \"Delivery Girl\" series by improvising in character on camera, often in her own living room, as part of her personal creative process.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Kate Krieger developed the characters for her 2019 \"Delivery Girl\" series by improvising in character on camera, often in her own living room, as part of her personal creative process.",
+        "search_queries": [
+          "Kate Krieger Delivery Girl character improvisation",
+          "Delivery Girl 2019 creative process",
+          "Kate Krieger developing characters at home"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.weaudition.com/katekrieger",
+          "title": "weaudition.com",
+          "domain": "weaudition.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kate Krieger",
+            "Delivery Girl",
+            "Sundance Film Festival",
+            "2019"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "title": "incluvie.com",
+          "domain": "incluvie.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
+          "title": "newyorktheaterfestival.com",
+          "domain": "newyorktheaterfestival.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Kate Krieger was inspired to create \"Delivery Girl\" by her passion for slice-of-life stories and nuanced characters.",
+          "sourceUrl": "https://www.weaudition.com/katekrieger",
+          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
+        },
+        {
+          "beat": "She wrote, directed, and starred in \"Delivery Girl,\" which was a television pilot.",
+          "sourceUrl": "https://www.weaudition.com/katekrieger",
+          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
+        },
+        {
+          "beat": "The \"Delivery Girl\" pilot was entirely her own creation.",
+          "sourceUrl": "https://www.weaudition.com/katekrieger",
+          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
+        },
+        {
+          "beat": "The \"Delivery Girl\" pilot made its debut at the 2019 Sundance Film Festival.",
+          "sourceUrl": "https://www.weaudition.com/katekrieger",
+          "supporting_passage": "Much to her pleasant surprise, \"Delivery Girl\" made its debut at the 2019 Sundance Film Festival."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (Kate Krieger not only created \"Delivery Girl\" as a television pilot but also took on the roles of writer, director, and star, leading to its debut at the 2019 Sundance Film Festival.)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Kate Krieger's life inspired Delivery Girl's characters.",
+        "longDescription": "Writer, director, and star Kate Krieger drew on her fascination with human behavior and her skill with accents to create the nuanced characters in Delivery Girl.",
+        "sources": [
+          {
+            "url": "https://www.weaudition.com/katekrieger",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The complex characters in Kate Krieger's 2019 \"Delivery Girl\" series, set in small-town New England, were inspired by an amalgamation of real people, experiences, places, and even dialects from her life.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The complex characters in Kate Krieger's 2019 \"Delivery Girl\" series, set in small-town New England, were inspired by an amalgamation of real people, experiences, places, and even dialects from her life.",
+        "search_queries": [
+          "Delivery Girl 2019 character inspiration",
+          "Kate Krieger character development Delivery Girl",
+          "Real-life inspiration Delivery Girl 2019"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.weaudition.com/katekrieger",
+          "title": "weaudition.com",
+          "domain": "weaudition.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kate Krieger",
+            "Delivery Girl",
+            "Boston University",
+            "London Academy of Music and Dramatic Art",
+            "Psychology",
+            "Theatre",
+            "English RP",
+            "Australian",
+            "New Zealand",
+            "Irish",
+            "Southern (American)",
+            "Midwestern (American)",
+            "Valley Girl (American)",
+            "Boston / New England (American)",
+            "Philadelphia (American)"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "title": "incluvie.com",
+          "domain": "incluvie.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
+          "title": "newyorktheaterfestival.com",
+          "domain": "newyorktheaterfestival.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kate Krieger",
+            "Delivery Girl",
+            "Boston University",
+            "London Academy of Music and Dramatic Art",
+            "Psychology",
+            "Theatre",
+            "English RP",
+            "Australian",
+            "New Zealand",
+            "Irish",
+            "Southern (American)",
+            "Midwestern (American)",
+            "Valley Girl (American)",
+            "Boston / New England (American)",
+            "Philadelphia (American)"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Kate Krieger's passion for slice-of-life stories and nuanced characters inspired her to write, direct, and star in Delivery Girl.",
+          "sourceUrl": "https://www.weaudition.com/katekrieger",
+          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
+        },
+        {
+          "beat": "Her fascination with human behavior and love of storytelling led her to pursue Psychology and Theatre.",
+          "sourceUrl": "https://www.weaudition.com/katekrieger",
+          "supporting_passage": "Her fascination with human behavior and love of storytelling led her to pursue Psychology at Boston University, and Theatre at the London Academy of Music and Dramatic Art."
+        },
+        {
+          "beat": "Krieger's special skills include a \"Boston / New England (American)\" accent.",
+          "sourceUrl": "https://newyorktheaterfestival.com/people/kate-krieger/",
+          "supporting_passage": "SPECIAL SKILLS: Accents -- English RP, Australian; New Zealand; Irish; Southern (American); Midwestern (American); Valley Girl (American); Boston / New England (American) Philadelphia (American);"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "claim_entailment: only 2 bound+supported beats remain (need 3)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
       "status": "rejected",
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Kate Krieger developed the characters for \"The Delivery Girl\" by improvising in character on her phone in her living room.",
+        "anchor_element": "The 2019 student short film \"The Delivery Girl\" utilized crowdfunding to secure essential production elements, including locations, production design, crew meals, and a stunt coordinator.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Kate Krieger developed the characters for \"The Delivery Girl\" by improvising in character on her phone in her living room.",
+        "search_hint": "The 2019 student short film \"The Delivery Girl\" utilized crowdfunding to secure essential production elements, including locations, production design, crew meals, and a stunt coordinator.",
         "search_queries": [
-          "Kate Krieger Delivery Girl character development process",
-          "The Delivery Girl 2019 production stories",
-          "filming The Delivery Girl living room"
+          "The Delivery Girl 2019 crowdfunding",
+          "Student film Indiegogo Delivery Girl",
+          "David J Porras stunt coordinator Delivery Girl"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -49,15 +709,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The title \"Delivery Girl\" is metaphorical, referring to characters as \"messengers\" who change lives, not just literal delivery people.",
+        "anchor_element": "The 2019 student short film \"The Delivery Girl\" was a graduation requirement for director David J. Porras's MFA program.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "The title \"Delivery Girl\" is metaphorical, referring to characters as \"messengers\" who change lives, not just literal delivery people.",
+        "search_hint": "The 2019 student short film \"The Delivery Girl\" was a graduation requirement for director David J. Porras's MFA program.",
         "search_queries": [
-          "The Delivery Girl 2019 meaning",
-          "Kate Krieger Delivery Girl metaphor",
-          "Delivery Girl series title meaning"
+          "The Delivery Girl 2019 graduation film",
+          "David J Porras MFA thesis film",
+          "Student film requirement Delivery Girl 2019"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -86,14 +746,9 @@
       "card": {
         "scope": "general",
         "factCategory": "general",
-        "shortVersion": "This film, a TV pilot, was a \"pleasant surprise\" at Sundance.",
-        "longDescription": "This film, a TV pilot, was a \"pleasant surprise\" at Sundance. Kate Krieger wrote, directed, and starred in the 20-minute film.",
+        "shortVersion": "Kate Krieger directed this 20-minute short film.",
+        "longDescription": "Released in early 2019, 'The Delivery Girl' is a short film with a runtime of 20 minutes, helmed by director Kate Krieger.",
         "sources": [
-          {
-            "url": "https://www.weaudition.com/katekrieger",
-            "modality": "text",
-            "timestamp": null
-          },
           {
             "url": "https://www.incluvie.com/movie/delivery-girl-633343",
             "modality": "text",
@@ -105,15 +760,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "\"The Delivery Girl\" premiered as an unexpected \"pleasant surprise\" in the 2019 Sundance Film Festival's Indie Episodic Program.",
+        "anchor_element": "David J. Porras's 2019 student short film \"The Delivery Girl\" is a neo-noir thriller with dark comedic elements, created as part of his MFA at Loyola Marymount University.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "\"The Delivery Girl\" premiered as an unexpected \"pleasant surprise\" in the 2019 Sundance Film Festival's Indie Episodic Program.",
+        "search_hint": "David J. Porras's 2019 student short film \"The Delivery Girl\" is a neo-noir thriller with dark comedic elements, created as part of his MFA at Loyola Marymount University.",
         "search_queries": [
-          "The Delivery Girl 2019 Sundance surprise",
-          "Kate Krieger Sundance debut",
-          "Delivery Girl Indie Episodic festival"
+          "The Delivery Girl 2019 David J Porras",
+          "Loyola Marymount MFA film Delivery Girl",
+          "Neo-noir student film Delivery Girl 2019"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -122,26 +777,16 @@
       },
       "sources": [
         {
-          "url": "https://www.weaudition.com/katekrieger",
-          "title": "weaudition.com",
-          "domain": "weaudition.com",
+          "url": "https://www.juliemurrayporter.com/projects",
+          "title": "juliemurrayporter.com",
+          "domain": "juliemurrayporter.com",
           "tier": "unknown",
-          "evidence_class": "primary_direct",
+          "evidence_class": "unknown",
           "modality": "text",
           "resolved": true,
           "body_kind": "html",
-          "verbatim_hits": [
-            "TV pilot",
-            "Sundance",
-            "Kate Krieger",
-            "2019",
-            "20 minutes",
-            "Incluvie",
-            "WeAudition"
-          ],
-          "verbatim_misses": [
-            "The Delivery Girl"
-          ]
+          "verbatim_hits": [],
+          "verbatim_misses": []
         },
         {
           "url": "https://www.incluvie.com/movie/delivery-girl-633343",
@@ -153,17 +798,178 @@
           "resolved": true,
           "body_kind": "html",
           "verbatim_hits": [
-            "TV pilot",
-            "Sundance",
             "Kate Krieger",
             "2019",
-            "20 minutes",
-            "Incluvie",
-            "WeAudition"
+            "20 minutes"
           ],
           "verbatim_misses": [
-            "The Delivery Girl"
+            "The Delivery Girl",
+            "January 29, 2019"
           ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film 'Delivery Girl' has a runtime of 20 minutes.",
+          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "supporting_passage": "Runtime : 20 minutes"
+        },
+        {
+          "beat": "Kate Krieger directed 'Delivery Girl.'",
+          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "supporting_passage": "Directed By : Kate Krieger"
+        },
+        {
+          "beat": "'Delivery Girl' was released on January 29, 2019.",
+          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "supporting_passage": "In Theaters : 1/29/2019"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 0,
+          "viewer_value": 0,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
+          "rubric: primitive_conformance 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "verbatim: could not confirm ['The Delivery Girl', 'January 29, 2019'] in fetched bodies",
+          "rubric low (relaxed): ['viewer_value']"
+        ],
+        "judge_notes": "The card fails primitive conformance as it provides basic encyclopedic facts (director name, runtime, release year) which are explicitly listed as an automatic 0."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Kate Krieger wrote, directed, and starred in this Sundance pilot.",
+        "longDescription": "Kate Krieger not only created \"Delivery Girl\" as a television pilot but also took on the roles of writer, director, and star, leading to its debut at the 2019 Sundance Film Festival.",
+        "sources": [
+          {
+            "url": "https://www.weaudition.com/katekrieger",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 300.0,
+            "endSeconds": 600.0,
+            "startTimecode": "00:05:00",
+            "endTimecode": "00:10:00"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The 2019 \"Delivery Girl\" was selected for the Indie Episodic Program at the Sundance Film Festival, highlighting its innovative serialized storytelling approach.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The 2019 \"Delivery Girl\" was selected for the Indie Episodic Program at the Sundance Film Festival, highlighting its innovative serialized storytelling approach.",
+        "search_queries": [
+          "Delivery Girl 2019 Sundance Indie Episodic",
+          "Kate Krieger Sundance series",
+          "Sundance Film Festival episodic programs"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+          "title": "sundance.org",
+          "domain": "sundance.org",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kate Krieger",
+            "Delivery Girl",
+            "Sundance Film Festival",
+            "2019",
+            "Indie Episodic"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.weaudition.com/katekrieger",
+          "title": "weaudition.com",
+          "domain": "weaudition.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kate Krieger",
+            "Delivery Girl",
+            "Sundance Film Festival",
+            "2019",
+            "Indie Episodic"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "title": "incluvie.com",
+          "domain": "incluvie.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
         },
         {
           "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
@@ -190,532 +996,14 @@
           "supporting_passage": "Much to her pleasant surprise, \"Delivery Girl\" made its debut at the 2019 Sundance Film Festival."
         },
         {
-          "beat": "Its premiere at Sundance was \"much to her pleasant surprise.\"",
-          "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "Much to her pleasant surprise, \"Delivery Girl\" made its debut at the 2019 Sundance Film Festival."
+          "beat": "It was selected as one of the works for the festival's Indie Episodic section.",
+          "sourceUrl": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+          "supporting_passage": "Works selected across the Indie Episodic, Shorts and Special Events sections of the 2019 Sundance Film Festival were announced today... INDIE EPISODIC... Delivery Girl / U.S.A (Director and screenwriter: Kate Krieger)"
         },
         {
-          "beat": "The film has a runtime of 20 minutes.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Runtime : 20 minutes"
-        }
-      ],
-      "validation": {
-        "passed": true,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": true,
-          "film_specific": true,
-          "claim_entailment": true,
-          "verbatim": "flagged",
-          "cross_modal": true,
-          "emission_policy": true,
-          "rubric_disposition": true,
-          "would_pass_strict": true
-        },
-        "rubric": {
-          "factual_accuracy": 2,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 2,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "dedup: same story as a kept card (The film's debut at Sundance and Kate Krieger's roles as writer, director, and star.)"
-        ],
-        "flags": [
-          "shortVersion 61 chars (target 50-60, cap 80)",
-          "verbatim: could not confirm ['The Delivery Girl'] in fetched bodies"
-        ],
-        "judge_notes": ""
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "general",
-        "shortVersion": "Kate Krieger wrote, directed, and starred in this film.",
-        "longDescription": "Kate Krieger wrote, directed, and starred in this film. It was a television pilot of her own creation that debuted at Sundance.",
-        "sources": [
-          {
-            "url": "https://www.weaudition.com/katekrieger",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Kate Krieger single-handedly created, wrote, directed, and starred in \"The Delivery Girl.\"",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Kate Krieger single-handedly created, wrote, directed, and starred in \"The Delivery Girl.\"",
-        "search_queries": [
-          "Kate Krieger The Delivery Girl creator",
-          "The Delivery Girl 2019 one woman show",
-          "Kate Krieger writer director actor"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.weaudition.com/katekrieger",
-          "title": "weaudition.com",
-          "domain": "weaudition.com",
-          "tier": "unknown",
-          "evidence_class": "primary_direct",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Kate Krieger",
-            "Delivery Girl",
-            "Sundance Film Festival",
-            "2019"
-          ],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "title": "incluvie.com",
-          "domain": "incluvie.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
-          "title": "newyorktheaterfestival.com",
-          "domain": "newyorktheaterfestival.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "Kate Krieger's passion for slice-of-life stories and nuanced characters inspired her to write, direct, and star in \"Delivery Girl.\"",
-          "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
-        },
-        {
-          "beat": "\"Delivery Girl\" was a television pilot of Kate Krieger's own creation.",
-          "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "\"Delivery Girl\", a television pilot of her own creation"
-        },
-        {
-          "beat": "The television pilot \"Delivery Girl\" made its debut at the 2019 Sundance Film Festival.",
-          "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "\"Delivery Girl\" made its debut at the 2019 Sundance Film Festival."
-        }
-      ],
-      "validation": {
-        "passed": true,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": true,
-          "film_specific": true,
-          "claim_entailment": true,
-          "verbatim": true,
-          "cross_modal": true,
-          "emission_policy": true,
-          "rubric_disposition": true,
-          "would_pass_strict": true
-        },
-        "rubric": {
-          "factual_accuracy": 2,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 2,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "dedup: same story as a kept card (The film is a TV pilot created by Kate Krieger that debuted at Sundance.)"
-        ],
-        "flags": [],
-        "judge_notes": ""
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "emitted",
-      "card": {
-        "scope": "general",
-        "factCategory": "general",
-        "shortVersion": "Trisha leads a double life in a fiercely Catholic home.",
-        "longDescription": "Trisha leads a double life in a fiercely Catholic home. She sells drugs and has a secret lover.",
-        "sources": [
-          {
-            "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": [
-          {
-            "startSeconds": 0.0,
-            "endSeconds": 200.0,
-            "startTimecode": "00:00:00",
-            "endTimecode": "00:03:20"
-          }
-        ]
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "\"The Delivery Girl\" is set in a small-town New England, focusing on a young woman in a \"fiercely Catholic home with a lot of secrets.\"",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "\"The Delivery Girl\" is set in a small-town New England, focusing on a young woman in a \"fiercely Catholic home with a lot of secrets.\"",
-        "search_queries": [
-          "The Delivery Girl 2019 setting",
-          "New England Catholic home Delivery Girl",
-          "Delivery Girl series small town"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "title": "incluvie.com",
-          "domain": "incluvie.com",
-          "tier": "unknown",
-          "evidence_class": "reputable_editorial",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Trisha",
-            "Leroy",
-            "40"
-          ],
-          "verbatim_misses": [
-            "The Delivery Girl"
-          ]
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "Trisha, the main character, is a young woman struggling with her identity.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Trisha is a young woman struggling with her identity."
-        },
-        {
-          "beat": "She leads a double life within her fiercely Catholic household.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "She leads a double life within her fiercely Catholic household"
-        },
-        {
-          "beat": "Trisha sells drugs to make ends meet and has a secret lover.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "selling drugs to make ends meet while carrying on with a secret lover."
-        },
-        {
-          "beat": "Her friend Leroy is a 40-year-old seeking to regain custody of his child.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "her friend Leroy, a 40-year-old seeking to regain custody of his child"
-        },
-        {
-          "beat": "Trisha fights for the courage to embrace her future and confront her past.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "she fights for the courage to embrace her future while confronting her past."
-        }
-      ],
-      "validation": {
-        "passed": true,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": true,
-          "film_specific": true,
-          "claim_entailment": true,
-          "verbatim": "flagged",
-          "cross_modal": true,
-          "emission_policy": true,
-          "rubric_disposition": true,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 2,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 2,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [],
-        "flags": [
-          "verbatim: could not confirm ['The Delivery Girl'] in fetched bodies"
-        ],
-        "judge_notes": ""
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "emitted",
-      "card": {
-        "scope": "general",
-        "factCategory": "general",
-        "shortVersion": "Creator Kate Krieger based the film's characters on slice-of-life stories.",
-        "longDescription": "Creator Kate Krieger based the film's characters on slice-of-life stories. Her passion for nuanced characters inspired her to write, direct, and star in the pilot.",
-        "sources": [
-          {
-            "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
-            "modality": "text",
-            "timestamp": null
-          },
-          {
-            "url": "https://www.weaudition.com/katekrieger",
-            "modality": "text",
-            "timestamp": null
-          },
-          {
-            "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": [
-          {
-            "startSeconds": 200.0,
-            "endSeconds": 400.0,
-            "startTimecode": "00:03:20",
-            "endTimecode": "00:06:40"
-          }
-        ]
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Creator Kate Krieger based the diverse characters in \"The Delivery Girl\" on real people, experiences, and places from her own life.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Creator Kate Krieger based the diverse characters in \"The Delivery Girl\" on real people, experiences, and places from her own life.",
-        "search_queries": [
-          "The Delivery Girl 2019 real life inspiration",
-          "Kate Krieger character development",
-          "Delivery Girl series character origins"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://timesofindia.indiatimes.com/videos/entertainment/web-series/english/the-delivery-girl-trailer-teisha-brown-mic-larry-and-charlie-newhart-starrer-the-delivery-girl-official-trailer/videoshow/133869146.cms",
-          "title": "indiatimes.com",
-          "domain": "indiatimes.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.weaudition.com/katekrieger",
-          "title": "weaudition.com",
-          "domain": "weaudition.com",
-          "tier": "unknown",
-          "evidence_class": "primary_direct",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Kate Krieger",
-            "Delivery Girl",
-            "Trisha",
-            "Leroy",
-            "Sundance Film Festival",
-            "2019"
-          ],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://tubitv.com/the-t/articles/the-delivery-girl-turns-a-routine-drop-off-into-pure-dread",
-          "title": "tubitv.com",
-          "domain": "tubitv.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.rottentomatoes.com/m/the_delivery_girl",
-          "title": "rottentomatoes.com",
-          "domain": "rottentomatoes.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.incluvie.com/movie/the-delivery-girl-1768496",
-          "title": "incluvie.com",
-          "domain": "incluvie.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "title": "incluvie.com",
-          "domain": "incluvie.com",
-          "tier": "unknown",
-          "evidence_class": "reputable_editorial",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Kate Krieger",
-            "Delivery Girl",
-            "Trisha",
-            "Leroy",
-            "Sundance Film Festival",
-            "2019"
-          ],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
-          "title": "newyorktheaterfestival.com",
-          "domain": "newyorktheaterfestival.com",
-          "tier": "unknown",
-          "evidence_class": "primary_direct",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Kate Krieger",
-            "Delivery Girl",
-            "Trisha",
-            "Leroy",
-            "Sundance Film Festival",
-            "2019"
-          ],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.kinoafisha.info/en/movies/8387578/credits/",
-          "title": "kinoafisha.info",
-          "domain": "kinoafisha.info",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "Creator Kate Krieger wrote, directed, and starred in \"Delivery Girl,\" a television pilot.",
-          "sourceUrl": "https://newyorktheaterfestival.com/people/kate-krieger/",
-          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in Delivery Girl, a television pilot of her own creation."
-        },
-        {
-          "beat": "Krieger's passion for \"slice-of-life stories and nuanced characters\" inspired her to create the pilot.",
-          "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
-        },
-        {
-          "beat": "The pilot's characters include Trisha, a young woman leading a double life, and Leroy, a 40-year-old seeking child custody.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Trisha is a young woman struggling with her identity. She leads a double life within her fiercely Catholic household, selling drugs to make ends meet while carrying on with a secret lover. With the support of her friend Leroy, a 40-year-old seeking to regain custody of his child, she fights for the courage to embrace her future while confronting her past."
-        },
-        {
-          "beat": "\"Delivery Girl\" premiered as a television pilot at the 2019 Sundance Film Festival.",
-          "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "Much to her pleasant surprise, \"Delivery Girl\" made its debut at the 2019 Sundance Film Festival."
+          "beat": "The Indie Episodic section is a dedicated showcase for independently produced episodic content.",
+          "sourceUrl": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+          "supporting_passage": "INDIE EPISODIC A dedicated showcase for emerging creators of independently produced episodic content for broadcast, web, and streaming platforms."
         }
       ],
       "validation": {
@@ -747,8 +1035,7 @@
         "curiosity": {},
         "rejection_reasons": [],
         "flags": [
-          "shortVersion 74 chars (target 50-60, cap 80)",
-          "longDescription 163 chars (target ~120, max 160)"
+          "shortVersion 65 chars (target 50-60, cap 80)"
         ],
         "judge_notes": ""
       },
@@ -771,52 +1058,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The completion of David J. Porras's \"The Delivery Girl\" was guaranteed as it served as a required graduation project for the director's MFA program at Loyola Marymount University.",
+        "anchor_element": "For the 2019 student short \"The Delivery Girl,\" filmmakers borrowed equipment whenever possible and planned \"creative fixes\" to adapt to budget constraints, showcasing resourceful production.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "The completion of David J. Porras's \"The Delivery Girl\" was guaranteed as it served as a required graduation project for the director's MFA program at Loyola Marymount University.",
+        "search_hint": "For the 2019 student short \"The Delivery Girl,\" filmmakers borrowed equipment whenever possible and planned \"creative fixes\" to adapt to budget constraints, showcasing resourceful production.",
         "search_queries": [
-          "The Delivery Girl 2019 graduation project",
-          "David J Porras required film",
-          "MFA film completion guarantee"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The production of David J. Porras's \"The Delivery Girl\" relied on crowdfunding to cover essential costs, including locations, production design, and even a stunt coordinator.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "The production of David J. Porras's \"The Delivery Girl\" relied on crowdfunding to cover essential costs, including locations, production design, and even a stunt coordinator.",
-        "search_queries": [
-          "The Delivery Girl 2019 crowdfunding",
+          "The Delivery Girl 2019 student film production",
           "David J Porras short film budget",
-          "student film stunt coordinator"
+          "creative fixes indie film"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -842,86 +1092,17 @@
     },
     {
       "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Director David J. Porras created \"The Delivery Girl\" as part of his MFA film candidacy at Loyola Marymount University.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Director David J. Porras created \"The Delivery Girl\" as part of his MFA film candidacy at Loyola Marymount University.",
-        "search_queries": [
-          "David J Porras Loyola Marymount MFA",
-          "The Delivery Girl student film 2019",
-          "Loyola Marymount film projects"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "To achieve its ambitious \"stylized\" and \"neo-noir\" look with \"plenty of neon\" on a student budget, the production of David J. Porras's \"The Delivery Girl\" borrowed gear extensively and rented only essential equipment.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "To achieve its ambitious \"stylized\" and \"neo-noir\" look with \"plenty of neon\" on a student budget, the production of David J. Porras's \"The Delivery Girl\" borrowed gear extensively and rented only essential equipment.",
-        "search_queries": [
-          "The Delivery Girl 2019 neon aesthetic",
-          "David J Porras stylized look",
-          "student film gear borrowing"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "emitted",
       "card": {
         "scope": "general",
         "factCategory": "general",
-        "shortVersion": "The Delivery Girl was written, directed, and starred in by Kate Krieger.",
-        "longDescription": "The Delivery Girl was written, directed, and starred in by Kate Krieger. This television pilot also made its debut at the 2019 Sundance Film Festival.",
+        "shortVersion": "Kate Krieger wrote, directed, and starred in \"Delivery Girl.\"",
+        "longDescription": "Krieger's passion for nuanced characters inspired her to create the film, which features a protagonist struggling with identity and seeking a hopeful future.",
         "sources": [
+          {
+            "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
+            "modality": "text",
+            "timestamp": null
+          },
           {
             "url": "https://www.weaudition.com/katekrieger",
             "modality": "text",
@@ -934,26 +1115,19 @@
           }
         ],
         "sceneAnchor": null,
-        "displayWindows": [
-          {
-            "startSeconds": 400.0,
-            "endSeconds": 600.0,
-            "startTimecode": "00:06:40",
-            "endTimecode": "00:10:00"
-          }
-        ]
+        "displayWindows": []
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "In Kate Krieger's \"The Delivery Girl,\" characters act as \"messengers\" whose double lives and secrets often profoundly shake up or change the lives of those they encounter.",
+        "anchor_element": "Creator Kate Krieger described the characters in \"Delivery Girl\" as having significant depth, heartache, and sadness, balanced with likeability and a hopeful \"light at the end of the tunnel.\"",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "In Kate Krieger's \"The Delivery Girl,\" characters act as \"messengers\" whose double lives and secrets often profoundly shake up or change the lives of those they encounter.",
+        "search_hint": "Creator Kate Krieger described the characters in \"Delivery Girl\" as having significant depth, heartache, and sadness, balanced with likeability and a hopeful \"light at the end of the tunnel.\"",
         "search_queries": [
-          "Delivery Girl Kate Krieger character impact",
-          "messengers changing lives Delivery Girl",
-          "Kate Krieger Delivery Girl relationships"
+          "Delivery Girl 2019 character themes",
+          "Kate Krieger character depth Delivery Girl",
+          "Delivery Girl series emotional themes"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -973,577 +1147,16 @@
           "verbatim_hits": [
             "Kate Krieger",
             "Delivery Girl",
-            "2019",
-            "Sundance Film Festival",
-            "20 minutes"
-          ],
-          "verbatim_misses": [
-            "The Delivery Girl"
-          ]
-        },
-        {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "title": "incluvie.com",
-          "domain": "incluvie.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Kate Krieger",
-            "Delivery Girl",
-            "2019",
-            "Sundance Film Festival",
-            "20 minutes"
-          ],
-          "verbatim_misses": [
-            "The Delivery Girl"
-          ]
-        },
-        {
-          "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
-          "title": "newyorktheaterfestival.com",
-          "domain": "newyorktheaterfestival.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "Kate Krieger's passion for slice-of-life stories and nuanced characters inspired her to create \"Delivery Girl.\"",
-          "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
-        },
-        {
-          "beat": "She not only wrote the television pilot but also directed and starred in it.",
-          "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
-        },
-        {
-          "beat": "This television pilot, \"Delivery Girl,\" has a runtime of 20 minutes.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Runtime : 20 minutes"
-        },
-        {
-          "beat": "The film made its debut at the 2019 Sundance Film Festival.",
-          "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "Much to her pleasant surprise, \"Delivery Girl\" made its debut at the 2019 Sundance Film Festival."
-        }
-      ],
-      "validation": {
-        "passed": true,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": true,
-          "film_specific": true,
-          "claim_entailment": true,
-          "verbatim": "flagged",
-          "cross_modal": true,
-          "emission_policy": true,
-          "rubric_disposition": true,
-          "would_pass_strict": true
-        },
-        "rubric": {
-          "factual_accuracy": 2,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 2,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [],
-        "flags": [
-          "shortVersion 72 chars (target 50-60, cap 80)",
-          "verbatim: could not confirm ['The Delivery Girl'] in fetched bodies"
-        ],
-        "judge_notes": ""
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "filming",
-        "shortVersion": "Kate Krieger directed and wrote this film.",
-        "longDescription": "Kate Krieger directed and wrote this film. It has a runtime of 20 minutes.",
-        "sources": [
-          {
-            "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The lead character, Trisha Donahghue, leads a double life in Kate Krieger's \"The Delivery Girl\" by secretly selling drugs and having an affair.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "The lead character, Trisha Donahghue, leads a double life in Kate Krieger's \"The Delivery Girl\" by secretly selling drugs and having an affair.",
-        "search_queries": [
-          "Trisha Donahghue double life Delivery Girl",
-          "Delivery Girl 2019 Trisha secrets",
-          "Kate Krieger Delivery Girl drug dealing"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.thetalentedindian.com/delivery-girl-a-glance-at-patriarchal-roots/",
-          "title": "thetalentedindian.com",
-          "domain": "thetalentedindian.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://tubitv.com/the-t/articles/the-delivery-girl-turns-a-routine-drop-off-into-pure-dread",
-          "title": "tubitv.com",
-          "domain": "tubitv.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "title": "incluvie.com",
-          "domain": "incluvie.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Kate Krieger",
-            "20 minutes"
-          ],
-          "verbatim_misses": [
-            "The Delivery Girl"
-          ]
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "The film \"Delivery Girl\" was directed by Kate Krieger.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Directed By : Kate Krieger"
-        },
-        {
-          "beat": "Kate Krieger also wrote the film.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": ""
-        },
-        {
-          "beat": "The film has a runtime of 20 minutes.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Runtime : 20 minutes"
-        }
-      ],
-      "validation": {
-        "passed": false,
-        "checks": {
-          "contract": true,
-          "source_binding": false,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": false,
-          "film_specific": true,
-          "claim_entailment": false,
-          "verbatim": "flagged",
-          "cross_modal": true,
-          "emission_policy": false,
-          "rubric_disposition": false,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 0,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 1,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "summary_entailment: shortVersion/longDescription claim beyond the beats",
-          "claim_entailment: only 2 bound+supported beats remain (need 3)",
-          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
-          "rubric: factual_accuracy 0/2 (must be >=1)"
-        ],
-        "flags": [
-          "verbatim: could not confirm ['The Delivery Girl'] in fetched bodies"
-        ],
-        "judge_notes": "Beat 1, claiming Kate Krieger wrote the film, is not supported by the source, which has an empty field for 'Written By'. This makes the card factually inaccurate and causes summary_entailed to be false."
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "general",
-        "shortVersion": "This 20-minute short film was directed by Kate Krieger.",
-        "longDescription": "This 20-minute short film was directed by Kate Krieger. It was released in 2019.",
-        "sources": [
-          {
-            "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "David J. Porras's \"The Delivery Girl\" is a student short film described as a neo-noir thriller infused with a dark comedic bite.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "David J. Porras's \"The Delivery Girl\" is a student short film described as a neo-noir thriller infused with a dark comedic bite.",
-        "search_queries": [
-          "The Delivery Girl David J Porras genre",
-          "neo-noir thriller Delivery Girl 2019",
-          "David J Porras short film comedy"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "title": "incluvie.com",
-          "domain": "incluvie.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Delivery Girl",
-            "2019",
-            "20 minutes",
-            "Kate Krieger"
-          ],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "The film, titled 'Delivery Girl,' was released in 2019.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Delivery Girl (2019)"
-        },
-        {
-          "beat": "It has a runtime of 20 minutes.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Runtime : 20 minutes"
-        },
-        {
-          "beat": "Kate Krieger is credited as the director of the film.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Directed By : Kate Krieger"
-        }
-      ],
-      "validation": {
-        "passed": false,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": true,
-          "film_specific": true,
-          "claim_entailment": true,
-          "verbatim": true,
-          "cross_modal": true,
-          "emission_policy": false,
-          "rubric_disposition": true,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 2,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 1,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)"
-        ],
-        "flags": [],
-        "judge_notes": "The card is a general card, and the facts about the film's director, runtime, and release year are appropriate for any-time display. All claims are directly supported by the provided source. The source is classified as 'discovery' as it is a movie database/review site rather than a primary source or major reputable editorial."
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "general",
-        "shortVersion": "Trisha's double life is at the heart of 'Delivery Girl'.",
-        "longDescription": "Trisha's double life is at the heart of 'Delivery Girl'. She struggles with her identity while selling drugs and having a secret lover.",
-        "sources": [
-          {
-            "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The entire narrative of David J. Porras's \"The Delivery Girl\" unfolds over the course of a single chaotic night, following a protagonist named Chloe.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "The entire narrative of David J. Porras's \"The Delivery Girl\" unfolds over the course of a single chaotic night, following a protagonist named Chloe.",
-        "search_queries": [
-          "The Delivery Girl David J Porras plot summary",
-          "Chloe Delivery Girl 2019",
-          "film set in one night Delivery Girl"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "title": "incluvie.com",
-          "domain": "incluvie.com",
-          "tier": "unknown",
-          "evidence_class": "reputable_editorial",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
             "Trisha",
-            "Delivery Girl",
-            "2019",
-            "Leroy",
-            "40"
+            "New York Theater Festival",
+            "WeAudition",
+            "Incluvie",
+            "Sundance Film Festival",
+            "Boston University",
+            "London Academy of Music and Dramatic Art",
+            "Workaholics",
+            "Celeste and Jesse Forever"
           ],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "The 2019 film \"Delivery Girl\" features Trisha, a young woman struggling with her identity.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Trisha is a young woman struggling with her identity."
-        },
-        {
-          "beat": "Trisha leads a double life within her fiercely Catholic household.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "She leads a double life within her fiercely Catholic household"
-        },
-        {
-          "beat": "She sells drugs to make ends meet and carries on with a secret lover.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "selling drugs to make ends meet while carrying on with a secret lover."
-        },
-        {
-          "beat": "Trisha is supported by her friend Leroy, a 40-year-old seeking to regain custody of his child.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "With the support of her friend Leroy, a 40-year-old seeking to regain custody of his child"
-        }
-      ],
-      "validation": {
-        "passed": true,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": true,
-          "film_specific": true,
-          "claim_entailment": true,
-          "verbatim": true,
-          "cross_modal": true,
-          "emission_policy": true,
-          "rubric_disposition": true,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 2,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 2,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "dedup: same story as a kept card (Trisha's double life, involving a Catholic home, selling drugs, and a secret lover.)"
-        ],
-        "flags": [],
-        "judge_notes": ""
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "general",
-        "shortVersion": "Star Kate Krieger also wrote and directed \"Delivery Girl.\"",
-        "longDescription": "Star Kate Krieger also wrote and directed \"Delivery Girl.\" She also played the lead role of Trisha, who leads a double life.",
-        "sources": [
-          {
-            "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-            "modality": "text",
-            "timestamp": null
-          },
-          {
-            "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The characters in Kate Krieger's \"Delivery Girl\" series are all depicted as leading double lives, often harboring secrets that impact those around them.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "The characters in Kate Krieger's \"Delivery Girl\" series are all depicted as leading double lives, often harboring secrets that impact those around them.",
-        "search_queries": [
-          "Delivery Girl Kate Krieger double lives",
-          "characters leading double lives Delivery Girl 2019",
-          "Kate Krieger Delivery Girl secrets"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.ferntv.ca/behind-the-scenes-of-the-delivery-line-a-discussion-with-nance-ackerman/",
-          "title": "ferntv.ca",
-          "domain": "ferntv.ca",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.rottentomatoes.com/m/the_delivery_girl",
-          "title": "rottentomatoes.com",
-          "domain": "rottentomatoes.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.incluvie.com/movie/the-delivery-girl-1768496",
-          "title": "incluvie.com",
-          "domain": "incluvie.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
           "verbatim_misses": []
         },
         {
@@ -1559,8 +1172,14 @@
             "Kate Krieger",
             "Delivery Girl",
             "Trisha",
+            "New York Theater Festival",
+            "WeAudition",
+            "Incluvie",
             "Sundance Film Festival",
-            "2019"
+            "Boston University",
+            "London Academy of Music and Dramatic Art",
+            "Workaholics",
+            "Celeste and Jesse Forever"
           ],
           "verbatim_misses": []
         },
@@ -1577,32 +1196,38 @@
             "Kate Krieger",
             "Delivery Girl",
             "Trisha",
+            "New York Theater Festival",
+            "WeAudition",
+            "Incluvie",
             "Sundance Film Festival",
-            "2019"
+            "Boston University",
+            "London Academy of Music and Dramatic Art",
+            "Workaholics",
+            "Celeste and Jesse Forever"
           ],
           "verbatim_misses": []
         }
       ],
       "claim_evidence": [
         {
-          "beat": "The main character, Trisha, is a young woman struggling with her identity who leads a double life.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Trisha is a young woman struggling with her identity. She leads a double life"
-        },
-        {
-          "beat": "Trisha's double life involves selling drugs to make ends meet and carrying on with a secret lover within her fiercely Catholic household.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "She leads a double life within her fiercely Catholic household, selling drugs to make ends meet while carrying on with a secret lover."
-        },
-        {
-          "beat": "Kate Krieger was inspired to write, direct, and star in 'Delivery Girl' due to her passion for slice-of-life stories and nuanced characters.",
+          "beat": "Creator Kate Krieger wrote, directed, and starred in \"Delivery Girl.\"",
           "sourceUrl": "https://newyorktheaterfestival.com/people/kate-krieger/",
           "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in Delivery Girl, a television pilot of her own creation."
         },
         {
-          "beat": "The film, which was a television pilot of Kate Krieger's own creation, debuted at the 2019 Sundance Film Festival.",
-          "sourceUrl": "https://newyorktheaterfestival.com/people/kate-krieger/",
-          "supporting_passage": "Delivery Girl, a television pilot of her own creation. Much to her pleasant surprise, Delivery Girl made its debut at the 2019 Sundance Film Festival."
+          "beat": "Her passion for \"slice-of-life stories and nuanced characters\" inspired her to create the film.",
+          "sourceUrl": "https://www.weaudition.com/katekrieger",
+          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
+        },
+        {
+          "beat": "The film's main character, Trisha, is a young woman struggling with her identity and leading a double life.",
+          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "supporting_passage": "Trisha is a young woman struggling with her identity. She leads a double life within her fiercely Catholic household, selling drugs to make ends meet while carrying on with a secret lover."
+        },
+        {
+          "beat": "Trisha fights for the courage to embrace her future while confronting her past.",
+          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "supporting_passage": "With the support of her friend Leroy, a 40-year-old seeking to regain custody of his child, she fights for the courage to embrace her future while confronting her past."
         }
       ],
       "validation": {
@@ -1614,17 +1239,17 @@
           "maturity": true,
           "propriety": true,
           "taxonomy": true,
-          "summary_entailment": false,
+          "summary_entailment": true,
           "film_specific": true,
           "claim_entailment": true,
           "verbatim": true,
           "cross_modal": true,
           "emission_policy": true,
-          "rubric_disposition": false,
+          "rubric_disposition": true,
           "would_pass_strict": false
         },
         "rubric": {
-          "factual_accuracy": 0,
+          "factual_accuracy": 2,
           "scene_grounding": 2,
           "primitive_conformance": 2,
           "viewer_value": 2,
@@ -1633,50 +1258,13 @@
         },
         "curiosity": {},
         "rejection_reasons": [
-          "spoiler: card reveals plot, outcomes, or a surprise (cameo/secret role)",
-          "summary_entailment: shortVersion/longDescription claim beyond the beats",
-          "rubric: factual_accuracy 0/2 (must be >=1)"
+          "spoiler: card reveals plot, outcomes, or a surprise (cameo/secret role)"
         ],
-        "flags": [],
-        "judge_notes": "The card fails on factual accuracy because the claim in the longDescription, 'She also played the lead role of Trisha,' is not explicitly stated or supported by the provided source bodies. While Kate Krieger is listed as 'Cast' and Trisha is described as the main character, the sources do not directly link Kate Krieger to the role of Trisha. The card also fails on spoiler safety because, as a GENERAL card, it must not reveal any plot details. Beats 0 and 1, which describe Trisha's double life (struggling with identity, selling drugs, secret lover within a Catholic household), constitute significant plot information."
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The plot of David J. Porras's \"The Delivery Girl\" escalates from a simple delivery into a chaotic night filled with themes of betrayal, ambition, and grim hilarity.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "The plot of David J. Porras's \"The Delivery Girl\" escalates from a simple delivery into a chaotic night filled with themes of betrayal, ambition, and grim hilarity.",
-        "search_queries": [
-          "The Delivery Girl David J Porras themes",
-          "betrayal ambition Delivery Girl 2019",
-          "grim hilarity short film"
+        "flags": [
+          "shortVersion 61 chars (target 50-60, cap 80)"
         ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
+        "judge_notes": "The card is a GENERAL card, which, according to the instructions, \"may not reveal anything about the plot at all.\" Beats 2 and 3, and consequently the longDescription, reveal specific plot elements about the protagonist Trisha, such as \"struggling with her identity and leading a double life\" and \"fights for the courage to embrace her future while confronting her past.\" Even if these are considered premise, they constitute plot information and thus violate the strict spoiler-safety rule for general cards."
       },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
       "humanReview": {
         "state": "pending",
         "reviewer": null,
@@ -1696,8 +1284,8 @@
       "card": {
         "scope": "general",
         "factCategory": "general",
-        "shortVersion": "Trisha's story was written, directed, and starred in by Kate Krieger.",
-        "longDescription": "Trisha's story was written, directed, and starred in by Kate Krieger. Her television pilot debuted at the 2019 Sundance Film Festival.",
+        "shortVersion": "Kate Krieger wrote, directed, and starred in \"Delivery Girl.\"",
+        "longDescription": "Creator Kate Krieger took on multiple roles for \"Delivery Girl,\" writing, directing, and starring in the pilot that debuted at the 2019 Sundance Film Festival. The series explores a young woman's struggle with identity and a double life.",
         "sources": [
           {
             "url": "https://www.weaudition.com/katekrieger",
@@ -1705,7 +1293,12 @@
             "timestamp": null
           },
           {
-            "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+            "url": "https://www.advocate.com/television/2019/1/29/sex-drugs-and-catholicism-explored-innovative-new-series",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
             "modality": "text",
             "timestamp": null
           }
@@ -1715,15 +1308,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The lead character in Kate Krieger's \"The Delivery Girl\" episodic program is named Trisha Donahghue.",
+        "anchor_element": "The \"Delivery Girl\" series explores complex young women in small-town New England, often from intensely Catholic homes, who lead double lives and keep many secrets.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "The lead character in Kate Krieger's \"The Delivery Girl\" episodic program is named Trisha Donahghue.",
+        "search_hint": "The \"Delivery Girl\" series explores complex young women in small-town New England, often from intensely Catholic homes, who lead double lives and keep many secrets.",
         "search_queries": [
-          "Trisha Donahghue Delivery Girl 2019",
-          "Kate Krieger Delivery Girl lead character",
-          "who plays Trisha Donahghue Delivery Girl"
+          "Delivery Girl 2019 series themes",
+          "Kate Krieger Delivery Girl Catholic homes",
+          "New England setting Delivery Girl secrets"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -1731,6 +1324,25 @@
         "runtime_third": 1
       },
       "sources": [
+        {
+          "url": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+          "title": "sundance.org",
+          "domain": "sundance.org",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kate Krieger",
+            "Delivery Girl",
+            "2019",
+            "Sundance Film Festival",
+            "Trisha",
+            "New England"
+          ],
+          "verbatim_misses": []
+        },
         {
           "url": "https://timesofindia.indiatimes.com/videos/entertainment/web-series/english/the-delivery-girl-trailer-teisha-brown-mic-larry-and-charlie-newhart-starrer-the-delivery-girl-official-trailer/videoshow/133869146.cms",
           "title": "indiatimes.com",
@@ -1741,6 +1353,25 @@
           "resolved": true,
           "body_kind": "html",
           "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.advocate.com/television/2019/1/29/sex-drugs-and-catholicism-explored-innovative-new-series",
+          "title": "advocate.com",
+          "domain": "advocate.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kate Krieger",
+            "Delivery Girl",
+            "2019",
+            "Sundance Film Festival",
+            "Trisha",
+            "New England"
+          ],
           "verbatim_misses": []
         },
         {
@@ -1755,21 +1386,11 @@
           "verbatim_hits": [
             "Kate Krieger",
             "Delivery Girl",
+            "2019",
+            "Sundance Film Festival",
             "Trisha",
-            "2019 Sundance Film Festival"
+            "New England"
           ],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.ferntv.ca/behind-the-scenes-of-the-delivery-line-a-discussion-with-nance-ackerman/",
-          "title": "ferntv.ca",
-          "domain": "ferntv.ca",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
           "verbatim_misses": []
         },
         {
@@ -1797,7 +1418,7 @@
           "verbatim_misses": []
         },
         {
-          "url": "https://www.incluvie.com/movie/the-delivery-girl-1768496",
+          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
           "title": "incluvie.com",
           "domain": "incluvie.com",
           "tier": "unknown",
@@ -1809,38 +1430,38 @@
           "verbatim_misses": []
         },
         {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "title": "incluvie.com",
-          "domain": "incluvie.com",
+          "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
+          "title": "newyorktheaterfestival.com",
+          "domain": "newyorktheaterfestival.com",
           "tier": "unknown",
-          "evidence_class": "reputable_editorial",
+          "evidence_class": "unknown",
           "modality": "text",
           "resolved": true,
           "body_kind": "html",
-          "verbatim_hits": [
-            "Kate Krieger",
-            "Delivery Girl",
-            "Trisha",
-            "2019 Sundance Film Festival"
-          ],
+          "verbatim_hits": [],
           "verbatim_misses": []
         }
       ],
       "claim_evidence": [
         {
-          "beat": "Kate Krieger wrote, directed, and starred in \"Delivery Girl,\" a television pilot.",
+          "beat": "Kate Krieger wrote, directed, and starred in \"Delivery Girl,\" a television pilot of her own creation.",
           "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "Kate's passion for slice-of-life stories and nuanced characters, inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
+          "supporting_passage": "inspired her to write, direct and star in \"Delivery Girl\", a television pilot of her own creation."
         },
         {
-          "beat": "This television pilot debuted at the 2019 Sundance Film Festival.",
+          "beat": "The \"Delivery Girl\" pilot made its debut at the 2019 Sundance Film Festival.",
           "sourceUrl": "https://www.weaudition.com/katekrieger",
-          "supporting_passage": "Much to her pleasant surprise, \"Delivery Girl\" made its debut at the 2019 Sundance Film Festival."
+          "supporting_passage": "\"Delivery Girl\" made its debut at the 2019 Sundance Film Festival."
         },
         {
-          "beat": "The lead character in the 2019 \"Delivery Girl\" is named Trisha.",
-          "sourceUrl": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "supporting_passage": "Delivery Girl (2019) Trisha is a young woman struggling with her identity."
+          "beat": "The series centers on Trisha, a young woman struggling with her queer identity and Catholic upbringing in a conservative New England town.",
+          "sourceUrl": "https://www.advocate.com/television/2019/1/29/sex-drugs-and-catholicism-explored-innovative-new-series",
+          "supporting_passage": "Delivery Girl centers Trisha Donahue, a woman struggling with her queer identity and Catholic upbringing while making money delivering drugs in her conservative New England town."
+        },
+        {
+          "beat": "Trisha leads a double life, selling drugs to make ends meet and carrying on a secret affair.",
+          "sourceUrl": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+          "supporting_passage": "living in a fiercely Catholic household leading a double life, selling drugs to make ends meet and carrying on an affair."
         }
       ],
       "validation": {
@@ -1874,10 +1495,47 @@
           "dedup: near-duplicate of an emitted card"
         ],
         "flags": [
-          "shortVersion 69 chars (target 50-60, cap 80)"
+          "shortVersion 61 chars (target 50-60, cap 80)"
         ],
         "judge_notes": ""
       },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Director David J. Porras aimed for his 2019 student short \"The Delivery Girl\" to have a distinct visual aesthetic, described as having \"punch, polish, and plenty of neon\" for its neo-noir style.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Director David J. Porras aimed for his 2019 student short \"The Delivery Girl\" to have a distinct visual aesthetic, described as having \"punch, polish, and plenty of neon\" for its neo-noir style.",
+        "search_queries": [
+          "The Delivery Girl 2019 visual style",
+          "David J Porras neo-noir aesthetic",
+          "student film neon visuals"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
       "humanReview": {
         "state": "pending",
         "reviewer": null,

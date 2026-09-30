@@ -10,11 +10,16 @@
     {
       "scope": "general",
       "factCategory": "general",
-      "shortVersion": "Trisha leads a double life in a fiercely Catholic home.",
-      "longDescription": "Trisha leads a double life in a fiercely Catholic home. She sells drugs and has a secret lover.",
+      "shortVersion": "The title \"Delivery Girl\" refers to multiple characters.",
+      "longDescription": "Creator Kate Krieger intended for the series to feature a different \"delivery girl\" in each episode, each struggling to embrace their true identity.",
       "sources": [
         {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "url": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.advocate.com/television/2019/1/29/sex-drugs-and-catholicism-explored-innovative-new-series",
           "modality": "text",
           "timestamp": null
         }
@@ -23,42 +28,9 @@
       "displayWindows": [
         {
           "startSeconds": 0.0,
-          "endSeconds": 200.0,
+          "endSeconds": 300.0,
           "startTimecode": "00:00:00",
-          "endTimecode": "00:03:20"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Creator Kate Krieger based the film's characters on slice-of-life stories.",
-      "longDescription": "Creator Kate Krieger based the film's characters on slice-of-life stories. Her passion for nuanced characters inspired her to write, direct, and star in the pilot.",
-      "sources": [
-        {
-          "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.weaudition.com/katekrieger",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 200.0,
-          "endSeconds": 400.0,
-          "startTimecode": "00:03:20",
-          "endTimecode": "00:06:40"
+          "endTimecode": "00:05:00"
         }
       ],
       "wouldPassStrict": true
@@ -66,8 +38,8 @@
     {
       "scope": "general",
       "factCategory": "general",
-      "shortVersion": "The Delivery Girl was written, directed, and starred in by Kate Krieger.",
-      "longDescription": "The Delivery Girl was written, directed, and starred in by Kate Krieger. This television pilot also made its debut at the 2019 Sundance Film Festival.",
+      "shortVersion": "Kate Krieger wrote, directed, and starred in this Sundance pilot.",
+      "longDescription": "Kate Krieger not only created \"Delivery Girl\" as a television pilot but also took on the roles of writer, director, and star, leading to its debut at the 2019 Sundance Film Festival.",
       "sources": [
         {
           "url": "https://www.weaudition.com/katekrieger",
@@ -75,7 +47,7 @@
           "timestamp": null
         },
         {
-          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "url": "https://www.sundance.org/blogs/2019-sundance-film-festival-indie-episodic-shorts-and-special-events-announced-3/",
           "modality": "text",
           "timestamp": null
         }
@@ -83,9 +55,9 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 400.0,
+          "startSeconds": 300.0,
           "endSeconds": 600.0,
-          "startTimecode": "00:06:40",
+          "startTimecode": "00:05:00",
           "endTimecode": "00:10:00"
         }
       ],
@@ -94,9 +66,9 @@
   ],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 3,
+    "approved_cards": 2,
     "scene_cards": 0,
-    "general_cards": 3,
+    "general_cards": 2,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -121,12 +93,12 @@
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 17,
-    "cards_emitted": 3,
+    "anchors_proposed": 12,
+    "cards_emitted": 2,
     "would_pass_strict": 2,
-    "cards_rejected": 14,
+    "cards_rejected": 10,
     "errors": 0,
-    "elapsed_seconds": 277.9,
+    "elapsed_seconds": 215.2,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

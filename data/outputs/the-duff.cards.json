@@ -6,229 +6,12 @@
     "input_prompt": "The DUFF (2015)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Wesley Rush's actor improvised many of his funny lines.",
-      "longDescription": "Wesley Rush's actor improvised many of his funny lines. Co-star Mae Whitman called Robbie Amell a \"weird joke machine.\"",
-      "sources": [
-        {
-          "url": "https://collider.com/robbie-amell-the-duff-flash-interview/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.shineon-media.com/2015/02/19/the-duff-cast-talks-bloopers-deleted-scenes-reality-shows-exclusive/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://movieweb.com/duff-movie-interview-robbie-amell/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://screenrant.com/the-duff-robbie-amell-almost-passed-on-film/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 865.7,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:14:25"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Mae Whitman connected with Bianca's struggle with labels.",
-      "longDescription": "Mae Whitman connected with Bianca's struggle with labels. She felt she was often seen as the \"quirky best friend\" in her own career.",
-      "sources": [
-        {
-          "url": "https://www.sweetyhigh.com/read/mae-whitman-the-duff",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.collegefashionista.com/behind-the-scenes-the-duff/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://nowtoronto.com/movies/interview-mae-whitman-star-of-the-duff/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 865.7,
-          "endSeconds": 1731.4,
-          "startTimecode": "00:14:25",
-          "endTimecode": "00:28:51"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The film redefines 'DUFF' as a universal feeling of insecurity.",
-      "longDescription": "The film redefines 'DUFF' as a universal feeling of insecurity. Actor Robbie Amell noted that everyone experiences feeling like the DUFF at some point.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/the-duff-robbie-amell-almost-passed-on-film/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.herculture.org/blog/2020/12/15/why-being-the-duff-is-a-blessing-in-disguise",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://movieweb.com/duff-movie-interview-robbie-amell/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.collegefashionista.com/behind-the-scenes-the-duff/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1731.4,
-          "endSeconds": 2597.1,
-          "startTimecode": "00:28:51",
-          "endTimecode": "00:43:17"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Ken Jeong improvised a several-minute rant, including a Kanye West impression.",
-      "longDescription": "Ken Jeong improvised a several-minute rant, including a Kanye West impression. He also sang, danced, and made crazy noises during the improvised scene.",
-      "sources": [
-        {
-          "url": "https://www.shineon-media.com/2015/02/19/the-duff-cast-talks-bloopers-deleted-scenes-reality-shows-exclusive/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2597.1,
-          "endSeconds": 3462.9,
-          "startTimecode": "00:43:17",
-          "endTimecode": "00:57:42"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "This film pays homage to classic John Hughes teen comedies.",
-      "longDescription": "This film pays homage to classic John Hughes teen comedies. Star Mae Whitman specifically wanted to bring in elements from \"Pretty in Pink.\"",
-      "sources": [
-        {
-          "url": "https://www.thewrap.com/the-duffs-mae-whitman-robbie-amell-on-which-classic-teen-movie-they-would-remake-video/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.collegefashionista.com/behind-the-scenes-the-duff/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://insidepulse.com/2015/02/23/the-duff-is-the-film-john-hughes-wouldve-made-about-todays-youth-a-review/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3462.9,
-          "endSeconds": 4328.6,
-          "startTimecode": "00:57:42",
-          "endTimecode": "01:12:08"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "costume/prop",
-      "shortVersion": "Bianca's hero costume featured a Betsy Johnson top and Aldo heels.",
-      "longDescription": "Bianca's hero costume featured a Betsy Johnson top and Aldo heels. It was screen-worn by Mae Whitman and included a velvet flounce skirt.",
-      "sources": [
-        {
-          "url": "https://www.premiereprops.com/duff-bianca-whitman-hero-movie-costumes-p-12053.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4328.6,
-          "endSeconds": 5194.3,
-          "startTimecode": "01:12:08",
-          "endTimecode": "01:26:34"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "The DUFF director praised Atlanta's \"vibrant\" film scene.",
-      "longDescription": "The DUFF director praised Atlanta's \"vibrant\" film scene. Filmmakers found the city a \"welcoming, friendly place.\"",
-      "sources": [
-        {
-          "url": "https://www.ajc.com/blog/buzz/the-duff-execs-salute-atlanta-filming-community/w6lfH7VOECAQnCJXv480zH/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://giggster.com/guide/movie-location/where-was-the-duff-filmed",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5194.3,
-          "endSeconds": 6060.0,
-          "startTimecode": "01:26:34",
-          "endTimecode": "01:41:00"
-        }
-      ],
-      "wouldPassStrict": true
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 7,
+    "approved_cards": 0,
     "scene_cards": 0,
-    "general_cards": 7,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -236,33 +19,34 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "costume/prop",
-      "filming"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          6060.0
+        ]
+      ]
     },
     "rules": {
       "fact_target_12_15": false,
-      "min_six_cards": true,
+      "min_six_cards": false,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 28,
-    "cards_emitted": 7,
-    "would_pass_strict": 7,
-    "cards_rejected": 21,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 562.2,
+    "elapsed_seconds": 8.9,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

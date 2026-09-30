@@ -12,15 +12,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The Man Upstairs marked Katharine Hepburn's return to television acting after a four-year hiatus.",
+        "anchor_element": "In the same year \"The Man Upstairs\" was released, Katharine Hepburn published her autobiography, leading to her being called \"the busiest recluse in the business.\"",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "The Man Upstairs marked Katharine Hepburn's return to television acting after a four-year hiatus.",
+        "search_hint": "In the same year \"The Man Upstairs\" was released, Katharine Hepburn published her autobiography, leading to her being called \"the busiest recluse in the business.\"",
         "search_queries": [
-          "Katharine Hepburn return to TV The Man Upstairs",
-          "Katharine Hepburn last TV movie",
-          "The Man Upstairs 1992 trivia"
+          "Katharine Hepburn busiest recluse",
+          "Katharine Hepburn Me Stories of My Life",
+          "The Man Upstairs 1992 autobiography"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -49,126 +49,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "During filming, Katharine Hepburn faced challenges with line retention, reportedly showing early signs of dementia.",
+        "anchor_element": "Writer James Prideaux specifically wrote the character of Victoria Brown to reflect Katharine Hepburn's personal and public persona.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "During filming, Katharine Hepburn faced challenges with line retention, reportedly showing early signs of dementia.",
+        "search_hint": "Writer James Prideaux specifically wrote the character of Victoria Brown to reflect Katharine Hepburn's personal and public persona.",
         "search_queries": [
-          "Katharine Hepburn filming challenges The Man Upstairs",
-          "Katharine Hepburn health during The Man Upstairs",
-          "The Man Upstairs production difficulties"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Katharine Hepburn initially refused cue cards but agreed after learning Angela Lansbury used them for \"Murder, She Wrote\".",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Katharine Hepburn initially refused cue cards but agreed after learning Angela Lansbury used them for \"Murder, She Wrote\".",
-        "search_queries": [
-          "Katharine Hepburn cue cards The Man Upstairs",
-          "Angela Lansbury cue cards Murder She Wrote",
-          "The Man Upstairs filming challenges"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Katharine Hepburn received a Golden Globe nomination for Best Actress at 85 years old for her role in The Man Upstairs.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Katharine Hepburn received a Golden Globe nomination for Best Actress at 85 years old for her role in The Man Upstairs.",
-        "search_queries": [
-          "Katharine Hepburn Golden Globe The Man Upstairs",
-          "Katharine Hepburn age Golden Globe nomination",
-          "The Man Upstairs 1992 awards"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The Man Upstairs has never been released on DVD and is rarely aired, making it a difficult film to find.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "The Man Upstairs has never been released on DVD and is rarely aired, making it a difficult film to find.",
-        "search_queries": [
-          "The Man Upstairs 1992 DVD release",
-          "Is The Man Upstairs streaming",
-          "Rare Katharine Hepburn movies"
+          "James Prideaux Katharine Hepburn persona",
+          "The Man Upstairs writer inspiration",
+          "Victoria Brown character inspiration"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -197,8 +86,8 @@
       "card": {
         "scope": "general",
         "factCategory": "actor",
-        "shortVersion": "Victoria Brown's secluded life mirrored Katharine Hepburn's own.",
-        "longDescription": "Victoria Brown's secluded life mirrored Katharine Hepburn's own. The character's isolated existence was the only aspect noted to truly resemble Hepburn's personal life.",
+        "shortVersion": "Katharine Hepburn returned to acting after a four-year hiatus.",
+        "longDescription": "After starring in 1988's \"Laura Lansing Slept Here,\" Katharine Hepburn took a four-year break from the screen. This film marked her comeback at 85 years old.",
         "sources": [
           {
             "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
@@ -211,15 +100,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Katharine Hepburn's character, Victoria Brown, mirrored her real-life preference for seclusion away from Hollywood.",
+        "anchor_element": "\"The Man Upstairs\" marked Katharine Hepburn's return to acting after a four-year hiatus following her 1988 film, \"Laura Lansing Slept Here.\"",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Katharine Hepburn's character, Victoria Brown, mirrored her real-life preference for seclusion away from Hollywood.",
+        "search_hint": "\"The Man Upstairs\" marked Katharine Hepburn's return to acting after a four-year hiatus following her 1988 film, \"Laura Lansing Slept Here.\"",
         "search_queries": [
-          "Katharine Hepburn Victoria Brown real life",
-          "The Man Upstairs Hepburn seclusion",
-          "Katharine Hepburn Fenwick Connecticut"
+          "Katharine Hepburn return to acting 1992",
+          "The Man Upstairs Hepburn hiatus",
+          "Katharine Hepburn Laura Lansing Slept Here"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -232,18 +121,6 @@
           "title": "latimes.com",
           "domain": "latimes.com",
           "tier": "B",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.encyclopedia.com/people/literature-and-arts/film-and-television-biographies/katharine-hepburn",
-          "title": "encyclopedia.com",
-          "domain": "encyclopedia.com",
-          "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
           "resolved": true,
@@ -273,343 +150,21 @@
           "resolved": true,
           "body_kind": "html",
           "verbatim_hits": [
-            "Victoria Brown",
             "Katharine Hepburn",
-            "Hollywood",
-            "Fenwick, Connecticut"
-          ],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "Victoria Brown's isolated existence in the film was noted as the only aspect that truly resembled Katharine Hepburn's personal life.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "The only formation of the film that really resembles Katharine Hepburn is the isolated existence of Victoria Brown."
-        },
-        {
-          "beat": "In real life, Katharine Hepburn preferred to seclude herself away from Hollywood, living a peaceful life in Fenwick, Connecticut.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "In real life Katharine much preferred to seclude herself away from Hollywood to live a leisurely and peaceful life in Fenwick, Connecticut"
-        },
-        {
-          "beat": "Similarly, Victoria Brown is portrayed as a recluse, living a rather sheltered life in her remote residence.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "Victoria Brown is virtually a recluse who lives a rather sheltered life in her remote residence"
-        },
-        {
-          "beat": "Victoria's only company is her maid and cleaner, and she spends her nights alone reading.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "The only company that Victoria keeps is that of her maid Molly and her cleaner who is employed to work in the mansion during the day. At night Victoria is alone and eludes boredom by burying herself in a book."
-        }
-      ],
-      "validation": {
-        "passed": false,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": true,
-          "film_specific": false,
-          "claim_entailment": true,
-          "verbatim": true,
-          "cross_modal": true,
-          "emission_policy": false,
-          "rubric_disposition": false,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 0,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 2,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "film_specific: claims are generic industry practice, not about this film",
-          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
-          "rubric: factual_accuracy 0/2 (must be >=1)"
-        ],
-        "flags": [
-          "shortVersion 64 chars (target 50-60, cap 80)",
-          "longDescription 168 chars (target ~120, max 160)"
-        ],
-        "judge_notes": "The prompt specifies the film as 'The Woman Upstairs (1992)', but the provided source and the content of the card (referencing Victoria Brown and the plot details) are for 'The Man Upstairs (1992)'. Therefore, the card is factually inaccurate and not film-specific for 'The Woman Upstairs (1992)'. The beats are entailed by the provided source, but the source is for a different film than the one specified in the prompt."
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "actor",
-        "shortVersion": "At 85, Katharine Hepburn wrestled an escaped convict in this film.",
-        "longDescription": "At 85, Katharine Hepburn wrestled an escaped convict in this film. She was eighty-five years old during filming.",
-        "sources": [
-          {
-            "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-            "modality": "text",
-            "timestamp": null
-          },
-          {
-            "url": "https://www.primevideo.com/detail/0NDABME8VQC2K89R96YPJOVBD1",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "At 85, Katharine Hepburn performed physical comedy, including smacking Ryan O'Neal with a cane and wrestling a gun.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "At 85, Katharine Hepburn performed physical comedy, including smacking Ryan O'Neal with a cane and wrestling a gun.",
-        "search_queries": [
-          "Katharine Hepburn physical comedy The Man Upstairs",
-          "Katharine Hepburn Ryan O'Neal cane scene",
-          "The Man Upstairs Hepburn stunts"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "http://thefilmexperience.net/blog/2014/12/3/a-year-with-kate-the-man-upstairs-1992.html",
-          "title": "thefilmexperience.net",
-          "domain": "thefilmexperience.net",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "title": "wordpress.com",
-          "domain": "wordpress.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Katharine Hepburn",
-            "The Man Upstairs",
-            "Victoria Brown",
-            "Mooney Polaski",
-            "Ryan O'Neal"
-          ],
-          "verbatim_misses": [
-            "85"
-          ]
-        },
-        {
-          "url": "https://www.primevideo.com/detail/0NDABME8VQC2K89R96YPJOVBD1",
-          "title": "primevideo.com",
-          "domain": "primevideo.com",
-          "tier": "unknown",
-          "evidence_class": "primary_direct",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Katharine Hepburn",
-            "The Man Upstairs",
-            "Victoria Brown",
-            "Mooney Polaski",
-            "Ryan O'Neal"
-          ],
-          "verbatim_misses": [
-            "85"
-          ]
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "Katharine Hepburn was 85 years old when \"The Man Upstairs\" was filmed.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "At the time of filming The Man Upstairs Katharine was eighty-five years old"
-        },
-        {
-          "beat": "Hepburn's character, Victoria Brown, discovers an escaped convict named Mooney Polaski.",
-          "sourceUrl": "https://www.primevideo.com/detail/0NDABME8VQC2K89R96YPJOVBD1",
-          "supporting_passage": "Katharine Hepburn as Victoria Brown, a sharp-tongued spinster who discovers petty thief Moony Polaski (Ryan O'Neal) hiding out in her attic."
-        },
-        {
-          "beat": "The movie features Hepburn's character wrestling the escaped convict to the ground.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "it features Katharine wrestling an escaped convict to the ground."
-        }
-      ],
-      "validation": {
-        "passed": false,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": false,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": false,
-          "film_specific": false,
-          "claim_entailment": false,
-          "verbatim": "flagged",
-          "cross_modal": true,
-          "emission_policy": true,
-          "rubric_disposition": false,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 0,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 2,
-          "clarity": 2,
-          "spoiler_safety": 0
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "spoiler: card reveals plot, outcomes, or a surprise (cameo/secret role)",
-          "summary_entailment: shortVersion/longDescription claim beyond the beats",
-          "film_specific: claims are generic industry practice, not about this film",
-          "claim_entailment: only 2 bound+supported beats remain (need 3)",
-          "rubric: factual_accuracy 0/2 (must be >=1)"
-        ],
-        "flags": [
-          "shortVersion 66 chars (target 50-60, cap 80)",
-          "verbatim: could not confirm ['85'] in fetched bodies"
-        ],
-        "judge_notes": "The prompt specifies the film as 'The Woman Upstairs (1992)', but the candidate card and all cited sources refer to 'The Man Upstairs (1992)'. These are different films, making the card factually inaccurate for the specified film and not film-specific. Additionally, Beat 1 is not entailed by its cited source, as the source states 'petty thief' while the beat claims 'escaped convict'. The spoiler safety is rated 0 because, as a general card, it must be spoiler-free for the entire runtime, and it's uncertain if the wrestling event occurs early or late in the film, potentially revealing a significant plot point."
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "filming",
-        "shortVersion": "Burt Reynolds was almost Mooney Polaski before scheduling conflicts.",
-        "longDescription": "Burt Reynolds was almost Mooney Polaski before scheduling conflicts. He remained involved with the film as a producer.",
-        "sources": [
-          {
-            "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Burt Reynolds was originally cast as Mooney Polaski but stepped down due to scheduling, remaining an executive producer.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Burt Reynolds was originally cast as Mooney Polaski but stepped down due to scheduling, remaining an executive producer.",
-        "search_queries": [
-          "Burt Reynolds The Man Upstairs producer",
-          "Ryan O'Neal Burt Reynolds The Man Upstairs",
-          "Who almost played Mooney Polaski The Man Upstairs"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.latimes.com/archives/la-xpm-1992-12-05-ca-1188-story.html",
-          "title": "latimes.com",
-          "domain": "latimes.com",
-          "tier": "B",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://watch.plex.tv/person/burt-reynolds",
-          "title": "plex.tv",
-          "domain": "plex.tv",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "title": "wordpress.com",
-          "domain": "wordpress.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Burt Reynolds",
-            "Mooney Polaski",
+            "Laura Lansing Slept Here",
+            "1988",
+            "1992",
             "The Man Upstairs"
           ],
-          "verbatim_misses": []
+          "verbatim_misses": [
+            "four-year",
+            "85"
+          ]
         },
         {
-          "url": "https://www.alamy.com/stock-photo-the-man-upstairs-from-left-ryan-oneal-katharine-hepburn-1992-burt-128695182.html",
-          "title": "alamy.com",
-          "domain": "alamy.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.primevideo.com/detail/0NDABME8VQC2K89R96YPJOVBD1",
-          "title": "primevideo.com",
-          "domain": "primevideo.com",
+          "url": "https://www.incluvie.com/movie/laura-lansing-slept-here-216822",
+          "title": "incluvie.com",
+          "domain": "incluvie.com",
           "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
@@ -641,252 +196,23 @@
           "body_kind": "html",
           "verbatim_hits": [],
           "verbatim_misses": []
-        },
-        {
-          "url": "https://www.rewatchclassictv.com/products/the-man-upstairs-cbs-tvm-12-93",
-          "title": "rewatchclassictv.com",
-          "domain": "rewatchclassictv.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
         }
       ],
       "claim_evidence": [
         {
-          "beat": "Burt Reynolds was originally set to star as the male lead in The Man Upstairs.",
+          "beat": "Katharine Hepburn starred in the television movie \"Laura Lansing Slept Here\" in 1988.",
           "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": ""
+          "supporting_passage": "visited her comedic roots in Laura Lansing Slept Here in 1988."
         },
         {
-          "beat": "Scheduling conflicts with other projects prevented Reynolds from taking the starring role.",
+          "beat": "Following its release, Hepburn took a four-year hiatus from acting.",
           "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": ""
+          "supporting_passage": "Following the release of Laura Lansing Slept Here, Katharine Hepburn took a four year hiatus"
         },
         {
-          "beat": "Reynolds remained involved with the film as a producer.",
+          "beat": "She returned to the small screen in 1992 for \"The Man Upstairs.\"",
           "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": ""
-        }
-      ],
-      "validation": {
-        "passed": false,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": false,
-          "summary_entailment": false,
-          "film_specific": false,
-          "claim_entailment": false,
-          "verbatim": true,
-          "cross_modal": true,
-          "emission_policy": false,
-          "rubric_disposition": false,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 0,
-          "scene_grounding": 2,
-          "primitive_conformance": 0,
-          "viewer_value": 0,
-          "clarity": 0,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "summary_entailment: shortVersion/longDescription claim beyond the beats",
-          "film_specific: claims are generic industry practice, not about this film",
-          "claim_entailment: only 0 bound+supported beats remain (need 3)",
-          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
-          "rubric: factual_accuracy 0/2 (must be >=1)",
-          "rubric: primitive_conformance 0/2 (must be >=1)"
-        ],
-        "flags": [
-          "shortVersion 68 chars (target 50-60, cap 80)",
-          "taxonomy: category mismatch",
-          "rubric low (relaxed): ['viewer_value', 'clarity']"
-        ],
-        "judge_notes": "The card is specified for 'The Woman Upstairs (1992)', but all claims in the beats and the cited source body refer to 'The Man Upstairs (1992)'. Due to this fundamental mismatch, none of the beats are entailed for the specified film, leading to failures in factual accuracy, summary entailment, and film specificity. Additionally, the content type (casting drama/who almost got a role) is explicitly disallowed by the primitive conformance rules, resulting in an automatic score of 0 for that rubric dimension. The source is a personal blog, classified as 'discovery'."
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "general",
-        "shortVersion": "The writer was unimpressed with the film's final result.",
-        "longDescription": "The writer was unimpressed with the film's final result. He felt it only captured Katharine Hepburn's isolated persona.",
-        "sources": [
-          {
-            "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Writer James Prideaux was reportedly unimpressed with the film's final result, feeling it only captured Hepburn's isolated persona.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Writer James Prideaux was reportedly unimpressed with the film's final result, feeling it only captured Hepburn's isolated persona.",
-        "search_queries": [
-          "James Prideaux The Man Upstairs opinion",
-          "Writer's view The Man Upstairs",
-          "Katharine Hepburn film persona"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.slashfilm.com/1335419/actors-damaged-bodies-forever-movie-role/",
-          "title": "slashfilm.com",
-          "domain": "slashfilm.com",
-          "tier": "B",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.goodreads.com/book/show/177574613-the-man-upstairs",
-          "title": "goodreads.com",
-          "domain": "goodreads.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://michaelboturwriter.com/themanupstairs/",
-          "title": "michaelboturwriter.com",
-          "domain": "michaelboturwriter.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "http://thefilmexperience.net/blog/2014/12/3/a-year-with-kate-the-man-upstairs-1992.html",
-          "title": "thefilmexperience.net",
-          "domain": "thefilmexperience.net",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://poettreeyr.wordpress.com/2017/10/08/october-8th-ray-bradbury-the-man-upstairs-the-art-of-metaphor-and-subtext/",
-          "title": "wordpress.com",
-          "domain": "wordpress.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "title": "wordpress.com",
-          "domain": "wordpress.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "James Prideaux",
-            "Katharine Hepburn",
-            "Victoria Brown",
-            "The Man Upstairs"
-          ],
-          "verbatim_misses": [
-            "The Woman Upstairs"
-          ]
-        },
-        {
-          "url": "https://maldivianbookreviewer.com/2024/07/05/review-the-man-upstairs-by-jade-west/",
-          "title": "maldivianbookreviewer.com",
-          "domain": "maldivianbookreviewer.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "http://thegreatkh.blogspot.com/2012/04/introdution-word-about-persona.html",
-          "title": "blogspot.com",
-          "domain": "blogspot.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "James Prideaux wrote the screenplay for \"The Man Upstairs\" (1992).",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": ""
-        },
-        {
-          "beat": "Prideaux intended the film to illustrate Katharine Hepburn’s personal and public persona.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": ""
-        },
-        {
-          "beat": "However, Prideaux was unimpressed with the final result of the film.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": ""
-        },
-        {
-          "beat": "He felt the film only captured the isolated existence of Victoria Brown.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": ""
+          "supporting_passage": "returned to the small screen again in 1992 when she co-starred alongside Ryan O’Neal in The Man Upstairs."
         }
       ],
       "validation": {
@@ -900,446 +226,7 @@
           "taxonomy": true,
           "summary_entailment": false,
           "film_specific": false,
-          "claim_entailment": false,
-          "verbatim": "flagged",
-          "cross_modal": true,
-          "emission_policy": false,
-          "rubric_disposition": false,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 0,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 0,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "summary_entailment: shortVersion/longDescription claim beyond the beats",
-          "film_specific: claims are generic industry practice, not about this film",
-          "claim_entailment: only 0 bound+supported beats remain (need 3)",
-          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
-          "rubric: factual_accuracy 0/2 (must be >=1)"
-        ],
-        "flags": [
-          "verbatim: could not confirm ['The Woman Upstairs'] in fetched bodies",
-          "rubric low (relaxed): ['viewer_value']"
-        ],
-        "judge_notes": "The primary issue is that the source provided is a WordPress blog, which is a 'discovery' class source and cannot be used to entail any factual claims. Therefore, all beats are marked as not entailed, leading to a factual_accuracy score of 0. A secondary, but equally critical, issue is that the card is for 'The Woman Upstairs (1992)' while the provided source and its content refer exclusively to 'The Man Upstairs (1992)'. This film title mismatch means the claims, even if from a reputable source, would not be specific to the film the card is intended for. This further contributes to the factual_accuracy and film_specific failures. Viewer value is 0 because the information is not reliably supported for the specified film."
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "\"The Man Upstairs\" was filmed on location in Vancouver, Canada, even though the story is set in an unspecified \"bushy province.\"",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "\"The Man Upstairs\" was filmed on location in Vancouver, Canada, even though the story is set in an unspecified \"bushy province.\"",
-        "search_queries": [
-          "The Man Upstairs filming location Vancouver",
-          "where was The Man Upstairs 1992 filmed",
-          "Katharine Hepburn movie Vancouver"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Katharine Hepburn released her autobiography \"Me: Stories of My Life\" in the same year she starred in \"The Man Upstairs.\"",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Katharine Hepburn released her autobiography \"Me: Stories of My Life\" in the same year she starred in \"The Man Upstairs.\"",
-        "search_queries": [
-          "Katharine Hepburn Me Stories of My Life 1992",
-          "The Man Upstairs Hepburn autobiography",
-          "Katharine Hepburn 1992 projects"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Katharine Hepburn's performance in \"The Man Upstairs\" was characterized by her character's ability to \"alternately snap and smile\" at costars, mirroring Hepburn's own forthright personality.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Katharine Hepburn's performance in \"The Man Upstairs\" was characterized by her character's ability to \"alternately snap and smile\" at costars, mirroring Hepburn's own forthright personality.",
-        "search_queries": [
-          "Katharine Hepburn snap and smile The Man Upstairs",
-          "Hepburn acting style 1992",
-          "Victoria Brown personality"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Ryan O'Neal's character, Mooney Polaski, is portrayed as an \"inept\" escaped convict, a surprising departure from typical hardened criminal roles.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Ryan O'Neal's character, Mooney Polaski, is portrayed as an \"inept\" escaped convict, a surprising departure from typical hardened criminal roles.",
-        "search_queries": [
-          "Ryan O'Neal inept convict The Man Upstairs",
-          "Mooney Polaski character description",
-          "The Man Upstairs Ryan O'Neal role"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The core of \"The Man Upstairs\" is the unexpected friendship that blossoms between the reclusive Victoria Brown and the escaped convict Mooney Polaski.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "The core of \"The Man Upstairs\" is the unexpected friendship that blossoms between the reclusive Victoria Brown and the escaped convict Mooney Polaski.",
-        "search_queries": [
-          "The Man Upstairs unexpected friendship",
-          "Katharine Hepburn Ryan O'Neal bond",
-          "Victoria Brown Mooney Polaski friendship"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Despite being a crime comedy-drama about an escaped convict, \"The Man Upstairs\" is surprisingly set during Christmastime, with Victoria buying a tree and gifts for Mooney.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Despite being a crime comedy-drama about an escaped convict, \"The Man Upstairs\" is surprisingly set during Christmastime, with Victoria buying a tree and gifts for Mooney.",
-        "search_queries": [
-          "The Man Upstairs Christmas setting",
-          "Katharine Hepburn Christmas movie",
-          "crime drama set at Christmas"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The central premise of \"The Man Upstairs\" involves a solitary elderly woman whose reclusive life is dramatically shaken by the arrival of an unexpected guest.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "The central premise of \"The Man Upstairs\" involves a solitary elderly woman whose reclusive life is dramatically shaken by the arrival of an unexpected guest.",
-        "search_queries": [
-          "The Man Upstairs premise",
-          "solitary woman unexpected guest movie",
-          "Katharine Hepburn reclusive character"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "actor",
-        "shortVersion": "Katharine Hepburn used cue cards for her lines.",
-        "longDescription": "Katharine Hepburn used cue cards for her lines. She initially refused, seeing it as a weakness, but eventually agreed after producer John Dayton's persuasion.",
-        "sources": [
-          {
-            "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Victoria Brown, Katharine Hepburn's character, is revealed to be the daughter of a judge, explaining her surprising legal acumen used to protect Mooney.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Victoria Brown, Katharine Hepburn's character, is revealed to be the daughter of a judge, explaining her surprising legal acumen used to protect Mooney.",
-        "search_queries": [
-          "Victoria Brown judge's daughter The Man Upstairs",
-          "Katharine Hepburn character legal knowledge",
-          "The Man Upstairs Victoria's background"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://kelleepratt.com/2026/03/02/katharine-hepburn-a-film-study/",
-          "title": "kelleepratt.com",
-          "domain": "kelleepratt.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "http://thefilmexperience.net/blog/2014/12/3/a-year-with-kate-the-man-upstairs-1992.html",
-          "title": "thefilmexperience.net",
-          "domain": "thefilmexperience.net",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://learningenglish.voanews.com/a/katharine-hepburn-1907-2003-an-independent-and-intelligent-actress--128819113/114568.html",
-          "title": "voanews.com",
-          "domain": "voanews.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "title": "wordpress.com",
-          "domain": "wordpress.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Katharine Hepburn",
-            "John Dayton",
-            "Angela Lansbury",
-            "Murder She Wrote",
-            "The Man Upstairs"
-          ],
-          "verbatim_misses": [
-            "The Woman Upstairs"
-          ]
-        },
-        {
-          "url": "https://www.primevideo.com/detail/0I8LH1WG0SOS6TLX1UYX5R7UFA?tr=us",
-          "title": "primevideo.com",
-          "domain": "primevideo.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "Katharine Hepburn was 85 years old and showing signs of dementia during the filming of The Man Upstairs.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "At the time of filming The Man Upstairs Katharine was eighty-five years old and was starting to display the onset of Dementia."
-        },
-        {
-          "beat": "During production, she would forget her lines, which caused her distress.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "During the production she would forget her lines which would result in her getting distressed."
-        },
-        {
-          "beat": "Producer John Dayton suggested she use cue cards, but Hepburn initially refused, viewing it as a sign of weakness.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "The producer John Dayton suggested she use cue cards, but Hepburn saw this as a sign of weakness and bluntly refused"
-        },
-        {
-          "beat": "She only agreed to try cue cards after Dayton told her that Angela Lansbury used them for Murder She Wrote.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "It wasn’t until Dayton admitted to her that Angela Lansbury used cue cards for Murder She Wrote that she decided to give them a try."
-        }
-      ],
-      "validation": {
-        "passed": false,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": false,
-          "film_specific": false,
-          "claim_entailment": false,
+          "claim_entailment": true,
           "verbatim": "flagged",
           "cross_modal": true,
           "emission_policy": false,
@@ -1349,7 +236,7 @@
         "rubric": {
           "factual_accuracy": 0,
           "scene_grounding": 0,
-          "primitive_conformance": 2,
+          "primitive_conformance": 0,
           "viewer_value": 0,
           "clarity": 2,
           "spoiler_safety": 2
@@ -1358,17 +245,55 @@
         "rejection_reasons": [
           "summary_entailment: shortVersion/longDescription claim beyond the beats",
           "film_specific: claims are generic industry practice, not about this film",
-          "claim_entailment: only 0 bound+supported beats remain (need 3)",
           "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
           "rubric: factual_accuracy 0/2 (must be >=1)",
-          "rubric: scene_grounding 0/2 (must be >=1)"
+          "rubric: scene_grounding 0/2 (must be >=1)",
+          "rubric: primitive_conformance 0/2 (must be >=1)"
         ],
         "flags": [
-          "verbatim: could not confirm ['The Woman Upstairs'] in fetched bodies",
+          "shortVersion 62 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['four-year', '85'] in fetched bodies",
           "rubric low (relaxed): ['viewer_value']"
         ],
-        "judge_notes": "The card is for 'The Woman Upstairs (1992)', but all beats and the cited source refer to 'The Man Upstairs (1992)'. These are two distinct films. Therefore, none of the beats are entailed for the target film, leading to failures in factual accuracy, scene grounding, viewer value, summary entailment, and film specificity."
+        "judge_notes": "The card is intended for 'The Woman Upstairs (1992)' as per the prompt, but its content and all cited sources refer to 'The Man Upstairs (1992)'. These are different films. This fundamental mismatch leads to failures in factual accuracy, scene grounding, primitive conformance, and viewer value, as the card is not relevant to the specified film. Additionally, the longDescription includes Katharine Hepburn's age (85), which is not explicitly stated in any of the beats, making summary_entailed false."
       },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Katharine Hepburn's character, Victoria Brown, mirrored her real-life preference for a reclusive existence away from Hollywood.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Katharine Hepburn's character, Victoria Brown, mirrored her real-life preference for a reclusive existence away from Hollywood.",
+        "search_queries": [
+          "Katharine Hepburn reclusive life Fenwick Connecticut",
+          "Victoria Brown character inspiration The Man Upstairs",
+          "Katharine Hepburn real life seclusion"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
       "humanReview": {
         "state": "pending",
         "reviewer": null,
@@ -1387,10 +312,20 @@
       "status": "emitted",
       "card": {
         "scope": "general",
-        "factCategory": "general",
-        "shortVersion": "Victoria and Mooney's bond was a surprise to them both.",
-        "longDescription": "Victoria and Mooney's bond was a surprise to them both. They were two lonely people from different worlds who recognized themselves in each other.",
+        "factCategory": "actor",
+        "shortVersion": "Katharine Hepburn was a Golden Globe nominee for The Man Upstairs.",
+        "longDescription": "Hepburn was nominated for Best Actress in a TV Movie at the 1993 Golden Globes for her role as Victoria Browne, showcasing her enduring talent.",
         "sources": [
+          {
+            "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://goldenglobes.com/person/katharine-hepburn/",
+            "modality": "text",
+            "timestamp": null
+          },
           {
             "url": "https://www.latimes.com/archives/la-xpm-1992-12-05-ca-1188-story.html",
             "modality": "text",
@@ -1409,15 +344,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The film subtly hinted at a \"May-December romance\" developing between the elderly Victoria Brown and the younger escaped convict Mooney Polaski.",
+        "anchor_element": "Despite some critics finding the film \"formulaic,\" Katharine Hepburn earned a Golden Globe nomination for her performance as Victoria Brown.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "The film subtly hinted at a \"May-December romance\" developing between the elderly Victoria Brown and the younger escaped convict Mooney Polaski.",
+        "search_hint": "Despite some critics finding the film \"formulaic,\" Katharine Hepburn earned a Golden Globe nomination for her performance as Victoria Brown.",
         "search_queries": [
-          "The Man Upstairs May-December romance",
-          "Katharine Hepburn Ryan O'Neal relationship The Man Upstairs",
-          "Victoria Brown Mooney Polaski romance"
+          "Katharine Hepburn Golden Globe The Man Upstairs",
+          "Victoria Brown Golden Globe nomination",
+          "The Man Upstairs critical reception Hepburn"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -1435,21 +370,309 @@
           "resolved": true,
           "body_kind": "html",
           "verbatim_hits": [
-            "Victoria Brown",
-            "Mooney Polaski",
-            "Ryan O’Neal",
             "Katharine Hepburn",
+            "Golden Globe",
             "The Man Upstairs",
-            "Los Angeles Times",
+            "Victoria Browne",
+            "1993",
+            "Best Performance by an Actress in a Limited Series, Anthology Series, or a Motion Picture Made for Television",
             "George Schaefer",
-            "James Prideaux",
-            "Laura Lansing Slept Here",
-            "CBS",
-            "Channels 2"
+            "James Prideaux"
           ],
-          "verbatim_misses": [
-            "Channels 8"
-          ]
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://thefilmexperience.net/blog/2014/12/3/a-year-with-kate-the-man-upstairs-1992.html",
+          "title": "thefilmexperience.net",
+          "domain": "thefilmexperience.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://lambdaliteraryreview.org/2013/08/the-woman-upstairs-by-claire-messud/",
+          "title": "lambdaliteraryreview.org",
+          "domain": "lambdaliteraryreview.org",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://bulkbookstore.com/the-woman-upstairs-9780307743763",
+          "title": "bulkbookstore.com",
+          "domain": "bulkbookstore.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "title": "wordpress.com",
+          "domain": "wordpress.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Katharine Hepburn",
+            "Golden Globe",
+            "The Man Upstairs",
+            "Victoria Browne",
+            "1993",
+            "Best Performance by an Actress in a Limited Series, Anthology Series, or a Motion Picture Made for Television",
+            "George Schaefer",
+            "James Prideaux"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://archive.org/details/womanupstairsnov00mess",
+          "title": "archive.org",
+          "domain": "archive.org",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.virago.co.uk/titles/claire-messud/the-woman-upstairs/9781844087334/",
+          "title": "virago.co.uk",
+          "domain": "virago.co.uk",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://goldenglobes.com/person/katharine-hepburn/",
+          "title": "goldenglobes.com",
+          "domain": "goldenglobes.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Katharine Hepburn",
+            "Golden Globe",
+            "The Man Upstairs",
+            "Victoria Browne",
+            "1993",
+            "Best Performance by an Actress in a Limited Series, Anthology Series, or a Motion Picture Made for Television",
+            "George Schaefer",
+            "James Prideaux"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Katharine Hepburn earned a Golden Globe nomination for her performance in the 1992 film, *The Man Upstairs*.",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": "Katharine Hepburn garnered a Golden Globe nomination for The Man Upstairs"
+        },
+        {
+          "beat": "She was a 1993 nominee for Best Performance by an Actress in a Limited Series, Anthology Series, or a Motion Picture Made for Television.",
+          "sourceUrl": "https://goldenglobes.com/person/katharine-hepburn/",
+          "supporting_passage": "1993 Nominee Best Performance by an Actress in a Limited Series, Anthology Series, or a Motion Picture Made for Television Man Upstairs, The Katharine Hepburn"
+        },
+        {
+          "beat": "In the film, Hepburn portrayed Victoria Browne, a singularly astringent and fiercely independent spinster.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-1992-12-05-ca-1188-story.html",
+          "supporting_passage": "Victoria Browne (Hepburn), a singularly astringent and fiercely independent spinster."
+        },
+        {
+          "beat": "The film was directed by George Schaefer and written for the screen by James Prideaux.",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": "a film that was directed by George Schaefer and written for the screen by James Prideaux"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 66 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": "The prompt's 'FILM' title states 'The Woman Upstairs (1992)', but the 'ANCHOR ELEMENT' and all card content and sources consistently refer to 'The Man Upstairs (1992)'. This evaluation assumes 'The Man Upstairs (1992)' is the correct film title, as all provided information pertains to it."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Victoria Brown, the daughter of a judge, uses her extensive knowledge of the law to promise the escaped convict Mooney that she will help him get out of jail.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Victoria Brown, the daughter of a judge, uses her extensive knowledge of the law to promise the escaped convict Mooney that she will help him get out of jail.",
+        "search_queries": [
+          "Victoria Brown helps Mooney Polasky",
+          "The Man Upstairs plot details",
+          "Katharine Hepburn character law knowledge"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Burt Reynolds was originally cast as the male lead opposite Katharine Hepburn but had to step down due to scheduling conflicts, remaining as an executive producer.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Burt Reynolds was originally cast as the male lead opposite Katharine Hepburn but had to step down due to scheduling conflicts, remaining as an executive producer.",
+        "search_queries": [
+          "Burt Reynolds The Man Upstairs casting",
+          "Burt Reynolds executive producer 1992 film",
+          "Who was originally cast opposite Katharine Hepburn in The Man Upstairs"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "actor",
+        "shortVersion": "At 85, Katharine Hepburn used cue cards due to dementia.",
+        "longDescription": "During filming, 85-year-old Katharine Hepburn was experiencing the onset of dementia, causing her distress when she occasionally forgot lines. She initially refused cue cards, but eventually agreed.",
+        "sources": [
+          {
+            "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "At 85 years old during filming, Katharine Hepburn was experiencing the onset of dementia, which caused her distress when she occasionally forgot lines.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "At 85 years old during filming, Katharine Hepburn was experiencing the onset of dementia, which caused her distress when she occasionally forgot lines.",
+        "search_queries": [
+          "Katharine Hepburn dementia filming The Man Upstairs",
+          "Katharine Hepburn forgot lines 1992 film",
+          "Hepburn age during The Man Upstairs"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1992-12-05-ca-1188-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
         },
         {
           "url": "http://thefilmexperience.net/blog/2014/12/3/a-year-with-kate-the-man-upstairs-1992.html",
@@ -1468,57 +691,51 @@
           "title": "wordpress.com",
           "domain": "wordpress.com",
           "tier": "unknown",
-          "evidence_class": "unknown",
+          "evidence_class": "discovery",
           "modality": "text",
           "resolved": true,
           "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.primevideo.com/detail/0NDABME8VQC2K89R96YPJOVBD1",
-          "title": "primevideo.com",
-          "domain": "primevideo.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.filmaffinity.com/ca/film209746.html",
-          "title": "filmaffinity.com",
-          "domain": "filmaffinity.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
+          "verbatim_hits": [
+            "Katharine Hepburn",
+            "Dementia",
+            "John Dayton",
+            "Angela Lansbury",
+            "Murder She Wrote"
+          ],
+          "verbatim_misses": [
+            "85"
+          ]
         }
       ],
       "claim_evidence": [
         {
-          "beat": "The film explores the unexpected bond between Victoria Brown and Mooney Polaski.",
-          "sourceUrl": "https://www.latimes.com/archives/la-xpm-1992-12-05-ca-1188-story.html",
-          "supporting_passage": "the fun and the sentiment come when the two start getting to know each other and eventually to have impact upon each other in a way that takes both by surprise."
+          "beat": "Katharine Hepburn was eighty-five years old during the filming of the movie.",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": "At the time of filming The Man Upstairs Katharine was eighty-five years old"
         },
         {
-          "beat": "These two individuals, from radically different worlds, were both very lonely and intelligent.",
-          "sourceUrl": "https://www.latimes.com/archives/la-xpm-1992-12-05-ca-1188-story.html",
-          "supporting_passage": "The truth, of course, is that these two individuals from radically different worlds are both very lonely, very intelligent people"
+          "beat": "She was starting to display the onset of Dementia during production.",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": "and was starting to display the onset of Dementia."
         },
         {
-          "beat": "As Victoria became attached to Mooney, she took on a glow that made her years and fragility fade.",
-          "sourceUrl": "https://www.latimes.com/archives/la-xpm-1992-12-05-ca-1188-story.html",
-          "supporting_passage": "as Victoria becomes attached to Mooney, she takes on such a glow that the years, even the fragility, start fading away."
+          "beat": "During the production, she would forget her lines, which resulted in her getting distressed.",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": "During the production she would forget her lines which would result in her getting distressed."
+        },
+        {
+          "beat": "Producer John Dayton suggested she use cue cards, but Hepburn initially refused, seeing it as a sign of weakness.",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": "The producer John Dayton suggested she use cue cards, but Hepburn saw this as a sign of weakness and bluntly refused"
+        },
+        {
+          "beat": "She only decided to give cue cards a try after Dayton admitted that Angela Lansbury used them for \"Murder She Wrote.\"",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": "It wasn’t until Dayton admitted to her that Angela Lansbury used cue cards for Murder She Wrote that she decided to give them a try."
         }
       ],
       "validation": {
-        "passed": true,
+        "passed": false,
         "checks": {
           "contract": true,
           "source_binding": true,
@@ -1526,12 +743,12 @@
           "maturity": true,
           "propriety": true,
           "taxonomy": true,
-          "summary_entailment": true,
-          "film_specific": true,
-          "claim_entailment": false,
+          "summary_entailment": false,
+          "film_specific": false,
+          "claim_entailment": true,
           "verbatim": "flagged",
           "cross_modal": true,
-          "emission_policy": true,
+          "emission_policy": false,
           "rubric_disposition": false,
           "would_pass_strict": false
         },
@@ -1539,18 +756,301 @@
           "factual_accuracy": 0,
           "scene_grounding": 2,
           "primitive_conformance": 2,
-          "viewer_value": 1,
+          "viewer_value": 2,
           "clarity": 2,
           "spoiler_safety": 2
         },
         "curiosity": {},
-        "rejection_reasons": [],
-        "flags": [
-          "relaxed: dropped beats [3] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
-          "verbatim: could not confirm ['Channels 8'] in fetched bodies",
-          "rubric: factual_accuracy scored pre-drop; surviving beats are entailed"
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "film_specific: claims are generic industry practice, not about this film",
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
         ],
-        "judge_notes": "The prompt's film title 'The Woman Upstairs (1992)' is assumed to be an alternative title or typo for 'The Man Upstairs (1992)' given the character names in the anchor element and the content of the provided sources. Beat 3 is not entailed because its supporting source is a 'discovery' class (WordPress blog), which cannot be used to support factual claims. This leads to a factual accuracy score of 0."
+        "flags": [
+          "verbatim: could not confirm ['85'] in fetched bodies"
+        ],
+        "judge_notes": "The card is presented for 'The Woman Upstairs (1992)', but all cited source material and beats refer to 'The Man Upstairs (1992)'. This fundamental discrepancy leads to a factual inaccuracy score of 0 and film_specific as false, as the facts are not specific to the film stated in the prompt. Consequently, summary_entailed is also false because the summary implies these facts apply to 'The Woman Upstairs', which is not supported by the beats in that context."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The television film \"The Man Upstairs\" was produced on location in Vancouver, Canada.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The television film \"The Man Upstairs\" was produced on location in Vancouver, Canada.",
+        "search_queries": [
+          "The Man Upstairs filming location",
+          "Katharine Hepburn Vancouver film",
+          "Where was The Man Upstairs (1992) filmed"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "At 85, Katharine Hepburn performed physical scenes, including smacking 51-year-old Ryan O'Neal with her cane and wrestling a gun away from him.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "At 85, Katharine Hepburn performed physical scenes, including smacking 51-year-old Ryan O'Neal with her cane and wrestling a gun away from him.",
+        "search_queries": [
+          "Katharine Hepburn physical scenes The Man Upstairs",
+          "Hepburn cane Ryan O'Neal",
+          "Katharine Hepburn wrestling gun"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Katharine Hepburn initially refused to use cue cards, viewing it as a sign of weakness, but agreed after producer John Dayton mentioned Angela Lansbury used them.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Katharine Hepburn initially refused to use cue cards, viewing it as a sign of weakness, but agreed after producer John Dayton mentioned Angela Lansbury used them.",
+        "search_queries": [
+          "Katharine Hepburn cue cards The Man Upstairs",
+          "Hepburn refusal cue cards",
+          "Angela Lansbury cue cards Murder She Wrote"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Katharine Hepburn, 85, and Ryan O'Neal's May-December romance",
+        "longDescription": "At 85, Katharine Hepburn starred opposite 51-year-old Ryan O'Neal, creating a unique on-screen dynamic that included a romantic dinner scene.",
+        "sources": [
+          {
+            "url": "https://www.filmaffinity.com/ca/film209746.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film hints at a potential May-December romance between the elderly Victoria Brown and the escaped convict Mooney Polasky.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film hints at a potential May-December romance between the elderly Victoria Brown and the escaped convict Mooney Polasky.",
+        "search_queries": [
+          "The Man Upstairs May-December romance",
+          "Victoria Brown Mooney Polasky relationship",
+          "Katharine Hepburn Ryan O'Neal chemistry"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "http://thefilmexperience.net/blog/2014/12/3/a-year-with-kate-the-man-upstairs-1992.html",
+          "title": "thefilmexperience.net",
+          "domain": "thefilmexperience.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "title": "wordpress.com",
+          "domain": "wordpress.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Katharine Hepburn",
+            "Ryan O'Neal",
+            "Victoria Brown",
+            "The Man Upstairs",
+            "1992",
+            "You’re too old not to be interesting"
+          ],
+          "verbatim_misses": [
+            "85",
+            "51",
+            "Mooney Polasky"
+          ]
+        },
+        {
+          "url": "https://www.filmaffinity.com/ca/film209746.html",
+          "title": "filmaffinity.com",
+          "domain": "filmaffinity.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Katharine Hepburn",
+            "Ryan O'Neal",
+            "Victoria Brown",
+            "The Man Upstairs",
+            "1992",
+            "You’re too old not to be interesting"
+          ],
+          "verbatim_misses": [
+            "85",
+            "51",
+            "Mooney Polasky"
+          ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film centers on an unlikely friendship that blossoms between the elderly Victoria Brown and escaped convict Mooney Polasky.",
+          "sourceUrl": "https://www.filmaffinity.com/ca/film209746.html",
+          "supporting_passage": "Hepburn plays an elderly woman whose house becomes a hideaway for an escaped convict (O'Neal), and the pair strike up an unlikely friendship."
+        },
+        {
+          "beat": "At the time of filming, Katharine Hepburn was 85 years old, while her co-star Ryan O'Neal was 51.",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": "At the time of filming The Man Upstairs Katharine was eighty-five years old"
+        },
+        {
+          "beat": "Their characters even share a \"romantic dinner\" scene, where Mooney tells Victoria, \"You’re too old not to be interesting.\"",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": "“You’re too old not to be interesting.” Ryan O’Neal tells Katharine Hepburn during a romantic dinner in The Man Upstairs."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 1 bound+supported beats remain (need 3)",
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 61 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['85', '51', 'Mooney Polasky'] in fetched bodies"
+        ],
+        "judge_notes": "The prompt's film title is 'The Woman Upstairs (1992)', but the anchor element's character names (Victoria Brown, Mooney Polasky) and all provided sources refer to 'The Man Upstairs (1992)'. I have evaluated the card assuming 'The Woman Upstairs' was a typo in the prompt and the card is intended for 'The Man Upstairs', as its content and sources consistently refer to this film. If strictly interpreted as a card for 'The Woman Upstairs', most scores would be 0.\n\nBeat 0 is not fully entailed because the names 'Victoria Brown' and 'Mooney Polasky' are not present in the cited source (filmaffinity.com) for that beat. Beat 1 is not fully entailed because Ryan O'Neal's age (51) is not explicitly stated in the provided supporting passage, requiring derivation from his birth year, and the single supporting_passage field cannot contain all necessary direct quotes for both claims in the beat. As a result, the summary is not fully entailed by the beats, leading to a factual_accuracy score of 0."
       },
       "humanReview": {
         "state": "pending",
@@ -1571,8 +1071,8 @@
       "card": {
         "scope": "general",
         "factCategory": "general",
-        "shortVersion": "This crime-comedy-drama is also a holiday film.",
-        "longDescription": "This crime-comedy-drama is also a holiday film. It's set during Christmas and features an escaped convict.",
+        "shortVersion": "Despite critical panning, Katharine Hepburn earned a Golden Globe nomination.",
+        "longDescription": "While critics largely dismissed \"The Man Upstairs\" as \"unworthy of her,\" screen legend Katharine Hepburn's performance still earned her a Golden Globe nomination.",
         "sources": [
           {
             "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
@@ -1585,15 +1085,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "\"The Man Upstairs\" was specifically categorized as a \"holiday TV movie,\" an unusual designation for a crime-comedy-drama about an escaped convict.",
+        "anchor_element": "Despite starring screen legend Katharine Hepburn, \"The Man Upstairs\" was largely panned by critics, with some calling it \"unworthy of her.\"",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "\"The Man Upstairs\" was specifically categorized as a \"holiday TV movie,\" an unusual designation for a crime-comedy-drama about an escaped convict.",
+        "search_hint": "Despite starring screen legend Katharine Hepburn, \"The Man Upstairs\" was largely panned by critics, with some calling it \"unworthy of her.\"",
         "search_queries": [
-          "The Man Upstairs holiday TV movie",
-          "1992 Christmas TV movie",
-          "Katharine Hepburn holiday film"
+          "The Man Upstairs critical reception",
+          "Katharine Hepburn film unworthy",
+          "Critics review The Man Upstairs 1992"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -1614,18 +1114,6 @@
           "verbatim_misses": []
         },
         {
-          "url": "https://kelleepratt.com/2026/03/26/holiday-1938/",
-          "title": "kelleepratt.com",
-          "domain": "kelleepratt.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
           "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
           "title": "wordpress.com",
           "domain": "wordpress.com",
@@ -1635,38 +1123,11 @@
           "resolved": true,
           "body_kind": "html",
           "verbatim_hits": [
+            "Katharine Hepburn",
+            "Golden Globe",
             "The Man Upstairs",
-            "Christmas",
-            "1992",
-            "Mooney Polaski",
-            "Victoria Brown"
+            "1992"
           ],
-          "verbatim_misses": [
-            "Winter Sports and Holiday Films Blogathon"
-          ]
-        },
-        {
-          "url": "https://tv.apple.com/us/movie/holiday/umc.cmc.2ox89s8og4fzbd7f4gw57koqo",
-          "title": "apple.com",
-          "domain": "apple.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.primevideo.com/detail/0I8LH1WG0SOS6TLX1UYX5R7UFA?tr=us",
-          "title": "primevideo.com",
-          "domain": "primevideo.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
           "verbatim_misses": []
         },
         {
@@ -1682,9 +1143,9 @@
           "verbatim_misses": []
         },
         {
-          "url": "https://www.rewatchclassictv.com/products/the-man-upstairs-cbs-tvm-12-93",
-          "title": "rewatchclassictv.com",
-          "domain": "rewatchclassictv.com",
+          "url": "https://www.televisionacademy.com/bios/james-prideaux",
+          "title": "televisionacademy.com",
+          "domain": "televisionacademy.com",
           "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
@@ -1696,19 +1157,24 @@
       ],
       "claim_evidence": [
         {
-          "beat": "The film, originally titled The Man Upstairs, takes place during Christmas time.",
+          "beat": "Katharine Hepburn returned to the small screen in 1992 to co-star with Ryan O'Neal in \"The Man Upstairs.\"",
           "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "The Man Upstairs takes place at Christmas time"
+          "supporting_passage": ""
         },
         {
-          "beat": "It was featured as an entry in a \"Winter Sports and Holiday Films Blogathon.\"",
+          "beat": "While it was the most notable of Hepburn's television movies from that period, the film was largely panned by critics.",
           "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "my entry for ” The Winter Sports and Holiday Films Blogathon”"
+          "supporting_passage": ""
         },
         {
-          "beat": "Despite its dramatic elements, the film is recommended for \"joyous holiday cheer.\"",
+          "beat": "Some critics even considered \"The Man Upstairs\" to be \"unworthy of her.\"",
           "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "Not only is it a poignant drama with splashes of comedy, it features Katharine wrestling an escaped convict to the ground. For some joyous holiday cheer this Christmas I would highly recommend The Man Upstairs."
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Despite the critical reception, Hepburn garnered a Golden Globe nomination for her role in the film.",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": ""
         }
       ],
       "validation": {
@@ -1718,218 +1184,11 @@
           "source_binding": true,
           "spoiler_free": true,
           "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": false,
-          "film_specific": true,
-          "claim_entailment": false,
-          "verbatim": "flagged",
-          "cross_modal": true,
-          "emission_policy": false,
-          "rubric_disposition": false,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 0,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 1,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "summary_entailment: shortVersion/longDescription claim beyond the beats",
-          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
-          "rubric: factual_accuracy 0/2 (must be >=1)"
-        ],
-        "flags": [
-          "relaxed: dropped beats [2] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
-          "verbatim: could not confirm ['Winter Sports and Holiday Films Blogathon'] in fetched bodies"
-        ],
-        "judge_notes": "Beat 2 is not entailed because the cited source (rewatchclassictv.com) does not explicitly state that Victoria Brown is an 'elderly woman'. Both sources are classified as 'discovery', which impacts factual accuracy and viewer value. The longDescription's claim 'features an escaped convict' is not entailed by the *entailed* beats, as the beat supporting this (Beat 2) is not entailed."
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "actor",
-        "shortVersion": "Katharine Hepburn earned a Golden Globe nod for her role in this TV movie.",
-        "longDescription": "Katharine Hepburn earned a Golden Globe nod for her role in this TV movie. Her character's isolated life mirrored Hepburn's own preference for seclusion.",
-        "sources": [
-          {
-            "url": "https://girlsdofilm.wordpress.com/2014/03/20/katharine-hepburns-tv-movies/",
-            "modality": "text",
-            "timestamp": null
-          },
-          {
-            "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "\"The Man Upstairs\" was produced as a television movie, a format often used for dramas featuring legendary actors like Katharine Hepburn in their later careers.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "\"The Man Upstairs\" was produced as a television movie, a format often used for dramas featuring legendary actors like Katharine Hepburn in their later careers.",
-        "search_queries": [
-          "The Man Upstairs television movie",
-          "Katharine Hepburn TV movies",
-          "1992 made-for-TV films"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "http://thefilmexperience.net/blog/2014/12/3/a-year-with-kate-the-man-upstairs-1992.html",
-          "title": "thefilmexperience.net",
-          "domain": "thefilmexperience.net",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://girlsdofilm.wordpress.com/2014/03/20/katharine-hepburns-tv-movies/",
-          "title": "wordpress.com",
-          "domain": "wordpress.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Katharine Hepburn",
-            "Golden Globe",
-            "TV movie",
-            "Victoria Brown",
-            "The Man Upstairs",
-            "Angela Lansbury",
-            "Murder She Wrote",
-            "John Dayton",
-            "The Corn is Green",
-            "Mrs Delafield Wants To Marry",
-            "The Glass Menagerie",
-            "Love Among The Ruins",
-            "One Christmas",
-            "Fenwick, Connecticut",
-            "1992"
-          ],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "title": "wordpress.com",
-          "domain": "wordpress.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Katharine Hepburn",
-            "Golden Globe",
-            "TV movie",
-            "Victoria Brown",
-            "The Man Upstairs",
-            "Angela Lansbury",
-            "Murder She Wrote",
-            "John Dayton",
-            "The Corn is Green",
-            "Mrs Delafield Wants To Marry",
-            "The Glass Menagerie",
-            "Love Among The Ruins",
-            "One Christmas",
-            "Fenwick, Connecticut",
-            "1992"
-          ],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.tvguide.com/celebrities/katharine-hepburn/credits/3000397247/",
-          "title": "tvguide.com",
-          "domain": "tvguide.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.filmaffinity.com/ca/film209746.html",
-          "title": "filmaffinity.com",
-          "domain": "filmaffinity.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "“The Man Upstairs” was one of several TV movies Katharine Hepburn made in her later career.",
-          "sourceUrl": "https://girlsdofilm.wordpress.com/2014/03/20/katharine-hepburns-tv-movies/",
-          "supporting_passage": "The actress would go on to make six more TV movies, including The Corn is Green , Mrs Delafield Wants To Marry and The Man Upstairs ."
-        },
-        {
-          "beat": "For her performance as Victoria Brown, Katharine Hepburn garnered a Golden Globe nomination.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "Katharine Hepburn garnered a Golden Globe nomination for The Man Upstairs"
-        },
-        {
-          "beat": "The character Victoria Brown's isolated existence in the film resembled Katharine Hepburn's real-life preference for seclusion.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "The only formation of the film that really resembles Katharine Hepburn is the isolated existence of Victoria Brown. In real life Katharine much preferred to seclude herself away from Hollywood to live a leisurely and peaceful life in Fenwick, Connecticut, where she enjoyed engaging herself in outdoor recreational activities. The same can be said about Hepburn’s character Victoria Brown in The Man Upstairs. Victoria Brown is virtually a recluse who lives a rather sheltered life in her remote residence which is situated in the bush."
-        },
-        {
-          "beat": "During production, Hepburn initially refused cue cards, but accepted them after learning Angela Lansbury used them for “Murder She Wrote.”",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "During the production she would forget her lines which would result in her getting distressed. The producer John Dayton suggested she use cue cards, but Hepburn saw this as a sign of weakness and bluntly refused; It wasn’t until Dayton admitted to her that Angela Lansbury used cue cards for Murder She Wrote that she decided to give them a try."
-        }
-      ],
-      "validation": {
-        "passed": false,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
+          "propriety": false,
+          "taxonomy": false,
           "summary_entailment": false,
           "film_specific": false,
-          "claim_entailment": true,
+          "claim_entailment": false,
           "verbatim": true,
           "cross_modal": true,
           "emission_policy": false,
@@ -1940,21 +1199,24 @@
           "factual_accuracy": 0,
           "scene_grounding": 2,
           "primitive_conformance": 2,
-          "viewer_value": 1,
+          "viewer_value": 2,
           "clarity": 2,
           "spoiler_safety": 2
         },
         "curiosity": {},
         "rejection_reasons": [
+          "propriety: gossip/legal/tragedy/political/disparagement content",
           "summary_entailment: shortVersion/longDescription claim beyond the beats",
           "film_specific: claims are generic industry practice, not about this film",
+          "claim_entailment: only 0 bound+supported beats remain (need 3)",
           "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
           "rubric: factual_accuracy 0/2 (must be >=1)"
         ],
         "flags": [
-          "shortVersion 74 chars (target 50-60, cap 80)"
+          "shortVersion 77 chars (target 50-60, cap 80)",
+          "taxonomy: category mismatch"
         ],
-        "judge_notes": "The card is about 'The Man Upstairs (1992)', but the prompt specifies 'The Woman Upstairs (1992)'. This fundamental mismatch makes the card factually inaccurate and not film-specific for the requested film. Additionally, all sources are 'discovery' class, which cannot fully support factual accuracy at a high level."
+        "judge_notes": "The prompt explicitly states 'FILM: The Woman Upstairs (1992)'. However, the candidate card, its anchor element in the prompt, and all provided source bodies consistently refer to 'The Man Upstairs (1992)'. Adhering strictly to the 'FILM:' designation, the card is about the wrong film. This leads to 'factual_accuracy: 0', 'film_specific: false', and 'category_correct: false'. Additionally, the sole source provided is a personal blog, classified as 'discovery', which cannot support any claims, further contributing to 'factual_accuracy: 0'. The card also fails 'propriety_pass' because it quotes criticism of the film ('unworthy of her'), which is explicitly forbidden by the rubric."
       },
       "humanReview": {
         "state": "pending",
@@ -1975,15 +1237,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Writer James Prideaux aimed to weave elements of Katharine Hepburn's public and private life into the character of Victoria Brown, allowing Hepburn to further shape her public persona through the film.",
+        "anchor_element": "Katharine Hepburn used the release of her autobiography and related projects like \"The Man Upstairs\" as an opportunity to \"set her life in stone once and for all.\"",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Writer James Prideaux aimed to weave elements of Katharine Hepburn's public and private life into the character of Victoria Brown, allowing Hepburn to further shape her public persona through the film.",
+        "search_hint": "Katharine Hepburn used the release of her autobiography and related projects like \"The Man Upstairs\" as an opportunity to \"set her life in stone once and for all.\"",
         "search_queries": [
-          "James Prideaux The Man Upstairs Hepburn persona",
-          "Katharine Hepburn Victoria Brown real life",
-          "The Man Upstairs shaping public image"
+          "Katharine Hepburn autobiography 'set life in stone'",
+          "The Man Upstairs Hepburn motivation",
+          "Katharine Hepburn Me Stories of My Life purpose"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -2012,15 +1274,15 @@
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The year \"The Man Upstairs\" was released, 1992, also saw Katharine Hepburn release her autobiography and participate in multiple public engagements, leading to her being dubbed \"the busiest recluse in the business.\"",
+        "anchor_element": "Ryan O'Neal's character, Mooney, delivers the memorable line to Victoria, \"You're too old not to be interesting,\" which resonated with Katharine Hepburn's public image at the time.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "The year \"The Man Upstairs\" was released, 1992, also saw Katharine Hepburn release her autobiography and participate in multiple public engagements, leading to her being dubbed \"the busiest recluse in the business.\"",
+        "search_hint": "Ryan O'Neal's character, Mooney, delivers the memorable line to Victoria, \"You're too old not to be interesting,\" which resonated with Katharine Hepburn's public image at the time.",
         "search_queries": [
-          "Katharine Hepburn busiest recluse 1992",
-          "The Man Upstairs Katharine Hepburn autobiography",
-          "Katharine Hepburn public persona 1992"
+          "Ryan O'Neal The Man Upstairs quote",
+          "Katharine Hepburn 'too old not to be interesting'",
+          "The Man Upstairs memorable lines"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -2049,8 +1311,8 @@
       "card": {
         "scope": "general",
         "factCategory": "actor",
-        "shortVersion": "Katharine Hepburn was 85 when she filmed this movie.",
-        "longDescription": "Katharine Hepburn was 85 when she filmed this movie. She even earned a Golden Globe nomination for her role.",
+        "shortVersion": "The lead role was written to reflect Katharine Hepburn's persona.",
+        "longDescription": "Screenwriter James Prideaux crafted the role of Victoria Brown to reflect Katharine Hepburn's real-life persona, particularly her preference for a secluded existence away from Hollywood.",
         "sources": [
           {
             "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
@@ -2063,15 +1325,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Katharine Hepburn's role in \"The Man Upstairs\" was part of a broader period in the early 1990s where the usually private actress became more publicly engaged, including documentaries and receiving the Kennedy Center Honors.",
+        "anchor_element": "The Man Upstairs was one of several fictionalized portrayals of Katharine Hepburn's life that emerged around the time she published her autobiography.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Katharine Hepburn's role in \"The Man Upstairs\" was part of a broader period in the early 1990s where the usually private actress became more publicly engaged, including documentaries and receiving the Kennedy Center Honors.",
+        "search_hint": "The Man Upstairs was one of several fictionalized portrayals of Katharine Hepburn's life that emerged around the time she published her autobiography.",
         "search_queries": [
-          "Katharine Hepburn public engagement 1990s",
-          "Katharine Hepburn Kennedy Center Honors The Man Upstairs",
-          "The Man Upstairs context Hepburn's career"
+          "The Man Upstairs 1992 fictionalized Hepburn life",
+          "Katharine Hepburn autobiography film adaptations",
+          "films inspired by Katharine Hepburn's life"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -2114,197 +1376,17 @@
           "body_kind": "html",
           "verbatim_hits": [
             "Katharine Hepburn",
-            "1992",
-            "The Man Upstairs",
-            "Golden Globe",
-            "Angela Lansbury",
-            "John Dayton",
-            "Murder She Wrote"
-          ],
-          "verbatim_misses": [
-            "85",
-            "The Woman Upstairs"
-          ]
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "Katharine Hepburn returned to the small screen in 1992 to co-star in \"The Man Upstairs\" after a four-year hiatus.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "Following the release of Laura Lansing Slept Here, Katharine Hepburn took a four year hiatus and returned to the small screen again in 1992 when she co-starred alongside Ryan O’Neal in The Man Upstairs."
-        },
-        {
-          "beat": "\"The Man Upstairs\" was considered the most notable of Katharine Hepburn's television movies from that period.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "The Man Upstairs was the most notable of Katharine’s television movies from this period"
-        },
-        {
-          "beat": "At 85 years old during filming, Katharine Hepburn was starting to display the onset of Dementia.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "At the time of filming The Man Upstairs Katharine was eighty-five years old and was starting to display the onset of Dementia."
-        },
-        {
-          "beat": "She initially refused cue cards for her lines, seeing it as a sign of weakness, but later agreed after learning Angela Lansbury used them.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "The producer John Dayton suggested she use cue cards, but Hepburn saw this as a sign of weakness and bluntly refused; It wasn’t until Dayton admitted to her that Angela Lansbury used cue cards for Murder She Wrote that she decided to give them a try."
-        },
-        {
-          "beat": "Katharine Hepburn garnered a Golden Globe nomination for her performance in \"The Man Upstairs\".",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "Katharine Hepburn garnered a Golden Globe nomination for The Man Upstairs"
-        }
-      ],
-      "validation": {
-        "passed": false,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": false,
-          "film_specific": false,
-          "claim_entailment": true,
-          "verbatim": "flagged",
-          "cross_modal": true,
-          "emission_policy": false,
-          "rubric_disposition": false,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 0,
-          "scene_grounding": 0,
-          "primitive_conformance": 0,
-          "viewer_value": 0,
-          "clarity": 0,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "summary_entailment: shortVersion/longDescription claim beyond the beats",
-          "film_specific: claims are generic industry practice, not about this film",
-          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
-          "rubric: factual_accuracy 0/2 (must be >=1)",
-          "rubric: scene_grounding 0/2 (must be >=1)",
-          "rubric: primitive_conformance 0/2 (must be >=1)"
-        ],
-        "flags": [
-          "verbatim: could not confirm ['85', 'The Woman Upstairs'] in fetched bodies",
-          "rubric low (relaxed): ['viewer_value', 'clarity']"
-        ],
-        "judge_notes": "The card is assigned to 'The Woman Upstairs (1992)' but all facts and sources refer to 'The Man Upstairs (1992)'. These are two different films. Katharine Hepburn was not in 'The Woman Upstairs'. This fundamental error makes the card factually inaccurate and not specific to the film it's attached to. While the beats are entailed by the source for 'The Man Upstairs', they are not for 'The Woman Upstairs'. The summary is also not entailed for 'The Woman Upstairs'."
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "actor",
-        "shortVersion": "Katharine Hepburn used cue cards for her lines in this film.",
-        "longDescription": "Katharine Hepburn used cue cards for her lines in this film. She initially refused, seeing it as a sign of weakness, but agreed after learning Angela Lansbury used them.",
-        "sources": [
-          {
-            "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Victoria Brown employs clever deceptions to protect Mooney Polaski, such as claiming a razor is a gift and clothes are for charity, to hide his presence in her attic.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Victoria Brown employs clever deceptions to protect Mooney Polaski, such as claiming a razor is a gift and clothes are for charity, to hide his presence in her attic.",
-        "search_queries": [
-          "Victoria Brown deceptions The Man Upstairs",
-          "Katharine Hepburn character protects convict",
-          "The Man Upstairs plot details razor clothes"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.bedtimebookreview.com/book-club-reviews/the-woman-upstairs",
-          "title": "bedtimebookreview.com",
-          "domain": "bedtimebookreview.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.goodreads.com/en/book/show/143393186-the-woman-upstairs",
-          "title": "goodreads.com",
-          "domain": "goodreads.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "http://thefilmexperience.net/blog/2014/12/3/a-year-with-kate-the-man-upstairs-1992.html",
-          "title": "thefilmexperience.net",
-          "domain": "thefilmexperience.net",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "title": "wordpress.com",
-          "domain": "wordpress.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Katharine Hepburn",
-            "John Dayton",
-            "Angela Lansbury",
-            "Murder She Wrote",
+            "James Prideaux",
+            "Victoria Brown",
+            "Hollywood",
             "The Man Upstairs"
           ],
-          "verbatim_misses": [
-            "85",
-            "The Woman Upstairs"
-          ]
+          "verbatim_misses": []
         },
         {
-          "url": "https://www.primevideo.com/detail/0I8LH1WG0SOS6TLX1UYX5R7UFA?tr=us",
-          "title": "primevideo.com",
-          "domain": "primevideo.com",
+          "url": "https://www.tvguide.com/celebrities/katharine-hepburn/credits/3000397247/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
           "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
@@ -2314,21 +1396,9 @@
           "verbatim_misses": []
         },
         {
-          "url": "https://www.primevideo.com/detail/0NDABME8VQC2K89R96YPJOVBD1",
-          "title": "primevideo.com",
-          "domain": "primevideo.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.filmaffinity.com/ca/film209746.html",
-          "title": "filmaffinity.com",
-          "domain": "filmaffinity.com",
+          "url": "https://www.incluvie.com/movie/the-man-upstairs-223691",
+          "title": "incluvie.com",
+          "domain": "incluvie.com",
           "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
@@ -2340,29 +1410,19 @@
       ],
       "claim_evidence": [
         {
-          "beat": "Katharine Hepburn was 85 years old during the filming of this movie.",
+          "beat": "Screenwriter James Prideaux wrote \"The Man Upstairs\" in an attempt to illustrate Katharine Hepburn’s personal and public persona.",
           "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "At the time of filming The Man Upstairs Katharine was eighty-five years old"
+          "supporting_passage": "James Prideaux wrote Laura Lansing Slept Here and The Man Upstairs in an attempt to illustrate Katharine’s personal and public persona"
         },
         {
-          "beat": "She began to display the onset of Dementia and would forget her lines.",
+          "beat": "However, Prideaux was ultimately unimpressed with the final result of this portrayal.",
           "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "was starting to display the onset of Dementia. During the production she would forget her lines"
+          "supporting_passage": "but both times Prideaux was unimpressed with the final result."
         },
         {
-          "beat": "Producer John Dayton suggested she use cue cards to help with her performance.",
+          "beat": "The character Victoria Brown's isolated existence in the film mirrored Hepburn's real-life preference to seclude herself away from Hollywood.",
           "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "The producer John Dayton suggested she use cue cards"
-        },
-        {
-          "beat": "Hepburn initially refused, seeing the use of cue cards as a sign of weakness.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "but Hepburn saw this as a sign of weakness and bluntly refused"
-        },
-        {
-          "beat": "She only agreed after Dayton told her that Angela Lansbury used cue cards for Murder She Wrote.",
-          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "It wasn’t until Dayton admitted to her that Angela Lansbury used cue cards for Murder She Wrote that she decided to give them a try."
+          "supporting_passage": "The only formation of the film that really resembles Katharine Hepburn is the isolated existence of Victoria Brown. In real life Katharine much preferred to seclude herself away from Hollywood to live a leisurely and peaceful life in Fenwick, Connecticut, where she enjoyed engaging herself in outdoor recreational activities. The same can be said about Hepburn’s character Victoria Brown in The Man Upstairs."
         }
       ],
       "validation": {
@@ -2377,7 +1437,7 @@
           "summary_entailment": true,
           "film_specific": true,
           "claim_entailment": true,
-          "verbatim": "flagged",
+          "verbatim": true,
           "cross_modal": true,
           "emission_policy": false,
           "rubric_disposition": true,
@@ -2396,11 +1456,47 @@
           "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)"
         ],
         "flags": [
-          "longDescription 169 chars (target ~120, max 160)",
-          "verbatim: could not confirm ['85', 'The Woman Upstairs'] in fetched bodies"
+          "shortVersion 65 chars (target 50-60, cap 80)"
         ],
-        "judge_notes": "The film title in the source is 'The Man Upstairs (1992)', while the card and prompt refer to 'The Woman Upstairs (1992)'. The plot description in the source matches the anchor element provided for 'The Woman Upstairs', indicating they are the same film."
+        "judge_notes": "The prompt's film title is 'The Woman Upstairs (1992)', but the card and source consistently refer to 'The Man Upstairs (1992)'. This evaluation assumes 'The Man Upstairs (1992)' is the correct film for the card, as all source material and card beats are tied to it. The source is a WordPress blog, classified as 'discovery'."
       },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Despite her character's misanthropic nature, Katharine Hepburn reportedly took \"great joy\" on set, alternately snapping and smiling at her costars.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Despite her character's misanthropic nature, Katharine Hepburn reportedly took \"great joy\" on set, alternately snapping and smiling at her costars.",
+        "search_queries": [
+          "Katharine Hepburn The Man Upstairs on set joy",
+          "Hepburn working with costars The Man Upstairs",
+          "Katharine Hepburn acting demeanor"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
       "humanReview": {
         "state": "pending",
         "reviewer": null,
@@ -2420,8 +1516,8 @@
       "card": {
         "scope": "general",
         "factCategory": "actor",
-        "shortVersion": "Katharine Hepburn was busy! This film was one of three major projects.",
-        "longDescription": "Katharine Hepburn was busy! This film was one of three major projects. She also released her autobiography and a TV documentary about her life.",
+        "shortVersion": "Hepburn's active life contrasted her recluse role.",
+        "longDescription": "While her character Victoria Brown lived a sheltered, isolated life, Katharine Hepburn herself enjoyed a peaceful existence in Fenwick, Connecticut, filled with outdoor activities like swimming, sailing, and tennis.",
         "sources": [
           {
             "url": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
@@ -2429,7 +1525,12 @@
             "timestamp": null
           },
           {
-            "url": "https://www.latimes.com/archives/la-xpm-1993-01-18-ca-1305-story.html",
+            "url": "https://shortescapes.net/escape/4040055/katharine-hepburns-paradise-old-saybrook-ct/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://yachtlounge.substack.com/p/katharine-hepburn-the-american-original",
             "modality": "text",
             "timestamp": null
           }
@@ -2439,15 +1540,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The film's \"underwhelming\" quality was partly attributed to Katharine Hepburn dedicating significant energy to her autobiography, \"Me: Stories of My Life,\" and a concurrent TV special, \"All About Me,\" released in the same year.",
+        "anchor_element": "While her character Victoria Brown is a misanthrope, Katharine Hepburn herself enjoyed a peaceful, isolated life in Fenwick, Connecticut, engaging in outdoor activities.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "The film's \"underwhelming\" quality was partly attributed to Katharine Hepburn dedicating significant energy to her autobiography, \"Me: Stories of My Life,\" and a concurrent TV special, \"All About Me,\" released in the same year.",
+        "search_hint": "While her character Victoria Brown is a misanthrope, Katharine Hepburn herself enjoyed a peaceful, isolated life in Fenwick, Connecticut, engaging in outdoor activities.",
         "search_queries": [
-          "The Man Upstairs underwhelming quality reason",
-          "Katharine Hepburn All About Me 1992",
-          "Hepburn autobiography film quality"
+          "Katharine Hepburn Fenwick Connecticut life",
+          "Katharine Hepburn private life activities",
+          "The Man Upstairs Hepburn character vs real life"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -2456,35 +1557,22 @@
       },
       "sources": [
         {
-          "url": "https://www.latimes.com/archives/la-xpm-1993-01-18-ca-1305-story.html",
-          "title": "latimes.com",
-          "domain": "latimes.com",
-          "tier": "B",
-          "evidence_class": "reputable_editorial",
+          "url": "https://hometownstohollywood.com/connecticut/katharine-hepburn/",
+          "title": "hometownstohollywood.com",
+          "domain": "hometownstohollywood.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
           "modality": "text",
           "resolved": true,
           "body_kind": "html",
-          "verbatim_hits": [
-            "Katharine Hepburn",
-            "The Man Upstairs",
-            "1992",
-            "Me",
-            "All About Me",
-            "Ryan O’Neal",
-            "Joan Kramer",
-            "David Heeley",
-            "TNT"
-          ],
-          "verbatim_misses": [
-            "The Woman Upstairs",
-            "Me: Stories of My Life"
-          ]
+          "verbatim_hits": [],
+          "verbatim_misses": []
         },
         {
-          "url": "https://www.latimes.com/archives/la-xpm-1992-12-05-ca-1188-story.html",
-          "title": "latimes.com",
-          "domain": "latimes.com",
-          "tier": "B",
+          "url": "https://www.classicmoviehub.com/blog/classic-movie-travels-the-great-katharine-hepburn-of-fenwick-connecticut/",
+          "title": "classicmoviehub.com",
+          "domain": "classicmoviehub.com",
+          "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
           "resolved": true,
@@ -2505,9 +1593,9 @@
           "verbatim_misses": []
         },
         {
-          "url": "http://www.rickstexanreviews.com/2024/08/katharine-hepburn-all-about-me.html",
-          "title": "rickstexanreviews.com",
-          "domain": "rickstexanreviews.com",
+          "url": "https://connecticuthistory.org/katharine-hepburns-love-affair-with-connecticut/",
+          "title": "connecticuthistory.org",
+          "domain": "connecticuthistory.org",
           "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
@@ -2527,55 +1615,106 @@
           "body_kind": "html",
           "verbatim_hits": [
             "Katharine Hepburn",
-            "The Man Upstairs",
-            "1992",
-            "Me",
-            "All About Me",
-            "Ryan O’Neal",
-            "Joan Kramer",
-            "David Heeley",
-            "TNT"
+            "Victoria Brown",
+            "Fenwick",
+            "Connecticut",
+            "Hollywood",
+            "Manhattan",
+            "The Man Upstairs"
           ],
           "verbatim_misses": [
-            "The Woman Upstairs",
-            "Me: Stories of My Life"
+            "The Woman Upstairs"
           ]
         },
         {
-          "url": "https://www.tcm.com/articles/64081/katharine-hepburn-all-about-me",
-          "title": "tcm.com",
-          "domain": "tcm.com",
-          "tier": "C",
+          "url": "https://www.connecticutmuseum.org/millions-of-stories-katharine-hepburn/",
+          "title": "connecticutmuseum.org",
+          "domain": "connecticutmuseum.org",
+          "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
           "resolved": true,
           "body_kind": "html",
           "verbatim_hits": [],
           "verbatim_misses": []
+        },
+        {
+          "url": "https://shortescapes.net/escape/4040055/katharine-hepburns-paradise-old-saybrook-ct/",
+          "title": "shortescapes.net",
+          "domain": "shortescapes.net",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Katharine Hepburn",
+            "Victoria Brown",
+            "Fenwick",
+            "Connecticut",
+            "Hollywood",
+            "Manhattan",
+            "The Man Upstairs"
+          ],
+          "verbatim_misses": [
+            "The Woman Upstairs"
+          ]
+        },
+        {
+          "url": "https://yachtlounge.substack.com/p/katharine-hepburn-the-american-original",
+          "title": "substack.com",
+          "domain": "substack.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Katharine Hepburn",
+            "Victoria Brown",
+            "Fenwick",
+            "Connecticut",
+            "Hollywood",
+            "Manhattan",
+            "The Man Upstairs"
+          ],
+          "verbatim_misses": [
+            "The Woman Upstairs"
+          ]
         }
       ],
       "claim_evidence": [
         {
-          "beat": "Katharine Hepburn returned to the small screen in 1992 to co-star in \"The Man Upstairs.\"",
+          "beat": "While her character Victoria Brown in The Man Upstairs was a recluse, Katharine Hepburn herself preferred to seclude herself away from Hollywood in Fenwick, Connecticut.",
           "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
-          "supporting_passage": "returned to the small screen again in 1992 when she co-starred alongside Ryan O’Neal in The Man Upstairs"
+          "supporting_passage": "The only formation of the film that really resembles Katharine Hepburn is the isolated existence of Victoria Brown. In real life Katharine much preferred to seclude herself away from Hollywood to live a leisurely and peaceful life in Fenwick, Connecticut, where she enjoyed engaging herself in outdoor recreational activities. The same can be said about Hepburn’s character Victoria Brown in The Man Upstairs. Victoria Brown is virtually a recluse who lives a rather sheltered life in her remote residence which is situated in the bush."
         },
         {
-          "beat": "Around the same time, Hepburn released her autobiography, \"Me: Stories of My Life.\"",
-          "sourceUrl": "https://www.latimes.com/archives/la-xpm-1993-01-18-ca-1305-story.html",
-          "supporting_passage": "marked her recent autobiography, “Me.”"
+          "beat": "In Fenwick, Hepburn enjoyed a leisurely and peaceful life, engaging in outdoor recreational activities.",
+          "sourceUrl": "https://crystalkalyana.wordpress.com/2015/12/03/the-man-upstairs-1992/",
+          "supporting_passage": "In real life Katharine much preferred to seclude herself away from Hollywood to live a leisurely and peaceful life in Fenwick, Connecticut, where she enjoyed engaging herself in outdoor recreational activities."
         },
         {
-          "beat": "A TV documentary, \"All About Me,\" co-written and co-produced by Hepburn, also aired shortly after this film.",
-          "sourceUrl": "https://www.latimes.com/archives/la-xpm-1993-01-18-ca-1305-story.html",
-          "supporting_passage": "“All About Me,” a 90-minute documentary co-produced and co-written (with Hepburn) by Joan Kramer and David Heeley and directed by Heeley. It airs for the first time at 9 tonight on the TNT cable channel."
+          "beat": "She was a natural athlete who rode a bicycle, swam, sailed, canoed, and played tennis and golf in Fenwick.",
+          "sourceUrl": "https://shortescapes.net/escape/4040055/katharine-hepburns-paradise-old-saybrook-ct/",
+          "supporting_passage": "Katharine was a natural athlete who rode a bicycle at Fenwick, swam, sailed and canoed. She loved to play tennis and golf"
+        },
+        {
+          "beat": "Hepburn treasured her Fenwick home, calling it \"my other paradise\" and a place to unwind from the hectic pace of Manhattan.",
+          "sourceUrl": "https://shortescapes.net/escape/4040055/katharine-hepburns-paradise-old-saybrook-ct/",
+          "supporting_passage": "\"Fenwick is and always has been my other paradise,\" she said. It was a place the celebrated actress escaped to on weekends, a place to unwind, get out on the water or play tennis far removed from the hectic pace of life in Manhattan."
+        },
+        {
+          "beat": "In Fenwick, she could stop being a star and go back to being an ordinary person, enjoying the sea and quiet.",
+          "sourceUrl": "https://yachtlounge.substack.com/p/katharine-hepburn-the-american-original",
+          "supporting_passage": "Fenwick was sea, home, quiet: there she could stop being a star and go back to being an ordinary person, with wet feet and nobody watching."
         }
       ],
       "validation": {
         "passed": false,
         "checks": {
           "contract": true,
-          "source_binding": true,
+          "source_binding": false,
           "spoiler_free": true,
           "maturity": true,
           "propriety": true,
@@ -2594,7 +1733,7 @@
           "scene_grounding": 2,
           "primitive_conformance": 2,
           "viewer_value": 0,
-          "clarity": 0,
+          "clarity": 1,
           "spoiler_safety": 2
         },
         "curiosity": {},
@@ -2605,11 +1744,10 @@
           "rubric: factual_accuracy 0/2 (must be >=1)"
         ],
         "flags": [
-          "shortVersion 70 chars (target 50-60, cap 80)",
-          "verbatim: could not confirm ['The Woman Upstairs', 'Me: Stories of My Life'] in fetched bodies",
-          "rubric low (relaxed): ['viewer_value', 'clarity']"
+          "verbatim: could not confirm ['The Woman Upstairs'] in fetched bodies",
+          "rubric low (relaxed): ['viewer_value']"
         ],
-        "judge_notes": "The card is for 'The Woman Upstairs (1992)', but the beats list 'The Man Upstairs (1992)' as one of the three major projects, not 'The Woman Upstairs'. This creates a fundamental factual inaccuracy and breaks the connection to the film the card is supposed to be about. Beat 1 also adds 'Stories of My Life' to the autobiography title 'Me', which is not present in the supporting passage."
+        "judge_notes": "The card is for 'The Woman Upstairs (1992)', but beat 0 and one of the cited sources (crystalkalyana.wordpress.com) explicitly refer to 'The Man Upstairs (1992)'. The character Victoria Brown, central to the card's comparison, is from 'The Man Upstairs', not 'The Woman Upstairs'. This fundamental factual error means the card's core premise is incorrect for the specified film, leading to failures in factual accuracy, summary entailment, and film specificity. The viewer value is also diminished due to this inaccuracy. The crystalkalyana.wordpress.com source is a blog and should be classified as 'discovery'."
       },
       "humanReview": {
         "state": "pending",

@@ -6,255 +6,12 @@
     "input_prompt": "21 Bridges (2019)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Chadwick Boseman gave up part of his salary for Sienna Miller.",
-      "longDescription": "Chadwick Boseman gave up part of his salary for Sienna Miller. He ensured she received the pay she deserved when the studio wouldn't meet her request.",
-      "sources": [
-        {
-          "url": "https://www.thewrap.com/chadwick-boseman-sienna-miller-salary-increase/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.latimes.com/entertainment-arts/movies/story/2020-09-28/chadwick-boseman-sienna-miller-salary-21-bridges",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 660.0,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:11:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "21 Bridges was Chadwick Boseman's first producing credit.",
-      "longDescription": "21 Bridges was Chadwick Boseman's first producing credit. He also influenced the script, including changing character races.",
-      "sources": [
-        {
-          "url": "https://www.latimes.com/entertainment-arts/movies/story/2019-11-21/chadwick-boseman-21-bridges",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.phillyvoice.com/chadwick-boseman-21-bridges-film-philadelphia-name-change-17-bridges/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 660.0,
-          "endSeconds": 1320.0,
-          "startTimecode": "00:11:00",
-          "endTimecode": "00:22:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "The actors trained with real SWAT guys for authentic police action.",
-      "longDescription": "The actors trained with real SWAT guys for authentic police action. Stephan James and Taylor Kitsch learned gun handling and procedures from these experts.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/21-bridges-stephan-james-taylor-kitsch-interview/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1320.0,
-          "endSeconds": 1980.0,
-          "startTimecode": "00:22:00",
-          "endTimecode": "00:33:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The film's title changed from \"17 Bridges\" to \"21 Bridges\".",
-      "longDescription": "The film's title changed from \"17 Bridges\" to \"21 Bridges\". Chadwick Boseman learned the actual number of bridges was 21 just before shooting a speech.",
-      "sources": [
-        {
-          "url": "https://www.phillyvoice.com/chadwick-boseman-21-bridges-film-philadelphia-name-change-17-bridges/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://screenrant.com/21-bridges-brian-kirk-interview/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1980.0,
-          "endSeconds": 2640.0,
-          "startTimecode": "00:33:00",
-          "endTimecode": "00:44:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "This film earned its R rating for brutal, graphic violence.",
-      "longDescription": "This film earned its R rating for brutal, graphic violence. It includes depictions of characters being shot through the eye and choking on their own blood.",
-      "sources": [
-        {
-          "url": "https://parentpreviews.com/movie-reviews/21-bridges",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2640.0,
-          "endSeconds": 3300.0,
-          "startTimecode": "00:44:00",
-          "endTimecode": "00:55:00"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "The director based the film's atmosphere on his childhood.",
-      "longDescription": "The director based the film's atmosphere on his childhood. He grew up in Northern Ireland with constant helicopters and police cars.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/21-bridges-brian-kirk-interview/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3300.0,
-          "endSeconds": 3960.0,
-          "startTimecode": "00:55:00",
-          "endTimecode": "01:06:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Most of the film's New York City scenes were shot in Philadelphia.",
-      "longDescription": "Most of the film's New York City scenes were shot in Philadelphia. The production spent 42 days filming there, with only 4 days in actual New York.",
-      "sources": [
-        {
-          "url": "https://www.fdtimes.com/2020/02/21/paul-cameron-asc-on-21-bridges/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3960.0,
-          "endSeconds": 4620.0,
-          "startTimecode": "01:06:00",
-          "endTimecode": "01:17:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "This film was the first major project for the Russo Brothers' company.",
-      "longDescription": "This film was the first major project for the Russo Brothers' company. Marvel directors Joe and Anthony Russo produced it through their company AGBO.",
-      "sources": [
-        {
-          "url": "https://www.framerated.co.uk/21-bridges-2019/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://collider.com/new-21-bridges-trailer-chadwick-boseman/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.latimes.com/entertainment-arts/movies/story/2019-11-21/chadwick-boseman-21-bridges",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4620.0,
-          "endSeconds": 5280.0,
-          "startTimecode": "01:17:00",
-          "endTimecode": "01:28:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "21 Bridges filmed in real NYC spots like Ditmas Park and Brooklyn Navy Yard.",
-      "longDescription": "21 Bridges filmed in real NYC spots like Ditmas Park and Brooklyn Navy Yard. Vanderbilt Avenue was also used for a train station scene.",
-      "sources": [
-        {
-          "url": "https://bklyner.com/ditmas-park-is-site-of-filming-21-bridges-crime-drama/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.sceen-it.com/sceen/3326/21-Bridges/Brooklyn-Navy-Yard",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.sceen-it.com/sceen/4204/21-Bridges/Vanderbilt-Avenue",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5280.0,
-          "endSeconds": 5940.0,
-          "startTimecode": "01:28:00",
-          "endTimecode": "01:39:00"
-        }
-      ],
-      "wouldPassStrict": false
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 9,
+    "approved_cards": 0,
     "scene_cards": 0,
-    "general_cards": 9,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -262,31 +19,34 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [
-      "filming"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          5940.0
+        ]
+      ]
     },
     "rules": {
       "fact_target_12_15": false,
-      "min_six_cards": true,
+      "min_six_cards": false,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
       "min_two_categories": false,
-      "full_time_coverage": true
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 25,
-    "cards_emitted": 9,
-    "would_pass_strict": 7,
-    "cards_rejected": 16,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 500.0,
+    "elapsed_seconds": 9.3,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

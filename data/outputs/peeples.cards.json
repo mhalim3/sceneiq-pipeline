@@ -6,370 +6,12 @@
     "input_prompt": "Peeples (2013)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Craig Robinson fell asleep during his first meeting with the director.",
-      "longDescription": "Craig Robinson fell asleep during his first meeting with the director. He was exhausted after a long day of shooting The Office.",
-      "sources": [
-        {
-          "url": "https://www.latimes.com/entertainment/movies/la-xpm-2013-apr-26-la-et-mn-tina-gordon-chism-peeples-20130428-story.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 407.1,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:06:47"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Craig Robinson channeled disco legend Sylvester for his dance scene.",
-      "longDescription": "Craig Robinson channeled disco legend Sylvester for his dance scene. He even watched Sylvester's videos for inspiration while wearing S. Epatha Merkerson's disco headpiece.",
-      "sources": [
-        {
-          "url": "https://raycornelius.com/2013/05/7-minutes-with-peeples-star-craig-robinson/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 407.1,
-          "endSeconds": 814.3,
-          "startTimecode": "00:06:47",
-          "endTimecode": "00:13:34"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Wade's job as a children's musician was tailored to Craig Robinson.",
-      "longDescription": "Wade's job as a children's musician was tailored to Craig Robinson. Robinson himself taught music to elementary school children in real life.",
-      "sources": [
-        {
-          "url": "https://www.latimes.com/entertainment/movies/la-xpm-2013-apr-26-la-et-mn-tina-gordon-chism-peeples-20130428-story.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://collider.com/kerry-washington-craig-robinson-peeples-interview/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 814.3,
-          "endSeconds": 1221.4,
-          "startTimecode": "00:13:34",
-          "endTimecode": "00:20:21"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Peeples' cast, with musical talents, sang daily on set.",
-      "longDescription": "Peeples' cast, with musical talents, sang daily on set. S. Epatha Merkerson sang in the film, and David Alan Grier performed comedic skits.",
-      "sources": [
-        {
-          "url": "https://raycornelius.com/2013/05/7-minutes-with-peeples-star-craig-robinson/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1221.4,
-          "endSeconds": 1628.6,
-          "startTimecode": "00:20:21",
-          "endTimecode": "00:27:08"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "This Tyler Perry production earned $9.3M on an $11M budget.",
-      "longDescription": "This Tyler Perry production earned $9.3M on an $11M budget. Its worldwide box office was 0.8 times its production budget.",
-      "sources": [
-        {
-          "url": "https://www.the-numbers.com/movie/Peeples-(2013)",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1628.6,
-          "endSeconds": 2035.7,
-          "startTimecode": "00:27:08",
-          "endTimecode": "00:33:55"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Director Tina Gordon Chism leveraged Kerry Washington's Type A personality.",
-      "longDescription": "Director Tina Gordon Chism leveraged Kerry Washington's Type A personality. Chism believed Washington could make Grace Peeples a likable, high-achieving character.",
-      "sources": [
-        {
-          "url": "https://www.blackfilm.com/read/tina-gordon-chism-talks-about-directing-and-writing-peeples/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.wlrn.org/2013-05-09/tina-gordon-chism-on-directing-her-star-studded-peeples",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2035.7,
-          "endSeconds": 2442.9,
-          "startTimecode": "00:33:55",
-          "endTimecode": "00:40:42"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Writer Tina Gordon Chism made her directorial debut with this film.",
-      "longDescription": "Writer Tina Gordon Chism made her directorial debut with this film. She also wrote the screenplay, wanting to ensure her unique vision for the film's tone was fully realized.",
-      "sources": [
-        {
-          "url": "https://www.latimes.com/entertainment/movies/la-xpm-2013-apr-26-la-et-mn-tina-gordon-chism-peeples-20130428-story.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.blackfilm.com/read/tina-gordon-chism-talks-about-directing-and-writing-peeples/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2442.9,
-          "endSeconds": 2850.0,
-          "startTimecode": "00:40:42",
-          "endTimecode": "00:47:30"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Kerry Washington's role as Grace was a rare comedic turn.",
-      "longDescription": "Kerry Washington's role as Grace was a rare comedic turn. The film offered her a chance to branch out from her usual dramatic roles.",
-      "sources": [
-        {
-          "url": "https://collider.com/kerry-washington-craig-robinson-peeples-interview/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.blackfilm.com/read/tina-gordon-chism-talks-about-directing-and-writing-peeples/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.wlrn.org/2013-05-09/tina-gordon-chism-on-directing-her-star-studded-peeples",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2850.0,
-          "endSeconds": 3257.1,
-          "startTimecode": "00:47:30",
-          "endTimecode": "00:54:17"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "David Alan Grier was the comedy master on the Peeples set.",
-      "longDescription": "David Alan Grier was the comedy master on the Peeples set. He kept the cast laughing and acted as the patriarch during filming.",
-      "sources": [
-        {
-          "url": "https://www.blackfilm.com/read/kali-hawk-talks-peeples/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3257.1,
-          "endSeconds": 3664.3,
-          "startTimecode": "00:54:17",
-          "endTimecode": "01:01:04"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "S. Epatha Merkerson brought laughs and song to the set of Peeples.",
-      "longDescription": "S. Epatha Merkerson brought laughs and song to the set of Peeples. She's a \"super dope actress\" who can make audiences erupt into laughter with just her eyes.",
-      "sources": [
-        {
-          "url": "https://raycornelius.com/2013/05/7-minutes-with-peeples-star-craig-robinson/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://movieweb.com/peeples-on-the-set-featurette/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3664.3,
-          "endSeconds": 4071.4,
-          "startTimecode": "01:01:04",
-          "endTimecode": "01:07:51"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Director Tina Gordon Chism wanted a fresh take on a Black family.",
-      "longDescription": "Director Tina Gordon Chism wanted a fresh take on a Black family. She aimed to portray them as quirky, smart, sometimes dry, and droll.",
-      "sources": [
-        {
-          "url": "https://www.latimes.com/entertainment/movies/la-xpm-2013-apr-26-la-et-mn-tina-gordon-chism-peeples-20130428-story.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.blackfilm.com/read/tina-gordon-chism-talks-about-directing-and-writing-peeples/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4071.4,
-          "endSeconds": 4478.6,
-          "startTimecode": "01:07:51",
-          "endTimecode": "01:14:38"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "music",
-      "shortVersion": "\"Drawers on the Floor\" is an original song performed by Tyler James Williams.",
-      "longDescription": "\"Drawers on the Floor\" is an original song performed by Tyler James Williams. The track is featured on the film's official soundtrack EP.",
-      "sources": [
-        {
-          "url": "https://www.broadwayworld.com/bwwtv/article/PEEPLES-Original-Motion-Picture-Soundtrack-to-Release-57-20130503",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4478.6,
-          "endSeconds": 4885.7,
-          "startTimecode": "01:14:38",
-          "endTimecode": "01:21:25"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "music",
-      "shortVersion": "Speak It (Don't Leak It!) has a finale with more singers.",
-      "longDescription": "Speak It (Don't Leak It!) has a finale with more singers. Craig Robinson, David Alan Grier, and Maxayn Lewis perform the \"Finale\" version.",
-      "sources": [
-        {
-          "url": "https://www.broadwayworld.com/bwwtv/article/PEEPLES-Original-Motion-Picture-Soundtrack-to-Release-57-20130503",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4885.7,
-          "endSeconds": 5292.9,
-          "startTimecode": "01:21:25",
-          "endTimecode": "01:28:12"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The entire Peeples script was written in just three months.",
-      "longDescription": "The entire Peeples script was written in just three months. Writer-director Tina Gordon Chism conceived the idea while on vacation.",
-      "sources": [
-        {
-          "url": "https://www.blackfilm.com/read/tina-gordon-chism-talks-about-directing-and-writing-peeples/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5292.9,
-          "endSeconds": 5700.0,
-          "startTimecode": "01:28:12",
-          "endTimecode": "01:35:00"
-        }
-      ],
-      "wouldPassStrict": true
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
-    "sceneiq_enabled": true,
-    "approved_cards": 14,
+    "sceneiq_enabled": false,
+    "approved_cards": 0,
     "scene_cards": 0,
-    "general_cards": 14,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -377,33 +19,34 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "filming",
-      "music"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          5700.0
+        ]
+      ]
     },
     "rules": {
-      "fact_target_12_15": true,
-      "min_six_cards": true,
+      "fact_target_12_15": false,
+      "min_six_cards": false,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 24,
-    "cards_emitted": 14,
-    "would_pass_strict": 10,
-    "cards_rejected": 10,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 463.1,
+    "elapsed_seconds": 9.5,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

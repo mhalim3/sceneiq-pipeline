@@ -3,412 +3,52 @@
     "title": "Barbershop 2: Back in Business",
     "year": 2004,
     "runtime_minutes": 106,
-    "duration_sec": 6359.150817484151,
-    "content_rating": "PG_13",
     "input_prompt": "Barbershop 2: Back in Business",
-    "anchor_source": "tubi_moments"
+    "anchor_source": "title_only",
+    "duration_sec": 6359.150817484151,
+    "content_rating": "PG_13"
   },
-  "sceneFacts": [
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "Cedric the Entertainer had a specific idea for young Eddie's run.",
-      "longDescription": "Cedric the Entertainer had a specific idea for young Eddie's run. He showed director Kevin Sullivan his \"funny run\" during rehearsals for the opening scene.",
-      "sources": [
-        {
-          "url": "https://www.popmatters.com/barbershop-2-dvd-2496227655.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.sfgate.com/movies/article/Haircut-with-a-message-Warmhearted-Barbershop-2801219.php",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 7] 00:02:18–00:02:39\nsummary: The clip shows a tense interaction between Black men and police officers during a Fourth of July barbecue, highlighting racial conflict and fear in a domestic setting.\ncast on screen: Cedric The Entertainer",
-        "anchorElement": "Cedric The Entertainer",
-        "approxTimecode": "00:02:18",
-        "runtimeFraction": 0.022,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 138.8,
-          "endSeconds": 219.2,
-          "startTimecode": "00:02:18",
-          "endTimecode": "00:03:39"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "location",
-      "shortVersion": "This barbershop was filmed at a real Chicago location.",
-      "longDescription": "This barbershop was filmed at a real Chicago location. The film also shows flashbacks to the shop's history in the 1960s.",
-      "sources": [
-        {
-          "url": "https://www.spiritualityandpractice.com/films/reviews/view/8122/barbershop-2-back-in-business",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.itsfilmedthere.com/2010/08/barbershop-2-back-in-business.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "http://www.blackfilm.com/20040206/reviews/barbershop2.shtml",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 23] 00:07:39–00:07:59\nsummary: The clip shows a group of men conversing and preparing in a barbershop or similar social setting, with a relaxed and casual atmosphere as they discuss meetings and make plans.\ncast on screen: Sean Patrick Thomas, Ice Cube",
-        "anchorElement": "a barbershop",
-        "approxTimecode": "00:07:39",
-        "runtimeFraction": 0.072,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 459.0,
-          "endSeconds": 539.9,
-          "startTimecode": "00:07:39",
-          "endTimecode": "00:08:59"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "filming",
-      "shortVersion": "Ice Cube had three non-negotiable conditions for this sequel.",
-      "longDescription": "Ice Cube had three non-negotiable conditions for this sequel. He insisted on the entire original cast, a strong standalone script, and an experienced director.",
-      "sources": [
-        {
-          "url": "http://www.blackfilm.com/20040130/features/icecube.shtml",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 23] 00:07:39–00:07:59\nsummary: The clip shows a group of men conversing and preparing in a barbershop or similar social setting, with a relaxed and casual atmosphere as they discuss meetings and make plans.\ncast on screen: Sean Patrick Thomas, Ice Cube",
-        "anchorElement": "As a star and producer, Ice Cube set three non-negotiable conditions for \"Barbershop 2\": the return of the entire original cast, a strong standalone script, and an experienced director.",
-        "approxTimecode": "00:07:39",
-        "runtimeFraction": 0.072,
-        "runtimeThird": 1,
-        "runtimeQuartile": 1
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 459.0,
-          "endSeconds": 539.9,
-          "startTimecode": "00:07:39",
-          "endTimecode": "00:08:59"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "scene",
-      "factCategory": "historical",
-      "shortVersion": "Eddie's free haircuts? They're a 35-year-old debt of gratitude.",
-      "longDescription": "Eddie's free haircuts? They're a 35-year-old debt of gratitude. Calvin Sr. hid a young Eddie from the police in 1967, leading to a lifelong bond.",
-      "sources": [
-        {
-          "url": "http://www.adrianmartinfilmcritic.com/reviews/b/barbershop_2.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.popmatters.com/barbershop-2-dvd-2496227655.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 139] 00:44:55–00:45:18\nsummary: The clip shows a tense outdoor social gathering where a man named Eddie is confronted about a misunderstanding involving a young girl, with others trying to calm the situation amid visible irritation and conflict.\ncast on screen: Ice Cube, Cedric The Entertainer",
-        "anchorElement": "Barbershop 2 resolves a lingering question from the first film by explaining why the elder barber Eddie never has to pay for his haircuts.",
-        "approxTimecode": "00:44:55",
-        "runtimeFraction": 0.424,
-        "runtimeThird": 2,
-        "runtimeQuartile": 2
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 2695.5,
-          "endSeconds": 2779.0,
-          "startTimecode": "00:44:55",
-          "endTimecode": "00:46:19"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "set_design",
-      "shortVersion": "That rival barbershop, Nappy Cutz, was a fake business built for the film.",
-      "longDescription": "That rival barbershop, Nappy Cutz, was a fake business built for the film. It was depicted as a fancy, high-tech establishment with an indoor basketball court and fish tanks.",
-      "sources": [
-        {
-          "url": "https://thankyounetflix.wordpress.com/2013/03/06/barbershop-2-back-in-business/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "http://www.blackfilm.com/20040206/reviews/barbershop2.shtml",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.itsfilmedthere.com/2010/08/barbershop-2-back-in-business.html",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 154] 00:49:56–00:50:19\nsummary: The clip shows a group of people standing outside a barbershop named 'Nappy Cutz Salons,' with a man looking frustrated and discussing a website. The mood is tense and contemplative, set in an urban environment with casual streetwear and a focus on community and business.\ncast on screen: Ice Cube, Cedric The Entertainer",
-        "anchorElement": "'Nappy Cutz Salons,'",
-        "approxTimecode": "00:49:56",
-        "runtimeFraction": 0.471,
-        "runtimeThird": 2,
-        "runtimeQuartile": 2
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 2996.1,
-          "endSeconds": 3079.1,
-          "startTimecode": "00:49:56",
-          "endTimecode": "00:51:19"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "That's Kenan Thompson as Kenard, the shop's newest barber.",
-      "longDescription": "That's Kenan Thompson as Kenard, the shop's newest barber. He's Calvin's cousin and just got his license.",
-      "sources": [
-        {
-          "url": "https://aalbc.com/film-reviews/barbershop-2",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://readthespirit.com/visual-parables/barbershop-2-back-in-business/?print=print",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 208] 01:07:39–01:07:58\nsummary: The clip shows a lively barbershop environment where a man named Kenard, described as a prima donna barber, interacts with customers and staff, creating a mood of friendly social engagement and anticipation around haircuts.\ncast on screen: Sean Patrick Thomas, Ice Cube, Cedric The Entertainer",
-        "anchorElement": "Kenan Thompson joined the ensemble cast of \"Barbershop 2\" as Kenard, Calvin's annoying cousin who takes on a barber's role in the shop.",
-        "approxTimecode": "01:07:39",
-        "runtimeFraction": 0.638,
-        "runtimeThird": 2,
-        "runtimeQuartile": 3
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 4059.9,
-          "endSeconds": 4139.0,
-          "startTimecode": "01:07:39",
-          "endTimecode": "01:08:59"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "scene",
-      "factCategory": "actor",
-      "shortVersion": "That's Calvin, the barbershop owner. He's more focused in this film.",
-      "longDescription": "That's Calvin, the barbershop owner. He's more focused in this film. Ice Cube said Calvin is trying to do the right thing and run a respectful business.",
-      "sources": [
-        {
-          "url": "http://www.blackfilm.com/20040130/features/icecube.shtml",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": {
-        "sceneDescription": "[scene 293] 01:36:02–01:36:38\nsummary: The clip depicts a group of people greeting each other and interacting casually near parked cars on a city street, with a focus on a man wearing a sports jersey walking and entering a building, creating a relaxed and social urban environment.\ncast on screen: Cedric The Entertainer, Eve, Sean Patrick Thomas, Ice Cube",
-        "anchorElement": "a man wearing a sports jersey",
-        "approxTimecode": "01:36:02",
-        "runtimeFraction": 0.906,
-        "runtimeThird": 3,
-        "runtimeQuartile": 4
-      },
-      "displayWindows": [
-        {
-          "startSeconds": 5762.8,
-          "endSeconds": 5858.6,
-          "startTimecode": "01:36:02",
-          "endTimecode": "01:37:38"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Queen Latifah's role here set up her own spin-off film.",
-      "longDescription": "Queen Latifah's role here set up her own spin-off film. Her character, Gina, was introduced in \"Barbershop 2\" to pave the way for \"Beauty Shop.\"",
-      "sources": [
-        {
-          "url": "https://www.reelingreviews.com/reviews/barbershop-2/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "http://www.blackfilm.com/20040206/reviews/barbershop2.shtml",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 138.8,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:02:18"
-        },
-        {
-          "startSeconds": 2779.0,
-          "endSeconds": 2996.1,
-          "startTimecode": "00:46:19",
-          "endTimecode": "00:49:56"
-        },
-        {
-          "startSeconds": 5858.6,
-          "endSeconds": 6359.2,
-          "startTimecode": "01:37:38",
-          "endTimecode": "01:45:59"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "historical",
-      "shortVersion": "The barbershop survived the 1968 riots that devastated many businesses.",
-      "longDescription": "The barbershop survived the 1968 riots that devastated many businesses. Dr. Martin Luther King Jr.'s assassination sparked unrest in 172 American cities.",
-      "sources": [
-        {
-          "url": "https://www.archives.gov/research/jfk/select-committee-report/part-2a.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://origins.osu.edu/milestones/april-2018-assassination-dr-martin-luther-king-jr",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://artsandculture.google.com/story/tears-of-america-the-riots-of-1968-u-s-national-archives/nQWhS4WGYdtMJg?hl=en",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.spiritualityandpractice.com/films/reviews/view/8122/barbershop-2-back-in-business",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 219.2,
-          "endSeconds": 459.0,
-          "startTimecode": "00:03:39",
-          "endTimecode": "00:07:39"
-        },
-        {
-          "startSeconds": 3079.1,
-          "endSeconds": 4059.9,
-          "startTimecode": "00:51:19",
-          "endTimecode": "01:07:39"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The Barbershop 2 DVD came packed with two audio commentaries, plus more.",
-      "longDescription": "The Barbershop 2 DVD came packed with two audio commentaries, plus more. One track featured the cast, while the other included the director and producers.",
-      "sources": [
-        {
-          "url": "https://themovieisle.com/2018/09/11/blu-ray-review-mvd-classics-barbershop-2-back-in-business-collectors-edition/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 539.9,
-          "endSeconds": 2695.5,
-          "startTimecode": "00:08:59",
-          "endTimecode": "00:44:55"
-        },
-        {
-          "startSeconds": 4139.0,
-          "endSeconds": 5762.8,
-          "startTimecode": "01:08:59",
-          "endTimecode": "01:36:02"
-        }
-      ],
-      "wouldPassStrict": false
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 10,
-    "scene_cards": 7,
-    "general_cards": 3,
+    "approved_cards": 0,
+    "scene_cards": 0,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
-      "1": 3,
-      "2": 2,
-      "3": 1,
-      "4": 1
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "filming",
-      "historical",
-      "location",
-      "set_design"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": -0.0,
+      "uncovered": [
+        [
+          0.0,
+          6359.2
+        ]
+      ]
     },
     "rules": {
       "fact_target_12_15": false,
-      "min_six_cards": true,
+      "min_six_cards": false,
       "card_in_each_quartile": true,
-      "max_40pct_single_quartile": false,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "max_40pct_single_quartile": true,
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 28,
-    "cards_emitted": 10,
-    "would_pass_strict": 4,
-    "cards_rejected": 18,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 553.4,
+    "elapsed_seconds": 9.0,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

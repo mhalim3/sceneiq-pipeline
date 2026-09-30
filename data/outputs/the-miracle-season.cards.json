@@ -6,326 +6,12 @@
     "input_prompt": "The Miracle Season (2018)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [
-    {
-      "scope": "general",
-      "factCategory": "historical",
-      "shortVersion": "The closing credits feature real photos and videos of the team.",
-      "longDescription": "The closing credits feature real photos and videos of the team. These visuals include the actual athletes, coach, and their families.",
-      "sources": [
-        {
-          "url": "https://www.thewrap.com/the-miracle-season-film-review-helen-hunt-william-hurt/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://mediastinger.com/the-miracle-season-2018-after-the-credits/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://aftercredits.com/2018/04/miracle-season-the-2018/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 540.0,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:09:00"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "“Live Like Line” was the film's working title and the team's motto.",
-      "longDescription": "“Live Like Line” was the film's working title and the team's motto. Caroline's father explained it means to bring joy to others.",
-      "sources": [
-        {
-          "url": "http://www.whatsfilming.ca/2018/04/04/the-miracle-season-filming-locations-trailer-behind-the-scenes/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.straight.com/movies/1053261/story-behind-miracle-season-was-made-silver-screen",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://guideposts.org/articles/positive-living/entertainment/movies-and-tv/the-miracle-season-is-a-sports-movie-with-an-inspiring/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 540.0,
-          "endSeconds": 1080.0,
-          "startTimecode": "00:09:00",
-          "endTimecode": "00:18:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Helen Hunt worked with the real Coach Bresnahan to prepare.",
-      "longDescription": "Helen Hunt worked with the real Coach Bresnahan to prepare. The coach flew to California to help Hunt learn how to hold a volleyball.",
-      "sources": [
-        {
-          "url": "https://www.bustle.com/p/the-true-story-of-the-miracle-season-will-make-you-appreciate-your-friends-so-much-says-star-helen-hunt-8637322",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1080.0,
-          "endSeconds": 1620.0,
-          "startTimecode": "00:18:00",
-          "endTimecode": "00:27:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "historical",
-      "shortVersion": "The film is based on a true story from Iowa City.",
-      "longDescription": "The film is based on a true story from Iowa City. It recounts the tragic deaths of 17-year-old Caroline Found and her mother, Ellyn, in 2011.",
-      "sources": [
-        {
-          "url": "https://moviemusicuk.us/2018/05/25/the-miracle-season-roque-banos/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.pureflix.com/insider/the-true-story-behind-the-miracle-season-movie",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.abebooks.com/9781940056487/Miracle-Season-Kathy-Bresnahan-1940056489/plp",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1620.0,
-          "endSeconds": 2160.0,
-          "startTimecode": "00:27:00",
-          "endTimecode": "00:36:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Director Sean McNamara aimed for a wholesome, family-friendly drama.",
-      "longDescription": "Director Sean McNamara aimed for a wholesome, family-friendly drama. He previously directed \"Soul Surfer,\" another inspiring, fact-based sports story.",
-      "sources": [
-        {
-          "url": "http://derrickbang.blogspot.com/2018/04/the-miracle-season-failure-to-spike.html",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://catholicphilly.com/2018/04/culture/movie-review-the-miracle-season/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://aftercredits.com/2018/04/miracle-season-the-2018/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2160.0,
-          "endSeconds": 2700.0,
-          "startTimecode": "00:36:00",
-          "endTimecode": "00:45:00"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The real coach says the film's message is about making a difference.",
-      "longDescription": "The real coach says the film's message is about making a difference. She emphasizes that Caroline Found made everyone feel cared for, even those on the margins.",
-      "sources": [
-        {
-          "url": "https://www.pureflix.com/insider/the-true-story-behind-the-miracle-season-movie",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://guideposts.org/articles/positive-living/entertainment/movies-and-tv/the-miracle-season-is-a-sports-movie-with-an-inspiring/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2700.0,
-          "endSeconds": 3240.0,
-          "startTimecode": "00:45:00",
-          "endTimecode": "00:54:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Director Sean McNamara earned Ernie Found's trust for the film.",
-      "longDescription": "Director Sean McNamara earned Ernie Found's trust for the film. Found had previously turned down other filmmakers.",
-      "sources": [
-        {
-          "url": "https://screenfish.net/lost-and-found-1on1-with-ernie-found-the-miracle-season/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://link2usmagazine.wordpress.com/2018/04/06/at-the-movies-miracle-season-dr-ernie-found-talks-about-his-daughters-story-now-on-film/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3240.0,
-          "endSeconds": 3780.0,
-          "startTimecode": "00:54:00",
-          "endTimecode": "01:03:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "This Iowa story was filmed in Canada for authenticity.",
-      "longDescription": "This Iowa story was filmed in Canada for authenticity. The director even flew to Iowa City to meet the real people involved.",
-      "sources": [
-        {
-          "url": "http://www.whatsfilming.ca/2018/04/04/the-miracle-season-filming-locations-trailer-behind-the-scenes/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.bustle.com/p/how-accurate-is-the-miracle-season-the-moving-true-story-would-do-caroline-found-proud-8692585",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3780.0,
-          "endSeconds": 4320.0,
-          "startTimecode": "01:03:00",
-          "endTimecode": "01:12:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "music",
-      "shortVersion": "Roque Baños' score for the film channels iconic sports movie music.",
-      "longDescription": "Roque Baños' score for the film channels iconic sports movie music. The director asked him to emulate Jerry Goldsmith and James Horner.",
-      "sources": [
-        {
-          "url": "https://moviemusicuk.us/2018/05/25/the-miracle-season-roque-banos/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4320.0,
-          "endSeconds": 4860.0,
-          "startTimecode": "01:12:00",
-          "endTimecode": "01:21:00"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The real coach wanted the film to tell their story.",
-      "longDescription": "The real coach wanted the film to tell their story. Coach Kathy Bresnahan felt it was important for the women who inspired the movie to share their own voice.",
-      "sources": [
-        {
-          "url": "https://www.bustle.com/p/how-accurate-is-the-miracle-season-the-moving-true-story-would-do-caroline-found-proud-8692585",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4860.0,
-          "endSeconds": 5400.0,
-          "startTimecode": "01:21:00",
-          "endTimecode": "01:30:00"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Real university players and coach helped film the volleyball.",
-      "longDescription": "Real university players and coach helped film the volleyball. Four players and Head Coach Ryan Hofer from Trinity Western University participated.",
-      "sources": [
-        {
-          "url": "https://statelinesportsnetwork.net/2018/04/16/inside-look-at-the-extras-who-were-a-big-part-of-the-miracle-season/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://varsityletters.ca/tag/ryan-hofer/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5400.0,
-          "endSeconds": 5940.0,
-          "startTimecode": "01:30:00",
-          "endTimecode": "01:39:00"
-        }
-      ],
-      "wouldPassStrict": false
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 11,
+    "approved_cards": 0,
     "scene_cards": 0,
-    "general_cards": 11,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -333,34 +19,34 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "filming",
-      "historical",
-      "music"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          5940.0
+        ]
+      ]
     },
     "rules": {
       "fact_target_12_15": false,
-      "min_six_cards": true,
+      "min_six_cards": false,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 24,
-    "cards_emitted": 11,
-    "would_pass_strict": 7,
-    "cards_rejected": 13,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 458.7,
+    "elapsed_seconds": 9.1,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

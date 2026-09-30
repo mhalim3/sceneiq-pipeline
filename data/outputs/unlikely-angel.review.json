@@ -9,146 +9,18 @@
   "candidates": [
     {
       "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "actor",
-        "shortVersion": "Roddy McDowall, known for Planet of the Apes, gives an excellent performance as Saint Peter.",
-        "longDescription": "Roddy McDowall, known for Planet of the Apes, gives an excellent performance as Saint Peter. He was also known for his roles in the original Fright Night films.",
-        "sources": [
-          {
-            "url": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Legendary actor Roddy McDowall, known for his roles in Planet of the Apes and Fright Night, co-starred as Saint Peter.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Legendary actor Roddy McDowall, known for his roles in Planet of the Apes and Fright Night, co-starred as Saint Peter.",
-        "search_queries": [
-          "Roddy McDowall Unlikely Angel",
-          "Saint Peter Unlikely Angel actor",
-          "Roddy McDowall filmography"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
-          "title": "coffeeaddictedwriter.com",
-          "domain": "coffeeaddictedwriter.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://tv.apple.com/us/movie/unlikely-angel/umc.cmc.35mecj4q3qme7ytj4msijm9uk",
-          "title": "apple.com",
-          "domain": "apple.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.rottentomatoes.com/m/unlikely_angel",
-          "title": "rottentomatoes.com",
-          "domain": "rottentomatoes.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.primevideo.com/detail/0LC7PNNMUO7688OTNPM3OAH7PO?tr=bz",
-          "title": "primevideo.com",
-          "domain": "primevideo.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "In \"Unlikely Angel,\" Roddy McDowall plays the character of Saint Peter.",
-          "sourceUrl": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
-          "supporting_passage": ""
-        },
-        {
-          "beat": "McDowall was also known for his roles in the original \"Fright Night\" and \"Planet of the Apes\" films.",
-          "sourceUrl": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
-          "supporting_passage": ""
-        },
-        {
-          "beat": "His portrayal of Saint Peter in the film was praised as an excellent performance.",
-          "sourceUrl": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
-          "supporting_passage": ""
-        }
-      ],
-      "validation": {
-        "passed": false,
-        "checks": {
-          "contract": false
-        },
-        "rubric": {},
-        "curiosity": {},
-        "rejection_reasons": [
-          "contract: shortVersion 92 chars (hard cap 80)"
-        ],
-        "flags": [],
-        "judge_notes": ""
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
       "card": null,
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Unlikely Angel originated from an unaired television series titled \"Heavens to Betsy,\" which also starred Dolly Parton.",
+        "anchor_element": "The film Unlikely Angel was based on an unaired TV series pilot titled \"Heavens to Betsy,\" which also starred Dolly Parton.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Unlikely Angel originated from an unaired television series titled \"Heavens to Betsy,\" which also starred Dolly Parton.",
+        "search_hint": "The film Unlikely Angel was based on an unaired TV series pilot titled \"Heavens to Betsy,\" which also starred Dolly Parton.",
         "search_queries": [
           "Unlikely Angel Heavens to Betsy",
           "Dolly Parton unaired TV series",
-          "Unlikely Angel film origin"
+          "Heavens to Betsy TV show"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -176,17 +48,22 @@
       "status": "emitted",
       "card": {
         "scope": "general",
-        "factCategory": "music",
-        "shortVersion": "Dolly Parton's theme song wasn't released for nearly 20 years.",
-        "longDescription": "Dolly Parton's theme song wasn't released for nearly 20 years. It finally debuted commercially on her 2015 album, Blue Smoke.",
+        "factCategory": "actor",
+        "shortVersion": "Allison Mack played Sarah Bartilson, a rebellious teen.",
+        "longDescription": "Mack's character, Sarah Bartilson, was portrayed as an average American rebellious teenager with an attitude in the 1996 TV movie.",
         "sources": [
           {
-            "url": "https://www.dollydiscography.com/unlikely-angel.html",
+            "url": "https://www.dvdplanetstore.pk/shop/tv-movie/unlikely-angel-1996/",
             "modality": "text",
             "timestamp": null
           },
           {
-            "url": "https://au.rollingstone.com/music/music-lists/-46485/unlikely-angel-46496/",
+            "url": "https://foreveryoungadult.com/tv-movie/stream-it-unlikely-angel/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.primevideo.com/person/Allison-Mack/amzn1.dv.gti.a394d9f5-9445-41a4-8097-a555725c0858/",
             "modality": "text",
             "timestamp": null
           }
@@ -203,15 +80,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "The film's theme song, \"Unlikely Angel,\" written and performed by Dolly Parton, was not commercially released until 2015 on her album Blue Smoke, nearly two decades after the movie premiered.",
+        "anchor_element": "Before her later public controversies, Allison Mack played a significant role as the rebellious teenager Sarah Bartilson in Unlikely Angel.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "The film's theme song, \"Unlikely Angel,\" written and performed by Dolly Parton, was not commercially released until 2015 on her album Blue Smoke, nearly two decades after the movie premiered.",
+        "search_hint": "Before her later public controversies, Allison Mack played a significant role as the rebellious teenager Sarah Bartilson in Unlikely Angel.",
         "search_queries": [
-          "Unlikely Angel song release date",
-          "Dolly Parton Blue Smoke Unlikely Angel",
-          "Unlikely Angel 1996 film soundtrack"
+          "Allison Mack Unlikely Angel",
+          "Allison Mack Sarah Bartilson",
+          "Unlikely Angel cast Allison Mack"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -220,30 +97,66 @@
       },
       "sources": [
         {
-          "url": "https://au.rollingstone.com/music/music-lists/-46485/unlikely-angel-46496/",
-          "title": "rollingstone.com",
-          "domain": "rollingstone.com",
-          "tier": "B",
+          "url": "https://www.dvdplanetstore.pk/shop/tv-movie/unlikely-angel-1996/",
+          "title": "dvdplanetstore.pk",
+          "domain": "dvdplanetstore.pk",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Allison Mack",
+            "Sarah Bartilson",
+            "Unlikely Angel",
+            "1996",
+            "Dolly Parton",
+            "Roddy McDowall"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://foreveryoungadult.com/tv-movie/stream-it-unlikely-angel/",
+          "title": "foreveryoungadult.com",
+          "domain": "foreveryoungadult.com",
+          "tier": "unknown",
           "evidence_class": "reputable_editorial",
           "modality": "text",
           "resolved": true,
           "body_kind": "html",
           "verbatim_hits": [
-            "Dolly Parton",
+            "Allison Mack",
+            "Sarah Bartilson",
             "Unlikely Angel",
             "1996",
-            "CBS",
-            "Blue Smoke",
-            "2015"
+            "Dolly Parton",
+            "Roddy McDowall"
           ],
-          "verbatim_misses": [
-            "nearly 20 years"
-          ]
+          "verbatim_misses": []
         },
         {
-          "url": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
-          "title": "coffeeaddictedwriter.com",
-          "domain": "coffeeaddictedwriter.com",
+          "url": "https://www.primevideo.com/person/Allison-Mack/amzn1.dv.gti.a394d9f5-9445-41a4-8097-a555725c0858/",
+          "title": "primevideo.com",
+          "domain": "primevideo.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Allison Mack",
+            "Sarah Bartilson",
+            "Unlikely Angel",
+            "1996",
+            "Dolly Parton",
+            "Roddy McDowall"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.tvguide.com/movies/unlikely-angel/cast/2000035364/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
           "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
@@ -253,9 +166,9 @@
           "verbatim_misses": []
         },
         {
-          "url": "https://www.rottentomatoes.com/m/unlikely_angel",
-          "title": "rottentomatoes.com",
-          "domain": "rottentomatoes.com",
+          "url": "https://www.moviemeter.com/movies/comedy/unlikely-angel/cast",
+          "title": "moviemeter.com",
+          "domain": "moviemeter.com",
           "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
@@ -269,43 +182,29 @@
           "title": "dollydiscography.com",
           "domain": "dollydiscography.com",
           "tier": "unknown",
-          "evidence_class": "discovery",
+          "evidence_class": "unknown",
           "modality": "text",
           "resolved": true,
           "body_kind": "html",
-          "verbatim_hits": [
-            "Dolly Parton",
-            "Unlikely Angel",
-            "1996",
-            "CBS",
-            "Blue Smoke",
-            "2015"
-          ],
-          "verbatim_misses": [
-            "nearly 20 years"
-          ]
+          "verbatim_hits": [],
+          "verbatim_misses": []
         }
       ],
       "claim_evidence": [
         {
-          "beat": "Dolly Parton wrote the song 'Unlikely Angel' in 1996 specifically for the CBS television movie of the same name.",
-          "sourceUrl": "https://www.dollydiscography.com/unlikely-angel.html",
-          "supporting_passage": "Dolly wrote the song in 1996 for the CBS television movie of the same name."
+          "beat": "Allison Mack was cast as Sarah Bartilson in the 1996 TV movie Unlikely Angel.",
+          "sourceUrl": "https://www.dvdplanetstore.pk/shop/tv-movie/unlikely-angel-1996/",
+          "supporting_passage": "Casting: Dolly Parton – Ruby Diamond Roddy McDowall – Saint Peter Allison Mack – Sarah Bartilson Eli Marienthal – Matthew Bartilson Brian Kerwin – Ben Bartilson"
         },
         {
-          "beat": "The ballad served as the theme song for Parton’s 1996 made-for-TV Christmas film.",
-          "sourceUrl": "https://au.rollingstone.com/music/music-lists/-46485/unlikely-angel-46496/",
-          "supporting_passage": "The theme song from Paton’s charming 1996 made-for-TV Christmas film of the same name"
+          "beat": "Her character, Sarah Bartilson, is described as an \"average American Rebellious Teen With An Attitude™\".",
+          "sourceUrl": "https://foreveryoungadult.com/tv-movie/stream-it-unlikely-angel/",
+          "supporting_passage": "Allison Mack as Sarah Bartilson You probably recognize her from Smallville , though she’s up to something much more weird and nefarious these days. In Unlikely Angel , she’s your average American Rebellious Teen With An Attitude™."
         },
         {
-          "beat": "The song was not released commercially when the movie premiered.",
-          "sourceUrl": "https://au.rollingstone.com/music/music-lists/-46485/unlikely-angel-46496/",
-          "supporting_passage": "It wasn’t released commercially when the movie came out"
-        },
-        {
-          "beat": "Its inclusion on Dolly Parton's album Blue Smoke in 2015 marked its first commercial release.",
-          "sourceUrl": "https://www.dollydiscography.com/unlikely-angel.html",
-          "supporting_passage": "its inclusion on Blue Smoke marked the song's first commercial release."
+          "beat": "Mack starred in Unlikely Angel alongside Dolly Parton and Roddy McDowall.",
+          "sourceUrl": "https://www.primevideo.com/person/Allison-Mack/amzn1.dv.gti.a394d9f5-9445-41a4-8097-a555725c0858/",
+          "supporting_passage": "She was also in A Private Matter (1992) with Sissy Spacek and Aidan Quinn, Living a Lie (1991) with Peter Coyote and Jill Eikenberry, Unlikely Angel (1996) with Dolly Parton and Roddy McDowall, and Stolen Memories: Secrets from the Rose Garden (1996) starring Mary Tyler Moore and Linda Lavin."
         }
       ],
       "validation": {
@@ -320,7 +219,7 @@
           "summary_entailment": true,
           "film_specific": true,
           "claim_entailment": true,
-          "verbatim": "flagged",
+          "verbatim": true,
           "cross_modal": true,
           "emission_policy": true,
           "rubric_disposition": true,
@@ -336,10 +235,7 @@
         },
         "curiosity": {},
         "rejection_reasons": [],
-        "flags": [
-          "shortVersion 62 chars (target 50-60, cap 80)",
-          "verbatim: could not confirm ['nearly 20 years'] in fetched bodies"
-        ],
+        "flags": [],
         "judge_notes": ""
       },
       "humanReview": {
@@ -361,8 +257,8 @@
       "card": {
         "scope": "general",
         "factCategory": "music",
-        "shortVersion": "Dolly Parton wrote the film's title song, \"Unlikely Angel.\"",
-        "longDescription": "Dolly Parton wrote the film's title song, \"Unlikely Angel.\" She wrote it in 1996 for the CBS television movie.",
+        "shortVersion": "Dolly Parton's theme song wasn't released until 2015.",
+        "longDescription": "Dolly Parton wrote the film's theme song, \"Unlikely Angel,\" in 1996. However, with no movie soundtrack produced, the song wasn't commercially released until 2015 on her album Blue Smoke.",
         "sources": [
           {
             "url": "https://www.dollydiscography.com/unlikely-angel.html",
@@ -375,15 +271,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Beyond her starring role as Ruby Diamond, Dolly Parton also wrote the film's title song, \"Unlikely Angel.\"",
+        "anchor_element": "Dolly Parton wrote the film's theme song, \"Unlikely Angel,\" which was not commercially released until 2014 on her album Blue Smoke, as no movie soundtrack was produced.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Beyond her starring role as Ruby Diamond, Dolly Parton also wrote the film's title song, \"Unlikely Angel.\"",
+        "search_hint": "Dolly Parton wrote the film's theme song, \"Unlikely Angel,\" which was not commercially released until 2014 on her album Blue Smoke, as no movie soundtrack was produced.",
         "search_queries": [
-          "Dolly Parton wrote Unlikely Angel song",
-          "Unlikely Angel theme song Dolly Parton",
-          "Dolly Parton film music contributions"
+          "Dolly Parton Unlikely Angel song",
+          "Unlikely Angel movie soundtrack",
+          "Blue Smoke album Unlikely Angel song"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -392,33 +288,21 @@
       },
       "sources": [
         {
-          "url": "https://www.avid.wiki/Sandollar_Productions_(1985-1998)",
-          "title": "avid.wiki",
-          "domain": "avid.wiki",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
-          "title": "coffeeaddictedwriter.com",
-          "domain": "coffeeaddictedwriter.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
           "url": "https://www.rottentomatoes.com/m/unlikely_angel",
           "title": "rottentomatoes.com",
           "domain": "rottentomatoes.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.wayofstory.com/category/catherine-ann-jones/blog/",
+          "title": "wayofstory.com",
+          "domain": "wayofstory.com",
           "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
@@ -440,252 +324,10 @@
             "Dolly Parton",
             "Unlikely Angel",
             "1996",
-            "CBS",
-            "Kent Wells",
-            "Kent Wells Productions",
-            "Franklin",
-            "Tennessee",
-            "Blue Smoke"
-          ],
-          "verbatim_misses": []
-        }
-      ],
-      "claim_evidence": [
-        {
-          "beat": "Dolly Parton wrote the song \"Unlikely Angel\" in 1996 for the CBS television movie of the same name.",
-          "sourceUrl": "https://www.dollydiscography.com/unlikely-angel.html",
-          "supporting_passage": ""
-        },
-        {
-          "beat": "The song \"Unlikely Angel\" was produced by Kent Wells.",
-          "sourceUrl": "https://www.dollydiscography.com/unlikely-angel.html",
-          "supporting_passage": ""
-        },
-        {
-          "beat": "It was recorded at Kent Wells Productions in Franklin, Tennessee.",
-          "sourceUrl": "https://www.dollydiscography.com/unlikely-angel.html",
-          "supporting_passage": ""
-        },
-        {
-          "beat": "No soundtrack album was released for the movie, so its inclusion on Parton's album Blue Smoke marked the song's first commercial release.",
-          "sourceUrl": "https://www.dollydiscography.com/unlikely-angel.html",
-          "supporting_passage": ""
-        }
-      ],
-      "validation": {
-        "passed": false,
-        "checks": {
-          "contract": true,
-          "source_binding": true,
-          "spoiler_free": true,
-          "maturity": true,
-          "propriety": true,
-          "taxonomy": true,
-          "summary_entailment": false,
-          "film_specific": true,
-          "claim_entailment": false,
-          "verbatim": true,
-          "cross_modal": true,
-          "emission_policy": false,
-          "rubric_disposition": false,
-          "would_pass_strict": false
-        },
-        "rubric": {
-          "factual_accuracy": 0,
-          "scene_grounding": 2,
-          "primitive_conformance": 2,
-          "viewer_value": 0,
-          "clarity": 2,
-          "spoiler_safety": 2
-        },
-        "curiosity": {},
-        "rejection_reasons": [
-          "summary_entailment: shortVersion/longDescription claim beyond the beats",
-          "claim_entailment: only 0 bound+supported beats remain (need 3)",
-          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
-          "rubric: factual_accuracy 0/2 (must be >=1)"
-        ],
-        "flags": [
-          "rubric low (relaxed): ['viewer_value']"
-        ],
-        "judge_notes": "All beats are marked as not entailed because the sole source provided is a 'discovery' source (unofficial fansite), which, per instructions, 'never support' claims. This leads to a factual_accuracy score of 0 and viewer_value of 0, and summary_entailed to false."
-      },
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Despite being a made-for-television film, Variety magazine noted that Unlikely Angel had a \"slick look,\" particularly praising its high production value in the heavenly sequences.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Despite being a made-for-television film, Variety magazine noted that Unlikely Angel had a \"slick look,\" particularly praising its high production value in the heavenly sequences.",
-        "search_queries": [
-          "Unlikely Angel Variety review",
-          "Unlikely Angel production quality",
-          "Unlikely Angel TV movie slick look"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": null,
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Extras playing angels in the film had \"sparkly stuff\" applied to their faces and wore white robes with additional sparkles to achieve their celestial look.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Extras playing angels in the film had \"sparkly stuff\" applied to their faces and wore white robes with additional sparkles to achieve their celestial look.",
-        "search_queries": [
-          "Unlikely Angel angel costumes",
-          "Unlikely Angel extras sparkly makeup",
-          "Dolly Parton Unlikely Angel special effects"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [],
-      "claim_evidence": [],
-      "validation": null,
-      "humanReview": {
-        "state": "pending",
-        "reviewer": null,
-        "scores": {
-          "factual_accuracy_sourcing": null,
-          "scene_relevance_grounding": null,
-          "primitive_conformance": null,
-          "viewer_value": null,
-          "clarity_findability": null,
-          "spoiler_safety": null
-        },
-        "notes": null
-      }
-    },
-    {
-      "status": "rejected",
-      "card": {
-        "scope": "general",
-        "factCategory": "music",
-        "shortVersion": "Dolly Parton wrote the film's title song.",
-        "longDescription": "Dolly Parton wrote the film's title song. It was released years later on her album \"Blue Smoke.\"",
-        "sources": [
-          {
-            "url": "https://www.dollydiscography.com/unlikely-angel.html",
-            "modality": "text",
-            "timestamp": null
-          }
-        ],
-        "sceneAnchor": null,
-        "displayWindows": []
-      },
-      "anchor": {
-        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Mall scenes for Unlikely Angel were reportedly filmed at real-world locations like the Sherman Oaks Galleria and the Del Amo Mall in Torrance.",
-        "runtime_fraction": 0.0,
-        "approx_timecode": "",
-        "category_guess": "general",
-        "search_hint": "Mall scenes for Unlikely Angel were reportedly filmed at real-world locations like the Sherman Oaks Galleria and the Del Amo Mall in Torrance.",
-        "search_queries": [
-          "Unlikely Angel filming locations",
-          "Sherman Oaks Galleria Unlikely Angel",
-          "Del Amo Mall Unlikely Angel"
-        ],
-        "end_fraction": 0.0,
-        "scope": "general",
-        "origin": "title_sweep",
-        "runtime_third": 1
-      },
-      "sources": [
-        {
-          "url": "https://www.atomtickets.com/theaters/amc-del-amo-18/10118",
-          "title": "atomtickets.com",
-          "domain": "atomtickets.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.rottentomatoes.com/m/unlikely_angel",
-          "title": "rottentomatoes.com",
-          "domain": "rottentomatoes.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://unlikelyangelbrand.com/",
-          "title": "unlikelyangelbrand.com",
-          "domain": "unlikelyangelbrand.com",
-          "tier": "unknown",
-          "evidence_class": "unknown",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [],
-          "verbatim_misses": []
-        },
-        {
-          "url": "https://www.dollydiscography.com/unlikely-angel.html",
-          "title": "dollydiscography.com",
-          "domain": "dollydiscography.com",
-          "tier": "unknown",
-          "evidence_class": "discovery",
-          "modality": "text",
-          "resolved": true,
-          "body_kind": "html",
-          "verbatim_hits": [
-            "Dolly Parton",
-            "Unlikely Angel",
-            "1996",
-            "CBS",
             "Blue Smoke",
-            "February 16, 2015",
-            "UK"
+            "2015",
+            "UK",
+            "February 16"
           ],
           "verbatim_misses": []
         },
@@ -702,9 +344,9 @@
           "verbatim_misses": []
         },
         {
-          "url": "https://www.thefilmcatalogue.com/films/an-unlikely-angel",
-          "title": "thefilmcatalogue.com",
-          "domain": "thefilmcatalogue.com",
+          "url": "https://robertlfreedmanwriter.com/press/articles/",
+          "title": "robertlfreedmanwriter.com",
+          "domain": "robertlfreedmanwriter.com",
           "tier": "unknown",
           "evidence_class": "unknown",
           "modality": "text",
@@ -716,19 +358,24 @@
       ],
       "claim_evidence": [
         {
-          "beat": "Dolly Parton wrote the song \"Unlikely Angel\" in 1996 specifically for the CBS television movie.",
+          "beat": "Dolly Parton wrote the film's theme song, also titled \"Unlikely Angel,\" in 1996.",
           "sourceUrl": "https://www.dollydiscography.com/unlikely-angel.html",
-          "supporting_passage": ""
+          "supporting_passage": "Dolly wrote the song in 1996 for the CBS television movie of the same name."
         },
         {
-          "beat": "The movie did not have a soundtrack album, so the song's first commercial release was on Dolly Parton's album \"Blue Smoke.\"",
+          "beat": "No soundtrack album was released for the movie.",
           "sourceUrl": "https://www.dollydiscography.com/unlikely-angel.html",
-          "supporting_passage": ""
+          "supporting_passage": "No soundtrack album was released"
         },
         {
-          "beat": "The song \"Unlikely Angel\" was released as a single by Dolly Parton on February 16, 2015, in the UK.",
+          "beat": "The song's first commercial release was its inclusion on Dolly Parton's album, Blue Smoke.",
           "sourceUrl": "https://www.dollydiscography.com/unlikely-angel.html",
-          "supporting_passage": ""
+          "supporting_passage": "its inclusion on Blue Smoke marked the song's first commercial release."
+        },
+        {
+          "beat": "\"Unlikely Angel\" was later released as a single in the UK on February 16, 2015.",
+          "sourceUrl": "https://www.dollydiscography.com/unlikely-angel.html",
+          "supporting_passage": "It was released on February 16, 2015, in the UK by Dolly Records and Sony Music as the fourth and final single from her forty-fourth solo studio album, Blue Smoke."
         }
       ],
       "validation": {
@@ -740,17 +387,17 @@
           "maturity": true,
           "propriety": true,
           "taxonomy": true,
-          "summary_entailment": false,
+          "summary_entailment": true,
           "film_specific": true,
-          "claim_entailment": false,
+          "claim_entailment": true,
           "verbatim": true,
           "cross_modal": true,
           "emission_policy": false,
-          "rubric_disposition": false,
+          "rubric_disposition": true,
           "would_pass_strict": false
         },
         "rubric": {
-          "factual_accuracy": 0,
+          "factual_accuracy": 2,
           "scene_grounding": 2,
           "primitive_conformance": 2,
           "viewer_value": 2,
@@ -759,14 +406,85 @@
         },
         "curiosity": {},
         "rejection_reasons": [
-          "summary_entailment: shortVersion/longDescription claim beyond the beats",
-          "claim_entailment: only 0 bound+supported beats remain (need 3)",
-          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
-          "rubric: factual_accuracy 0/2 (must be >=1)"
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)"
         ],
         "flags": [],
-        "judge_notes": "All beats are marked as not entailed because the sole source provided is classified as 'discovery' (an unofficial fansite), which cannot be used to support claims according to the instructions ('leads only, never support'). Consequently, factual_accuracy is 0 and summary_entailed is false."
+        "judge_notes": ""
       },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "error",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film leverages Dolly Parton's established \"brassy and sassy\" public persona by casting her as Ruby Diamond, an iconic lounge singer turned angel.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film leverages Dolly Parton's established \"brassy and sassy\" public persona by casting her as Ruby Diamond, an iconic lounge singer turned angel.",
+        "search_queries": [
+          "Dolly Parton Ruby Diamond persona",
+          "Unlikely Angel Dolly Parton casting",
+          "Dolly Parton public image film roles"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "error",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Unlikely Angel is noted for its central theme of coping with loss and grief, departing from typical holiday film antagonists like Scrooges or Grinches.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Unlikely Angel is noted for its central theme of coping with loss and grief, departing from typical holiday film antagonists like Scrooges or Grinches.",
+        "search_queries": [
+          "Unlikely Angel themes",
+          "Unlikely Angel grief",
+          "Dolly Parton Christmas movie themes"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
       "humanReview": {
         "state": "pending",
         "reviewer": null,
@@ -785,12 +503,12 @@
       "status": "rejected",
       "card": {
         "scope": "general",
-        "factCategory": "general",
-        "shortVersion": "TV Guide called Dolly Parton's Unlikely Angel a 'wonderful movie'.",
-        "longDescription": "TV Guide called Dolly Parton's Unlikely Angel a 'wonderful movie'. The publication even suggested it 'should be a holiday movie tradition'.",
+        "factCategory": "actor",
+        "shortVersion": "Roddy McDowall, of *Planet of the Apes*, plays Saint Peter.",
+        "longDescription": "The esteemed actor, known for his roles in horror and sci-fi classics, delivers an excellent performance as the gatekeeper of heaven.",
         "sources": [
           {
-            "url": "https://www.tvguide.com/movies/unlikely-angel/cast/2000035364/",
+            "url": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
             "modality": "text",
             "timestamp": null
           }
@@ -800,15 +518,15 @@
       },
       "anchor": {
         "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
-        "anchor_element": "Critics, including Variety, praised Dolly Parton's \"trademark ebullient way\" and effective performance in Unlikely Angel, despite some finding the storyline itself to be cliché.",
+        "anchor_element": "Esteemed actor Roddy McDowall, known for Fright Night and Planet of the Apes, plays the role of Saint Peter in Unlikely Angel.",
         "runtime_fraction": 0.0,
         "approx_timecode": "",
         "category_guess": "general",
-        "search_hint": "Critics, including Variety, praised Dolly Parton's \"trademark ebullient way\" and effective performance in Unlikely Angel, despite some finding the storyline itself to be cliché.",
+        "search_hint": "Esteemed actor Roddy McDowall, known for Fright Night and Planet of the Apes, plays the role of Saint Peter in Unlikely Angel.",
         "search_queries": [
-          "Dolly Parton Unlikely Angel performance review",
-          "Variety review Dolly Parton Unlikely Angel",
-          "Dolly Parton ebullient Unlikely Angel"
+          "Roddy McDowall Unlikely Angel",
+          "Roddy McDowall Saint Peter",
+          "Unlikely Angel cast Roddy McDowall"
         ],
         "end_fraction": 0.0,
         "scope": "general",
@@ -817,37 +535,93 @@
       },
       "sources": [
         {
-          "url": "https://www.tvguide.com/movies/unlikely-angel/cast/2000035364/",
-          "title": "tvguide.com",
-          "domain": "tvguide.com",
+          "url": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
+          "title": "coffeeaddictedwriter.com",
+          "domain": "coffeeaddictedwriter.com",
           "tier": "unknown",
-          "evidence_class": "reputable_editorial",
+          "evidence_class": "discovery",
           "modality": "text",
           "resolved": true,
           "body_kind": "html",
           "verbatim_hits": [
-            "Dolly Parton",
+            "Roddy McDowall",
+            "Planet of the Apes",
+            "Saint Peter",
             "Unlikely Angel",
-            "TV Guide"
+            "Fright Night",
+            "Heaven"
           ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://tv.apple.com/ca/movie/unlikely-angel/umc.cmc.35mecj4q3qme7ytj4msijm9uk",
+          "title": "apple.com",
+          "domain": "apple.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/unlikely_angel",
+          "title": "rottentomatoes.com",
+          "domain": "rottentomatoes.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.moviemeter.com/movies/comedy/unlikely-angel/cast",
+          "title": "moviemeter.com",
+          "domain": "moviemeter.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.dollydiscography.com/unlikely-angel.html",
+          "title": "dollydiscography.com",
+          "domain": "dollydiscography.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
           "verbatim_misses": []
         }
       ],
       "claim_evidence": [
         {
-          "beat": "TV Guide described Unlikely Angel as \"A wonderful movie with Dolly Parton playing a self-absorbed singer\".",
-          "sourceUrl": "https://www.tvguide.com/movies/unlikely-angel/cast/2000035364/",
-          "supporting_passage": "A wonderful movie with Dolly Parton playing a self-absorbed singer"
+          "beat": "Roddy McDowall co-stars in \"Unlikely Angel.\"",
+          "sourceUrl": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
+          "supporting_passage": "Unlikely Angel (Not Rated; 96 mins) costars the late Roddy McDowall."
         },
         {
-          "beat": "The film's plot involves Dolly Parton's character meeting \"an untimely death and gets an opportunity to earn her wings\".",
-          "sourceUrl": "https://www.tvguide.com/movies/unlikely-angel/cast/2000035364/",
-          "supporting_passage": "who meets an untimely death and gets an opportunity to earn her wings"
+          "beat": "He portrays Saint Peter, whom Ruby Diamond meets at the gates of heaven.",
+          "sourceUrl": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
+          "supporting_passage": "Her spirit goes to the gates of heaven, where she meets Saint Peter (played by Roddy McDowall)."
         },
         {
-          "beat": "The publication suggested that Unlikely Angel \"should be a holiday movie tradition.\"",
-          "sourceUrl": "https://www.tvguide.com/movies/unlikely-angel/cast/2000035364/",
-          "supporting_passage": "This should be a holiday movie tradition."
+          "beat": "McDowall was known for starring in \"Fright Night\" and \"The Planet of the Apes\" films.",
+          "sourceUrl": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
+          "supporting_passage": "I grew up watching the original Fright Night flicks and The Planet of the Apes films, which all starred Roddy McDowall"
+        },
+        {
+          "beat": "His performance as Saint Peter was described as excellent.",
+          "sourceUrl": "https://www.coffeeaddictedwriter.com/2020/07/dvd-review-unlikely-angel-1996.html",
+          "supporting_passage": "Roddy McDowall gives an excellent performance as Saint Peter."
         }
       ],
       "validation": {
@@ -864,27 +638,26 @@
           "claim_entailment": true,
           "verbatim": true,
           "cross_modal": true,
-          "emission_policy": true,
+          "emission_policy": false,
           "rubric_disposition": false,
           "would_pass_strict": false
         },
         "rubric": {
-          "factual_accuracy": 2,
+          "factual_accuracy": 0,
           "scene_grounding": 2,
-          "primitive_conformance": 0,
-          "viewer_value": 1,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
           "clarity": 2,
           "spoiler_safety": 0
         },
         "curiosity": {},
         "rejection_reasons": [
           "spoiler: card reveals plot, outcomes, or a surprise (cameo/secret role)",
-          "rubric: primitive_conformance 0/2 (must be >=1)"
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
         ],
-        "flags": [
-          "shortVersion 66 chars (target 50-60, cap 80)"
-        ],
-        "judge_notes": "Beat 1 describes a major plot point of the film ('meets an untimely death and gets an opportunity to earn her wings'), which constitutes a plot summary. The rubric states 'Automatic 0 for: plot summary of THIS film' for primitive_conformance. As a GENERAL card, this plot point is also a spoiler for the entire runtime, leading to a spoiler_safety score of 0 and spoiler_free=false. While the shortVersion and longDescription do not use Beat 1, the beat itself is part of the card's internal verification units and must conform."
+        "flags": [],
+        "judge_notes": ""
       },
       "humanReview": {
         "state": "pending",

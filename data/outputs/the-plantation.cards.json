@@ -6,12 +6,59 @@
     "input_prompt": "The Plantation",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [],
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "Dixie: Changing Habits filmed entirely in New Orleans.",
+      "longDescription": "The 1982 CBS television movie, starring Suzanne Pleshette and Cloris Leachman, was shot entirely on location at the historic Oak Alley Plantation and in the French Quarter of New Orleans.",
+      "sources": [
+        {
+          "url": "https://oakalleyplantation.org/filmed-here/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 2700.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:45:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "Oak Alley Plantation is a popular film set.",
+      "longDescription": "The historic Louisiana plantation has hosted numerous productions, including this film, \"Interview with the Vampire,\" and a segment of \"Days of Our Lives.\"",
+      "sources": [
+        {
+          "url": "https://oakalleyplantation.org/visit/filmed-here/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2700.0,
+          "endSeconds": 5400.0,
+          "startTimecode": "00:45:00",
+          "endTimecode": "01:30:00"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 0,
+    "approved_cards": 2,
     "scene_cards": 0,
-    "general_cards": 0,
+    "general_cards": 2,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -19,15 +66,12 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [],
+    "distinct_categories": [
+      "location"
+    ],
     "timeCoverage": {
-      "fraction": 0.0,
-      "uncovered": [
-        [
-          0.0,
-          5400.0
-        ]
-      ]
+      "fraction": 1.0,
+      "uncovered": []
     },
     "rules": {
       "fact_target_12_15": false,
@@ -35,18 +79,18 @@
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
       "min_two_categories": false,
-      "full_time_coverage": false
+      "full_time_coverage": true
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 14,
-    "cards_emitted": 0,
-    "would_pass_strict": 0,
-    "cards_rejected": 14,
+    "anchors_proposed": 34,
+    "cards_emitted": 2,
+    "would_pass_strict": 1,
+    "cards_rejected": 32,
     "errors": 0,
-    "elapsed_seconds": 210.1,
+    "elapsed_seconds": 407.9,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

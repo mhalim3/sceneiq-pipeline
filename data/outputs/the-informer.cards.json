@@ -6,171 +6,12 @@
     "input_prompt": "The Informer (2019)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The Informer is based on a Swedish novel, but set in New York.",
-      "longDescription": "The Informer is based on a Swedish novel, but set in New York. Director Andrea Di Stefano shifted the story's setting from Sweden to New York for the film.",
-      "sources": [
-        {
-          "url": "https://thecinemaholic.com/informer-filming-location/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 1130.0,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:18:50"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Pete Koslow's military past made him an ideal FBI informant.",
-      "longDescription": "Pete Koslow's military past made him an ideal FBI informant. He served several tours in Iraq before his skills landed him in prison.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1130.0,
-          "endSeconds": 2260.0,
-          "startTimecode": "00:18:50",
-          "endTimecode": "00:37:40"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "This New York-set film was mostly shot across the UK.",
-      "longDescription": "This New York-set film was mostly shot across the UK. Pinewood Studios and Gloucester Prison in the UK were key filming locations.",
-      "sources": [
-        {
-          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://thecinemaholic.com/informer-filming-location/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2260.0,
-          "endSeconds": 3390.0,
-          "startTimecode": "00:37:40",
-          "endTimecode": "00:56:30"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Filming in a real abandoned prison brought out an 'aggressive nature'.",
-      "longDescription": "Filming in a real abandoned prison brought out an 'aggressive nature'. Joel Kinnaman said the 100-200 extras brought out their aggressive nature.",
-      "sources": [
-        {
-          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3390.0,
-          "endSeconds": 4520.0,
-          "startTimecode": "00:56:30",
-          "endTimecode": "01:15:20"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The Informer was known as \"Three Seconds\" in some countries.",
-      "longDescription": "The Informer was known as \"Three Seconds\" in some countries. It was released under this title, or a variation, in places like Italy and Russia.",
-      "sources": [
-        {
-          "url": "https://collider.com/the-informer-ana-de-armas-streaming-june-2026/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://screenrant.com/informer-movie-2019-trailer/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4520.0,
-          "endSeconds": 5650.0,
-          "startTimecode": "01:15:20",
-          "endTimecode": "01:34:10"
-        }
-      ],
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "The Informer's US release was stuck in limbo for a while.",
-      "longDescription": "The Informer's US release was stuck in limbo for a while. Its American distribution company went bankrupt, causing significant delays.",
-      "sources": [
-        {
-          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 5650.0,
-          "endSeconds": 6780.0,
-          "startTimecode": "01:34:10",
-          "endTimecode": "01:53:00"
-        }
-      ],
-      "wouldPassStrict": true
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 6,
+    "approved_cards": 0,
     "scene_cards": 0,
-    "general_cards": 6,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -178,31 +19,34 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [
-      "filming"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          6780.0
+        ]
+      ]
     },
     "rules": {
       "fact_target_12_15": false,
-      "min_six_cards": true,
+      "min_six_cards": false,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
       "min_two_categories": false,
-      "full_time_coverage": true
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 18,
-    "cards_emitted": 6,
-    "would_pass_strict": 5,
-    "cards_rejected": 12,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 418.3,
+    "elapsed_seconds": 9.2,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

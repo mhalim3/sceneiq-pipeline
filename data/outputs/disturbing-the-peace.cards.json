@@ -2,134 +2,16 @@
   "film": {
     "title": "Disturbing the Peace",
     "year": 2020,
-    "runtime_minutes": 90,
+    "runtime_minutes": 91,
     "input_prompt": "Disturbing the Peace (2020)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "\"Disturbing the Peace\" was Barbie Blank's film acting debut.",
-      "longDescription": "\"Disturbing the Peace\" was Barbie Blank's film acting debut. She is widely known by her ring name Kelly Kelly, as a former WWE professional wrestler.",
-      "sources": [
-        {
-          "url": "https://tv.apple.com/gb/person/kelly-kelly/umc.cpc.4a648ff5gj5xgoa13qemsu6v6",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 1350.0,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:22:30"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "location",
-      "shortVersion": "The film's small town setting, Horse Cave, is a real Kentucky city.",
-      "longDescription": "The film's small town setting, Horse Cave, is a real Kentucky city. Filming took place in several downtown locations and on county roads.",
-      "sources": [
-        {
-          "url": "https://moviebabble.com/2020/01/27/disturbing-the-peace-is-so-bad-it-makes-me-re-examine-my-life-choices/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.movieinsider.com/m18022/disturbing-the-peace",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.kentuckyliving.com/explore/kentuckys-movie-set-towns",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 1350.0,
-          "endSeconds": 2700.0,
-          "startTimecode": "00:22:30",
-          "endTimecode": "00:45:00"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Guy Pearce and Devon Sawa star in this neo-western action B-movie.",
-      "longDescription": "Guy Pearce and Devon Sawa star in this neo-western action B-movie. Pearce plays Marshal Jim Dillon, while Sawa leads a biker gang as Diablo.",
-      "sources": [
-        {
-          "url": "https://moviebabble.com/2020/01/27/disturbing-the-peace-is-so-bad-it-makes-me-re-examine-my-life-choices/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.the-numbers.com/movie/Disturbing-the-Peace-(US)",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2700.0,
-          "endSeconds": 4050.0,
-          "startTimecode": "00:45:00",
-          "endTimecode": "01:07:30"
-        }
-      ],
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "This film is a neo-western, an homage to classic lawman films.",
-      "longDescription": "This film is a neo-western, an homage to classic lawman films. The director aimed for a contemporary Western feel, like a modern 'Road House'.",
-      "sources": [
-        {
-          "url": "https://moviebabble.com/2020/01/27/disturbing-the-peace-is-so-bad-it-makes-me-re-examine-my-life-choices/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "http://pop-culturalist.com/exclusive-interview-pop-culturalist-chats-with-disturbing-the-peaces-york-shackleton/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://seligfilmnews.com/disturbing-the-peace-a-review-by-cynthia-flores/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4050.0,
-          "endSeconds": 5400.0,
-          "startTimecode": "01:07:30",
-          "endTimecode": "01:30:00"
-        }
-      ],
-      "wouldPassStrict": true
-    }
-  ],
+  "sceneFacts": [],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 4,
+    "approved_cards": 0,
     "scene_cards": 0,
-    "general_cards": 4,
+    "general_cards": 0,
     "density_target": 12,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -137,32 +19,34 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [
-      "actor",
-      "location"
-    ],
+    "distinct_categories": [],
     "timeCoverage": {
-      "fraction": 1.0,
-      "uncovered": []
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          5460.0
+        ]
+      ]
     },
     "rules": {
       "fact_target_12_15": false,
       "min_six_cards": false,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
-      "min_two_categories": true,
-      "full_time_coverage": true
+      "min_two_categories": false,
+      "full_time_coverage": false
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 31,
-    "cards_emitted": 4,
-    "would_pass_strict": 1,
-    "cards_rejected": 27,
+    "anchors_proposed": 0,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 0,
     "errors": 0,
-    "elapsed_seconds": 626.2,
+    "elapsed_seconds": 9.3,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"
