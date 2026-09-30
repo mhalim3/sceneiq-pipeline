@@ -1,0 +1,294 @@
+{
+  "film": {
+    "title": "Baby Boom",
+    "year": 1987,
+    "runtime_minutes": 110,
+    "input_prompt": "Baby Boom (1987)",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Harold Ramis only acted in this film, a first for him.",
+      "longDescription": "Harold Ramis only acted in this film, a first for him. In other films like \"Ghostbusters,\" he also wrote or directed.",
+      "sources": [
+        {
+          "url": "https://bluray.highdefdigest.com/45257/babyboom.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.tcm.com/articles/25839/baby-boom",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 825.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:13:45"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "costume/prop",
+      "shortVersion": "Diane Keaton's sophisticated wardrobe was a \"whole new look\" for her.",
+      "longDescription": "Diane Keaton's sophisticated wardrobe was a \"whole new look\" for her. Costume designer Susan Becker drew inspiration from Katharine Hepburn for J.C. Wiatt's elegant style.",
+      "sources": [
+        {
+          "url": "https://www.tcm.com/articles/25839/baby-boom",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1987-10-23-vw-10669-story.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 825.0,
+          "endSeconds": 1650.0,
+          "startTimecode": "00:13:45",
+          "endTimecode": "00:27:30"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Diane Keaton's J.C. Wiatt earned the nickname 'Tiger Lady'.",
+      "longDescription": "Diane Keaton's J.C. Wiatt earned the nickname 'Tiger Lady'. She was a Harvard M.B.A. on the fast track, making six figures a year.",
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1987-10-07-ca-8189-story.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "http://www.sam-shepard.com/babyboom.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.spiritualityandpractice.com/films/reviews/view/6204",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1650.0,
+          "endSeconds": 2475.0,
+          "startTimecode": "00:27:30",
+          "endTimecode": "00:41:15"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Baby Boom captured the 80s working woman's career-mom dilemma.",
+      "longDescription": "Baby Boom captured the 80s working woman's career-mom dilemma. Co-writer Nancy Meyers was on the cutting edge of the independent-women movement.",
+      "sources": [
+        {
+          "url": "https://www.culledculture.com/baby-boom-the-epitome-of-the-80s-working-woman/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://bluray.highdefdigest.com/45257/babyboom.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "http://www.sam-shepard.com/babyboom.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2475.0,
+          "endSeconds": 3300.0,
+          "startTimecode": "00:41:15",
+          "endTimecode": "00:55:00"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "The Vermont farmhouse J.C. buys was found on a country road.",
+      "longDescription": "The Vermont farmhouse J.C. buys was found on a country road. Filmmakers knew it was perfect for J.C. Wiatt's dream home.",
+      "sources": [
+        {
+          "url": "https://strattonmagazine.com/entertainment/baby-boom-30/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.tcm.com/articles/25839/baby-boom",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3300.0,
+          "endSeconds": 4125.0,
+          "startTimecode": "00:55:00",
+          "endTimecode": "01:08:45"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "Vermont's charm in the film inspired viewers to visit the state.",
+      "longDescription": "Vermont's charm in the film inspired viewers to visit the state. Filmmakers aimed for an \"idyllic, Rockwellian Vermont\" that became even more beautiful during filming.",
+      "sources": [
+        {
+          "url": "https://hookedonhouses.net/2009/04/26/yellow-house-in-the-movie-baby-boom/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://strattonmagazine.com/entertainment/baby-boom-30/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4125.0,
+          "endSeconds": 4950.0,
+          "startTimecode": "01:08:45",
+          "endTimecode": "01:22:30"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Harold Ramis was reportedly very enthusiastic about playing Steven.",
+      "longDescription": "Harold Ramis was reportedly very enthusiastic about playing Steven. He even read for the part twice to play the \"vapid and superficial yuppie\" boyfriend.",
+      "sources": [
+        {
+          "url": "https://www.tcm.com/articles/25839/baby-boom",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://bluray.highdefdigest.com/45257/babyboom.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cineamo.com/en-US/movies/baby-boom-11215m",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4950.0,
+          "endSeconds": 5775.0,
+          "startTimecode": "01:22:30",
+          "endTimecode": "01:36:15"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "Hadleyville was a composite of several real Vermont towns.",
+      "longDescription": "Hadleyville was a composite of several real Vermont towns. Filming took place in Peru, Manchester, and Weston, Vermont.",
+      "sources": [
+        {
+          "url": "https://hookedonhouses.net/2009/04/26/yellow-house-in-the-movie-baby-boom/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://rtrlocations.blogspot.com/2015/12/baby-boom-1987.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5775.0,
+          "endSeconds": 6600.0,
+          "startTimecode": "01:36:15",
+          "endTimecode": "01:50:00"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 8,
+    "scene_cards": 0,
+    "general_cards": 8,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "costume/prop",
+      "location"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 37,
+    "cards_emitted": 8,
+    "would_pass_strict": 2,
+    "cards_rejected": 29,
+    "errors": 0,
+    "elapsed_seconds": 628.4,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

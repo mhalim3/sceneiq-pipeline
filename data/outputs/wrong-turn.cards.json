@@ -1,0 +1,476 @@
+{
+  "film": {
+    "title": "Wrong Turn",
+    "year": 2021,
+    "runtime_minutes": 109,
+    "input_prompt": "Wrong Turn (2021)",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Tim de Zarn plays a familiar 'harbinger of doom' role.",
+      "longDescription": "Tim de Zarn plays a familiar 'harbinger of doom' role. He previously warned characters in The Cabin in the Woods.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/wrong-turn-movie-cabin-woods-connection-tim-de-zarn/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 467.1,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:07:47"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "That 'inbred cannibals' joke? It's a nod to the original Wrong Turn.",
+      "longDescription": "That 'inbred cannibals' joke? It's a nod to the original Wrong Turn. The 2003 film featured a mountain-dwelling cannibal tribe.",
+      "sources": [
+        {
+          "url": "https://horrorobsessive.com/2021/03/04/wrong-turn-2021-leaves-the-slasher-genre-for-survival-horror/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://culturecrypt.com/movie-reviews/wrong-turn-2021",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://screenrant.com/wrong-turn-reboot-movie-sequel-release-date-story/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 467.1,
+          "endSeconds": 934.3,
+          "startTimecode": "00:07:47",
+          "endTimecode": "00:15:34"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "The credits start before the movie ends, prolonging the story.",
+      "longDescription": "The credits start before the movie ends, prolonging the story. The director liked an alternate ending so much, they extended it.",
+      "sources": [
+        {
+          "url": "https://spacejockeyreviews.com/wrong-turn-2021/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 934.3,
+          "endSeconds": 1401.4,
+          "startTimecode": "00:15:34",
+          "endTimecode": "00:23:21"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "music",
+      "shortVersion": "The unsettling score was made by banging strings and deer antlers.",
+      "longDescription": "The unsettling score was made by banging strings and deer antlers. Composer Stephen Lukach also processed sounds through guitar pedals.",
+      "sources": [
+        {
+          "url": "https://postmagazine.com/publications/2021/march-april-2021/soundtrack-wrong-turn-composer-stephen-lukach/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://dailydead.com/exclusive-track-premiere-from-wrong-turns-original-soundtrack-by-composer-stephen-lukach/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1401.4,
+          "endSeconds": 1868.6,
+          "startTimecode": "00:23:21",
+          "endTimecode": "00:31:08"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "costume/prop",
+      "shortVersion": "The Foundation's skull masks were designed to instill fear.",
+      "longDescription": "The Foundation's skull masks were designed to instill fear. Costume designer Gina Ruiz incorporated animal pieces and furs to make the look practical and terrifying.",
+      "sources": [
+        {
+          "url": "https://outlawvern.com/2022/03/17/wrong-turn-2021/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://horrornews.net/164036/interview-mike-p-nelson-wrong-turn-2021/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://horrornews.net/163471/film-review-wrong-turn-2021/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1868.6,
+          "endSeconds": 2335.7,
+          "startTimecode": "00:31:08",
+          "endTimecode": "00:38:55"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "historical",
+      "shortVersion": "The Foundation formed in 1859, fearing America's collapse.",
+      "longDescription": "The Foundation formed in 1859, fearing America's collapse. They aimed to be the \"foundation\" for a new society.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/wrong-turn-movie-ending-explained-sequel-setup/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://culturecrypt.com/movie-reviews/wrong-turn-2021",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://horrornews.net/164036/interview-mike-p-nelson-wrong-turn-2021/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2335.7,
+          "endSeconds": 2802.9,
+          "startTimecode": "00:38:55",
+          "endTimecode": "00:46:42"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "set_design",
+      "shortVersion": "Those deadly traps? They were designed with real objects.",
+      "longDescription": "Those deadly traps? They were designed with real objects. Director Mike P. Nelson worked with Steve Tolin to create them using railroad spikes and spindles.",
+      "sources": [
+        {
+          "url": "https://horrorfuel.com/2021/02/22/wrong-turn-director-mike-p-nelson-talks-traps-and-much-more-in-our-interview/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2802.9,
+          "endSeconds": 3270.0,
+          "startTimecode": "00:46:42",
+          "endTimecode": "00:54:30"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Constantin Film was a production company for this film.",
+      "longDescription": "Constantin Film was a production company for this film. They also handled the distribution.",
+      "sources": [
+        {
+          "url": "https://moriareviews.com/horror/wrong-turn-2021.htm",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://screenrant.com/wrong-turn-reboot-movie-sequel-release-date-story/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://substreammagazine.com/2021/02/interview-director-mike-p-nelson-of-wrong-turn-2021/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3270.0,
+          "endSeconds": 3737.1,
+          "startTimecode": "00:54:30",
+          "endTimecode": "01:02:17"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Director Mike P. Nelson wanted the film to reflect today's societal divisions.",
+      "longDescription": "Director Mike P. Nelson wanted the film to reflect today's societal divisions. He aimed to challenge audiences to look at characters in different ways, exploring competing ways of life.",
+      "sources": [
+        {
+          "url": "https://substreammagazine.com/2021/02/interview-director-mike-p-nelson-of-wrong-turn-2021/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "http://moviefreak.com/wrong-turn-2021-interview-mike-p-nelson/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3737.1,
+          "endSeconds": 4204.3,
+          "startTimecode": "01:02:17",
+          "endTimecode": "01:10:04"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Wrong Turn (2021) had a remarkably short theatrical run.",
+      "longDescription": "Wrong Turn (2021) had a remarkably short theatrical run. It was released in theaters for less than a month before its home video debut.",
+      "sources": [
+        {
+          "url": "https://www.the-numbers.com/movie/Wrong-Turn-(2021-Dir-Mike-P-Nelson)",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "http://moviefreak.com/wrong-turn-2021-interview-mike-p-nelson/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://horrornews.net/164036/interview-mike-p-nelson-wrong-turn-2021/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4204.3,
+          "endSeconds": 4671.4,
+          "startTimecode": "01:10:04",
+          "endTimecode": "01:17:51"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The director wanted the villains to be more humanized.",
+      "longDescription": "The director wanted the villains to be more humanized. He aimed to subvert audience expectations of typical horror antagonists.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/wrong-turn-reboot-foundation-cannibals-cult-2/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://substreammagazine.com/2021/02/interview-director-mike-p-nelson-of-wrong-turn-2021/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4671.4,
+          "endSeconds": 5138.6,
+          "startTimecode": "01:17:51",
+          "endTimecode": "01:25:38"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "This reboot intentionally left out the franchise's signature cannibals.",
+      "longDescription": "This reboot intentionally left out the franchise's signature cannibals. Director Mike P. Nelson wanted to create something unique and bold for the tired series.",
+      "sources": [
+        {
+          "url": "https://culturecrypt.com/movie-reviews/wrong-turn-2021",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://horrornews.net/164036/interview-mike-p-nelson-wrong-turn-2021/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://joethemnmovieman.com/2021/02/23/wrongturn/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5138.6,
+          "endSeconds": 5605.7,
+          "startTimecode": "01:25:38",
+          "endTimecode": "01:33:25"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Director Mike P. Nelson favored practical effects for the film's scares.",
+      "longDescription": "Director Mike P. Nelson favored practical effects for the film's scares. The crew relied on mostly practical effects, though some large objects were created with CGI.",
+      "sources": [
+        {
+          "url": "https://bluray.highdefdigest.com/92148/wrongturn2021.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://moviemeisterreviews.com/2021/02/09/wrong-turn/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://horrorfuel.com/2021/02/22/wrong-turn-director-mike-p-nelson-talks-traps-and-much-more-in-our-interview/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://horror-fix.com/interview-with-wrong-turn-cinematographer-nick-junkersfeld/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5605.7,
+          "endSeconds": 6072.9,
+          "startTimecode": "01:33:25",
+          "endTimecode": "01:41:12"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "Wrong Turn (2021) was the first in the franchise filmed in the U.S.",
+      "longDescription": "Wrong Turn (2021) was the first in the franchise filmed in the U.S. Production took place across several towns in Ohio, including Felicity and New Richmond.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/wrong-turn-every-movie-filming-location/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://discoverclermont.com/media/news-updates/clermont-county-cvb-partners-with-film-cincinnati-to-bring-movie-production-to-the-county/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 6072.9,
+          "endSeconds": 6540.0,
+          "startTimecode": "01:41:12",
+          "endTimecode": "01:49:00"
+        }
+      ],
+      "wouldPassStrict": true
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": true,
+    "approved_cards": 14,
+    "scene_cards": 0,
+    "general_cards": 14,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "costume/prop",
+      "filming",
+      "historical",
+      "location",
+      "music",
+      "set_design"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": true,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 41,
+    "cards_emitted": 14,
+    "would_pass_strict": 10,
+    "cards_rejected": 27,
+    "errors": 0,
+    "elapsed_seconds": 791.3,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

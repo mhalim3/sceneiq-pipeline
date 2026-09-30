@@ -1,0 +1,255 @@
+{
+  "film": {
+    "title": "The Black Demon",
+    "year": 2023,
+    "runtime_minutes": 100,
+    "input_prompt": "The Black Demon (2023)",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "The Black Demon was filmed in the Dominican Republic, not Mexico.",
+      "longDescription": "The Black Demon was filmed in the Dominican Republic, not Mexico. Principal photography utilized Pinewood Dominican Republic Studios' 60,500-square-foot water tank.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/black-demon-2023-filming-locations/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://thecinemaholic.com/where-was-the-black-demon-filmed/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 857.1,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:14:17"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The Black Demon is based on a Mexican legend of a monstrous shark.",
+      "longDescription": "The Black Demon is based on a Mexican legend of a monstrous shark. The filmmakers portray the creature as a demon, an emissary of the Aztec god Tlaloc.",
+      "sources": [
+        {
+          "url": "https://www.theupcoming.co.uk/2023/06/12/we-approached-it-more-like-a-domestic-drama-than-a-horror-movie-josh-lucas-on-the-black-demon/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.horrorhomeroom.com/the-black-demon-shark-horror-meets-folk-horror/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://movieweb.com/josh-lucas-interview-the-black-demon/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 857.1,
+          "endSeconds": 1714.3,
+          "startTimecode": "00:14:17",
+          "endTimecode": "00:28:34"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Director Adrian Grünberg is no stranger to water filming.",
+      "longDescription": "Director Adrian Grünberg is no stranger to water filming. He was First Assistant Director on \"Master and Commander: The Far Side of the World,\" a studio-shot film.",
+      "sources": [
+        {
+          "url": "https://www.theupcoming.co.uk/2023/06/12/we-approached-it-more-like-a-domestic-drama-than-a-horror-movie-josh-lucas-on-the-black-demon/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://shotonwhat.com/master-and-commander-the-far-side-of-the-world-2003",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://screenrant.com/black-demon-2023-filming-locations/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1714.3,
+          "endSeconds": 2571.4,
+          "startTimecode": "00:28:34",
+          "endTimecode": "00:42:51"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Josh Lucas called filming in water \"the hardest environment to work in.\"",
+      "longDescription": "Josh Lucas called filming in water \"the hardest environment to work in.\" The film's water tank was built directly into the ocean.",
+      "sources": [
+        {
+          "url": "https://www.moviefone.com/news/the-black-demon-interview-josh-lucas-talks-new-shark-movie/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.theupcoming.co.uk/2023/06/12/we-approached-it-more-like-a-domestic-drama-than-a-horror-movie-josh-lucas-on-the-black-demon/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2571.4,
+          "endSeconds": 3428.6,
+          "startTimecode": "00:42:51",
+          "endTimecode": "00:57:08"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "set_design",
+      "shortVersion": "That oil rig was built inside a massive water tank.",
+      "longDescription": "That oil rig was built inside a massive water tank. It was the first time a stationary object was constructed in the 60,500-square-foot Horizon Water Tank.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/black-demon-2023-filming-locations/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.theupcoming.co.uk/2023/06/12/we-approached-it-more-like-a-domestic-drama-than-a-horror-movie-josh-lucas-on-the-black-demon/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3428.6,
+          "endSeconds": 4285.7,
+          "startTimecode": "00:57:08",
+          "endTimecode": "01:11:25"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The Black Demon was Adrian Grünberg's first genre film.",
+      "longDescription": "The Black Demon was Adrian Grünberg's first genre film. He had never directed one before, despite enjoying them personally.",
+      "sources": [
+        {
+          "url": "https://cinemascholars.com/the-black-demon-an-interview-with-director-adrian-grunberg/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4285.7,
+          "endSeconds": 5142.9,
+          "startTimecode": "01:11:25",
+          "endTimecode": "01:25:42"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "The Black Demon filmed in a massive 60,500 sq ft ocean tank.",
+      "longDescription": "The Black Demon filmed in a massive 60,500 sq ft ocean tank. It was also used for films like The Lost City and 47 Meters Down.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/black-demon-2023-filming-locations/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.theupcoming.co.uk/2023/06/12/we-approached-it-more-like-a-domestic-drama-than-a-horror-movie-josh-lucas-on-the-black-demon/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5142.9,
+          "endSeconds": 6000.0,
+          "startTimecode": "01:25:42",
+          "endTimecode": "01:40:00"
+        }
+      ],
+      "wouldPassStrict": true
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 7,
+    "scene_cards": 0,
+    "general_cards": 7,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "filming",
+      "set_design"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 24,
+    "cards_emitted": 7,
+    "would_pass_strict": 7,
+    "cards_rejected": 17,
+    "errors": 0,
+    "elapsed_seconds": 566.0,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

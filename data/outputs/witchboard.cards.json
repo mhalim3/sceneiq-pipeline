@@ -1,0 +1,369 @@
+{
+  "film": {
+    "title": "Witchboard",
+    "year": 2024,
+    "runtime_minutes": 90,
+    "input_prompt": "Witchboard (2024)",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "\"Vecna\" actor Jamie Campbell Bower was cast in Witchboard.",
+      "longDescription": "\"Vecna\" actor Jamie Campbell Bower was cast in Witchboard. Director Chuck Russell called him a \"chameleon\" actor.",
+      "sources": [
+        {
+          "url": "https://www.radiotimes.com/movies/stranger-things-jamie-campbell-bower-cast-witchboard-newsupdate/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://collider.com/jamie-campbell-bower-cast-witchboard-remake/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 490.9,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:08:10"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Director Chuck Russell used 90% practical effects for real scares.",
+      "longDescription": "Director Chuck Russell used 90% practical effects for real scares. He believes practical effects are \"way more scary\" and provide a tangibility to the scares.",
+      "sources": [
+        {
+          "url": "https://bleedingcool.com/movies/witchboard-russell-on-respecting-original-films-space-growth-vfx/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://metrophiladelphia.com/stories/chuck-russell-conjures-a-new-kind-of-horror-with-witchboard,103644",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cinedump.com/reviews/2025/7/25/witchboard-2024",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 490.9,
+          "endSeconds": 981.8,
+          "startTimecode": "00:08:10",
+          "endTimecode": "00:16:21"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Witchboard was filmed in Montreal and New Orleans.",
+      "longDescription": "Witchboard was filmed in Montreal and New Orleans. Old Montreal was specifically used to portray 17th-century France.",
+      "sources": [
+        {
+          "url": "https://nofspodcast.com/witchboard-interview-director-chuck-russell-discusses-pendulum-boards-his-unofficial-remake-trilogy-and-witches-fantasiafest",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cinedump.com/reviews/2025/7/25/witchboard-2024",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 981.8,
+          "endSeconds": 1472.7,
+          "startTimecode": "00:16:21",
+          "endTimecode": "00:24:32"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "historical",
+      "shortVersion": "Witchboard's 17th-century French scenes are based on real witch trials.",
+      "longDescription": "Witchboard's 17th-century French scenes are based on real witch trials. Director Chuck Russell was fascinated by documented historical events, including a French village where everyone was found murdered.",
+      "sources": [
+        {
+          "url": "https://filmmakermagazine.com/126874-interview-chuck-russell-witchboard/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://bleedingcool.com/movies/witchboard-russell-on-respecting-original-films-space-growth-vfx/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1472.7,
+          "endSeconds": 1963.6,
+          "startTimecode": "00:24:32",
+          "endTimecode": "00:32:43"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Director Chuck Russell chose an entirely new cast for the remake.",
+      "longDescription": "Director Chuck Russell chose an entirely new cast for the remake. He wanted to take the story into a deeper place with new characters.",
+      "sources": [
+        {
+          "url": "https://collider.com/witchboard-image-mel-jarnson-aaron-dominguez/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://nofspodcast.com/witchboard-interview-director-chuck-russell-discusses-pendulum-boards-his-unofficial-remake-trilogy-and-witches-fantasiafest",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1963.6,
+          "endSeconds": 2454.5,
+          "startTimecode": "00:32:43",
+          "endTimecode": "00:40:54"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Emily's character is a recovering heroin addict.",
+      "longDescription": "Emily's character is a recovering heroin addict. Her fiancé Christian sometimes confuses the Witchboard's effects with her past substance abuse.",
+      "sources": [
+        {
+          "url": "https://rue-morgue.com/witchboard-remake-sets-a-low-bar/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://bloody-disgusting.com/reviews/3822351/witchboard-is-a-messy-occasionally-fun-remake-fantasia-review/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.flickeringmyth.com/movie-review-witchboard-2024/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2454.5,
+          "endSeconds": 2945.5,
+          "startTimecode": "00:40:54",
+          "endTimecode": "00:49:05"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "historical",
+      "shortVersion": "The film's 'Ancient Wicca' is a historical blunder.",
+      "longDescription": "The film's 'Ancient Wicca' is a historical blunder. The religion of Wicca was actually invented in England in 1921.",
+      "sources": [
+        {
+          "url": "https://moriareviews.com/horror/witchboard-2024.htm",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2945.5,
+          "endSeconds": 3436.4,
+          "startTimecode": "00:49:05",
+          "endTimecode": "00:57:16"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Director Chuck Russell calls this his third horror 'reinvention'.",
+      "longDescription": "Director Chuck Russell calls this his third horror 'reinvention'. He considers it part of an unofficial trilogy with 'A Nightmare on Elm Street 3' and 'The Blob'.",
+      "sources": [
+        {
+          "url": "https://nofspodcast.com/witchboard-interview-director-chuck-russell-discusses-pendulum-boards-his-unofficial-remake-trilogy-and-witches-fantasiafest",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://bleedingcool.com/movies/witchboard-chuck-russell-on-horror-classic-remake-creating-new-stars/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3436.4,
+          "endSeconds": 3927.3,
+          "startTimecode": "00:57:16",
+          "endTimecode": "01:05:27"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "New Orleans was chosen for its witchy aesthetic and history.",
+      "longDescription": "New Orleans was chosen for its witchy aesthetic and history. The city's long history of witchcraft made it a fitting location for the story.",
+      "sources": [
+        {
+          "url": "https://www.joblo.com/witchboard-2024-review-fantasia-2024/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cinedump.com/reviews/2025/7/25/witchboard-2024",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3927.3,
+          "endSeconds": 4418.2,
+          "startTimecode": "01:05:27",
+          "endTimecode": "01:13:38"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "historical",
+      "shortVersion": "The witchboard was created in 17th-century France by Naga Soth.",
+      "longDescription": "The witchboard was created in 17th-century France by Naga Soth. She was exiled and burned, then became a dark witch.",
+      "sources": [
+        {
+          "url": "https://moriareviews.com/horror/witchboard-2024.htm",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://wherever-i-look.com/movies/witchboard-review-and-summary",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://nofspodcast.com/witchboard-interview-director-chuck-russell-discusses-pendulum-boards-his-unofficial-remake-trilogy-and-witches-fantasiafest",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4418.2,
+          "endSeconds": 4909.1,
+          "startTimecode": "01:13:38",
+          "endTimecode": "01:21:49"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Aaron Dominguez had a thrilling time with the film's practical effects.",
+      "longDescription": "Aaron Dominguez had a thrilling time with the film's practical effects. He discussed his fun working with them and the excitement of jumping into the horror genre.",
+      "sources": [
+        {
+          "url": "https://reviewnation.net/interview-we-chat-with-star-aaron-domguez-director-chuck-russell-about-witchboard/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4909.1,
+          "endSeconds": 5400.0,
+          "startTimecode": "01:21:49",
+          "endTimecode": "01:30:00"
+        }
+      ],
+      "wouldPassStrict": true
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 11,
+    "scene_cards": 0,
+    "general_cards": 11,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "filming",
+      "historical",
+      "location"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 28,
+    "cards_emitted": 11,
+    "would_pass_strict": 8,
+    "cards_rejected": 17,
+    "errors": 0,
+    "elapsed_seconds": 589.2,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

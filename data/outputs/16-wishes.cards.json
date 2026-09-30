@@ -1,0 +1,284 @@
+{
+  "film": {
+    "title": "16 Wishes",
+    "year": 2010,
+    "runtime_minutes": 90,
+    "duration_sec": 5407.860791666666,
+    "content_rating": "G",
+    "input_prompt": "16 Wishes",
+    "anchor_source": "tubi_moments"
+  },
+  "sceneFacts": [
+    {
+      "scope": "scene",
+      "factCategory": "costume/prop",
+      "shortVersion": "Abby's wish list is a prized possession she's kept since childhood.",
+      "longDescription": "Abby's wish list is a prized possession she's kept since childhood. She's been planning her Sweet 16th birthday for years.",
+      "sources": [
+        {
+          "url": "https://rbr.com/debby-ryan-16-wishes-wish-to-the-secret-wish-list-on-disney/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://d23.com/a-to-z/16-wishes-television/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://dvdizzy.com/16wishes.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 0] 00:00:00–00:00:11\nsummary: The video clip features an opening scene of a cozy bedroom with a young person in bed, accompanied by uplifting song lyrics about overcoming fear and pursuing big dreams, creating a hopeful and comforting mood.",
+        "anchorElement": "cozy bedroom",
+        "approxTimecode": "00:00:00",
+        "runtimeFraction": 0.0,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 72.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:01:12"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "music",
+      "shortVersion": "Debby Ryan sang the film's signature pop theme, 'A Wish Comes True Every Day'.",
+      "longDescription": "Debby Ryan sang the film's signature pop theme, 'A Wish Comes True Every Day'. This track was also used in promotional materials and trailers.",
+      "sources": [
+        {
+          "url": "https://stlyrics.org/19/16wishes.htm",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 0] 00:00:00–00:00:11\nsummary: The video clip features an opening scene of a cozy bedroom with a young person in bed, accompanied by uplifting song lyrics about overcoming fear and pursuing big dreams, creating a hopeful and comforting mood.",
+        "anchorElement": "Debby Ryan, who stars as Abby Jensen, also performed the film's signature pop theme, \"A Wish Comes True Every Day.\"",
+        "approxTimecode": "00:00:00",
+        "runtimeFraction": 0.0,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 72.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:01:12"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "filming",
+      "shortVersion": "This suburban neighborhood was filmed in Vancouver, British Columbia.",
+      "longDescription": "This suburban neighborhood was filmed in Vancouver, British Columbia. The city's cozy suburban areas provided a perfect backdrop for the film.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/16-wishes-television/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://tambur.pub/en/b/post/12428-where-was-16-wishes-2010-filmed",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://moviemaps.org/movies/dl",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 27] 00:09:19–00:09:35\nsummary: A group of people are conversing outside in a suburban neighborhood, discussing a long-term issue that may take up to a year to resolve, with mixed emotions of surprise and mild relief.\ncast on screen: Anna Mae Routledge, Patrick Gilmore",
+        "anchorElement": "suburban neighborhood",
+        "approxTimecode": "00:09:19",
+        "runtimeFraction": 0.103,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 559.6,
+          "endSeconds": 635.0,
+          "startTimecode": "00:09:19",
+          "endTimecode": "00:10:35"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Jay is played by Jean-Luc Bilodeau, who debuted on 'Kyle XY'.",
+      "longDescription": "Jay is played by Jean-Luc Bilodeau, who debuted on 'Kyle XY'. He starred as Josh Trager in the science fiction series before this film.",
+      "sources": [
+        {
+          "url": "https://kids.kiddle.co/16_Wishes",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.tvsa.co.za/actors/viewactor.aspx?actorid=7204",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://dvdizzy.com/16wishes.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 40] 00:13:35–00:13:58\nsummary: A young girl and a boy discuss a Sweet 16 birthday gift box containing birthday wishes, including a wish for a red car at age 16, with the girl showing mild frustration and hopeful anticipation in a suburban outdoor setting.\ncast on screen: Jean-luc Bilodeau",
+        "anchorElement": "Jean-luc Bilodeau",
+        "approxTimecode": "00:13:35",
+        "runtimeFraction": 0.151,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 815.6,
+          "endSeconds": 898.5,
+          "startTimecode": "00:13:35",
+          "endTimecode": "00:14:58"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "music",
+      "shortVersion": "That rock music? The soundtrack is full of light pop-rock.",
+      "longDescription": "That rock music? The soundtrack is full of light pop-rock. These guitar-forward tracks give Abby's day a playlist feel.",
+      "sources": [
+        {
+          "url": "https://stlyrics.org/19/16wishes.htm",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 249] 01:23:19–01:23:38\nsummary: The clip shows a young man and woman meeting at an outdoor party decorated with balloons and lights, exchanging greetings and smiles in a warm, festive atmosphere with rock music playing.\ncast on screen: Debby Ryan",
+        "anchorElement": "rock music playing",
+        "approxTimecode": "01:23:19",
+        "runtimeFraction": 0.925,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 5000.0,
+          "endSeconds": 5078.1,
+          "startTimecode": "01:23:20",
+          "endTimecode": "01:24:38"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Celeste, the wish-granter, appears as an exterminator, postwoman, and counselor.",
+      "longDescription": "Celeste, the wish-granter, appears as an exterminator, postwoman, and counselor. She is tasked with making all of Abby's birthday wishes come true.",
+      "sources": [
+        {
+          "url": "https://dvdizzy.com/16wishes.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://thedisneypurist.com/2025/01/17/16-wishes-2010/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 72.0,
+          "endSeconds": 559.6,
+          "startTimecode": "00:01:12",
+          "endTimecode": "00:09:19"
+        },
+        {
+          "startSeconds": 635.0,
+          "endSeconds": 815.6,
+          "startTimecode": "00:10:35",
+          "endTimecode": "00:13:35"
+        },
+        {
+          "startSeconds": 898.5,
+          "endSeconds": 5000.0,
+          "startTimecode": "00:14:58",
+          "endTimecode": "01:23:20"
+        },
+        {
+          "startSeconds": 5078.1,
+          "endSeconds": 5407.9,
+          "startTimecode": "01:24:38",
+          "endTimecode": "01:30:07"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 6,
+    "scene_cards": 5,
+    "general_cards": 1,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 4,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    },
+    "distinct_categories": [
+      "actor",
+      "costume/prop",
+      "filming",
+      "music"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": false,
+      "max_40pct_single_quartile": false,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 33,
+    "cards_emitted": 6,
+    "would_pass_strict": 1,
+    "cards_rejected": 27,
+    "errors": 0,
+    "elapsed_seconds": 491.6,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

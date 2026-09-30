@@ -1,0 +1,475 @@
+{
+  "film": {
+    "title": "Barbershop",
+    "year": 2002,
+    "runtime_minutes": 102,
+    "duration_sec": 6135.719052385719,
+    "content_rating": "PG_13",
+    "input_prompt": "Barbershop",
+    "anchor_source": "tubi_moments"
+  },
+  "sceneFacts": [
+    {
+      "scope": "scene",
+      "factCategory": "filming",
+      "shortVersion": "This film launched director Tim Story's career.",
+      "longDescription": "This film launched director Tim Story's career. Made on a $12 million budget, it grossed $77 million at the box office.",
+      "sources": [
+        {
+          "url": "https://www.cinema.com/articles/1173/barbershop-production-notes.phtml",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.blackfilm.com/read/flashback-from-2002-tim-story-george-tillman-jr-robert-teitel-talk-barbershop/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.slashfilm.com/893744/how-barbershop-prepared-tim-story-for-the-fantastic-four/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 0] 00:00:00–00:00:12\nsummary: The video clip displays the Metro Goldwyn Mayer (MGM) logo featuring a lion, typically used as an opening sequence for movies.",
+        "anchorElement": "Barbershop's commercial success, grossing $77 million worldwide on a $12 million budget, was pivotal in launching director Tim Story's career, leading him to direct films like 2005's Fantastic Four.",
+        "approxTimecode": "00:00:00",
+        "runtimeFraction": 0.0,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 72.1,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:01:12"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "music",
+      "shortVersion": "Music in the film turns street fights into dance breaks.",
+      "longDescription": "Music in the film turns street fights into dance breaks. This diegetic choice makes music feel like a shop fixture, not a narrator.",
+      "sources": [
+        {
+          "url": "https://stlyrics.org/b/barbershop.htm",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 7] 00:02:18–00:02:35\nsummary: The clip shows a tense and angry confrontation between individuals in a dark, possibly indoor environment, with aggressive dialogue and a flashlight being shone in someone's face.",
+        "anchorElement": "The film strategically used diegetic music, like Marvin Gaye's \"Got to Give It Up (Part 1)\" to diffuse a street confrontation into a dance break, and EPMD's \"You Gots to Chill\" to unite barbershop patrons.",
+        "approxTimecode": "00:02:18",
+        "runtimeFraction": 0.023,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 138.9,
+          "endSeconds": 215.5,
+          "startTimecode": "00:02:18",
+          "endTimecode": "00:03:35"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Ice Cube really got into character as Calvin, even suggesting glasses.",
+      "longDescription": "Ice Cube really got into character as Calvin, even suggesting glasses. He identified with Calvin as a man trying to do the right thing and run a respectable business.",
+      "sources": [
+        {
+          "url": "https://www.cinema.com/articles/1173/barbershop-production-notes.phtml",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://blackfilm.com/20020920/features/barbershopgroup.shtml",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "http://www.blackfilm.com/20040130/features/icecube.shtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 14] 00:04:39–00:04:59\nsummary: A man speaks with frustration and disappointment about being late for work and the challenges he faces, conveying a somber and tense mood in a dimly lit indoor setting.\ncast on screen: Ice Cube",
+        "anchorElement": "Ice Cube",
+        "approxTimecode": "00:04:39",
+        "runtimeFraction": 0.046,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 279.4,
+          "endSeconds": 359.4,
+          "startTimecode": "00:04:39",
+          "endTimecode": "00:05:59"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Calvin was originally written for an older actor.",
+      "longDescription": "Calvin was originally written for an older actor. Director Tim Story and the producers decided to make the character younger.",
+      "sources": [
+        {
+          "url": "https://blackfilm.com/20020920/features/barbershopgroup.shtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 22] 00:07:16–00:07:36\nsummary: Two men engage in a casual, humorous conversation about a haircut style and money in a warmly lit indoor setting, possibly a barbershop, with a third man joining the discussion.\ncast on screen: Ice Cube",
+        "anchorElement": "The character of Calvin, played by Ice Cube, was initially written for an older actor, but the creators decided to make him younger, leading to Ice Cube's casting.",
+        "approxTimecode": "00:07:16",
+        "runtimeFraction": 0.071,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 436.1,
+          "endSeconds": 516.4,
+          "startTimecode": "00:07:16",
+          "endTimecode": "00:08:36"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "The cast went to barber school to learn how to cut hair.",
+      "longDescription": "The cast went to barber school to learn how to cut hair. Director Tim Story had the entire cast attend a barbering class for several days before filming.",
+      "sources": [
+        {
+          "url": "https://eurweb.com/barbershop-star-sean-patrick-thomas-talks-character-jimmy-james-co-star-appreciation-and-the-need-for-barbershop-4/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 59] 00:19:38–00:19:58\nsummary: The clip shows a group of people inside a barbershop where one person is getting a haircut while others engage in a humorous and slightly irritated conversation about missing apple juice, creating a casual and comedic atmosphere.\ncast on screen: Michael Ealy, Eve, Ice Cube",
+        "anchorElement": "barbershop",
+        "approxTimecode": "00:19:38",
+        "runtimeFraction": 0.192,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 1178.7,
+          "endSeconds": 1258.8,
+          "startTimecode": "00:19:38",
+          "endTimecode": "00:20:58"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Eddie's an old-time barber with strong opinions and no customers.",
+      "longDescription": "Eddie's an old-time barber with strong opinions and no customers. He's also known for having a big mouth.",
+      "sources": [
+        {
+          "url": "https://www.cinema.com/articles/1173/barbershop-production-notes.phtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 111] 00:36:59–00:37:14\nsummary: The clip shows men interacting in a barbershop, with one man getting a shave while others talk and joke, creating a casual and friendly mood in an indoor social setting.\ncast on screen: Ice Cube, Cedric The Entertainer, Troy Garity",
+        "anchorElement": "Cedric the Entertainer was 37 years old when he played the elder barber Eddie, a role originally conceived for an older, veteran character actor.",
+        "approxTimecode": "00:36:59",
+        "runtimeFraction": 0.362,
+        "runtimeThird": 2,
+        "runtimeQuartile": 2
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 2219.8,
+          "endSeconds": 2294.8,
+          "startTimecode": "00:36:59",
+          "endTimecode": "00:38:14"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "filming",
+      "shortVersion": "Eddie's controversial jokes were meant to spark real conversations.",
+      "longDescription": "Eddie's controversial jokes were meant to spark real conversations. Filmmakers wanted to show diverse opinions, not a monolithic Black viewpoint.",
+      "sources": [
+        {
+          "url": "https://www.blackfilm.com/read/flashback-from-2002-tim-story-george-tillman-jr-robert-teitel-talk-barbershop/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cinema.com/articles/1173/barbershop-production-notes.phtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 170] 00:56:16–00:56:35\nsummary: The video clip shows a group of men in a social setting engaging in a heated and provocative discussion about controversial historical and cultural figures, creating a tense and confrontational mood.\ncast on screen: Deray Davis, Cedric The Entertainer, Michael Ealy, Troy Garity, Eve",
+        "anchorElement": "Filmmakers, including writer Don Scott, defended Eddie's controversial jokes as an intentional effort to portray diverse, uncensored conversations in a real barbershop and challenge the notion of a monolithic Black viewpoint.",
+        "approxTimecode": "00:56:16",
+        "runtimeFraction": 0.55,
+        "runtimeThird": 2,
+        "runtimeQuartile": 3
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 3376.8,
+          "endSeconds": 3455.7,
+          "startTimecode": "00:56:16",
+          "endTimecode": "00:57:35"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Cedric the Entertainer chose to play Eddie, and it changed his career.",
+      "longDescription": "Cedric the Entertainer chose to play Eddie, and it changed his career. He was initially cast as the ATM thief J.D. but insisted on playing the old-timer.",
+      "sources": [
+        {
+          "url": "https://atlantablackstar.com/2022/05/31/it-changed-my-career-for-sure-cedric-the-entertainer-talks-the-barbershop-role-he-was-initially-cast-in-making-150k-for-first-film/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 222] 01:13:01–01:13:39\nsummary: The clip shows a man in a dimly lit room expressing frustration and anger while discussing racial economic disparities and social issues, with other characters contributing to a tense conversation about wealth and race in America.\ncast on screen: Cedric The Entertainer, Ice Cube",
+        "anchorElement": "Cedric The Entertainer",
+        "approxTimecode": "01:13:01",
+        "runtimeFraction": 0.714,
+        "runtimeThird": 3,
+        "runtimeQuartile": 3
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 4381.8,
+          "endSeconds": 4479.1,
+          "startTimecode": "01:13:01",
+          "endTimecode": "01:14:39"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "filming",
+      "shortVersion": "Director Tim Story encouraged the cast to bring their own ideas to scenes.",
+      "longDescription": "Director Tim Story encouraged the cast to bring their own ideas to scenes. He believed actors of this caliber should contribute their own ideas.",
+      "sources": [
+        {
+          "url": "https://www.blackfilm.com/read/flashback-from-2002-tim-story-george-tillman-jr-robert-teitel-talk-barbershop/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.slashfilm.com/893744/how-barbershop-prepared-tim-story-for-the-fantastic-four/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 222] 01:13:01–01:13:39\nsummary: The clip shows a man in a dimly lit room expressing frustration and anger while discussing racial economic disparities and social issues, with other characters contributing to a tense conversation about wealth and race in America.\ncast on screen: Cedric The Entertainer, Ice Cube",
+        "anchorElement": "Director Tim Story encouraged significant improvisation from the cast, which contributed to the film's raw and authentic feel, including many unscripted moments.",
+        "approxTimecode": "01:13:01",
+        "runtimeFraction": 0.714,
+        "runtimeThird": 3,
+        "runtimeQuartile": 3
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 4381.8,
+          "endSeconds": 4479.1,
+          "startTimecode": "01:13:01",
+          "endTimecode": "01:14:39"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "filming",
+      "shortVersion": "Cedric the Entertainer's improv changed how scenes were shot.",
+      "longDescription": "Cedric the Entertainer's improv changed how scenes were shot. Director Tim Story couldn't storyboard his spontaneous movements.",
+      "sources": [
+        {
+          "url": "https://www.blackfilm.com/read/flashback-from-2002-tim-story-george-tillman-jr-robert-teitel-talk-barbershop/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 222] 01:13:01–01:13:39\nsummary: The clip shows a man in a dimly lit room expressing frustration and anger while discussing racial economic disparities and social issues, with other characters contributing to a tense conversation about wealth and race in America.\ncast on screen: Cedric The Entertainer, Ice Cube",
+        "anchorElement": "Director Tim Story initially used extensive storyboarding, but the cast's improvisational talents, especially Cedric the Entertainer's, meant storyboards couldn't fully capture every spontaneous moment.",
+        "approxTimecode": "01:13:01",
+        "runtimeFraction": 0.714,
+        "runtimeThird": 3,
+        "runtimeQuartile": 3
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 4381.8,
+          "endSeconds": 4479.1,
+          "startTimecode": "01:13:01",
+          "endTimecode": "01:14:39"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Barbershop's success led to a whole cinematic universe.",
+      "longDescription": "Barbershop's success led to a whole cinematic universe. It spawned a sequel, a spin-off film, and a TV series.",
+      "sources": [
+        {
+          "url": "https://eurweb.com/barbershop-star-sean-patrick-thomas-talks-character-jimmy-james-co-star-appreciation-and-the-need-for-barbershop-4/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.blackfilm.com/read/flashback-from-2002-tim-story-george-tillman-jr-robert-teitel-talk-barbershop/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 72.1,
+          "endSeconds": 138.9,
+          "startTimecode": "00:01:12",
+          "endTimecode": "00:02:18"
+        },
+        {
+          "startSeconds": 359.4,
+          "endSeconds": 436.1,
+          "startTimecode": "00:05:59",
+          "endTimecode": "00:07:16"
+        },
+        {
+          "startSeconds": 1258.8,
+          "endSeconds": 2219.8,
+          "startTimecode": "00:20:58",
+          "endTimecode": "00:36:59"
+        },
+        {
+          "startSeconds": 3455.7,
+          "endSeconds": 4381.8,
+          "startTimecode": "00:57:35",
+          "endTimecode": "01:13:01"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "The film's story was originally set in Los Angeles.",
+      "longDescription": "The film's story was originally set in Los Angeles. Producers Robert Teitel and George Tillman Jr. moved the setting to their hometown of Chicago.",
+      "sources": [
+        {
+          "url": "https://www.cinema.com/articles/1173/barbershop-production-notes.phtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 215.5,
+          "endSeconds": 279.4,
+          "startTimecode": "00:03:35",
+          "endTimecode": "00:04:39"
+        },
+        {
+          "startSeconds": 516.4,
+          "endSeconds": 1178.7,
+          "startTimecode": "00:08:36",
+          "endTimecode": "00:19:38"
+        },
+        {
+          "startSeconds": 2294.8,
+          "endSeconds": 3376.8,
+          "startTimecode": "00:38:14",
+          "endTimecode": "00:56:16"
+        },
+        {
+          "startSeconds": 4479.1,
+          "endSeconds": 6135.7,
+          "startTimecode": "01:14:39",
+          "endTimecode": "01:42:15"
+        }
+      ],
+      "wouldPassStrict": true
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 12,
+    "scene_cards": 10,
+    "general_cards": 2,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 5,
+      "2": 1,
+      "3": 4,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "filming",
+      "location",
+      "music"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": true,
+      "min_six_cards": true,
+      "card_in_each_quartile": false,
+      "max_40pct_single_quartile": false,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 33,
+    "cards_emitted": 12,
+    "would_pass_strict": 9,
+    "cards_rejected": 21,
+    "errors": 0,
+    "elapsed_seconds": 560.7,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

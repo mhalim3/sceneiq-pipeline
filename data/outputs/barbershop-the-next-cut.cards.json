@@ -1,0 +1,436 @@
+{
+  "film": {
+    "title": "Barbershop: The Next Cut",
+    "year": 2016,
+    "runtime_minutes": 112,
+    "input_prompt": "Barbershop: The Next Cut (2016)",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Anthony Anderson returns as J.D., the ATM thief from the first film.",
+      "longDescription": "Anthony Anderson returns as J.D., the ATM thief from the first film. He was absent from Barbershop 2 after his character's arrest.",
+      "sources": [
+        {
+          "url": "https://www.blackfilm.com/read/barbershop-the-next-cut-run-of-engagement-passes/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 480.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:08:00"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Calvin's barbershop is now co-ed, merging with a beauty salon.",
+      "longDescription": "Calvin's barbershop is now co-ed, merging with a beauty salon. This new dynamic introduces a female perspective that the previous films lacked.",
+      "sources": [
+        {
+          "url": "https://elearning.asc.edu.ag/barbershop-next-cut-movie",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.blackfilm.com/read/barbershop-the-next-cut-run-of-engagement-passes/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 480.0,
+          "endSeconds": 960.0,
+          "startTimecode": "00:08:00",
+          "endTimecode": "00:16:00"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "A news article inspired Ice Cube to make this film.",
+      "longDescription": "A news article inspired Ice Cube to make this film. It was about a man offering free haircuts to stop violence.",
+      "sources": [
+        {
+          "url": "https://hiphopwired.com/501708/ice-cube-says-didnt-want-another-barbershop-3-movie/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 960.0,
+          "endSeconds": 1440.0,
+          "startTimecode": "00:16:00",
+          "endTimecode": "00:24:00"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Director Malcolm D. Lee had actors run and do push-ups for real emotion.",
+      "longDescription": "Director Malcolm D. Lee had actors run and do push-ups for real emotion. He wanted Diallo Thompson and Michael Rainey Jr. to be tired and intense.",
+      "sources": [
+        {
+          "url": "https://starrymag.com/diallo-thompson-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.blackfilm.com/read/director-malcolm-d-lee-talks-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1440.0,
+          "endSeconds": 1920.0,
+          "startTimecode": "00:24:00",
+          "endTimecode": "00:32:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Diallo Thompson auditioned 5 times to play Kenny.",
+      "longDescription": "Diallo Thompson auditioned 5 times to play Kenny. The rigorous process included a chemistry read with Common.",
+      "sources": [
+        {
+          "url": "https://starrymag.com/diallo-thompson-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1920.0,
+          "endSeconds": 2400.0,
+          "startTimecode": "00:32:00",
+          "endTimecode": "00:40:00"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The film's themes inspired a VH1 special on Chicago issues.",
+      "longDescription": "The film's themes inspired a VH1 special on Chicago issues. Ice Cube and Common led a dialogue with college students and organizers about gun violence.",
+      "sources": [
+        {
+          "url": "https://icecube.com/preview-behind-the-movie-exploring-chicago-with-the-cast-of-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2400.0,
+          "endSeconds": 2880.0,
+          "startTimecode": "00:40:00",
+          "endTimecode": "00:48:00"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "This film was designed to spark real conversations.",
+      "longDescription": "This film was designed to spark real conversations. The writers made sure it was current and addressed the social climate, including gang violence in Chicago.",
+      "sources": [
+        {
+          "url": "https://www.latimes.com/entertainment/movies/la-et-mn-0415-barbershop-3-feature-20160415-story.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://icecube.com/preview-behind-the-movie-exploring-chicago-with-the-cast-of-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://collider.com/barbershop-3-things-to-know-nicki-minaj/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2880.0,
+          "endSeconds": 3360.0,
+          "startTimecode": "00:48:00",
+          "endTimecode": "00:56:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "New cast members trained at 'Barbershop Bootcamp' to cut hair.",
+      "longDescription": "New cast members trained at 'Barbershop Bootcamp' to cut hair. The program taught actors to cut and style hair to look believable.",
+      "sources": [
+        {
+          "url": "http://noketchupfilms.com/projects/barbershop-the-next-cut-bootcamp/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3360.0,
+          "endSeconds": 3840.0,
+          "startTimecode": "00:56:00",
+          "endTimecode": "01:04:00"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Though set in Chicago, this film was shot in Atlanta.",
+      "longDescription": "Though set in Chicago, this film was shot in Atlanta. Crews for 'Barbershop 3' were spotted filming in Decatur.",
+      "sources": [
+        {
+          "url": "https://thefilmstage.com/review-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.atlantamagazine.com/news-culture-articles/whats-filming-in-atlanta-now-captain-america-keeping-up-with-the-joneses-barbershop-3-and-picked-up-pilots/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.blackfilm.com/read/set-visit-report-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3840.0,
+          "endSeconds": 4320.0,
+          "startTimecode": "01:04:00",
+          "endTimecode": "01:12:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Calvin's role is deeply personal, raising his son in Chicago.",
+      "longDescription": "Calvin's role is deeply personal, raising his son in Chicago. The film addresses the challenges of gang violence in the city.",
+      "sources": [
+        {
+          "url": "https://moviemanjackson.com/2016/04/15/barbershop-the-next-cut-movie-man-jackson/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://starrymag.com/diallo-thompson-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.blackfilm.com/read/director-malcolm-d-lee-talks-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://icecube.com/preview-behind-the-movie-exploring-chicago-with-the-cast-of-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4320.0,
+          "endSeconds": 4800.0,
+          "startTimecode": "01:12:00",
+          "endTimecode": "01:20:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Cedric the Entertainer improvised many of his lines as Eddie.",
+      "longDescription": "Cedric the Entertainer improvised many of his lines as Eddie. Director Malcolm D. Lee encouraged actors to \"run wild\" with their comedic performances.",
+      "sources": [
+        {
+          "url": "https://www.blackfilm.com/read/director-malcolm-d-lee-talks-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.heyuguys.com/director-malcolm-d-lee-exclusive-interview-barbershop-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4800.0,
+          "endSeconds": 5280.0,
+          "startTimecode": "01:20:00",
+          "endTimecode": "01:28:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The writers aimed to avoid stereotypes, showing nuanced gang life.",
+      "longDescription": "The writers aimed to avoid stereotypes, showing nuanced gang life. They specifically depicted characters drawn to gangs as coming from supportive two-parent households.",
+      "sources": [
+        {
+          "url": "https://www.latimes.com/entertainment/movies/la-et-mn-0415-barbershop-3-feature-20160415-story.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5280.0,
+          "endSeconds": 5760.0,
+          "startTimecode": "01:28:00",
+          "endTimecode": "01:36:00"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Director Malcolm D. Lee aimed for the funniest Barbershop film.",
+      "longDescription": "Director Malcolm D. Lee aimed for the funniest Barbershop film. He wanted to put his \"own spin\" on the franchise and make it the best of the three.",
+      "sources": [
+        {
+          "url": "https://www.blackfilm.com/read/director-malcolm-d-lee-talks-barbershop-the-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5760.0,
+          "endSeconds": 6240.0,
+          "startTimecode": "01:36:00",
+          "endTimecode": "01:44:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "It's a comedy that tackles serious social issues.",
+      "longDescription": "It's a comedy that tackles serious social issues. Director Malcolm D. Lee aimed for a winning ensemble comedy with a dose of realistic drama.",
+      "sources": [
+        {
+          "url": "https://www.shootonline.com/article/review-director-malcolm-d-lees-barbershop-next-cut/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.latimes.com/entertainment/movies/la-et-0415-barbershop-the-next-cut-review-20160415-story.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.popmatters.com/barbershop-the-next-cut-2495438285.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 6240.0,
+          "endSeconds": 6720.0,
+          "startTimecode": "01:44:00",
+          "endTimecode": "01:52:00"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": true,
+    "approved_cards": 14,
+    "scene_cards": 0,
+    "general_cards": 14,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "filming"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": true,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 26,
+    "cards_emitted": 14,
+    "would_pass_strict": 6,
+    "cards_rejected": 12,
+    "errors": 0,
+    "elapsed_seconds": 518.5,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

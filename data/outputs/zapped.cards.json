@@ -1,0 +1,192 @@
+{
+  "film": {
+    "title": "Zapped",
+    "year": 2014,
+    "runtime_minutes": 93,
+    "duration_sec": 5553.756541666667,
+    "content_rating": "TV_PG",
+    "input_prompt": "Zapped",
+    "anchor_source": "tubi_moments"
+  },
+  "sceneFacts": [
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Those \"dorks\" in the gym? They were actually professional dancers.",
+      "longDescription": "Those \"dorks\" in the gym? They were actually professional dancers. They had to pretend to be \"really bad dorks\" for the film.",
+      "sources": [
+        {
+          "url": "https://fazeteen.com/zendaya-takes-control-with-new-movie-zapped/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 244] 01:20:38–01:20:58\nsummary: The clip shows a group of young people in a gymnasium during a basketball event, where a brotherly connection is expressed between two characters, creating a mood of support and unity amidst a sports environment.\ncast on screen: Zendaya, Spencer Boldman",
+        "anchorElement": "a basketball event",
+        "approxTimecode": "01:20:38",
+        "runtimeFraction": 0.871,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 4838.3,
+          "endSeconds": 4918.8,
+          "startTimecode": "01:20:38",
+          "endTimecode": "01:21:58"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Zendaya's character Zoey is a skilled dancer.",
+      "longDescription": "Zendaya's character Zoey is a skilled dancer. The film was a \"perfect vehicle\" for Zendaya to showcase her \"electric style and dance moves.\"",
+      "sources": [
+        {
+          "url": "https://fazeteen.com/zendaya-takes-control-with-new-movie-zapped/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://d23.com/a-to-z/zapped-television/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://thedisneypurist.com/2026/06/05/zapped-2014/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 272] 01:29:57–01:30:18\nsummary: The video shows a lively stage performance with dancers and enthusiastic crowd cheering and applauding, creating an energetic and celebratory mood in a dimly lit event venue.\ncast on screen: Zendaya",
+        "anchorElement": "\"Zapped\" was considered a key project for Zendaya, who was a central figure for Disney Channel at the time, showcasing her talents including dancing and choreography.",
+        "approxTimecode": "01:29:57",
+        "runtimeFraction": 0.972,
+        "runtimeThird": 3,
+        "runtimeQuartile": 4
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 5398.0,
+          "endSeconds": 5478.7,
+          "startTimecode": "01:29:58",
+          "endTimecode": "01:31:18"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Zendaya was excited to get covered in chocolate sauce.",
+      "longDescription": "Zendaya was excited to get covered in chocolate sauce. She even found the \"soy sauce smelling chocolate\" scene \"kind of fun\" to film.",
+      "sources": [
+        {
+          "url": "https://thedisneypurist.com/2026/06/05/zapped-2014/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.newsday.com/lifestyle/family/zendaya-disney-s-zapped-star-talks-with-kidsday-x90965",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.shineon-media.com/2014/06/09/go-behind-the-scenes-of-zapped-with-zendaya-spencer-boldman/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 4838.3,
+          "startTimecode": "00:00:00",
+          "endTimecode": "01:20:38"
+        },
+        {
+          "startSeconds": 5478.7,
+          "endSeconds": 5553.8,
+          "startTimecode": "01:31:18",
+          "endTimecode": "01:32:33"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Zapped\" director Peter DeLuise also helmed \"16 Wishes.\"",
+      "longDescription": "Zapped\" director Peter DeLuise also helmed \"16 Wishes.\" His brother is fellow director and actor David DeLuise.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/zapped-television/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://tvtropes.org/pmwiki/pmwiki.php/Creator/PeterDeLuise",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4918.8,
+          "endSeconds": 5398.0,
+          "startTimecode": "01:21:58",
+          "endTimecode": "01:29:58"
+        }
+      ],
+      "wouldPassStrict": true
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 4,
+    "scene_cards": 2,
+    "general_cards": 2,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+    },
+    "distinct_categories": [
+      "actor"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": false,
+      "card_in_each_quartile": false,
+      "max_40pct_single_quartile": false,
+      "min_two_categories": false,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 25,
+    "cards_emitted": 4,
+    "would_pass_strict": 4,
+    "cards_rejected": 21,
+    "errors": 0,
+    "elapsed_seconds": 422.9,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

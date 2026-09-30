@@ -1,0 +1,325 @@
+{
+  "film": {
+    "title": "End of Watch",
+    "year": 2012,
+    "runtime_minutes": 109,
+    "input_prompt": "End of Watch (2012)",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Jake Gyllenhaal flashed a \"Code Four\" to real LAPD cops.",
+      "longDescription": "Jake Gyllenhaal flashed a \"Code Four\" to real LAPD cops. They didn't even realize it was him.",
+      "sources": [
+        {
+          "url": "https://gyllencrazy.wordpress.com/2012/05/09/david-ayers-interview-with-the-new-york-post-more-about-end-of-watch-and-jake-gyllenhaal/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 654.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:10:54"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Jake Gyllenhaal and Michael Peña trained for five months to play cops.",
+      "longDescription": "Jake Gyllenhaal and Michael Peña trained for five months to play cops. Their rigorous preparation included shooting, tactical, fight, and drivers training.",
+      "sources": [
+        {
+          "url": "https://collider.com/end-of-watch-images-synopsis/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://gyllencrazy.wordpress.com/2012/05/09/david-ayers-interview-with-the-new-york-post-more-about-end-of-watch-and-jake-gyllenhaal/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 654.0,
+          "endSeconds": 1308.0,
+          "startTimecode": "00:10:54",
+          "endTimecode": "00:21:48"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Jake Gyllenhaal saw a real murder on his first ride-along.",
+      "longDescription": "Jake Gyllenhaal saw a real murder on his first ride-along. He was in an LAPD patrol car when a drug bust went wrong.",
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/film/2012/nov/08/jake-gyllenhaal-end-of-watch",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1308.0,
+          "endSeconds": 1962.0,
+          "startTimecode": "00:21:48",
+          "endTimecode": "00:32:42"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "End of Watch was written in just six days.",
+      "longDescription": "End of Watch was written in just six days. Director David Ayer described the script as \"exploding\" out of him.",
+      "sources": [
+        {
+          "url": "https://collider.com/end-of-watch-images-synopsis/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.vice.com/en/article/we-talked-to-the-guy-who-directed-end-of-watch/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1962.0,
+          "endSeconds": 2616.0,
+          "startTimecode": "00:32:42",
+          "endTimecode": "00:43:36"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Director David Ayer aimed for honest cops, unlike his past films.",
+      "longDescription": "Director David Ayer aimed for honest cops, unlike his past films. He wanted to transcend clichés by showing officers who are \"not crazed or corrupt.\"",
+      "sources": [
+        {
+          "url": "https://www.latimes.com/entertainment/movies/la-xpm-2012-sep-19-la-et-mn-david-ayer-end-of-watch20120920-story.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.deepfocusreview.com/reviews/end-of-watch/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2616.0,
+          "endSeconds": 3270.0,
+          "startTimecode": "00:43:36",
+          "endTimecode": "00:54:30"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "End of Watch was filmed in just 22 days with a $7.5M budget.",
+      "longDescription": "End of Watch was filmed in just 22 days with a $7.5M budget. A typical studio movie can take 40 to 90 days to film.",
+      "sources": [
+        {
+          "url": "https://collider.com/end-of-watch-images-synopsis/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://movieweb.com/jake-gyllenhaal-end-of-watch-max-streaming-hit/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3270.0,
+          "endSeconds": 3924.0,
+          "startTimecode": "00:54:30",
+          "endTimecode": "01:05:24"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Jake Gyllenhaal's training was so intense, he kept his gun hand free.",
+      "longDescription": "Jake Gyllenhaal's training was so intense, he kept his gun hand free. He was taught his right hand always needed to be ready to draw his weapon.",
+      "sources": [
+        {
+          "url": "https://collider.com/end-of-watch-images-synopsis/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3924.0,
+          "endSeconds": 4578.0,
+          "startTimecode": "01:05:24",
+          "endTimecode": "01:16:18"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "\"End of Watch\" used a pseudo-documentary style for realism.",
+      "longDescription": "\"End of Watch\" used a pseudo-documentary style for realism. This allowed for continuous takes and scenes shot \"in the style of a stage play.\"",
+      "sources": [
+        {
+          "url": "https://www.latimes.com/entertainment/movies/la-xpm-2012-sep-19-la-et-mn-david-ayer-end-of-watch20120920-story.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://collider.com/end-of-watch-images-synopsis/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://lexdarling7389.wordpress.com/2012/09/14/michael-pena-talks-end-of-watch/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://gyllencrazy.wordpress.com/2012/05/09/david-ayers-interview-with-the-new-york-post-more-about-end-of-watch-and-jake-gyllenhaal/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4578.0,
+          "endSeconds": 5232.0,
+          "startTimecode": "01:16:18",
+          "endTimecode": "01:27:12"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "End of Watch was based on a real LAPD officer's experiences.",
+      "longDescription": "End of Watch was based on a real LAPD officer's experiences. He also served as a technical advisor for the film.",
+      "sources": [
+        {
+          "url": "https://www.policemag.com/blogposts/end-of-watch-based-on-lapd-cops-patrol-duty",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5232.0,
+          "endSeconds": 5886.0,
+          "startTimecode": "01:27:12",
+          "endTimecode": "01:38:06"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "music",
+      "shortVersion": "End of Watch blends original score with licensed tracks.",
+      "longDescription": "End of Watch blends original score with licensed tracks. David Sardy composed the original score, while artists like Public Enemy contributed songs.",
+      "sources": [
+        {
+          "url": "https://filmmusicreporter.com/2012/09/18/end-of-watch-soundtrack-released/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://stlyrics.org/e/endofwatch.htm",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5886.0,
+          "endSeconds": 6540.0,
+          "startTimecode": "01:38:06",
+          "endTimecode": "01:49:00"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 10,
+    "scene_cards": 0,
+    "general_cards": 10,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "filming",
+      "music"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 34,
+    "cards_emitted": 10,
+    "would_pass_strict": 6,
+    "cards_rejected": 24,
+    "errors": 0,
+    "elapsed_seconds": 676.6,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

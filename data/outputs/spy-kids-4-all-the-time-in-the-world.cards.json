@@ -1,0 +1,261 @@
+{
+  "film": {
+    "title": "Spy Kids 4: All the Time in the World",
+    "year": 2011,
+    "runtime_minutes": 89,
+    "input_prompt": "Spy Kids 4: All the Time in the World (2011)",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Carmen and Juni return, but not as the main Spy Kids.",
+      "longDescription": "Carmen and Juni return, but not as the main Spy Kids. This was the only film where they weren't the central characters.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/spy-kids-4-all-time-world-details/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.screendaily.com/spy-kids-4-all-the-time-in-the-world/5031035.article",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.businessinsider.com/alexa-penavega-says-spy-kids-4-didnt-count-2021-8",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 762.9,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:12:42"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "This film introduced \"Aromascope,\" a 4D scratch-and-sniff experience.",
+      "longDescription": "This film introduced \"Aromascope,\" a 4D scratch-and-sniff experience. Audiences used cards with eight numbered scents, including some \"stinky\" ones requested by kids.",
+      "sources": [
+        {
+          "url": "https://collider.com/robert-rodriguez-spy-kids-4-sin-city-2-interview/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.slashfilm.com/516283/spy-kids-4-bringing-smellovision/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.dawn.com/news/652481",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 762.9,
+          "endSeconds": 1525.7,
+          "startTimecode": "00:12:42",
+          "endTimecode": "00:25:25"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The Time Keeper's motivation came from director Robert Rodriguez's family.",
+      "longDescription": "The Time Keeper's motivation came from director Robert Rodriguez's family. He related to wanting to stop time for purely family reasons.",
+      "sources": [
+        {
+          "url": "https://collider.com/robert-rodriguez-spy-kids-4-sin-city-2-interview/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1525.7,
+          "endSeconds": 2288.6,
+          "startTimecode": "00:25:25",
+          "endTimecode": "00:38:08"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Director Robert Rodriguez balances family films with \"blood and guts\" movies.",
+      "longDescription": "Director Robert Rodriguez balances family films with \"blood and guts\" movies. He finds a way to seamlessly separate both worlds of his diverse filmography.",
+      "sources": [
+        {
+          "url": "https://parentpreviews.com/movie-reviews/spy-kids-4-all-the-time-in-the-world",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://screenrant.com/spy-kids-4-all-time-world-details/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2288.6,
+          "endSeconds": 3051.4,
+          "startTimecode": "00:38:08",
+          "endTimecode": "00:50:51"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Jessica Alba's real-life motherhood inspired her spy character.",
+      "longDescription": "Jessica Alba's real-life motherhood inspired her spy character. She even discussed parenting challenges with director Robert Rodriguez.",
+      "sources": [
+        {
+          "url": "https://collider.com/jessica-alba-spy-kids-4-interview/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cheatsheet.com/news/jessica-alba-shared-motherhood-inspired-spy-kids-character.html/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3051.4,
+          "endSeconds": 3814.3,
+          "startTimecode": "00:50:51",
+          "endTimecode": "01:03:34"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "This film was shot digitally with ARRI ALEXA cameras.",
+      "longDescription": "This film was shot digitally with ARRI ALEXA cameras. It also featured 1,114 visual effects shots, including an entirely virtual city.",
+      "sources": [
+        {
+          "url": "https://shotonwhat.com/spy-kids-all-the-time-in-the-world-in-4d-2011",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.awn.com/news/hybride-provides-vfx-spy-kids-4",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3814.3,
+          "endSeconds": 4577.1,
+          "startTimecode": "01:03:34",
+          "endTimecode": "01:16:17"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "music",
+      "shortVersion": "Robert Rodriguez wore many hats for Spy Kids 4, including composer.",
+      "longDescription": "Robert Rodriguez wore many hats for Spy Kids 4, including composer. He also served as the film's writer, director, producer, editor, and visual effects supervisor.",
+      "sources": [
+        {
+          "url": "https://www.cinemablend.com/new/Interview-Spy-Kids-4-Director-Robert-Rodriguez-26313.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cinesnob.net/chalewood/alexa-vega-spy-kids-4/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://screenrant.com/spy-kids-4-all-time-world-details/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4577.1,
+          "endSeconds": 5340.0,
+          "startTimecode": "01:16:17",
+          "endTimecode": "01:29:00"
+        }
+      ],
+      "wouldPassStrict": true
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 7,
+    "scene_cards": 0,
+    "general_cards": 7,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "filming",
+      "music"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 39,
+    "cards_emitted": 7,
+    "would_pass_strict": 5,
+    "cards_rejected": 32,
+    "errors": 0,
+    "elapsed_seconds": 655.2,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

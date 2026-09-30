@@ -1,0 +1,255 @@
+{
+  "film": {
+    "title": "Leon: The Professional",
+    "year": 1994,
+    "runtime_minutes": 110,
+    "input_prompt": "Leon: The Professional (1994)",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Natalie Portman felt her character's sexualization in the film was \"cringey.\"",
+      "longDescription": "Natalie Portman felt her character's sexualization in the film was \"cringey.\" She said it made her feel \"afraid\" and led her to choose less \"sexy\" roles.",
+      "sources": [
+        {
+          "url": "https://movieweb.com/leon-the-professional-luc-besson-response-natalie-portman-criticism/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 825.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:13:45"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Stansfield's iconic \"EVERYONE!\" line was an on-set joke.",
+      "longDescription": "Stansfield's iconic \"EVERYONE!\" line was an on-set joke. Gary Oldman delivered it loudly to make director Luc Besson laugh, but it made the final cut.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/leon-the-professional-movie-gary-oldman-everyone-outtake-factoid/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 825.0,
+          "endSeconds": 1650.0,
+          "startTimecode": "00:13:45",
+          "endTimecode": "00:27:30"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Mint oil helped Natalie Portman cry on cue for Mathilda.",
+      "longDescription": "Mint oil helped Natalie Portman cry on cue for Mathilda. The painful sensation taught her to cry on command for all future scenes.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/leon-the-professional-bts-behind-the-scenes-facts-trivia/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cheatsheet.com/news/natalie-portmans-the-professional-director-luc-besson-felt-responsible-career-film.html/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1650.0,
+          "endSeconds": 2475.0,
+          "startTimecode": "00:27:30",
+          "endTimecode": "00:41:15"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Natalie Portman was initially rejected for being too young.",
+      "longDescription": "Natalie Portman was initially rejected for being too young. She was only 11 when cast as Mathilda, but won the role after a powerful re-audition.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/leon-the-professional-bts-behind-the-scenes-facts-trivia/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2475.0,
+          "endSeconds": 3300.0,
+          "startTimecode": "00:41:15",
+          "endTimecode": "00:55:00"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Luc Besson made this film while waiting for Bruce Willis.",
+      "longDescription": "Luc Besson made this film while waiting for Bruce Willis. He wrote the screenplay in 30 days and filmed it in 90.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/leon-the-professional-bts-behind-the-scenes-facts-trivia/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3300.0,
+          "endSeconds": 4125.0,
+          "startTimecode": "00:55:00",
+          "endTimecode": "01:08:45"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "costume/prop",
+      "shortVersion": "Leon's iconic look was inspired by another Luc Besson character.",
+      "longDescription": "Leon's iconic look was inspired by another Luc Besson character. Director Luc Besson developed Leon's story after being inspired by Victor the Cleaner from his film \"La Femme Nikita.\"",
+      "sources": [
+        {
+          "url": "https://screenrant.com/leon-the-professional-bts-behind-the-scenes-facts-trivia/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://elementalspot.com/costume/dress-up-like-leon-the-professional/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4125.0,
+          "endSeconds": 4950.0,
+          "startTimecode": "01:08:45",
+          "endTimecode": "01:22:30"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "Leon and Mathilda's apartment exterior was filmed at a real NYC address.",
+      "longDescription": "Leon and Mathilda's apartment exterior was filmed at a real NYC address. The interior scenes were shot at the Chelsea Hotel.",
+      "sources": [
+        {
+          "url": "https://thecinemaholic.com/where-was-leon-the-professional-filmed/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://onthesetofnewyork.com/leon.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4950.0,
+          "endSeconds": 5775.0,
+          "startTimecode": "01:22:30",
+          "endTimecode": "01:36:15"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Mathilda's smoking was heavily restricted by Natalie Portman's parents.",
+      "longDescription": "Mathilda's smoking was heavily restricted by Natalie Portman's parents. Her contract limited her to five smoking scenes and required her to quit.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/leon-the-professional-bts-behind-the-scenes-facts-trivia/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5775.0,
+          "endSeconds": 6600.0,
+          "startTimecode": "01:36:15",
+          "endTimecode": "01:50:00"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 8,
+    "scene_cards": 0,
+    "general_cards": 8,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "costume/prop",
+      "filming",
+      "location"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 33,
+    "cards_emitted": 8,
+    "would_pass_strict": 3,
+    "cards_rejected": 19,
+    "errors": 6,
+    "elapsed_seconds": 860.3,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

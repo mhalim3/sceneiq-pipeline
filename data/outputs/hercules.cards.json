@@ -1,0 +1,454 @@
+{
+  "film": {
+    "title": "Hercules",
+    "year": 1997,
+    "runtime_minutes": 90,
+    "duration_sec": 5373.568211111042,
+    "content_rating": "TV_G",
+    "input_prompt": "Hercules",
+    "anchor_source": "tubi_moments"
+  },
+  "sceneFacts": [
+    {
+      "scope": "scene",
+      "factCategory": "music",
+      "shortVersion": "The Muses' gospel style was chosen to make Greek mythology more accessible.",
+      "longDescription": "The Muses' gospel style was chosen to make Greek mythology more accessible. This strategic choice helped introduce audiences to the story without needing to explain the Muses' history.",
+      "sources": [
+        {
+          "url": "http://www.filmscouts.com/scripts/matinee.cfm?Film=hercule&File=productn",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.thedisneyclassics.com/blog/the-muses-hercules",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://filmmusiccentral.com/2016/06/23/hercules-gospel-truth-1997/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 13] 00:04:15–00:04:37",
+        "anchorElement": "The filmmakers chose a gospel music approach for the film's soundtrack and the Muses' narration to make the ancient Greek story more accessible and fun, rather than a \"stiff and inaccessible\" classical style.",
+        "approxTimecode": "00:04:15",
+        "runtimeFraction": 0.047,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 255.0,
+          "endSeconds": 337.5,
+          "startTimecode": "00:04:15",
+          "endTimecode": "00:05:37"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "location",
+      "shortVersion": "Thebes' chaotic city life was inspired by a real L.A. earthquake.",
+      "longDescription": "Thebes' chaotic city life was inspired by a real L.A. earthquake. The film's crew also visited the real city of Thebes for inspiration.",
+      "sources": [
+        {
+          "url": "https://iftheglassslipperfitsblog.wordpress.com/2016/07/23/the-myth-of-the-disney-style-what-hercules-has-in-common-with-pink-floyd/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://archive.nerdist.com/13-things-we-learned-about-the-making-of-hercules-at-d23-expo/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 60] 00:19:57–00:20:19",
+        "anchorElement": "The city of Thebes in the film is portrayed as a bustling metropolis akin to New York City, with Philoctetes even calling it \"the Big Olive\" and referencing Frank Sinatra's \"New York, New York.\"",
+        "approxTimecode": "00:19:57",
+        "runtimeFraction": 0.223,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 1197.9,
+          "endSeconds": 1279.8,
+          "startTimecode": "00:19:57",
+          "endTimecode": "00:21:19"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "filming",
+      "shortVersion": "The 30-headed Hydra was too complex for hand-drawn animation.",
+      "longDescription": "The 30-headed Hydra was too complex for hand-drawn animation. Animators used computer graphics to duplicate a single head model 30 times.",
+      "sources": [
+        {
+          "url": "https://craphound.com/nonfic/hercules.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://archive.nerdist.com/13-things-we-learned-about-the-making-of-hercules-at-d23-expo/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://disneyinsideblog.wordpress.com/2021/08/16/the-making-of-hercules/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 120] 00:39:58–00:40:17",
+        "anchorElement": "The Hydra",
+        "approxTimecode": "00:39:58",
+        "runtimeFraction": 0.446,
+        "runtimeThird": 2,
+        "runtimeQuartile": 2
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 2398.6,
+          "endSeconds": 2477.9,
+          "startTimecode": "00:39:58",
+          "endTimecode": "00:41:17"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "James Woods' fast-talking Hades was his own creation, not the original plan.",
+      "longDescription": "James Woods' fast-talking Hades was his own creation, not the original plan. He gifted the character with a \"wheeler-dealer whirlwind energy\" that changed the film's direction.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/disney-hades-hercules-original-plan-scary/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 255.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:04:15"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Hercules is packed with modern-day jokes and anachronisms.",
+      "longDescription": "Hercules is packed with modern-day jokes and anachronisms. It even parodied brands like Nike and American Express.",
+      "sources": [
+        {
+          "url": "https://cartoonresearch.com/index.php/the-gods-must-be-crazy-disneys-hercules/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 337.5,
+          "endSeconds": 1197.9,
+          "startTimecode": "00:05:37",
+          "endTimecode": "00:19:57"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Phil's role was written for Danny DeVito, who didn't even audition.",
+      "longDescription": "Phil's role was written for Danny DeVito, who didn't even audition. Directors John Musker and Ron Clements broke their casting rule to get him.",
+      "sources": [
+        {
+          "url": "https://www.denofgeek.com/movies/disney-s-hercules-and-the-challenge-of-casting/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://cartoonresearch.com/index.php/the-gods-must-be-crazy-disneys-hercules/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1279.8,
+          "endSeconds": 2398.6,
+          "startTimecode": "00:21:19",
+          "endTimecode": "00:39:58"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Disney changed Greek myths to make Hercules family-friendly.",
+      "longDescription": "Disney changed Greek myths to make Hercules family-friendly. The original stories were often too dark and violent for young audiences.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/hercules-disney-movie-greek-mythology-changes/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://disneyinsideblog.wordpress.com/2021/08/16/the-making-of-hercules/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://uw.manifoldapp.org/read/heracles-cb221606-71b1-4e18-81c0-44fb15b51e6a/section/084da5d9-16da-43a4-a138-e05baa068b00",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2477.9,
+          "endSeconds": 5373.6,
+          "startTimecode": "00:41:17",
+          "endTimecode": "01:29:33"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Megara's body was designed using classical Greek vase shapes.",
+      "longDescription": "Megara's body was designed using classical Greek vase shapes. Her torso was even inspired by an Ionic pillar.",
+      "sources": [
+        {
+          "url": "https://archive.nerdist.com/13-things-we-learned-about-the-making-of-hercules-at-d23-expo/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "http://livlily.blogspot.com/2010/10/hercules-1997.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 5373.6,
+          "startTimecode": "00:00:00",
+          "endTimecode": "01:29:33"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Directors Ron Clements and John Musker made Hercules for a promise.",
+      "longDescription": "Directors Ron Clements and John Musker made Hercules for a promise. They were guaranteed to direct their dream project, \"Treasure Planet,\" afterward.",
+      "sources": [
+        {
+          "url": "https://thejamreport.com/2020/05/19/the-house-of-mouse-project-treasure-planet/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://tvtropes.org/pmwiki/pmwiki.php/Trivia/TreasurePlanet",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 5373.6,
+          "startTimecode": "00:00:00",
+          "endTimecode": "01:29:33"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Filmmakers conceived Hercules as one of the first superheroes.",
+      "longDescription": "Filmmakers conceived Hercules as one of the first superheroes. They likened his qualities to those of Superman.",
+      "sources": [
+        {
+          "url": "https://archive.nerdist.com/13-things-we-learned-about-the-making-of-hercules-at-d23-expo/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 5373.6,
+          "startTimecode": "00:00:00",
+          "endTimecode": "01:29:33"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Hercules parodies modern marketing and celebrity culture.",
+      "longDescription": "Hercules parodies modern marketing and celebrity culture. The filmmakers envisioned the hero as a celebrity athlete, like Michael Jordan.",
+      "sources": [
+        {
+          "url": "https://cartoonresearch.com/index.php/the-gods-must-be-crazy-disneys-hercules/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://moriareviews.com/fantasy/hercules-1997.htm",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://hot1047.com/disneys-hercules-behind-the-scenes-footage/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://archive.nerdist.com/13-things-we-learned-about-the-making-of-hercules-at-d23-expo/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 5373.6,
+          "startTimecode": "00:00:00",
+          "endTimecode": "01:29:33"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Disney was initially \"frightened\" of Hercules' production designer.",
+      "longDescription": "Disney was initially \"frightened\" of Hercules' production designer. They worried about his wild drawing style and potential criticism of their animators.",
+      "sources": [
+        {
+          "url": "https://cartoonresearch.com/index.php/animation-anecdotes-274/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://iftheglassslipperfitsblog.wordpress.com/2016/07/23/the-myth-of-the-disney-style-what-hercules-has-in-common-with-pink-floyd/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 5373.6,
+          "startTimecode": "00:00:00",
+          "endTimecode": "01:29:33"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "set_design",
+      "shortVersion": "Hercules' unique style blends ancient Greek art with Gerald Scarfe's designs.",
+      "longDescription": "Hercules' unique style blends ancient Greek art with Gerald Scarfe's designs. Artists studied sculptures and vases, and Scarfe's graphic lines shaped villains like Hades.",
+      "sources": [
+        {
+          "url": "https://iftheglassslipperfitsblog.wordpress.com/2016/07/23/the-myth-of-the-disney-style-what-hercules-has-in-common-with-pink-floyd/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://archive.nerdist.com/13-things-we-learned-about-the-making-of-hercules-at-d23-expo/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 5373.6,
+          "startTimecode": "00:00:00",
+          "endTimecode": "01:29:33"
+        }
+      ],
+      "wouldPassStrict": true
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 13,
+    "scene_cards": 3,
+    "general_cards": 10,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "filming",
+      "location",
+      "music",
+      "set_design"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": true,
+      "min_six_cards": true,
+      "card_in_each_quartile": false,
+      "max_40pct_single_quartile": false,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 52,
+    "cards_emitted": 13,
+    "would_pass_strict": 6,
+    "cards_rejected": 39,
+    "errors": 0,
+    "elapsed_seconds": 1000.6,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

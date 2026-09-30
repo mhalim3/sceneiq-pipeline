@@ -1,0 +1,3366 @@
+{
+  "film": {
+    "title": "The Informer",
+    "year": 2019,
+    "runtime_minutes": 113,
+    "input_prompt": "The Informer (2019)",
+    "anchor_source": "title_only"
+  },
+  "candidates": [
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "An FBI review noted the film's authentic vibe but criticized liberties, such as an informant using his own recording equipment and the FBI disregarding an officer's death, calling the latter \"offensive.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "An FBI review noted the film's authentic vibe but criticized liberties, such as an informant using his own recording equipment and the FBI disregarding an officer's death, calling the latter \"offensive.\"",
+        "search_queries": [
+          "The Informer FBI accuracy",
+          "FBI review The Informer (2019)",
+          "The Informer informant recording equipment"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "The Informer is based on a Swedish novel, but set in New York.",
+        "longDescription": "The Informer is based on a Swedish novel, but set in New York. Director Andrea Di Stefano shifted the story's setting from Sweden to New York for the film.",
+        "sources": [
+          {
+            "url": "https://thecinemaholic.com/informer-filming-location/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 0.0,
+            "endSeconds": 1130.0,
+            "startTimecode": "00:00:00",
+            "endTimecode": "00:18:50"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film is an adaptation of the acclaimed Swedish crime novel \"Three Seconds\" by Roslund & Hellström, with the story's setting relocated from Sweden to New York City.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film is an adaptation of the acclaimed Swedish crime novel \"Three Seconds\" by Roslund & Hellström, with the story's setting relocated from Sweden to New York City.",
+        "search_queries": [
+          "The Informer based on book",
+          "Three Seconds novel film adaptation",
+          "The Informer (2019) Swedish novel"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Three Seconds",
+            "Roslund",
+            "Hellström",
+            "New York",
+            "Andrea Di Stefano",
+            "Joel Kinnaman"
+          ],
+          "verbatim_misses": [
+            "Sweden"
+          ]
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "title": "theguardian.com",
+          "domain": "theguardian.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "title": "the-numbers.com",
+          "domain": "the-numbers.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://popculturemaniacs.com/the-informer-review/",
+          "title": "popculturemaniacs.com",
+          "domain": "popculturemaniacs.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Three Seconds",
+            "Roslund",
+            "Hellström",
+            "New York",
+            "Andrea Di Stefano",
+            "Joel Kinnaman"
+          ],
+          "verbatim_misses": [
+            "Sweden"
+          ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film \"The Informer\" is based on the novel \"Three Seconds\" by the Swedish crime-writing duo, Roslund and Hellström.",
+          "sourceUrl": "https://thecinemaholic.com/informer-filming-location/",
+          "supporting_passage": "‘The Informer’ is based on the novel, ‘Three Seconds,’ by the Swedish crime-writing duo, Roslund and Hellström."
+        },
+        {
+          "beat": "Actor Joel Kinnaman discovered the novel featured a Swedish character and was a Swedish novel after he was already attached to the film.",
+          "sourceUrl": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "supporting_passage": "KINNAMAN: I found that out but I was actually already attached to it and had already met with. When I jumped in, I was like, “Okay, so let’s read the novel that it’s based on.” And then, I realized that it’s a Swedish novel and a Swedish character. That actually was a circumstance that I wasn’t aware of. A lot of people thought that that’s why I got attached to it but it wasn’t that, at all. It was pretty cool."
+        },
+        {
+          "beat": "Director Andrea Di Stefano changed the story's setting in the film, shifting it from Sweden to New York.",
+          "sourceUrl": "https://thecinemaholic.com/informer-filming-location/",
+          "supporting_passage": "But Stephano changes the setting of the story in the film, shifting it to New York."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 62 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['Sweden'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Pete Koslow's military past made him an ideal FBI informant.",
+        "longDescription": "Pete Koslow's military past made him an ideal FBI informant. He served several tours in Iraq before his skills landed him in prison.",
+        "sources": [
+          {
+            "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 1130.0,
+            "endSeconds": 2260.0,
+            "startTimecode": "00:18:50",
+            "endTimecode": "00:37:40"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The protagonist, Pete Koslow, is described as a Gulf War veteran, but given the film's 2019 setting and actor Joel Kinnaman's age, he would have been too young to have served in the 1990-91 conflict.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The protagonist, Pete Koslow, is described as a Gulf War veteran, but given the film's 2019 setting and actor Joel Kinnaman's age, he would have been too young to have served in the 1990-91 conflict.",
+        "search_queries": [
+          "The Informer Pete Koslow Gulf War anachronism",
+          "Joel Kinnaman The Informer character age",
+          "The Informer (2019) timeline inconsistency"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Pete Koslow",
+            "FBI",
+            "Iraq",
+            "Special Operations",
+            "Polish mafia"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "title": "theguardian.com",
+          "domain": "theguardian.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/db/movie/the-informer/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "title": "the-numbers.com",
+          "domain": "the-numbers.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.flickeringmyth.com/movie-review-the-informer-2019/",
+          "title": "flickeringmyth.com",
+          "domain": "flickeringmyth.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Pete Koslow is a former Special Operations military guy.",
+          "sourceUrl": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "supporting_passage": "Pete Koslow is a former Special Operations military guy"
+        },
+        {
+          "beat": "He completed a few tours in Iraq.",
+          "sourceUrl": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "supporting_passage": "who did a few tours in Iraq."
+        },
+        {
+          "beat": "His military background and skills were considered an aggravating circumstance when he was sent to prison for manslaughter.",
+          "sourceUrl": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "supporting_passage": "His military background and his skills were seen as an aggravating circumstance, so he gets sent to prison for manslaughter."
+        },
+        {
+          "beat": "The FBI saw his military background and street smarts as ideal for infiltrating the Polish mafia.",
+          "sourceUrl": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "supporting_passage": "because of both his military background, but also that he grew up in this Polish neighborhood in Brooklyn and was a bit of a street guy before the the military - they see him as the perfect CI to infiltrate this Polish mafia organization."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "location",
+        "shortVersion": "\"The Informer\" filmed in a real, abandoned, and reportedly haunted prison.",
+        "longDescription": "\"The Informer\" filmed in a real, abandoned, and reportedly haunted prison. The site dates back to 1228 and actor Joel Kinnaman felt a \"thick energy\" there.",
+        "sources": [
+          {
+            "url": "https://thecinemaholic.com/informer-filming-location/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The fictional Bale Hill Prison was filmed at the abandoned Gloucester Prison in the UK, a historic site dating back to 1228 and rumored to be haunted.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The fictional Bale Hill Prison was filmed at the abandoned Gloucester Prison in the UK, a historic site dating back to 1228 and rumored to be haunted.",
+        "search_queries": [
+          "The Informer Gloucester Prison haunted",
+          "Bale Hill Prison real location",
+          "Gloucester Prison film set"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Bale Hill Prison",
+            "Gloucester Prison",
+            "UK",
+            "1228",
+            "Joel Kinnaman",
+            "2013"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.visitgloucester.co.uk/discover/itineraries/film",
+          "title": "visitgloucester.co.uk",
+          "domain": "visitgloucester.co.uk",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Bale Hill Prison",
+            "Gloucester Prison",
+            "UK",
+            "1228",
+            "Joel Kinnaman",
+            "2013"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Bale Hill Prison",
+            "Gloucester Prison",
+            "UK",
+            "1228",
+            "Joel Kinnaman",
+            "2013"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The fictional Bale Hill Prison scenes in The Informer were filmed at the abandoned Gloucester Prison.",
+          "sourceUrl": "https://thecinemaholic.com/informer-filming-location/",
+          "supporting_passage": "The filming of ‘The Informer’ took place in Gloucester Prison in July 2017. The abandoned prison was used as a substitute of Bale Hill Prison that is actually located in New York."
+        },
+        {
+          "beat": "The Gloucester Prison site has a long history, with a castle that served as a jail dating back to 1228.",
+          "sourceUrl": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "supporting_passage": "This prison that shut down in 2013 has a long history. As reported by Abandoned Spaces , researchers have identified that prior to the prison, the Gloucester Castle stood at the exact location. This castle was also a jail in 1228."
+        },
+        {
+          "beat": "Gloucester Prison, which shut down in 2013, is often referred to as a haunted prison.",
+          "sourceUrl": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "supporting_passage": "This prison that shut down in 2013 has a long history. As reported by Abandoned Spaces , researchers have identified that prior to the prison, the Gloucester Castle stood at the exact location. This castle was also a jail in 1228. It has now become a major filming location and a tourist attraction. It is often referred to as a haunted prison and events like ghost hunts are hosted there presently."
+        },
+        {
+          "beat": "Actor Joel Kinnaman, who filmed there, said the abandoned prison felt \"haunted\" and had a \"thick energy.\"",
+          "sourceUrl": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 2 bound+supported beats remain (need 3)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 74 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": "Beat 3 is not entailed. The quote 'that place was haunted. There was a thick energy in there.' is found in a 'fact-based summary' section of the ScreenRant article, not as a direct quote from Joel Kinnaman in the interview transcript provided. This makes the claim 'Actor Joel Kinnaman... said...' unsupported. Consequently, factual_accuracy is 0 and summary_entailed is false because the longDescription includes this unsupported claim."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "This New York-set film was mostly shot across the UK.",
+        "longDescription": "This New York-set film was mostly shot across the UK. Pinewood Studios and Gloucester Prison in the UK were key filming locations.",
+        "sources": [
+          {
+            "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://thecinemaholic.com/informer-filming-location/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 2260.0,
+            "endSeconds": 3390.0,
+            "startTimecode": "00:37:40",
+            "endTimecode": "00:56:30"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Despite being set in New York City and featuring the Polish mafia there, a significant portion of The Informer was filmed in the United Kingdom, including Pinewood Studios.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Despite being set in New York City and featuring the Polish mafia there, a significant portion of The Informer was filmed in the United Kingdom, including Pinewood Studios.",
+        "search_queries": [
+          "The Informer filming locations UK",
+          "The Informer New York scenes UK",
+          "The Informer (2019) Pinewood Studios"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "New York",
+            "United Kingdom",
+            "Pinewood Studios",
+            "Gloucester Prison",
+            "Bale Hill Prison",
+            "The Informer"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "New York",
+            "United Kingdom",
+            "Pinewood Studios",
+            "Gloucester Prison",
+            "Bale Hill Prison",
+            "The Informer"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film's plot is set in New York, but the majority of its filming locations were in the United Kingdom.",
+          "sourceUrl": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "supporting_passage": "The movie’s plot is set in New York. However, The Informer filming locations are majorly present across the United Kingdom."
+        },
+        {
+          "beat": "Pinewood Studios, located in Buckinghamshire, UK, was a significant shooting location for the film.",
+          "sourceUrl": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "supporting_passage": "Pinewood Studios is another major shooting location of the film. It is located in the Iver Heath village in Buckinghamshire."
+        },
+        {
+          "beat": "The abandoned Gloucester Prison in the UK was used to portray the fictional Bale Hill Prison, which is actually located in New York.",
+          "sourceUrl": "https://thecinemaholic.com/informer-filming-location/",
+          "supporting_passage": "The abandoned prison was used as a substitute of Bale Hill Prison that is actually located in New York."
+        },
+        {
+          "beat": "Despite a large portion of the production taking place in the UK, some distinctive shots were filmed on location in New York.",
+          "sourceUrl": "https://thecinemaholic.com/informer-filming-location/",
+          "supporting_passage": "So, while a large chunk of the production took place in the UK, several distinctive shots were filmed on location in New York."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "Filming in a real abandoned prison brought out an 'aggressive nature'.",
+        "longDescription": "Filming in a real abandoned prison brought out an 'aggressive nature'. Joel Kinnaman said the 100-200 extras brought out their aggressive nature.",
+        "sources": [
+          {
+            "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 3390.0,
+            "endSeconds": 4520.0,
+            "startTimecode": "00:56:30",
+            "endTimecode": "01:15:20"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Actor Joel Kinnaman described the \"aggressive nature\" of filming in the real prison, highlighting the challenge of portraying his character's do-or-die moments behind bars.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Actor Joel Kinnaman described the \"aggressive nature\" of filming in the real prison, highlighting the challenge of portraying his character's do-or-die moments behind bars.",
+        "search_queries": [
+          "Joel Kinnaman The Informer prison filming",
+          "Joel Kinnaman aggressive nature filming",
+          "The Informer (2019) actor experience"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "title": "theguardian.com",
+          "domain": "theguardian.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Joel Kinnaman",
+            "London",
+            "10 years",
+            "100-200",
+            "Pete"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.flickeringmyth.com/movie-review-the-informer-2019/",
+          "title": "flickeringmyth.com",
+          "domain": "flickeringmyth.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.looper.com/274387/the-real-reason-joel-kinnaman-loved-filming-the-informer-exclusive/",
+          "title": "looper.com",
+          "domain": "looper.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Actor Joel Kinnaman stated that parts of the film were shot in a real, abandoned prison in London that had been closed for 10 years.",
+          "sourceUrl": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "supporting_passage": "We shot this particular part of the film in London, in this real, abandoned prison. It had been closed for 10 years."
+        },
+        {
+          "beat": "Kinnaman felt a \"thick energy\" in the abandoned prison, describing the place as \"haunted.\"",
+          "sourceUrl": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "supporting_passage": "I don’t get affected and I don’t think about places being haunted, but that place was haunted. There was a thick energy in there."
+        },
+        {
+          "beat": "Kinnaman observed that the \"group mentality\" of 100-200 rough-looking extras brought out an \"aggressive nature\" during filming.",
+          "sourceUrl": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "supporting_passage": "Even though they are extras, 100-200 rough-looking dudes together, they all bring out their aggressive nature."
+        },
+        {
+          "beat": "During a scene where Pete was getting strangled, Kinnaman sometimes lost consciousness but could still play the scene.",
+          "sourceUrl": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "supporting_passage": "In the scene where I am getting strangled, I could control the pressure myself to keep level, and there were times when I went out."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 70 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "location",
+        "shortVersion": "The Informer was filmed in the Brooklyn neighborhood it's set in.",
+        "longDescription": "The Informer was filmed in the Brooklyn neighborhood it's set in. Joel Kinnaman's character grew up in a Polish neighborhood there.",
+        "sources": [
+          {
+            "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "To maintain authenticity for its New York setting, distinctive shots were filmed on location in Brooklyn's Greenpoint neighborhood, known as \"Little Poland\" for its large Polish community.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "To maintain authenticity for its New York setting, distinctive shots were filmed on location in Brooklyn's Greenpoint neighborhood, known as \"Little Poland\" for its large Polish community.",
+        "search_queries": [
+          "The Informer Greenpoint Brooklyn",
+          "Little Poland The Informer film",
+          "The Informer (2019) Polish neighborhood"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Brooklyn",
+            "New York",
+            "Joel Kinnaman",
+            "Pete Koslow",
+            "FBI",
+            "Polish mafia"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "title": "theguardian.com",
+          "domain": "theguardian.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "title": "the-numbers.com",
+          "domain": "the-numbers.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://outnow.ch/en/Movies/2019/Informer/Review/",
+          "title": "outnow.ch",
+          "domain": "outnow.ch",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://jerriwilliams.com/blog/review-of-the-informer-2019/",
+          "title": "jerriwilliams.com",
+          "domain": "jerriwilliams.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Brooklyn",
+            "New York",
+            "Joel Kinnaman",
+            "Pete Koslow",
+            "FBI",
+            "Polish mafia"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film's plot is set in New York, with parts of the film shot in Brooklyn.",
+          "sourceUrl": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "supporting_passage": "The movie’s plot is set in New York. Parts of the film were shot in Brooklyn where The Informer is originally set."
+        },
+        {
+          "beat": "Joel Kinnaman's character, Pete Koslow, grew up in a Polish neighborhood in Brooklyn.",
+          "sourceUrl": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "supporting_passage": "he grew up in this Polish neighborhood in Brooklyn"
+        },
+        {
+          "beat": "Koslow is recruited by the FBI to infiltrate a Polish mafia organization in New York.",
+          "sourceUrl": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "supporting_passage": "they see him as the perfect CI to infiltrate this Polish mafia organization."
+        },
+        {
+          "beat": "Actor Joel Kinnaman developed a \"Brooklyn-ish flair\" for his character's New York dialect.",
+          "sourceUrl": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "supporting_passage": "I kind of just had to brush it up and give it a little more of a Brooklyn-ish flair to it."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": false,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 1,
+          "clarity": 2,
+          "spoiler_safety": 0
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "spoiler: card reveals plot, outcomes, or a surprise (cameo/secret role)"
+        ],
+        "flags": [
+          "shortVersion 65 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": "Beat 2 reveals a core plot point (Koslow is recruited by the FBI to infiltrate a Polish mafia organization), which makes the card not spoiler-free for a GENERAL card that must be spoiler-free for the entire runtime. The shortVersion and longDescription themselves are spoiler-free, but the presence of a spoiler beat in the card's internal verification units fails the overall spoiler_safety and spoiler_free checks."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "The Informer had a $60 million budget but grossed only $3.3 million.",
+        "longDescription": "The Informer had a $60 million budget but grossed only $3.3 million. Its American distribution went bankrupt, causing a long delay.",
+        "sources": [
+          {
+            "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Despite a reported production budget of $60 million, The Informer grossed only $2.9 million worldwide, a significant underperformance.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Despite a reported production budget of $60 million, The Informer grossed only $2.9 million worldwide, a significant underperformance.",
+        "search_queries": [
+          "The Informer box office",
+          "The Informer (2019) budget vs gross",
+          "The Informer financial performance"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "$60,000,000",
+            "$3,377,027",
+            "Joel Kinnaman",
+            "US",
+            "American"
+          ],
+          "verbatim_misses": [
+            "$60 million",
+            "$3.3 million"
+          ]
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-2019-trailer/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "title": "theguardian.com",
+          "domain": "theguardian.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "title": "the-numbers.com",
+          "domain": "the-numbers.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "$60,000,000",
+            "$3,377,027",
+            "Joel Kinnaman",
+            "US",
+            "American"
+          ],
+          "verbatim_misses": [
+            "$60 million",
+            "$3.3 million"
+          ]
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "$60,000,000",
+            "$3,377,027",
+            "Joel Kinnaman",
+            "US",
+            "American"
+          ],
+          "verbatim_misses": [
+            "$60 million",
+            "$3.3 million"
+          ]
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The Informer had a production budget of $60,000,000.",
+          "sourceUrl": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "supporting_passage": "Production Budget: $60,000,000"
+        },
+        {
+          "beat": "Star Joel Kinnaman described a \"bumpy road to getting the film out to audiences\" in the US.",
+          "sourceUrl": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "supporting_passage": "During a virtual junket for the film, Collider got the opportunity to chat 1-on-1 with Kinnaman about why he wanted to be a part of this project, the bumpy road to getting the film out to audiences, the importance of the family bond to the story, his favorite crime/prison movies, and the similarities between acting and going undercover."
+        },
+        {
+          "beat": "The American distribution for The Informer went bankrupt, leaving the film \"in limbo for awhile.\"",
+          "sourceUrl": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "supporting_passage": "We love this movie. I was so stoked when we got it and with the cast that we were able to put together, so it was really frustrating when the American distribution went bankrupt and it’s been in limbo for awhile."
+        },
+        {
+          "beat": "This led to the film finally receiving its \"long-delayed release\" in the US.",
+          "sourceUrl": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "supporting_passage": "Joel Kinnaman (“ Easy Money ,” “Altered Carbon” ) gives a wiry, intense performance as the title character in “The Informer,” a gritty police thriller finally receiving its long-delayed release."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (The Informer's US release was stuck in limbo for a while. Its American distribution company went bankrupt, causing significant delays.)"
+        ],
+        "flags": [
+          "shortVersion 68 chars (target 50-60, cap 80)",
+          "relaxed: dropped beats [1] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
+          "verbatim: could not confirm ['$60 million', '$3.3 million'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Critics felt the film's big finale was \"leaking energy.\"",
+        "longDescription": "Critics felt the film's big finale was \"leaking energy.\" One critic suggested it \"might have made better sense as an episodic drama on television.\"",
+        "sources": [
+          {
+            "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Some critics noted that the film ambitiously tried to set itself up as a franchise starter, despite its ending being described as \"choppy\" and \"unsatisfactory.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Some critics noted that the film ambitiously tried to set itself up as a franchise starter, despite its ending being described as \"choppy\" and \"unsatisfactory.\"",
+        "search_queries": [
+          "The Informer franchise starter",
+          "The Informer (2019) sequel plans",
+          "The Informer ending criticism"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-2019-trailer/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "title": "theguardian.com",
+          "domain": "theguardian.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Three Seconds",
+            "Anders Roslund",
+            "Börge Hellström"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "title": "the-numbers.com",
+          "domain": "the-numbers.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film \"The Informer\" is an adaptation of the Swedish crime novel \"Three Seconds\" by Anders Roslund and Börge Hellström.",
+          "sourceUrl": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "supporting_passage": "T he Swedish crime novel Three Seconds by Anders Roslund and Börge Hellström has been relocated to modern-day New York in this big, chewy and sometimes indigestible drama thriller from director Andrea Di Stefano, who has adapted the novel with British screenwriter Rowan Joffe."
+        },
+        {
+          "beat": "The film's narrative was described as \"spread over a big canvas.\"",
+          "sourceUrl": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "supporting_passage": "The Informer is spread over a big canvas, but by the time of its big finale it is leaking energy."
+        },
+        {
+          "beat": "By the time of its \"big finale,\" the film was noted to be \"leaking energy.\"",
+          "sourceUrl": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "supporting_passage": "The Informer is spread over a big canvas, but by the time of its big finale it is leaking energy."
+        },
+        {
+          "beat": "One critic suggested the film \"might have made better sense as an episodic drama on television.\"",
+          "sourceUrl": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "supporting_passage": "It might have made better sense as an episodic drama on television but it is brash and watchable, its world reeking with cynicism and fear."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": false,
+          "maturity": true,
+          "propriety": false,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 0
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "spoiler: card reveals plot, outcomes, or a surprise (cameo/secret role)",
+          "propriety: gossip/legal/tragedy/political/disparagement content"
+        ],
+        "flags": [],
+        "judge_notes": "The card fails propriety_pass because it quotes and paraphrases criticism of the film, which is explicitly forbidden by the rubric. It also fails spoiler_safety because, as a general card, discussing the 'big finale' and its perceived quality or structure is not spoiler-safe for the entire runtime."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "No need to wait! There are no extra scenes after the credits.",
+        "longDescription": "No need to wait! There are no extra scenes after the credits. The film does include a memoriam during the credits, dedicated to Börge Hellström.",
+        "sources": [
+          {
+            "url": "https://aftercredits.com/2020/01/informer-the-2019/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Viewers looking for extra content should note that The Informer does not feature any special scenes during or after the credits.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Viewers looking for extra content should note that The Informer does not feature any special scenes during or after the credits.",
+        "search_queries": [
+          "The Informer post credits scene",
+          "The Informer (2019) end credits"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.radiotimes.com/tv/drama/informers-series-finale-explained-series-2/",
+          "title": "radiotimes.com",
+          "domain": "radiotimes.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/the-informer-ending-explained/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.flickeringmyth.com/movie-review-the-informer-2019/",
+          "title": "flickeringmyth.com",
+          "domain": "flickeringmyth.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://mediastinger.com/the-informers-2009-no-extras-during-or-after-the-credits/",
+          "title": "mediastinger.com",
+          "domain": "mediastinger.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://aftercredits.com/2020/01/informer-the-2019/",
+          "title": "aftercredits.com",
+          "domain": "aftercredits.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "2019",
+            "Börge Hellström"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.tvguide.com/movies/the-informer/cast/2000252134/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The 2019 film The Informer does not feature any extra scenes during its credits.",
+          "sourceUrl": "https://aftercredits.com/2020/01/informer-the-2019/",
+          "supporting_passage": "Are There Any Extras During The Credits? No"
+        },
+        {
+          "beat": "There are also no extra scenes after the credits of The Informer.",
+          "sourceUrl": "https://aftercredits.com/2020/01/informer-the-2019/",
+          "supporting_passage": "Are There Any Extras After The Credits? No"
+        },
+        {
+          "beat": "The film's credits include a memoriam dedicated to Börge Hellström.",
+          "sourceUrl": "https://aftercredits.com/2020/01/informer-the-2019/",
+          "supporting_passage": "Memoriam: In Memory of Börge Hellström"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)"
+        ],
+        "flags": [
+          "shortVersion 61 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "This film hit UK theaters a year before its US debut.",
+        "longDescription": "This film hit UK theaters a year before its US debut. It finally arrived in the US in November 2020.",
+        "sources": [
+          {
+            "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://geekvibesnation.com/the-informer-movie-review-prison-drama-full-of-betrayal/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film experienced numerous release delays, particularly in the United States, due to financial issues with its initial distributor, leading to a US release over a year after its UK debut.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film experienced numerous release delays, particularly in the United States, due to financial issues with its initial distributor, leading to a US release over a year after its UK debut.",
+        "search_queries": [
+          "The Informer release delays",
+          "The Informer (2019) US release date",
+          "Aviron Pictures The Informer"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://screenrant.com/informer-movie-2019-trailer/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/the-informer-trailer/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "title": "the-numbers.com",
+          "domain": "the-numbers.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "United Kingdom",
+            "U.S.",
+            "Aviron Pictures",
+            "United States"
+          ],
+          "verbatim_misses": [
+            "August 2019",
+            "November 2020"
+          ]
+        },
+        {
+          "url": "https://www.showbizjunkies.com/movies/the-informer-trailer/",
+          "title": "showbizjunkies.com",
+          "domain": "showbizjunkies.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://geekvibesnation.com/the-informer-movie-review-prison-drama-full-of-betrayal/",
+          "title": "geekvibesnation.com",
+          "domain": "geekvibesnation.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "United Kingdom",
+            "U.S.",
+            "Aviron Pictures",
+            "United States"
+          ],
+          "verbatim_misses": [
+            "August 2019",
+            "November 2020"
+          ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The Informer first premiered in the United Kingdom in August 2019.",
+          "sourceUrl": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "supporting_passage": "International Releases: August 30th, 2019 (Wide) (United Kingdom)"
+        },
+        {
+          "beat": "The film was released in the U.S. on November 6th, 2020.",
+          "sourceUrl": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "supporting_passage": "Domestic Releases: November 6th, 2020 (Limited) by Aviron Pictures"
+        },
+        {
+          "beat": "The film's US release was a limited release by Aviron Pictures.",
+          "sourceUrl": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "supporting_passage": "Domestic Releases: November 6th, 2020 (Limited) by Aviron Pictures"
+        },
+        {
+          "beat": "Some viewers had been waiting \"forever\" for the film to be released in the United States.",
+          "sourceUrl": "https://geekvibesnation.com/the-informer-movie-review-prison-drama-full-of-betrayal/",
+          "supporting_passage": "No exaggeration, I have been waiting for The Informer to be released in the United States for forever."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (The Informer's US release was stuck in limbo for a while. Its American distribution company went bankrupt, causing significant delays.)"
+        ],
+        "flags": [
+          "verbatim: could not confirm ['August 2019', 'November 2020'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Before directing The Informer, Italian filmmaker Andrea Di Stefano had a notable acting career, appearing in films like \"Eat Pray Love\" and \"Life of Pi.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Before directing The Informer, Italian filmmaker Andrea Di Stefano had a notable acting career, appearing in films like \"Eat Pray Love\" and \"Life of Pi.\"",
+        "search_queries": [
+          "Andrea Di Stefano director acting career",
+          "The Informer director actor",
+          "Andrea Di Stefano filmography"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "The Informer was largely filmed at the famous Pinewood Studios in the UK.",
+        "longDescription": "The Informer was largely filmed at the famous Pinewood Studios in the UK. It's believed that several indoor shots for the crime thriller were filmed there.",
+        "sources": [
+          {
+            "url": "https://thecinemaholic.com/informer-filming-location/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "A significant portion of The Informer was filmed at Pinewood Studios in the UK, a world-renowned facility famous for hosting major film franchises, including the James Bond series.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "A significant portion of The Informer was filmed at Pinewood Studios in the UK, a world-renowned facility famous for hosting major film franchises, including the James Bond series.",
+        "search_queries": [
+          "The Informer Pinewood Studios James Bond",
+          "Pinewood Studios famous films",
+          "The Informer filming locations UK"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Pinewood Studios",
+            "UK",
+            "Iver Heath",
+            "Buckinghamshire",
+            "007 stage",
+            "James Bond",
+            "The Spy Who Loved Me",
+            "1977"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Pinewood Studios",
+            "UK",
+            "Iver Heath",
+            "Buckinghamshire",
+            "007 stage",
+            "James Bond",
+            "The Spy Who Loved Me",
+            "1977"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The production of 'The Informer' largely took place in Pinewood Studios.",
+          "sourceUrl": "https://thecinemaholic.com/informer-filming-location/",
+          "supporting_passage": "The production of ‘The Informer’ largely took place in Pinewood Studios."
+        },
+        {
+          "beat": "It is believed that several indoor shots from the crime thriller were filmed inside the iconic studio.",
+          "sourceUrl": "https://thecinemaholic.com/informer-filming-location/",
+          "supporting_passage": "While the details for the same are not available, it is believed that several indoor shots from the crime thriller were filmed inside iconic studio."
+        },
+        {
+          "beat": "Pinewood Studios is located in the Iver Heath village in Buckinghamshire.",
+          "sourceUrl": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "supporting_passage": "It is located in the Iver Heath village in Buckinghamshire."
+        },
+        {
+          "beat": "The studio is known for its 007 stage, initially built for the James Bond film The Spy Who Loved Me (1977).",
+          "sourceUrl": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "supporting_passage": "The studio is known for its 007 stage that was initially built for the James Bond film The Spy Who Loved Me (1977)."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (This New York-set film was mostly shot across the UK. Pinewood Studios and Gloucester Prison in the UK were key filming locations.)"
+        ],
+        "flags": [
+          "shortVersion 73 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "The Informer adapts a Swedish novel, relocated to New York.",
+        "longDescription": "The Informer adapts a Swedish novel, relocated to New York. Director Andrea Di Stefano adapted the novel with British screenwriter Rowan Joffe.",
+        "sources": [
+          {
+            "url": "https://www.andersroslund.se/roslund-hellstrom/news/2018/11/17/official-movie-trailer-informer-three-seconds-released/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The acclaimed Swedish novel \"Three Seconds,\" which inspired the film, was co-written by Anders Roslund, an investigative journalist, and Börge Hellström, a former criminal and advocate for prisoners' rights.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The acclaimed Swedish novel \"Three Seconds,\" which inspired the film, was co-written by Anders Roslund, an investigative journalist, and Börge Hellström, a former criminal and advocate for prisoners' rights.",
+        "search_queries": [
+          "Roslund & Hellström Three Seconds authors background",
+          "Börge Hellström former criminal",
+          "Anders Roslund investigative journalist"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "title": "theguardian.com",
+          "domain": "theguardian.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Three Seconds",
+            "New York",
+            "Andrea Di Stefano",
+            "Rowan Joffe",
+            "Anders Roslund",
+            "Börge Hellström"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.andersroslund.se/film/the-informer/",
+          "title": "andersroslund.se",
+          "domain": "andersroslund.se",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.andersroslund.se/roslund-hellstrom/news/2018/11/17/official-movie-trailer-informer-three-seconds-released/",
+          "title": "andersroslund.se",
+          "domain": "andersroslund.se",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Three Seconds",
+            "New York",
+            "Andrea Di Stefano",
+            "Rowan Joffe",
+            "Anders Roslund",
+            "Börge Hellström"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The Informer is the movie adaptation of Roslund and Hellström’s bestselling novel Three Seconds.",
+          "sourceUrl": "https://www.andersroslund.se/roslund-hellstrom/news/2018/11/17/official-movie-trailer-informer-three-seconds-released/",
+          "supporting_passage": "The Informer is the movie adaptation of Roslund and Hellström’s bestselling novel Three Seconds"
+        },
+        {
+          "beat": "The Swedish crime novel Three Seconds was written by Anders Roslund and Börge Hellström.",
+          "sourceUrl": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "supporting_passage": "The Swedish crime novel Three Seconds by Anders Roslund and Börge Hellström"
+        },
+        {
+          "beat": "Director Andrea Di Stefano adapted the novel with British screenwriter Rowan Joffe.",
+          "sourceUrl": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "supporting_passage": "director Andrea Di Stefano, who has adapted the novel with British screenwriter Rowan Joffe"
+        },
+        {
+          "beat": "The novel's story has been relocated to modern-day New York in the film.",
+          "sourceUrl": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "supporting_passage": "The Swedish crime novel Three Seconds by Anders Roslund and Börge Hellström has been relocated to modern-day New York in this big, chewy and sometimes indigestible drama thriller"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: near-duplicate of an emitted card"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "The Informer was known as \"Three Seconds\" in some countries.",
+        "longDescription": "The Informer was known as \"Three Seconds\" in some countries. It was released under this title, or a variation, in places like Italy and Russia.",
+        "sources": [
+          {
+            "url": "https://collider.com/the-informer-ana-de-armas-streaming-june-2026/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://screenrant.com/informer-movie-2019-trailer/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 4520.0,
+            "endSeconds": 5650.0,
+            "startTimecode": "01:15:20",
+            "endTimecode": "01:34:10"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "While released as \"The Informer\" in many regions, the film was also known by its source novel's title, \"Three Seconds,\" in some international markets.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "While released as \"The Informer\" in many regions, the film was also known by its source novel's title, \"Three Seconds,\" in some international markets.",
+        "search_queries": [
+          "The Informer alternate title Three Seconds",
+          "Three Seconds movie name",
+          "The Informer international titles"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/the-informer-ana-de-armas-streaming-june-2026/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Three Seconds",
+            "Roslund & Hellström",
+            "Roslund",
+            "Hellström",
+            "Italy",
+            "Russia",
+            "2009"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-2019-trailer/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Three Seconds",
+            "Roslund & Hellström",
+            "Roslund",
+            "Hellström",
+            "Italy",
+            "Russia",
+            "2009"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "title": "theguardian.com",
+          "domain": "theguardian.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "title": "the-numbers.com",
+          "domain": "the-numbers.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "Three Seconds",
+            "Roslund & Hellström",
+            "Roslund",
+            "Hellström",
+            "Italy",
+            "Russia",
+            "2009"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movieweb.com/the-informer-trailer-2019/",
+          "title": "movieweb.com",
+          "domain": "movieweb.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film \"The Informer\" is based on the 2009 novel \"Three Seconds\" by Roslund & Hellström.",
+          "sourceUrl": "https://collider.com/the-informer-ana-de-armas-streaming-june-2026/",
+          "supporting_passage": "Based on the 2009 novel Three Seconds by Roslund & Hellström"
+        },
+        {
+          "beat": "The novel \"Three Seconds\" is a Swedish crime-thriller novel.",
+          "sourceUrl": "https://screenrant.com/informer-movie-2019-trailer/",
+          "supporting_passage": "2009 Swedish crime-thriller novel Three Seconds"
+        },
+        {
+          "beat": "In some international markets, the film was released under titles that included \"Three Seconds\" or its translation.",
+          "sourceUrl": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "supporting_passage": "released as The Informer - Tre secondi per sopravvivere (Italy) October 24th, 2019 (Wide), released as Три секунды (Russia (CIS))"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "Despite its New York setting, this film was largely shot in the UK.",
+        "longDescription": "Despite its New York setting, this film was largely shot in the UK. Production was a joint effort between the United States and the United Kingdom.",
+        "sources": [
+          {
+            "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://thecinemaholic.com/informer-filming-location/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Despite its American setting, The Informer was a co-production between the United Kingdom and the United States, reflecting its international cast and crew.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Despite its American setting, The Informer was a co-production between the United Kingdom and the United States, reflecting its international cast and crew.",
+        "search_queries": [
+          "The Informer UK US co-production",
+          "The Informer production countries",
+          "The Informer international film"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theguardian.com/film/2019/aug/28/the-informer-review",
+          "title": "theguardian.com",
+          "domain": "theguardian.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "title": "the-numbers.com",
+          "domain": "the-numbers.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "New York",
+            "UK",
+            "United States",
+            "United Kingdom",
+            "The Informer",
+            "HM Prison Gloucester",
+            "Pinewood Studios"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://tv.apple.com/za/movie/the-informer/umc.cmc.2apnjinnfw9su8en507izgzdz",
+          "title": "apple.com",
+          "domain": "apple.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://filmscribeuk.wordpress.com/2019/09/04/the-informer2019/",
+          "title": "wordpress.com",
+          "domain": "wordpress.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "New York",
+            "UK",
+            "United States",
+            "United Kingdom",
+            "The Informer",
+            "HM Prison Gloucester",
+            "Pinewood Studios"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "New York",
+            "UK",
+            "United States",
+            "United Kingdom",
+            "The Informer",
+            "HM Prison Gloucester",
+            "Pinewood Studios"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The movie's plot is set in New York.",
+          "sourceUrl": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "supporting_passage": "The movie’s plot is set in New York."
+        },
+        {
+          "beat": "The Informer was a co-production between the United States and the United Kingdom.",
+          "sourceUrl": "https://www.the-numbers.com/movie/Informer-The-(UK)",
+          "supporting_passage": "Production Countries: United States, United Kingdom"
+        },
+        {
+          "beat": "A major chunk of the film was shot in parts of UK, despite its American setting.",
+          "sourceUrl": "https://thecinemaholic.com/informer-filming-location/",
+          "supporting_passage": "Due to this, a major chunk of the film was shot in parts of UK, despite its American setting."
+        },
+        {
+          "beat": "Specific filming locations in the United Kingdom included HM Prison Gloucester and Pinewood Studios.",
+          "sourceUrl": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "supporting_passage": "The production of ‘The Informer’ largely took place in Pinewood Studios. ... The filming of ‘The Informer’ took place in Gloucester Prison in July 2017."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (This New York-set film was mostly shot across the UK. Pinewood Studios and Gloucester Prison in the UK were key filming locations.)"
+        ],
+        "flags": [
+          "shortVersion 67 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "The Informer's US release was stuck in limbo for a while.",
+        "longDescription": "The Informer's US release was stuck in limbo for a while. Its American distribution company went bankrupt, causing significant delays.",
+        "sources": [
+          {
+            "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 5650.0,
+            "endSeconds": 6780.0,
+            "startTimecode": "01:34:10",
+            "endTimecode": "01:53:00"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film's US release was significantly delayed because its American distribution company went bankrupt, leaving the movie in 'limbo' for a period despite its success in other markets.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film's US release was significantly delayed because its American distribution company went bankrupt, leaving the movie in 'limbo' for a period despite its success in other markets.",
+        "search_queries": [
+          "The Informer US distribution bankruptcy",
+          "The Informer release delay reason",
+          "Joel Kinnaman The Informer limbo"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "The Informer",
+            "US",
+            "Joel Kinnaman",
+            "European countries",
+            "Collider"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The American distribution company for \"The Informer\" went bankrupt.",
+          "sourceUrl": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "supporting_passage": "the American distribution went bankrupt"
+        },
+        {
+          "beat": "This left the film in \"limbo\" for a period, delaying its release to US audiences.",
+          "sourceUrl": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "supporting_passage": "it’s been in limbo for awhile. I can’t wait for it to finally reach American audiences."
+        },
+        {
+          "beat": "Despite the delay in the US, the film was well-received and performed well in several European countries.",
+          "sourceUrl": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "supporting_passage": "it got really well-received and did great in a bunch of European countries where it got released"
+        },
+        {
+          "beat": "Actor Joel Kinnaman expressed frustration that the film \"sat on the shelf for a while\" before its US release.",
+          "sourceUrl": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "supporting_passage": "I was dying for it to come out here but it just sat on the shelf for a while."
+        },
+        {
+          "beat": "Fortunately, the film was eventually \"snagged out of its limbo\" and made available to American viewers.",
+          "sourceUrl": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "supporting_passage": "Fortunately, it got snagged out of its limbo and now people are gonna be able to see it."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "Joel Kinnaman was actually strangled on set for a scene.",
+        "longDescription": "Joel Kinnaman was actually strangled on set for a scene. He sometimes lost consciousness during the intense filming in a real, abandoned prison.",
+        "sources": [
+          {
+            "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "During filming in the real prison, actor Joel Kinnaman was actually strangled on set for a scene, highlighting the intense physical demands of the role.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "During filming in the real prison, actor Joel Kinnaman was actually strangled on set for a scene, highlighting the intense physical demands of the role.",
+        "search_queries": [
+          "Joel Kinnaman strangled The Informer",
+          "The Informer Joel Kinnaman prison scene filming",
+          "Joel Kinnaman on set incident The Informer"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/joel-kinnaman-interview-the-informer-the-killing/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenrant.com/informer-movie-joel-kinnaman-interview/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "title": "salon.com",
+          "domain": "salon.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Joel Kinnaman",
+            "The Informer",
+            "London"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.televisual.com/news/behind-the-scenes-of-the-informer-with-director-jonny-campbell_bid-1042/",
+          "title": "televisual.com",
+          "domain": "televisual.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.republicworld.com/entertainment/hollywood/where-was-the-informer-filmed-get-to-know-the-filming-locations-of-the-crime-thriller",
+          "title": "republicworld.com",
+          "domain": "republicworld.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/informer-filming-location/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.looper.com/274387/the-real-reason-joel-kinnaman-loved-filming-the-informer-exclusive/",
+          "title": "looper.com",
+          "domain": "looper.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Joel Kinnaman spoke about getting strangled on set for a scene in \"The Informer.\"",
+          "sourceUrl": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "supporting_passage": "Joel Kinnaman spoke to Salon about getting strangled on set"
+        },
+        {
+          "beat": "During the strangling scene, Kinnaman could control the pressure but sometimes went out, almost losing consciousness.",
+          "sourceUrl": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "supporting_passage": "In the scene where I am getting strangled, I could control the pressure myself to keep level, and there were times when I went out. But I could still play the scene in that state where you are almost losing consciousness, that’s a little chaos."
+        },
+        {
+          "beat": "The prison scenes were filmed in a real, abandoned prison in London that had been closed for 10 years.",
+          "sourceUrl": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "supporting_passage": "We shot this particular part of the film in London, in this real, abandoned prison. It had been closed for 10 years."
+        },
+        {
+          "beat": "Joel Kinnaman felt a \"thick energy\" in the abandoned prison, calling it \"a scary thing to deal with.\"",
+          "sourceUrl": "https://www.salon.com/2020/11/06/the-informer-joel-kinnaman/",
+          "supporting_passage": "There was a thick energy in there. Everyone was affected by it. We put all these people inside, and there is something with the group mentality. Even though they are extras, 100-200 rough-looking dudes together, they all bring out their aggressive nature. It’s not the real thing, but you feel it. It’s a scary thing to deal with."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "claim_entailment: only 2 bound+supported beats remain (need 3)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    }
+  ]
+}
