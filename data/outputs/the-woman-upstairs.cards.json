@@ -1,0 +1,74 @@
+{
+  "film": {
+    "title": "The Woman Upstairs",
+    "year": 1992,
+    "runtime_minutes": 90,
+    "input_prompt": "The Woman Upstairs",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Victoria and Mooney's bond was a surprise to them both.",
+      "longDescription": "Victoria and Mooney's bond was a surprise to them both. They were two lonely people from different worlds who recognized themselves in each other.",
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1992-12-05-ca-1188-story.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 5400.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "01:30:00"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 1,
+    "scene_cards": 0,
+    "general_cards": 1,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": false,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": false,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 25,
+    "cards_emitted": 1,
+    "would_pass_strict": 0,
+    "cards_rejected": 24,
+    "errors": 0,
+    "elapsed_seconds": 420.7,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

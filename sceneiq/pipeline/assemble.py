@@ -97,7 +97,8 @@ this location, this song. Generic facts about filmmaking, prop design, or indust
 practice that do not concern this film are NOT Scene Facts; if that's all the \
 sources offer, ABSTAIN.
 - No plot information from later in the film than this scene.
-- No casting drama, feuds, career-arc trivia, or negative claims about talent/partners.
+- No casting drama (almost-cast stories, demanded castings), feuds, or negative \
+claims about talent/partners. Director/cast filmography and franchise context are fine.
 - factCategory: one of actor, music, location, set_design, filming, historical, costume/prop.
 {abstain_rule}"""
 

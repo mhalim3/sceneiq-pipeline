@@ -12,6 +12,7 @@ scene when one supports it (scope "scene") or kept as a GENERAL card (scope
 from __future__ import annotations
 
 import logging
+from concurrent.futures import ThreadPoolExecutor
 
 from .. import config
 from ..gemini import GeminiClient
@@ -23,6 +24,7 @@ _SWEEP_QUERIES = [
     "{title} {year} most interesting trivia fun facts",
     "{title} {year} behind the scenes secrets on-set stories",
     "{title} {year} what was real practical effects myths",
+    "{title} {year} post-credits scenes cameos easter eggs director",
 ]
 
 # Later rounds search different angles — repeating the same queries returns
@@ -75,18 +77,21 @@ _STRUCTURE_PROMPT = """From these research notes about {title} ({year}), extract
 {max_facts} distinct, specific candidate facts worth a pause-screen card.
 
 Rules:
-- Facts must be about THIS film specifically. NEVER propose: plot summary or \
-character story beats, casting stories (who turned down or almost got a role, who \
-requested a casting), or generic industry practice — downstream validation rejects \
-all of these unconditionally, so proposing them wastes a slot.
+- Facts must connect to THIS film. Director filmography ("the director also made \
+Deadpool 2"), franchise context (how characters/actors connect across the series, \
+spin-off firsts), and notable cast facts (returns, introductions, real-life \
+connections) ARE eligible — casual viewers love them. NEVER propose: plot summary \
+of THIS film, casting drama (who turned down or almost got a role, who demanded a \
+casting), on-set feuds, or generic industry practice.
 - MOST facts should be title-level context (Phase 3: title-level is the primary \
 card class; scene-tied facts enhance where available).
 - RANK BY INTERESTINGNESS. Lead with the facts a viewer would retell: on-set \
 stories, secretly-real/secretly-fake reveals, actor transformations and real \
-skills, hidden connections to other films/places, crafty production solves, myths \
-the film created or busted, records with a visual payoff. Business facts (box \
-office, budgets, marketing spend, release scheduling) are LOW value — propose at \
-most ONE, and only if genuinely surprising.
+skills, hidden connections to other films/places/franchise entries, director and \
+cast crossovers, surprise cameos and post-credits details, crafty production \
+solves, myths the film created or busted. Business facts (box office, budgets, \
+marketing spend, release scheduling) are LOW value — propose at most ONE, and only \
+if genuinely surprising.
 - Every fact must pass the "wait, really?" test: a concrete number, a first, a \
 hidden connection (this farm was also Smallville), a record, or a surprising \
 production solve. Skip facts a viewer would shrug at.
@@ -149,15 +154,17 @@ def title_sweep(
     year = film_info.get("year", "")
 
     queries = _SWEEP_QUERIES if round_n <= 1 else _SWEEP_QUERIES_LATER
-    notes = []
-    for q in queries:
-        grounded = client.grounded(
+
+    def _run(q):
+        return client.grounded(
             cfg.research_model,
             _SWEEP_PROMPT.format(query=q.format(title=title, year=year),
                                  title=title, year=year),
             temperature=0.2,
-        )
-        notes.append(grounded.text)
+        ).text
+
+    with ThreadPoolExecutor(max_workers=len(queries)) as pool:
+        notes = list(pool.map(_run, queries))
 
     data = client.structured(
         cfg.fast_model,

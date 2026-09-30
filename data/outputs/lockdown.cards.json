@@ -1,0 +1,213 @@
+{
+  "film": {
+    "title": "Lockdown",
+    "year": 2000,
+    "runtime_minutes": 105,
+    "input_prompt": "Lockdown",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Dre's limp was real; the actor was shot days before filming.",
+      "longDescription": "Dre's limp was real; the actor was shot days before filming. Director John Luessenhop wrote De'Aundre Bonds' real-life injury into his character.",
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 1050.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:17:30"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Music mogul Master P was an executive producer on Lockdown.",
+      "longDescription": "Music mogul Master P was an executive producer on Lockdown. Actor Gabriel Casseus joined the film because of Master P's independent production approach.",
+      "sources": [
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1050.0,
+          "endSeconds": 2100.0,
+          "startTimecode": "00:17:30",
+          "endTimecode": "00:35:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Actors put ice cubes in their mouths to hide breath in the cold.",
+      "longDescription": "Actors put ice cubes in their mouths to hide breath in the cold. The film's director said the summer shoot was \"brutal\" with dry heat.",
+      "sources": [
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2100.0,
+          "endSeconds": 3150.0,
+          "startTimecode": "00:35:00",
+          "endTimecode": "00:52:30"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Director John Luessenhop got a \"clean slate\" for casting Lockdown.",
+      "longDescription": "Director John Luessenhop got a \"clean slate\" for casting Lockdown. He chose actors he felt would truly make the heartfelt drama work.",
+      "sources": [
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3150.0,
+          "endSeconds": 4200.0,
+          "startTimecode": "00:52:30",
+          "endTimecode": "01:10:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "Lockdown's prison scenes were filmed in a real, historic New Mexico prison.",
+      "longDescription": "Lockdown's prison scenes were filmed in a real, historic New Mexico prison. It was the site of 'the most infamous prison riot in American history'.",
+      "sources": [
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4200.0,
+          "endSeconds": 5250.0,
+          "startTimecode": "01:10:00",
+          "endTimecode": "01:27:30"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "\"Lockdown\" was filmed in 1999, but its release was delayed for years.",
+      "longDescription": "\"Lockdown\" was filmed in 1999, but its release was delayed for years. It faced \"many years of political and financial hassles\" before its 2003 U.S. debut.",
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-dvd-2496256303.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5250.0,
+          "endSeconds": 6300.0,
+          "startTimecode": "01:27:30",
+          "endTimecode": "01:45:00"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 6,
+    "scene_cards": 0,
+    "general_cards": 6,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "filming",
+      "location"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 23,
+    "cards_emitted": 6,
+    "would_pass_strict": 5,
+    "cards_rejected": 17,
+    "errors": 0,
+    "elapsed_seconds": 359.9,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

@@ -89,7 +89,7 @@ flowchart TD
 | 4 | Summary entailment | judge: shortVersion/longDescription may not exceed the verified beats | reject | reject |
 | 5 | Film specificity | judge: generic industry practice is not a Scene Fact | reject | reject |
 | 6 | Conformance | judge rubric auto-0: plot summary, character backstory, casting stories (incl. executive-request framing), deleted scenes | reject | reject |
-| 7 | Spoiler boundary | judge `earliest_safe_fraction` vs anchor position (scene cards); general cards get a scheduling floor instead | reject | reject |
+| 7 | Spoilers | judge, binary: reveals nothing beyond the anchor moment (scene cards) / nothing about the plot at all (general cards); surprise cameos count as spoilers | reject | reject |
 | 8 | Maturity | judge: G-rated by default (censored profanity fails); `maturity_standard=title_rating` switches to rating-matched using Moments content_ratings | reject | reject |
 | 8b | Propriety | judge: no gossip, legal matters, tragedies, politically charged content, talent/partner disparagement, or quoting criticism of the title | reject | reject |
 | 9 | Verbatim entities + cross-modal | code: named entities string-checked in bodies; video-sourced entities need a text source | flag | flag (reject with `--strict-verbatim`) |

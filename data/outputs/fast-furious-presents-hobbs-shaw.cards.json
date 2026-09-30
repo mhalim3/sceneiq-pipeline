@@ -9,64 +9,17 @@
   "sceneFacts": [
     {
       "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Brixton's \"Black Superman\" line was almost \"Black Bond.\"",
-      "longDescription": "Brixton's \"Black Superman\" line was almost \"Black Bond.\" Dwayne Johnson said Idris Elba changed it to avoid fueling James Bond casting rumors.",
-      "sources": [
-        {
-          "url": "https://indianexpress.com/article/entertainment/hollywood/idris-elba-was-initially-meant-to-reference-james-bond-in-popular-hobbs-and-shaw-line-5834646/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 0.0,
-          "endSeconds": 548.0,
-          "startTimecode": "00:00:00",
-          "endTimecode": "00:09:08"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Ryan Reynolds secretly voiced the Eteon Director, not Keanu Reeves.",
-      "longDescription": "Ryan Reynolds secretly voiced the Eteon Director, not Keanu Reeves. He was credited under a pseudonym, \"Champ Nightengale.\"",
-      "sources": [
-        {
-          "url": "https://screenrant.com/hobbs-shaw-real-villain-director-voice-explained/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 548.0,
-          "endSeconds": 1096.0,
-          "startTimecode": "00:09:08",
-          "endTimecode": "00:18:16"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
       "factCategory": "location",
-      "shortVersion": "The ETEON HQ is a real-world tech center used for filming.",
-      "longDescription": "The ETEON HQ is a real-world tech center used for filming. It also served as a set for the Star Wars series Andor.",
+      "shortVersion": "That ETEON HQ is a real Formula 1 team's base.",
+      "longDescription": "That ETEON HQ is a real Formula 1 team's base. It's the McLaren Technology Centre, also seen in Star Wars' Andor.",
       "sources": [
         {
           "url": "https://movie-locations.com/movies/f/Fast-And-Furious-Hobbs-And-Shaw.php",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.mclaren.com/racing/heritage/mclaren-at-the-movies/",
           "modality": "text",
           "timestamp": null
         },
@@ -79,22 +32,210 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 1096.0,
-          "endSeconds": 1644.0,
-          "startTimecode": "00:18:16",
-          "endTimecode": "00:27:24"
+          "startSeconds": 0.0,
+          "endSeconds": 587.1,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:09:47"
         }
       ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Shaw's Mini Cooper is a meta-reference to Jason Statham's The Italian Job.",
+      "longDescription": "Shaw's Mini Cooper is a meta-reference to Jason Statham's The Italian Job. Director David Leitch said they were \"just having fun in sort of a meta way with Jason\" with the nod.",
+      "sources": [
+        {
+          "url": "https://www.cbr.com/hobbs-shaw-italian-job-reference/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cinemablend.com/news/2477557/did-you-catch-hobbs-and-shaw-referencing-the-italian-job",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 587.1,
+          "endSeconds": 1174.3,
+          "startTimecode": "00:09:47",
+          "endTimecode": "00:19:34"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Vanessa Kirby's intense training meant more fight scenes for Hattie.",
+      "longDescription": "Vanessa Kirby's intense training meant more fight scenes for Hattie. She found the physical challenges tough but grew to love the fight days.",
+      "sources": [
+        {
+          "url": "https://www.cbr.com/vanessa-kirby-jason-statham-action-flick-streaming-success/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.denofgeek.com/movies/hobbs-shaw-director-interview-the-making-of-a-stunt-packed-buddy-movie/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1174.3,
+          "endSeconds": 1761.4,
+          "startTimecode": "00:19:34",
+          "endTimecode": "00:29:21"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Those Chernobyl scenes? They were filmed at a decommissioned power plant.",
+      "longDescription": "Those Chernobyl scenes? They were filmed at a decommissioned power plant. Visual effects artists augmented the site with digital structures to transform it into Chernobyl.",
+      "sources": [
+        {
+          "url": "https://postperspective.com/tag/fast-furious-presents-hobbs-shaw/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.hulldailymail.co.uk/news/celebs-tv/rock-jason-statham-idris-elba-2189821",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.hulldailymail.co.uk/news/celebs-tv/fast-and-furious-hobbs-shaw-2214071",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1761.4,
+          "endSeconds": 2348.6,
+          "startTimecode": "00:29:21",
+          "endTimecode": "00:39:08"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Dwayne Johnson and Jason Statham reportedly negotiated equal hits.",
+      "longDescription": "Dwayne Johnson and Jason Statham reportedly negotiated equal hits. Their contracts specified no clear winner or loser in their on-screen fights.",
+      "sources": [
+        {
+          "url": "https://www.cinemablend.com/news/2477498/hobbs-and-shaw-stars-dwayne-johnson-and-jason-stathams-contracts-reportedly-say-they-cant-lose-on-screen-fights",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://screenrant.com/rock-vin-diesel-jason-statham-contracts-movie-fights-lose/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2348.6,
+          "endSeconds": 2935.7,
+          "startTimecode": "00:39:08",
+          "endTimecode": "00:48:55"
+        }
+      ],
       "wouldPassStrict": false
     },
     {
       "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Dwayne Johnson's co-star joked he got motion sickness in the McLaren.",
+      "longDescription": "Dwayne Johnson's co-star joked he got motion sickness in the McLaren. Director David Leitch clarified that Johnson did, in fact, fit in the car.",
+      "sources": [
+        {
+          "url": "https://www.cinemablend.com/news/2477342/jason-statham-pokes-fun-at-the-rock-for-having-motion-sickness-filming-hobbs-and-shaw",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cinemablend.com/news/2483884/thanks-to-the-rocks-size-hobbs-and-shaws-mclaren-scene-was-originally-a-lot-funnier",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2935.7,
+          "endSeconds": 3522.9,
+          "startTimecode": "00:48:55",
+          "endTimecode": "00:58:42"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
       "factCategory": "location",
-      "shortVersion": "Hobbs' Samoan home was actually filmed in Kaua'i, Hawaii.",
-      "longDescription": "Hobbs' Samoan home was actually filmed in Kaua'i, Hawaii. The island provided a large playground for the film's major action sequences.",
+      "shortVersion": "Shaw's secret garage pub was a real gangster hangout.",
+      "longDescription": "Shaw's secret garage pub was a real gangster hangout. The Carpenters Arms was once owned by London's notorious Kray brothers.",
+      "sources": [
+        {
+          "url": "https://movie-locations.com/movies/f/Fast-And-Furious-Hobbs-And-Shaw.php",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3522.9,
+          "endSeconds": 4110.0,
+          "startTimecode": "00:58:42",
+          "endTimecode": "01:08:30"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Idris Elba vetoed a \"Black James Bond\" line for Brixton.",
+      "longDescription": "Idris Elba vetoed a \"Black James Bond\" line for Brixton. He felt it was too close to ongoing casting rumors.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/idris-elba-james-bond-joke-hobbs-shaw/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4110.0,
+          "endSeconds": 4697.1,
+          "startTimecode": "01:08:30",
+          "endTimecode": "01:18:17"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Hobbs' Samoan home was actually filmed on Kaua'i, Hawaii.",
+      "longDescription": "Hobbs' Samoan home was actually filmed on Kaua'i, Hawaii. The island provided a large playground for the film's major action sequences.",
       "sources": [
         {
           "url": "https://www.latimes.com/entertainment-arts/movies/story/2019-07-25/dwayne-johnson-speaks-samoan-fast-and-furious-hobbs-and-shaw",
@@ -115,30 +256,22 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 1644.0,
-          "endSeconds": 2192.0,
-          "startTimecode": "00:27:24",
-          "endTimecode": "00:36:32"
+          "startSeconds": 4697.1,
+          "endSeconds": 5284.3,
+          "startTimecode": "01:18:17",
+          "endTimecode": "01:28:04"
         }
       ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
       "wouldPassStrict": true
     },
     {
       "scope": "general",
       "factCategory": "actor",
-      "shortVersion": "Dwayne Johnson's real-life cousin, Roman Reigns, plays his brother in the film.",
-      "longDescription": "Dwayne Johnson's real-life cousin, Roman Reigns, plays his brother in the film. Reigns filmed his scenes while recovering from a leukemia diagnosis.",
+      "shortVersion": "Dwayne Johnson's real-life dog, Hobbs, makes a cameo!",
+      "longDescription": "Dwayne Johnson's real-life dog, Hobbs, makes a cameo! Johnson, also a producer, trained his French bulldog for its role.",
       "sources": [
         {
-          "url": "https://www.thewrap.com/roman-reigns-the-rock-hobbs-and-shaw/",
-          "modality": "text",
-          "timestamp": null
-        },
-        {
-          "url": "https://www.thewrap.com/hobbs-and-shaw-dwayne-johnson-fast-and-furious-jason-statham/",
+          "url": "https://www.cinemablend.com/news/2466637/the-rock-cast-his-own-puppy-in-hobbs-and-shaw-and-yes-its-adorable",
           "modality": "text",
           "timestamp": null
         }
@@ -146,77 +279,22 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 2192.0,
-          "endSeconds": 2740.0,
-          "startTimecode": "00:36:32",
-          "endTimecode": "00:45:40"
+          "startSeconds": 5284.3,
+          "endSeconds": 5871.4,
+          "startTimecode": "01:28:04",
+          "endTimecode": "01:37:51"
         }
       ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "actor",
-      "shortVersion": "Dwayne Johnson reportedly gets motion sickness in fast cars.",
-      "longDescription": "Dwayne Johnson reportedly gets motion sickness in fast cars. Jason Statham claimed Johnson felt nauseous in the McLaren at speeds over 30 mph.",
-      "sources": [
-        {
-          "url": "https://www.cinemablend.com/news/2477342/jason-statham-pokes-fun-at-the-rock-for-having-motion-sickness-filming-hobbs-and-shaw",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 2740.0,
-          "endSeconds": 3288.0,
-          "startTimecode": "00:45:40",
-          "endTimecode": "00:54:48"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "That Game of Thrones line? It was a last-minute addition.",
-      "longDescription": "That Game of Thrones line? It was a last-minute addition. The reference was filmed as a pickup shot after principal photography had already wrapped.",
-      "sources": [
-        {
-          "url": "https://screenrant.com/ryan-reynolds-fast-furious-hobbs-shaw-cameo-explained/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 3288.0,
-          "endSeconds": 3836.0,
-          "startTimecode": "00:54:48",
-          "endTimecode": "01:03:56"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
       "wouldPassStrict": false
     },
     {
       "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "That insane helicopter chase? 90% of it was real, with actual choppers and cars.",
-      "longDescription": "That insane helicopter chase? 90% of it was real, with actual choppers and cars. Stunt coordinator Chris O'Hara confirmed that the helicopter flying by the cars and the cars on the ground were all done practically.",
+      "factCategory": "actor",
+      "shortVersion": "Dwayne Johnson bulked up to 260 pounds for his role as Luke Hobbs.",
+      "longDescription": "Dwayne Johnson bulked up to 260 pounds for his role as Luke Hobbs. This was nearly 30 pounds heavier than his weight for the Baywatch movie.",
       "sources": [
         {
-          "url": "https://www.slashfilm.com/568396/biggest-stunt-in-hobbs-and-shaw/",
+          "url": "https://www.looper.com/194698/how-dwayne-the-rock-johnson-got-ripped-for-the-fast-and-furious-movies/",
           "modality": "text",
           "timestamp": null
         }
@@ -224,61 +302,32 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 3836.0,
-          "endSeconds": 4384.0,
-          "startTimecode": "01:03:56",
-          "endTimecode": "01:13:04"
+          "startSeconds": 5871.4,
+          "endSeconds": 6458.6,
+          "startTimecode": "01:37:51",
+          "endTimecode": "01:47:38"
         }
       ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "costume/prop",
-      "shortVersion": "Deckard Shaw's Mini Cooper is a nod to The Italian Job.",
-      "longDescription": "Deckard Shaw's Mini Cooper is a nod to The Italian Job. Director David Leitch called it a \"meta\" reference to Jason Statham.",
-      "sources": [
-        {
-          "url": "https://www.cinemablend.com/news/2477557/did-you-catch-hobbs-and-shaw-referencing-the-italian-job",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 4384.0,
-          "endSeconds": 4932.0,
-          "startTimecode": "01:13:04",
-          "endTimecode": "01:22:12"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
       "wouldPassStrict": false
     },
     {
       "scope": "general",
       "factCategory": "general",
-      "shortVersion": "Deckard Shaw's line about amends was a nod to the #JusticeForHan movement.",
-      "longDescription": "Deckard Shaw's line about amends was a nod to the #JusticeForHan movement. Writer-producer Chris Morgan specifically wrote it to address fan demands.",
+      "shortVersion": "Hobbs & Shaw was the first Fast & Furious film to go sci-fi.",
+      "longDescription": "Hobbs & Shaw was the first Fast & Furious film to go sci-fi. Its villain, Brixton Lore, was the franchise's first super-powered character.",
       "sources": [
         {
-          "url": "https://www.latimes.com/entertainment-arts/movies/story/2019-08-04/hobbs-shaw-fast-furious-jason-statham-justice-for-han",
+          "url": "https://za.ign.com/fast-furious-spin-off/131420/a-look-behind-the-scenes-of-hobbs-shaw-ign-first",
           "modality": "text",
           "timestamp": null
         },
         {
-          "url": "https://www.joblo.com/hobbs-shaw-writer-assures-fans-will-get-justice-for-han-down-the-road/",
+          "url": "https://www.slashfilm.com/568149/hobbs-and-shaw-interview-chris-morgan/",
           "modality": "text",
           "timestamp": null
         },
         {
-          "url": "https://www.slashfilm.com/568116/justice-for-han-in-hobbs-and-shaw/",
+          "url": "https://gizmodo.com/how-hobbs-shaw-finally-brought-sci-fi-into-the-fast-1836826134",
           "modality": "text",
           "timestamp": null
         }
@@ -286,30 +335,37 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 4932.0,
-          "endSeconds": 5480.0,
-          "startTimecode": "01:22:12",
-          "endTimecode": "01:31:20"
+          "startSeconds": 6458.6,
+          "endSeconds": 7045.7,
+          "startTimecode": "01:47:38",
+          "endTimecode": "01:57:25"
         }
       ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
       "wouldPassStrict": true
     },
     {
       "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Hobbs & Shaw was the first major film to showcase Samoan culture.",
-      "longDescription": "Hobbs & Shaw was the first major film to showcase Samoan culture. Dwayne Johnson ensured authenticity by hiring Polynesian actors, including his cousin.",
+      "factCategory": "general",
+      "shortVersion": "\"Hobbs & Shaw\" was born from the stars' comedic chemistry.",
+      "longDescription": "\"Hobbs & Shaw\" was born from the stars' comedic chemistry. Their prison scene in \"The Fate of the Furious\" made the studio realize their spin-off potential.",
       "sources": [
         {
-          "url": "https://screenrant.com/dwayne-johnson-interview-hobbs-shaw/",
+          "url": "https://writingstudio.co.za/fast-furious-presents-hobbs-shaw-blasts-open-a-new-door-in-the-fast-universe/",
           "modality": "text",
           "timestamp": null
         },
         {
-          "url": "https://www.theringer.com/2019/08/06/movies/hobbs-and-shaw-final-scene-samoa-dwayne-johnson",
+          "url": "https://www.cinemablend.com/news/2432879/why-the-hobbs-and-shaw-spinoff-is-being-made",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.slashfilm.com/568149/hobbs-and-shaw-interview-chris-morgan/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.cinemablend.com/news/2477338/how-hobbs-and-shaw-fits-into-the-fast-and-furious-universe",
           "modality": "text",
           "timestamp": null
         }
@@ -317,51 +373,22 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 5480.0,
-          "endSeconds": 6028.0,
-          "startTimecode": "01:31:20",
-          "endTimecode": "01:40:28"
+          "startSeconds": 7045.7,
+          "endSeconds": 7632.9,
+          "startTimecode": "01:57:25",
+          "endTimecode": "02:07:12"
         }
       ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
       "wouldPassStrict": true
     },
     {
       "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "Director David Leitch designed unique fight styles for each character.",
-      "longDescription": "Director David Leitch designed unique fight styles for each character. He wanted the choreography to express who they are, matching their personalities.",
+      "factCategory": "location",
+      "shortVersion": "That London chase? It was actually filmed in Glasgow, Scotland.",
+      "longDescription": "That London chase? It was actually filmed in Glasgow, Scotland. Red double-decker buses were brought in to complete the illusion.",
       "sources": [
         {
-          "url": "https://www.watchmojo.com/articles/how-hobbs-shaw-created-action-scenes",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 6028.0,
-          "endSeconds": 6576.0,
-          "startTimecode": "01:40:28",
-          "endTimecode": "01:49:36"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "filming",
-      "shortVersion": "That London car chase? It was actually filmed in Glasgow, Scotland.",
-      "longDescription": "That London car chase? It was actually filmed in Glasgow, Scotland. The city's George Square was dressed with red double-decker buses to recreate the UK capital.",
-      "sources": [
-        {
-          "url": "https://www.glasgowcityinnovationdistrict.com/newsmore/districtblogs/filmlocationsinthedistrict/",
+          "url": "https://www.glasgowtimes.co.uk/news/17004833.hobbs-shaw-glasgow-doubles-london-major-hollywood-action-film-shoot/",
           "modality": "text",
           "timestamp": null
         },
@@ -371,38 +398,12 @@
           "timestamp": null
         },
         {
-          "url": "https://www.thenational.scot/news/17005455.glasgow-doubles-london-fast-furious-spin-off-films-car-chase/",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 6576.0,
-          "endSeconds": 7124.0,
-          "startTimecode": "01:49:36",
-          "endTimecode": "01:58:44"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": true
-    },
-    {
-      "scope": "general",
-      "factCategory": "historical",
-      "shortVersion": "Shaw's secret garage was a nod to London's gangster past.",
-      "longDescription": "Shaw's secret garage was a nod to London's gangster past. The pub it was supposedly beneath was once owned by the notorious Kray brothers.",
-      "sources": [
-        {
-          "url": "https://movie-locations.com/movies/f/Fast-And-Furious-Hobbs-And-Shaw.php",
+          "url": "https://www.glasgowlive.co.uk/news/glasgow-news/fast-furious-spin-hobbs-shaw-15367336",
           "modality": "text",
           "timestamp": null
         },
         {
-          "url": "https://www.dcl.co.uk/news/done-deal-the-kray-twins-east-london-pub-the-carpenters-arms/",
+          "url": "https://www.thesupercarblog.com/hobbs-and-shaw-watch-mclaren-720s-chase-fast-and-furious-spin-off/",
           "modality": "text",
           "timestamp": null
         }
@@ -410,49 +411,20 @@
       "sceneAnchor": null,
       "displayWindows": [
         {
-          "startSeconds": 7124.0,
-          "endSeconds": 7672.0,
-          "startTimecode": "01:58:44",
-          "endTimecode": "02:07:52"
-        }
-      ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
-    },
-    {
-      "scope": "general",
-      "factCategory": "general",
-      "shortVersion": "Dwayne Johnson and Jason Statham have fight clauses in their contracts.",
-      "longDescription": "Dwayne Johnson and Jason Statham have fight clauses in their contracts. They reportedly ensure their characters give and take equal numbers of punches.",
-      "sources": [
-        {
-          "url": "https://www.theguardian.com/film/2019/aug/02/fast-and-furious-dwayne-johnson-jason-statham-rock-lose-fight",
-          "modality": "text",
-          "timestamp": null
-        }
-      ],
-      "sceneAnchor": null,
-      "displayWindows": [
-        {
-          "startSeconds": 7672.0,
+          "startSeconds": 7632.9,
           "endSeconds": 8220.0,
-          "startTimecode": "02:07:52",
+          "startTimecode": "02:07:12",
           "endTimecode": "02:17:00"
         }
       ],
-      "spoilerBoundary": {
-        "earliestSafeFraction": 0.0
-      },
-      "wouldPassStrict": false
+      "wouldPassStrict": true
     }
   ],
   "titleEnablement": {
-    "sceneiq_enabled": false,
-    "approved_cards": 15,
+    "sceneiq_enabled": true,
+    "approved_cards": 14,
     "scene_cards": 0,
-    "general_cards": 15,
+    "general_cards": 14,
     "density_target": 14,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -462,9 +434,7 @@
     },
     "distinct_categories": [
       "actor",
-      "costume/prop",
       "filming",
-      "historical",
       "location"
     ],
     "timeCoverage": {
@@ -474,8 +444,8 @@
     "rules": {
       "fact_target_12_15": true,
       "min_six_cards": true,
-      "card_in_each_quartile": false,
-      "max_40pct_single_quartile": false,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
       "min_two_categories": true,
       "full_time_coverage": true
     }
@@ -483,12 +453,12 @@
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 32,
-    "cards_emitted": 15,
-    "would_pass_strict": 7,
-    "cards_rejected": 17,
+    "anchors_proposed": 35,
+    "cards_emitted": 14,
+    "would_pass_strict": 9,
+    "cards_rejected": 21,
     "errors": 0,
-    "elapsed_seconds": 640.7,
+    "elapsed_seconds": 603.1,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"

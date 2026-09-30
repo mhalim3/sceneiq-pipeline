@@ -39,7 +39,8 @@ actors visible in the scene).
 - Categories (choose closest): actor, music, location, set_design, filming, \
 historical, costume/prop.
 - EXCLUDE: casting drama, actors who almost got roles, deleted scenes, on-set feuds, \
-career-arc trivia, anything not tied to what is on screen.
+anything not tied to what is on screen. (Director/cast filmography and franchise \
+connections ARE welcome when tied to a visible element.)
 
 For each anchor give: the scene (what's on screen), the specific anchor element, an \
 approximate timecode and runtime fraction (0.0-1.0), the closest category, a search \
@@ -135,7 +136,8 @@ If the likely fact reads like an encyclopedia entry, skip the anchor.
 - Categories (choose closest): actor, music, location, set_design, filming, \
 historical, costume/prop.
 - EXCLUDE: casting drama, actors who almost got roles, deleted scenes, on-set \
-feuds, career-arc trivia, anything not tied to what is on screen.
+feuds, anything not tied to what is on screen. (Director/cast filmography and \
+franchise connections ARE welcome when tied to a visible element.)
 
 For each anchor give: the scene_index it attaches to, the specific anchor element \
 (as it appears in that scene's data), the closest category, a search hint \

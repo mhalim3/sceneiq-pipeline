@@ -1,0 +1,135 @@
+{
+  "film": {
+    "title": "The Delivery Girl",
+    "year": 2019,
+    "runtime_minutes": 10,
+    "input_prompt": "The Delivery Girl",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Trisha leads a double life in a fiercely Catholic home.",
+      "longDescription": "Trisha leads a double life in a fiercely Catholic home. She sells drugs and has a secret lover.",
+      "sources": [
+        {
+          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 200.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:03:20"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Creator Kate Krieger based the film's characters on slice-of-life stories.",
+      "longDescription": "Creator Kate Krieger based the film's characters on slice-of-life stories. Her passion for nuanced characters inspired her to write, direct, and star in the pilot.",
+      "sources": [
+        {
+          "url": "https://newyorktheaterfestival.com/people/kate-krieger/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.weaudition.com/katekrieger",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 200.0,
+          "endSeconds": 400.0,
+          "startTimecode": "00:03:20",
+          "endTimecode": "00:06:40"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The Delivery Girl was written, directed, and starred in by Kate Krieger.",
+      "longDescription": "The Delivery Girl was written, directed, and starred in by Kate Krieger. This television pilot also made its debut at the 2019 Sundance Film Festival.",
+      "sources": [
+        {
+          "url": "https://www.weaudition.com/katekrieger",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.incluvie.com/movie/delivery-girl-633343",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 400.0,
+          "endSeconds": 600.0,
+          "startTimecode": "00:06:40",
+          "endTimecode": "00:10:00"
+        }
+      ],
+      "wouldPassStrict": true
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 3,
+    "scene_cards": 0,
+    "general_cards": 3,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": false,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": false,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 17,
+    "cards_emitted": 3,
+    "would_pass_strict": 2,
+    "cards_rejected": 14,
+    "errors": 0,
+    "elapsed_seconds": 277.9,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

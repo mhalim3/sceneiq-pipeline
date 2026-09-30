@@ -1,0 +1,55 @@
+{
+  "film": {
+    "title": "The Plantation",
+    "year": 1982,
+    "runtime_minutes": 90,
+    "input_prompt": "The Plantation",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 0,
+    "scene_cards": 0,
+    "general_cards": 0,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [],
+    "timeCoverage": {
+      "fraction": 0.0,
+      "uncovered": [
+        [
+          0.0,
+          5400.0
+        ]
+      ]
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": false,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": false,
+      "full_time_coverage": false
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 14,
+    "cards_emitted": 0,
+    "would_pass_strict": 0,
+    "cards_rejected": 14,
+    "errors": 0,
+    "elapsed_seconds": 210.1,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

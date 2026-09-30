@@ -1,0 +1,269 @@
+{
+  "film": {
+    "title": "The New Daughter",
+    "year": 2009,
+    "runtime_minutes": 90,
+    "input_prompt": "The New Daughter (2009)",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Ivana Baquero's first US role after Pan's Labyrinth.",
+      "longDescription": "Ivana Baquero's first US role after Pan's Labyrinth. She wanted to prove she could play an American girl.",
+      "sources": [
+        {
+          "url": "https://www.fangoria.com/exclusive-interview-ivana-baquero-daughter-of-the-fear/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://bloody-disgusting.com/news/20157/spanish-star-ivana-baquero-becomes-the-new-daughter-exclusive-interview/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 675.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:11:15"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The New Daughter is Kevin Costner's only traditional horror film.",
+      "longDescription": "The New Daughter is Kevin Costner's only traditional horror film. He was known for dramas and blockbusters, rarely venturing into the horror genre.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/new-daughter-kevin-costner-only-horror-movie/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://movieweb.com/kevin-costner-horror-movie-the-new-daughter-free-on-tubi/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 675.0,
+          "endSeconds": 1350.0,
+          "startTimecode": "00:11:15",
+          "endTimecode": "00:22:30"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Director Luis Berdejo treated his first feature like a longer short film.",
+      "longDescription": "Director Luis Berdejo treated his first feature like a longer short film. He said he only knew one way to make things: to serve the story.",
+      "sources": [
+        {
+          "url": "https://screenanarchy.com/2008/11/luis-berdejo-talks-the-new-daughter.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://bloody-disgusting.com/news/20157/spanish-star-ivana-baquero-becomes-the-new-daughter-exclusive-interview/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://bloody-disgusting.com/editorials/3761803/i-was-a-teenage-monster-reappraising-the-new-daughter-starring-kevin-costner/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1350.0,
+          "endSeconds": 2025.0,
+          "startTimecode": "00:22:30",
+          "endTimecode": "00:33:45"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Kevin Costner isn't a fan of horror films.",
+      "longDescription": "Kevin Costner isn't a fan of horror films. He once needed a nightlight for 15 years after seeing one as a child.",
+      "sources": [
+        {
+          "url": "https://bloody-disgusting.com/news/13238/kevin-costner-talks-the-new-daughter/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2025.0,
+          "endSeconds": 2700.0,
+          "startTimecode": "00:33:45",
+          "endTimecode": "00:45:00"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The film's \"ballsy\" ending was a point of contention for studios.",
+      "longDescription": "The film's \"ballsy\" ending was a point of contention for studios. Director Luis Berdejo and writer John Travis fought to keep it.",
+      "sources": [
+        {
+          "url": "http://horror-movie-a-day.blogspot.com/2009/12/new-daughter.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://screenrant.com/new-daughter-movie-ending-explanation-kevin-costner/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2700.0,
+          "endSeconds": 3375.0,
+          "startTimecode": "00:45:00",
+          "endTimecode": "00:56:15"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "Director Luis Berdejo reworked the film's mythology for its new setting.",
+      "longDescription": "Director Luis Berdejo reworked the film's mythology for its new setting. He adapted the creatures from Irish fairy folk to local \"mound-walkers\" in South Carolina.",
+      "sources": [
+        {
+          "url": "https://bloody-disgusting.com/editorials/3761803/i-was-a-teenage-monster-reappraising-the-new-daughter-starring-kevin-costner/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3375.0,
+          "endSeconds": 4050.0,
+          "startTimecode": "00:56:15",
+          "endTimecode": "01:07:30"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "costume/prop",
+      "shortVersion": "The \"mound-walkers\" were brought to life by a creature performer.",
+      "longDescription": "The \"mound-walkers\" were brought to life by a creature performer. This actor wore a full body suit and facial makeup to portray the horrifying, human-like beings.",
+      "sources": [
+        {
+          "url": "https://www.looper.com/1395175/the-new-daughter-explained-kevin-costner/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://movieweb.com/the-new-daughter-is-looking-to-cast-a-creature/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4050.0,
+          "endSeconds": 4725.0,
+          "startTimecode": "01:07:30",
+          "endTimecode": "01:18:45"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Director Luis Berdejo loves telling stories through kids' eyes.",
+      "longDescription": "Director Luis Berdejo loves telling stories through kids' eyes. He's drawn to their world, innocence, honesty, and courage.",
+      "sources": [
+        {
+          "url": "https://screenanarchy.com/2008/11/luis-berdejo-talks-the-new-daughter.html",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4725.0,
+          "endSeconds": 5400.0,
+          "startTimecode": "01:18:45",
+          "endTimecode": "01:30:00"
+        }
+      ],
+      "wouldPassStrict": true
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 8,
+    "scene_cards": 0,
+    "general_cards": 8,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "costume/prop",
+      "filming"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": true,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 34,
+    "cards_emitted": 8,
+    "would_pass_strict": 4,
+    "cards_rejected": 26,
+    "errors": 0,
+    "elapsed_seconds": 476.4,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

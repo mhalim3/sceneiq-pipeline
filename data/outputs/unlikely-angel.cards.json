@@ -1,0 +1,81 @@
+{
+  "film": {
+    "title": "Unlikely Angel",
+    "year": 1996,
+    "runtime_minutes": 93,
+    "input_prompt": "Unlikely Angel (1996)",
+    "anchor_source": "title_only"
+  },
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "music",
+      "shortVersion": "Dolly Parton's theme song wasn't released for nearly 20 years.",
+      "longDescription": "Dolly Parton's theme song wasn't released for nearly 20 years. It finally debuted commercially on her 2015 album, Blue Smoke.",
+      "sources": [
+        {
+          "url": "https://www.dollydiscography.com/unlikely-angel.html",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://au.rollingstone.com/music/music-lists/-46485/unlikely-angel-46496/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 5580.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "01:33:00"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 1,
+    "scene_cards": 0,
+    "general_cards": 1,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "distinct_categories": [
+      "music"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": false,
+      "min_six_cards": false,
+      "card_in_each_quartile": true,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": false,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 8,
+    "cards_emitted": 1,
+    "would_pass_strict": 0,
+    "cards_rejected": 7,
+    "errors": 0,
+    "elapsed_seconds": 141.2,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

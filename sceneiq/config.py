@@ -64,7 +64,7 @@ class PipelineConfig:
     min_categories: int = 2
     # Parallelism for per-anchor research/assembly/validation. The work is
     # I/O-bound (API calls + HTTP), so this is limited by API rate tier.
-    max_workers: int = 8
+    max_workers: int = 12
     # Discovery passes: each pass proposes anchors avoiding already-explored
     # elements; approved cards merge across passes (raises yield on titles
     # where single-pass anchor variance is the bottleneck).
@@ -115,7 +115,7 @@ class PipelineConfig:
     # anchored to a Moments scene when one supports it, else emitted as a
     # GENERAL card the player may show at any time after its spoiler floor.
     use_title_sweep: bool = True
-    sweep_facts_max: int = 12   # title-first: most facts are title-level context
+    sweep_facts_max: int = 16   # wide first round avoids paying for adaptive rounds
     # Adaptive sweep: after the first round, keep sweeping (with an
     # avoid-list and fresh query angles) until the fact target is met, a
     # round approves nothing new, or this many rounds have run.

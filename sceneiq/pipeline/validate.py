@@ -78,7 +78,7 @@ _JUDGE_SCHEMA = {
             "properties": {d: _SCORE for d in _RUBRIC_DIMS},
             "required": list(_RUBRIC_DIMS),
         },
-        "earliest_safe_fraction": {"type": "number"},
+        "spoiler_free": {"type": "boolean"},
         "maturity_pass": {"type": "boolean"},
         "propriety_pass": {"type": "boolean"},
         "category_correct": {"type": "boolean"},
@@ -91,7 +91,7 @@ _JUDGE_SCHEMA = {
         "beats",
         "sources",
         "rubric",
-        "earliest_safe_fraction",
+        "spoiler_free",
         "maturity_pass",
         "propriety_pass",
         "category_correct",
@@ -144,11 +144,11 @@ unsupported, contradicted, or misleading claim.
 THIS scene and rewards pausing there; 1 = connection indirect; 0 = not tied to the scene.
 - primitive_conformance: 2 = cleanly fits the Scene Fact definition (insider detail \
 about the film's world explaining something on screen); 1 = loose fit; 0 = does not \
-satisfy the definition. Automatic 0 for: plot summary or character backstory (what \
-happens in the story is not a Scene Fact), deleted scenes or alternate versions with \
-no visible on-screen artifact, casting stories (including roles added, cut, or cast \
-at an executive's or producer's request — script-development framing does not \
-exempt them), career trivia, industry gossip.
+satisfy the definition. Director filmography, franchise connections, and notable \
+cast facts ARE conforming. Automatic 0 for: plot summary of THIS film (what happens \
+in this story is not a fact card), deleted scenes or alternate versions with no \
+visible on-screen artifact, casting drama (who turned down or almost got a role, \
+roles added or cut at an executive's demand), on-set feuds, industry gossip.
 - viewer_value: 2 = specific, surprising, likely to prompt exploration; 1 = mildly \
 interesting; 0 = generic or obvious.
 - clarity: 2 = concise, tells the viewer what to notice; 1 = verbose or imprecise; \
@@ -156,9 +156,11 @@ interesting; 0 = generic or obvious.
 - spoiler_safety: 2 = fully safe at the anchor timecode; 1 = borderline wording; \
 0 = reveals later plot, outcomes, or significance.
 
-4. earliest_safe_fraction — the earliest runtime fraction (0.0-1.0) at which this \
-card could be shown without spoiling anything. If safe at its anchor, use the anchor \
-fraction {fraction} or lower.
+4. spoiler_free — BINARY, no partial credit. True only if the card reveals NOTHING \
+about plot developments, twists, endings, character outcomes, or later significance. \
+Scene cards may not reveal anything beyond their anchor moment; GENERAL cards (shown \
+at any time) may not reveal anything about the plot at all. Surprise cameos and \
+secret roles are spoilers — a card announcing one fails. When in doubt, false.
 
 5. maturity_pass — {maturity_rule}
 
@@ -178,11 +180,11 @@ must find in the sources.
 claim, name, number, or implication beyond what the entailed beats state. They are \
 rewrites of the beats, never expansions.
 
-10. film_specific — true only if the card's claims are specifically about THIS film \
-({film_title}): its production, cast, locations, music, or making-of. A card stating \
-generic industry practice (how newspaper props are usually made, how films typically \
-license songs) is NOT film-specific even when the prop or song appears in this \
-film's scene — the sources must attest facts about {film_title} itself."""
+10. film_specific — true if the card's claims connect concretely to THIS film \
+({film_title}): its production, cast, locations, music, making-of, its director's \
+other work, or its franchise context. A card stating generic industry practice (how \
+newspaper props are usually made, how films typically license songs) is NOT \
+film-specific even when the prop or song appears in this film's scene."""
 
 
 def _maturity_rule(cfg: config.PipelineConfig, film_info: dict) -> str:
@@ -300,9 +302,8 @@ def validate_card(
                 "" if card.scope == "scene" else
                 "NOTE: this is a GENERAL card, not tied to a scene — the player may "
                 "show it at ANY point in the film. Score scene_grounding 2 when the "
-                "fact suits any-time display (a fact about the film as a whole). For "
-                "earliest_safe_fraction, report the earliest point at which showing "
-                "this fact spoils nothing (0.0 when it never spoils)."
+                "fact suits any-time display (a fact about the film as a whole). It "
+                "must be spoiler-free for the ENTIRE runtime."
             ),
             short_version=card.short_version,
             category=card.fact_category,
@@ -324,33 +325,20 @@ def validate_card(
         if 0 <= i < len(card.fact_beats):
             card.fact_beats[i].supporting_passage = jb.get("supporting_passage", "")
 
-    # Spoiler boundary and safety: identical hard gates in BOTH modes.
-    # General cards never fail on position — their spoiler floor instead
-    # constrains the display windows the scheduler assigns them.
-    if card.scope == "general":
-        checks["spoiler_boundary"] = rubric["spoiler_safety"] >= 1
-    else:
-        checks["spoiler_boundary"] = rubric["spoiler_safety"] >= 1 and (
-            judge["earliest_safe_fraction"] <= card.runtime_fraction + 0.02
-        )
+    # Spoilers: binary hard gate, identical in BOTH modes and both scopes.
+    checks["spoiler_free"] = bool(judge["spoiler_free"]) and rubric["spoiler_safety"] >= 1
     checks["maturity"] = judge["maturity_pass"]
     checks["propriety"] = judge["propriety_pass"]
-    if not checks["spoiler_boundary"]:
+    if not checks["spoiler_free"]:
         result.rejection_reasons.append(
-            "spoiler_boundary: card only safe from fraction "
-            f"{judge['earliest_safe_fraction']:.2f}, anchored at {card.runtime_fraction:.2f}"
+            "spoiler: card reveals plot, outcomes, or a surprise (cameo/secret role)"
         )
     if not judge["maturity_pass"]:
         result.rejection_reasons.append("maturity: content exceeds the maturity standard")
     if not judge["propriety_pass"]:
         result.rejection_reasons.append(
             "propriety: gossip/legal/tragedy/political/disparagement content")
-    if card.scope == "general":
-        card.spoiler_boundary_fraction = max(0.0, float(judge["earliest_safe_fraction"]))
-    else:
-        card.spoiler_boundary_fraction = min(
-            float(judge["earliest_safe_fraction"]), card.runtime_fraction
-        ) if checks["spoiler_boundary"] else float(judge["earliest_safe_fraction"])
+    card.spoiler_boundary_fraction = 0.0  # binary policy: spoilers never emit
 
     checks["taxonomy"] = judge["category_correct"]
     if not judge["category_correct"]:
@@ -533,7 +521,7 @@ def validate_card(
         and strict_rubric_ok
         and not unsupported
         and not binding_bad
-        and checks["spoiler_boundary"]
+        and checks["spoiler_free"]
         and checks["maturity"]
         and checks["propriety"]
         and judge["category_correct"]

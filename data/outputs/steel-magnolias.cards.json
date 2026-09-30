@@ -1,0 +1,488 @@
+{
+  "film": {
+    "title": "Steel Magnolias",
+    "year": 1989,
+    "runtime_minutes": 118,
+    "duration_sec": 7098.132708333333,
+    "content_rating": "PG",
+    "input_prompt": "Steel Magnolias",
+    "anchor_source": "tubi_moments"
+  },
+  "sceneFacts": [
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Julia Roberts earned her first Oscar nomination for playing Shelby.",
+      "longDescription": "Julia Roberts earned her first Oscar nomination for playing Shelby. The role was based on screenwriter Robert Harling's sister, Susan.",
+      "sources": [
+        {
+          "url": "https://www.ebsco.com/research-starters/film/julia-roberts/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.morninghoney.com/p/secrets-behind-movie-steel-magnolias",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 68] 00:21:59–00:22:11\nsummary: A woman is getting her hair styled in a salon while engaging in a tense conversation, creating a mood of mild conflict and personal interaction in an indoor beauty care setting.\ncast on screen: Dolly Parton, Julia Roberts",
+        "anchorElement": "Steel Magnolias was a pivotal film for Julia Roberts, earning her first Academy Award nomination, a role Meg Ryan initially had but dropped for When Harry Met Sally....",
+        "approxTimecode": "00:21:59",
+        "runtimeFraction": 0.186,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 1319.9,
+          "endSeconds": 1391.5,
+          "startTimecode": "00:21:59",
+          "endTimecode": "00:23:11"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Dolly Parton and Daryl Hannah went to beauty school for their roles.",
+      "longDescription": "Dolly Parton and Daryl Hannah went to beauty school for their roles. Parton even cut Julia Roberts' hair in a scene.",
+      "sources": [
+        {
+          "url": "https://www.cheatsheet.com/news/steel-magnolias-dolly-parton-end-up-new-job-filming.html/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 68] 00:21:59–00:22:11\nsummary: A woman is getting her hair styled in a salon while engaging in a tense conversation, creating a mood of mild conflict and personal interaction in an indoor beauty care setting.\ncast on screen: Dolly Parton, Julia Roberts",
+        "anchorElement": "To convincingly portray their roles as salon owner Truvy and hairdresser Annelle, Dolly Parton and Daryl Hannah took professional hairdressing lessons.",
+        "approxTimecode": "00:21:59",
+        "runtimeFraction": 0.186,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 1319.9,
+          "endSeconds": 1391.5,
+          "startTimecode": "00:21:59",
+          "endTimecode": "00:23:11"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "Dolly Parton told the director: 'It's your job to make me look like I can act.'",
+      "longDescription": "Dolly Parton told the director: 'It's your job to make me look like I can act.' She said she was a personality hired for the movie, not an actress.",
+      "sources": [
+        {
+          "url": "https://www.morninghoney.com/p/secrets-behind-movie-steel-magnolias",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 76] 00:24:17–00:24:35\nsummary: The clip shows women in a hair salon engaging in a conversation about romance and relationships, with a warm, nostalgic, and slightly melancholic mood in a cozy, decorated salon environment.\ncast on screen: Olympia Dukakis, Julia Roberts, Dolly Parton",
+        "anchorElement": "When director Herbert Ross questioned Dolly Parton's acting ability, she famously retorted, \"No — but it's your job to make me look like I can.\"",
+        "approxTimecode": "00:24:17",
+        "runtimeFraction": 0.205,
+        "runtimeThird": 1,
+        "runtimeQuartile": 1
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 1457.9,
+          "endSeconds": 1536.0,
+          "startTimecode": "00:24:17",
+          "endTimecode": "00:25:36"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "costume/prop",
+      "shortVersion": "This armadillo cake revived red velvet's popularity.",
+      "longDescription": "This armadillo cake revived red velvet's popularity. It was inspired by a real cake at the screenwriter's sister's wedding.",
+      "sources": [
+        {
+          "url": "https://gardenandgun.com/inside-look-steel-magnolias-robert-harling",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.dvdtalk.com/reviews/review/898",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.foodrepublic.com/1628916/armadillo-groom-cake-origin/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 102] 00:32:37–00:32:58\nsummary: The clip shows a group of women in a casual outdoor setting discussing weddings and social plans, with a mood that mixes disappointment and lightheartedness as they prepare for a gathering involving a unique groom's cake.\ncast on screen: Julia Roberts",
+        "anchorElement": "The film is credited with reviving the popularity of red velvet cake, especially after the iconic armadillo groom's cake.",
+        "approxTimecode": "00:32:37",
+        "runtimeFraction": 0.276,
+        "runtimeThird": 1,
+        "runtimeQuartile": 2
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 1957.8,
+          "endSeconds": 2038.4,
+          "startTimecode": "00:32:37",
+          "endTimecode": "00:33:58"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "scene",
+      "factCategory": "actor",
+      "shortVersion": "The film's writer, Robert Harling, plays the minister in this scene.",
+      "longDescription": "The film's writer, Robert Harling, plays the minister in this scene. He also wrote the screenplay for the movie.",
+      "sources": [
+        {
+          "url": "https://www.fandango.com/people/robert-harling-275209/biography",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://watch.plex.tv/movie/steel-magnolias-1989/credits",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.bard.org/study-guides/meet-the-steel-magnolias-playwright-10-fun-facts-about-robert-harling/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 111] 00:35:32–00:35:59\nsummary: The video clip shows a wedding scene with a bride and her father preparing to enter the ceremony, capturing a mood of excitement and emotional complexity in a church setting.\ncast on screen: Julia Roberts, Olympia Dukakis",
+        "anchorElement": "Robert Harling, the writer of Steel Magnolias, makes a cameo appearance in the film as the minister who officiates both Shelby's wedding and funeral.",
+        "approxTimecode": "00:35:32",
+        "runtimeFraction": 0.3,
+        "runtimeThird": 1,
+        "runtimeQuartile": 2
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 2132.3,
+          "endSeconds": 2219.2,
+          "startTimecode": "00:35:32",
+          "endTimecode": "00:36:59"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "location",
+      "shortVersion": "That festive background is Natchitoches' real Christmas Festival.",
+      "longDescription": "That festive background is Natchitoches' real Christmas Festival. The annual event features over 100 pieces twinkling with 300,000 lights.",
+      "sources": [
+        {
+          "url": "https://www.thisismysouth.com/steel-magnolias-filming-locations/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.onemoreexclamation.com/steel-magnolias-the-movie/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 145] 00:47:59–00:48:07\nsummary: A woman wearing a crown and sash stands on a decorated stage with a festive background, while a crowd cheers and a voiceover promotes the best food in Louisiana, creating an excited and celebratory atmosphere.",
+        "anchorElement": "decorated stage with a festive background",
+        "approxTimecode": "00:47:59",
+        "runtimeFraction": 0.406,
+        "runtimeThird": 2,
+        "runtimeQuartile": 2
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 2879.5,
+          "endSeconds": 2947.8,
+          "startTimecode": "00:47:59",
+          "endTimecode": "00:49:07"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "location",
+      "shortVersion": "The Eatenton family home is now a B&B with character-themed rooms.",
+      "longDescription": "The Eatenton family home is now a B&B with character-themed rooms. You can even stay in Shelby's room, where the bathroom still glows Pepto-Bismol pink.",
+      "sources": [
+        {
+          "url": "https://gardenandgun.com/the-steel-magnolias-guide-to-natchitoches-louisiana",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://yourmileagemayvary.com/2018/05/02/you-guys-the-steel-magnolias-house-is-a-bb-and-the-shelby-room-is-amazing/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 205] 01:07:14–01:07:50\nsummary: Two women are having a friendly conversation outside a house about getting a haircut at Truvy's, expressing a desire for simplicity and ease in hair care, set in a calm, sunny residential environment.\ncast on screen: Sally Field, Julia Roberts",
+        "anchorElement": "The Cook-Taylor House, which served as the Eatenton family home, is now a B&B offering themed rooms named after characters like Clairee, Ouiser, and Shelby.",
+        "approxTimecode": "01:07:14",
+        "runtimeFraction": 0.568,
+        "runtimeThird": 2,
+        "runtimeQuartile": 3
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 4034.9,
+          "endSeconds": 4130.5,
+          "startTimecode": "01:07:14",
+          "endTimecode": "01:08:50"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "scene",
+      "factCategory": "set_design",
+      "shortVersion": "This salon was a real local shop, borrowed for filming.",
+      "longDescription": "This salon was a real local shop, borrowed for filming. The set director promised the owner new equipment and revamped the shop after production.",
+      "sources": [
+        {
+          "url": "https://prettysouthern.com/2021/06/27/origin-story-steel-magnolias/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": {
+        "sceneDescription": "[scene 213] 01:10:05–01:10:26\nsummary: The clip shows women in a cozy, decorated beauty salon engaging in friendly conversation about manicures and beauty routines, creating a warm and cheerful atmosphere.\ncast on screen: Dolly Parton, Julia Roberts, Olympia Dukakis",
+        "anchorElement": "cozy, decorated beauty salon",
+        "approxTimecode": "01:10:05",
+        "runtimeFraction": 0.592,
+        "runtimeThird": 2,
+        "runtimeQuartile": 3
+      },
+      "displayWindows": [
+        {
+          "startSeconds": 4205.0,
+          "endSeconds": 4286.4,
+          "startTimecode": "01:10:05",
+          "endTimecode": "01:11:26"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The title \"Steel Magnolias\" describes Southern women.",
+      "longDescription": "The title \"Steel Magnolias\" describes Southern women. It refers to those who appear delicate but possess unexpected strength.",
+      "sources": [
+        {
+          "url": "https://gardenandgun.com/inside-look-steel-magnolias-robert-harling",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.countrythangdaily.com/steel-magnolias-heartbreaking-story/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://gardenandgun.com/the-interview-robert-harling",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 1319.9,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:21:59"
+        },
+        {
+          "startSeconds": 2947.8,
+          "endSeconds": 4034.9,
+          "startTimecode": "00:49:07",
+          "endTimecode": "01:07:14"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "location",
+      "shortVersion": "This film was shot in the writer's real hometown of Natchitoches.",
+      "longDescription": "This film was shot in the writer's real hometown of Natchitoches. Writer Robert Harling insisted on filming there to ensure authenticity.",
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/1829758/steel-magnolias-filming-locations-explained/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://gardenandgun.com/the-interview-robert-harling",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://gardenandgun.com/the-steel-magnolias-guide-to-natchitoches-louisiana",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1391.5,
+          "endSeconds": 1457.9,
+          "startTimecode": "00:23:11",
+          "endTimecode": "00:24:17"
+        },
+        {
+          "startSeconds": 4130.5,
+          "endSeconds": 4205.0,
+          "startTimecode": "01:08:50",
+          "endTimecode": "01:10:05"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "historical",
+      "shortVersion": "Steel Magnolias was the first Western film with paid admission in East Germany.",
+      "longDescription": "Steel Magnolias was the first Western film with paid admission in East Germany. The line of East Berliners waiting to buy tickets stretched as far as the eye could see.",
+      "sources": [
+        {
+          "url": "https://gardenandgun.com/inside-look-steel-magnolias-robert-harling",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1536.0,
+          "endSeconds": 1957.8,
+          "startTimecode": "00:25:36",
+          "endTimecode": "00:32:37"
+        },
+        {
+          "startSeconds": 4286.4,
+          "endSeconds": 7098.1,
+          "startTimecode": "01:11:26",
+          "endTimecode": "01:58:18"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "The film's title was inspired by a neighbor's paperweight.",
+      "longDescription": "The film's title was inspired by a neighbor's paperweight. The object was called \"the steel magnolia\" by its owner.",
+      "sources": [
+        {
+          "url": "https://www.bard.org/study-guides/meet-the-steel-magnolias-playwright-10-fun-facts-about-robert-harling/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2038.4,
+          "endSeconds": 2132.3,
+          "startTimecode": "00:33:58",
+          "endTimecode": "00:35:32"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "music",
+      "shortVersion": "The score's soulful harmonica gives it a local touch.",
+      "longDescription": "The score's soulful harmonica gives it a local touch. This was a rare project that fit composer Georges Delerue's overtly emotional style.",
+      "sources": [
+        {
+          "url": "https://moviemusicuk.us/2019/10/10/steel-magnolias-georges-delerue/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2219.2,
+          "endSeconds": 2879.5,
+          "startTimecode": "00:36:59",
+          "endTimecode": "00:47:59"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
+  "titleEnablement": {
+    "sceneiq_enabled": false,
+    "approved_cards": 13,
+    "scene_cards": 8,
+    "general_cards": 5,
+    "density_target": 12,
+    "cards_per_runtime_quartile": {
+      "1": 3,
+      "2": 3,
+      "3": 2,
+      "4": 0
+    },
+    "distinct_categories": [
+      "actor",
+      "costume/prop",
+      "historical",
+      "location",
+      "music",
+      "set_design"
+    ],
+    "timeCoverage": {
+      "fraction": 1.0,
+      "uncovered": []
+    },
+    "rules": {
+      "fact_target_12_15": true,
+      "min_six_cards": true,
+      "card_in_each_quartile": false,
+      "max_40pct_single_quartile": true,
+      "min_two_categories": true,
+      "full_time_coverage": true
+    }
+  },
+  "runStats": {
+    "evidence_mode": "relaxed",
+    "passes": 1,
+    "anchors_proposed": 31,
+    "cards_emitted": 13,
+    "would_pass_strict": 7,
+    "cards_rejected": 18,
+    "errors": 0,
+    "elapsed_seconds": 439.8,
+    "models": {
+      "deep": "gemini-2.5-pro",
+      "fast": "gemini-2.5-flash"
+    }
+  }
+}

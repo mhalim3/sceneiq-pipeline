@@ -66,7 +66,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--evidence", choices=["relaxed", "strict"], default="relaxed",
                    help="relaxed: 1 editorial source suffices, weak beats drop; "
                         "strict: PRD-exact gates (safety/spoiler identical in both)")
-    p.add_argument("--workers", type=int, default=8, help="parallel anchor workers")
+    p.add_argument("--workers", type=int, default=12, help="parallel anchor workers")
     p.add_argument("--moments", metavar="PATH",
                    help="Tubi Moments JSON for this title — real scene data replaces "
                         "model-reconstructed scene structure and timecodes")

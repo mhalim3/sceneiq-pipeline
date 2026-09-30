@@ -1,0 +1,4806 @@
+{
+  "film": {
+    "title": "Beauty Shop",
+    "year": 2005,
+    "runtime_minutes": 105,
+    "duration_sec": 6322.107458333333,
+    "content_rating": "PG_13",
+    "input_prompt": "Beauty Shop",
+    "anchor_source": "tubi_moments"
+  },
+  "candidates": [
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "scene",
+        "factCategory": "actor",
+        "shortVersion": "Alfre Woodard's character recites Maya Angelou's \"Phenomenal Women.\"",
+        "longDescription": "Alfre Woodard's character recites Maya Angelou's \"Phenomenal Women.\" The other women in the shop join her when she quotes \"Still I Rise.\"",
+        "sources": [
+          {
+            "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 217] 00:34:59–00:35:19\nsummary: The video shows women in a hair salon engaging in conversation, sharing personal stories with a humorous tone, alongside close-up shots of a woman singing or speaking into a microphone, creating a lively and social atmosphere.\ncast on screen: Alicia Silverstone, Queen Latifah, Alfre Woodard",
+          "anchorElement": "Alfre Woodard",
+          "approxTimecode": "00:34:59",
+          "runtimeFraction": 0.332,
+          "runtimeThird": 1,
+          "runtimeQuartile": 2
+        },
+        "displayWindows": [
+          {
+            "startSeconds": 2099.2,
+            "endSeconds": 2179.2,
+            "startTimecode": "00:34:59",
+            "endTimecode": "00:36:19"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "[scene 217] 00:34:59–00:35:19\nsummary: The video shows women in a hair salon engaging in conversation, sharing personal stories with a humorous tone, alongside close-up shots of a woman singing or speaking into a microphone, creating a lively and social atmosphere.\ncast on screen: Alicia Silverstone, Queen Latifah, Alfre Woodard",
+        "anchor_element": "Alfre Woodard",
+        "runtime_fraction": 0.33204467637337626,
+        "approx_timecode": "00:34:59",
+        "category_guess": "actor",
+        "search_hint": "The significance of Alfre Woodard's character, Ms. Josephine, reciting poetry by Maya Angelou, and how this cultural touchstone was incorporated into the film.",
+        "search_queries": [
+          "Alfre Woodard recites Maya Angelou in Beauty Shop",
+          "what poem does Ms Josephine recite in Beauty Shop",
+          "Beauty Shop movie Maya Angelou reference"
+        ],
+        "end_fraction": 0.33520474472057477,
+        "scope": "scene",
+        "origin": "anchor_discovery",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Alfre Woodard",
+            "Maya Angelou",
+            "Phenomenal Women",
+            "Miss Josephine",
+            "Still I Rise",
+            "Beauty Shop",
+            "Collider",
+            "Nylon"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.darkhorizons.com/queen-latifah-for-beauty-shop/",
+          "title": "darkhorizons.com",
+          "domain": "darkhorizons.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ign.com/articles/2005/03/30/interview-queen-latifah",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movieweb.com/beauty-shop-dvd-review/",
+          "title": "movieweb.com",
+          "domain": "movieweb.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundandvision.com/dvdreviews/1005beauty",
+          "title": "soundandvision.com",
+          "domain": "soundandvision.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.thebigmoviehouse.com/2018/09/beauty-shop-2005.html",
+          "title": "thebigmoviehouse.com",
+          "domain": "thebigmoviehouse.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Alfre Woodard",
+            "Maya Angelou",
+            "Phenomenal Women",
+            "Miss Josephine",
+            "Still I Rise",
+            "Beauty Shop",
+            "Collider",
+            "Nylon"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Alfre Woodard plays the character Miss Josephine in the film.",
+          "sourceUrl": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "supporting_passage": "Alfre Woodard Ms. Josephine"
+        },
+        {
+          "beat": "Her character, Miss Josephine, recites \"Phenomenal Women\" by Maya Angelou.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": "Miss Josephine, played by Alfre Woodard, recites \"Phenomenal Women\""
+        },
+        {
+          "beat": "The other Black women in the shop join her when she starts quoting \"Still I Rise.\"",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": "she's joined by all the Black women in the shop when she starts quoting \"Still I Rise.\""
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 68 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "general",
+        "shortVersion": "Beauty Shop is a spin-off of the Barbershop films, where the main character inherited his business.",
+        "longDescription": "Beauty Shop is a spin-off of the Barbershop films, where the main character inherited his business. Gina Norris first appeared in Barbershop 2 before getting her own movie.",
+        "sources": [
+          {
+            "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.reelingreviews.com/reviews/barbershop-2/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://aalbc.com/film-reviews/barbershop-2",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 108] 00:17:36–00:17:55\nsummary: The clip shows a conversation among women inside a beauty shop, discussing the challenges and blessings of inheriting the business, with a mood that mixes frustration and acceptance in a warm, intimate setting.",
+          "anchorElement": "inheriting the business",
+          "approxTimecode": "00:17:36",
+          "runtimeFraction": 0.167,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 108] 00:17:36–00:17:55\nsummary: The clip shows a conversation among women inside a beauty shop, discussing the challenges and blessings of inheriting the business, with a mood that mixes frustration and acceptance in a warm, intimate setting.",
+        "anchor_element": "inheriting the business",
+        "runtime_fraction": 0.16706140032590266,
+        "approx_timecode": "00:17:36",
+        "category_guess": "filming",
+        "search_hint": "The fact that 'Beauty Shop' is a spin-off from the 'Barbershop' film series, where Queen Latifah's character, Gina, was first introduced.",
+        "search_queries": [
+          "Is Beauty Shop a spin-off of Barbershop",
+          "Queen Latifah character in Barbershop 2",
+          "Beauty Shop movie franchise connection"
+        ],
+        "end_fraction": 0.17012910759405986,
+        "scope": "scene",
+        "origin": "anchor_discovery",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.reelingreviews.com/reviews/barbershop-2/",
+          "title": "reelingreviews.com",
+          "domain": "reelingreviews.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.the-numbers.com/movie/Beauty-Shop",
+          "title": "the-numbers.com",
+          "domain": "the-numbers.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.thebigmoviehouse.com/2018/09/beauty-shop-2005.html",
+          "title": "thebigmoviehouse.com",
+          "domain": "thebigmoviehouse.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.lololovesfilms.com/2016/04/movie-review-beauty-shop-2005.html",
+          "title": "lololovesfilms.com",
+          "domain": "lololovesfilms.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://aalbc.com/film-reviews/barbershop-2",
+          "title": "aalbc.com",
+          "domain": "aalbc.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Beauty Shop is a spin-off of sorts to the Barbershop and Barbershop 2: Back in Business film series.",
+          "sourceUrl": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Calvin Palmer, the main character of the Barbershop films, inherited his barbershop from his late father.",
+          "sourceUrl": "https://www.reelingreviews.com/reviews/barbershop-2/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Queen Latifah's character Gina Norris, the star of Beauty Shop, first appeared in a cameo role in Barbershop 2 as a sharp-tongued stylist at the beauty shop next door.",
+          "sourceUrl": "https://aalbc.com/film-reviews/barbershop-2",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": false
+        },
+        "rubric": {},
+        "curiosity": {},
+        "rejection_reasons": [
+          "contract: shortVersion 99 chars (hard cap 80)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "scene",
+        "factCategory": "actor",
+        "shortVersion": "Alicia Silverstone perfected a Blueridge, Georgia accent for Lynn.",
+        "longDescription": "Alicia Silverstone perfected a Blueridge, Georgia accent for Lynn. She worked with a dialect coach to get the specific sound for her character.",
+        "sources": [
+          {
+            "url": "https://www.cbsnews.com/news/beauty-for-alicia-silverstone/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 62] 00:09:55–00:10:19\nsummary: The video shows a woman discussing plans for a large dinner party with caterers and play dates for kids, followed by scenes in a busy hair salon where a woman reacts with disgust to a hair treatment, reflecting a mix of social planning and personal conflict.\ncast on screen: Queen Latifah, Andie Macdowell, Alicia Silverstone",
+          "anchorElement": "Alicia Silverstone",
+          "approxTimecode": "00:09:55",
+          "runtimeFraction": 0.094,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "displayWindows": [
+          {
+            "startSeconds": 595.1,
+            "endSeconds": 679.3,
+            "startTimecode": "00:09:55",
+            "endTimecode": "00:11:19"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "[scene 62] 00:09:55–00:10:19\nsummary: The video shows a woman discussing plans for a large dinner party with caterers and play dates for kids, followed by scenes in a busy hair salon where a woman reacts with disgust to a hair treatment, reflecting a mix of social planning and personal conflict.\ncast on screen: Queen Latifah, Andie Macdowell, Alicia Silverstone",
+        "anchor_element": "Alicia Silverstone",
+        "runtime_fraction": 0.09412913398293958,
+        "approx_timecode": "00:09:55",
+        "category_guess": "actor",
+        "search_hint": "Information on how Alicia Silverstone, famous as Cher from 'Clueless,' transformed into the Southern-accented, cornrow-wearing stylist Lynn.",
+        "search_queries": [
+          "Alicia Silverstone southern accent Beauty Shop",
+          "Alicia Silverstone role as Lynn in Beauty Shop",
+          "Alicia Silverstone cornrows Beauty Shop"
+        ],
+        "end_fraction": 0.09796211876315321,
+        "scope": "scene",
+        "origin": "anchor_discovery",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20040514/features/setvisitbeautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.cbsnews.com/news/beauty-for-alicia-silverstone/",
+          "title": "cbsnews.com",
+          "domain": "cbsnews.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Alicia Silverstone",
+            "Blueridge",
+            "Georgia",
+            "Lynn",
+            "Beauty Shop",
+            "CBS News",
+            "The Early Show",
+            "Rene Syler",
+            "George",
+            "Kevin Bacon",
+            "Gina",
+            "Queen Latifah",
+            "Rand",
+            "Randy White",
+            "Golden Touch salon",
+            "Inglewood",
+            "Calif."
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.cinema-crazed.com/blog/2018/09/19/beauty-shop-2005-blu-ray/",
+          "title": "cinema-crazed.com",
+          "domain": "cinema-crazed.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m623/beauty-shop",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050401/reviews/beautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Alicia Silverstone plays Lynn, a hairdresser trying to fit in at an African-American salon.",
+          "sourceUrl": "https://www.cbsnews.com/news/beauty-for-alicia-silverstone/",
+          "supporting_passage": "she plays a hairdresser trying to fit in at an African-American salon."
+        },
+        {
+          "beat": "To prepare for her role as Lynn, Silverstone worked with a dialect coach to perfect an accent from Blueridge, Georgia.",
+          "sourceUrl": "https://www.cbsnews.com/news/beauty-for-alicia-silverstone/",
+          "supporting_passage": "worked with a dialect coach to perfect an accent from Blueridge, Ga."
+        },
+        {
+          "beat": "Silverstone chose the Blueridge accent because the voice from that obscure place in Georgia was \"hilarious\" and \"so much fun.\"",
+          "sourceUrl": "https://www.cbsnews.com/news/beauty-for-alicia-silverstone/",
+          "supporting_passage": "voice from Blueridge was hilarious,\" she says. \"It was just so much fun."
+        },
+        {
+          "beat": "The entire cast of Beauty Shop had to attend a beauty shop school to prepare for their roles.",
+          "sourceUrl": "https://www.cbsnews.com/news/beauty-for-alicia-silverstone/",
+          "supporting_passage": "Everybody in the cast had to actually attend a beauty shop school to prepare for the role"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 66 chars (target 50-60, cap 80)",
+          "relaxed: dropped beats [4] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "general",
+        "shortVersion": "This lively salon was once a rundown mess, full of \"horrible décor.\"",
+        "longDescription": "This lively salon was once a rundown mess, full of \"horrible décor.\" Gina and Lynn joked it looked like \"someone ate up the 1970’s and threw them up all over here.\"",
+        "sources": [
+          {
+            "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 279] 00:44:46–00:45:19\nsummary: The video shows a group of women in a salon or barbershop setting sharing and enjoying food while engaging in lighthearted, supportive conversation, creating a warm and friendly atmosphere.\ncast on screen: Queen Latifah, Andie Macdowell, Alicia Silverstone",
+          "anchorElement": "salon or barbershop setting",
+          "approxTimecode": "00:44:46",
+          "runtimeFraction": 0.425,
+          "runtimeThird": 2,
+          "runtimeQuartile": 2
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 279] 00:44:46–00:45:19\nsummary: The video shows a group of women in a salon or barbershop setting sharing and enjoying food while engaging in lighthearted, supportive conversation, creating a warm and friendly atmosphere.\ncast on screen: Queen Latifah, Andie Macdowell, Alicia Silverstone",
+        "anchor_element": "salon or barbershop setting",
+        "runtime_fraction": 0.4248675608098747,
+        "approx_timecode": "00:44:46",
+        "category_guess": "set_design",
+        "search_hint": "Behind-the-scenes details on whether Gina's salon was a real, functioning salon or a meticulously crafted set built for the movie.",
+        "search_queries": [
+          "Beauty Shop movie salon set design",
+          "was the salon in Beauty Shop real",
+          "production design for Gina's salon in Beauty Shop"
+        ],
+        "end_fraction": 0.43015853119495445,
+        "scope": "scene",
+        "origin": "anchor_discovery",
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20040514/features/setvisitbeautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.thebigmoviehouse.com/2018/09/beauty-shop-2005.html",
+          "title": "thebigmoviehouse.com",
+          "domain": "thebigmoviehouse.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "title": "movieweb.com",
+          "domain": "movieweb.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050401/reviews/beautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://genery.io/title/beauty-shop-2005",
+          "title": "genery.io",
+          "domain": "genery.io",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Gina's new salon was initially described as having \"horrible décor and general decrepitude.\"",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Gina and her co-worker Lynn joked that the salon \"looks like someone ate up the 1970’s and threw them up all over here.\"",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The film highlights beauty shop culture, including stylists reading tarot cards and a woman selling food like greens, fish dinners, and monkey bread in the shop.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": false
+        },
+        "rubric": {},
+        "curiosity": {},
+        "rejection_reasons": [
+          "contract: field counts/category/sources out of spec"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "actor",
+        "shortVersion": "Djimon Hounsou plays Joe, the electrician who lives upstairs.",
+        "longDescription": "Djimon Hounsou plays Joe, the electrician who lives upstairs. Joe is also an aspiring piano player who helps Gina with her shop's electrical issues.",
+        "sources": [
+          {
+            "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.blackfilm.com/20050401/reviews/beautyshop.shtml",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 124] 00:20:19–00:20:39\nsummary: Two adults discuss the cost and process of repairing or upgrading wiring in a home, set in a domestic environment with a casual, problem-solving mood.\ncast on screen: Queen Latifah, Djimon Hounsou",
+          "anchorElement": "Djimon Hounsou",
+          "approxTimecode": "00:20:19",
+          "runtimeFraction": 0.193,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 124] 00:20:19–00:20:39\nsummary: Two adults discuss the cost and process of repairing or upgrading wiring in a home, set in a domestic environment with a casual, problem-solving mood.\ncast on screen: Queen Latifah, Djimon Hounsou",
+        "anchor_element": "Djimon Hounsou",
+        "runtime_fraction": 0.19284993303821768,
+        "approx_timecode": "00:20:19",
+        "category_guess": "actor",
+        "search_hint": "The story behind casting two-time Oscar nominee Djimon Hounsou, known for intense dramas, as the romantic lead and classical pianist in this comedy.",
+        "search_queries": [
+          "did Djimon Hounsou play piano in Beauty Shop",
+          "Djimon Hounsou role in Beauty Shop movie",
+          "Djimon Hounsou romantic comedy roles"
+        ],
+        "end_fraction": 0.19611555690432053,
+        "scope": "scene",
+        "origin": "anchor_discovery",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsider.com/djimon-hounsou-movies-career-timeline-2023-3",
+          "title": "businessinsider.com",
+          "domain": "businessinsider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Djimon Hounsou",
+            "Joe",
+            "Gina",
+            "Vanessa",
+            "Beauty Shop",
+            "MGM",
+            "blackfilm.com",
+            "PopMatters"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Djimon Hounsou",
+            "Joe",
+            "Gina",
+            "Vanessa",
+            "Beauty Shop",
+            "MGM",
+            "blackfilm.com",
+            "PopMatters"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m623/beauty-shop",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050401/reviews/beautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Djimon Hounsou",
+            "Joe",
+            "Gina",
+            "Vanessa",
+            "Beauty Shop",
+            "MGM",
+            "blackfilm.com",
+            "PopMatters"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.tvguide.com/movies/beauty-shop/cast/2030014498/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Djimon Hounsou portrays Joe, an electrician in the film.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Joe lives above the beauty shop.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Joe is also an aspiring piano player.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Joe, as the local handyman, helps Gina when electrical problems threaten her shop.",
+          "sourceUrl": "https://www.blackfilm.com/20050401/reviews/beautyshop.shtml",
+          "supporting_passage": "When electrical problems arrive that may cause her to lose the shop, there's the local handyman and neighbor Joe (Hounsou) to save the day"
+        },
+        {
+          "beat": "He also encourages Gina's daughter, Vanessa, in her piano playing.",
+          "sourceUrl": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "supporting_passage": "offers young piano prodigy Vanessa just the encouragement she needs: “Follow your heart, and your fingers will follow.”"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 0,
+          "primitive_conformance": 2,
+          "viewer_value": 0,
+          "clarity": 0,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 2 bound+supported beats remain (need 3)",
+          "rubric: factual_accuracy 0/2 (must be >=1)",
+          "rubric: scene_grounding 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 61 chars (target 50-60, cap 80)",
+          "rubric low (relaxed): ['viewer_value', 'clarity']"
+        ],
+        "judge_notes": "Beats 0, 1, and 2 are not entailed because their supporting source (moviemagg.blogspot.com) is classified as 'discovery', which cannot be used to support material claims. As a result, the shortVersion and longDescription contain claims that are not supported by entailed beats, leading to failures in factual accuracy, scene grounding, viewer value, clarity, and summary entailment."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "scene",
+        "factCategory": "actor",
+        "shortVersion": "Kevin Bacon's role as Jorge was a wild one.",
+        "longDescription": "Kevin Bacon's role as Jorge was a wild one. He only worked on the film for six days.",
+        "sources": [
+          {
+            "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://nomorelatefeespodcast.com/episode/beauty-shop",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 31] 00:04:56–00:05:17\nsummary: The clip shows a casual, friendly interaction in a beauty salon where characters discuss Botox and compliment each other, creating a relaxed and sociable atmosphere.\ncast on screen: Queen Latifah, Mena Suvari, Kevin Bacon",
+          "anchorElement": "Kevin Bacon",
+          "approxTimecode": "00:04:56",
+          "runtimeFraction": 0.047,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "displayWindows": [
+          {
+            "startSeconds": 296.2,
+            "endSeconds": 377.9,
+            "startTimecode": "00:04:56",
+            "endTimecode": "00:06:17"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "[scene 31] 00:04:56–00:05:17\nsummary: The clip shows a casual, friendly interaction in a beauty salon where characters discuss Botox and compliment each other, creating a relaxed and sociable atmosphere.\ncast on screen: Queen Latifah, Mena Suvari, Kevin Bacon",
+        "anchor_element": "Kevin Bacon",
+        "runtime_fraction": 0.0468468587337296,
+        "approx_timecode": "00:04:56",
+        "category_guess": "actor",
+        "search_hint": "Details on how Kevin Bacon, known for more dramatic roles, developed his over-the-top Austrian accent and flamboyant persona for the character of Jorge.",
+        "search_queries": [
+          "Kevin Bacon Beauty Shop accent preparation",
+          "Kevin Bacon on playing Jorge Christophe",
+          "Beauty Shop movie Kevin Bacon character inspiration"
+        ],
+        "end_fraction": 0.05027741309812045,
+        "scope": "scene",
+        "origin": "anchor_discovery",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kevin Bacon",
+            "Jorge",
+            "Beauty Shop",
+            "Queen Latifah",
+            "2005",
+            "six days"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.theguardian.com/film/movie/105976/beauty.shop",
+          "title": "theguardian.com",
+          "domain": "theguardian.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://ineapple.com/known_pass1",
+          "title": "ineapple.com",
+          "domain": "ineapple.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://nomorelatefeespodcast.com/episode/beauty-shop",
+          "title": "nomorelatefeespodcast.com",
+          "domain": "nomorelatefeespodcast.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kevin Bacon",
+            "Jorge",
+            "Beauty Shop",
+            "Queen Latifah",
+            "2005",
+            "six days"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movieweb.com/beauty-shop-dvd-review/",
+          "title": "movieweb.com",
+          "domain": "movieweb.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundandvision.com/dvdreviews/1005beauty",
+          "title": "soundandvision.com",
+          "domain": "soundandvision.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.reeltalkreviews.com/browse/viewitem.asp?type=feature&id=171",
+          "title": "reeltalkreviews.com",
+          "domain": "reeltalkreviews.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Kevin Bacon played the \"over-the-top boss, Jorge\" in the film.",
+          "sourceUrl": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "supporting_passage": "But after repeatedly butting heads with her shady, over-the-top boss, Jorge, Norris sets out to create her own salon -- even snagging a few of Jorge's employees and clients."
+        },
+        {
+          "beat": "Kevin Bacon described his role as a hairdresser where the filmmakers \"let me just go wild.\"",
+          "sourceUrl": "https://nomorelatefeespodcast.com/episode/beauty-shop",
+          "supporting_passage": "I did this movie with Queen Latifah. It's called Beauty Shop. I have a small part, a supporting part, but I play a hairdresser and they let me just go wild. It was fantastic."
+        },
+        {
+          "beat": "He enjoyed working on the movie, despite only working on it for six days.",
+          "sourceUrl": "https://nomorelatefeespodcast.com/episode/beauty-shop",
+          "supporting_passage": "Kevin Bacon, when he was interviewed back in 2005, I think before the movie came out, he mentioned that he really enjoyed working on the movie and finding it a fun experience, despite only working on it for six days."
+        },
+        {
+          "beat": "Years later, Kevin Bacon \"donned the wig he wore in this movie and dressed like him and took a picture with him and his wife.\"",
+          "sourceUrl": "https://nomorelatefeespodcast.com/episode/beauty-shop",
+          "supporting_passage": "I think it was like last year or the year before he actually donned the wig he wore in this movie and dressed like him and took a picture with him and his wife."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "A subtle Easter egg for Kevin Bacon fans appears as the video store next to Gina's salon is named \"The Big Picture,\" which is also the title of a 1989 film starring Bacon.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "A subtle Easter egg for Kevin Bacon fans appears as the video store next to Gina's salon is named \"The Big Picture,\" which is also the title of a 1989 film starring Bacon.",
+        "search_queries": [
+          "Beauty Shop The Big Picture Easter egg",
+          "Kevin Bacon The Big Picture movie",
+          "Beauty Shop (2005) hidden details"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "location",
+        "shortVersion": "The restaurant 'Catfish Rita' is named for its catfish seller.",
+        "longDescription": "The restaurant 'Catfish Rita' is named for its catfish seller. Andie MacDowell's character, Terri, loves the catfish sold by Rita.",
+        "sources": [
+          {
+            "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 388] 01:03:57–01:04:18\nsummary: The video shows people enjoying a meal at a restaurant called 'Catfish Rita,' with a lively and warm atmosphere as they discuss the rich, fatty ingredients in a plate of greens.\ncast on screen: Andie Macdowell",
+          "anchorElement": "restaurant called 'Catfish Rita'",
+          "approxTimecode": "01:03:57",
+          "runtimeFraction": 0.607,
+          "runtimeThird": 2,
+          "runtimeQuartile": 3
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 388] 01:03:57–01:04:18\nsummary: The video shows people enjoying a meal at a restaurant called 'Catfish Rita,' with a lively and warm atmosphere as they discuss the rich, fatty ingredients in a plate of greens.\ncast on screen: Andie Macdowell",
+        "anchor_element": "restaurant called 'Catfish Rita'",
+        "runtime_fraction": 0.6070497892188232,
+        "approx_timecode": "01:03:57",
+        "category_guess": "location",
+        "search_hint": "Whether 'Catfish Rita's' is a real restaurant in Atlanta that viewers can visit, or if it was a location created specifically for the film.",
+        "search_queries": [
+          "is catfish rita's a real restaurant in atlanta",
+          "Beauty Shop catfish restaurant filming location",
+          "Catfish Rita's restaurant Beauty Shop movie"
+        ],
+        "end_fraction": 0.6103483991845836,
+        "scope": "scene",
+        "origin": "anchor_discovery",
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Rita",
+            "Sheryl Underwood",
+            "Andie MacDowell",
+            "Terri",
+            "Beauty Shop",
+            "Atlanta",
+            "Nylon",
+            "MovieWeb",
+            "Mark Gabrish Conlan"
+          ],
+          "verbatim_misses": [
+            "Catfish Rita"
+          ]
+        },
+        {
+          "url": "http://www.blackfilm.com/20040514/features/setvisitbeautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ritasice.com/location/ritas-of-perimeter-ga/",
+          "title": "ritasice.com",
+          "domain": "ritasice.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.thebigmoviehouse.com/2018/09/beauty-shop-2005.html",
+          "title": "thebigmoviehouse.com",
+          "domain": "thebigmoviehouse.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Rita",
+            "Sheryl Underwood",
+            "Andie MacDowell",
+            "Terri",
+            "Beauty Shop",
+            "Atlanta",
+            "Nylon",
+            "MovieWeb",
+            "Mark Gabrish Conlan"
+          ],
+          "verbatim_misses": [
+            "Catfish Rita"
+          ]
+        },
+        {
+          "url": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "title": "movieweb.com",
+          "domain": "movieweb.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Rita",
+            "Sheryl Underwood",
+            "Andie MacDowell",
+            "Terri",
+            "Beauty Shop",
+            "Atlanta",
+            "Nylon",
+            "MovieWeb",
+            "Mark Gabrish Conlan"
+          ],
+          "verbatim_misses": [
+            "Catfish Rita"
+          ]
+        },
+        {
+          "url": "https://www.lololovesfilms.com/2016/04/movie-review-beauty-shop-2005.html",
+          "title": "lololovesfilms.com",
+          "domain": "lololovesfilms.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The restaurant is named after the character Rita, played by Sheryl Underwood, who sells catfish from a cart.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The film also features a woman selling other food items like greens and fish dinners in the shop.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": "the woman who sells food like greens, fish dinners, and monkey bread in the shop"
+        },
+        {
+          "beat": "The film's setting in Atlanta includes street carts selling catfish and greens, reflecting local culture.",
+          "sourceUrl": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "supporting_passage": "Beauty Shop takes place in the city of Atlanta, where catfish and greens are sold in street carts"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 0,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 2 bound+supported beats remain (need 3)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 62 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['Catfish Rita'] in fetched bodies",
+          "rubric low (relaxed): ['viewer_value']"
+        ],
+        "judge_notes": "The core claim that the restaurant 'Catfish Rita' is named after the character Rita is not explicitly stated in the provided source for Beat 0. The source only mentions Rita selling catfish from a cart, not that the restaurant's name is derived from her. This makes the main premise of the card unentailed, leading to a factual accuracy failure. Consequently, viewer value is 0 and summary_entailed is false."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "general",
+        "shortVersion": "Alfre Woodard's character recites Maya Angelou's \"Phenomenal Woman.\"",
+        "longDescription": "Alfre Woodard's character recites Maya Angelou's \"Phenomenal Woman.\" Other women in the salon join her, quoting Angelou's \"Still I Rise.\"",
+        "sources": [
+          {
+            "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "http://www.afrobella.com/2014/05/30/maya-angelou-taught-me-about-beauty-with-one-poem/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 217] 00:34:59–00:35:19\nsummary: The video shows women in a hair salon engaging in conversation, sharing personal stories with a humorous tone, alongside close-up shots of a woman singing or speaking into a microphone, creating a lively and social atmosphere.\ncast on screen: Alicia Silverstone, Queen Latifah, Alfre Woodard",
+          "anchorElement": "The film features powerful moments of Black sisterhood, notably when Alfre Woodard's character recites Maya Angelou's \"Phenomenal Woman,\" joined by other women quoting \"Still I Rise.\"",
+          "approxTimecode": "00:34:59",
+          "runtimeFraction": 0.332,
+          "runtimeThird": 1,
+          "runtimeQuartile": 2
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 217] 00:34:59–00:35:19\nsummary: The video shows women in a hair salon engaging in conversation, sharing personal stories with a humorous tone, alongside close-up shots of a woman singing or speaking into a microphone, creating a lively and social atmosphere.\ncast on screen: Alicia Silverstone, Queen Latifah, Alfre Woodard",
+        "anchor_element": "The film features powerful moments of Black sisterhood, notably when Alfre Woodard's character recites Maya Angelou's \"Phenomenal Woman,\" joined by other women quoting \"Still I Rise.\"",
+        "runtime_fraction": 0.33204467637337626,
+        "approx_timecode": "00:34:59",
+        "category_guess": "filming",
+        "search_hint": "The film features powerful moments of Black sisterhood, notably when Alfre Woodard's character recites Maya Angelou's \"Phenomenal Woman,\" joined by other women quoting \"Still I Rise.\"",
+        "search_queries": [
+          "Beauty Shop Maya Angelou poetry",
+          "Alfre Woodard Phenomenal Woman Beauty Shop",
+          "Still I Rise Beauty Shop (2005)"
+        ],
+        "end_fraction": 0.33520474472057477,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20040514/features/setvisitbeautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.afrobella.com/2014/05/30/maya-angelou-taught-me-about-beauty-with-one-poem/",
+          "title": "afrobella.com",
+          "domain": "afrobella.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenanarchy.com/2005/03/beauty-shop-review.html",
+          "title": "screenanarchy.com",
+          "domain": "screenanarchy.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Alfre Woodard's character, Miss Josephine, recites Maya Angelou's \"Phenomenal Woman\" in the film.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Miss Josephine is joined by other Black women in the shop who quote Maya Angelou's \"Still I Rise.\"",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Witnessing a group of Black women recite these poems in unison creates powerful and special moments in the film.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Maya Angelou's \"Phenomenal Woman\" was first published in 1978 and later included in her poetry book \"And Still I Rise.\"",
+          "sourceUrl": "http://www.afrobella.com/2014/05/30/maya-angelou-taught-me-about-beauty-with-one-poem/",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": false
+        },
+        "rubric": {},
+        "curiosity": {},
+        "rejection_reasons": [
+          "contract: field counts/category/sources out of spec"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "general",
+        "shortVersion": "This film is a spin-off of the Barbershop series, starring Queen Latifah.",
+        "longDescription": "This film is a spin-off of the Barbershop series, starring Queen Latifah. She reprises her role as Gina Norris, who was first introduced in \"Barbershop 2.\"",
+        "sources": [
+          {
+            "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.darkhorizons.com/queen-latifah-for-beauty-shop/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "http://www.blackfilm.com/20040514/features/setvisitbeautyshop.shtml",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 15] 00:02:11–00:02:41\nsummary: The clip shows a quiet suburban neighborhood with people walking and interacting near houses and cars, accompanied by closing credits, indicating a peaceful, transitional moment in the video.\ncast on screen: Queen Latifah",
+          "anchorElement": "\"Beauty Shop\" is a spin-off from the popular \"Barbershop\" film series, with Queen Latifah reprising her role as Gina Norris, a character first introduced in \"Barbershop 2: Back in Business.\"",
+          "approxTimecode": "00:02:11",
+          "runtimeFraction": 0.021,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 15] 00:02:11–00:02:41\nsummary: The clip shows a quiet suburban neighborhood with people walking and interacting near houses and cars, accompanied by closing credits, indicating a peaceful, transitional moment in the video.\ncast on screen: Queen Latifah",
+        "anchor_element": "\"Beauty Shop\" is a spin-off from the popular \"Barbershop\" film series, with Queen Latifah reprising her role as Gina Norris, a character first introduced in \"Barbershop 2: Back in Business.\"",
+        "runtime_fraction": 0.020814228883948304,
+        "approx_timecode": "00:02:11",
+        "category_guess": "historical",
+        "search_hint": "\"Beauty Shop\" is a spin-off from the popular \"Barbershop\" film series, with Queen Latifah reprising her role as Gina Norris, a character first introduced in \"Barbershop 2: Back in Business.\"",
+        "search_queries": [
+          "Beauty Shop spin-off Barbershop",
+          "Queen Latifah Gina Norris Barbershop 2",
+          "Beauty Shop (2005) franchise connection"
+        ],
+        "end_fraction": 0.025537838354917238,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.darkhorizons.com/queen-latifah-for-beauty-shop/",
+          "title": "darkhorizons.com",
+          "domain": "darkhorizons.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ign.com/articles/2005/03/30/interview-queen-latifah",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20040514/features/setvisitbeautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.thebigmoviehouse.com/2018/09/beauty-shop-2005.html",
+          "title": "thebigmoviehouse.com",
+          "domain": "thebigmoviehouse.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "\"Beauty Shop\" is a spin-off from the \"Barbershop\" film series.",
+          "sourceUrl": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Queen Latifah reprises her role as Gina Norris, a character first introduced in \"Barbershop 2.\"",
+          "sourceUrl": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The filmmakers wanted to create something new and establish Gina's character, as she wasn't fully developed in her previous appearance.",
+          "sourceUrl": "https://www.darkhorizons.com/queen-latifah-for-beauty-shop/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Gina moves to Atlanta because her daughter was accepted into a performing arts school there.",
+          "sourceUrl": "http://www.blackfilm.com/20040514/features/setvisitbeautyshop.shtml",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": false
+        },
+        "rubric": {},
+        "curiosity": {},
+        "rejection_reasons": [
+          "contract: field counts/category/sources out of spec"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "scene",
+        "factCategory": "actor",
+        "shortVersion": "Vanessa's actress, Paige Hurd, learned piano just for this role.",
+        "longDescription": "Vanessa's actress, Paige Hurd, learned piano just for this role. She had never played a lick of piano before filming.",
+        "sources": [
+          {
+            "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "http://www.jowharahfilms.com/aloha.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 419] 01:08:59–01:09:18\nsummary: The clip shows a warm, intimate scene where a man and a young girl are at a piano, receiving encouragement and musical guidance from a woman, creating a mood of learning and emotional connection in a cozy indoor environment.\ncast on screen: Queen Latifah",
+          "anchorElement": "young girl are at a piano",
+          "approxTimecode": "01:08:59",
+          "runtimeFraction": 0.655,
+          "runtimeThird": 2,
+          "runtimeQuartile": 3
+        },
+        "displayWindows": [
+          {
+            "startSeconds": 4139.4,
+            "endSeconds": 4218.4,
+            "startTimecode": "01:08:59",
+            "endTimecode": "01:10:18"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "[scene 419] 01:08:59–01:09:18\nsummary: The clip shows a warm, intimate scene where a man and a young girl are at a piano, receiving encouragement and musical guidance from a woman, creating a mood of learning and emotional connection in a cozy indoor environment.\ncast on screen: Queen Latifah",
+        "anchor_element": "young girl are at a piano",
+        "runtime_fraction": 0.6547542865436505,
+        "approx_timecode": "01:08:59",
+        "category_guess": "filming",
+        "search_hint": "The movie magic behind the piano-playing scenes, specifically whether actress Paige Hurd (who plays Vanessa) learned to play or if a musical double was used.",
+        "search_queries": [
+          "did Paige Hurd play piano in Beauty Shop",
+          "who played piano for Vanessa in Beauty Shop",
+          "Beauty Shop movie piano scenes"
+        ],
+        "end_fraction": 0.6577560216124925,
+        "scope": "scene",
+        "origin": "anchor_discovery",
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Vanessa",
+            "Paige Hurd",
+            "Gina",
+            "Atlanta",
+            "Beauty Shop",
+            "MGM",
+            "Queen Latifah",
+            "Djimon Hounsou"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundandvision.com/dvdreviews/1005beauty",
+          "title": "soundandvision.com",
+          "domain": "soundandvision.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.jowharahfilms.com/aloha.html",
+          "title": "jowharahfilms.com",
+          "domain": "jowharahfilms.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Vanessa",
+            "Paige Hurd",
+            "Gina",
+            "Atlanta",
+            "Beauty Shop",
+            "MGM",
+            "Queen Latifah",
+            "Djimon Hounsou"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m623/beauty-shop",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050401/reviews/beautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Gina moved to Atlanta so her daughter Vanessa, played by Paige Hurd, could attend a prestigious music school to study classical piano.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": "It starred Queen Latifah as Gina, a carry-over character from Barbershop 2 , who has moved from Chicago to Atlanta to get her daughter Vanessa (Paige Hurd, who, praise be, looks enough like Queen Latifah we can actually believe they are mother and daughter) into a prestigious music school so she can study classical piano"
+        },
+        {
+          "beat": "The role of Vanessa required actress Paige Hurd to play in a piano recital.",
+          "sourceUrl": "http://www.jowharahfilms.com/aloha.html",
+          "supporting_passage": "However, it was the role of Vanessa in “Beauty Shop” (MGM) where starred opposite two Oscar nominated actors (Djimon Hounsou and Queen Latifah) that she proved her talent as an actress is encompassed of many abilities. As Vanessa, the role required her to play in a piano recital"
+        },
+        {
+          "beat": "Actress Paige Hurd had never played a lick of the piano before taking on the role.",
+          "sourceUrl": "http://www.jowharahfilms.com/aloha.html",
+          "supporting_passage": "As Vanessa, the role required her to play in a piano recital, yet Paige had never played a lick of the piano."
+        },
+        {
+          "beat": "Paige Hurd quickly learned the piano to provide the true depth the character had to offer.",
+          "sourceUrl": "http://www.jowharahfilms.com/aloha.html",
+          "supporting_passage": "This determined and ambitious actress learned the piano amazingly quickly to provide the true depth the character had to offer, just so she could have the role."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 64 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "actor",
+        "shortVersion": "That's Kevin Bacon! He's almost unrecognizable as Jorge.",
+        "longDescription": "That's Kevin Bacon! He's almost unrecognizable as Jorge. He adopted a fake, intentionally bad European accent for the role.",
+        "sources": [
+          {
+            "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.moviehabit.com/essay.php?story=bacon04",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 31] 00:04:56–00:05:17\nsummary: The clip shows a casual, friendly interaction in a beauty salon where characters discuss Botox and compliment each other, creating a relaxed and sociable atmosphere.\ncast on screen: Queen Latifah, Mena Suvari, Kevin Bacon",
+          "anchorElement": "Kevin Bacon underwent a significant transformation to play the flamboyant salon owner Jorge, complete with a distinctive wig and a fake Austrian accent, secretly revealing his true origins are from Nebraska.",
+          "approxTimecode": "00:04:56",
+          "runtimeFraction": 0.047,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 31] 00:04:56–00:05:17\nsummary: The clip shows a casual, friendly interaction in a beauty salon where characters discuss Botox and compliment each other, creating a relaxed and sociable atmosphere.\ncast on screen: Queen Latifah, Mena Suvari, Kevin Bacon",
+        "anchor_element": "Kevin Bacon underwent a significant transformation to play the flamboyant salon owner Jorge, complete with a distinctive wig and a fake Austrian accent, secretly revealing his true origins are from Nebraska.",
+        "runtime_fraction": 0.0468468587337296,
+        "approx_timecode": "00:04:56",
+        "category_guess": "actor",
+        "search_hint": "Kevin Bacon underwent a significant transformation to play the flamboyant salon owner Jorge, complete with a distinctive wig and a fake Austrian accent, secretly revealing his true origins are from Nebraska.",
+        "search_queries": [
+          "Kevin Bacon Beauty Shop Jorge accent",
+          "Kevin Bacon Jorge wig Beauty Shop",
+          "Jorge from Nebraska Beauty Shop (2005)"
+        ],
+        "end_fraction": 0.05027741309812045,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.pluggedin.com/movie-reviews/beautyshop/",
+          "title": "pluggedin.com",
+          "domain": "pluggedin.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kevin Bacon",
+            "Jorge",
+            "Beauty Shop",
+            "Queen Latifah",
+            "Movie Magg",
+            "Mark Gabrish Conlan",
+            "MGM",
+            "2005",
+            "Movie Habit",
+            "Matt Anderson",
+            "John Cassavetes Award",
+            "27th Starz Denver International Film Festival",
+            "Elvis Mitchell"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20040514/features/setvisitbeautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.moviehabit.com/essay.php?story=bacon04",
+          "title": "moviehabit.com",
+          "domain": "moviehabit.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kevin Bacon",
+            "Jorge",
+            "Beauty Shop",
+            "Queen Latifah",
+            "Movie Magg",
+            "Mark Gabrish Conlan",
+            "MGM",
+            "2005",
+            "Movie Habit",
+            "Matt Anderson",
+            "John Cassavetes Award",
+            "27th Starz Denver International Film Festival",
+            "Elvis Mitchell"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.thebigmoviehouse.com/2018/09/beauty-shop-2005.html",
+          "title": "thebigmoviehouse.com",
+          "domain": "thebigmoviehouse.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.lololovesfilms.com/2016/04/movie-review-beauty-shop-2005.html",
+          "title": "lololovesfilms.com",
+          "domain": "lololovesfilms.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Kevin Bacon plays the egomaniac salon owner Jorge.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": "Gina is making ends meet by working in the hair salon owned by egomaniac queen Jorge (an almost unrecognizable Kevin Bacon)"
+        },
+        {
+          "beat": "He was \"almost unrecognizable\" in the role.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": "Gina is making ends meet by working in the hair salon owned by egomaniac queen Jorge (an almost unrecognizable Kevin Bacon)"
+        },
+        {
+          "beat": "Bacon said he \"went wild\" playing the hairdresser role.",
+          "sourceUrl": "https://www.moviehabit.com/essay.php?story=bacon04",
+          "supporting_passage": "I did this movie with Queen Latifah, it’s called Beauty Shop . I have a small part, a supporting part, but I play a hair dresser and they let me just go wild. It was fantastic."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 1,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "relaxed: dropped beats [2] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims"
+        ],
+        "judge_notes": "Beat 2, which claims Kevin Bacon adopted a fake European accent, is not supported by the provided source body. This leads to a failure in factual accuracy and summary entailment, as this claim is present in the longDescription."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "general",
+        "shortVersion": "This shop captures Black beauty culture, from tarot cards to homemade food.",
+        "longDescription": "This shop captures Black beauty culture, from tarot cards to homemade food. It also serves as a refuge where women can talk about their problems and be vulnerable.",
+        "sources": [
+          {
+            "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 279] 00:44:46–00:45:19\nsummary: The video shows a group of women in a salon or barbershop setting sharing and enjoying food while engaging in lighthearted, supportive conversation, creating a warm and friendly atmosphere.\ncast on screen: Queen Latifah, Andie Macdowell, Alicia Silverstone",
+          "anchorElement": "The film authentically portrays Black beauty shop culture, featuring details like stylists reading tarot cards, women selling homemade food, and the shop serving as a community refuge for candid conversations.",
+          "approxTimecode": "00:44:46",
+          "runtimeFraction": 0.425,
+          "runtimeThird": 2,
+          "runtimeQuartile": 2
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 279] 00:44:46–00:45:19\nsummary: The video shows a group of women in a salon or barbershop setting sharing and enjoying food while engaging in lighthearted, supportive conversation, creating a warm and friendly atmosphere.\ncast on screen: Queen Latifah, Andie Macdowell, Alicia Silverstone",
+        "anchor_element": "The film authentically portrays Black beauty shop culture, featuring details like stylists reading tarot cards, women selling homemade food, and the shop serving as a community refuge for candid conversations.",
+        "runtime_fraction": 0.4248675608098747,
+        "approx_timecode": "00:44:46",
+        "category_guess": "set_design",
+        "search_hint": "The film authentically portrays Black beauty shop culture, featuring details like stylists reading tarot cards, women selling homemade food, and the shop serving as a community refuge for candid conversations.",
+        "search_queries": [
+          "Beauty Shop (2005) authentic culture",
+          "Beauty Shop tarot cards food",
+          "Beauty Shop cultural accuracy"
+        ],
+        "end_fraction": 0.43015853119495445,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screenanarchy.com/2005/03/beauty-shop-review.html",
+          "title": "screenanarchy.com",
+          "domain": "screenanarchy.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://hunewsservice.com/news/beauty-shop-presents-a-stereotypical-portrayal/",
+          "title": "hunewsservice.com",
+          "domain": "hunewsservice.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m623/beauty-shop",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film authentically portrays Black beauty shop culture, including stylists reading tarot cards.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The shop also features women selling homemade food, such as greens, fish dinners, and monkey bread.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The beauty shop serves as a refuge where women can talk about their problems and be vulnerable.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Queen Latifah, who also produced the film, described the hairdresser as a \"therapist\" for women.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": false
+        },
+        "rubric": {},
+        "curiosity": {},
+        "rejection_reasons": [
+          "contract: field counts/category/sources out of spec"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "[scene 217] 00:34:59–00:35:19\nsummary: The video shows women in a hair salon engaging in conversation, sharing personal stories with a humorous tone, alongside close-up shots of a woman singing or speaking into a microphone, creating a lively and social atmosphere.\ncast on screen: Alicia Silverstone, Queen Latifah, Alfre Woodard",
+        "anchor_element": "Much of the film's humor stemmed from improvisation, as director Bille Woodruff and Queen Latifah encouraged actors to \"ad-lib\" and \"free flow\" during comedic scenes.",
+        "runtime_fraction": 0.33204467637337626,
+        "approx_timecode": "00:34:59",
+        "category_guess": "filming",
+        "search_hint": "Much of the film's humor stemmed from improvisation, as director Bille Woodruff and Queen Latifah encouraged actors to \"ad-lib\" and \"free flow\" during comedic scenes.",
+        "search_queries": [
+          "Beauty Shop (2005) improvisation",
+          "Bille Woodruff Queen Latifah ad-lib",
+          "Beauty Shop comedic scenes improv"
+        ],
+        "end_fraction": 0.33520474472057477,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "general",
+        "shortVersion": "Gina got her $30,000 loan by giving the officer a makeover.",
+        "longDescription": "Gina got her $30,000 loan by giving the officer a makeover. The bank employee went from frumpy to vibrant after the impromptu hair session.",
+        "sources": [
+          {
+            "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.ign.com/articles/2005/08/25/beauty-shop",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 93] 00:14:59–00:15:17\nsummary: The clip depicts a professional setting where a woman in business attire interacts with another woman, who appears to be in a more casual setting, possibly discussing a beauty shop. The mood is polite and content, set in an office or formal environment.\ncast on screen: Queen Latifah",
+          "anchorElement": "Gina secures a crucial $30,000 bank loan for her new salon by giving the loan officer an impromptu hair makeover in the bank's restroom, showcasing her exceptional skills and persuasive charm.",
+          "approxTimecode": "00:14:59",
+          "runtimeFraction": 0.142,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 93] 00:14:59–00:15:17\nsummary: The clip depicts a professional setting where a woman in business attire interacts with another woman, who appears to be in a more casual setting, possibly discussing a beauty shop. The mood is polite and content, set in an office or formal environment.\ncast on screen: Queen Latifah",
+        "anchor_element": "Gina secures a crucial $30,000 bank loan for her new salon by giving the loan officer an impromptu hair makeover in the bank's restroom, showcasing her exceptional skills and persuasive charm.",
+        "runtime_fraction": 0.14229543670297337,
+        "approx_timecode": "00:14:59",
+        "category_guess": "filming",
+        "search_hint": "Gina secures a crucial $30,000 bank loan for her new salon by giving the loan officer an impromptu hair makeover in the bank's restroom, showcasing her exceptional skills and persuasive charm.",
+        "search_queries": [
+          "Beauty Shop Gina loan makeover",
+          "Beauty Shop (2005) bank loan scene",
+          "Gina Norris hair makeover bank"
+        ],
+        "end_fraction": 0.14512564405359582,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.the-numbers.com/movie/Beauty-Shop",
+          "title": "the-numbers.com",
+          "domain": "the-numbers.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ign.com/articles/2005/08/25/beauty-shop",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m623/beauty-shop",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050401/reviews/beautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Gina secured a $30,000 bank loan for her new salon.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "She achieved this by giving the woman in charge of the desk an impromptu hair makeover.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "The hair makeover took place in the bank's restroom.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "After the makeover, the bank employee transformed from frumpy to vibrant.",
+          "sourceUrl": "https://www.ign.com/articles/2005/08/25/beauty-shop",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": false
+        },
+        "rubric": {},
+        "curiosity": {},
+        "rejection_reasons": [
+          "contract: field counts/category/sources out of spec"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "actor",
+        "shortVersion": "Queen Latifah wanted Gina to be a well-rounded Black female lead.",
+        "longDescription": "Queen Latifah wanted Gina to be a well-rounded Black female lead. As a producer, she aimed to create a new character, avoiding stereotypes.",
+        "sources": [
+          {
+            "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 15] 00:02:11–00:02:41\nsummary: The clip shows a quiet suburban neighborhood with people walking and interacting near houses and cars, accompanied by closing credits, indicating a peaceful, transitional moment in the video.\ncast on screen: Queen Latifah",
+          "anchorElement": "Queen Latifah, who also served as a producer, aimed to establish Gina Norris as a well-rounded Black female lead, showcasing entrepreneurship and sisterhood, and moving beyond typical stereotypes.",
+          "approxTimecode": "00:02:11",
+          "runtimeFraction": 0.021,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 15] 00:02:11–00:02:41\nsummary: The clip shows a quiet suburban neighborhood with people walking and interacting near houses and cars, accompanied by closing credits, indicating a peaceful, transitional moment in the video.\ncast on screen: Queen Latifah",
+        "anchor_element": "Queen Latifah, who also served as a producer, aimed to establish Gina Norris as a well-rounded Black female lead, showcasing entrepreneurship and sisterhood, and moving beyond typical stereotypes.",
+        "runtime_fraction": 0.020814228883948304,
+        "approx_timecode": "00:02:11",
+        "category_guess": "filming",
+        "search_hint": "Queen Latifah, who also served as a producer, aimed to establish Gina Norris as a well-rounded Black female lead, showcasing entrepreneurship and sisterhood, and moving beyond typical stereotypes.",
+        "search_queries": [
+          "Queen Latifah Beauty Shop producer vision",
+          "Beauty Shop (2005) themes Black female entrepreneurship",
+          "Queen Latifah Gina Norris character development"
+        ],
+        "end_fraction": 0.025537838354917238,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.darkhorizons.com/queen-latifah-for-beauty-shop/",
+          "title": "darkhorizons.com",
+          "domain": "darkhorizons.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundandvision.com/dvdreviews/1005beauty",
+          "title": "soundandvision.com",
+          "domain": "soundandvision.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Queen Latifah",
+            "Gina",
+            "Barbershop 2",
+            "Nylon",
+            "Film Monthly",
+            "Beauty Shop",
+            "Djimon Hounsou",
+            "Paige Hurd",
+            "Darnelle",
+            "Keshia Knight Pulliam",
+            "IRS",
+            "Maya Angelou",
+            "Miss Josephine",
+            "Alfre Woodard",
+            "Phenomenal Women",
+            "Still I Rise",
+            "Joe",
+            "Last Holiday",
+            "LL Cool J",
+            "Just Wright",
+            "Common",
+            "Della Reese",
+            "Octavia Spencer",
+            "Golden Brooks",
+            "Kimora Lee Simmons",
+            "LisaRaye McCoy",
+            "Sherri Shepherd",
+            "Sheryl Underwood",
+            "Girls Trip",
+            "Jada Pinkett Smith",
+            "Tiffany Haddish",
+            "Regina Hall",
+            "Nora's Hair Salon",
+            "Jenifer Lewis",
+            "Tamala Jones",
+            "Tatyana Ali",
+            "Lil' Kim",
+            "Hair Show",
+            "Mo'Nique",
+            "Gina Torres",
+            "Vivica A. Fox",
+            "2005",
+            "2020",
+            "March 30",
+            "2004",
+            "2006",
+            "2010",
+            "2026"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050401/reviews/beautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "As a producer, Queen Latifah intended to create something new with Gina, who was not fully established in Barbershop 2.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": "In an interview with Film Monthly back in 2005, Queen Latifah, who also served as one of the film's producers, spoke about the intention behind the movie. \"We kind of just wanted to create something new,\" she said. \"Gina was introduced in 'Barbershop 2 ,' but she wasn't really established. We didn't really know who she was. So now it's like who is she? Who are we creating here and what's the story, what story are we going to tell?\""
+        },
+        {
+          "beat": "Gina was developed as a well-rounded and fleshed out character, ensuring she wasn't turned into a caricature.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": "The intention was successful. Gina is a well-rounded and fleshed out character. The film also doesn't turn Gina into a caricature."
+        },
+        {
+          "beat": "The film contributed to depicting Black female entrepreneurship and Black sisterhood.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": "It gave us the following: a depiction of Black love (with Queen Latifah starring opposite Djimon Hounsou), Black female entrepreneurship, Black sisterhood, and beauty shop culture."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "claim_entailment: only 1 bound+supported beats remain (need 3)"
+        ],
+        "flags": [
+          "shortVersion 65 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "actor",
+        "shortVersion": "Djimon Hounsou's Joe was cast as Gina's \"drop-dead-gorgeous\" love interest.",
+        "longDescription": "Djimon Hounsou's Joe was cast as Gina's \"drop-dead-gorgeous\" love interest. Director Bille Woodruff wanted him to be a man who could make Queen Latifah's character \"melt in his arms.\"",
+        "sources": [
+          {
+            "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "http://www.reeltalkreviews.com/browse/viewitem.asp?type=feature&id=171",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 124] 00:20:19–00:20:39\nsummary: Two adults discuss the cost and process of repairing or upgrading wiring in a home, set in a domestic environment with a casual, problem-solving mood.\ncast on screen: Queen Latifah, Djimon Hounsou",
+          "anchorElement": "Djimon Hounsou's casting as Joe, Gina's love interest, brought on-set excitement, with cast members humorously admitting he was the \"main eye candy for the ladies.\"",
+          "approxTimecode": "00:20:19",
+          "runtimeFraction": 0.193,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 124] 00:20:19–00:20:39\nsummary: Two adults discuss the cost and process of repairing or upgrading wiring in a home, set in a domestic environment with a casual, problem-solving mood.\ncast on screen: Queen Latifah, Djimon Hounsou",
+        "anchor_element": "Djimon Hounsou's casting as Joe, Gina's love interest, brought on-set excitement, with cast members humorously admitting he was the \"main eye candy for the ladies.\"",
+        "runtime_fraction": 0.19284993303821768,
+        "approx_timecode": "00:20:19",
+        "category_guess": "actor",
+        "search_hint": "Djimon Hounsou's casting as Joe, Gina's love interest, brought on-set excitement, with cast members humorously admitting he was the \"main eye candy for the ladies.\"",
+        "search_queries": [
+          "Djimon Hounsou Beauty Shop eye candy",
+          "Beauty Shop (2005) cast reaction Djimon Hounsou",
+          "Queen Latifah Djimon Hounsou Beauty Shop"
+        ],
+        "end_fraction": 0.19611555690432053,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Djimon Hounsou",
+            "Joe",
+            "Gina",
+            "Bille Woodruff",
+            "Queen Latifah",
+            "Beauty Shop"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundandvision.com/dvdreviews/1005beauty",
+          "title": "soundandvision.com",
+          "domain": "soundandvision.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.reeltalkreviews.com/browse/viewitem.asp?type=feature&id=171",
+          "title": "reeltalkreviews.com",
+          "domain": "reeltalkreviews.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Djimon Hounsou",
+            "Joe",
+            "Gina",
+            "Bille Woodruff",
+            "Queen Latifah",
+            "Beauty Shop"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m623/beauty-shop",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Djimon Hounsou played Joe, an electrician who lived above Gina's beauty shop.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": "drop-dead-gorgeous Djimon Hounsou as Joe, an electrician and aspiring piano player who lives above the beauty shop"
+        },
+        {
+          "beat": "Director Bille Woodruff wanted Joe to be a man who could make Queen Latifah's character \"melt in his arms.\"",
+          "sourceUrl": "http://www.reeltalkreviews.com/browse/viewitem.asp?type=feature&id=171",
+          "supporting_passage": "I wanted a man that would allow Latifah to kind of melt in his arms."
+        },
+        {
+          "beat": "Queen Latifah chose Hounsou for the role, saying he needed to be \"tall, have a presence, be able to hold a woman my size.\"",
+          "sourceUrl": "http://www.reeltalkreviews.com/browse/viewitem.asp?type=feature&id=171",
+          "supporting_passage": "Hounsou was Latifah’s first choice for the role. “There are only so many men that can play my love interest in a movie. He’s got to be tall, have a presence, be able to hold a woman my size, and get a grip. I’m running out of dudes,” said Latifah with her warm laugh."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 75 chars (target 50-60, cap 80)",
+          "longDescription 183 chars (target ~120, max 160)",
+          "relaxed: dropped beats [3] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims"
+        ],
+        "judge_notes": "Beat 3 is not entailed because the source only mentions 'drop-dead-gorgeous Djimon Hounsou as Joe, an electrician' and does not include 'sexy electrician'. This overstatement makes the beat not entailed. Consequently, the shortVersion and longDescription, which both include the 'drop-dead-gorgeous' quote, are not fully entailed by the valid beats, leading to a factual accuracy score of 0 and summary_entailed: false. The source http://moviemagg.blogspot.com/ is a personal blog review, which is classified as 'discovery' for factual claims."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "This film challenged stereotypes with its male stylist.",
+        "longDescription": "This film challenged stereotypes with its male stylist. He was a fashion-conscious Black man who was not gay, and his decision to date a white woman brought questions but not crisis.",
+        "sources": [
+          {
+            "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 0.0,
+            "endSeconds": 296.2,
+            "startTimecode": "00:00:00",
+            "endTimecode": "00:04:56"
+          },
+          {
+            "startSeconds": 377.9,
+            "endSeconds": 595.1,
+            "startTimecode": "00:06:17",
+            "endTimecode": "00:09:55"
+          },
+          {
+            "startSeconds": 679.3,
+            "endSeconds": 2099.2,
+            "startTimecode": "00:11:19",
+            "endTimecode": "00:34:59"
+          },
+          {
+            "startSeconds": 2179.2,
+            "endSeconds": 4139.4,
+            "startTimecode": "00:36:19",
+            "endTimecode": "01:08:59"
+          },
+          {
+            "startSeconds": 4218.4,
+            "endSeconds": 6322.1,
+            "startTimecode": "01:10:18",
+            "endTimecode": "01:45:22"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film consciously challenged stereotypes by portraying a fashion-conscious Black male stylist who is not gay and whose decision to date a white woman is presented without crisis.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film consciously challenged stereotypes by portraying a fashion-conscious Black male stylist who is not gay and whose decision to date a white woman is presented without crisis.",
+        "search_queries": [
+          "Beauty Shop (2005) challenging stereotypes",
+          "Beauty Shop male stylist not gay",
+          "Beauty Shop diverse Black characters"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.chopshopstyle.com/stylists",
+          "title": "chopshopstyle.com",
+          "domain": "chopshopstyle.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.bespokemensgrooming.com/our-team",
+          "title": "bespokemensgrooming.com",
+          "domain": "bespokemensgrooming.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ign.com/articles/2005/03/30/interview-queen-latifah",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundandvision.com/dvdreviews/1005beauty",
+          "title": "soundandvision.com",
+          "domain": "soundandvision.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Beauty Shop",
+            "James",
+            "Bryce Wilson",
+            "Bille Woodruff",
+            "Queen Latifah",
+            "PopMatters",
+            "2005"
+          ],
+          "verbatim_misses": [
+            "Andre 3000",
+            "IGN"
+          ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film inverted stereotypes by portraying a fashion-conscious Black man as not gay.",
+          "sourceUrl": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "supporting_passage": "To its credit, Bille Woodruff’s film inverts a couple of stereotypes: a fashion-conscious black man is not gay"
+        },
+        {
+          "beat": "His decision to date a white woman was presented without crisis, though it brought questions.",
+          "sourceUrl": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "supporting_passage": "and his decision to date a white woman brings questions but not crisis."
+        },
+        {
+          "beat": "Bryce Wilson played the role of James, who was also noted for doing his own cornrows.",
+          "sourceUrl": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "supporting_passage": "James (Bryce Wilson), impressive not only because he is very pretty, but also because he does his own cornrows."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "longDescription 182 chars (target ~120, max 160)",
+          "relaxed: dropped beats [3] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
+          "verbatim: could not confirm ['Andre 3000', 'IGN'] in fetched bodies",
+          "rubric: factual_accuracy scored pre-drop; surviving beats are entailed"
+        ],
+        "judge_notes": "Beat 3 is not fully entailed. The source states the character had 'similarities to the idea of what we wanted the character to be' after defining 'metrosexual,' but does not explicitly state the character was 'conceived to embody the idea of a metrosexual man.' This is an overstatement of the source's direct claim."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Gina's special conditioner was called 'hair crack' by clients.",
+        "longDescription": "Gina's special conditioner was called 'hair crack' by clients. A customer even tried to get Cover Girl to license the formula.",
+        "sources": [
+          {
+            "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Gina develops her own highly effective conditioner formula, affectionately dubbed \"hair crack\" by her clients, which becomes a point of contention and a potential business opportunity.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Gina develops her own highly effective conditioner formula, affectionately dubbed \"hair crack\" by her clients, which becomes a point of contention and a potential business opportunity.",
+        "search_queries": [
+          "Beauty Shop hair crack conditioner",
+          "Gina Norris hair product Beauty Shop",
+          "Beauty Shop (2005) business opportunity"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Gina",
+            "Cover Girl",
+            "Joanne"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movieweb.com/beauty-shop-dvd-review/",
+          "title": "movieweb.com",
+          "domain": "movieweb.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.soundandvision.com/dvdreviews/1005beauty",
+          "title": "soundandvision.com",
+          "domain": "soundandvision.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.thebigmoviehouse.com/2018/09/beauty-shop-2005.html",
+          "title": "thebigmoviehouse.com",
+          "domain": "thebigmoviehouse.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Gina's own conditioner formula was affectionately dubbed \"hair crack\" by the other beauty shop women.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "A customer named Joanne arranged a meeting with the Cover Girl company to discuss licensing Gina's formula.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "However, Joanne called off the deal after feeling insulted and Gina refused to fire the stylist responsible.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": false,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 1,
+          "clarity": 2,
+          "spoiler_safety": 0
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "spoiler: card reveals plot, outcomes, or a surprise (cameo/secret role)",
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 0 bound+supported beats remain (need 3)",
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 62 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": "The primary issue is that the sole source is a personal blog, classified as 'discovery', which cannot fully support factual claims for SceneIQ. As per guidelines, 'discovery' sources provide 'leads only, never support', rendering all beats as not entailed. Additionally, Beat 2 contains a plot spoiler, making the card unsuitable for a general card."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Queen Latifah stars and produced this Barbershop spin-off.",
+        "longDescription": "Queen Latifah stars and produced this Barbershop spin-off. She reprised her role as Gina from Barbershop 2.",
+        "sources": [
+          {
+            "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Gina establishes a clear rule in her salon against using derogatory terms like \"bitches and ho's,\" aiming to create a comfortable and respectful environment for her clients.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Gina establishes a clear rule in her salon against using derogatory terms like \"bitches and ho's,\" aiming to create a comfortable and respectful environment for her clients.",
+        "search_queries": [
+          "Beauty Shop no bitches and ho's rule",
+          "Gina Norris salon rules",
+          "Beauty Shop (2005) respectful environment"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Queen Latifah",
+            "Barbershop",
+            "Gina",
+            "Barbershop 2",
+            "Beauty Shop",
+            "2005"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.stlamerican.com/entertainment/beauty-shop-gets-it-done/",
+          "title": "stlamerican.com",
+          "domain": "stlamerican.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Queen Latifah",
+            "Barbershop",
+            "Gina",
+            "Barbershop 2",
+            "Beauty Shop",
+            "2005"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://christiananswers.net/spotlight/movies/2005/beautyshop2005.html",
+          "title": "christiananswers.net",
+          "domain": "christiananswers.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Queen Latifah",
+            "Barbershop",
+            "Gina",
+            "Barbershop 2",
+            "Beauty Shop",
+            "2005"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m623/beauty-shop",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The 2005 film \"Beauty Shop\" is a spin-off that followed up on the previous hits \"Barbershop\" and \"Barbershop 2.\"",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Queen Latifah reprised her role as Gina, a character first introduced in \"Barbershop 2.\"",
+          "sourceUrl": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "supporting_passage": "reprising her role as Gina, Cedric the Entertainer’s verbal sparring partner in Barbershop 2"
+        },
+        {
+          "beat": "Beyond starring in the film, Queen Latifah also served as one of its producers.",
+          "sourceUrl": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "supporting_passage": "Queen Latifah, who also served as one of the film's producers"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 1,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 2 bound+supported beats remain (need 3)"
+        ],
+        "flags": [],
+        "judge_notes": "Beat 0 claims \"spin-off\" but its cited source (moviemagg.blogspot.com) only uses \"follow-up\". While the Nylon source does use \"spinoff\", it is not cited for Beat 0. This makes Beat 0 not entailed as written, impacting factual_accuracy and summary_entailed."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "[scene 15] 00:02:11–00:02:41\nsummary: The clip shows a quiet suburban neighborhood with people walking and interacting near houses and cars, accompanied by closing credits, indicating a peaceful, transitional moment in the video.\ncast on screen: Queen Latifah",
+        "anchor_element": "Atlanta native Keshia Knight Pulliam, who played Darnelle, served as an \"in-house Atlanta consultant\" and corrected a script detail about a Piggly Wiggly store's location for authenticity.",
+        "runtime_fraction": 0.020814228883948304,
+        "approx_timecode": "00:02:11",
+        "category_guess": "filming",
+        "search_hint": "Atlanta native Keshia Knight Pulliam, who played Darnelle, served as an \"in-house Atlanta consultant\" and corrected a script detail about a Piggly Wiggly store's location for authenticity.",
+        "search_queries": [
+          "Keshia Knight Pulliam Beauty Shop consultant",
+          "Beauty Shop Piggly Wiggly MLK Drive",
+          "Keshia Knight Pulliam script accuracy"
+        ],
+        "end_fraction": 0.025537838354917238,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "[scene 450] 01:14:18–01:14:35\nsummary: The video shows a conversation in a stylish, trendy hair salon with people interacting and a hairdresser working on a client, creating a mood of curiosity and admiration for the fashionable environment.\ncast on screen: Queen Latifah",
+        "anchor_element": "Filmmakers made a conscious effort to ensure the hairstyling in the salon looked realistic, understanding that audiences would notice if the cutting and styling weren't authentic.",
+        "runtime_fraction": 0.705236213459648,
+        "approx_timecode": "01:14:18",
+        "category_guess": "set_design",
+        "search_hint": "Filmmakers made a conscious effort to ensure the hairstyling in the salon looked realistic, understanding that audiences would notice if the cutting and styling weren't authentic.",
+        "search_queries": [
+          "Beauty Shop realistic hairstyling",
+          "Beauty Shop authentic hair cutting",
+          "Beauty Shop production realism"
+        ],
+        "end_fraction": 0.7079806569511607,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 3
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "[scene 590] 01:35:58–01:36:19\nsummary: A man is seen making a phone call inside a hair salon, then stepping outside near a door labeled 'jorge christophe.' The mood is calm and casual, set in a salon environment with another person seated inside.",
+        "anchor_element": "Kevin Bacon's flamboyant character, Jorge Christophe, is humorously revealed to have a much more ordinary real name: George Christie.",
+        "runtime_fraction": 0.910805586525838,
+        "approx_timecode": "01:35:58",
+        "category_guess": "actor",
+        "search_hint": "Kevin Bacon's flamboyant character, Jorge Christophe, is humorously revealed to have a much more ordinary real name: George Christie.",
+        "search_queries": [
+          "Beauty Shop Jorge real name",
+          "Kevin Bacon Jorge Christophe George Christie",
+          "Beauty Shop character names"
+        ],
+        "end_fraction": 0.9142097520105028,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 3
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "filming",
+        "shortVersion": "This Atlanta-set film mostly shot in a Van Nuys studio.",
+        "longDescription": "This Atlanta-set film mostly shot in a Van Nuys studio. Only one week of filming took place on location in Atlanta.",
+        "sources": [
+          {
+            "url": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 0] 00:00:00–00:00:11\nsummary: The video clip displays the Metro Goldwyn Mayer lion logo animation, a classic film studio trademark, set against a black background with no people or dialogue.",
+          "anchorElement": "The majority of \"Beauty Shop\" was filmed in Van Nuys, California, despite being set in Atlanta, Georgia, with only about one week of shooting taking place on location in Atlanta.",
+          "approxTimecode": "00:00:00",
+          "runtimeFraction": 0.0,
+          "runtimeThird": 1,
+          "runtimeQuartile": 1
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 0] 00:00:00–00:00:11\nsummary: The video clip displays the Metro Goldwyn Mayer lion logo animation, a classic film studio trademark, set against a black background with no people or dialogue.",
+        "anchor_element": "The majority of \"Beauty Shop\" was filmed in Van Nuys, California, despite being set in Atlanta, Georgia, with only about one week of shooting taking place on location in Atlanta.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "00:00:00",
+        "category_guess": "filming",
+        "search_hint": "The majority of \"Beauty Shop\" was filmed in Van Nuys, California, despite being set in Atlanta, Georgia, with only about one week of shooting taking place on location in Atlanta.",
+        "search_queries": [
+          "Beauty Shop filming location",
+          "Beauty Shop Van Nuys Atlanta",
+          "Where was Beauty Shop filmed"
+        ],
+        "end_fraction": 0.0017878466014421522,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "title": "movieweb.com",
+          "domain": "movieweb.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Atlanta",
+            "Georgia",
+            "Van Nuys",
+            "Beauty Shop",
+            "one week",
+            "Los Angeles"
+          ],
+          "verbatim_misses": [
+            "Bille Woodruff"
+          ]
+        },
+        {
+          "url": "https://www.lololovesfilms.com/2016/04/movie-review-beauty-shop-2005.html",
+          "title": "lololovesfilms.com",
+          "domain": "lololovesfilms.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m623/beauty-shop",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050401/reviews/beautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.kinoafisha.info/en/movies/7441080/locations/",
+          "title": "kinoafisha.info",
+          "domain": "kinoafisha.info",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film \"Beauty Shop\" is set in the city of Atlanta, Georgia.",
+          "sourceUrl": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "supporting_passage": "Beauty Shop takes place in the city of Atlanta"
+        },
+        {
+          "beat": "Despite its Atlanta setting, the production only shot for one week on location there.",
+          "sourceUrl": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "supporting_passage": "However, the film only shot one week on location in Atlanta"
+        },
+        {
+          "beat": "The majority of the movie's filming recreated the Atlanta location in a Van Nuys studio.",
+          "sourceUrl": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "supporting_passage": "and recreated the location in a Van Nuys studio for the majority of the shoot."
+        },
+        {
+          "beat": "Director Bille Woodruff explained that shooting the bulk of the film in Los Angeles was a budget decision.",
+          "sourceUrl": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "supporting_passage": "Woodruff explained why the studio ruled out a lengthy location shoot. “It was just a budget thing that they decided to do,” he said. “Once they started running the numbers, it was a decision with the studio with the budget that it was more cost effective for us to do the bulk of it here in LA."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 0,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "rubric: scene_grounding 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "verbatim: could not confirm ['Bille Woodruff'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "filming",
+        "shortVersion": "Queen Latifah chose Atlanta to avoid Chicago's winter.",
+        "longDescription": "Queen Latifah chose Atlanta to avoid Chicago's winter. She didn't want to shoot in the cold, preferring a warm location.",
+        "sources": [
+          {
+            "url": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 248] 00:39:55–00:40:18\nsummary: A group of women interact warmly in a casual indoor setting, likely a restaurant or food stand, where a new owner is introduced and welcomed with friendly conversation and offers of food.\ncast on screen: Queen Latifah",
+          "anchorElement": "Queen Latifah chose Atlanta as the film's setting to avoid the colder winter weather of Chicago, where the preceding \"Barbershop\" films were based.",
+          "approxTimecode": "00:39:55",
+          "runtimeFraction": 0.379,
+          "runtimeThird": 2,
+          "runtimeQuartile": 2
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 248] 00:39:55–00:40:18\nsummary: A group of women interact warmly in a casual indoor setting, likely a restaurant or food stand, where a new owner is introduced and welcomed with friendly conversation and offers of food.\ncast on screen: Queen Latifah",
+        "anchor_element": "Queen Latifah chose Atlanta as the film's setting to avoid the colder winter weather of Chicago, where the preceding \"Barbershop\" films were based.",
+        "runtime_fraction": 0.37886514622737977,
+        "approx_timecode": "00:39:55",
+        "category_guess": "filming",
+        "search_hint": "Queen Latifah chose Atlanta as the film's setting to avoid the colder winter weather of Chicago, where the preceding \"Barbershop\" films were based.",
+        "search_queries": [
+          "Beauty Shop Atlanta setting reason",
+          "Queen Latifah Beauty Shop Chicago weather",
+          "Beauty Shop filming decisions"
+        ],
+        "end_fraction": 0.38261896436841514,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 2
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/beauty-shop-streaming-prime-video-queen-latifah/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ign.com/articles/2005/03/30/interview-queen-latifah",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.blackfilm.com/20040514/features/setvisitbeautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050325/features/queenlatifah.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "title": "movieweb.com",
+          "domain": "movieweb.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Queen Latifah",
+            "Atlanta",
+            "Chicago",
+            "Beauty Shop",
+            "Barbershop",
+            "Miami",
+            "Keshia Knight Pulliam",
+            "Djimon Hounsou",
+            "Alicia Silverstone",
+            "Van Nuys",
+            "Piggly Wiggly",
+            "MLK",
+            "Kroger",
+            "Wednesday",
+            "2005",
+            "Beauty Shop 2"
+          ],
+          "verbatim_misses": [
+            "Bille Woodruff",
+            "Beauty Shop 3"
+          ]
+        },
+        {
+          "url": "https://www.lololovesfilms.com/2016/04/movie-review-beauty-shop-2005.html",
+          "title": "lololovesfilms.com",
+          "domain": "lololovesfilms.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Queen Latifah, who also produced the film, decided to set Beauty Shop in Atlanta to avoid Chicago's colder winter weather.",
+          "sourceUrl": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "She explicitly stated, \"I really didn't want to shoot in the winter in Chicago, honestly. Come on. I was like, 'We've got to move this to some place warm.'\"",
+          "sourceUrl": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "supporting_passage": "I really didn't want to shoot in the winter in Chicago, honestly. Come on. I was like, 'We've got to move this to some place warm.'"
+        },
+        {
+          "beat": "While other cities like Miami were considered, Atlanta was chosen because it was more familiar to the crew.",
+          "sourceUrl": "https://movieweb.com/atlanta-vs-van-nuys-in-beauty-shop/",
+          "supporting_passage": "A few other cities were discussed, but Atlanta was the most familiar."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 1,
+          "primitive_conformance": 2,
+          "viewer_value": 1,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 2 bound+supported beats remain (need 3)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "verbatim: could not confirm ['Bille Woodruff', 'Beauty Shop 3'] in fetched bodies"
+        ],
+        "judge_notes": "Beat 0 contains an unsupported claim ('who also produced the film'), leading to a factual accuracy failure and the summary not being entailed. The core claim about choosing Atlanta for warmer weather is supported, but the additional detail in Beat 0 is not."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "scene",
+        "factCategory": "costume/prop",
+        "shortVersion": "Jorge's memorable look included \"one of the worst perms in history.\"",
+        "longDescription": "Jorge's memorable look included \"one of the worst perms in history.\" This distinctive perm was part of Kevin Bacon's scene-stealing portrayal of the \"Euro-trash\" salon owner.",
+        "sources": [
+          {
+            "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": {
+          "sceneDescription": "[scene 186] 00:30:17–00:30:29\nsummary: Two men are interacting in a salon environment where one is preparing to wash the other's hair, creating a relaxed and friendly atmosphere.\ncast on screen: Kevin Bacon",
+          "anchorElement": "Kevin Bacon's eccentric character, Jorge, was noted for sporting \"one of the worst perms in history\" as a key part of his memorable, over-the-top look.",
+          "approxTimecode": "00:30:17",
+          "runtimeFraction": 0.287,
+          "runtimeThird": 1,
+          "runtimeQuartile": 2
+        },
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "[scene 186] 00:30:17–00:30:29\nsummary: Two men are interacting in a salon environment where one is preparing to wash the other's hair, creating a relaxed and friendly atmosphere.\ncast on screen: Kevin Bacon",
+        "anchor_element": "Kevin Bacon's eccentric character, Jorge, was noted for sporting \"one of the worst perms in history\" as a key part of his memorable, over-the-top look.",
+        "runtime_fraction": 0.2874342751964322,
+        "approx_timecode": "00:30:17",
+        "category_guess": "costume/prop",
+        "search_hint": "Kevin Bacon's eccentric character, Jorge, was noted for sporting \"one of the worst perms in history\" as a key part of his memorable, over-the-top look.",
+        "search_queries": [
+          "Beauty Shop Jorge perm",
+          "Kevin Bacon Jorge hair",
+          "Beauty Shop worst perms"
+        ],
+        "end_fraction": 0.28940024673602543,
+        "scope": "scene",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://thewarehousesalon.com/blogs/hair-blogs/the-right-look-for-you-why-perms-are-not-ideal",
+          "title": "thewarehousesalon.com",
+          "domain": "thewarehousesalon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "title": "blogspot.com",
+          "domain": "blogspot.com",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Kevin Bacon",
+            "Jorge",
+            "Beauty Shop",
+            "MGM",
+            "2005"
+          ],
+          "verbatim_misses": [
+            "Jorge Christophe",
+            "Euro-trash"
+          ]
+        },
+        {
+          "url": "https://www.nylon.com/beauty-shop-film-anniversary",
+          "title": "nylon.com",
+          "domain": "nylon.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://behindthelensonline.net/site/reviews/beauty-shop/",
+          "title": "behindthelensonline.net",
+          "domain": "behindthelensonline.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/beauty-shop-2005-2496225900.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.blackfilm.com/20050401/reviews/beautyshop.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://movieweb.com/kevin-bacon-joins-the-cast-of-beauty-shop/",
+          "title": "movieweb.com",
+          "domain": "movieweb.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Kevin Bacon played the \"Euro-trash\" salon owner, Jorge Christophe.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": "it’s Kevin Bacon who steals every scene as the Euro-trash Jorge Christophe"
+        },
+        {
+          "beat": "Jorge's memorable look included a perm that was described as \"one of the worst in history.\"",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "This distinctive perm contributed to Kevin Bacon's scene-stealing portrayal of Jorge.",
+          "sourceUrl": "http://moviemagg.blogspot.com/2010/05/beauty-shop-mgm-2005.html",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": false,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 0,
+          "primitive_conformance": 2,
+          "viewer_value": 0,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 0 bound+supported beats remain (need 3)",
+          "emission_policy: needs 1 primary/direct source or 1 reputable editorial source (got 0 primary, 0 editorial)",
+          "rubric: factual_accuracy 0/2 (must be >=1)",
+          "rubric: scene_grounding 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 68 chars (target 50-60, cap 80)",
+          "longDescription 174 chars (target ~120, max 160)",
+          "verbatim: could not confirm ['Jorge Christophe', 'Euro-trash'] in fetched bodies",
+          "rubric low (relaxed): ['viewer_value']"
+        ],
+        "judge_notes": "The core claim of the card, regarding Jorge's perm being 'one of the worst in history,' is not supported by the provided source body. The word 'perm' does not appear in the source text in relation to Jorge or Kevin Bacon. This leads to a failure in factual accuracy and summary entailment, and significantly impacts scene grounding and viewer value."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    }
+  ]
+}

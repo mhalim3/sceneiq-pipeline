@@ -187,9 +187,6 @@ class SceneFactCard:
                 }
                 for a, b in self.display_windows
             ],
-            "spoilerBoundary": {
-                "earliestSafeFraction": round(self.spoiler_boundary_fraction, 3),
-            },
         }
 
 

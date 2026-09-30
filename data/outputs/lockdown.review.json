@@ -1,0 +1,3207 @@
+{
+  "film": {
+    "title": "Lockdown",
+    "year": 2000,
+    "runtime_minutes": 105,
+    "input_prompt": "Lockdown",
+    "anchor_source": "title_only"
+  },
+  "candidates": [
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Actor De'Aundre Bonds expressed deep regret and cried after filming a disturbing rape scene in the movie, wishing he had never agreed to the role.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Actor De'Aundre Bonds expressed deep regret and cried after filming a disturbing rape scene in the movie, wishing he had never agreed to the role.",
+        "search_queries": [
+          "De'Aundre Bonds Lockdown rape scene regret",
+          "Lockdown 2000 emotional impact actor",
+          "Clifton Powell on Lockdown scene"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "During filming at a real prison, actors dressed as inmates were mistaken for actual escapees by guards, who drew their weapons on the cast.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "During filming at a real prison, actors dressed as inmates were mistaken for actual escapees by guards, who drew their weapons on the cast.",
+        "search_queries": [
+          "Lockdown 2000 actors mistaken for prisoners",
+          "Lockdown movie real prison scare",
+          "Filming incidents Lockdown 2000"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "actor",
+        "shortVersion": "Dre's limp was real; the actor was shot days before filming.",
+        "longDescription": "Dre's limp was real; the actor was shot days before filming. Director John Luessenhop wrote De'Aundre Bonds' real-life injury into his character.",
+        "sources": [
+          {
+            "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 0.0,
+            "endSeconds": 1050.0,
+            "startTimecode": "00:00:00",
+            "endTimecode": "00:17:30"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "De'Aundre Bonds, who played Dre, was shot days before filming and still had a bullet in his buttocks; his real-life limp was written into his character.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "De'Aundre Bonds, who played Dre, was shot days before filming and still had a bullet in his buttocks; his real-life limp was written into his character.",
+        "search_queries": [
+          "De'Aundre Bonds Lockdown injury",
+          "Lockdown 2000 actor real limp",
+          "Dre character Lockdown real injury"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Dre",
+            "Lockdown",
+            "John Luessenhop",
+            "New Mexico",
+            "four"
+          ],
+          "verbatim_misses": [
+            "De'Aundre Bonds"
+          ]
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "De'Aundre Bonds, who played Dre, arrived on the set of \"Lockdown\" limping and using a crutch.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "Bonds arrived on the set in New Mexico limping and walking with a crutch."
+        },
+        {
+          "beat": "He had been shot four times just days before the film started shooting.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "He’d been shot four times just days before the film started shooting."
+        },
+        {
+          "beat": "Director John Luessenhop recalled that Bonds still had a bullet in his buttocks.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "“He still had a bullet in his [buttocks],” Luessenhop recalls."
+        },
+        {
+          "beat": "Luessenhop had to get a doctor's approval for Bonds to work and then wrote his limp into his character.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "“I had to get a doctor to approve him working on the film and then we wrote his limp into his character.”"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "verbatim: could not confirm [\"De'Aundre Bonds\"] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "actor",
+        "shortVersion": "De'Aundre Bonds, like his character, was incarcerated for manslaughter.",
+        "longDescription": "De'Aundre Bonds, like his character, was incarcerated for manslaughter. He was serving 11 years in Ironwood State Prison around the film's release.",
+        "sources": [
+          {
+            "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.popmatters.com/lockdown-2496255811.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "In a dark parallel to his on-screen role, actor De'Aundre Bonds was incarcerated for manslaughter in real life around the time Lockdown was released.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "In a dark parallel to his on-screen role, actor De'Aundre Bonds was incarcerated for manslaughter in real life around the time Lockdown was released.",
+        "search_queries": [
+          "De'Aundre Bonds real life incarceration Lockdown",
+          "Lockdown 2000 actor manslaughter",
+          "De'Aundre Bonds prison sentence"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "De'Aundre Bonds",
+            "Dre",
+            "Lockdown",
+            "Ironwood State Prison",
+            "11 years",
+            "Los Angeles Times",
+            "PopMatters"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.fandango.com/lockdown-2000-40346/cast-and-crew",
+          "title": "fandango.com",
+          "domain": "fandango.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "De'Aundre Bonds",
+            "Dre",
+            "Lockdown",
+            "Ironwood State Prison",
+            "11 years",
+            "Los Angeles Times",
+            "PopMatters"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/1120513-lockdown",
+          "title": "rottentomatoes.com",
+          "domain": "rottentomatoes.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.encyclopedia.com/arts/culture-magazines/lockdown-2000",
+          "title": "encyclopedia.com",
+          "domain": "encyclopedia.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.tvguide.com/movies/lockdown/cast/2030183709/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "title": "geocities.ws",
+          "domain": "geocities.ws",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "De'Aundre Bonds plays Dre, a character in \"Lockdown\" who is wrongly imprisoned.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "In “Lockdown,” Bonds plays a streetwise kid who is wrongly imprisoned, along with two of his friends, for a murder they didn’t commit."
+        },
+        {
+          "beat": "In a dark parallel, Bonds was incarcerated for manslaughter in real life.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "He’s in Ironwood State Prison in Blythe, serving 11 years for a manslaughter conviction."
+        },
+        {
+          "beat": "This real-life incarceration was occurring around the time \"Lockdown\" was released.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "His performance, like the film, has received respectful reviews, but Bonds hasn’t been around to enjoy the attention. He’s in Ironwood State Prison in Blythe, serving 11 years for a manslaughter conviction."
+        },
+        {
+          "beat": "The film's PR machinery even emphasized his real-life incarceration.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "young Bonds (Junior in Get on the Bus , currently incarcerated, in real life, for manslaughter, a point that the PR machinery is emphasizing, including an interview with him, from prison, on the official website)."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": false,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "propriety: gossip/legal/tragedy/political/disparagement content"
+        ],
+        "flags": [
+          "shortVersion 71 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": "The card fails the propriety_pass because it discusses a legal matter (incarceration for manslaughter) and a personal tragedy connected to the talent, which is explicitly prohibited by the guidelines for SceneIQ content."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "location",
+        "shortVersion": "Lockdown filmed in a notorious former state prison.",
+        "longDescription": "Lockdown filmed in a notorious former state prison. It was the site of one of the most infamous riots in American history.",
+        "sources": [
+          {
+            "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Lockdown was filmed at the New Mexico State Penitentiary, a former prison notorious for one of the most violent riots in U.S. history.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Lockdown was filmed at the New Mexico State Penitentiary, a former prison notorious for one of the most violent riots in U.S. history.",
+        "search_queries": [
+          "Lockdown 2000 New Mexico State Penitentiary",
+          "New Mexico State Penitentiary riot history",
+          "Filming locations Lockdown movie"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "New Mexico",
+            "1999",
+            "American"
+          ],
+          "verbatim_misses": [
+            "U.S."
+          ]
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "New Mexico",
+            "1999",
+            "American"
+          ],
+          "verbatim_misses": [
+            "U.S."
+          ]
+        },
+        {
+          "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "title": "geocities.ws",
+          "domain": "geocities.ws",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "New Mexico",
+            "1999",
+            "American"
+          ],
+          "verbatim_misses": [
+            "U.S."
+          ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The prison scenes for Lockdown were filmed in 1999 at a former state prison in New Mexico.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "The film, which co-stars Richard T. Jones, Master P and Bill Nunn, was shot in 1999 at a former state prison in New Mexico."
+        },
+        {
+          "beat": "This particular prison was the site of one of the most infamous prison riots in American history.",
+          "sourceUrl": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Many of the film's extras had previously been incarcerated in that same prison when it was still operational.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "I didn’t go out in the field and do it but I had previously filmed in 2 prisons. I had done a bunch of recreations for ‘America’s Most Wanted’ a number of times. I wanted to watch some films which I had seen before that had captured it like ‘Slam’ and there’s an HBO documentary I had seen and some others I had looked at and those are what sort of guided me and just in talking to people who had been locked up and a lot of people who had played extras were in the same prison at one time when it was operative."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 1,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 2 bound+supported beats remain (need 3)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "verbatim: could not confirm ['U.S.'] in fetched bodies"
+        ],
+        "judge_notes": "Beat 1 is supported by a 'discovery' source (geocities.ws), which cannot be used to entail claims. As a result, the claims about the prison being 'notorious' and the 'site of one of the most infamous riots' are not entailed by valid sources. This leads to a factual accuracy score of 0 and summary_entailed being false, as both the short and long descriptions rely on these unsupported claims."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Music mogul Master P was an executive producer on Lockdown.",
+        "longDescription": "Music mogul Master P was an executive producer on Lockdown. Actor Gabriel Casseus joined the film because of Master P's independent production approach.",
+        "sources": [
+          {
+            "url": "https://www.popmatters.com/lockdown-2496255811.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 1050.0,
+            "endSeconds": 2100.0,
+            "startTimecode": "00:17:30",
+            "endTimecode": "00:35:00"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Lockdown was produced by No Limit Films, a division of music mogul Master P's famous No Limit Records label.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Lockdown was produced by No Limit Films, a division of music mogul Master P's famous No Limit Records label.",
+        "search_queries": [
+          "Lockdown 2000 Master P production",
+          "No Limit Films Lockdown movie",
+          "Master P film company"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Master P",
+            "Lockdown",
+            "Gabriel Casseus",
+            "I Got the Hookup",
+            "Foolish"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Master P",
+            "Lockdown",
+            "Gabriel Casseus",
+            "I Got the Hookup",
+            "Foolish"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/1120513-lockdown",
+          "title": "rottentomatoes.com",
+          "domain": "rottentomatoes.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.tvguide.com/movies/lockdown/cast/2030183709/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Music mogul Master P served as an executive producer for \"Lockdown.\"",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "Master P, also executive producer on the film"
+        },
+        {
+          "beat": "Actor Gabriel Casseus was drawn to the project by Master P's involvement as a producer.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "what attracted me to the project was when they told me Master P was producing it"
+        },
+        {
+          "beat": "Master P was known for his independent distribution approach in film production.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "he had that whole production thing where he just distributes independently"
+        },
+        {
+          "beat": "\"Lockdown\" demonstrated Master P's evolving interest in film production, following earlier works like \"I Got the Hookup.\"",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "his longstanding interest in film production (I Got the Hookup, Foolish) is evolving into an increasingly straight-up business."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Rapper Big Pokey revealed that Master P asked him to play a specific role in Lockdown's controversial rape scene, but he declined after witnessing the emotional trauma it caused actor De'Aundre Bonds.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Rapper Big Pokey revealed that Master P asked him to play a specific role in Lockdown's controversial rape scene, but he declined after witnessing the emotional trauma it caused actor De'Aundre Bonds.",
+        "search_queries": [
+          "Big Pokey Lockdown rape scene",
+          "Master P Big Pokey Lockdown",
+          "Big Pokey turned down Lockdown role"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Master P, a producer and actor in Lockdown, had an intimidating presence on set, often arriving with his crew described as \"straight out of jail\" and sometimes attempting to direct scenes, which reportedly scared some of the cast and crew.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Master P, a producer and actor in Lockdown, had an intimidating presence on set, often arriving with his crew described as \"straight out of jail\" and sometimes attempting to direct scenes, which reportedly scared some of the cast and crew.",
+        "search_queries": [
+          "Master P intimidating Lockdown set",
+          "Joe Torry Master P Lockdown",
+          "Master P directing Lockdown"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "Actors put ice cubes in their mouths to hide breath in the cold.",
+        "longDescription": "Actors put ice cubes in their mouths to hide breath in the cold. The film's director said the summer shoot was \"brutal\" with dry heat.",
+        "sources": [
+          {
+            "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 2100.0,
+            "endSeconds": 3150.0,
+            "startTimecode": "00:35:00",
+            "endTimecode": "00:52:30"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Lockdown faced extreme weather challenges during filming, enduring \"brutal\" dry heat over 90 degrees Fahrenheit in summer, and then requiring actors to put ice cubes in their mouths during December reshoots to prevent their breath from steaming in the cold.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Lockdown faced extreme weather challenges during filming, enduring \"brutal\" dry heat over 90 degrees Fahrenheit in summer, and then requiring actors to put ice cubes in their mouths during December reshoots to prevent their breath from steaming in the cold.",
+        "search_queries": [
+          "Lockdown movie extreme heat filming",
+          "Lockdown reshoots cold weather",
+          "John Luessenhop Lockdown filming conditions"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "John Luessenhop",
+            "Lockdown",
+            "Santa Fe",
+            "Albuquerque",
+            "New Mexico",
+            "December"
+          ],
+          "verbatim_misses": [
+            "90 degrees Fahrenheit"
+          ]
+        },
+        {
+          "url": "https://blackfilm.com/20010817/features/i-lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "title": "geocities.ws",
+          "domain": "geocities.ws",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director John Luessenhop confirmed that \"Lockdown\" was shot in Santa Fe and Albuquerque, New Mexico.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "We shot all the prison scenes in Santa Fe, New Mexico and all the inner city scenes in Albuquerque."
+        },
+        {
+          "beat": "The summer filming was \"brutal\" due to the \"huge dry heat\" and lack of shade.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "The summer time was just brutal out there. There was no place to hide from the sun there and there’s this huge dry heat."
+        },
+        {
+          "beat": "Director Luessenhop confirmed the shoot was \"hot,\" with the interviewer noting days over 90 degrees.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "WM: I understand you shot the film on days over 90 degree weather. Can you talk about this? JL: It was hot is the first thing."
+        },
+        {
+          "beat": "When returning for pick-ups in December, the crew faced the \"coldest day of the year.\"",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "when I had to go back to do a couple of pick ups, I had to go through the coldest day of the year which was in December"
+        },
+        {
+          "beat": "Actors had to put ice cubes in their mouths to prevent their breath from steaming in the cold.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "you could see people breathe and they had to put ice cubes in their mouth so you couldn’t see the steam."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 64 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['90 degrees Fahrenheit'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "This film was shot in 1999 but didn't hit US theaters until 2003.",
+        "longDescription": "This film was shot in 1999 but didn't hit US theaters until 2003. Its release was delayed by \"political and financial hassles.\"",
+        "sources": [
+          {
+            "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Lockdown premiered internationally in 2000 but faced a significant three-year delay for its U.S. release, finally hitting theaters in February 2003 due to \"political and financial hassles.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Lockdown premiered internationally in 2000 but faced a significant three-year delay for its U.S. release, finally hitting theaters in February 2003 due to \"political and financial hassles.\"",
+        "search_queries": [
+          "Lockdown 2000 film U.S. release date",
+          "Lockdown movie delayed release",
+          "John Luessenhop Lockdown release issues"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "1999",
+            "US",
+            "2003",
+            "New Mexico"
+          ],
+          "verbatim_misses": [
+            "February"
+          ]
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/1120513-lockdown",
+          "title": "rottentomatoes.com",
+          "domain": "rottentomatoes.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "\"Lockdown\" was filmed in 1999 at a former state prison in New Mexico.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "The film, which co-stars Richard T. Jones, Master P and Bill Nunn, was shot in 1999 at a former state prison in New Mexico."
+        },
+        {
+          "beat": "The film premiered internationally in 2000.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "Lockdown premiered internationally in 2000 but faced a significant three-year delay for its U.S. release, finally hitting theaters in February 2003 due to \"political and financial hassles.\""
+        },
+        {
+          "beat": "Its U.S. release was delayed for three years, finally hitting theaters in February 2003 due to \"political and financial hassles.\"",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "Lockdown premiered internationally in 2000 but faced a significant three-year delay for its U.S. release, finally hitting theaters in February 2003 due to \"political and financial hassles.\""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "claim_entailment: only 1 bound+supported beats remain (need 3)"
+        ],
+        "flags": [
+          "shortVersion 65 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['February'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "Lockdown was filmed in a real prison, the site of a notorious riot.",
+        "longDescription": "Lockdown was filmed in a real prison, the site of a notorious riot. The cast and crew found it \"pretty creepy\" working in the same cellblocks where many men had died.",
+        "sources": [
+          {
+            "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Filming Lockdown at the New Mexico State Penitentiary, the site of a notorious prison riot, created a \"creepy\" and intense atmosphere on set for the cast and crew, who worked in the same cellblocks where many men had died.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Filming Lockdown at the New Mexico State Penitentiary, the site of a notorious prison riot, created a \"creepy\" and intense atmosphere on set for the cast and crew, who worked in the same cellblocks where many men had died.",
+        "search_queries": [
+          "Lockdown movie creepy set atmosphere",
+          "New Mexico State Penitentiary filming experience",
+          "Lockdown cast reaction prison set"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "title": "geocities.ws",
+          "domain": "geocities.ws",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "Santa Fe",
+            "most infamous prison riot in American history"
+          ],
+          "verbatim_misses": [
+            "New Mexico",
+            "New Mexico State Penitentiary"
+          ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film Lockdown was shot at the old state penitentiary in Santa Fe, New Mexico.",
+          "sourceUrl": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "supporting_passage": "Lockdown was filmed in Santa Fe, NM at the old state pen."
+        },
+        {
+          "beat": "Filming in the prison was described as \"pretty creepy.\"",
+          "sourceUrl": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "supporting_passage": "It was actually pretty creepy filming in the same prison"
+        },
+        {
+          "beat": "The production used the same cellblocks where the most infamous prison riot in American history took place.",
+          "sourceUrl": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "supporting_passage": "and the same cellblocks where the most infamous prison riot in American history took place"
+        },
+        {
+          "beat": "Many men died in the prison where the film was shot.",
+          "sourceUrl": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "supporting_passage": "and where so many men died."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (Lockdown's prison scenes were filmed in a real, historic New Mexico prison. It was the site of 'the most infamous prison riot in American history'.)"
+        ],
+        "flags": [
+          "shortVersion 67 chars (target 50-60, cap 80)",
+          "longDescription 166 chars (target ~120, max 160)",
+          "verbatim: could not confirm ['New Mexico', 'New Mexico State Penitentiary'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "actor",
+        "shortVersion": "Dre's cauliflower ear was a real injury from a club fight.",
+        "longDescription": "Dre's cauliflower ear was a real injury from a club fight. Actor De'Aundre Bonds got it after a day off for publicity.",
+        "sources": [
+          {
+            "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Actor De'Aundre Bonds, who played Dre, returned to the Lockdown set with a cauliflower ear after a day off for publicity, reportedly from a fight with a club bouncer, adding to his character's tough appearance.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Actor De'Aundre Bonds, who played Dre, returned to the Lockdown set with a cauliflower ear after a day off for publicity, reportedly from a fight with a club bouncer, adding to his character's tough appearance.",
+        "search_queries": [
+          "De'Aundre Bonds cauliflower ear Lockdown",
+          "De'Aundre Bonds off-set injury Lockdown",
+          "Lockdown actor real-life fight"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Dre",
+            "Lockdown",
+            "John Luessenhop",
+            "The Wood"
+          ],
+          "verbatim_misses": [
+            "De'Aundre Bonds"
+          ]
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.tvguide.com/movies/lockdown/cast/2030183709/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Upon returning to the Lockdown set, Bonds had a cauliflower ear.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "He came back with a cauliflower ear,” Luessenhop says,"
+        },
+        {
+          "beat": "Director John Luessenhop reported that the injury resulted from a fight with a club bouncer.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "from getting into a fight with a bouncer at a club who hit him over the head with a flashlight.”"
+        },
+        {
+          "beat": "Luessenhop tolerated Bonds' off-camera issues because he was impressed by the actor's talent.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "Luessenhop put up with Bonds’ off-camera problems because he was so impressed by the young actor’s talent."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "relaxed: dropped beats [0] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
+          "verbatim: could not confirm [\"De'Aundre Bonds\"] in fetched bodies"
+        ],
+        "judge_notes": "Beat 0 is not entailed as it implies the publicity was for 'Lockdown' when the source explicitly states it was for 'The Wood'. This makes factual_accuracy 0 and summary_entailed false. The card otherwise meets the criteria."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Director John Luessenhop feared Lockdown would be a 'hip-hop prison film'.",
+        "longDescription": "Director John Luessenhop feared Lockdown would be a 'hip-hop prison film'. He envisioned it as a heartfelt drama like 'Boyz in da Hood'.",
+        "sources": [
+          {
+            "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Director John Luessenhop initially feared Lockdown would be perceived as a generic \"hip-hop prison film\" but took on the project with the vision of creating a \"heartfelt drama\" in the vein of Boyz n the Hood or Menace II Society.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Director John Luessenhop initially feared Lockdown would be perceived as a generic \"hip-hop prison film\" but took on the project with the vision of creating a \"heartfelt drama\" in the vein of Boyz n the Hood or Menace II Society.",
+        "search_queries": [
+          "John Luessenhop Lockdown vision",
+          "Lockdown movie Boyz n the Hood comparison",
+          "Director John Luessenhop hip-hop prison film"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "John Luessenhop",
+            "Lockdown",
+            "Boyz in da Hood"
+          ],
+          "verbatim_misses": [
+            "Menace to Society"
+          ]
+        },
+        {
+          "url": "https://jamesbowman.net/2003/02/lockdown/",
+          "title": "jamesbowman.net",
+          "domain": "jamesbowman.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://tv.apple.com/uz/person/john-luessenhop/umc.cpc.4cq4lp61hhv69kmzlmdsgai5f",
+          "title": "apple.com",
+          "domain": "apple.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.primevideo.com/person/John-Luessenhop/amzn1.dv.gti.bf64084a-6113-4985-bfbe-4957b346c724/",
+          "title": "primevideo.com",
+          "domain": "primevideo.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director John Luessenhop initially feared that his film, Lockdown, would be perceived as a generic 'hip-hop prison film'.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "I was afraid at first thinking it was a hip-hop prison film"
+        },
+        {
+          "beat": "However, after reviewing the script, he realized it had the potential to be a 'heartfelt drama'.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "then I looked through it and saw it could be a heartfelt drama"
+        },
+        {
+          "beat": "Luessenhop's vision for the film was to create something along the lines of 'Boyz in da Hood' or 'Menace to Society'.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "along the lines of a ‘Boyz in da Hood’ and ‘Menace to Society’"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "claim_entailment: only 2 bound+supported beats remain (need 3)",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 74 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['Menace to Society'] in fetched bodies"
+        ],
+        "judge_notes": "Beat 0 is not entailed. The beat adds 'generic' and states 'would be perceived as' instead of the direct quote 'thinking it was'. These are material claims not directly supported by the source. As a result, factual_accuracy is 0 and summary_entailed is false because the short and long descriptions rely on this unentailed beat."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "actor",
+        "shortVersion": "Gabriel Casseus joined Lockdown to work with Master P.",
+        "longDescription": "Gabriel Casseus joined Lockdown to work with Master P. He admired Master P's independent approach to filmmaking.",
+        "sources": [
+          {
+            "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Actor Gabriel Casseus was drawn to Lockdown specifically to work with Master P, admiring the hip-hop mogul's independent approach to filmmaking and operating on his own terms through No Limit Films.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Actor Gabriel Casseus was drawn to Lockdown specifically to work with Master P, admiring the hip-hop mogul's independent approach to filmmaking and operating on his own terms through No Limit Films.",
+        "search_queries": [
+          "Gabriel Casseus Master P Lockdown",
+          "Gabriel Casseus No Limit Films",
+          "Lockdown actor attracted to Master P"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Gabriel Casseus",
+            "Lockdown",
+            "Master P",
+            "John Luessenhop"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Actor Gabriel Casseus was attracted to the film \"Lockdown\" when he learned Master P was producing it.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "GC: I got a call and what attracted me to the project was when they told me Master P was producing it."
+        },
+        {
+          "beat": "Casseus wanted to work with Master P because he admired the hip-hop mogul's independent approach to filmmaking.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "I wanted to be in business with anybody who does things on their own terms. I know he had that whole production thing where he just distributes independently and I just thought anybody who goes against the norm to try to make films whichever way they can I wanted to be a part of that."
+        },
+        {
+          "beat": "Master P's production company distributed films independently, which Casseus saw as going \"against the norm.\"",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "I know he had that whole production thing where he just distributes independently and I just thought anybody who goes against the norm to try to make films whichever way they can I wanted to be a part of that."
+        },
+        {
+          "beat": "After learning of Master P's involvement, Casseus read the script and met with director John Luessenhop.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "Finally, I read the script and thought it was pretty tight and met with John and he explained his vision to me how he wanted to shoot this and I thought this could be good."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (Actor Gabriel Casseus joined Lockdown because of Master P, who was an executive producer and known for his independent filmmaking approach.)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "actor",
+        "shortVersion": "De'Aundre Bonds was shot before filming, so his limp was written into his role.",
+        "longDescription": "De'Aundre Bonds was shot before filming, so his limp was written into his role. The director had to get a doctor to approve him working after he was shot four times.",
+        "sources": [
+          {
+            "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Lockdown was noted for its raw and impactful depiction of prison life, with many viewers stating the film served as a powerful cautionary tale that made them conclude, \"I never want to go to prison.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Lockdown was noted for its raw and impactful depiction of prison life, with many viewers stating the film served as a powerful cautionary tale that made them conclude, \"I never want to go to prison.\"",
+        "search_queries": [
+          "Lockdown movie impact on viewers",
+          "Lockdown cautionary tale prison",
+          "Lockdown film raw depiction"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "John Luessenhop",
+            "four times"
+          ],
+          "verbatim_misses": [
+            "De'Aundre Bonds"
+          ]
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "title": "geocities.ws",
+          "domain": "geocities.ws",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Actor De’Aundre Bonds arrived for his first day of work on \"Lockdown\" limping and with a crutch.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "Bonds arrived on the set in New Mexico limping and walking with a crutch."
+        },
+        {
+          "beat": "He had been shot four times just days before the film started shooting.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "He’d been shot four times just days before the film started shooting."
+        },
+        {
+          "beat": "Director John Luessenhop had to get a doctor to approve Bonds working on the film.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "“I had to get a doctor to approve him working on the film"
+        },
+        {
+          "beat": "The director then wrote Bonds' limp into his character.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "and then we wrote his limp into his character.”"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": false,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "propriety: gossip/legal/tragedy/political/disparagement content"
+        ],
+        "flags": [
+          "shortVersion 79 chars (target 50-60, cap 80)",
+          "longDescription 165 chars (target ~120, max 160)",
+          "verbatim: could not confirm [\"De'Aundre Bonds\"] in fetched bodies"
+        ],
+        "judge_notes": "The card fails propriety_pass because being shot four times, even if presented neutrally, falls under the 'tragedies (accidents or disasters connected to talent)' guideline. The instruction is to fail when uncertain, and this event is severe enough to be considered a tragedy."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Actor Joe Torry, like others, commented that he would not have been able to perform the challenging and disturbing rape scene in Lockdown.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Actor Joe Torry, like others, commented that he would not have been able to perform the challenging and disturbing rape scene in Lockdown.",
+        "search_queries": [
+          "Joe Torry Lockdown rape scene",
+          "Joe Torry on De'Aundre Bonds scene",
+          "Lockdown movie actors difficult scenes"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Actor Clifton Powell, though not in the scene, stated he would not have been willing to perform the disturbing rape scene in Lockdown, emphasizing the importance of respecting actors' personal boundaries.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Actor Clifton Powell, though not in the scene, stated he would not have been willing to perform the disturbing rape scene in Lockdown, emphasizing the importance of respecting actors' personal boundaries.",
+        "search_queries": [
+          "Clifton Powell Lockdown rape scene",
+          "Clifton Powell on De'Aundre Bonds scene",
+          "Lockdown movie actor boundaries"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "actor",
+        "shortVersion": "Director John Luessenhop got a \"clean slate\" for casting Lockdown.",
+        "longDescription": "Director John Luessenhop got a \"clean slate\" for casting Lockdown. He chose actors he felt would truly make the heartfelt drama work.",
+        "sources": [
+          {
+            "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 3150.0,
+            "endSeconds": 4200.0,
+            "startTimecode": "00:52:30",
+            "endTimecode": "01:10:00"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Director John Luessenhop was given a \"clean slate\" for casting Lockdown, allowing him to select actors he felt were genuinely right for the film.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Director John Luessenhop was given a \"clean slate\" for casting Lockdown, allowing him to select actors he felt were genuinely right for the film.",
+        "search_queries": [
+          "Lockdown 2000 casting clean slate",
+          "John Luessenhop casting Lockdown",
+          "Lockdown movie director casting freedom"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.fandango.com/lockdown-2000-40346/cast-and-crew",
+          "title": "fandango.com",
+          "domain": "fandango.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "John Luessenhop",
+            "Lockdown",
+            "Boyz in da Hood",
+            "Gabriel Casseus",
+            "Richard T. Jones",
+            "Clifton Powell",
+            "Bill Nunn",
+            "Melissa Desousa",
+            "blackfilm.com",
+            "February 2003",
+            "Wilson Morales",
+            "Rainforest Pictures",
+            "Master P",
+            "Santa Fe",
+            "New Mexico",
+            "Albuquerque",
+            "December",
+            "Slam",
+            "HBO",
+            "New Jersey Drive",
+            "Warner Brothers",
+            "New York",
+            "Snoop Dogg",
+            "Denzel Washington",
+            "Chris Tucker",
+            "Rush Hour 2",
+            "Eddie Murphy"
+          ],
+          "verbatim_misses": [
+            "Menace to Society",
+            "De'aundre Bonds",
+            "5th Urbarworld Film Festival",
+            "America's Most Wanted",
+            "Arrival Urbanworld Film Festival",
+            "Heart n' Soul"
+          ]
+        },
+        {
+          "url": "https://www.tvguide.com/movies/lockdown/cast/2030183709/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.allocine.fr/film/fichefilm-51324/casting/",
+          "title": "allocine.fr",
+          "domain": "allocine.fr",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.cinema.com/film/7893/lockdown/cast.phtml",
+          "title": "cinema.com",
+          "domain": "cinema.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director John Luessenhop initially feared that \"Lockdown\" would be a \"hip-hop prison film.\"",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "I was afraid at first thinking it was a hip-hop prison film"
+        },
+        {
+          "beat": "However, he saw the script's potential to be a \"heartfelt drama\" akin to \"Boyz in da Hood\" or \"Menace to Society.\"",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "then I looked through it and saw it could be a heartfelt drama along the lines of a ‘Boyz in da Hood’ and ‘Menace to Society’"
+        },
+        {
+          "beat": "Luessenhop was given a \"clean slate\" for casting, which allowed him to select actors he believed were genuinely right for the film.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "and they gave me a clean slate to cast it, it had some people attached, I went out and got people I thought would really make it work"
+        },
+        {
+          "beat": "He cast actors such as Gabriel Casseus, Richard T. Jones, De'aundre Bonds, Clifton Powell, Bill Nunn, and Melissa Desousa.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "With Gabriel Casseus, Richard T. Jones, De’Aundre Bonds, Clifton Powell, Bill Nunn and Melissa Desousa, I think it all began to come together and gave us a chance to make a solid film."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 66 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['Menace to Society', \"De'aundre Bonds\", '5th Urbarworld Film Festival', \"America's Most Wanted\", 'Arrival Urbanworld Film Festival', \"Heart n' Soul\"] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Master P not only acts in Lockdown, he also executive produced it.",
+        "longDescription": "Master P not only acts in Lockdown, he also executive produced it. His role in the film was part of his evolving interest in film production as a business.",
+        "sources": [
+          {
+            "url": "https://www.popmatters.com/lockdown-2496255811.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Master P, who produced Lockdown through No Limit Films, also took on an acting role in the movie as the character \"Clean Up.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Master P, who produced Lockdown through No Limit Films, also took on an acting role in the movie as the character \"Clean Up.\"",
+        "search_queries": [
+          "Master P role in Lockdown",
+          "Master P Clean Up Lockdown",
+          "Lockdown 2000 Master P acting"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Master P",
+            "Lockdown",
+            "I Got the Hookup",
+            "Foolish"
+          ],
+          "verbatim_misses": [
+            "Clean Up"
+          ]
+        },
+        {
+          "url": "https://jamesbowman.net/2003/02/lockdown/",
+          "title": "jamesbowman.net",
+          "domain": "jamesbowman.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.encyclopedia.com/arts/culture-magazines/lockdown-2000",
+          "title": "encyclopedia.com",
+          "domain": "encyclopedia.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.tvguide.com/movies/lockdown/cast/2030183709/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Master P, who portrays the character Clean Up, also served as an executive producer for Lockdown.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "Cash hooks up with Clean-Up (Master P, also executive producer on the film)"
+        },
+        {
+          "beat": "His character, Clean Up, is depicted as the prison's primary distributor of drugs and goods.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "the joint’s major drugs and goods mover."
+        },
+        {
+          "beat": "Master P's participation in Lockdown highlighted his evolving interest in film production as a straight-up business.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "Though Lockdown has been waiting for theatrical release for some two years, it demonstrates that his longstanding interest in film production (I Got the Hookup, Foolish) is evolving into an increasingly straight-up business."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": false,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 0
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "spoiler: card reveals plot, outcomes, or a surprise (cameo/secret role)"
+        ],
+        "flags": [
+          "shortVersion 66 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['Clean Up'] in fetched bodies"
+        ],
+        "judge_notes": "Beat 1 describes Clean Up's role as the prison's major drugs and goods mover, which is a plot detail. For a GENERAL card, which must be spoiler-free for the entire runtime, this constitutes a spoiler, even if the short and long descriptions do not explicitly state it. Therefore, spoiler_safety is 0 and spoiler_free is false."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "actor",
+        "shortVersion": "Actor De'Aundre Bonds gave an interview from prison for the film.",
+        "longDescription": "Actor De'Aundre Bonds gave an interview from prison for the film. The movie's PR team emphasized his real-life incarceration on the official website.",
+        "sources": [
+          {
+            "url": "https://www.popmatters.com/lockdown-2496255811.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Lockdown's official website featured an interview with actor De'Aundre Bonds conducted from prison, coinciding with the film's U.S. release.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Lockdown's official website featured an interview with actor De'Aundre Bonds conducted from prison, coinciding with the film's U.S. release.",
+        "search_queries": [
+          "Lockdown movie official website De'Aundre Bonds prison interview",
+          "De'Aundre Bonds interview from prison Lockdown",
+          "Lockdown 2000 website features"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "De'Aundre Bonds",
+            "Dre",
+            "Lockdown"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/1120513-lockdown",
+          "title": "rottentomatoes.com",
+          "domain": "rottentomatoes.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.encyclopedia.com/arts/culture-magazines/lockdown-2000",
+          "title": "encyclopedia.com",
+          "domain": "encyclopedia.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.tvguide.com/movies/lockdown/cast/2030183709/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "De'Aundre Bonds, who plays Dre in \"Lockdown,\" was incarcerated for manslaughter in real life.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "young Bonds (Junior in Get on the Bus , currently incarcerated, in real life, for manslaughter, a point that the PR machinery is emphasizing, including an interview with him, from prison, on the official website)"
+        },
+        {
+          "beat": "The film's public relations team emphasized Bonds' real-life incarceration.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "currently incarcerated, in real life, for manslaughter, a point that the PR machinery is emphasizing, including an interview with him, from prison, on the official website"
+        },
+        {
+          "beat": "This emphasis included an interview with Bonds conducted from prison, featured on the film's official website.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "a point that the PR machinery is emphasizing, including an interview with him, from prison, on the official website"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": false,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "propriety: gossip/legal/tragedy/political/disparagement content"
+        ],
+        "flags": [
+          "shortVersion 65 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "Lockdown's PR highlighted actor De'Aundre Bonds' real-life incarceration.",
+        "longDescription": "Lockdown's PR highlighted actor De'Aundre Bonds' real-life incarceration. The film's official website even featured an interview with him from prison.",
+        "sources": [
+          {
+            "url": "https://www.popmatters.com/lockdown-2496255811.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Lockdown's public relations reportedly highlighted actor De'Aundre Bonds' real-life incarceration for manslaughter to promote the film around its U.S. release.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Lockdown's public relations reportedly highlighted actor De'Aundre Bonds' real-life incarceration for manslaughter to promote the film around its U.S. release.",
+        "search_queries": [
+          "Lockdown 2000 PR De'Aundre Bonds incarceration",
+          "De'Aundre Bonds Lockdown marketing",
+          "Lockdown movie public relations strategy"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "De'Aundre Bonds",
+            "Dre",
+            "Junior",
+            "Get on the Bus",
+            "11 years",
+            "Ironwood State Prison",
+            "Blythe",
+            "Sept. 5, 2001",
+            "Denzel Washington",
+            "Antwone Fisher",
+            "Anthony Lamar Matthews",
+            "Los Angeles",
+            "Blair McCormack",
+            "PopMatters",
+            "Los Angeles Times"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "De'Aundre Bonds",
+            "Dre",
+            "Junior",
+            "Get on the Bus",
+            "11 years",
+            "Ironwood State Prison",
+            "Blythe",
+            "Sept. 5, 2001",
+            "Denzel Washington",
+            "Antwone Fisher",
+            "Anthony Lamar Matthews",
+            "Los Angeles",
+            "Blair McCormack",
+            "PopMatters",
+            "Los Angeles Times"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/1120513-lockdown",
+          "title": "rottentomatoes.com",
+          "domain": "rottentomatoes.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.tvguide.com/movies/lockdown/cast/2030183709/",
+          "title": "tvguide.com",
+          "domain": "tvguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Actor De'Aundre Bonds, who plays Dre in the film, was incarcerated for manslaughter in real life.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "young Bonds (Junior in Get on the Bus , currently incarcerated, in real life, for manslaughter"
+        },
+        {
+          "beat": "The film's public relations machinery reportedly emphasized Bonds' real-life incarceration.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "a point that the PR machinery is emphasizing"
+        },
+        {
+          "beat": "This emphasis included an interview with Bonds conducted from prison, featured on the film's official website.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-2496255811.html",
+          "supporting_passage": "including an interview with him, from prison, on the official website"
+        },
+        {
+          "beat": "Bonds was serving an 11-year sentence for a manslaughter conviction.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "He’s in Ironwood State Prison in Blythe, serving 11 years for a manslaughter conviction."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": false,
+          "propriety": false,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "maturity: content exceeds the maturity standard",
+          "propriety: gossip/legal/tragedy/political/disparagement content"
+        ],
+        "flags": [
+          "shortVersion 73 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": "The card fails propriety_pass because it discusses a legal matter (manslaughter conviction) and a tragedy (a death associated with the talent), which are explicitly disallowed. It also fails maturity_pass as the topic of a real-life manslaughter conviction and incarceration is not considered G-rated content for a general audience on a pause screen, even if phrased neutrally."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "location",
+        "shortVersion": "Lockdown's prison scenes were filmed in a real, historic New Mexico prison.",
+        "longDescription": "Lockdown's prison scenes were filmed in a real, historic New Mexico prison. It was the site of 'the most infamous prison riot in American history'.",
+        "sources": [
+          {
+            "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 4200.0,
+            "endSeconds": 5250.0,
+            "startTimecode": "01:10:00",
+            "endTimecode": "01:27:30"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Lockdown filmed its prison scenes in Santa Fe and inner-city scenes in Albuquerque, New Mexico.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Lockdown filmed its prison scenes in Santa Fe and inner-city scenes in Albuquerque, New Mexico.",
+        "search_queries": [
+          "Lockdown 2000 filming locations Santa Fe Albuquerque",
+          "where was Lockdown 2000 filmed",
+          "Lockdown movie New Mexico cities"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "New Mexico",
+            "Santa Fe",
+            "Albuquerque",
+            "John Luessenhop"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "title": "geocities.ws",
+          "domain": "geocities.ws",
+          "tier": "unknown",
+          "evidence_class": "discovery",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "New Mexico",
+            "Santa Fe",
+            "Albuquerque",
+            "John Luessenhop"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director John Luessenhop stated that all prison scenes for Lockdown were filmed in Santa Fe, New Mexico, and inner-city scenes in Albuquerque.",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "We shot all the prison scenes in Santa Fe, New Mexico and all the inner city scenes in Albuquerque."
+        },
+        {
+          "beat": "The prison scenes were specifically shot at an old state penitentiary in Santa Fe, New Mexico.",
+          "sourceUrl": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "supporting_passage": "Lockdown was filmed in Santa Fe, NM at the old state pen."
+        },
+        {
+          "beat": "Filming in the old state prison was described as 'pretty creepy' due to it being the site of 'the most infamous prison riot in American history'.",
+          "sourceUrl": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "supporting_passage": "It was actually pretty creepy filming in the same prison and the same cellblocks where the most infamous prison riot in American history took place"
+        },
+        {
+          "beat": "The shoot for Lockdown was described as 'very hot', with most of the crew and cast staying in the shade.",
+          "sourceUrl": "http://www.geocities.ws/rbfilms/lockdown.html",
+          "supporting_passage": "It was a very hot shoot, most everybody stayed in the shade."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 75 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "\"Lockdown\" was filmed in 1999, but its release was delayed for years.",
+        "longDescription": "\"Lockdown\" was filmed in 1999, but its release was delayed for years. It faced \"many years of political and financial hassles\" before its 2003 U.S. debut.",
+        "sources": [
+          {
+            "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.popmatters.com/lockdown-dvd-2496256303.html",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 5250.0,
+            "endSeconds": 6300.0,
+            "startTimecode": "01:27:30",
+            "endTimecode": "01:45:00"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Lockdown premiered at the 2000 Toronto International Film Festival before its international release and delayed U.S. debut.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Lockdown premiered at the 2000 Toronto International Film Festival before its international release and delayed U.S. debut.",
+        "search_queries": [
+          "Lockdown 2000 Toronto Film Festival",
+          "Lockdown movie premiere",
+          "Toronto International Film Festival 2000 films"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "title": "latimes.com",
+          "domain": "latimes.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "1999",
+            "2003",
+            "U.S.",
+            "New Mexico"
+          ],
+          "verbatim_misses": [
+            "February 14"
+          ]
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-dvd-2496256303.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "1999",
+            "2003",
+            "U.S.",
+            "New Mexico"
+          ],
+          "verbatim_misses": [
+            "February 14"
+          ]
+        },
+        {
+          "url": "https://www.popmatters.com/lockdown-2496255811.html",
+          "title": "popmatters.com",
+          "domain": "popmatters.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "title": "blackfilm.com",
+          "domain": "blackfilm.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Lockdown",
+            "1999",
+            "2003",
+            "U.S.",
+            "New Mexico"
+          ],
+          "verbatim_misses": [
+            "February 14"
+          ]
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The film \"Lockdown\" was shot in 1999 at a former state prison in New Mexico.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "The film, which co-stars Richard T. Jones, Master P and Bill Nunn, was shot in 1999 at a former state prison in New Mexico."
+        },
+        {
+          "beat": "It then waited for theatrical release for about two years.",
+          "sourceUrl": "https://www.popmatters.com/lockdown-dvd-2496256303.html",
+          "supporting_passage": "Though Lockdown has been waiting for theatrical release for some two years"
+        },
+        {
+          "beat": "The film's release was delayed due to \"many years of political and financial hassles.\"",
+          "sourceUrl": "https://blackfilm.com/20030214/features/lockdown.shtml",
+          "supporting_passage": "After many years of political and financial hassles, the movie that everyone knows about but hasn't seen is FINALLY coming out."
+        },
+        {
+          "beat": "\"Lockdown\" eventually opened in a limited U.S. release on February 14, 2003.",
+          "sourceUrl": "https://www.latimes.com/archives/la-xpm-2003-feb-25-et-gold25-story.html",
+          "supporting_passage": "opened Feb. 14 in 80 theaters around the country, including Los Angeles"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 69 chars (target 50-60, cap 80)",
+          "verbatim: could not confirm ['February 14'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    }
+  ]
+}
