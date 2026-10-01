@@ -6,5 +6,4754 @@
     "input_prompt": "White House Down (2013)",
     "anchor_source": "title_only"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "White House Down cut pre-production by nearly half.",
+        "longDescription": "The film's pre-production was condensed from 15 weeks to just eight to secure Channing Tatum's lead role and a prime summer release date.",
+        "sources": [
+          {
+            "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film's pre-production schedule was significantly condensed from 15 weeks to just eight, a challenge accepted to secure a favorable release date and Channing Tatum's involvement.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film's pre-production schedule was significantly condensed from 15 weeks to just eight, a challenge accepted to secure a favorable release date and Channing Tatum's involvement.",
+        "search_queries": [
+          "White House Down production schedule",
+          "White House Down Channing Tatum pre-production",
+          "Roland Emmerich White House Down timeline"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "15 weeks",
+            "eight",
+            "Channing Tatum",
+            "Fourth of July weekend",
+            "Kurt Petruccelli",
+            "Reid Carolin",
+            "Harald Kloser",
+            "Brad Fischer",
+            "Sony",
+            "Roland Emmerich",
+            "Independence Day"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=abZdUnHSsuU",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.screendaily.com/white-house-down/5057754.article",
+          "title": "screendaily.com",
+          "domain": "screendaily.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m10066/white-house-down",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "title": "etonline.com",
+          "domain": "etonline.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The pre-production schedule for \"White House Down\" was cut from a planned 15 weeks to just eight.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "They decided to cut a planned 15 weeks of pre-production to eight"
+        },
+        {
+          "beat": "This accelerated timeline was necessary to secure Channing Tatum as the lead actor for the film.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "Sony had to weigh the option of, if we're going to do this movie with Channing, we have to move everything up to make it happen,\" said Tatum's producing partner and the film's executive producer Reid Carolin. \"I guess everyone was stoked enough about Chan that they bent over backwards and made it work. We busted our ass to make this happen"
+        },
+        {
+          "beat": "The rush also aimed to secure a more exciting release date, specifically targeting the Fourth of July weekend.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "However, everyone felt it was worth it not only for their star but a more exciting release date. A more Roland Emmerich appropriate release date. \"This is a movie about the White House, directed by the director of Independence Day ,\" said producer Harald Kloser. \"We're staring at the calendar and, in the middle of the year, the Fourth of July weekend is looking at us the whole time. We kind of said 'C'mon, we can't less this pass.'"
+        },
+        {
+          "beat": "The shortened schedule created a \"nightmare\" for production designer Kurt Petruccelli, who had to recreate the White House and other landmarks.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "They decided to cut a planned 15 weeks of pre-production to eight, a nightmare for production designer Kurt Petruccelli. Petruccelli, described as \"the hero of our film\" by producer Brad Fischer, was tasked not only with recreating the entire White House, but its grounds, the Pentagon, Capitol Building and more."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (White House Down rushed production and cut pre-production time to secure Channing Tatum, requiring sets to be built quickly.)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "set_design",
+        "shortVersion": "Filmmakers built 65% of the White House for the film.",
+        "longDescription": "The production constructed 45 sets, including two Oval Offices and a replica of the President's limousine, to re-create the iconic building and its grounds on soundstages.",
+        "sources": [
+          {
+            "url": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Filmmakers constructed a nearly exact, to-scale replica of the White House, including the Oval Office and the President's limousine, for the film.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Filmmakers constructed a nearly exact, to-scale replica of the White House, including the Oval Office and the President's limousine, for the film.",
+        "search_queries": [
+          "White House Down White House replica",
+          "Jamie Foxx White House Down set",
+          "White House Down Oval Office set"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House",
+            "Oval Office",
+            "The Beast",
+            "Cadillac Escalade",
+            "Roland Emmerich",
+            "White House Historical Society",
+            "65%",
+            "45",
+            "two"
+          ],
+          "verbatim_misses": [
+            "President's limousine"
+          ]
+        },
+        {
+          "url": "https://collider.com/harald-kloser-white-house-down-interview/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.fxguide.com/fxfeatured/action-beats-6-scenes-from-white-house-down/",
+          "title": "fxguide.com",
+          "domain": "fxguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=abZdUnHSsuU",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://image-engine.com/case-studies/white-house-down/",
+          "title": "image-engine.com",
+          "domain": "image-engine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eErk3qhiIpE",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The production re-created 65% of the White House, building 45 sets in two and a half months.",
+          "sourceUrl": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
+          "supporting_passage": "They re-created 65% of the White House. They had to build 45 sets in two and a half months because of the rushed production schedule"
+        },
+        {
+          "beat": "This included two Oval Office sets, one for stunts and one for dialogue, and a replica of \"The Beast\" limousine.",
+          "sourceUrl": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
+          "supporting_passage": "They built two Oval Office sets, one for stunts and one for dialogue. “The Beast” is a protective limousine that’s an 8-foot wide by 22-foot long safe room that was built for President Obama’s administration. It plays a major role in the film, but no one’s seen it so they designed it based on the headlights of a Cadillac Escalade."
+        },
+        {
+          "beat": "Since no one had seen the real \"Beast,\" its design was based on the headlights of a Cadillac Escalade.",
+          "sourceUrl": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
+          "supporting_passage": "“The Beast” is a protective limousine that’s an 8-foot wide by 22-foot long safe room that was built for President Obama’s administration. It plays a major role in the film, but no one’s seen it so they designed it based on the headlights of a Cadillac Escalade."
+        },
+        {
+          "beat": "Director Roland Emmerich wanted to shoot the entire movie on stage for complete control, so all exteriors were created on stage.",
+          "sourceUrl": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
+          "supporting_passage": "This was done so Emmerich could have complete control of the exteriors onstage. Roland wants to shoot the entire movie on stage. And we created all of the exteriors on stage."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 1,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (Extensive set construction for the White House and other government buildings under a tight schedule, including 45 sets built in 8 weeks, recreating 65% of the White House, Capitol, and Pentagon.)"
+        ],
+        "flags": [
+          "relaxed: dropped beats [3] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
+          "verbatim: could not confirm [\"President's limousine\"] in fetched bodies"
+        ],
+        "judge_notes": "Beat 3 is not fully entailed as the source does not mention 'guidance for architectural dignity'."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "set_design",
+        "shortVersion": "Most of the White House was built on Montreal soundstages.",
+        "longDescription": "Due to D.C. filming restrictions, the production recreated 65% of the White House and its grounds in Canada, using 45 detailed sets to achieve authenticity.",
+        "sources": [
+          {
+            "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Due to strict no-fly zones and limited access in Washington D.C., many outdoor scenes, including those on the White House lawn, were filmed in Montreal, Canada.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Due to strict no-fly zones and limited access in Washington D.C., many outdoor scenes, including those on the White House lawn, were filmed in Montreal, Canada.",
+        "search_queries": [
+          "White House Down filming locations",
+          "White House Down Montreal",
+          "White House Down Washington D.C. restrictions"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House",
+            "Montreal",
+            "Canada",
+            "Washington D.C.",
+            "Kurt Petruccelli",
+            "65%",
+            "45",
+            "two and a half months",
+            "32"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House",
+            "Montreal",
+            "Canada",
+            "Washington D.C.",
+            "Kurt Petruccelli",
+            "65%",
+            "45",
+            "two and a half months",
+            "32"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=abZdUnHSsuU",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.screendaily.com/white-house-down/5057754.article",
+          "title": "screendaily.com",
+          "domain": "screendaily.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m10066/white-house-down",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/where-was-white-house-down-filmed/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "title": "etonline.com",
+          "domain": "etonline.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Most of the film, set in Washington D.C., was actually filmed on soundstages in Montreal, Canada.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "Oddly enough, for a film that takes place largely in Washington D.C. and the World's most famous residence, filming almost exclusively took place in Montreal, Quebec Canada. In fact, save for a few second unit plates in D.C. and one park scene, all of White House Down will be filmed on stages in Montreal including a place called Mel's Cite du Cinema."
+        },
+        {
+          "beat": "Production designer Kurt Petruccelli and his team recreated 65% of the White House, its grounds, and other D.C. landmarks.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "All in all and 65% of the White House itself will be built in one way, shape or another. Plus, it's the White House, so it's both totally familiar to most and but also infinitely mysterious. We all know the visages, the press room, the Oval Office, but White House Down will go to places other films have never gone and it was up to Petruccelli to make sure everything was as accurate as possible. Petruccelli, described as \"the hero of our film\" by producer Brad Fischer, was tasked not only with recreating the entire White House, but its grounds, the Pentagon, Capitol Building and more."
+        },
+        {
+          "beat": "This extensive set construction included 45 total sets built over two and a half months by 32 set designers and many laborers.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "All in all 45 total sets are being worked on over two and half months by 32 set designers and innumerable laborers. \"I have 32 set designers running seven days a week for five weeks plus we had 200-300 different tradesmen working seven days a week, plus crews at night,\" said Petruccelli."
+        },
+        {
+          "beat": "For authenticity, the team referenced photographs and even found material sources to match wallpaper, windows, and paint colors to the real White House.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "They told us they referenced every photograph they could find and then tried to find the actual places that made the materials. Every piece of wallpaper, the windows, the color of the paint—they tried to match everything to the real White House to add to the authenticity of the film."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 1,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats"
+        ],
+        "flags": [],
+        "judge_notes": "The longDescription states 'Due to D.C. filming restrictions', but the fetched sources attribute the decision to film on soundstages to director Roland Emmerich's desire for control and predictable weather, not explicit 'restrictions'. This makes the summary_entailed false and factual_accuracy 1."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "set_design",
+        "shortVersion": "Filmmakers designed the White House's secret underground.",
+        "longDescription": "Since the actual appearance of the White House's secret underground structures is unknown, the production team had to envision the most realistic designs possible for the film.",
+        "sources": [
+          {
+            "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 0.0,
+            "endSeconds": 786.0,
+            "startTimecode": "00:00:00",
+            "endTimecode": "00:13:06"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film playfully addresses the urban legend of secret tunnels used by President Kennedy, initially presenting it as a myth before characters later utilize actual tunnels to escape.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film playfully addresses the urban legend of secret tunnels used by President Kennedy, initially presenting it as a myth before characters later utilize actual tunnels to escape.",
+        "search_queries": [
+          "White House Down JFK Marilyn Monroe tunnels",
+          "White House Down secret tunnels myth",
+          "White House Down urban legends"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Roland Emmerich",
+            "White House",
+            "Batcave",
+            "PEOC",
+            "Presidential Emergency Operations Center",
+            "The Beehive",
+            "Oval Office"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Roland Emmerich",
+            "White House",
+            "Batcave",
+            "PEOC",
+            "Presidential Emergency Operations Center",
+            "The Beehive",
+            "Oval Office"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/maggie-gyllenhaal-white-house-down-interview/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screencrush.com/roland-emmerich-interview-white-house-down-independence-day-2-godzilla/",
+          "title": "screencrush.com",
+          "domain": "screencrush.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m10066/white-house-down",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "title": "etonline.com",
+          "domain": "etonline.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director Roland Emmerich noted that what the filmmakers \"claim is in the White House has a little bit of the feel of a giant Batcave,\" referring to its security and operations.",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "Actually the whole security and how the White House operates and what is in the White House or what we claim is in the White House has a little bit of the feel of a giant Batcave, but it's not really."
+        },
+        {
+          "beat": "Because many governmental structures, like those underground, are entirely secret, the production team had to envision the most realistic designs possible.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "In creating governmental structures that are entirely secret (like the underground structures under the White House), Emmerich and his team had to envision the most realistic designs possible."
+        },
+        {
+          "beat": "The film features the Presidential Emergency Operations Center (PEOC), a real bunker where the President can survive a nuclear attack, though its actual appearance is unknown.",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "For example, the PEOC, the Presidential Emergency Operations Center exists, but nobody knows how it looks. It's a so called bunker where he can survive a nuclear attack. That all takes place in our movie."
+        },
+        {
+          "beat": "Another secret facility depicted is The Beehive, the Security Service headquarters located directly under the Oval Office.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "The Security Service headquarters is right under the Oval Office and it’s called The Beehive."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "set_design",
+        "shortVersion": "“White House Down” built 45 sets in just 8 weeks.",
+        "longDescription": "Production designer Kirk M. Petruccelli and his team faced a massive challenge, recreating 65% of the White House, the Capitol, and the Pentagon on soundstages under an incredibly tight schedule.",
+        "sources": [
+          {
+            "url": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.cinemablend.com/new/Set-White-House-Down-Joining-Channing-Tatum-An-Epic-Race-From-Script-Screen-36818.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Production designer Kirk M. Petruccelli was responsible for recreating the White House, its grounds, the Pentagon, and the Capitol Building under a highly condensed schedule.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Production designer Kirk M. Petruccelli was responsible for recreating the White House, its grounds, the Pentagon, and the Capitol Building under a highly condensed schedule.",
+        "search_queries": [
+          "White House Down production designer Kirk Petruccelli",
+          "White House Down set construction",
+          "White House Down Pentagon set"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "Kirk M. Petruccelli",
+            "45",
+            "65%",
+            "White House",
+            "Capitol",
+            "Pentagon"
+          ],
+          "verbatim_misses": [
+            "8 weeks",
+            "15 weeks"
+          ]
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.cinemablend.com/new/Set-White-House-Down-Joining-Channing-Tatum-An-Epic-Race-From-Script-Screen-36818.html",
+          "title": "cinemablend.com",
+          "domain": "cinemablend.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "Kirk M. Petruccelli",
+            "45",
+            "65%",
+            "White House",
+            "Capitol",
+            "Pentagon"
+          ],
+          "verbatim_misses": [
+            "8 weeks",
+            "15 weeks"
+          ]
+        },
+        {
+          "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "title": "etonline.com",
+          "domain": "etonline.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The initial preparation period for the film's sets was cut from 15 weeks to just eight weeks.",
+          "sourceUrl": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
+          "supporting_passage": "we initially had, I'd say a 15-week preparation period, which got cut in half to eight weeks."
+        },
+        {
+          "beat": "Production designer Kirk M. Petruccelli's team was tasked with building 45 sets for the film.",
+          "sourceUrl": "https://www.cinemablend.com/new/Set-White-House-Down-Joining-Channing-Tatum-An-Epic-Race-From-Script-Screen-36818.html",
+          "supporting_passage": "By Petruccelli's count, that is 45 sets"
+        },
+        {
+          "beat": "The entire film was shot on soundstages, with no first unit shooting done on location.",
+          "sourceUrl": "https://collider.com/kirk-petruccelli-white-house-down-interview/",
+          "supporting_passage": "They shot the entire film on soundstages; none of the first unit shooting was done on location."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (Filmmakers meticulously recreated 65% of the White House, including specific details like wallpaper and paint colors, with help from the White House Historical Society.)"
+        ],
+        "flags": [
+          "relaxed: dropped beats [2] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
+          "verbatim: could not confirm ['8 weeks', '15 weeks'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "This film is a direct homage to the classic action movie \"Die Hard.\"",
+        "longDescription": "Director Roland Emmerich and star Channing Tatum intentionally channeled the 80s action classic, even down to a specific costume detail.",
+        "sources": [
+          {
+            "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://collider.com/channing-tatum-white-house-down-interview/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "White House Down was one of two films released in 2013 depicting a White House attack, noted for its more light-hearted, self-aware, and \"giddy\" action compared to its counterpart.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "White House Down was one of two films released in 2013 depicting a White House attack, noted for its more light-hearted, self-aware, and \"giddy\" action compared to its counterpart.",
+        "search_queries": [
+          "White House Down vs Olympus Has Fallen tone",
+          "White House Down light-hearted action",
+          "Roland Emmerich White House Down style"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/channing-tatum-white-house-down-interview/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Roland Emmerich",
+            "Channing Tatum",
+            "Die Hard",
+            "John Cale",
+            "John McClane",
+            "Lethal Weapon",
+            "80s"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Roland Emmerich",
+            "Channing Tatum",
+            "Die Hard",
+            "John Cale",
+            "John McClane",
+            "Lethal Weapon",
+            "80s"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Roland Emmerich",
+            "Channing Tatum",
+            "Die Hard",
+            "John Cale",
+            "John McClane",
+            "Lethal Weapon",
+            "80s"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/maggie-gyllenhaal-white-house-down-interview/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m10066/white-house-down",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ign.com/videos/white-house-down-cast-director-interviews",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0O1MMu30z2A",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VXds_asiaek",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director Roland Emmerich aimed for the film to be a \"true action movie\" in the vein of \"Die Hard.\"",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "So it's a true action movie. It's like in the vein of Die Hard and stuff like that."
+        },
+        {
+          "beat": "Channing Tatum, a fan of \"Die Hard,\" said he always wanted to do a movie like it.",
+          "sourceUrl": "https://collider.com/channing-tatum-white-house-down-interview/",
+          "supporting_passage": "I’ve always wanted to do a Die Hard. Die Hard’s one of my favorite films."
+        },
+        {
+          "beat": "Tatum's character, John Cale, wears a t-shirt that is a direct homage to John McClane from \"Die Hard.\"",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "Tatum’s t-shirt in the film is a direct homage to John McClane in Die Hard."
+        },
+        {
+          "beat": "The film's tone was crafted to be fun and enjoyable, similar to \"Lethal Weapon\" and \"Die Hard.\"",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "The stakes are high, though, and the tone is also similar to Lethal Weapon and Die Hard. The tone of the film isn’t so hyper real that it’s scary, it’s supposed to be fun and enjoyable."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (The film, particularly John Cale's dirty white tank top, is a deliberate homage to Bruce Willis's John McClane in \"Die Hard,\" fulfilling Channing Tatum's desire.)"
+        ],
+        "flags": [
+          "shortVersion 68 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "set_design",
+        "shortVersion": "Retired Secret Service AD praised White House realism.",
+        "longDescription": "Mickey Nelson, a retired Assistant Director of the Secret Service, called the film's recreation of the West Wing, East Wing, and Oval Office \"fantastic,\" though he viewed the movie as entertainment.",
+        "sources": [
+          {
+            "url": "https://www.discovermagazine.com/a-secret-service-insiders-take-on-white-house-down-7951",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 786.0,
+            "endSeconds": 1572.0,
+            "startTimecode": "00:13:06",
+            "endTimecode": "00:26:12"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "A retired Secret Service Assistant Director found the film's recreation of the West Wing, East Wing, and Oval Office realistic, though he viewed the film as entertainment, not a security manual.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "A retired Secret Service Assistant Director found the film's recreation of the West Wing, East Wing, and Oval Office realistic, though he viewed the film as entertainment, not a security manual.",
+        "search_queries": [
+          "White House Down Secret Service realism",
+          "White House Down West Wing accuracy",
+          "Mickey Nelson White House Down"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screencrush.com/roland-emmerich-interview-white-house-down-independence-day-2-godzilla/",
+          "title": "screencrush.com",
+          "domain": "screencrush.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://globalnews.ca/news/677308/what-the-critics-are-saying-white-house-down/",
+          "title": "globalnews.ca",
+          "domain": "globalnews.ca",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.discovermagazine.com/a-secret-service-insiders-take-on-white-house-down-7951",
+          "title": "discovermagazine.com",
+          "domain": "discovermagazine.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Mickey Nelson",
+            "Secret Service",
+            "Assistant Director",
+            "White House Down",
+            "West Wing",
+            "East Wing",
+            "Oval Office"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/white-house-down-is-john-cale-based-on-a-real-secret-service-agent/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HgjCV5oAMQk",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "title": "etonline.com",
+          "domain": "etonline.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Mickey Nelson, a recently retired Assistant Director of the Secret Service, offered his insights on the technology and techniques behind \"White House Down.\"",
+          "sourceUrl": "https://www.discovermagazine.com/a-secret-service-insiders-take-on-white-house-down-7951",
+          "supporting_passage": "Mickey Nelson, the recently retired Assistant Director of the Secret Service, offered his insights on the technology and techniques behind White House Down"
+        },
+        {
+          "beat": "Nelson praised the film's recreation of the West Wing, East Wing, and Oval Office as \"fantastic.\"",
+          "sourceUrl": "https://www.discovermagazine.com/a-secret-service-insiders-take-on-white-house-down-7951",
+          "supporting_passage": "the recreation of the West Wing, East Wing, the Oval Office, even the president’s limo, I thought they did a fantastic job"
+        },
+        {
+          "beat": "He noted that some scenes in the film departed from realism for the sake of entertainment.",
+          "sourceUrl": "https://www.discovermagazine.com/a-secret-service-insiders-take-on-white-house-down-7951",
+          "supporting_passage": "some scenes that departed a bit from realism for the sake of entertainment, as most movies do”"
+        },
+        {
+          "beat": "He affirmed that his job was security, while the moviemaker's job was entertainment.",
+          "sourceUrl": "https://www.discovermagazine.com/a-secret-service-insiders-take-on-white-house-down-7951",
+          "supporting_passage": "your job is security and the moviemaker’s job is entertainment? “Yes"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "Filming recreated the White House on Montreal soundstages.",
+        "longDescription": "The production built 45 sets, including 65% of the White House, on soundstages in Montreal and Laval, Quebec, to achieve complete control over the elaborate shots.",
+        "sources": [
+          {
+            "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Director Roland Emmerich opted to shoot almost the entire film on soundstages in Montreal, Quebec, Canada, to gain complete control over the elaborate sets and shots.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Director Roland Emmerich opted to shoot almost the entire film on soundstages in Montreal, Quebec, Canada, to gain complete control over the elaborate sets and shots.",
+        "search_queries": [
+          "White House Down Montreal soundstages",
+          "Roland Emmerich filming White House Down",
+          "White House Down production location"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Roland Emmerich",
+            "White House Down",
+            "Montreal",
+            "Quebec",
+            "Canada",
+            "Kurt Petruccelli",
+            "D.C.",
+            "45",
+            "65%"
+          ],
+          "verbatim_misses": [
+            "Mel’s Cité du Cinéma",
+            "Laval"
+          ]
+        },
+        {
+          "url": "https://www.brbtravelblog.com/blog/montreal-filming-locations",
+          "title": "brbtravelblog.com",
+          "domain": "brbtravelblog.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.concordia.ca/cunews/offices/vpaer/aar/2013/07/18/concordians-act-up-in-white-house-down.html",
+          "title": "concordia.ca",
+          "domain": "concordia.ca",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.concordia.ca/cunews/main/stories/2013/08/05/concordians-act-upinwhitehousedown.html",
+          "title": "concordia.ca",
+          "domain": "concordia.ca",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/where-was-white-house-down-filmed/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director Roland Emmerich opted to film \"White House Down\" almost exclusively in Montreal, Quebec, Canada.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "Oddly enough, for a film that takes place largely in Washington D.C. and the World's most famous residence, filming almost exclusively took place in Montreal, Quebec Canada."
+        },
+        {
+          "beat": "Production designer Kurt Petruccelli was tasked with recreating the White House, its grounds, and other D.C. landmarks.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "Petruccelli, described as \"the hero of our film\" by producer Brad Fischer, was tasked not only with recreating the entire White House, but its grounds, the Pentagon, Capitol Building and more."
+        },
+        {
+          "beat": "In total, 45 sets were constructed for the film, building 65% of the White House itself.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "All in all 45 total sets are being worked on over two and half months by 32 set designers and innumerable laborers. All in all and 65% of the White House itself will be built in one way, shape or another."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "relaxed: dropped beats [1] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
+          "verbatim: could not confirm ['Mel’s Cité du Cinéma', 'Laval'] in fetched bodies"
+        ],
+        "judge_notes": "Beat 1 is not entailed as the source does not explicitly state that 'most of the shooting on sets' occurred in Laval, only that it was a 'prominent production location'. The longDescription also contains two claims not fully entailed: 'on soundstages in Laval' (as soundstages in Laval for set construction are not explicitly confirmed) and 'to achieve complete control over the elaborate shots' (as this causal claim is not explicitly stated in the sources, only inferred from reasons like weather control)."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "set_design",
+        "shortVersion": "White House Down used real tech, advised by national security consultants.",
+        "longDescription": "To ensure authenticity without compromising national security, the filmmakers consulted experts and based all depicted technologies on actual existing concepts, even for secret government structures.",
+        "sources": [
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 1572.0,
+            "endSeconds": 2358.0,
+            "startTimecode": "00:26:12",
+            "endTimecode": "00:39:18"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "All technologies depicted in the film were actual existing concepts at the time, with consultants advising to ensure no designs for secret structures or tech jeopardized national security.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "All technologies depicted in the film were actual existing concepts at the time, with consultants advising to ensure no designs for secret structures or tech jeopardized national security.",
+        "search_queries": [
+          "White House Down technology realism",
+          "White House Down security consultants",
+          "White House Down secret technology"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "Roland Emmerich",
+            "Presidential Emergency Operations Center",
+            "PEOC",
+            "The Beast"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "Roland Emmerich",
+            "Presidential Emergency Operations Center",
+            "PEOC",
+            "The Beast"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.fxguide.com/fxfeatured/action-beats-6-scenes-from-white-house-down/",
+          "title": "fxguide.com",
+          "domain": "fxguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=abZdUnHSsuU",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.discovermagazine.com/a-secret-service-insiders-take-on-white-house-down-7951",
+          "title": "discovermagazine.com",
+          "domain": "discovermagazine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eErk3qhiIpE",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "title": "etonline.com",
+          "domain": "etonline.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "All technologies depicted in \"White House Down\" were actual existing concepts at the time of filming.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "All of the technologies seen in the film are actual things that exist."
+        },
+        {
+          "beat": "Consultants were on hand to advise if any designs for secret structures or technology were too close to reality and could jeopardize national security.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "There were consultants letting them know if something they were designing was too close to reality and could jeopardize national security."
+        },
+        {
+          "beat": "For governmental structures that are entirely secret, director Roland Emmerich and his team aimed to envision the most realistic designs possible.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "In creating governmental structures that are entirely secret (like the underground structures under the White House), Emmerich and his team had to envision the most realistic designs possible."
+        },
+        {
+          "beat": "The Presidential Emergency Operations Center (PEOC) exists, but its appearance is secret, so filmmakers had to imagine its design.",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "For example, the PEOC, the Presidential Emergency Operations Center exists, but nobody knows how it looks. It's a so called bunker where he can survive a nuclear attack. That all takes place in our movie."
+        },
+        {
+          "beat": "The Presidential limousine, known as \"The Beast,\" was rebuilt for the film without official plans, as none exist.",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "Or the Presidential Embassy, called the Beast and it's like this incredible car. The cool thing is in movies you can rebuild it, but no plans exist, I mean God forbid, so our car dudes had to kind of figure this out without plans."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 74 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "An unscripted comment by the character Donnie, referencing the White House being blown up in Emmerich's Independence Day, was kept in the final cut because the director found it amusing.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "An unscripted comment by the character Donnie, referencing the White House being blown up in Emmerich's Independence Day, was kept in the final cut because the director found it amusing.",
+        "search_queries": [
+          "White House Down Independence Day reference",
+          "Donnie White House Down quote",
+          "Roland Emmerich Independence Day nod"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "White House Down went from script sale to release in just 14 months.",
+        "longDescription": "For a major summer blockbuster, White House Down had an exceptionally rapid production, with the entire process from script acquisition to theatrical release completed in just 14 months.",
+        "sources": [
+          {
+            "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film had an exceptionally rapid production turnaround for a major blockbuster, with the deal made in March 2012 and the movie released just 14 months later in June 2013.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film had an exceptionally rapid production turnaround for a major blockbuster, with the deal made in March 2012 and the movie released just 14 months later in June 2013.",
+        "search_queries": [
+          "White House Down production timeline",
+          "White House Down rapid production",
+          "White House Down 2012-2013 schedule"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "Sony",
+            "14 months",
+            "Channing Tatum",
+            "15 weeks",
+            "45 sets",
+            "two and a half months",
+            "James Vanderbilt",
+            "Roland Emmerich",
+            "Foxcatcher",
+            "Kurt Petruccelli",
+            "Reid Carolin",
+            "Brad Fischer",
+            "Harald Kloser",
+            "Amy Pascal",
+            "Singularity",
+            "Bennett Miller"
+          ],
+          "verbatim_misses": [
+            "March 2012",
+            "June 28, 2013",
+            "eight weeks"
+          ]
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "Sony",
+            "14 months",
+            "Channing Tatum",
+            "15 weeks",
+            "45 sets",
+            "two and a half months",
+            "James Vanderbilt",
+            "Roland Emmerich",
+            "Foxcatcher",
+            "Kurt Petruccelli",
+            "Reid Carolin",
+            "Brad Fischer",
+            "Harald Kloser",
+            "Amy Pascal",
+            "Singularity",
+            "Bennett Miller"
+          ],
+          "verbatim_misses": [
+            "March 2012",
+            "June 28, 2013",
+            "eight weeks"
+          ]
+        },
+        {
+          "url": "https://www.movieinsider.com/m10066/white-house-down",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The script for White House Down was sold to Sony in March 2012.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "Vanderbilt's White House Down script was sold to Sony in March of 2012"
+        },
+        {
+          "beat": "This was considered an \"inhumanly quick turnaround\" for a major summer blockbuster.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "Yes, it's an inhumanly quick turnaround for a major summer blockbuster, but that's the way Emmerich and his crew like it."
+        },
+        {
+          "beat": "The production schedule was rushed to secure Channing Tatum as the lead actor.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "In order to get Tatum as their lead, the production moved up a month ahead of schedule so they could shoot White House Down before Foxcatcher."
+        },
+        {
+          "beat": "Pre-production was cut from 15 weeks to eight, requiring 45 sets to be built in two and a half months.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "They decided to cut a planned 15 weeks of pre-production to eight, a nightmare for production designer Kurt Petruccelli. ... All in all 45 total sets are being worked on over two and half months by 32 set designers and innumerable laborers."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": false,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": false,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 0,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 1,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "summary_entailment: shortVersion/longDescription claim beyond the beats",
+          "rubric: factual_accuracy 0/2 (must be >=1)"
+        ],
+        "flags": [
+          "shortVersion 68 chars (target 50-60, cap 80)",
+          "relaxed: dropped beats [1] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
+          "verbatim: could not confirm ['March 2012', 'June 28, 2013', 'eight weeks'] in fetched bodies"
+        ],
+        "judge_notes": "Beat 1 claims the film was released 'just 14 months later, on June 28, 2013'. However, Beat 0 states the script was sold in 'March 2012'. March 2012 to June 28, 2013, is 15 months, not 14. While one source mentions '14 months' and another mentions 'June 28, 2013', the combination of the start date (March 2012) and end date (June 28, 2013) contradicts the '14 months' claim. This makes the core claim of the card factually inaccurate, leading to a factual_accuracy score of 0 and summary_entailed set to false."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Then-President Barack Obama reportedly found White House Down to be very entertaining.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Then-President Barack Obama reportedly found White House Down to be very entertaining.",
+        "search_queries": [
+          "President Obama White House Down reaction",
+          "Barack Obama watches White House Down",
+          "White House Down presidential viewing"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "costume/prop",
+        "shortVersion": "John Cale's tank top is a Die Hard homage.",
+        "longDescription": "The dirty white tank top worn by John Cale was a deliberate nod to Bruce Willis's iconic John McClane look, fulfilling Channing Tatum's long-held desire to star in a \"Die Hard\"-style action film.",
+        "sources": [
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 2358.0,
+            "endSeconds": 3144.0,
+            "startTimecode": "00:39:18",
+            "endTimecode": "00:52:24"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Channing Tatum's character, John Cale, wears a dirty white tank top in the film as a direct homage to Bruce Willis's iconic John McClane look in Die Hard.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Channing Tatum's character, John Cale, wears a dirty white tank top in the film as a direct homage to Bruce Willis's iconic John McClane look in Die Hard.",
+        "search_queries": [
+          "White House Down Die Hard homage",
+          "Channing Tatum white tank top",
+          "John Cale Die Hard reference"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Channing Tatum",
+            "John Cale",
+            "Bruce Willis",
+            "John McClane",
+            "Die Hard",
+            "White House Down",
+            "Roland Emmerich",
+            "Sony",
+            "1988",
+            "2013"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Channing Tatum",
+            "John Cale",
+            "Bruce Willis",
+            "John McClane",
+            "Die Hard",
+            "White House Down",
+            "Roland Emmerich",
+            "Sony",
+            "1988",
+            "2013"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://theplaylist.net/now-on-dvd-roland-emmerich-reveals-his-5-biggest-influences-on-white-house-down-20131106/",
+          "title": "theplaylist.net",
+          "domain": "theplaylist.net",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screencrush.com/roland-emmerich-interview-white-house-down-independence-day-2-godzilla/",
+          "title": "screencrush.com",
+          "domain": "screencrush.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.eyeforfilm.co.uk/feature/2013-09-01-interview-with-roland-emmerich-jamie-foxx-and-channing-tatum-about-white-house-down-feature-story-by-richard-mowe",
+          "title": "eyeforfilm.co.uk",
+          "domain": "eyeforfilm.co.uk",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Channing Tatum's t-shirt in the film is a direct homage to John McClane from Die Hard.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "Tatum’s t-shirt in the film is a direct homage to John McClane in Die Hard."
+        },
+        {
+          "beat": "The dirty wifebeater Channing Tatum wears in the film was no coincidence.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "That dirty wifebeater Channing Tatum is wearing is no coincidence."
+        },
+        {
+          "beat": "Channing Tatum admitted he had \"always wanted to do a Die Hard\" film, and White House Down gave him that chance.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "\"I've always wanted to do a Die Hard \" admitted the actor and in his upcoming action film White House Down , he's getting that chance."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "To add character, President Sawyer (Jamie Foxx) chews Nicorette gum when stressed, a nod to President Obama's known nicotine habit, leading to a humorous ad-libbed scene.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "To add character, President Sawyer (Jamie Foxx) chews Nicorette gum when stressed, a nod to President Obama's known nicotine habit, leading to a humorous ad-libbed scene.",
+        "search_queries": [
+          "Jamie Foxx Nicorette White House Down",
+          "President Sawyer nicotine habit",
+          "White House Down Jamie Foxx ad-lib"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "general",
+        "shortVersion": "White House Down director preferred rival film's title.",
+        "longDescription": "Director Roland Emmerich learned about the similar film \"Olympus Has Fallen\" a month before shooting, admitting he preferred its title.",
+        "sources": [
+          {
+            "url": "https://screenrant.com/olympus-has-fallen-white-house-down-comparisons-release-directors-response-antoine-fuqua-rolenad-emmerich/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 3144.0,
+            "endSeconds": 3930.0,
+            "startTimecode": "00:52:24",
+            "endTimecode": "01:05:30"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Director Roland Emmerich learned about Olympus Has Fallen a month before shooting and felt it had a \"much better title,\" knowing his film would feel like an \"afterthought\" coming out later.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Director Roland Emmerich learned about Olympus Has Fallen a month before shooting and felt it had a \"much better title,\" knowing his film would feel like an \"afterthought\" coming out later.",
+        "search_queries": [
+          "Roland Emmerich Olympus Has Fallen title",
+          "White House Down dueling movies release",
+          "White House Down afterthought comment"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://screenrant.com/olympus-has-fallen-white-house-down-comparisons-release-directors-response-antoine-fuqua-rolenad-emmerich/",
+          "title": "screenrant.com",
+          "domain": "screenrant.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Roland Emmerich",
+            "Olympus Has Fallen",
+            "White House Down",
+            "a month"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director Roland Emmerich learned about the competing film \"Olympus Has Fallen\" a month before shooting \"White House Down.\"",
+          "sourceUrl": "https://screenrant.com/olympus-has-fallen-white-house-down-comparisons-release-directors-response-antoine-fuqua-rolenad-emmerich/",
+          "supporting_passage": "Roland Emmerich: “I learned right before shooting, maybe a month before, [Antoine Fuqua] was shooting another which was called Olympus Has Fallen."
+        },
+        {
+          "beat": "Emmerich admitted he thought \"Olympus Has Fallen\" had a \"much better title\" than his own film.",
+          "sourceUrl": "https://screenrant.com/olympus-has-fallen-white-house-down-comparisons-release-directors-response-antoine-fuqua-rolenad-emmerich/",
+          "supporting_passage": "I said, ‘This is so much a better title than White House Down.’"
+        },
+        {
+          "beat": "He couldn't stop production on \"White House Down\" at that point because the actors had already been cast.",
+          "sourceUrl": "https://screenrant.com/olympus-has-fallen-white-house-down-comparisons-release-directors-response-antoine-fuqua-rolenad-emmerich/",
+          "supporting_passage": "I couldn’t stop it. We had cast the actors and so I went through it."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "Emmerich left a stalled film for White House Down.",
+        "longDescription": "Director Roland Emmerich was working on another film, 'Singularity,' when Sony offered him 'White House Down,' which he felt was a perfect fit.",
+        "sources": [
+          {
+            "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Roland Emmerich ultimately decided to direct White House Down because he was drawn to the strong characters and the unique narrative that blended action with a political thriller.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Roland Emmerich ultimately decided to direct White House Down because he was drawn to the strong characters and the unique narrative that blended action with a political thriller.",
+        "search_queries": [
+          "Roland Emmerich White House Down why direct",
+          "White House Down director characters",
+          "Emmerich political thriller action"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Roland Emmerich",
+            "Singularity",
+            "Sony",
+            "White House Down",
+            "Die Hard"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/roland-emmerich-white-house-down-olympus-has-fallen/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director Roland Emmerich was originally slated to direct a different film titled 'Singularity.'",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "Everyone thought Roland Emmerich's next movie was going to be Singularity."
+        },
+        {
+          "beat": "However, the production of 'Singularity' encountered difficulties and became 'stuck.'",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "We had got a little bit stuck with Singularity."
+        },
+        {
+          "beat": "Sony then offered Emmerich the 'White House Down' project about two weeks after he discussed 'Singularity' with them.",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "It was roughly two weeks before they offered me White House Down."
+        },
+        {
+          "beat": "Sony executives believed the project was 'perfect' for Emmerich, a sentiment he shared.",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "they thought it was perfect for me and I kind of think they were right."
+        },
+        {
+          "beat": "Emmerich aimed for 'White House Down' to be a 'true action movie' in the style of 'Die Hard.'",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "So it's a true action movie. It's like in the vein of Die Hard and stuff like that."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (Director Roland Emmerich put his sci-fi film 'Singularity' on hold to direct White House Down, fast-tracking production to secure Channing Tatum.)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "set_design",
+        "shortVersion": "White House Down recreated 65% of the White House with real art.",
+        "longDescription": "To ensure authenticity, the production meticulously recreated 65% of the White House, even obtaining high-resolution prints of actual oil paintings from the White House Historical Society for the sets.",
+        "sources": [
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Filmmakers obtained high-resolution prints of the actual oil paintings from the White House Historical Society to ensure accuracy for the film's sets.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Filmmakers obtained high-resolution prints of the actual oil paintings from the White House Historical Society to ensure accuracy for the film's sets.",
+        "search_queries": [
+          "White House Down White House Historical Society",
+          "White House Down oil paintings",
+          "White House Down set accuracy"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "White House",
+            "65%",
+            "White House Historical Society"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m10066/white-house-down",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ign.com/videos/white-house-down-cast-director-interviews",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "title": "etonline.com",
+          "domain": "etonline.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "White House",
+            "65%",
+            "White House Historical Society"
+          ],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The White House Historical Society provided high-resolution prints of the real oil paintings for the film's sets.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "The White House Historical Society was able to provide them with high-resolution prints of the oil paintings hanging in the real White House."
+        },
+        {
+          "beat": "The production recreated 65% of the White House, showing extraordinary attention to detail.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "As I learned on set, the production re-created 65% of the White House and they didn't do it on the cheap. As we walked around the soundstages, the attention to detail was extraordinary."
+        },
+        {
+          "beat": "Filmmakers referenced every photograph they could find to match wallpaper, windows, and paint colors to the real White House.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "They told us they referenced every photograph they could find and then tried to find the actual places that made the materials. Every piece of wallpaper, the windows, the color of the paint—they tried to match everything to the real White House to add to the authenticity of the film."
+        },
+        {
+          "beat": "Director Roland Emmerich and his crew built a nearly exact recreation of the White House.",
+          "sourceUrl": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "supporting_passage": "director Ronald Emmerich and crew made the decision to build a nearly exact recreation of the White House, from the Oval Office to the president's high-tech limousine."
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": false,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 1,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "claim_entailment: only 2 bound+supported beats remain (need 3)"
+        ],
+        "flags": [
+          "shortVersion 64 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": "Beat 3 is not entailed because the source text refers to the director as \"Ronald Emmerich\" while the beat states \"Roland Emmerich\". This is a material claim discrepancy, leading to a factual_accuracy score of 1, as one internal beat is not strictly supported, even though the main claims in the short and long descriptions are well-supported by other beats."
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "actor",
+        "shortVersion": "Channing Tatum did most of his own stunts, but was stopped from a 25-foot fall.",
+        "longDescription": "While Channing Tatum was keen to perform nearly all of his action sequences, the production team prevented him from attempting a particularly dangerous 25-foot fall.",
+        "sources": [
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.gamesradar.com/channing-tatum-not-being-able-to-do-the-biggest-stunts-in-white-house-down/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 3930.0,
+            "endSeconds": 4716.0,
+            "startTimecode": "01:05:30",
+            "endTimecode": "01:18:36"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "While Channing Tatum performed most of his own stunts, exceptions were made for scenes involving motorcycles and cars, and filmmakers tried to dissuade him from a potentially dangerous 25-foot fall.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "While Channing Tatum performed most of his own stunts, exceptions were made for scenes involving motorcycles and cars, and filmmakers tried to dissuade him from a potentially dangerous 25-foot fall.",
+        "search_queries": [
+          "Channing Tatum White House Down stunt exceptions",
+          "Channing Tatum 25-foot fall White House Down",
+          "White House Down motorcycle stunts"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Channing Tatum",
+            "White House Down",
+            "25-foot",
+            "atrium",
+            "motorcycles",
+            "cars",
+            "glass",
+            "table",
+            "plant"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.female.com.au/channing-tatum-and-jamie-foxx-white-house-down.htm",
+          "title": "female.com.au",
+          "domain": "female.com.au",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.gamesradar.com/channing-tatum-not-being-able-to-do-the-biggest-stunts-in-white-house-down/",
+          "title": "gamesradar.com",
+          "domain": "gamesradar.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Channing Tatum",
+            "White House Down",
+            "25-foot",
+            "atrium",
+            "motorcycles",
+            "cars",
+            "glass",
+            "table",
+            "plant"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "title": "etonline.com",
+          "domain": "etonline.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Channing Tatum performed most of his own stunts for the film \"White House Down.\"",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "Tatum did most of his own stunts for the film"
+        },
+        {
+          "beat": "Exceptions were made for stunts involving motorcycles and cars.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "except for the motorcycles and cars"
+        },
+        {
+          "beat": "Filmmakers also tried to talk Tatum out of performing a potentially dangerous 25-foot fall.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "possibly a 25-foot fall that he wants to do on his own but that the filmmakers are trying to talk him out of doing"
+        },
+        {
+          "beat": "Tatum was not allowed to perform a fall from the atrium due to multiple elements, including falling glass, a breakaway table, and a plant.",
+          "sourceUrl": "https://www.gamesradar.com/channing-tatum-not-being-able-to-do-the-biggest-stunts-in-white-house-down/",
+          "supporting_passage": "But they wouldn’t let me do the fall from the atrium. Just because there was falling glass, there was a break away table, there was a plant"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 79 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "actor",
+        "shortVersion": "Channing Tatum did most of his own stunts, even on the White House roof.",
+        "longDescription": "Channing Tatum performed the majority of his stunts in the film, including a brutal fight on the White House roof, though filmmakers prevented him from doing one specific fall.",
+        "sources": [
+          {
+            "url": "https://collider.com/channing-tatum-white-house-down-interview/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.gamesradar.com/channing-tatum-not-being-able-to-do-the-biggest-stunts-in-white-house-down/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Channing Tatum performed most of his own stunts, including a brutal, explosion-filled fight on the White House roof, with director Roland Emmerich calling him \"probably the most physical actor I have ever met.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Channing Tatum performed most of his own stunts, including a brutal, explosion-filled fight on the White House roof, with director Roland Emmerich calling him \"probably the most physical actor I have ever met.\"",
+        "search_queries": [
+          "Channing Tatum White House Down stunts",
+          "Channing Tatum White House roof fight",
+          "Roland Emmerich Channing Tatum physical"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/channing-tatum-white-house-down-interview/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Channing Tatum",
+            "White House"
+          ],
+          "verbatim_misses": [
+            "Jason Clarke",
+            "Stenz"
+          ]
+        },
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.fxguide.com/fxfeatured/action-beats-6-scenes-from-white-house-down/",
+          "title": "fxguide.com",
+          "domain": "fxguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=abZdUnHSsuU",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.gamesradar.com/channing-tatum-not-being-able-to-do-the-biggest-stunts-in-white-house-down/",
+          "title": "gamesradar.com",
+          "domain": "gamesradar.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Channing Tatum",
+            "White House"
+          ],
+          "verbatim_misses": [
+            "Jason Clarke",
+            "Stenz"
+          ]
+        },
+        {
+          "url": "https://www.ign.com/videos/white-house-down-cast-director-interviews",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Channing Tatum performed most of his own stunts for the film, excluding those involving motorcycles and cars.",
+          "sourceUrl": "https://collider.com/channing-tatum-white-house-down-interview/",
+          "supporting_passage": "Tatum did most of his own stunts for the film except for the motorcycles and cars"
+        },
+        {
+          "beat": "Tatum expressed his enjoyment of performing his own stunts, noting he can tell when actors cut away in movies.",
+          "sourceUrl": "https://www.gamesradar.com/channing-tatum-not-being-able-to-do-the-biggest-stunts-in-white-house-down/",
+          "supporting_passage": "I like doing my own stunts. You know, I go to movies all the time, and I know when they cut away"
+        },
+        {
+          "beat": "While fighting on the White House roof, Tatum performed a fall, but was not permitted to do a specific fall from the atrium due to too many elements.",
+          "sourceUrl": "https://www.gamesradar.com/channing-tatum-not-being-able-to-do-the-biggest-stunts-in-white-house-down/",
+          "supporting_passage": "There was a part of the movie when we’re on the roof of the White House, fighting, and I do a fall. But they wouldn’t let me do the fall from the atrium. Just because there was falling glass, there was a break away table, there was a plant. So they wouldn’t let me do that – just because there was too many elements."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": false,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (Channing Tatum did most of his own stunts, but was stopped from a specific dangerous fall.)"
+        ],
+        "flags": [
+          "shortVersion 72 chars (target 50-60, cap 80)",
+          "relaxed: dropped beats [2] (binding or entailment failure) — review that shortVersion/longDescription don't restate the dropped claims",
+          "verbatim: could not confirm ['Jason Clarke', 'Stenz'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "White House Down rushed production to secure Channing Tatum.",
+        "longDescription": "To get Channing Tatum as the lead, the film's production schedule was significantly accelerated, cutting pre-production time almost in half and requiring sets to be built at a breakneck pace.",
+        "sources": [
+          {
+            "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The accelerated production schedule for White House Down allowed filming to conclude before Channing Tatum was committed to his next project, Foxcatcher.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The accelerated production schedule for White House Down allowed filming to conclude before Channing Tatum was committed to his next project, Foxcatcher.",
+        "search_queries": [
+          "Channing Tatum Foxcatcher White House Down",
+          "White House Down production schedule Tatum",
+          "Channing Tatum film commitments"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "Channing Tatum",
+            "Bennett Miller",
+            "Foxcatcher",
+            "Roland Emmerich",
+            "Sony",
+            "15 weeks",
+            "45 sets",
+            "two and a half months"
+          ],
+          "verbatim_misses": [
+            "eight weeks"
+          ]
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "Channing Tatum",
+            "Bennett Miller",
+            "Foxcatcher",
+            "Roland Emmerich",
+            "Sony",
+            "15 weeks",
+            "45 sets",
+            "two and a half months"
+          ],
+          "verbatim_misses": [
+            "eight weeks"
+          ]
+        },
+        {
+          "url": "https://www.cinemablend.com/new/Set-White-House-Down-Joining-Channing-Tatum-An-Epic-Race-From-Script-Screen-36818.html",
+          "title": "cinemablend.com",
+          "domain": "cinemablend.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/where-was-white-house-down-filmed/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Channing Tatum was already committed to Bennett Miller's Foxcatcher when director Roland Emmerich wanted him for White House Down.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "Unfortunately, Tatum had already signed on for Bennett Miller's Foxcatcher , meaning Emmerich could either endure a long wait or, just maybe, rush everything and use him before that film."
+        },
+        {
+          "beat": "To secure Tatum, Sony decided to move up the entire production schedule.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "\"Sony had to weigh the option of, if we're going to do this movie with Channing, we have to move everything up to make it happen,\" said Tatum's producing partner and the film's executive producer Reid Carolin. \"I guess everyone was stoked enough about Chan that they bent over backwards and made it work. We busted our ass to make this happen\""
+        },
+        {
+          "beat": "This meant cutting the pre-production time from a planned 15 weeks to just eight weeks.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": "They decided to cut a planned 15 weeks of pre-production to eight, a nightmare for production designer Kurt Petruccelli."
+        },
+        {
+          "beat": "The rushed schedule forced the production design team to build 45 sets in only two and a half months.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "They had to build 45 sets in two and a half months because of the rushed production schedule, including the bulk of the White House, the Pentagon, the Capitol, tanks, aircraft, Marine One, Black Hawks, etc."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (Production was rushed and fast-tracked to secure Channing Tatum as the lead, which put director Roland Emmerich's other film, Singularity, on hold.)"
+        ],
+        "flags": [
+          "verbatim: could not confirm ['eight weeks'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Director Roland Emmerich initially hesitated to direct White House Down because he had previously destroyed the White House in Independence Day and 2012, questioning if he could \"do the White House again.\"",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Director Roland Emmerich initially hesitated to direct White House Down because he had previously destroyed the White House in Independence Day and 2012, questioning if he could \"do the White House again.\"",
+        "search_queries": [
+          "Roland Emmerich White House Down hesitation",
+          "Emmerich Independence Day White House",
+          "White House Down director comments"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "Tatum's casting paused Emmerich's next film.",
+        "longDescription": "Director Roland Emmerich was prepping his sci-fi film Singularity when White House Down came along. To secure Channing Tatum, production was fast-tracked, putting Emmerich's other project on hold.",
+        "sources": [
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://screencrush.com/roland-emmerich-interview-white-house-down-independence-day-2-godzilla/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 4716.0,
+            "endSeconds": 5502.0,
+            "startTimecode": "01:18:36",
+            "endTimecode": "01:31:42"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "To secure Channing Tatum for White House Down, director Roland Emmerich put his planned sci-fi film Singularity on hold.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "To secure Channing Tatum for White House Down, director Roland Emmerich put his planned sci-fi film Singularity on hold.",
+        "search_queries": [
+          "Roland Emmerich Singularity White House Down",
+          "White House Down Channing Tatum schedule",
+          "Emmerich film on hold"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/channing-tatum-white-house-down-interview/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.slashfilm.com/525720/film-interview-channing-tatum-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Channing Tatum",
+            "Roland Emmerich",
+            "Singularity",
+            "White House Down",
+            "Harald Kloser",
+            "Sony",
+            "Foxcatcher"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Channing Tatum",
+            "Roland Emmerich",
+            "Singularity",
+            "White House Down",
+            "Harald Kloser",
+            "Sony",
+            "Foxcatcher"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=abZdUnHSsuU",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screencrush.com/roland-emmerich-interview-white-house-down-independence-day-2-godzilla/",
+          "title": "screencrush.com",
+          "domain": "screencrush.com",
+          "tier": "unknown",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Channing Tatum",
+            "Roland Emmerich",
+            "Singularity",
+            "White House Down",
+            "Harald Kloser",
+            "Sony",
+            "Foxcatcher"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://thecinemaholic.com/where-was-white-house-down-filmed/",
+          "title": "thecinemaholic.com",
+          "domain": "thecinemaholic.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ign.com/videos/white-house-down-cast-director-interviews",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director Roland Emmerich was in the middle of prepping his next project, a sci-fi film called Singularity.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "Emmerich was in the middle of prepping the sci-fi film Singularity as his next project when Sony asked him to look at the script for White House Down."
+        },
+        {
+          "beat": "Emmerich and his co-writer, Harald Kloser, were stuck on the Singularity script, finding it too complicated to move forward.",
+          "sourceUrl": "https://screencrush.com/roland-emmerich-interview-white-house-down-independence-day-2-godzilla/",
+          "supporting_passage": "I was just stuck in the script and then this other script [for ‘White House Down’] ended up on my table, and I called ['Singularity' co-writer] Harald [Kloser] and was like, “You should immediately read this. This is good. Maybe we should do that and then keep going with ‘Singularity.’\" So we did. So you’re saying you were interested in 'WHD' because you were having some writer’s block with ‘Singularity’ and this project was more readily available? Yes, exactly. Sometimes it’s good to have a breath of fresh air because Harald and I just kept writing and writing and writing and it just didn’t go anywhere. I think it got way too complicated. Our script got way too complicated and I realized that."
+        },
+        {
+          "beat": "Sony then offered Emmerich the White House Down script, which was already a \"go\" project.",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "And all of a sudden this project, which was a \"go\" project was all of a sudden, you know... I talked with Sony about it and they were totally okay and so they knew. It was roughly two weeks before they offered me White House Down. They pretty much brought the project on a Friday at night or so and they thought it was perfect for me and I kind of think they were right."
+        },
+        {
+          "beat": "To secure Channing Tatum as the lead, White House Down production was moved up a month ahead of schedule.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "In order to get Tatum as their lead, the production moved up a month ahead of schedule so they could shoot White House Down before Foxcatcher."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film was released with dramatically different titles in various countries, such as \"Storming the White House\" in Russia and \"Assault on Power\" in Spain.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film was released with dramatically different titles in various countries, such as \"Storming the White House\" in Russia and \"Assault on Power\" in Spain.",
+        "search_queries": [
+          "White House Down international titles",
+          "Storming the White House Russia",
+          "White House Down foreign names"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film's soundtrack notably features \"Spanish Flea\" by Herb Alpert & The Tijuana Brass as a character's ringtone and The Rolling Stones' \"Street Fighting Man\" during the end credits.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film's soundtrack notably features \"Spanish Flea\" by Herb Alpert & The Tijuana Brass as a character's ringtone and The Rolling Stones' \"Street Fighting Man\" during the end credits.",
+        "search_queries": [
+          "White House Down Spanish Flea",
+          "White House Down Street Fighting Man",
+          "White House Down soundtrack songs"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": null,
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "The film's tight production schedule required the construction of 45 elaborate sets in a mere two and a half months.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "The film's tight production schedule required the construction of 45 elaborate sets in a mere two and a half months.",
+        "search_queries": [
+          "White House Down 45 sets construction",
+          "White House Down rapid set build",
+          "White House Down production design schedule"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [],
+      "claim_evidence": [],
+      "validation": null,
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "set_design",
+        "shortVersion": "Filmmakers recreated 65% of the White House with painstaking detail.",
+        "longDescription": "To achieve authenticity, the production meticulously matched wallpaper, windows, and paint colors to the actual White House, even getting help from the White House Historical Society.",
+        "sources": [
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 5502.0,
+            "endSeconds": 6288.0,
+            "startTimecode": "01:31:42",
+            "endTimecode": "01:44:48"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Filmmakers meticulously matched wallpaper, windows, and paint colors to those found in the actual White House to enhance the authenticity of the film's sets.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Filmmakers meticulously matched wallpaper, windows, and paint colors to those found in the actual White House to enhance the authenticity of the film's sets.",
+        "search_queries": [
+          "White House Down set wallpaper",
+          "White House Down paint colors accuracy",
+          "White House Down set detail"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "White House",
+            "65%",
+            "White House Historical Society",
+            "Roland Emmerich"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "primary_direct",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "White House",
+            "65%",
+            "White House Historical Society",
+            "Roland Emmerich"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://screencrush.com/roland-emmerich-interview-white-house-down-independence-day-2-godzilla/",
+          "title": "screencrush.com",
+          "domain": "screencrush.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ign.com/videos/white-house-down-cast-director-interviews",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "title": "etonline.com",
+          "domain": "etonline.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The production recreated 65% of the White House for the film's sets.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "As I learned on set, the production re-created 65% of the White House and they didn't do it on the cheap."
+        },
+        {
+          "beat": "Filmmakers referenced every photograph they could find to ensure accuracy in the set design.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "They told us they referenced every photograph they could find and then tried to find the actual places that made the materials."
+        },
+        {
+          "beat": "Every piece of wallpaper, the windows, and the color of the paint were matched to the real White House.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "Every piece of wallpaper, the windows, the color of the paint—they tried to match everything to the real White House to add to the authenticity of the film."
+        },
+        {
+          "beat": "The White House Historical Society provided high-resolution prints of the actual oil paintings for the sets.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "The White House Historical Society was able to provide them with high-resolution prints of the oil paintings hanging in the real White House."
+        },
+        {
+          "beat": "Director Roland Emmerich aimed to rebuild the White House sets exactly as they look in reality.",
+          "sourceUrl": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "supporting_passage": "Most of the time to Oval Office looks exactly like how it looks, but all of the other rooms, they were all like this and this time we said \"Let's really rebuild it exactly like it looks.\""
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": true
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "shortVersion 68 chars (target 50-60, cap 80)"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "D.C.'s no-fly zone meant 1,000 VFX shots.",
+        "longDescription": "Strict no-fly zones over Washington D.C. meant filmmakers couldn't capture many real aerial shots, leading to a massive computer-generated effort to create the city and its action.",
+        "sources": [
+          {
+            "url": "https://www.fxguide.com/fxfeatured/action-beats-6-scenes-from-white-house-down/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.awn.com/vfxworld/creating-virtual-washington-white-house-down",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 6288.0,
+            "endSeconds": 7074.0,
+            "startTimecode": "01:44:48",
+            "endTimecode": "01:57:54"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Due to strict no-fly zones over Washington D.C., extensive computer-generated imagery (CGI) was necessary to create realistic aerial shots of landmarks and helicopters in the film.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Due to strict no-fly zones over Washington D.C., extensive computer-generated imagery (CGI) was necessary to create realistic aerial shots of landmarks and helicopters in the film.",
+        "search_queries": [
+          "White House Down CGI aerial shots",
+          "White House Down no-fly zone CGI",
+          "White House Down helicopter effects"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.fxguide.com/fxfeatured/action-beats-6-scenes-from-white-house-down/",
+          "title": "fxguide.com",
+          "domain": "fxguide.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Washington D.C.",
+            "1,000",
+            "White House",
+            "Capitol"
+          ],
+          "verbatim_misses": [
+            "Black Hawk helicopters"
+          ]
+        },
+        {
+          "url": "https://www.awn.com/vfxworld/creating-virtual-washington-white-house-down",
+          "title": "awn.com",
+          "domain": "awn.com",
+          "tier": "unknown",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Washington D.C.",
+            "1,000",
+            "White House",
+            "Capitol"
+          ],
+          "verbatim_misses": [
+            "Black Hawk helicopters"
+          ]
+        },
+        {
+          "url": "https://image-engine.com/case-studies/white-house-down/",
+          "title": "image-engine.com",
+          "domain": "image-engine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://postmagazine.com/publications/2013/july-1-2013/vfx-roland-emmerichs-white-house-down/",
+          "title": "postmagazine.com",
+          "domain": "postmagazine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.awn.com/vfxworld/selected-vfx-progressions-white-house-down",
+          "title": "awn.com",
+          "domain": "awn.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eErk3qhiIpE",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://image-engine.com/portfolio/white-house-down/",
+          "title": "image-engine.com",
+          "domain": "image-engine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The production faced a significant challenge due to Washington D.C.'s no-fly zone, which restricted aerial photography of key landmarks.",
+          "sourceUrl": "https://www.fxguide.com/fxfeatured/action-beats-6-scenes-from-white-house-down/",
+          "supporting_passage": "“…and you find out about the no-fly zone which pretty much includes everything that you need for the movie!” Volker Engel Co-vfx supervisor How do you make a film about terrorists taking over the White House when filming in the capital can be very difficult, if not impossible? Overall co-visual effects supervisor Volker Engel on Roland Emmerich’s White House Down answers: “Well, you’re very enthusiastic at the beginning and you think you’re going to get a lot from aerial photography, and then you do your research and you find out about the no-fly zone which pretty much includes everything that you need for the movie!”"
+        },
+        {
+          "beat": "This necessitated a massive computer-generated imagery (CGI) effort to create the film's Washington D.C. setting and action.",
+          "sourceUrl": "https://www.fxguide.com/fxfeatured/action-beats-6-scenes-from-white-house-down/",
+          "supporting_passage": "Despite that initial barrier, the film’s visual effects team rallied and sought to gain as many real plates of Washington D.C. as possible, with the knowledge that a large CG effort would bring the terrorist action film to life – but without a mammoth VFX shot count."
+        },
+        {
+          "beat": "Visual effects teams built digital environments, including the White House, its grounds, the Capitol, and various military vehicles like Black Hawk helicopters.",
+          "sourceUrl": "https://www.awn.com/vfxworld/creating-virtual-washington-white-house-down",
+          "supporting_passage": "\"The main part of the asset building was done by Method in Vancouver,\" adds Uncharted's Marc Weigert. \"They built the White House, the grounds, the East Wing, the West Wing, the Capitol, the Black Hawks.\""
+        },
+        {
+          "beat": "The extensive digital work resulted in a total of around 1,000 visual effects shots for the film.",
+          "sourceUrl": "https://www.awn.com/vfxworld/creating-virtual-washington-white-house-down",
+          "supporting_passage": "Talk about a ticking clock scenario: With only 12 months to deliver 1,000 VFX shots for Roland Emmerich's White House Down and with limited access to the White House grounds and the Lincoln Monument thanks to a no-fly zone, Uncharted Territory focused on management and quality control rather than creating in-house VFX."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "verbatim: could not confirm ['Black Hawk helicopters'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "set_design",
+        "shortVersion": "The White House set was 65% recreated for the film.",
+        "longDescription": "The production team went to extraordinary lengths to ensure authenticity, meticulously recreating a significant portion of the iconic building.",
+        "sources": [
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "To ensure authenticity, the production team even sought out the original material manufacturers for elements used in the real White House to recreate sets.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "To ensure authenticity, the production team even sought out the original material manufacturers for elements used in the real White House to recreate sets.",
+        "search_queries": [
+          "White House Down original material manufacturers",
+          "White House Down set authenticity",
+          "White House Down production detail"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "White House Down",
+            "White House",
+            "65%"
+          ],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.fxguide.com/fxfeatured/action-beats-6-scenes-from-white-house-down/",
+          "title": "fxguide.com",
+          "domain": "fxguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://image-engine.com/case-studies/white-house-down/",
+          "title": "image-engine.com",
+          "domain": "image-engine.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m10066/white-house-down",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.etonline.com/movies/135423_Making_of_White_House_Down",
+          "title": "etonline.com",
+          "domain": "etonline.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "The production team for \"White House Down\" recreated 65% of the White House for the film.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "As I learned on set, the production re-created 65% of the White House"
+        },
+        {
+          "beat": "They referenced every available photograph and sought out the original manufacturers for materials.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "They told us they referenced every photograph they could find and then tried to find the actual places that made the materials."
+        },
+        {
+          "beat": "This included matching every piece of wallpaper, the windows, and the color of the paint to the real White House.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "Every piece of wallpaper, the windows, the color of the paint—they tried to match everything to the real White House to add to the authenticity of the film."
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": true,
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [
+          "dedup: same story as a kept card (Filmmakers meticulously recreated 65% of the White House, including specific details like wallpaper and paint colors, with help from the White House Historical Society.)"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "emitted",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "Director Emmerich toured the Capitol for research.",
+        "longDescription": "To ensure authenticity for the film, director Roland Emmerich and his production team met with Senator John McCain and toured the U.S. Capitol building. They also received a tour of the Pentagon.",
+        "sources": [
+          {
+            "url": "https://collider.com/white-house-down-set-visit/",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": [
+          {
+            "startSeconds": 7074.0,
+            "endSeconds": 7860.0,
+            "startTimecode": "01:57:54",
+            "endTimecode": "02:11:00"
+          }
+        ]
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Members of the production team, including director Roland Emmerich, met with Senator John McCain and received a tour of the U.S. Capitol building for research.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Members of the production team, including director Roland Emmerich, met with Senator John McCain and received a tour of the U.S. Capitol building for research.",
+        "search_queries": [
+          "White House Down John McCain tour",
+          "Roland Emmerich Capitol research",
+          "White House Down production team McCain"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "reputable_editorial",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [
+            "Roland Emmerich",
+            "John McCain",
+            "Capitol",
+            "Pentagon",
+            "White House Down"
+          ],
+          "verbatim_misses": [
+            "U.S. Capitol building"
+          ]
+        },
+        {
+          "url": "https://collider.com/maggie-gyllenhaal-white-house-down-interview/",
+          "title": "collider.com",
+          "domain": "collider.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.fxguide.com/fxfeatured/action-beats-6-scenes-from-white-house-down/",
+          "title": "fxguide.com",
+          "domain": "fxguide.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=abZdUnHSsuU",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.screendaily.com/white-house-down/5057754.article",
+          "title": "screendaily.com",
+          "domain": "screendaily.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eErk3qhiIpE",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HgjCV5oAMQk",
+          "title": "youtube.com",
+          "domain": "youtube.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "video",
+          "resolved": true,
+          "body_kind": "transcript",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.ign.com/videos/white-house-down-cast-director-interviews",
+          "title": "ign.com",
+          "domain": "ign.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Director Roland Emmerich and members of the production team met with Senator John McCain.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "Some members of the production team and Emmerich met with John McCain"
+        },
+        {
+          "beat": "During this meeting, they also received a tour of the Capitol building.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "Some members of the production team and Emmerich met with John McCain and got a tour of the Capitol."
+        },
+        {
+          "beat": "Separately, some people at the Pentagon read the script and provided a tour to the production.",
+          "sourceUrl": "https://collider.com/white-house-down-set-visit/",
+          "supporting_passage": "Some people at the Pentagon read the script and gave them a tour"
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "checks": {
+          "contract": true,
+          "source_binding": true,
+          "spoiler_free": true,
+          "maturity": true,
+          "propriety": true,
+          "taxonomy": true,
+          "summary_entailment": true,
+          "film_specific": true,
+          "claim_entailment": true,
+          "verbatim": "flagged",
+          "cross_modal": true,
+          "emission_policy": true,
+          "rubric_disposition": true,
+          "would_pass_strict": false
+        },
+        "rubric": {
+          "factual_accuracy": 2,
+          "scene_grounding": 2,
+          "primitive_conformance": 2,
+          "viewer_value": 2,
+          "clarity": 2,
+          "spoiler_safety": 2
+        },
+        "curiosity": {},
+        "rejection_reasons": [],
+        "flags": [
+          "verbatim: could not confirm ['U.S. Capitol building'] in fetched bodies"
+        ],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "status": "rejected",
+      "card": {
+        "scope": "general",
+        "factCategory": "filming",
+        "shortVersion": "White House Down rushed to production for Channing Tatum.",
+        "longDescription": "The film went from script purchase to the start of filming in just five months, a rapid turnaround driven by the need to accommodate star Channing Tatum's busy schedule.",
+        "sources": [
+          {
+            "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.movieinsider.com/m10066/white-house-down",
+            "modality": "text",
+            "timestamp": null
+          },
+          {
+            "url": "https://www.cinemablend.com/new/Set-White-House-Down-Joining-Channing-Tatum-An-Epic-Race-From-Script-Screen-36818.html",
+            "modality": "text",
+            "timestamp": null
+          }
+        ],
+        "sceneAnchor": null,
+        "displayWindows": []
+      },
+      "anchor": {
+        "scene_description": "GENERAL CARD — shown at any point during the film, not tied to a specific scene.",
+        "anchor_element": "Sony Pictures purchased the spec script for White House Down in March 2012, with filming commencing just five months later in August 2012.",
+        "runtime_fraction": 0.0,
+        "approx_timecode": "",
+        "category_guess": "general",
+        "search_hint": "Sony Pictures purchased the spec script for White House Down in March 2012, with filming commencing just five months later in August 2012.",
+        "search_queries": [
+          "White House Down script purchase filming timeline",
+          "White House Down Sony spec script",
+          "White House Down production start date"
+        ],
+        "end_fraction": 0.0,
+        "scope": "general",
+        "origin": "title_sweep",
+        "runtime_third": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "title": "slashfilm.com",
+          "domain": "slashfilm.com",
+          "tier": "B",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.cinemablend.com/new/Set-White-House-Down-Joining-Channing-Tatum-An-Epic-Race-From-Script-Screen-36818.html",
+          "title": "cinemablend.com",
+          "domain": "cinemablend.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        },
+        {
+          "url": "https://www.movieinsider.com/m10066/white-house-down",
+          "title": "movieinsider.com",
+          "domain": "movieinsider.com",
+          "tier": "unknown",
+          "evidence_class": "unknown",
+          "modality": "text",
+          "resolved": true,
+          "body_kind": "html",
+          "verbatim_hits": [],
+          "verbatim_misses": []
+        }
+      ],
+      "claim_evidence": [
+        {
+          "beat": "Sony Pictures purchased James Vanderbilt's script for \"White House Down\" in March 2012.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Filming for the movie began just five months later, in August 2012.",
+          "sourceUrl": "https://www.movieinsider.com/m10066/white-house-down",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "This rapid schedule was necessary to secure Channing Tatum for the lead role.",
+          "sourceUrl": "https://www.cinemablend.com/new/Set-White-House-Down-Joining-Channing-Tatum-An-Epic-Race-From-Script-Screen-36818.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Producers cut the planned pre-production time from 15 weeks down to eight.",
+          "sourceUrl": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "Production designer Kurt Petruccelli's team had to build 65% of the White House residence and other sets in just eight weeks.",
+          "sourceUrl": "https://www.cinemablend.com/new/Set-White-House-Down-Joining-Channing-Tatum-An-Epic-Race-From-Script-Screen-36818.html",
+          "supporting_passage": ""
+        },
+        {
+          "beat": "In total, Petruccelli's team constructed 45 sets for the film.",
+          "sourceUrl": "https://www.cinemablend.com/new/Set-White-House-Down-Joining-Channing-Tatum-An-Epic-Race-From-Script-Screen-36818.html",
+          "supporting_passage": ""
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "checks": {
+          "contract": false
+        },
+        "rubric": {},
+        "curiosity": {},
+        "rejection_reasons": [
+          "contract: field counts/category/sources out of spec"
+        ],
+        "flags": [],
+        "judge_notes": ""
+      },
+      "humanReview": {
+        "state": "pending",
+        "reviewer": null,
+        "scores": {
+          "factual_accuracy_sourcing": null,
+          "scene_relevance_grounding": null,
+          "primitive_conformance": null,
+          "viewer_value": null,
+          "clarity_findability": null,
+          "spoiler_safety": null
+        },
+        "notes": null
+      }
+    }
+  ]
 }

@@ -6,12 +6,283 @@
     "input_prompt": "White House Down (2013)",
     "anchor_source": "title_only"
   },
-  "sceneFacts": [],
+  "sceneFacts": [
+    {
+      "scope": "general",
+      "factCategory": "set_design",
+      "shortVersion": "Filmmakers designed the White House's secret underground.",
+      "longDescription": "Since the actual appearance of the White House's secret underground structures is unknown, the production team had to envision the most realistic designs possible for the film.",
+      "sources": [
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 0.0,
+          "endSeconds": 786.0,
+          "startTimecode": "00:00:00",
+          "endTimecode": "00:13:06"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "set_design",
+      "shortVersion": "Retired Secret Service AD praised White House realism.",
+      "longDescription": "Mickey Nelson, a retired Assistant Director of the Secret Service, called the film's recreation of the West Wing, East Wing, and Oval Office \"fantastic,\" though he viewed the movie as entertainment.",
+      "sources": [
+        {
+          "url": "https://www.discovermagazine.com/a-secret-service-insiders-take-on-white-house-down-7951",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 786.0,
+          "endSeconds": 1572.0,
+          "startTimecode": "00:13:06",
+          "endTimecode": "00:26:12"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "set_design",
+      "shortVersion": "White House Down used real tech, advised by national security consultants.",
+      "longDescription": "To ensure authenticity without compromising national security, the filmmakers consulted experts and based all depicted technologies on actual existing concepts, even for secret government structures.",
+      "sources": [
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 1572.0,
+          "endSeconds": 2358.0,
+          "startTimecode": "00:26:12",
+          "endTimecode": "00:39:18"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "costume/prop",
+      "shortVersion": "John Cale's tank top is a Die Hard homage.",
+      "longDescription": "The dirty white tank top worn by John Cale was a deliberate nod to Bruce Willis's iconic John McClane look, fulfilling Channing Tatum's long-held desire to star in a \"Die Hard\"-style action film.",
+      "sources": [
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.slashfilm.com/525707/white-house-down-set-visit-channing-tatum-and-roland-emmerich-make-quick-work-of-the-summer-blockbuster/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 2358.0,
+          "endSeconds": 3144.0,
+          "startTimecode": "00:39:18",
+          "endTimecode": "00:52:24"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "general",
+      "shortVersion": "White House Down director preferred rival film's title.",
+      "longDescription": "Director Roland Emmerich learned about the similar film \"Olympus Has Fallen\" a month before shooting, admitting he preferred its title.",
+      "sources": [
+        {
+          "url": "https://screenrant.com/olympus-has-fallen-white-house-down-comparisons-release-directors-response-antoine-fuqua-rolenad-emmerich/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3144.0,
+          "endSeconds": 3930.0,
+          "startTimecode": "00:52:24",
+          "endTimecode": "01:05:30"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "actor",
+      "shortVersion": "Channing Tatum did most of his own stunts, but was stopped from a 25-foot fall.",
+      "longDescription": "While Channing Tatum was keen to perform nearly all of his action sequences, the production team prevented him from attempting a particularly dangerous 25-foot fall.",
+      "sources": [
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.gamesradar.com/channing-tatum-not-being-able-to-do-the-biggest-stunts-in-white-house-down/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 3930.0,
+          "endSeconds": 4716.0,
+          "startTimecode": "01:05:30",
+          "endTimecode": "01:18:36"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Tatum's casting paused Emmerich's next film.",
+      "longDescription": "Director Roland Emmerich was prepping his sci-fi film Singularity when White House Down came along. To secure Channing Tatum, production was fast-tracked, putting Emmerich's other project on hold.",
+      "sources": [
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://screencrush.com/roland-emmerich-interview-white-house-down-independence-day-2-godzilla/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 4716.0,
+          "endSeconds": 5502.0,
+          "startTimecode": "01:18:36",
+          "endTimecode": "01:31:42"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "set_design",
+      "shortVersion": "Filmmakers recreated 65% of the White House with painstaking detail.",
+      "longDescription": "To achieve authenticity, the production meticulously matched wallpaper, windows, and paint colors to the actual White House, even getting help from the White House Historical Society.",
+      "sources": [
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.slashfilm.com/525721/film-interview-director-roland-emmerich-on-the-set-of-white-house-down/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 5502.0,
+          "endSeconds": 6288.0,
+          "startTimecode": "01:31:42",
+          "endTimecode": "01:44:48"
+        }
+      ],
+      "wouldPassStrict": true
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "D.C.'s no-fly zone meant 1,000 VFX shots.",
+      "longDescription": "Strict no-fly zones over Washington D.C. meant filmmakers couldn't capture many real aerial shots, leading to a massive computer-generated effort to create the city and its action.",
+      "sources": [
+        {
+          "url": "https://www.fxguide.com/fxfeatured/action-beats-6-scenes-from-white-house-down/",
+          "modality": "text",
+          "timestamp": null
+        },
+        {
+          "url": "https://www.awn.com/vfxworld/creating-virtual-washington-white-house-down",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 6288.0,
+          "endSeconds": 7074.0,
+          "startTimecode": "01:44:48",
+          "endTimecode": "01:57:54"
+        }
+      ],
+      "wouldPassStrict": false
+    },
+    {
+      "scope": "general",
+      "factCategory": "filming",
+      "shortVersion": "Director Emmerich toured the Capitol for research.",
+      "longDescription": "To ensure authenticity for the film, director Roland Emmerich and his production team met with Senator John McCain and toured the U.S. Capitol building. They also received a tour of the Pentagon.",
+      "sources": [
+        {
+          "url": "https://collider.com/white-house-down-set-visit/",
+          "modality": "text",
+          "timestamp": null
+        }
+      ],
+      "sceneAnchor": null,
+      "displayWindows": [
+        {
+          "startSeconds": 7074.0,
+          "endSeconds": 7860.0,
+          "startTimecode": "01:57:54",
+          "endTimecode": "02:11:00"
+        }
+      ],
+      "wouldPassStrict": false
+    }
+  ],
   "titleEnablement": {
     "sceneiq_enabled": false,
-    "approved_cards": 0,
+    "approved_cards": 10,
     "scene_cards": 0,
-    "general_cards": 0,
+    "general_cards": 10,
     "density_target": 14,
     "cards_per_runtime_quartile": {
       "1": 0,
@@ -19,34 +290,35 @@
       "3": 0,
       "4": 0
     },
-    "distinct_categories": [],
+    "distinct_categories": [
+      "actor",
+      "costume/prop",
+      "filming",
+      "set_design"
+    ],
     "timeCoverage": {
-      "fraction": 0.0,
-      "uncovered": [
-        [
-          0.0,
-          7860.0
-        ]
-      ]
+      "fraction": 1.0,
+      "uncovered": []
     },
     "rules": {
       "fact_target_12_15": false,
-      "min_six_cards": false,
+      "min_six_cards": true,
       "card_in_each_quartile": true,
       "max_40pct_single_quartile": true,
-      "min_two_categories": false,
-      "full_time_coverage": false
+      "min_two_categories": true,
+      "full_time_coverage": true
     }
   },
   "runStats": {
     "evidence_mode": "relaxed",
     "passes": 1,
-    "anchors_proposed": 0,
-    "cards_emitted": 0,
-    "would_pass_strict": 0,
-    "cards_rejected": 0,
+    "anchors_proposed": 30,
+    "cards_emitted": 10,
+    "would_pass_strict": 8,
+    "cards_rejected": 20,
     "errors": 0,
-    "elapsed_seconds": 9.8,
+    "elapsed_seconds": 511.3,
+    "grounded_requests": 38,
     "models": {
       "deep": "gemini-2.5-pro",
       "fast": "gemini-2.5-flash"
