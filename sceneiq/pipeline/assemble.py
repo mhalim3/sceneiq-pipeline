@@ -68,25 +68,44 @@ the beat. Beats are the verification layer — write them first, carefully.
 numbers, and reasons exactly — if the source says Stanford refused, write Stanford, \
 never substitute a different university, person, or motive. Do not merge facts from \
 two sources into one beat.
-- shortVersion: ONE concise, direct, attention-grabbing statement that clearly \
-explains the specific interesting point IMMEDIATELY. Aim for 50-60 characters, HARD \
-MAXIMUM 80. Lively, natural, and fun — never dry, robotic, or overly formal. \
-Playful wording is welcome but must never hide the actual fact. BANNED: empty \
-phrases like "was a wild one", "had an interesting experience", "was a big deal" — \
-unless the statement explains exactly why. GOOD: "Kevin Bacon finished his entire \
-role in just six days." BAD: "Kevin Bacon's role was a wild one." Prefer concrete \
-numbers, firsts, and surprising specifics. G-rated, no clickbait, fully supported \
-by the beats.
+- shortVersion: ONE concise, direct statement that lands the surprising point \
+IMMEDIATELY and reads as a STANDALONE HOOK. The card is shown with no scene context, \
+so a viewer who has not seen the film and does not know any character's name must \
+fully understand it on its own. Aim for 50-70 characters, HARD MAXIMUM 80 (stretch to \
+~90 ONLY when a role descriptor is needed for a character to be understood). Lively, \
+natural, and fun — never dry, robotic, or overly formal. Playful wording is welcome \
+but must never hide the actual fact.
+  - SELF-CONTAINED CHARACTERS: never reference a character by a bare proper name the \
+viewer would have to already know. Name a character by their ROLE in the film — "the \
+salon owner", "the film's main villain", "the lead", "the protagonist's mother" — \
+optionally pairing the role with the name ("salon owner Jorge"). The actor's real \
+name plus the role is ideal ("Kevin Bacon's flamboyant salon owner"). For a \
+behind-the-scenes person, use their real name and job ("director Roland Emmerich").
+  - HOOK: every short must carry a concrete, surprising, retellable point. BANNED: \
+empty phrases ("was a wild one", "had an interesting experience", "was a big deal") \
+AND vague praise with no specific ("showed her uninhibited wit", "gave a great \
+performance") — unless the statement says exactly what happened and why it is \
+surprising. Prefer concrete numbers, firsts, reversals, and specifics.
+  - GOOD: "Kevin Bacon was almost unrecognizable as the film's flamboyant salon owner."
+  - GOOD: "The Rock was CGI'd into the fast-car scenes because of real motion sickness."
+  - BAD: "Alfre Woodard showed her uninhibited wit." (no concrete fact, no hook)
+  - BAD: "Joe encourages Gina's piano prodigy daughter." (bare character names, not \
+understandable alone, no hook)
+  G-rated, no clickbait, fully supported by the beats.
 - longDescription: one or two sentences that ADD CONTEXT and show why the fact is \
-interesting, surprising, or unusual — not a verbatim echo of the short. Maximum 280 \
-characters. Example: short "Kevin Bacon finished his entire role in just six days." \
+interesting, surprising, or unusual — not a verbatim echo of the short. Introduce any \
+character by role on first mention here too ("Djimon Hounsou's character, the \
+handyman Joe"), so the long also reads standalone. Maximum 280 characters. Example: short "Kevin Bacon finished his entire role in just six days." \
 long "Bacon's time on set was practically a blink-and-you'll-miss-it appearance — \
 he completed all of his work in only six days, an unusually short schedule for a \
 recognizable supporting actor." No claim beyond the beats.
 - followUps: 2 to 3 natural viewer next-questions, <= 10 words each (internal, for \
 value scoring).
-- Use CHARACTER names for what's on screen, REAL names for BTS figures (directors, \
-costume designers, named crew).
+- A card stands alone with NO scene context, so identify everyone a viewer can't be \
+assumed to know: name on-screen characters by their ROLE in the film (the lead, the \
+villain, the salon owner), optionally with the character's name; use REAL names and \
+jobs for behind-the-scenes figures (director, costume designer, named crew). Never \
+reference a character by a bare first name the viewer would have to already know.
 - Don't re-describe the scene the viewer is watching; deliver only NEW information.
 - Present tense for what's on screen; past tense for behind-the-scenes.
 - Preserve hedges ("reportedly") — never upgrade a claim beyond its source.

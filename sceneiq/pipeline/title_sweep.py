@@ -96,7 +96,12 @@ review scores (reception only when the CONTRAST is interesting); awards unless \
 notable or surprising; basic encyclopedic facts (release year, director name, \
 studio, cast list alone); minor scene trivia; on-set feuds and gossip.
 - Every fact must be interesting, surprising, unusual, memorable, or informative — \
-something a viewer would retell. Skip facts a viewer would shrug at.
+something a viewer would retell. Skip facts a viewer would shrug at, and reject \
+vague-trait praise with no concrete specific (e.g., "an actor showed her wit", \
+"gave a great performance").
+- Each fact_summary must be understandable ON ITS OWN. Identify characters by their \
+ROLE in the film (the lead, the villain, the salon owner), optionally with the \
+character's name — never by a bare first name a viewer would have to already know.
 - For each: a one-line fact_summary, the closest category ("general" when it isn't \
 tied to any on-screen element), 2-3 runnable search_queries (include the film title \
 in at least one), and scene_hint — what would be on screen when this fact is most \
