@@ -78,12 +78,22 @@ complete, surprising short that runs a little long is far better than a cramped 
 vague one. (An over-length short is copy-edited down later; it is never dropped.) \
 Lively, natural, and fun — never dry, robotic, or overly formal. Playful wording is \
 welcome but must never hide the actual fact.
-  - SELF-CONTAINED CHARACTERS: never reference a character by a bare proper name the \
-viewer would have to already know. Name a character by their ROLE in the film — "the \
-salon owner", "the film's main villain", "the lead", "the protagonist's mother" — \
-optionally pairing the role with the name ("salon owner Jorge"). The actor's real \
-name plus the role is ideal ("Kevin Bacon's flamboyant salon owner"). For a \
-behind-the-scenes person, use their real name and job ("director Roland Emmerich").
+  - SELF-CONTAINED CHARACTERS: the viewer has not seen the film, so never write a \
+bare "the lead" or a bare first name. On first mention give the ROLE plus the character \
+name plus, where it fits, the actor: "the lead character Jordan Belfort (Leonardo \
+DiCaprio)", "Margot Robbie's character Naomi". Add a short identifier when a person may \
+be unknown ("Tommy Chong, of Cheech and Chong"). Behind-the-scenes people get their \
+real name and job ("director Roland Emmerich"). Every name you use must also appear in \
+one of your factBeats, so write the beat that names them.
+  - PLAIN WORDS: write it the way you would tell a friend. Use simple, concrete verbs \
+("gave Margot Robbie tons of paper cuts", not "left her with numerous red marks"; "really \
+did eat a live goldfish", not "actually ate a goldfish"). No awkward passives ("added by \
+X") — say who did what. Use "because" or "due to" ONLY if the source states that cause, \
+and say exactly who did what to whom.
+  - STATE THE FACT, NOT WHO REVEALED IT: lead with the fact itself in the strongest \
+wording the sources support ("The Hamptons house was mostly CGI"), not "the VFX \
+supervisor revealed subtle CGI". Name the source person only when who said it is the \
+interesting part.
   - LEAD WITH THE PUNCHLINE: the very first clause must land the single most \
 surprising, specific point of the fact — the reversal, the record, the one who \
 objected, the thing that was secretly real. If the hook is that an actor REQUESTED a \
@@ -104,37 +114,21 @@ empty phrases ("was a wild one", "had an interesting experience", "was a big dea
 AND vague praise with no specific ("showed her uninhibited wit", "gave a great \
 performance") — unless the statement says exactly what happened and why it is \
 surprising. Prefer concrete numbers, firsts, reversals, and specifics.
-  - GOOD: "Kevin Bacon was almost unrecognizable as the film's flamboyant salon owner."
-  - GOOD: "The Rock was CGI'd into the fast-car scenes because of real motion sickness."
-  - GOOD: "The lead asked for his most famous line to be CUT from the final cut."
+  Reviewer-approved rewrites (style only — never reuse their content for another film):
+  - BEFORE: "VFX supervisor Robert Legato revealed subtle CGI for the Hamptons house and the lion." AFTER: "The Hamptons house in the film was mostly CGI."
+  - BEFORE: "Filming the bed scene came away with numerous red marks." AFTER: "Shooting the bed scene with fake money gave Margot Robbie tons of paper cuts."
+  - BEFORE: "Crew had Leonardo DiCaprio's feet covered in dog food." AFTER: "Crew required Leonardo DiCaprio to smother his feet in stinky dog food for the dog scene."
+  - BEFORE: "The actor actually ate a goldfish." AFTER: "DiCaprio really did eat a live goldfish in real life."
+  - BEFORE: "The lead's memoir was inspired by actor Tommy Chong." AFTER: "Jordan Belfort wrote his memoir because his cellmate Tommy Chong, of Cheech and Chong, encouraged him to."
+  - BEFORE: "The lead was almost played by Brad Pitt." AFTER: "Brad Pitt was almost cast as the lead character, Jordan Belfort."
   - BAD: "Alfre Woodard showed her uninhibited wit." (no concrete fact, no hook)
-  - BAD: "The lead's line references one of his earlier action roles." (names no \
-specific film — which role? say it)
-  - BAD: "Joe encourages Gina's piano prodigy daughter." (bare character names, not \
-understandable alone, no hook)
+  - BAD: "Joe encourages Gina's piano prodigy daughter." (bare character names, not understandable alone, no hook)
   G-rated, no clickbait, fully supported by the beats.
-- longDescription: one or two sentences that are GENUINELY ADDITIVE — they must carry \
-NEW specifics the short did not: the identifiable move or choreography, the second \
-party who reacted, the number, the before/after, the reason it happened. A long that \
-merely restates the short in more words is a failure; a great long is the detail that \
-turns a 3 into a 5. Never a verbatim echo of the short. The long must elaborate the SAME \
-fact as the short (never a different fact about the same topic), and EVERY specific \
-in it (name, number, move, reaction, reason) must be stated by one of your factBeats — \
-so write a beat for each extra detail you want in the long. The short must likewise be \
-fully backed by the beats: do not promise in the short something the beats never say. \
-Introduce any character by role on first mention here too ("Djimon Hounsou's character, the handyman Joe"), so the \
-long also reads standalone. Maximum 280 characters. Example: short "Kevin Bacon \
-finished his entire role in just six days." long "Bacon's time on set was practically a \
-blink-and-you'll-miss-it appearance — he completed all of his work in only six days, an \
-unusually short schedule for a recognizable supporting actor." No claim beyond the beats.
+- longDescription: one or two sentences, maximum 280 characters. It must RESTATE the short's full claim so it reads on its own, then add ONE new specific that makes the hook sharper: the identifiable detail, the second party, the number, the before/after, the reason. Choose the most intriguing supported detail, not the driest (an era-defining "power dressing" aim beats a list of suit colours; "filmed at Rao's in East Harlem" beats its founding year). Never a verbatim echo of the short. It must elaborate the SAME fact as the short (never a different fact), and EVERY specific in it (name, number, move, reaction, reason) must be stated by one of your factBeats — so write a beat for each extra detail. The short must likewise be fully backed by the beats. Name characters as in the short rule above. For a scene card, open the long with a few words placing the moment ("In the dog-food scene, ..."), using only what the scene description says. Do not claim a behind-the-scenes event is in the final film unless a source says so; otherwise say it happened during filming. No claim beyond the beats.
 - primaryClaim: ONE plain sentence stating the core claim of the card (who did/was what, with the key number or name), stripped of hooks and extra detail. Used only to spot duplicate stories.
 - followUps: 2 to 3 natural viewer next-questions, <= 10 words each (internal, for \
 value scoring).
-- A card stands alone with NO scene context, so identify everyone a viewer can't be \
-assumed to know: name on-screen characters by their ROLE in the film (the lead, the \
-villain, the salon owner), optionally with the character's name; use REAL names and \
-jobs for behind-the-scenes figures (director, costume designer, named crew). Never \
-reference a character by a bare first name the viewer would have to already know.
+- A card stands alone with NO scene context: apply the SELF-CONTAINED CHARACTERS rule to the short AND the long.
 - Don't spend words describing what the viewer can already see; deliver only NEW \
 information. You still must identify who or what the fact is about by role or name \
 so the card reads clearly on its own — identify, don't narrate.
@@ -271,10 +265,11 @@ PROBLEMS TO FIX:
 
 Rules:
 - Use ONLY what the beats state. Drop any name, number, or claim the beats do not say.
-- Keep the fact's punchline first and name the concrete specific; the short must stand \
-alone (identify people by role or real name + job, never a bare first name).
-- The longDescription must elaborate the SAME fact and add a detail that IS in the beats \
-(max 280 characters); do not just restate the short.
+- Keep the fact's punchline first, in plain words, and name the concrete specific; the \
+short must stand alone (never a bare "the lead" or first name: use the role plus the \
+character name, and the actor where it fits, but only names the beats actually say).
+- The longDescription must restate the short's claim in full, then add a detail that IS \
+in the beats (max 280 characters).
 - Everything must be G-rated: no profanity (even bleeped or censored), no sexual, drug, or \
 graphic-violence detail. Say the interesting thing without the mature wording. If the fact \
 cannot be told G-rated without losing what makes it a fact, set abstain true.
