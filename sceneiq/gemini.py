@@ -61,10 +61,18 @@ def _is_transient(exc: BaseException) -> bool:
     return isinstance(exc, (ConnectionError, TimeoutError, httpx.TransportError))
 
 
+# Transient HTTP failures (429-not-grounding, 500/502/503/504, transport blips)
+# get their own, more patient retry budget — independent of MAX_RETRIES, which
+# governs schema-violation rejections. gemini-2.5-flash returns bursts of 503
+# "model is overloaded" during demand spikes; a shallow 3-try/20s-cap policy
+# gives up mid-spike and drops otherwise-good facts. Six attempts with backoff
+# to ~45s rides out the typical spike without wedging a worker for too long.
+_TRANSIENT_RETRY_ATTEMPTS = int(os.environ.get("SCENEIQ_TRANSIENT_RETRIES", "6"))
+
 _retry = retry(
     retry=retry_if_exception(_is_transient),
-    stop=stop_after_attempt(config.MAX_RETRIES),
-    wait=wait_exponential(multiplier=1, min=1, max=20),
+    stop=stop_after_attempt(_TRANSIENT_RETRY_ATTEMPTS),
+    wait=wait_exponential(multiplier=1, min=2, max=45),
     reraise=True,
 )
 

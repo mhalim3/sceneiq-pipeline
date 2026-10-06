@@ -35,6 +35,7 @@ _JUDGE_PROMPT = """You are a TV viewer. A movie is playing; you've paused, and a
 card has appeared on screen. Rate it AS A VIEWER — not as a fact-checker. You see no \
 sources, no scores. Only the card.
 
+CARD TYPE: {card_type}
 THE SCENE YOU PAUSED ON: {scene_description}
 
 THE CARD:
@@ -59,8 +60,13 @@ suggested_edit.
 - reject: obvious from the scene, generic praise, or no curiosity hook. Be firm.
 
 EDITORIAL RULES:
-- If the card's payoff is literally visible on screen or in dialogue that just \
-played: REJECT.
+- Reject ONLY when the card's whole claim is something you can see or hear without any \
+outside knowledge (it merely describes what the viewer already sees). Do NOT reject \
+just because the card is anchored to a visible object, person, place, costume, sound, \
+or action — a scene card is SUPPOSED to add outside information about something \
+visible (its creation, history, meaning, performance, or use).
+- Standard by card type: a GENERAL card must work without the current frame; a SCENE \
+card should make the viewer notice or rethink something in the current frame.
 - If the beats amount to "the design was deliberate/carefully considered" with no \
 concrete surprising detail: REJECT.
 - If the card invites a clear, specific follow-up: lean APPROVE."""
@@ -72,6 +78,7 @@ def judge_curiosity(
     resp = client.structured(
         cfg.fast_model,
         _JUDGE_PROMPT.format(
+            card_type="scene" if card.scope == "scene" else "general",
             scene_description=card.scene_description,
             short_version=card.short_version,
             long_description=card.long_description,

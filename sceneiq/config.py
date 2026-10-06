@@ -62,6 +62,11 @@ class PipelineConfig:
     quartile_min_runtime: int = 40
     max_quartile_share: float = 0.40
     min_categories: int = 2
+    # A scene fact may span several consecutive Moments scenes (recurring motif,
+    # location, costume) but a span that covers more than this fraction of the
+    # runtime is no longer a pause-window — it is a title-level fact, so it is
+    # demoted to a general card instead of anchored to a giant scene window.
+    max_scene_span_fraction: float = 0.20
     # Parallelism for per-anchor research/assembly/validation. The work is
     # I/O-bound (API calls + HTTP), so this is limited by API rate tier.
     max_workers: int = 12
@@ -126,6 +131,28 @@ class PipelineConfig:
     # entirely; the sweep is the sole card source and all cards are general.
     # Scene machinery stays in the codebase for Phase 3+ (set False).
     title_level_only: bool = True
+    # Annotation mode: maximize per-title yield for human review. Pushes the
+    # fact-density floor up, runs more sweep rounds to reach it, and SURFACES
+    # marginal cards instead of dropping them — a thin-sourced or low-interest
+    # card is emitted and labeled "low" confidence rather than rejected, so a
+    # reviewer can judge it. Correctness and safety gates (factual accuracy,
+    # spoiler, maturity, propriety, summary entailment, film-specificity,
+    # >=3 bound+entailed beats) stay HARD and still reject — those are never
+    # surfaced. Every emitted card carries a confidence label (high/medium/low).
+    annotation_mode: bool = False
+    # Fewest verified beats a card needs. 3 was dropping real one-or-two-sentence
+    # trivia facts whose sources only support two solid statements; every beat
+    # still has to be bound to its source and entailed, so accuracy is unchanged.
+    min_beats: int = 2
+    # In annotation mode keep sweeping until this many cards (was capped at the
+    # 12-15 density band), and allow that many scene cards.
+    annotation_target_cards: int = 20
+    # One repair attempt for cards rejected ONLY for fixable wording problems
+    # (summary claims beyond the beats, maturity wording): rewrite the short/long
+    # from the verified beats and re-run the full validation. Gates stay hard.
+    repair_rejected: bool = True
+    annotation_min_cards: int = 10   # density floor when annotation_mode
+    annotation_sweep_rounds: int = 5  # max sweep rounds to reach the floor
     # Adaptive sweep: after the first round, keep sweeping (with an
     # avoid-list and fresh query angles) until the fact target is met, a
     # round approves nothing new, or this many rounds have run. Each round is

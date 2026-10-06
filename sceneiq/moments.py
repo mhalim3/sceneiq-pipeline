@@ -5,9 +5,14 @@ structure — anchors attach to real scenes, timecodes and runtime fractions
 come from the VLM record (code-assigned, not model-claimed), and the
 validation judge sees the actual scene contents.
 
-Two supported formats, dispatched by file extension:
-  .json — the scene-sense prototype export: {title, duration_sec, scenes[]}
-          with content_desc.structured_data per scene.
+Supported formats, dispatched by file extension then by shape:
+  .json — two shapes, auto-detected:
+          * new-model export: {module, title, scenes[]} where each scene has
+            resolved_start_sec/_end_sec and a rich content_desc
+            (summary_paragraph, setting, key_objects/_actions,
+            themes_and_concepts, named_entities) plus frames.characters.
+          * scene-sense prototype: {title, duration_sec, scenes[]} with
+            content_desc.structured_data per scene.
   .csv  — a Databricks export of core_dev.tubidw.tubi_moments_scene_catalog:
           one row per scene (scene_start_ts/scene_end_ts in float seconds,
           description, cast_list, sentiment_list, IAB tiers, GARM labels).
@@ -168,6 +173,91 @@ def load_moments_csv(path: str | Path) -> TitleMoments:
 
 def load_moments_json(path: str | Path) -> TitleMoments:
     data = json.loads(Path(path).read_text())
+    # New-model export vs. the older prototype shape. The new export carries a
+    # top-level "module" and per-scene "resolved_start_sec"; the prototype has
+    # neither and nests everything under content_desc.structured_data.
+    scenes0 = data.get("scenes") or []
+    if data.get("module") or (scenes0 and "resolved_start_sec" in scenes0[0]):
+        return _load_moments_json_v2(data)
+    return _load_moments_json_prototype(data)
+
+
+def _load_moments_json_v2(data: dict) -> TitleMoments:
+    """New-model scene export: rich content_desc + frames.characters per scene,
+    float timecodes in resolved_start_sec/_end_sec, no top-level duration."""
+    raw_scenes = data.get("scenes") or []
+    duration = max((float(s.get("resolved_end_sec") or 0.0) for s in raw_scenes),
+                   default=0.0)
+    scenes = []
+    for s in raw_scenes:
+        cd = s.get("content_desc") or {}
+        frames = s.get("frames") or {}
+        start_s = float(s.get("resolved_start_sec")
+                        or _hms_to_seconds(s.get("start_time", "")))
+        end_s = float(s.get("resolved_end_sec")
+                      or _hms_to_seconds(s.get("end_time", "")))
+
+        # Cast on screen comes from the frame-level character track.
+        characters, celebrities = [], []
+        for c in (frames.get("characters") or []):
+            nm, cel = c.get("character_name"), c.get("celebrity_name")
+            if nm and nm not in characters:
+                characters.append(nm)
+            if cel and cel not in celebrities:
+                celebrities.append(cel)
+
+        # Setting is a dict in the new model; flatten to "location, time_of_day".
+        setting = cd.get("setting") or {}
+        if isinstance(setting, dict):
+            loc = setting.get("location") or setting.get("canonical_location") or ""
+            tod = setting.get("time_of_day") or ""
+            setting_str = ", ".join(x for x in (loc, tod) if x)
+        else:
+            setting_str = str(setting or "")
+
+        # Named entities (brands/places/orgs/people, each with evidence) are the
+        # richest researchable anchors — fold their names into key_objects so
+        # they surface in as_context (which lists objects but not themes).
+        ne_names = []
+        for ne in (cd.get("named_entities") or []) + (frames.get("named_entities") or []):
+            if isinstance(ne, dict) and ne.get("name") and ne["name"] not in ne_names:
+                ne_names.append(ne["name"])
+        key_objects = list(cd.get("key_objects") or [])
+        key_objects += [n for n in ne_names if n not in key_objects]
+
+        # Music tracks -> short "genre mood kind" descriptors.
+        songs = []
+        for t in ((cd.get("music") or {}).get("tracks") or []):
+            if isinstance(t, dict):
+                desc = " ".join(x for x in (t.get("genre"), t.get("mood_cue"),
+                                            t.get("kind")) if x)
+                if desc:
+                    songs.append(desc)
+
+        scenes.append(
+            MomentScene(
+                scene_index=int(s.get("scene_index", len(scenes))),
+                scene_type=s.get("scene_type", "content"),
+                start_time=s.get("start_time", ""),
+                end_time=s.get("end_time", ""),
+                start_seconds=start_s,
+                runtime_fraction=min(1.0, start_s / duration) if duration else 0.0,
+                end_seconds=end_s,
+                end_fraction=min(1.0, end_s / duration) if duration else 0.0,
+                summary=(cd.get("summary_paragraph") or cd.get("clip_title") or "").strip(),
+                setting=setting_str,
+                characters=characters,
+                celebrities=celebrities,
+                key_objects=key_objects,
+                key_actions=list(cd.get("key_actions") or []),
+                songs=songs,
+                themes=list(cd.get("themes_and_concepts") or []),
+            )
+        )
+    return TitleMoments(title=data.get("title", ""), duration_sec=duration, scenes=scenes)
+
+
+def _load_moments_json_prototype(data: dict) -> TitleMoments:
     duration = float(data.get("duration_sec") or 0.0)
     scenes = []
     for s in data.get("scenes", []):

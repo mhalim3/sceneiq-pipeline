@@ -23,7 +23,7 @@ from .models import Anchor, CardRecord
 from .moments import TitleMoments, load_moments
 from .pipeline.anchors import (discover_anchors, discover_anchors_from_moments,
                                identify_film)
-from .pipeline.assemble import assemble_card
+from .pipeline.assemble import assemble_card, repair_card
 from .pipeline.curiosity import judge_curiosity
 from .pipeline.leads import wikipedia_leads
 from .pipeline.research import research_anchor
@@ -39,16 +39,39 @@ def _process_anchor(
 ) -> CardRecord:
     record = CardRecord(card=None, anchor=anchor, evidence=None, validation=None)
     try:
+        _t = time.time()
         packet = research_anchor(client, film_info, anchor, cfg, cache=cache)
+        record.timings["research"] = time.time() - _t
         record.evidence = packet
+        _t = time.time()
         card = assemble_card(client, film_info, packet, cfg)
+        record.timings["assemble"] = time.time() - _t
         if card is None:
             record.status = "rejected"
             record.validation = None
             log.info("  ✗ abstained: %s", anchor.anchor_element)
             return record
         record.card = card
+        _t = time.time()
         result = validate_card(client, film_info, card, packet, cfg)
+        record.timings["validate"] = time.time() - _t
+        # One repair attempt when the ONLY problems are fixable wording
+        # (summary claims beyond the beats, maturity wording). The rewritten
+        # card goes back through the full validation, so every gate still applies.
+        if (cfg.repair_rejected and not result.passed and result.rejection_reasons
+                and all(r.startswith(("summary_entailment", "maturity"))
+                        for r in result.rejection_reasons)):
+            problems = list(result.rejection_reasons)
+            try:
+                if repair_card(client, film_info, card, problems, cfg):
+                    repaired = validate_card(client, film_info, card, packet, cfg)
+                    if repaired.passed:
+                        repaired.flags.append(
+                            "repaired: rewritten after review — " + "; ".join(problems))
+                    result = repaired
+                    record.validation = result
+            except Exception as e:  # repair is best-effort; keep the original verdict
+                log.warning("  repair failed on %s: %s", anchor.anchor_element, e)
         record.validation = result
 
         # Viewer-value triage: curiosity judge runs on cards that survived
@@ -156,8 +179,9 @@ _TOPIC_DEDUP_PROMPT = """You are deduplicating pause-screen fact cards for the f
 CARDS:
 {card_list}
 
-Group cards that tell substantially the same story — the same core fact or the same \
-production narrative. Two cards are the same story even when details differ slightly. \
+Group cards that tell substantially the same story. Compare the CLAIM of each card first: \
+two cards are duplicates when their primary claims would lead a viewer to tell the same \
+underlying story, even if the wording, sources, or secondary details differ. \
 They are DIFFERENT stories when each has a distinct headline fact a viewer would \
 experience as new (e.g. "Cooper based his character on three chefs" vs "a Michelin \
 chef scored the film's realism 9/10" are different even though both involve realism).
@@ -173,6 +197,7 @@ def _topic_dedup(client: GeminiClient, cfg: config.PipelineConfig,
         return records
     card_list = "\n".join(
         f"[{i}] (strict={bool(r.validation and r.validation.checks.get('would_pass_strict'))}) "
+        f"CLAIM: {r.card.primary_claim or r.card.short_version} | "
         f"SHORT: {r.card.short_version} | LONG: {r.card.long_description[:300]}"
         for i, r in enumerate(records)
     )
@@ -460,8 +485,12 @@ def run(
         if cfg.use_title_sweep:
             log.info("Stage 1b: title-level fact sweep ...")
             try:
-                swept = title_sweep(client, film_info, cfg,
-                                    moments=None if title_only else moments)
+                # Pass Moments whenever we have it — even in title-level-only
+                # mode. The sweep anchors scene-specific facts to a real scene
+                # window (scope="scene", real timecode) and leaves agnostic
+                # facts as GENERAL cards, so title-level coverage is preserved
+                # while specific facts gain timing.
+                swept = title_sweep(client, film_info, cfg, moments=moments)
             except Exception as e:  # sweep is additive — never kill the run
                 log.warning("  title sweep failed (%s); continuing without it", e)
                 swept = []
@@ -491,6 +520,9 @@ def run(
             cfg.density_max,
             math.ceil(runtime_min_early / cfg.minutes_per_card) if runtime_min_early else cfg.density_min,
         ))
+        if cfg.annotation_mode:
+            # Annotation wants MORE facts than the 12-15 density band.
+            target_early = max(target_early, cfg.annotation_target_cards)
 
         def _current_approved() -> list:
             # Fully deduped view (string + semantic + topic-cluster), else
@@ -504,15 +536,16 @@ def run(
 
         approved_so_far = len(_current_approved())
         sweep_round = 1
+        max_rounds = cfg.annotation_sweep_rounds if cfg.annotation_mode else cfg.max_sweep_rounds
         while (cfg.use_title_sweep
                and approved_so_far < target_early
-               and sweep_round < cfg.max_sweep_rounds):
+               and sweep_round < max_rounds):
             sweep_round += 1
             log.info("Stage 1b: adaptive sweep round %d (%d/%d approved) ...",
                      sweep_round, approved_so_far, target_early)
             try:
                 swept = title_sweep(client, film_info, cfg,
-                                    moments=None if title_only else moments,
+                                    moments=moments,
                                     avoid=explored, round_n=sweep_round)
             except Exception as e:
                 log.warning("  sweep round %d failed (%s); stopping", sweep_round, e)
@@ -552,7 +585,7 @@ def run(
     scene_records = sorted(
         (r for r in emitted if r.card.scope == "scene"),
         key=lambda r: r.card.runtime_fraction,
-    )[: cfg.max_cards]
+    )[: max(cfg.max_cards, cfg.annotation_target_cards if cfg.annotation_mode else 0)]
     general_records = [r for r in emitted if r.card.scope == "general"]
     emitted = scene_records + general_records
 
@@ -593,7 +626,22 @@ def run(
         d["wouldPassStrict"] = bool(
             r.validation and r.validation.checks.get("would_pass_strict")
         )
+        # Annotation triage: surface the confidence label + why, and the
+        # non-fatal flags, so reviewers see which cards may be weaker.
+        d["confidence"] = r.validation.confidence if r.validation else ""
+        d["confidenceReasons"] = r.validation.confidence_reasons if r.validation else []
+        d["reviewFlags"] = r.validation.flags if r.validation else []
         scene_facts.append(d)
+
+    confidence_counts = {"high": 0, "medium": 0, "low": 0}
+    for d in scene_facts:
+        confidence_counts[d.get("confidence") or "low"] = (
+            confidence_counts.get(d.get("confidence") or "low", 0) + 1
+        )
+    dependency_counts = {
+        "agnostic": sum(1 for d in scene_facts if d.get("sceneDependency") == "agnostic"),
+        "specific": sum(1 for d in scene_facts if d.get("sceneDependency") == "specific"),
+    }
 
     report = {
         "film": film_info,
@@ -601,6 +649,14 @@ def run(
         "titleEnablement": {
             "sceneiq_enabled": enabled,
             "approved_cards": len(emitted),
+            # Annotation floor: did this title reach the 10-15 target? When
+            # below, coverage was genuinely limited (sparse/obscure title).
+            "annotation_floor": cfg.annotation_min_cards if cfg.annotation_mode else None,
+            "below_annotation_floor": bool(
+                cfg.annotation_mode and len(emitted) < cfg.annotation_min_cards
+            ),
+            "confidence_breakdown": confidence_counts,
+            "scene_dependency_breakdown": dependency_counts,
             "scene_cards": len(scene_records),
             "general_cards": len(general_records),
             "density_target": density_target,

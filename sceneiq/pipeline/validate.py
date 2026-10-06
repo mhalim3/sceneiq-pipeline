@@ -23,11 +23,61 @@ in both modes. Video timestamps attach from transcript segments per beat.
 
 from __future__ import annotations
 
+import re
+
 from .. import config
 from ..fetch import attach_timestamp, best_substring_ratio
 from ..gemini import GeminiClient
 from ..models import EvidencePacket, SceneFactCard, ValidationResult
 from ..tiers import independent
+
+
+# --- Deterministic check: names and numbers in the viewer-facing text must appear
+# in the verified beats (catches misspelled names, swapped numbers, invented details).
+_COMMON_CAPS = {
+    "the", "a", "an", "this", "that", "these", "those", "his", "her", "their", "its",
+    "he", "she", "they", "it", "in", "on", "at", "for", "with", "and", "but", "or",
+    "after", "before", "when", "while", "during", "unlike", "despite", "although",
+    "because", "one", "two", "three", "film", "movie", "director", "actor", "actress",
+    "star", "lead", "producer", "composer", "designer", "writer", "screenwriter",
+    "editor", "costume", "production", "cinematographer", "villain", "hero", "scene",
+    "oscar", "academy", "award", "awards", "english", "french", "italian", "american",
+    "british", "roman", "greek", "german", "spanish", "chinese", "japanese",
+    "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "sept", "oct",
+    "nov", "dec", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday",
+    "sunday", "january", "february", "march", "april", "june", "july", "august",
+    "september", "october", "november", "december",
+}
+
+
+def _norm_word(w: str) -> str:
+    w = w.lower().replace("\u2019", "'")
+    return w[:-2] if w.endswith("'s") else w.strip("'")
+
+
+def unsupported_terms(text: str, support: str, allow: set[str]) -> list[str]:
+    """Proper-noun-looking words and digit numbers in `text` that `support` lacks."""
+    sup = support.lower().replace("\u2019", "'")
+    sup_words = {_norm_word(w) for w in re.findall(r"[A-Za-z][A-Za-z'\u2019\-]*", sup)}
+    sup_nums = {n.replace(",", "").rstrip(".") for n in re.findall(r"\d[\d,]*\.?\d*", sup)}
+    missing: list[str] = []
+    # Words after the first in a sentence (sentence-initial capitals are ambiguous).
+    for sent in re.split(r"(?<=[.!?])\s+", text):
+        toks = re.findall(r"[A-Za-z][A-Za-z'\u2019\-]*|\d[\d,]*\.?\d*", sent)
+        for i, tok in enumerate(toks):
+            if tok[0].isdigit():
+                n = tok.replace(",", "").rstrip(".")
+                if n and n not in sup_nums and n not in missing:
+                    missing.append(n)
+                continue
+            if i == 0 or not tok[0].isupper():
+                continue
+            w = _norm_word(tok)
+            if (len(w) < 3 or w in _COMMON_CAPS or w in allow or w in sup_words
+                    or tok in missing):
+                continue
+            missing.append(tok)
+    return missing
 
 _RUBRIC_DIMS = [
     "factual_accuracy",
@@ -84,6 +134,7 @@ _JUDGE_SCHEMA = {
         "category_correct": {"type": "boolean"},
         "summary_entailed": {"type": "boolean"},
         "film_specific": {"type": "boolean"},
+        "matches_assigned_fact": {"type": "boolean"},
         "named_entities": {"type": "array", "items": {"type": "string"}},
         "notes": {"type": "string"},
     },
@@ -97,6 +148,7 @@ _JUDGE_SCHEMA = {
         "category_correct",
         "summary_entailed",
         "film_specific",
+        "matches_assigned_fact",
         "named_entities",
     ],
 }
@@ -159,11 +211,15 @@ interesting; 0 = generic or obvious.
 - spoiler_safety: 2 = fully safe at the anchor timecode; 1 = borderline wording; \
 0 = reveals later plot, outcomes, or significance.
 
-4. spoiler_free — BINARY, no partial credit. True only if the card reveals NOTHING \
-about plot developments, twists, endings, character outcomes, or later significance. \
-Scene cards may not reveal anything beyond their anchor moment; GENERAL cards (shown \
-at any time) may not reveal anything about the plot at all. Surprise cameos and \
-secret roles are spoilers — a card announcing one fails. When in doubt, false.
+4. spoiler_free — BINARY, no partial credit, deliberately conservative. Treat ANYTHING that \
+could SOUND like a spoiler as a spoiler. Return false if the card mentions, hints at, or \
+lets a viewer infer ANY of: a plot development or outcome; a twist or reveal; how the film \
+or any storyline ends; who lives, dies, wins, loses, betrays or is revealed; a villain's or \
+character's secret identity or hidden role; a surprise cameo or secret role; or anything \
+that happens later in the film than the scene. This applies to scene cards and GENERAL \
+cards alike. Behind-the-scenes facts (casting, locations, effects, preparation, how a \
+moment was filmed) are fine ONLY when they say nothing about what happens in the story. \
+If you are unsure, false.
 
 5. maturity_pass — {maturity_rule}
 
@@ -179,15 +235,22 @@ SceneIQ is an enrichment surface, never a venue for controversy.
 8. named_entities — list every proper name, title, and specific number a fact-checker \
 must find in the sources.
 
-9. summary_entailed — true only if BOTH shortVersion and longDescription contain no \
-claim, name, number, or implication beyond what the entailed beats state. The long \
-adds context and why-it's-interesting framing, but never new facts.
+9. summary_entailed — true only if EVERY claim, name, and number in shortVersion and \
+longDescription is stated by one of the entailed beats (which are themselves \
+supported by the source bodies). The long is MEANT to carry extra specifics beyond \
+the short — that is fine, and is not a failure — as long as each of those specifics \
+appears in an entailed beat. Fail only for a claim, name, number, or implication \
+that no entailed beat supports, or when the short and long describe different facts.
 
 10. film_specific — true if the card's claims connect concretely to THIS film \
 ({film_title}): its production, cast, locations, music, making-of, its director's \
 other work, or its franchise context. A card stating generic industry practice (how \
 newspaper props are usually made, how films typically license songs) is NOT \
-film-specific even when the prop or song appears in this film's scene."""
+film-specific even when the prop or song appears in this film's scene.
+
+11. matches_assigned_fact — the ANCHOR ELEMENT above is the fact this card was ASSIGNED to \
+tell. true if the card is about that same fact (a narrower or reworded version is fine). \
+false ONLY if the card tells a DIFFERENT fact from the sources instead."""
 
 
 def _maturity_rule(cfg: config.PipelineConfig, film_info: dict) -> str:
@@ -238,27 +301,27 @@ def validate_card(
     relaxed = cfg.evidence_mode == "relaxed"
     src_by_url = {s.url: s for s in card.sources}
 
-    # 1. Contract. shortVersion: 50-60 target, 80 hard cap.
+    # 1. Contract. shortVersion length is NOT a gate — an over-length short is a
+    # copy-editing fix, never a reason to drop a good fact. Sufficiency and fact
+    # quality matter more, so the cap is reported as a flag and tightened later.
     contract_ok = (
-        3 <= len(card.fact_beats) <= 5
+        cfg.min_beats <= len(card.fact_beats) <= 5
         and 2 <= len(card.follow_ups) <= 3
         and card.fact_category in (
             config.FACT_CATEGORIES + (["general"] if card.scope == "general" else [])
         )
         and bool(card.short_version and card.long_description)
-        and len(card.short_version) <= 80
         and all(b.source_url in src_by_url for b in card.fact_beats)
     )
     checks["contract"] = contract_ok
     if not contract_ok:
-        if len(card.short_version or "") > 80:
-            result.rejection_reasons.append(
-                f"contract: shortVersion {len(card.short_version)} chars (hard cap 80)"
-            )
-        else:
-            result.rejection_reasons.append("contract: field counts/category/sources out of spec")
+        result.rejection_reasons.append("contract: field counts/category/sources out of spec")
         return result
-    if len(card.short_version) > 60:
+    if len(card.short_version) > 80:
+        result.flags.append(
+            f"shortVersion {len(card.short_version)} chars (OVER 80 cap — trim later)"
+        )
+    elif len(card.short_version) > 60:
         result.flags.append(
             f"shortVersion {len(card.short_version)} chars (target 50-60, cap 80)"
         )
@@ -358,6 +421,12 @@ def validate_card(
             "summary_entailment: shortVersion/longDescription claim beyond the beats"
         )
 
+    # The card must tell the fact it was assigned, not a different one found in the sources.
+    checks["matches_assigned_fact"] = judge["matches_assigned_fact"]
+    if not judge["matches_assigned_fact"]:
+        result.rejection_reasons.append(
+            "card_mismatch: card is about a different fact than the one it was assigned")
+
     # Generic industry facts are not Scene Facts — hard in both modes.
     checks["film_specific"] = judge["film_specific"]
     if not judge["film_specific"]:
@@ -373,7 +442,7 @@ def validate_card(
     if bad_beats:
         if relaxed:
             kept = [b for i, b in enumerate(card.fact_beats) if i not in bad_beats]
-            if len(kept) >= 3:
+            if len(kept) >= cfg.min_beats:
                 card.fact_beats = kept
                 result.flags.append(
                     f"relaxed: dropped beats {sorted(bad_beats)} "
@@ -382,7 +451,7 @@ def validate_card(
                 )
             else:
                 result.rejection_reasons.append(
-                    f"claim_entailment: only {len(kept)} bound+supported beats remain (need 3)"
+                    f"claim_entailment: only {len(kept)} bound+supported beats remain (need {cfg.min_beats})"
                 )
         else:
             if binding_bad:
@@ -394,6 +463,18 @@ def validate_card(
                 result.rejection_reasons.append(
                     f"claim_entailment: beats {sorted(unsupported)} not supported"
                 )
+
+    # Deterministic terms check on the final (post beat-drop) beats: every name and
+    # digit number in the short/long must appear in a beat (or its verbatim anchor).
+    support = " ".join(f"{b.text} {b.verbatim_anchor}" for b in card.fact_beats)
+    allow = {_norm_word(w) for w in re.findall(
+        r"[A-Za-z][A-Za-z'\u2019\-]*", f"{film_info.get('title', '')}")}
+    missing_terms = unsupported_terms(
+        f"{card.short_version} {card.long_description}", support, allow)
+    checks["summary_terms"] = not missing_terms
+    if missing_terms:
+        result.rejection_reasons.append(
+            f"summary_entailment: names/numbers not in the verified beats {missing_terms}")
 
     # Re-derive cited sources from surviving beats; attach evidence classes.
     cited = [src_by_url[u] for u in {b.source_url for b in card.fact_beats}]
@@ -459,12 +540,20 @@ def validate_card(
     emission_ok = relaxed_emission if relaxed else strict_emission
     checks["emission_policy"] = emission_ok
     if not emission_ok:
-        result.rejection_reasons.append(
+        emission_msg = (
             "emission_policy: needs 1 primary/direct source or "
             + ("1 reputable editorial source" if relaxed else
                "2 independent reputable editorial sources")
             + f" (got {len(primaries)} primary, {len(editorial_relaxed)} editorial)"
         )
+        # Annotation mode surfaces thin-sourced cards for review instead of
+        # dropping them: the beats are still bound+entailed against SOME
+        # fetched body, just not an A/B-tier one. Flagged and marked low
+        # confidence below. Correctness/safety gates already ran and stay hard.
+        if cfg.annotation_mode:
+            result.flags.append(emission_msg + " — surfaced as low confidence (annotation mode)")
+        else:
+            result.rejection_reasons.append(emission_msg)
 
     # 6. Card disposition.
     non_gating = ["primitive_conformance", "viewer_value", "clarity", "spoiler_safety"]
@@ -532,6 +621,29 @@ def validate_card(
         and judge["film_specific"]
         and cross_modal_ok
     )
+
+    # Confidence label for annotation triage. Only meaningful for cards that
+    # actually emit (no rejection reasons); rejected cards keep "".
+    has_quality_source = bool(primaries) or len(editorial_relaxed) >= 1
+    conf_reasons: list[str] = []
+    if not has_quality_source:
+        conf_reasons.append("no primary or reputable-editorial source (thin sourcing)")
+    if misses:
+        conf_reasons.append(f"unconfirmed entities in sources: {misses}")
+    if rubric["viewer_value"] < 1:
+        conf_reasons.append("low viewer-value score")
+    if rubric["clarity"] < 1:
+        conf_reasons.append("low clarity score")
+    if bad_beats and relaxed:
+        conf_reasons.append(f"dropped {len(bad_beats)} unsupported beat(s)")
+    if checks.get("would_pass_strict"):
+        result.confidence = "high"
+        conf_reasons = []  # strict-pass: no caveats worth surfacing
+    elif has_quality_source and rubric["viewer_value"] >= 1 and rubric["clarity"] >= 1 and not misses:
+        result.confidence = "medium"
+    else:
+        result.confidence = "low"
+    result.confidence_reasons = conf_reasons
 
     result.passed = not result.rejection_reasons
     return result

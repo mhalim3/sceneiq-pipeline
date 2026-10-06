@@ -103,6 +103,10 @@ def research_anchor(
 ) -> EvidencePacket:
     cache = cache or FetchCache(cfg.http_timeout_s)
     queries = (anchor.search_queries or _fallback_queries(film_info, anchor))[: cfg.queries_per_anchor]
+    # Also search the fact itself: the generated queries are often too generic to
+    # surface the article that actually states this specific claim.
+    if anchor.search_queries:
+        queries.append(f"{film_info.get('title', '')} {film_info.get('year', '')} {anchor.anchor_element}".strip())
 
     # Pass 1: discovery — queries are independent, run them concurrently.
     seen: set[str] = set()
@@ -131,6 +135,28 @@ def research_anchor(
     for s in sources:
         uniq.setdefault(s.url, s)
     sources = list(uniq.values())
+
+    # Nothing usable fetched (dead links, paywalls, off-topic hits)? Retry once
+    # with broader fallback queries before giving up on the fact.
+    if not sources and anchor.search_queries:
+        fb = [q for q in _fallback_queries(film_info, anchor) if q not in queries]
+        with ThreadPoolExecutor(max_workers=max(1, len(fb))) as pool:
+            retry_cands = []
+            for q, grounded in pool.map(lambda q: _run_query(client, cfg, film_info, q), fb):
+                notes.append(f"[fallback query] {q}\n{grounded.text}")
+                for s in grounded.sources:
+                    url = (s.get("url") or "").strip()
+                    if url and url not in seen:
+                        seen.add(url)
+                        retry_cands.append(s)
+        with ThreadPoolExecutor(max_workers=cfg.fetch_workers) as pool:
+            sources = [s for s in pool.map(
+                lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache),
+                retry_cands) if s is not None]
+        uniq = {}
+        for s in sources:
+            uniq.setdefault(s.url, s)
+        sources = list(uniq.values())
 
     sources.sort(key=lambda s: (_TIER_ORDER.get(s.tier, 4), -len(getattr(s, "_body", ""))))
     sources = sources[: cfg.sources_per_anchor]

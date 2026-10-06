@@ -78,6 +78,10 @@ def main(argv: list[str] | None = None) -> int:
                         "table, then fetch its Moments rows (full chain: title -> content_id -> scenes)")
     p.add_argument("--strict-verbatim", action="store_true",
                    help="hard-reject cards whose named entities aren't verbatim in fetched source bodies")
+    p.add_argument("--annotation", action="store_true",
+                   help="annotation mode: push for 10-15 cards/title and surface marginal "
+                        "(thin-sourced/low-interest) cards labeled low confidence instead of "
+                        "dropping them; correctness and safety gates stay hard")
     p.add_argument("--deep-model", default=config.DEEP_MODEL)
     p.add_argument("--fast-model", default=config.FAST_MODEL)
     p.add_argument("-o", "--out-dir", default="data/outputs", help="output directory")
@@ -100,6 +104,7 @@ def main(argv: list[str] | None = None) -> int:
         evidence_mode=args.evidence,
         max_workers=args.workers,
         strict_verbatim=args.strict_verbatim,
+        annotation_mode=args.annotation,
         deep_model=args.deep_model,
         fast_model=args.fast_model,
     )

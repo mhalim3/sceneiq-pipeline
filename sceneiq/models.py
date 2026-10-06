@@ -41,7 +41,14 @@ class Anchor:
     search_hint: str                  # what to look for in sources
     search_queries: list = field(default_factory=list)  # runnable queries (<=4)
     end_fraction: float = 0.0         # scene end position (0 = unknown)
-    scope: str = "scene"              # scene | general
+    scope: str = "scene"              # scene | general (player DISPLAY schedule)
+    # Editorial classification independent of the display schedule: does the
+    # fact make sense anywhere in the film ("agnostic") or only when windowed
+    # to a particular moment ("specific")? Unlike `scope`, this never requires
+    # Moments timing — the model assigns it directly, and `scene_hint`
+    # describes where a specific fact belongs.
+    scene_dependency: str = "agnostic"   # agnostic | specific
+    scene_hint: str = ""                 # where a scene-specific fact belongs
     origin: str = "anchor_discovery"  # anchor_discovery | title_sweep
 
     @property
@@ -63,6 +70,7 @@ class EvidencePacket:
     anchor: Anchor
     findings: str                     # grounded-search narrative w/ citations
     sources: list = field(default_factory=list)   # list[SourceRef]
+    abstain_reason: str = ""         # why no card was written (evaluation)
 
     def to_dict(self):
         return {
@@ -97,7 +105,13 @@ class SceneFactCard:
     fact_category: str
     fact_beats: list                  # list[FactBeat], 3-5 (internal)
     follow_ups: list                  # list[str] (internal, not in contract)
-    scope: str = "scene"              # scene | general
+    scope: str = "scene"              # scene | general (player DISPLAY schedule)
+    primary_claim: str = ""           # one-sentence core claim (used for dedup)
+    # Editorial classification (see Anchor.scene_dependency): "agnostic" =
+    # showable anywhere, "specific" = belongs windowed to the moment named in
+    # scene_hint. Independent of `scope`, which drives the timing schedule.
+    scene_dependency: str = "agnostic"   # agnostic | specific
+    scene_hint: str = ""                 # where a scene-specific fact belongs
     scene_end_fraction: float = 0.0   # scene end (0 = unknown; scene scope)
     # Display schedule, filled by the finalizer: list of [start_s, end_s]
     # windows during which the player may show this card. Scene cards get
@@ -169,6 +183,10 @@ class SceneFactCard:
             }
         return {
             "scope": self.scope,
+            # Editorial classification the review groups by: "agnostic" (shows
+            # anywhere) vs "specific" (belongs windowed to sceneHint).
+            "sceneDependency": self.scene_dependency,
+            "sceneHint": self.scene_hint or None,
             "factCategory": self.fact_category,
             "shortVersion": self.short_version,
             "longDescription": self.long_description,
@@ -200,6 +218,11 @@ class ValidationResult:
     curiosity: dict = field(default_factory=dict)
     rejection_reasons: list = field(default_factory=list)
     flags: list = field(default_factory=list)      # non-fatal warnings
+    # Annotation triage: high (strict-pass), medium (solid relaxed card with a
+    # qualifying source), low (thin sourcing / low interest — "not as good /
+    # not enough info"). confidence_reasons explains a low/medium label.
+    confidence: str = ""
+    confidence_reasons: list = field(default_factory=list)
     judge_notes: str = ""
 
     def to_dict(self):
@@ -215,10 +238,14 @@ class CardRecord:
     evidence: Optional[EvidencePacket]
     validation: Optional[ValidationResult]
     status: str = "pending"           # emitted | rejected | error
+    timings: dict = field(default_factory=dict)   # stage -> seconds (evaluation)
 
     def to_dict(self):
         return {
             "status": self.status,
+            "sources_fetched": len(self.evidence.sources) if self.evidence else 0,
+            "abstain_reason": (self.evidence.abstain_reason if self.evidence else ""),
+            "timings": {k: round(v, 1) for k, v in self.timings.items()},
             "card": self.card.to_contract_dict() if self.card else None,
             "anchor": self.anchor.to_dict(),
             "sources": [s.to_dict() for s in (self.card.sources if self.card else [])],
