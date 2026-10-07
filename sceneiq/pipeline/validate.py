@@ -468,8 +468,7 @@ def validate_card(
     # digit number in the short/long must appear in a beat (or its verbatim anchor).
     support = " ".join(f"{b.text} {b.verbatim_anchor}" for b in card.fact_beats)
     allow = {_norm_word(w) for w in re.findall(
-        r"[A-Za-z][A-Za-z'\u2019\-]*",
-        f"{film_info.get('title', '')} {getattr(packet.anchor, 'scene_description', '')}")}
+        r"[A-Za-z][A-Za-z'\u2019\-]*", f"{film_info.get('title', '')}")}
     missing_terms = unsupported_terms(
         f"{card.short_version} {card.long_description}", support, allow)
     checks["summary_terms"] = not missing_terms

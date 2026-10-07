@@ -165,9 +165,9 @@ notes give a concrete story behind it.
 something a viewer would retell. Skip facts a viewer would shrug at, and reject \
 vague-trait praise with no concrete specific (e.g., "an actor showed her wit", \
 "gave a great performance").
-- Each fact_summary must be understandable ON ITS OWN. Identify characters by ROLE plus \
-character name, and the actor where it helps ("the lead character Jordan Belfort \
-(Leonardo DiCaprio)") — never a bare "the lead" or a bare first name.
+- Each fact_summary must be understandable ON ITS OWN. Identify characters by their \
+ROLE in the film (the lead, the villain, the salon owner), optionally with the \
+character's name — never by a bare first name a viewer would have to already know.
 - The notes may tag each fact with WHEN (the moment in the film it relates to) and SAID BY (who is quoted). Use WHEN to write the scene_hint for a "specific" fact, and keep the SAID BY attribution in the fact_summary when it is a named filmmaker or cast member.
 - For each: a one-line fact_summary, the closest category ("general" when it isn't \
 tied to any on-screen element), 2-3 runnable search_queries (include the film title \
