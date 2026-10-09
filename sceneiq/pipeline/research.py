@@ -19,7 +19,7 @@ from __future__ import annotations
 import logging
 from concurrent.futures import ThreadPoolExecutor
 
-from .. import config
+from .. import config, source_policy
 from ..fetch import FetchCache, title_grounded
 from ..gemini import GeminiClient
 from ..models import Anchor, EvidencePacket, SourceRef
@@ -31,9 +31,10 @@ _QUERY_PROMPT = """Run a Google search for: {query}
 
 After searching, describe the top 4-8 most authoritative results for insider \
 production details about the film {film_title} ({film_year}). Do NOT invent any \
-URL — only describe what the search returned. Prefer primary/direct sources \
-(filmmaker and talent interviews, commentary, production notes, trade press) \
-over fan content."""
+URL — only describe what the search returned. Prefer the most authoritative \
+sources, in this order: PRIMARY (filmmaker/cast/crew/studio interviews, commentary, \
+press kits, official records), then established trade press and major publications, \
+over listicles, blogs and fan content."""
 
 _TIER_ORDER = {"A": 0, "B": 1, "unknown": 2, "C": 3}
 
@@ -163,3 +164,38 @@ def research_anchor(
     log.info("  sources for %r: %d fetched (%s)", anchor.anchor_element[:40],
              len(sources), ",".join(s.tier for s in sources) or "none")
     return EvidencePacket(anchor=anchor, findings="\n\n".join(notes), sources=sources)
+
+
+def research_stronger_sources(
+    client: GeminiClient,
+    film_info: dict,
+    anchor: Anchor,
+    cfg: config.PipelineConfig,
+    cache: FetchCache,
+    have_urls: set[str],
+) -> list[SourceRef]:
+    """One targeted search for A/B-tier pages that state this fact.
+
+    Used when a card's only support is unknown/C-tier pages. Returns only NEW
+    pages from A- or B-tier domains (fetched, on-topic); empty if none found.
+    """
+    title = f"{film_info.get('title', '')} {film_info.get('year', '')}".strip()
+    q = f"{title} {anchor.anchor_element} {source_policy.retry_query_suffix()}"
+    _, grounded = _run_query(client, cfg, film_info, q)
+    film_title = str(film_info.get("title", ""))
+    cands, seen = [], set(have_urls)
+    for s in grounded.sources:
+        url = (s.get("url") or "").strip()
+        if url and url not in seen:
+            seen.add(url)
+            cands.append(s)
+    with ThreadPoolExecutor(max_workers=cfg.fetch_workers) as pool:
+        fetched = pool.map(
+            lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache), cands)
+        found = [s for s in fetched if s is not None and s.tier in ("A", "B")
+                 and s.url not in have_urls]
+    uniq: dict[str, SourceRef] = {}
+    for s in found:
+        uniq.setdefault(s.url, s)
+    return list(uniq.values())
+

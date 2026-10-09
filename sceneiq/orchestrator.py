@@ -26,7 +26,7 @@ from .pipeline.anchors import (discover_anchors, discover_anchors_from_moments,
 from .pipeline.assemble import assemble_card, repair_card
 from .pipeline.curiosity import judge_curiosity
 from .pipeline.leads import wikipedia_leads
-from .pipeline.research import research_anchor
+from .pipeline.research import research_anchor, research_stronger_sources
 from .pipeline.title_sweep import title_sweep
 from .pipeline.validate import validate_card
 
@@ -51,6 +51,24 @@ def _process_anchor(
             record.validation = None
             log.info("  ✗ abstained: %s", anchor.anchor_element)
             return record
+        # Weak sourcing: every source the card cites is unknown/C-tier. Search
+        # once for A/B-tier pages stating the fact; if any turn up, rewrite the
+        # card with them available (the writer cites whichever state the claim).
+        tier_of = {s.url: s.tier for s in packet.sources}
+        cited = {b.source_url for b in card.fact_beats}
+        if cfg.strengthen_weak_sources and not any(tier_of.get(u) in ("A", "B") for u in cited):
+            try:
+                extra = research_stronger_sources(
+                    client, film_info, anchor, cfg, cache, set(tier_of))
+                if extra:
+                    packet.sources = extra + list(packet.sources)
+                    card2 = assemble_card(client, film_info, packet, cfg)
+                    if card2 is not None:
+                        card = card2
+                        log.info("  ↻ re-sourced with %d A/B page(s): %s",
+                                 len(extra), anchor.anchor_element[:60])
+            except Exception as e:  # best-effort; keep the original card
+                log.warning("  stronger-source retry failed on %s: %s", anchor.anchor_element, e)
         record.card = card
         _t = time.time()
         result = validate_card(client, film_info, card, packet, cfg)

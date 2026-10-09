@@ -25,7 +25,7 @@ from __future__ import annotations
 
 import re
 
-from .. import config
+from .. import config, source_policy
 from ..fetch import attach_timestamp, best_substring_ratio
 from ..gemini import GeminiClient
 from ..models import EvidencePacket, SceneFactCard, ValidationResult
@@ -181,12 +181,13 @@ preserved, not stripped. Overstated = not entailed. For each beat, copy into \
 supporting_passage the exact passage from the source body that supports it (empty \
 string if none does — which means not entailed).
 
-2. sources — classify each source's evidence class FOR THE CLAIMS IT SUPPORTS: \
-"primary_direct" (filmmakers/talent/studio or a domain authority directly attest — \
-including an article or transcript that directly quotes the relevant participant \
-making this claim), "reputable_editorial" (reported coverage by an established \
-publication without a direct participant statement), or "discovery" (wiki/fan/db/\
-listicle — leads only, never support).
+2. sources — classify each source's evidence class FOR THE CLAIMS IT SUPPORTS, using \
+the SOURCE POLICY below: "primary_direct" (PRIMARY), "reputable_editorial" \
+(ESTABLISHED EDITORIAL — only an outlet that fits that description, not a blog or \
+marketing site), or "discovery" (NOT AUTHORITATIVE — a lead, never support).
+
+SOURCE POLICY:
+{source_policy}
 
 3. rubric — score each dimension 0 (fail), 1 (partial), or 2 (meets bar):
 - factual_accuracy: 2 = all material claims accurate and entailed by the bodies; \
@@ -378,6 +379,7 @@ def validate_card(
             beats=beats_txt,
             follow_ups=card.follow_ups,
             source_blocks=_judge_source_blocks(cited),
+            source_policy=source_policy.definitions_block(),
         ),
         _JUDGE_SCHEMA,
         temperature=cfg.judge_temperature,
@@ -532,11 +534,14 @@ def validate_card(
     editorial_strict = independent(
         [s for s in supporting if s.evidence_class == "reputable_editorial" and s.tier in ("A", "B")]
     )
-    editorial_relaxed = independent(
-        [s for s in supporting if s.evidence_class == "reputable_editorial"]
-    )
-    strict_emission = bool(primaries) or len(editorial_strict) >= 2
-    relaxed_emission = bool(primaries) or len(editorial_relaxed) >= 1
+    # Source policy: an unlisted-domain page counts only as PRIMARY (it quotes a
+    # named participant); "reputable editorial" support must come from A/B domains.
+    editorial_relaxed = independent([
+        s for s in supporting if s.evidence_class == "reputable_editorial"
+        and (s.tier in ("A", "B") or not source_policy.UNKNOWN_DOMAIN_NEEDS_PRIMARY)
+    ])
+    strict_emission = bool(primaries) or len(editorial_strict) >= source_policy.STRICT_MIN_EDITORIAL
+    relaxed_emission = bool(primaries) or len(editorial_relaxed) >= source_policy.RELAXED_MIN_EDITORIAL
     emission_ok = relaxed_emission if relaxed else strict_emission
     checks["emission_policy"] = emission_ok
     if not emission_ok:

@@ -8,7 +8,7 @@ prompt. Abstention is a first-class output.
 
 from __future__ import annotations
 
-from .. import config
+from .. import config, source_policy
 from ..gemini import GeminiClient
 from ..models import EvidencePacket, FactBeat, SceneFactCard
 
@@ -59,6 +59,9 @@ ASSIGNED FACT (the ONE fact this card must tell): {anchor_element}
 
 SOURCES (cite beats ONLY from these, by index; each shows its fetched body text):
 {source_blocks}
+
+SOURCE POLICY (which sources count; when several state the same claim, cite the most authoritative):
+{source_policy}
 
 STYLE — match the best film-magazine writing:
 - factBeats: prefer 3 to 5 single-sentence beats (minimum {min_beats}) that tell a micro-story in \
@@ -197,6 +200,7 @@ def assemble_card(
             scene_description=packet.anchor.scene_description,
             anchor_element=packet.anchor.anchor_element,
             source_blocks=_source_blocks(packet),
+            source_policy=source_policy.definitions_block(),
             scene_rule=(
                 "The assigned fact must relate to something visible/audible in THIS scene."
                 if packet.anchor.scope == "scene" else
