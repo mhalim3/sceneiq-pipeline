@@ -61,6 +61,13 @@ _SWEEP_QUERIES_LATER_SETS = [
         "{title} {year} budget worldwide box office how much it made compared to budget franchise record",
         "{title} {year} cast interview told Vulture Variety EW on set story",
     ],
+    [
+        "{title} {year} lead actor real life personality versus the character they play",
+        "{title} {year} lead actor typecast role similar to their other roles",
+        "{title} {year} lead actor habits quirks on set visible in their scenes",
+        "{title} {year} cast relationship dating romance during filming confirmed",
+        "{title} {year} what was happening in the lead actor's life while filming",
+    ],
 ]
 
 # Round 1 also asks the plain questions anyone would ask first. These are cheap, fast, and

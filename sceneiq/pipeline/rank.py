@@ -18,6 +18,8 @@ If a card falls under one of those kinds, rank it last.
 
 {favored}
 
+{anchors}
+
 Score: 5 = standout (use for at most the best quarter of the cards), 4 = good, 3 = fine but ordinary, 2 = weak, 1 = filler. Compare the cards against each other; do not give everything a 4 or 5.
 
 CARDS:
@@ -50,6 +52,7 @@ def rank_cards(client: GeminiClient, cfg: config.PipelineConfig, film_info: dict
         d = client.structured(
             cfg.quality_model,
             _PROMPT.format(film=film_info.get("title", ""), n=len(records), cards=cards,
+            anchors=editorial_guide.RATING_ANCHORS,
                            exclusions=editorial_guide.exclusions_block(),
                            favored=editorial_guide.FAVORED),
             _SCHEMA, temperature=0.0)

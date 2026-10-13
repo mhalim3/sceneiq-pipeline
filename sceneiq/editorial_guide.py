@@ -163,17 +163,20 @@ PRINCIPLES = [
 # review (What Men Want, ATL). Each: (id, rule, why).
 EXCLUSIONS = [
     ("cameos",
-     "No fact whose point is that a known person appears in the film (cameos, 'also appears', "
-     "celebrity or athlete appearances, a real person playing themselves).",
-     "Viewers discover cameos on their own while watching; telling them first removes the fun."),
+     "No fact whose point is that a known person appears in the film when the cameo is "
+     "obvious (cameos, 'also appears', celebrity or athlete appearances, a real person "
+     "playing themselves). A low-key cameo that most viewers would miss IS fine to show.",
+     "Viewers spot obvious cameos on their own, so telling them first removes the fun; a "
+     "cameo they would not notice is a discovery worth sharing."),
     ("cast_credits",
      "No fact that only says who plays whom, who else is in the cast, or an actor's other "
      "roles. Casting STORIES are fine: who was almost cast, who turned the part down, how "
      "someone won the role.",
      "The cast is already shown in each scene, so a credit tells the viewer nothing new."),
     ("other_film",
-     "The fact must be about THIS film. Do not lead with another film (why an actor chose a "
-     "different movie over this one, what the director made next).",
+     "The fact must be about THIS film. Do not lead with another film's story. (Why an actor "
+     "chose a different movie over this one, or what the director made next, is fine when it "
+     "explains something about this film.)",
      "A viewer watching this film wants to learn about this film."),
     ("unflattering",
      "Nothing that makes a real person look bad: being fired or nearly fired, being late, "
@@ -181,9 +184,14 @@ EXCLUSIONS = [
      "story themselves.",
      "It is a family-brand enrichment surface and the reviewer called such a card 'not a good look'."),
     ("off_topic",
-     "No fact about a person's private life, diet, hobbies or favorite places that is not "
-     "about making or being in this film.",
-     "Not interesting or relevant to the movie."),
+     "No fact about a person's private life, diet, hobbies or favorite places unless it ties "
+     "into this film: it was happening at the time of filming, or it contrasts with or "
+     "explains the character the person plays (a lead actor or star's real personality "
+     "against their role, a habit visible on screen, whether the role is typecasting, a "
+     "romance during the shoot). Include drama only if it is not political, not about "
+     "breaking a law, is 100% confirmed (never rumor, gossip or speculation) and does not "
+     "damage the person's career or reputation.",
+     "A private-life fact is only interesting to a viewer of this film when it connects to the film."),
     ("plain_info",
      "No plain reference facts: content rating, release date, runtime, home-video extras, "
      "soundtrack track lists, who composed or directed (with no story), filmography lists. "
@@ -203,7 +211,9 @@ FAVORED = (
     "Kinds of fact viewers like most (use them to choose the angle to lead with and to rank; "
     "never invent): an impressive money figure (box office, budget against gross, or an actor's "
     "pay when it is striking); a memorable comment from the director or cast about the film; "
-    "easter eggs; how something was filmed; how an actor prepared for a role.")
+    "easter eggs; how something was filmed; how an actor prepared for a role; a lead actor's real "
+    "life or personality set against their character, a habit visible in their scenes, "
+    "typecasting, or a confirmed romance during filming.")
 
 
 def exclusions_block() -> str:
