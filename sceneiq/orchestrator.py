@@ -276,7 +276,7 @@ _REPEAT_SCHEMA = {
 }
 
 
-def _repeat_check(client, cfg, film_info, records: list) -> set:
+def _repeat_check(client, cfg, film_info, records: list) -> set:   # set of id(record)
     """Final looser repeat check over the ranked cards: where several cards tell the same core
     fact, keep the best-ranked and drop the rest (the pool is larger than the number shown, so
     over-merging costs little while a visible repeat costs trust). Returns the dropped records."""
@@ -292,14 +292,14 @@ def _repeat_check(client, cfg, film_info, records: list) -> set:
             _REPEAT_SCHEMA, temperature=0.0)
     except Exception:
         return set()
-    dropped = set()
+    dropped: set = set()
     for g in data.get("groups", []):
         idx = sorted(i for i in g.get("indices", []) if 0 <= i < len(ranked))
         for i in idx[1:]:
             r = ranked[i]
-            if r in dropped:
+            if id(r) in dropped:
                 continue
-            dropped.add(r)
+            dropped.add(id(r))
             r.status = "rejected"
             r.near_miss = False
             if r.validation:
@@ -774,7 +774,8 @@ def run(
         if generic_mode:
             max_rounds = 2   # one more round only when too few usable cards were found
         while (cfg.use_title_sweep
-               and ((_usable_count() < cfg.target_cards) if generic_mode
+               # margin: the repeat check and credit filter remove a few cards later
+               and ((_usable_count() < cfg.target_cards + 6) if generic_mode
                     else approved_so_far < target_early)
                and sweep_round < max_rounds):
             sweep_round += 1
@@ -840,7 +841,7 @@ def run(
         polish_cards(client, cfg, film_info, pool_records)
         rank_cards(client, cfg, film_info, pool_records)
         gone = _repeat_check(client, cfg, film_info, pool_records)
-        emitted = [r for r in emitted if r not in gone]
+        emitted = [r for r in emitted if id(r) not in gone]
 
     # Display schedule: exact windows for the player, 100% coverage target.
     duration_s = float(film_info.get("duration_sec") or (film_info.get("runtime_minutes") or 0) * 60)

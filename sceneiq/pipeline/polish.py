@@ -44,17 +44,19 @@ TEXT: {text}"""
 _SHORTEN_SCHEMA = {"type": "object", "properties": {"text": {"type": "string"}}, "required": ["text"]}
 
 
-def shorten_to_cap(client: GeminiClient, cfg: config.PipelineConfig, text: str) -> str:
+def shorten_to_cap(client: GeminiClient, cfg: config.PipelineConfig, text: str,
+                   cap: int | None = None) -> str:
     """Models miscount characters, so over-long text is re-shortened with feedback on its
     actual length, aiming well under the cap. Returns the shortest attempt (may still be over)."""
+    cap = cap or cfg.long_cap
     best = text
-    for target in (cfg.long_cap - 10, cfg.long_cap - 25, cfg.long_cap - 40):
-        if len(best) <= cfg.long_cap:
+    for target in (cap - 8, cap - 18, cap - 30):
+        if len(best) <= cap:
             break
         try:
             d = client.structured(
                 cfg.quality_model,
-                _SHORTEN_PROMPT.format(target=target, n=len(best), cap=cfg.long_cap, text=best),
+                _SHORTEN_PROMPT.format(target=target, n=len(best), cap=cap, text=best),
                 _SHORTEN_SCHEMA, temperature=0.2)
         except Exception:
             continue
@@ -99,6 +101,8 @@ def _polish_one(client: GeminiClient, cfg: config.PipelineConfig, film: str, rec
             break
     if best_long and len(best_long) > cfg.long_cap:
         best_long = shorten_to_cap(client, cfg, best_long)
+    if len(card.short_version) > cfg.short_cap:
+        card.short_version = shorten_to_cap(client, cfg, card.short_version, cap=cfg.short_cap)
     card.long_version = best_long
     if rec.validation is not None:
         if len(card.short_version) > cfg.short_cap:
