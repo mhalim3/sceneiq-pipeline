@@ -345,7 +345,7 @@ def validate_card(
         )
     if len(card.long_description) > 280:
         result.flags.append(
-            f"longDescription {len(card.long_description)} chars (max ~280)"
+            f"full fact (longDescription) {len(card.long_description)} chars (about 280 max)"
         )
 
     # 2. Source binding: per-beat verbatim anchor must fuzzy-match its cited

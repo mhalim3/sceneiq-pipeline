@@ -70,7 +70,7 @@ WHO READS THESE: a person watching a movie on a TV across the room who has just 
   - After: Emmett was written for Luke Wilson.  _(state it plainly)_
 
 ## Long Stands Alone
-**Rule.** The long version must restate the short's claim (naming the people again) and then add ONE new specific that sharpens the hook: a quote, a second party, a number, a reason. It must read correctly on its own.
+**Rule.** The full fact (the longDescription field; a shorter 140-character long is cut from it later) must restate the short's claim (naming the people again) and then add ONE new specific that sharpens the hook: a quote, a second party, a number, a reason. It must read correctly on its own.
 
 **Why.** The long appears when someone taps for more, possibly after the short has scrolled away. It cannot assume the reader remembers the short or knows it is 'a continuation'. A long that only adds a loosely related detail confuses; a long that only repeats adds nothing. Restate, then deepen.
 

@@ -113,11 +113,11 @@ specific film — which role? say it)
 understandable alone, no hook)
   G-rated, no clickbait, fully supported by the beats.
   - shortAlternatives: ALSO give 2-3 different headlines for the SAME fact, each {short_cap} characters or fewer and each fully backed by the beats (same punchline, different wording or name forms). shortVersion should be the best headline that is {short_cap} characters or fewer; if you cannot fit the punchline and the needed names in {short_cap}, put your best attempt in shortVersion anyway.
-- longDescription: one or two sentences, maximum 280 characters. Follow the LONG STANDS ALONE principle in the EDITORIAL GUIDE: restate the short's claim (naming people again), then add ONE new specific that sharpens the hook. EVERY specific in it must be stated by one of your factBeats. Do NOT mention scenes, moments or where in the film something happens — the card is shown without scene context, and the scene hint is only an internal note that may be wrong. No claim beyond the beats.
+- longDescription (this field holds the FULL FACT, the complete sourced statement): one to three sentences, about 280 characters at most. A separate 140-character "long" version is written from it LATER, so do not try to write that one here. Follow the LONG STANDS ALONE principle in the EDITORIAL GUIDE: restate the short's claim (naming people again), then add ONE new specific that sharpens the hook. EVERY specific in it must be stated by one of your factBeats. Do NOT mention scenes, moments or where in the film something happens — the card is shown without scene context, and the scene hint is only an internal note that may be wrong. No claim beyond the beats.
 - primaryClaim: ONE plain sentence stating the core claim of the card (who did/was what, with the key number or name), stripped of hooks and extra detail. Used only to spot duplicate stories.
 - followUps: 2 to 3 natural viewer next-questions, <= 10 words each (internal, for \
 value scoring).
-- A card stands alone with NO scene context: apply the NAME PEOPLE principle to the short AND the long.
+- A card stands alone with NO scene context: apply the NAME PEOPLE principle to the shortVersion AND the longDescription (full fact).
 - Don't spend words describing what the viewer can already see; deliver only NEW \
 information. You still must identify who or what the fact is about by role or name \
 so the card reads clearly on its own — identify, don't narrate.
@@ -259,7 +259,7 @@ VERIFIED BEATS (the ONLY facts you may use — each is already checked against s
 {beats}
 
 CURRENT shortVersion: {short_version}
-CURRENT longDescription: {long_description}
+CURRENT longDescription (the full fact): {long_description}
 
 PROBLEMS TO FIX:
 {problems}
@@ -268,7 +268,7 @@ Rules:
 - Use ONLY what the beats state. Drop any name, number, or claim the beats do not say.
 - Keep the fact's punchline first and name the concrete specific; the short must stand \
 alone (identify people by role or real name + job, never a bare first name).
-- The longDescription must elaborate the SAME fact and add a detail that IS in the beats \
+- The longDescription (the full fact) must elaborate the SAME fact and add a detail that IS in the beats \
 (max 280 characters); do not just restate the short.
 - Everything must be G-rated: no profanity (even bleeped or censored), no sexual, drug, or \
 graphic-violence detail. Say the interesting thing without the mature wording. If the fact \
