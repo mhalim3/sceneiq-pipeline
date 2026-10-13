@@ -11,7 +11,7 @@ from functools import lru_cache
 from pathlib import Path
 from urllib.parse import urlparse
 
-from . import config
+from . import config, source_policy
 
 # Minimal multi-label public suffixes we care about for registered-domain
 # extraction. Not a full PSL, but covers the tier tables.
@@ -38,9 +38,6 @@ def _rsp() -> dict:
         return {}
 
 
-_RSP_TIER = {"gr": "A", "nc": "B", "gu": "C", "d": "C", "b": "C"}
-
-
 def rsp_status(url: str) -> str:
     """Wikipedia perennial-sources status for the URL's domain ('' if unlisted)."""
     return _rsp().get(registered_domain(url), "")
@@ -49,9 +46,13 @@ def rsp_status(url: str) -> str:
 def classify_domain(url: str) -> str:
     """Return 'A' | 'B' | 'C' | 'unknown' for a URL.
 
-    Tiers follow Wikipedia's Perennial Sources list:
-      A = generally reliable, B = no consensus (usable depending on context),
-      C = generally unreliable, deprecated or blacklisted (lead only).
+    Tiers start from Wikipedia's Perennial Sources list ("generally reliable"
+    is its top group) and add our own split, see source_policy.py:
+      A = generally reliable AND film/entertainment is the outlet's core beat;
+      B = generally reliable general-interest outlets, plus entertainment or
+          reference outlets Wikipedia rates "no consensus";
+      C = other "no consensus", and generally unreliable / deprecated / blacklisted
+          (lead only, never support).
     Video platforms are always left to the judge (a verified channel can be
     primary). For domains Wikipedia does not rate, the local lists in
     source_policy.py (domain authorities, trade outlets, lead-only sites) and
@@ -63,8 +64,14 @@ def classify_domain(url: str) -> str:
     if dom in config.VIDEO_DOMAINS:
         return "unknown"
     rsp = _rsp().get(dom, "")
-    if rsp:
-        return _RSP_TIER.get(rsp, "unknown")
+    if rsp == "gr":
+        return "A" if dom in source_policy.GR_FILM_EXPERT_A else "B"
+    if rsp == "mixed":
+        return "B"
+    if rsp == "nc":
+        return "B" if dom in source_policy.NC_ENTERTAINMENT_OR_REFERENCE_B else "C"
+    if rsp in ("gu", "d", "b"):
+        return "C"
     if dom in config.A_TIER_DOMAINS or dom.endswith(".gov"):
         return "A"
     if dom in config.B_TIER_DOMAINS:

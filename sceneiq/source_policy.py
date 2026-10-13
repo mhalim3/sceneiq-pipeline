@@ -63,6 +63,29 @@ RETRY_OUTLETS = [
 
 # --- Domain lists ----------------------------------------------------------------
 
+# --- Our A/B split inside Wikipedia's verdicts ----------------------------------
+# Wikipedia "generally reliable" is the top group. We split it by film expertise:
+#   A = generally reliable AND film/entertainment is the outlet's core beat, so a
+#       film fact is inside its area of expertise (Wikipedia's own caveat).
+#   B = generally reliable, but a general-interest outlet; film is incidental.
+# Wikipedia "no consensus" is B or C, never A:
+#   B = an entertainment/film outlet with an editorial staff and bylines, or a
+#       records/reference authority.
+#   C = everything else (general-interest, tabloid, lifestyle, gossip, user-edited).
+# Domains whose entries disagree ("mixed", e.g. a culture section rated reliable
+# and the rest not) are B.
+GR_FILM_EXPERT_A = {
+    "avclub.com", "behindthevoiceactors.com", "deadline.com", "deadlinehollywooddaily.com",
+    "denofgeek.com", "digitalspy.co.uk", "digitalspy.com", "ew.com", "hollywoodreporter.com",
+    "idolator.com", "ign.com", "metacritic.com", "nme.com", "people.com", "polygon.com",
+    "rollingstone.com", "rottentomatoes.com", "themarysue.com", "thewrap.com", "tvguide.com",
+    "tvguidemagazine.com", "vanityfair.com", "variety.com",
+}
+NC_ENTERTAINMENT_OR_REFERENCE_B = {
+    "screenrant.com", "mashable.com", "dexerto.com", "dexerto.es", "decider.com",
+    "britannica.com", "guinnessworldrecords.com", "businessinsider.com",
+}
+
 # LOCAL ADDITIONS. Tiers come from Wikipedia's perennial-sources list
 # (wikipedia_rsp.json: A = generally reliable, B = no consensus, C = unreliable /
 # deprecated / blacklisted). The three sets below apply ONLY to domains Wikipedia

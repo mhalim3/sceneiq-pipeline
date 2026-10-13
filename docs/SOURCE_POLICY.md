@@ -29,22 +29,18 @@ Single source of truth: `sceneiq/source_policy.py`. Everything else reads it.
 ## Where it is used
 tiers.py (domain tiers) · validate.py (judge prompt + emission rule) · assemble.py (writer prompt) · research.py (research prompt, retry query) · orchestrator.py (weak-source retry)
 
-## Tiers are defined by Wikipedia's perennial-sources list
+## Tiers: Wikipedia's verdict plus our own split
 
 `sceneiq/wikipedia_rsp.json` holds the verdicts from Wikipedia's
 [Reliable sources / Perennial sources](https://en.wikipedia.org/wiki/Wikipedia:Reliable_sources/Perennial_sources)
-(fetched 2026-10-13; 748 domains). `tiers.classify_domain` maps them:
+(fetched 2026-10-13). "Generally reliable" is its top group, so we split it ourselves
+(rules and domain sets in `source_policy.py`, applied in `tiers.classify_domain`):
 
-- **A** = generally reliable
-- **B** = no consensus (marginal; usable depending on context)
-- **C** = generally unreliable, deprecated or blacklisted (lead only, never support)
-- **unknown** = not rated; the judge decides per claim
+- **A** = generally reliable AND film/entertainment is the outlet's core beat (Variety, Hollywood Reporter, Deadline, TheWrap, Rolling Stone...), plus official records and domain authorities (ASCAP, BMI, FilmLA, ASC, Criterion, `.gov`).
+- **B** = generally reliable general-interest outlets (CNN, Reuters, NYT...); "no consensus" entertainment or reference outlets (Screen Rant, Britannica, Guinness...); sites whose Wikipedia entries disagree; trade outlets Wikipedia does not rate (Collider, SlashFilm, IndieWire, Empire).
+- **C** = other "no consensus" sites, plus "generally unreliable", "deprecated" and "blacklisted". Lead only, never support.
+- **unknown** = not rated; the judge decides per claim. Video platforms (YouTube, Vimeo) always go to the judge.
 
-Video platforms (YouTube, Vimeo) are always left to the judge. For domains Wikipedia does
-not rate, the local lists in `source_policy.py` and any `.gov` apply. Where Wikipedia has
-a verdict it wins. A and B are treated alike by the emission rules; C never supports.
-The full lists are in [SOURCE_LISTS.md](SOURCE_LISTS.md).
-
-The list only covers sources Wikipedia editors have repeatedly debated, so many film
-outlets (Cartoon Brew, Animation Magazine, AWN, CBR...) stay "unknown". To refresh,
+A and B are treated alike by the emission rules for now; C never supports.
+The full lists are in [SOURCE_LISTS.md](SOURCE_LISTS.md). To refresh the Wikipedia data,
 re-download the page and its subpages /1 to /8 and rebuild the JSON.
