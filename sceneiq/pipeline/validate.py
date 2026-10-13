@@ -25,7 +25,7 @@ from __future__ import annotations
 
 import re
 
-from .. import config, source_policy
+from .. import config, editorial_guide, source_policy
 from ..fetch import attach_timestamp, best_substring_ratio
 from ..gemini import GeminiClient
 from ..models import EvidencePacket, SceneFactCard, ValidationResult
@@ -135,6 +135,8 @@ _JUDGE_SCHEMA = {
         "summary_entailed": {"type": "boolean"},
         "film_specific": {"type": "boolean"},
         "matches_assigned_fact": {"type": "boolean"},
+        "editorial_fit_pass": {"type": "boolean"},
+        "editorial_fit_reason": {"type": "string"},
         "named_entities": {"type": "array", "items": {"type": "string"}},
         "notes": {"type": "string"},
     },
@@ -149,9 +151,23 @@ _JUDGE_SCHEMA = {
         "summary_entailed",
         "film_specific",
         "matches_assigned_fact",
+        "editorial_fit_pass",
         "named_entities",
     ],
 }
+
+_PROPRIETY_RE = re.compile(
+    r"\b(cancer|passed away|diagnosed|terminal(ly)? ill|suicide|overdose|arrested|lawsuit|"
+    r"sued|divorce[ds]?|affair|abused?|assault(ed)?|funeral|death of|died of|murder(ed)?|"
+    r"rehab|addiction)\b", re.I)
+
+# Credit-style headlines ("X served as a producer", "Y plays Z", "story credit") state who is in or
+# made the film, which viewers already see; the editorial rules exclude them.
+_CREDIT_RE = re.compile(
+    r"\b(credited as|credit for|story credit|screenplay credit|writing credit|"
+    r"served as (a |an |the )?(executive )?(producer|director|writer)|produced by|"
+    r"plays|play the role|stars? in|starred in|co-?stars?|cast includes|"
+    r"wrote the (screenplay|script)|also appears)\b", re.I)
 
 _JUDGE_PROMPT = """You are the validation judge for SceneIQ, Tubi's pause-screen surface. \
 Judge this candidate Scene Fact card strictly against the FETCHED SOURCE BODIES below. \
@@ -188,6 +204,7 @@ marketing site), or "discovery" (NOT AUTHORITATIVE — a lead, never support).
 
 SOURCE POLICY:
 {source_policy}
+{annotation_note}
 
 3. rubric — score each dimension 0 (fail), 1 (partial), or 2 (meets bar):
 - factual_accuracy: 2 = all material claims accurate and entailed by the bodies; \
@@ -195,16 +212,10 @@ SOURCE POLICY:
 unsupported, contradicted, or misleading claim.
 - scene_grounding: 2 = clearly points to a recognizable element visible/audible in \
 THIS scene and rewards pausing there; 1 = connection indirect; 0 = not tied to the scene.
-- primitive_conformance: 2 = cleanly fits the Scene Fact definition (insider detail \
-about the film's world explaining something on screen); 1 = loose fit; 0 = does not \
-satisfy the definition. Director filmography, franchise connections, notable cast \
-facts, and casting/development history (actors considered, roles that changed, \
-actors who dropped out, how the project developed) ARE conforming. Automatic 0 \
-for: ANY financial information (budget, box office, profitability, opening \
-weekend, financial comparisons); plot summary of THIS film; bare ratings or review \
-scores without an interesting reception contrast; basic encyclopedic facts \
-(release year, director name, studio, plain cast list); on-set feuds; industry \
-gossip.
+- primitive_conformance: 2 = a sourced fact about THIS film (its making, cast, crew, \
+casting history, music, locations, release, money with figures, or how it was received); \
+1 = loose fit; 0 = not a fact about this film. Automatic 0 for: plot summary of THIS film; \
+a money claim with no figure or source; on-set feuds; industry gossip.
 - viewer_value: 2 = specific, surprising, likely to prompt exploration; 1 = mildly \
 interesting; 0 = generic or obvious.
 - clarity: 2 = concise, tells the viewer what to notice; 1 = verbose or imprecise; \
@@ -216,10 +227,12 @@ interesting; 0 = generic or obvious.
 could SOUND like a spoiler as a spoiler. Return false if the card mentions, hints at, or \
 lets a viewer infer ANY of: a plot development or outcome; a twist or reveal; how the film \
 or any storyline ends; who lives, dies, wins, loses, betrays or is revealed; a villain's or \
-character's secret identity or hidden role; a surprise cameo or secret role; or anything \
+character's secret identity or hidden role; a cameo or secret role whose reveal spoils a \
+surprise IN THE STORY; or anything \
 that happens later in the film than the scene. This applies to scene cards and GENERAL \
 cards alike. Behind-the-scenes facts (casting, locations, effects, preparation, how a \
 moment was filmed) are fine ONLY when they say nothing about what happens in the story. \
+A real person appearing as themselves, or a publicly advertised cameo, is NOT a spoiler. \
 If you are unsure, false.
 
 5. maturity_pass — {maturity_rule}
@@ -251,7 +264,11 @@ film-specific even when the prop or song appears in this film's scene.
 
 11. matches_assigned_fact — the ANCHOR ELEMENT above is the fact this card was ASSIGNED to \
 tell. true if the card is about that same fact (a narrower or reworded version is fine). \
-false ONLY if the card tells a DIFFERENT fact from the sources instead."""
+false ONLY if the card tells a DIFFERENT fact from the sources instead.
+
+12. editorial_fit_pass — {exclusions}
+Set false (and say which kind in editorial_fit_reason) if the card is one of the DO NOT SHOW kinds, or if its shortVersion would be unclear or uninteresting to someone who has not seen the film. \
+Casting stories (who was almost cast, who declined) are NOT cast credits and pass."""
 
 
 def _maturity_rule(cfg: config.PipelineConfig, film_info: dict) -> str:
@@ -357,7 +374,7 @@ def validate_card(
         for i, b in enumerate(card.fact_beats)
     )
     judge = client.structured(
-        cfg.fast_model,
+        cfg.quality_model,
         _JUDGE_PROMPT.format(
             film_title=film_info.get("title", ""),
             film_year=film_info.get("year", ""),
@@ -379,7 +396,15 @@ def validate_card(
             beats=beats_txt,
             follow_ups=card.follow_ups,
             source_blocks=_judge_source_blocks(cited),
+            exclusions=editorial_guide.exclusions_block(),
             source_policy=source_policy.definitions_block(),
+            annotation_note=(
+                "ANNOTATION MODE: a person reviews every card, so weak sourcing is FLAGGED by the "
+                "system, not failed here. If a fetched page, even a listicle or fan site (class "
+                "'discovery'), clearly states a beat's claim, treat that beat as ENTAILED and score "
+                "factual_accuracy on whether the fetched bodies actually state the claims. Still "
+                "classify each source's evidence class honestly in item 2."
+                if cfg.annotation_mode else ""),
         ),
         _JUDGE_SCHEMA,
         temperature=cfg.judge_temperature,
@@ -406,6 +431,20 @@ def validate_card(
     if not judge["propriety_pass"]:
         result.rejection_reasons.append(
             "propriety: gossip/legal/tragedy/political/disparagement content")
+    # Fixed propriety keywords: the same kind of card must get the same answer every run.
+    _text = f"{card.short_version} {card.long_description}".lower()
+    _hit = _PROPRIETY_RE.search(_text)
+    if _hit:
+        checks["propriety"] = False
+        result.rejection_reasons.append(f"propriety: sensitive term '{_hit.group(0)}'")
+    _credit = _CREDIT_RE.search(card.short_version)
+    if _credit:
+        result.rejection_reasons.append(
+            f"editorial: credit-style headline ('{_credit.group(0)}')")
+    checks["editorial_fit"] = bool(judge.get("editorial_fit_pass", True)) and not _credit
+    if not checks["editorial_fit"]:
+        result.rejection_reasons.append(
+            "editorial: " + (judge.get("editorial_fit_reason") or "excluded kind of fact"))
     card.spoiler_boundary_fraction = 0.0  # binary policy: spoilers never emit
 
     checks["taxonomy"] = judge["category_correct"]
@@ -469,8 +508,11 @@ def validate_card(
     # Deterministic terms check on the final (post beat-drop) beats: every name and
     # digit number in the short/long must appear in a beat (or its verbatim anchor).
     support = " ".join(f"{b.text} {b.verbatim_anchor}" for b in card.fact_beats)
+    allow_text = f"{film_info.get('title', '')}"
+    if cfg.allow_assigned_fact_names:
+        allow_text += f" {packet.anchor.anchor_element}"
     allow = {_norm_word(w) for w in re.findall(
-        r"[A-Za-z][A-Za-z'\u2019\-]*", f"{film_info.get('title', '')}")}
+        r"[A-Za-z][A-Za-z'\u2019\-]*", allow_text)}
     missing_terms = unsupported_terms(
         f"{card.short_version} {card.long_description}", support, allow)
     checks["summary_terms"] = not missing_terms

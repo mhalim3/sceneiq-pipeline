@@ -20,7 +20,7 @@ FAST_MODEL = os.environ.get("SCENEIQ_FAST_MODEL", "gemini-2.5-flash")
 # describe results, never invent URLs") — the grounding citations come from
 # Google Search itself, and assembly reads fetched bodies, not the search
 # narrative. Flash is several times faster here at equivalent retrieval.
-RESEARCH_MODEL = os.environ.get("SCENEIQ_RESEARCH_MODEL", FAST_MODEL)
+RESEARCH_MODEL = os.environ.get("SCENEIQ_RESEARCH_MODEL", DEEP_MODEL)
 
 API_KEY_ENV = "GEMINI_API_KEY"
 
@@ -107,7 +107,7 @@ class PipelineConfig:
     # content_ratings — Phase 3 spec). Ships g_rated until S&P signs off.
     maturity_standard: str = "g_rated"
     # Wikipedia API discovery leads (C-tier: seed anchors, never support cards).
-    use_wikipedia_leads: bool = True
+    use_wikipedia_leads: bool = False
     # Fetch-then-write source bank (scene-sense architecture): per anchor, run
     # up to `queries_per_anchor` explicit searches, fetch bodies, keep the top
     # `sources_per_anchor` by tier.
@@ -125,7 +125,18 @@ class PipelineConfig:
     # anchored to a Moments scene when one supports it, else emitted as a
     # GENERAL card the player may show at any time after its spoiler floor.
     use_title_sweep: bool = True
-    sweep_facts_max: int = 16   # wide first round avoids paying for adaptive rounds
+    sweep_facts_max: int = 16
+    # Round 1 is wider because it now also reads the plain 'top 15 fun facts' answers.
+    # Candidate source. "generic" (default): ask a general-purpose model with search
+    # (the "top 15 facts" questions anyone would ask) for ~30 candidates, no interest
+    # judgement and no further sweep rounds; the pipeline's job is then to corroborate,
+    # write and gate them. "search": the older multi-round, type-by-type search sweep.
+    candidate_mode: str = "generic"
+    generic_candidates: int = 40
+    target_cards: int = 15            # usable cards wanted per title (kept + near-misses)
+    long_cap: int = 140               # mid-length "long" version cap (chars)
+    sweep_facts_first_round: int = 30
+    use_basic_prompts: bool = True   # wide first round avoids paying for adaptive rounds
     # Title-level-only mode (current product direction): every card must be
     # showable at any point in the film. Scene-anchor discovery is skipped
     # entirely; the sweep is the sole card source and all cards are general.
@@ -154,8 +165,31 @@ class PipelineConfig:
     # When a card's only cited sources are unknown/C-tier, search once for A/B-tier
     # pages that state the fact and rewrite the card with them available.
     strengthen_weak_sources: bool = True
+    # --- Quality settings (the three goals: interesting, well written, well sourced) ---
+    # Judgement-heavy steps (card writing, repair, validation, interest, dedup, consistency)
+    # run on the stronger model; broad search and structuring stay on the fast one.
+    quality_model: str = DEEP_MODEL
+    # Interest gate (pipeline/interest.py): rubric judge calibrated on reviewer ratings.
+    # Score <= min_interest-1 rejects the card; score == min_interest keeps it but
+    # flags it for human review. 0 disables the gate.
+    interest_model: str = DEEP_MODEL
+    min_interest: int = 0     # clean slate: no interest gate until the 1-5 scale is defined
+    # Pre-filter: score candidate facts for interest BEFORE researching them and drop
+    # the clearly boring ones (score <= prefilter_max_drop). 0 disables.
+    prefilter_max_drop: int = 0
+    # Allow names that appear in the assigned fact text in the short/long even if no
+    # beat repeats them (names in the fact came from the same sources).
+    allow_assigned_fact_names: bool = True
+    # Short headline cap. The writer supplies alternatives; one within the cap is chosen.
+    short_cap: int = 80
+    # Follow links inside fetched articles to A/B-tier pages ("double click" on citations).
+    follow_citations: bool = True
+    # Search for YouTube interviews per fact; read them via transcript, falling back to
+    # Gemini reading the video directly (flagged for human review).
+    use_video_sources: bool = True
+    max_video_sources: int = 2
     annotation_min_cards: int = 10   # density floor when annotation_mode
-    annotation_sweep_rounds: int = 5  # max sweep rounds to reach the floor
+    annotation_sweep_rounds: int = 3  # max sweep rounds to reach the floor
     # Adaptive sweep: after the first round, keep sweeping (with an
     # avoid-list and fresh query angles) until the fact target is met, a
     # round approves nothing new, or this many rounds have run. Each round is

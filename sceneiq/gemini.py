@@ -51,6 +51,9 @@ class GroundingQuotaExhausted(Exception):
 class GroundedResult:
     text: str
     sources: list = field(default_factory=list)   # [{"url":..., "title":...}]
+    # Per-sentence citations: [{"end": utf8 byte offset in text, "chunks": [index into chunk_urls]}]
+    supports: list = field(default_factory=list)
+    chunk_urls: list = field(default_factory=list)   # [{"url","title"}] aligned with chunk index
 
 
 def _is_transient(exc: BaseException) -> bool:
@@ -140,15 +143,27 @@ class GeminiClient:
                 ) from e
             raise
         sources = []
+        chunk_urls = []
+        supports = []
         try:
             gm = resp.candidates[0].grounding_metadata
             for chunk in gm.grounding_chunks or []:
                 web = getattr(chunk, "web", None)
                 if web and web.uri:
                     sources.append({"url": web.uri, "title": web.title or ""})
+                    chunk_urls.append({"url": web.uri, "title": web.title or ""})
+                else:
+                    chunk_urls.append({})
+            for sp in gm.grounding_supports or []:
+                seg = getattr(sp, "segment", None)
+                end = getattr(seg, "end_index", None)
+                idxs = list(getattr(sp, "grounding_chunk_indices", None) or [])
+                if end is not None and idxs:
+                    supports.append({"end": int(end), "chunks": idxs})
         except (AttributeError, IndexError, TypeError):
             pass
-        return GroundedResult(text=resp.text or "", sources=sources)
+        return GroundedResult(text=resp.text or "", sources=sources,
+                              supports=supports, chunk_urls=chunk_urls)
 
     def structured(self, model: str, prompt: str, schema: dict, temperature: float = 0.2):
         """Schema-mode JSON generation. Retries schema violations up to

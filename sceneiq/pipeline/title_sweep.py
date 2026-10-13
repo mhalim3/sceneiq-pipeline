@@ -14,7 +14,7 @@ from __future__ import annotations
 import logging
 from concurrent.futures import ThreadPoolExecutor
 
-from .. import config
+from .. import config, editorial_guide
 from ..gemini import GeminiClient
 from ..models import Anchor
 
@@ -40,6 +40,7 @@ _SWEEP_QUERIES_LATER_SETS = [
     ],
     [
         "{title} {year} casting who else was considered turned down the role",
+        "{title} {year} how much money did the lead actor get paid salary for the role",
         "{title} {year} actors improvised ad-libbed lines scenes",
         "{title} {year} actor training preparation transformation injuries",
         "{title} {year} real story true events vs movie differences",
@@ -57,9 +58,31 @@ _SWEEP_QUERIES_LATER_SETS = [
         "{title} {year} cast reunion later interview looks back",
         "{title} {year} music score composer song choices",
         "{title} {year} cultural impact legacy memes quotes",
+        "{title} {year} budget worldwide box office how much it made compared to budget franchise record",
         "{title} {year} cast interview told Vulture Variety EW on set story",
     ],
 ]
+
+# Round 1 also asks the plain questions anyone would ask first. These are cheap, fast, and
+# already surface many strong facts; later rounds then go looking for specific TYPES of
+# information (casting, improvisation, locations, props, ...) to add what they missed.
+_BASIC_PROMPTS = [
+    "Give me the 25 most interesting facts about the movie {title} ({year}).",
+    "Give me the 25 most fun facts about the movie {title} ({year}).",
+]
+
+_GENERIC_STRUCTURE_PROMPT = """These are answers from a general-purpose assistant to the question "what are the best facts about the movie {title} ({year})?". Turn them into a list of up to {max_facts} DISTINCT candidate facts about the film.
+
+Rules:
+- Keep every distinct fact the notes give. Merge duplicates (the same fact told twice is one fact). Do not otherwise judge how interesting a fact is: premise or remake links, casting stories, locations, budget and box office, and trivia all count, EXCEPT the kinds listed under LEAVE OUT below.
+- State each fact exactly as the notes give it, with the names and numbers. Do not add anything the notes do not say.
+- Each fact must be understandable on its own: name characters and actors (never "the lead").
+- LEAVE OUT these kinds of fact entirely (they are not shown to viewers): {exclusions}
+- The notes carry citation markers like [S3] after sentences: the web page the assistant used for that sentence. For each fact, list in source_ids the marker numbers cited next to it (all of them; empty list if the fact has no marker). Never put markers in fact_summary.
+- For each: a one-line fact_summary, the closest category ("general" if none fits), and 2-3 runnable search_queries that would find a source for it (include the film title in at least one). Do not decide whether a fact belongs to a particular scene; just give the facts.
+
+NOTES:
+{notes}"""
 
 _SWEEP_PROMPT = """Run a Google search for: {query}
 
@@ -87,7 +110,7 @@ Rules:
 qualified sources later.
 - If sources disagree (different numbers, different versions), report both and say so.
 - Do NOT invent any URL or fact — only report what the results say.
-- Skip plot summary, budget/box-office figures, awards lists, feuds, lawsuits and \
+- Money facts are welcome when a source gives the figures: what a named lead actor was paid, the budget, the worldwide gross, how many times the budget it earned, records or franchise-best results. Skip plot summary, awards lists, feuds, lawsuits and \
 tragedies."""
 
 _FACTS_SCHEMA = {
@@ -122,10 +145,38 @@ _FACTS_SCHEMA = {
     "required": ["facts"],
 }
 
+_GENERIC_FACTS_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "facts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "fact_summary": {"type": "string"},
+                    "category_guess": {
+                        "type": "string",
+                        "enum": config.FACT_CATEGORIES + ["general"],
+                    },
+                    "search_queries": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "maxItems": 3,
+                    },
+                    "source_ids": {"type": "array", "items": {"type": "integer"}},
+                },
+                "required": ["fact_summary", "category_guess", "search_queries", "source_ids"],
+            },
+        },
+    },
+    "required": ["facts"],
+}
+
 _STRUCTURE_PROMPT = """From these research notes about {title} ({year}), extract up to \
 {max_facts} distinct, specific candidate facts worth a pause-screen card.
 
 Rules (the title-level fact ruleset):
+- LEAVE OUT these kinds of fact entirely: {exclusions}
 - Facts must be directly connected to THIS film and understandable on their own \
 (a paused viewer who does not know character names must still get it).
 - CLASSIFY each fact by scene_dependency:
@@ -150,8 +201,9 @@ locations, objects, organizations, creatures, or concepts; the central setting \
 (how it was built, recreated, filmed); technical work (CGI, motion capture, \
 stunts, practical effects, camera tech, makeup, costumes, production design); \
 cultural impact.
-- BANNED: any financial information (budget, box office, profitability, opening \
-weekend, financial comparisons); plot summaries of this film; ANYTHING that could sound like a spoiler (plot outcomes, twists, who lives or dies, a villain's or character's secret identity, surprise cameos or secret roles, endings, later events) — if in doubt leave it out; bare ratings or \
+- ALLOWED MONEY FACTS: budget, box office, profitability, records, a franchise's best result, \
+how many times the budget a film earned, and what a named lead actor was paid — whenever a \
+source states the figures (include the numbers). BANNED: plot summaries of this film; ANYTHING that could sound like a spoiler (plot outcomes, twists, who lives or dies, a villain's or character's secret identity, surprise cameos or secret roles, endings, later events) — if in doubt leave it out; bare ratings or \
 review scores (reception only when the CONTRAST is interesting); awards unless \
 notable or surprising; basic encyclopedic facts (release year, director name, \
 studio, cast list alone); trivial goofs and continuity errors; on-set feuds and gossip.
@@ -169,6 +221,7 @@ vague-trait praise with no concrete specific (e.g., "an actor showed her wit", \
 ROLE in the film (the lead, the villain, the salon owner), optionally with the \
 character's name — never by a bare first name a viewer would have to already know.
 - The notes may tag each fact with WHEN (the moment in the film it relates to) and SAID BY (who is quoted). Use WHEN to write the scene_hint for a "specific" fact, and keep the SAID BY attribution in the fact_summary when it is a named filmmaker or cast member.
+- The notes carry citation markers like [S3] after sentences: the web page the assistant used for that sentence. For each fact, list in source_ids the marker numbers cited next to it (all of them; empty list if the fact has no marker). Never put markers in fact_summary.
 - For each: a one-line fact_summary, the closest category ("general" when it isn't \
 tied to any on-screen element), 2-3 runnable search_queries (include the film title \
 in at least one), scene_dependency ("agnostic" or "specific" per the rule above), and \
@@ -252,12 +305,23 @@ def title_sweep(
     moments=None,
     avoid: list | None = None,
     round_n: int = 1,
+    leads: str = "",
 ) -> list[Anchor]:
     title = film_info.get("title", "")
     year = film_info.get("year", "")
 
-    queries = (_SWEEP_QUERIES if round_n <= 1 else
-               _SWEEP_QUERIES_LATER_SETS[min(round_n - 2, len(_SWEEP_QUERIES_LATER_SETS) - 1)])
+    # Round 1: the plain queries. Round 2: EVERY type-specific query set at once (casting,
+    # improvisation, locations, props, stunts, cut scenes, music, ...), run in parallel so
+    # coverage is complete without extra wall-clock time. Round 3+: one set per round.
+    generic = cfg.candidate_mode == "generic" and round_n <= 1
+    if generic:
+        queries = []      # candidates come from the general-purpose prompts only
+    elif round_n <= 1:
+        queries = _SWEEP_QUERIES
+    elif round_n == 2:
+        queries = [q for qs in _SWEEP_QUERIES_LATER_SETS for q in qs]
+    else:
+        queries = _SWEEP_QUERIES_LATER_SETS[(round_n - 3) % len(_SWEEP_QUERIES_LATER_SETS)]
 
     def _run(q):
         return client.grounded(
@@ -267,21 +331,65 @@ def title_sweep(
             temperature=0.2,
         ).text
 
-    with ThreadPoolExecutor(max_workers=len(queries)) as pool:
-        notes = list(pool.map(_run, queries))
+    seed_catalog: dict[int, dict] = {}   # marker number -> {"url","title"}
 
-    data = client.structured(
-        cfg.fast_model,
-        _STRUCTURE_PROMPT.format(title=title, year=year,
-                                 max_facts=cfg.sweep_facts_max,
-                                 avoid_block=(_AVOID_BLOCK.format(
-                                     found="\n".join(f"- {a}" for a in avoid))
-                                     if avoid else ""),
-                                 notes="\n\n---\n\n".join(notes)),
-        _FACTS_SCHEMA,
-        temperature=0.2,
-    )
-    facts = data.get("facts", [])[: cfg.sweep_facts_max]
+    def _basic(p):
+        try:
+            return client.grounded(cfg.quality_model, p.format(title=title, year=year),
+                                   temperature=0.3)
+        except Exception:
+            return None
+
+    def _annotate(res) -> str:
+        """Insert [S#] after each cited sentence so the structuring call can carry
+        the cited pages through to each fact."""
+        raw = res.text.encode("utf-8")
+        ids: dict[int, int] = {}
+        for ci, c in enumerate(res.chunk_urls):
+            if c.get("url"):
+                ids[ci] = len(seed_catalog) + 1
+                seed_catalog[ids[ci]] = c
+        out, last = [], 0
+        for sp in sorted(res.supports, key=lambda x: x["end"]):
+            end = min(sp["end"], len(raw))
+            marks = "".join(f"[S{ids[c]}]" for c in sp["chunks"] if c in ids)
+            if not marks or end < last:
+                continue
+            out.append(raw[last:end].decode("utf-8", "ignore"))
+            out.append(" " + marks)
+            last = end
+        out.append(raw[last:].decode("utf-8", "ignore"))
+        return "".join(out)
+
+    with ThreadPoolExecutor(max_workers=max(1, len(queries) + len(_BASIC_PROMPTS))) as pool:
+        basic_futs = ([pool.submit(_basic, p) for p in _BASIC_PROMPTS]
+                      if (round_n <= 1 and (cfg.use_basic_prompts or generic)) else [])
+        notes = list(pool.map(_run, queries))
+        for f in basic_futs:
+            res = f.result()
+            if res is not None and res.text:
+                notes.append(_annotate(res) if generic else res.text)
+        if leads and round_n <= 1:
+            # Wikipedia production/casting text: a LEAD only. Each claim still has to be
+            # corroborated by fetched sources later (Wikipedia can never support a card).
+            notes.append("WIKIPEDIA NOTES (a lead; every claim must be verified elsewhere):\n" + leads)
+
+    cap = (cfg.generic_candidates if generic else
+           (cfg.sweep_facts_first_round if round_n <= 2 else cfg.sweep_facts_max))
+    if generic:
+        prompt = _GENERIC_STRUCTURE_PROMPT.format(
+            title=title, year=year, max_facts=cap, notes="\n\n---\n\n".join(notes),
+            exclusions=" | ".join(f"{e[0]}: {e[1]}" for e in editorial_guide.EXCLUSIONS))
+    else:
+        prompt = _STRUCTURE_PROMPT.format(
+            title=title, year=year, max_facts=cap,
+            exclusions=" | ".join(f"{e[0]}: {e[1]}" for e in editorial_guide.EXCLUSIONS),
+            avoid_block=(_AVOID_BLOCK.format(found="\n".join(f"- {a}" for a in avoid))
+                         if avoid else ""),
+            notes="\n\n---\n\n".join(notes))
+    data = client.structured(cfg.quality_model if generic else cfg.fast_model,
+                             prompt, _GENERIC_FACTS_SCHEMA if generic else _FACTS_SCHEMA, temperature=0.2)
+    facts = data.get("facts", [])[:cap]
     if not facts:
         return []
 
@@ -295,7 +403,7 @@ def title_sweep(
         scenes = moments.sampled_scenes(max_scenes=90)
         scene_blob = "\n\n".join(s.as_context(max_chars=350) for s in scenes)
         facts_blob = "\n".join(
-            f"[{i}] {f['fact_summary']} (relevant on screen: {f['scene_hint']})"
+            f"[{i}] {f['fact_summary']} (relevant on screen: {f.get('scene_hint', 'any')})"
             for i, f in enumerate(facts)
         )
         try:
@@ -323,6 +431,15 @@ def title_sweep(
                 assignments[fi] = (start, end)
         except Exception:
             pass  # anchoring is best-effort; facts fall back to general
+
+    def _seeds(f) -> list:
+        out, seen_u = [], set()
+        for n in f.get("source_ids") or []:
+            c = seed_catalog.get(n)
+            if c and c["url"] not in seen_u:
+                seen_u.add(c["url"])
+                out.append(dict(c))
+        return out
 
     anchors = []
     for i, f in enumerate(facts):
@@ -364,6 +481,7 @@ def title_sweep(
                 scene_dependency="specific",
                 scene_hint=hint or scene.as_context(max_chars=160),
                 origin="title_sweep",
+                seed_sources=_seeds(f),
             ))
         else:
             # No Moments timing available: the card is scheduled as GENERAL
@@ -389,6 +507,7 @@ def title_sweep(
                 scene_dependency=dependency,
                 scene_hint=hint,
                 origin="title_sweep",
+                seed_sources=_seeds(f),
             ))
     n_specific = sum(1 for a in anchors if a.scene_dependency == "specific")
     n_scene = sum(1 for a in anchors if a.scope == "scene")

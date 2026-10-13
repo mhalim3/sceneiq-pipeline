@@ -8,7 +8,7 @@ prompt. Abstention is a first-class output.
 
 from __future__ import annotations
 
-from .. import config, source_policy
+from .. import config, source_policy, editorial_guide
 from ..gemini import GeminiClient
 from ..models import EvidencePacket, FactBeat, SceneFactCard
 
@@ -23,6 +23,7 @@ _CARD_SCHEMA = {
             "type": "object",
             "properties": {
                 "shortVersion": {"type": "string"},
+                "shortAlternatives": {"type": "array", "items": {"type": "string"}},
                 "longDescription": {"type": "string"},
                 "primaryClaim": {"type": "string"},
                 "factCategory": {"type": "string", "enum": config.FACT_CATEGORIES + ["general"]},
@@ -49,9 +50,7 @@ _CARD_SCHEMA = {
 _ASSEMBLY_PROMPT = """You write "Scene Fact" pause cards for SceneIQ, Tubi's CTV pause \
 screen. Use ONLY the source bodies below. Never invent facts, names, numbers, or quotes.
 
-A Scene Fact is a sourced insider detail about something the viewer can physically see \
-or hear in the paused frame. It rewards curiosity about the film's WORLD, not the \
-industry that made it.
+A Scene Fact is a sourced fact about the film (its making, cast, crew, music, locations, release, money, or reception), written as a short headline and a longer version. The fact you are given was chosen already; your job is to state it accurately and phrase it well.
 
 FILM: {film_title} ({film_year})
 SCENE (~{timecode}): {scene_description}
@@ -62,6 +61,8 @@ SOURCES (cite beats ONLY from these, by index; each shows its fetched body text)
 
 SOURCE POLICY (which sources count; when several state the same claim, cite the most authoritative):
 {source_policy}
+
+{editorial_guide}
 
 STYLE — match the best film-magazine writing:
 - factBeats: prefer 3 to 5 single-sentence beats (minimum {min_beats}) that tell a micro-story in \
@@ -81,12 +82,7 @@ complete, surprising short that runs a little long is far better than a cramped 
 vague one. (An over-length short is copy-edited down later; it is never dropped.) \
 Lively, natural, and fun — never dry, robotic, or overly formal. Playful wording is \
 welcome but must never hide the actual fact.
-  - SELF-CONTAINED CHARACTERS: never reference a character by a bare proper name the \
-viewer would have to already know. Name a character by their ROLE in the film — "the \
-salon owner", "the film's main villain", "the lead", "the protagonist's mother" — \
-optionally pairing the role with the name ("salon owner Jorge"). The actor's real \
-name plus the role is ideal ("Kevin Bacon's flamboyant salon owner"). For a \
-behind-the-scenes person, use their real name and job ("director Roland Emmerich").
+  - SELF-CONTAINED CHARACTERS: follow the NAME PEOPLE principle in the EDITORIAL GUIDE (role + character name + actor; a name you use must be stated by one of your factBeats or be named in the ASSIGNED FACT).
   - LEAD WITH THE PUNCHLINE: the very first clause must land the single most \
 surprising, specific point of the fact — the reversal, the record, the one who \
 objected, the thing that was secretly real. If the hook is that an actor REQUESTED a \
@@ -102,7 +98,7 @@ A category label where a specific exists is a failed short.
   - FACTUAL PRECISION: copy the source's details exactly — a white tank top is not a \
 t-shirt, Stanford is not "a university", six days is not "a short time". Never round \
 away or generalize a concrete detail the source gives.
-  - HOOK: every short must carry a concrete, surprising, retellable point. BANNED: \
+  - HOOK: every short must carry a concrete, specific point. BANNED: \
 empty phrases ("was a wild one", "had an interesting experience", "was a big deal") \
 AND vague praise with no specific ("showed her uninhibited wit", "gave a great \
 performance") — unless the statement says exactly what happened and why it is \
@@ -116,28 +112,12 @@ specific film — which role? say it)
   - BAD: "Joe encourages Gina's piano prodigy daughter." (bare character names, not \
 understandable alone, no hook)
   G-rated, no clickbait, fully supported by the beats.
-- longDescription: one or two sentences that are GENUINELY ADDITIVE — they must carry \
-NEW specifics the short did not: the identifiable move or choreography, the second \
-party who reacted, the number, the before/after, the reason it happened. A long that \
-merely restates the short in more words is a failure; a great long is the detail that \
-turns a 3 into a 5. Never a verbatim echo of the short. The long must elaborate the SAME \
-fact as the short (never a different fact about the same topic), and EVERY specific \
-in it (name, number, move, reaction, reason) must be stated by one of your factBeats — \
-so write a beat for each extra detail you want in the long. The short must likewise be \
-fully backed by the beats: do not promise in the short something the beats never say. \
-Introduce any character by role on first mention here too ("Djimon Hounsou's character, the handyman Joe"), so the \
-long also reads standalone. Maximum 280 characters. Example: short "Kevin Bacon \
-finished his entire role in just six days." long "Bacon's time on set was practically a \
-blink-and-you'll-miss-it appearance — he completed all of his work in only six days, an \
-unusually short schedule for a recognizable supporting actor." No claim beyond the beats.
+  - shortAlternatives: ALSO give 2-3 different headlines for the SAME fact, each {short_cap} characters or fewer and each fully backed by the beats (same punchline, different wording or name forms). shortVersion should be the best headline that is {short_cap} characters or fewer; if you cannot fit the punchline and the needed names in {short_cap}, put your best attempt in shortVersion anyway.
+- longDescription: one or two sentences, maximum 280 characters. Follow the LONG STANDS ALONE principle in the EDITORIAL GUIDE: restate the short's claim (naming people again), then add ONE new specific that sharpens the hook. EVERY specific in it must be stated by one of your factBeats. Do NOT mention scenes, moments or where in the film something happens — the card is shown without scene context, and the scene hint is only an internal note that may be wrong. No claim beyond the beats.
 - primaryClaim: ONE plain sentence stating the core claim of the card (who did/was what, with the key number or name), stripped of hooks and extra detail. Used only to spot duplicate stories.
 - followUps: 2 to 3 natural viewer next-questions, <= 10 words each (internal, for \
 value scoring).
-- A card stands alone with NO scene context, so identify everyone a viewer can't be \
-assumed to know: name on-screen characters by their ROLE in the film (the lead, the \
-villain, the salon owner), optionally with the character's name; use REAL names and \
-jobs for behind-the-scenes figures (director, costume designer, named crew). Never \
-reference a character by a bare first name the viewer would have to already know.
+- A card stands alone with NO scene context: apply the NAME PEOPLE principle to the short AND the long.
 - Don't spend words describing what the viewer can already see; deliver only NEW \
 information. You still must identify who or what the fact is about by role or name \
 so the card reads clearly on its own — identify, don't narrate.
@@ -145,7 +125,7 @@ so the card reads clearly on its own — identify, don't narrate.
 - Preserve hedges ("reportedly") — never upgrade a claim beyond its source.
 
 HARD RULES:
-- Write ONLY about the ASSIGNED FACT. The sources may contain many other facts — do not switch to a different one, even if it is more surprising. Other details may appear only as support for the assigned fact. If the sources do not support the assigned fact, ABSTAIN.
+- Write ONLY about the ASSIGNED FACT. The sources may contain many other facts — do not switch to a different one, even if it is more surprising. Other details may appear only as support for the assigned fact. If the sources confirm the CORE of the assigned fact but not an extra detail in it (an added title, number, quote, ranking or clause), write the card about the confirmed core and leave the unconfirmed detail OUT. ABSTAIN only if the core itself is not supported.
 - {scene_rule}
 - Every fact must be about {film_title} SPECIFICALLY — this production, this cast, \
 this location, this song. Generic facts about filmmaking, prop design, or industry \
@@ -153,23 +133,23 @@ practice that do not concern this film are NOT Scene Facts; if that's all the \
 sources offer, ABSTAIN.
 - NO spoilers of any kind: if a line could SOUND like a spoiler, leave it out. Do not mention \
 plot outcomes, twists, who lives/dies/wins/loses, a character's secret identity or hidden role, \
-surprise cameos or secret roles, endings, or anything that happens later in the film. Tell \
+a hidden role whose reveal spoils a surprise in the story, endings, or anything that happens later in the film. A real person appearing as themselves is fine. Tell \
 the behind-the-scenes fact without saying what it means for the story.
-- NO financial information: budget, box office, profitability, opening weekend, or \
-financial comparisons — abstain if that is all the sources offer.
+- Money facts are allowed when a source states the figures: budget, worldwide box office, how many times the budget a film earned, franchise records, and what a named lead actor was paid. Give the actual numbers, and put them in your beats. Do not guess or round beyond the source.
 - Casting and development history ARE welcome (actors considered, roles that \
 changed, actors who dropped out, how the project developed). No on-set feuds, \
 gossip, or negative claims about talent/partners.
+- If the assigned fact is one of the DO NOT SHOW kinds in the editorial guide (cameo, cast credit, mainly about another film, unflattering to a real person, off-topic personal trivia, plain reference data), ABSTAIN with a reason that starts "excluded:". The shortVersion must also pass the STANDALONE test: interesting and clear with no plot knowledge, and never longer than {short_cap} characters.
 - factCategory: one of actor, music, location, set_design, filming, historical, costume/prop.
 {abstain_rule}"""
 
 _ABSTAIN_STRICT = """- ABSTAIN (abstain: true, with a reason) if no source body supports {min_beats} \
-specific, scene-tied, non-obvious beats. Abstaining is the correct output for weak \
+specific beats that support the assigned fact. Abstaining is the correct output for weak \
 evidence — never pad."""
 
 _ABSTAIN_RELAXED = """- ABSTAIN (abstain: true, with a reason) only if the source bodies \
 genuinely cannot support {min_beats} specific beats tied to this scene. If the bodies contain at \
-least one specific, non-obvious detail that supports the assigned fact, BUILD THE CARD — \
+least one specific detail that supports the assigned fact, BUILD THE CARD — \
 downstream validation will gate it. Do not pad beats with claims the bodies don't make."""
 
 
@@ -192,7 +172,7 @@ def assemble_card(
         packet.abstain_reason = "no sources fetched"
         return None
     data = client.structured(
-        cfg.fast_model,
+        cfg.quality_model,
         _ASSEMBLY_PROMPT.format(
             film_title=film_info.get("title", ""),
             film_year=film_info.get("year", ""),
@@ -201,6 +181,7 @@ def assemble_card(
             anchor_element=packet.anchor.anchor_element,
             source_blocks=_source_blocks(packet),
             source_policy=source_policy.definitions_block(),
+            editorial_guide=editorial_guide.writer_block(),
             scene_rule=(
                 "The assigned fact must relate to something visible/audible in THIS scene."
                 if packet.anchor.scope == "scene" else
@@ -210,6 +191,7 @@ def assemble_card(
                 "'general' when none of the 7 fits."
             ),
             min_beats=cfg.min_beats,
+            short_cap=cfg.short_cap,
             abstain_rule=(_ABSTAIN_RELAXED if cfg.evidence_mode == "relaxed" else _ABSTAIN_STRICT
                           ).format(min_beats=cfg.min_beats),
         ),
@@ -230,8 +212,17 @@ def assemble_card(
         for b in c["factBeats"]
         if 0 <= b.get("sourceIndex", -1) < len(packet.sources)
     ]
+    # Headline cap: keep the writer's best headline when it fits; otherwise take the
+    # longest (most informative) alternative that does. No rewrite pass: rewriting
+    # after the fact is what introduced claims the beats did not support.
+    short = (c["shortVersion"] or "").strip()
+    if len(short) > cfg.short_cap:
+        fits = [a.strip() for a in (c.get("shortAlternatives") or [])
+                if a and a.strip() and len(a.strip()) <= cfg.short_cap]
+        if fits:
+            short = max(fits, key=len)
     return SceneFactCard(
-        short_version=(c["shortVersion"] or "").strip(),
+        short_version=short,
         primary_claim=(c.get("primaryClaim") or "").strip(),
         long_description=(c["longDescription"] or "").strip(),
         fact_category=c["factCategory"],
@@ -290,7 +281,7 @@ def repair_card(client: GeminiClient, film_info: dict, card: SceneFactCard,
     """Rewrite card.short_version / long_description from its verified beats.
     Returns False when the model abstains (fact can't be repaired)."""
     data = client.structured(
-        cfg.fast_model,
+        cfg.quality_model,
         _REPAIR_PROMPT.format(
             film_title=film_info.get("title", ""),
             film_year=film_info.get("year", ""),
@@ -309,3 +300,4 @@ def repair_card(client: GeminiClient, film_info: dict, card: SceneFactCard,
         return False
     card.short_version, card.long_description = short, long_
     return True
+

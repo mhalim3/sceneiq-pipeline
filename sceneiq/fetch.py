@@ -53,6 +53,15 @@ def best_substring_ratio(needle: str, haystack: str) -> float:
     return best
 
 
+_LINKS: dict[str, list[str]] = {}   # final URL -> absolute outbound links found on the page
+_LINKS_LOCK = threading.Lock()
+
+
+def page_links(final_url: str) -> list[str]:
+    with _LINKS_LOCK:
+        return list(_LINKS.get(final_url, []))
+
+
 def fetch_url_text(url: str, timeout_s: float) -> tuple[bool, str, str]:
     """GET a URL and return (ok, final_url, extracted_text)."""
     try:
@@ -68,6 +77,13 @@ def fetch_url_text(url: str, timeout_s: float) -> tuple[bool, str, str]:
         try:
             from bs4 import BeautifulSoup
             soup = BeautifulSoup(resp.text, "html.parser")
+            try:
+                from urllib.parse import urljoin
+                hrefs = [urljoin(final, a["href"]) for a in soup.find_all("a", href=True)]
+                with _LINKS_LOCK:
+                    _LINKS[final] = [h for h in dict.fromkeys(hrefs) if h.startswith("http")]
+            except Exception:
+                pass
             for tag in soup(["script", "style", "noscript"]):
                 tag.decompose()
             return True, final, soup.get_text(separator=" ", strip=True)

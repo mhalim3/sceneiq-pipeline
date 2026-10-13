@@ -17,10 +17,12 @@ structural, not judged after the fact.
 from __future__ import annotations
 
 import logging
+import re
+import threading
 from concurrent.futures import ThreadPoolExecutor
 
 from .. import config, source_policy
-from ..fetch import FetchCache, title_grounded
+from ..fetch import FetchCache, _run_with_timeout, page_links, title_grounded
 from ..gemini import GeminiClient
 from ..models import Anchor, EvidencePacket, SourceRef
 from ..tiers import classify_domain, registered_domain
@@ -60,8 +62,46 @@ def _run_query(client: GeminiClient, cfg: config.PipelineConfig, film_info: dict
     return q, grounded
 
 
+_VIDEO_PROMPT = """Watch this video. If it is NOT about the film "{title}" ({year}) or does not discuss the fact below, reply with exactly: NONE
+
+FACT: {fact}
+
+Otherwise reply in this form:
+VIDEO: <title and channel> | ABOUT: <what film or production it covers>
+Then transcribe, as close to word for word as you can, ONLY the spoken passages that discuss the fact, each preceded by its [mm:ss] timestamp and the speaker if known. Do not summarize and do not add anything that is not said."""
+
+
+def _video_notes(client, cfg, url: str, film_title: str, film_year, fact: str) -> str | None:
+    """Have Gemini watch the video and transcribe the passages about the fact."""
+    from google.genai import types
+    def _call():
+        resp = client._client.models.generate_content(
+            model=cfg.research_model,
+            contents=types.Content(parts=[
+                types.Part(file_data=types.FileData(file_uri=url)),
+                types.Part(text=_VIDEO_PROMPT.format(title=film_title, year=film_year, fact=fact)),
+            ]))
+        return resp.text or ""
+    text = (_run_with_timeout(_call, 120.0, "") or "").strip()
+    if not text or text.upper().startswith("NONE") or "VIDEO:" not in text:
+        return None
+    return text
+
+
+def _fact_relevant(fact: str, film_title: str, body: str) -> bool:
+    """Cheap check that a followed page actually discusses this fact's names/numbers."""
+    skip = {t.lower() for t in re.split(r"\W+", film_title)}
+    toks = {t for t in re.findall(r"[A-Z][a-z]{3,}|\d[\d,]*", fact) if t.lower() not in skip}
+    if len(toks) < 2:
+        return True
+    low = body.lower()
+    hits = sum(1 for t in toks if t.lower() in low)
+    return hits >= max(2, (len(toks) + 1) // 2)
+
+
 def _fetch_candidate(cand: dict, film_title: str, film_year, cfg: config.PipelineConfig,
-                     cache: FetchCache) -> SourceRef | None:
+                     cache: FetchCache, client=None, fact: str = "",
+                     video_budget: dict | None = None) -> SourceRef | None:
     ok, final_url, body = cache.page(cand["url"])
     if not ok:
         return None
@@ -76,13 +116,28 @@ def _fetch_candidate(cand: dict, film_title: str, film_year, cfg: config.Pipelin
         resolved=True,
     )
     if domain in config.VIDEO_DOMAINS:
+        if video_budget is not None:
+            with video_budget["lock"]:
+                if video_budget["n"] <= 0:
+                    return None
+                video_budget["n"] -= 1
         t_ok, transcript, segments = cache.transcript(final_url)
-        if not t_ok or not transcript:
-            return None  # video without transcript is unverifiable — never enters the bank
         src.modality = "video"
-        src.body_kind = "transcript"
-        src._body = transcript                          # type: ignore[attr-defined]
-        src._segments = segments                        # type: ignore[attr-defined]
+        if t_ok and transcript:
+            src.body_kind = "transcript"
+            src._body = transcript                      # type: ignore[attr-defined]
+            src._segments = segments                    # type: ignore[attr-defined]
+        else:
+            # Transcript unavailable (often blocked): let Gemini watch the video and
+            # transcribe the relevant passages. Weaker evidence, so cards that rely on
+            # it are flagged for human review.
+            notes = (_video_notes(client, cfg, final_url, film_title, film_year, fact)
+                     if (client is not None and cfg.use_video_sources and fact) else None)
+            if not notes:
+                return None  # unverifiable video never enters the bank
+            src.body_kind = "gemini_video"
+            src._body = notes                           # type: ignore[attr-defined]
+            src._segments = []                          # type: ignore[attr-defined]
     else:
         if not body:
             return None
@@ -108,11 +163,22 @@ def research_anchor(
     # surface the article that actually states this specific claim.
     if anchor.search_queries:
         queries.append(f"{film_info.get('title', '')} {film_info.get('year', '')} {anchor.anchor_element}".strip())
+    # And look for a video interview/featurette that talks about it.
+    if cfg.use_video_sources:
+        queries.append(f"{film_info.get('title', '')} {film_info.get('year', '')} "
+                       f"{anchor.anchor_element[:120]} interview video YouTube")
+    video_budget = {"n": cfg.max_video_sources, "lock": threading.Lock()}
 
     # Pass 1: discovery — queries are independent, run them concurrently.
     seen: set[str] = set()
     candidates: list[dict] = []
     notes: list[str] = []
+    # Pages the candidate search cited for this fact go first.
+    for sd in anchor.seed_sources or []:
+        url = (sd.get("url") or "").strip()
+        if url and url not in seen:
+            seen.add(url)
+            candidates.append(dict(sd))
     with ThreadPoolExecutor(max_workers=len(queries)) as pool:
         for q, grounded in pool.map(
             lambda q: _run_query(client, cfg, film_info, q), queries
@@ -128,7 +194,9 @@ def research_anchor(
     film_title = str(film_info.get("title", ""))
     with ThreadPoolExecutor(max_workers=cfg.fetch_workers) as pool:
         fetched = pool.map(
-            lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache), candidates
+            lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache,
+                                       client=client, fact=anchor.anchor_element,
+                                       video_budget=video_budget), candidates
         )
         sources = [s for s in fetched if s is not None]
     # Same final URL can arrive via two redirect links — keep first.
@@ -136,6 +204,39 @@ def research_anchor(
     for s in sources:
         uniq.setdefault(s.url, s)
     sources = list(uniq.values())
+
+    # "Double click" on citations: articles often cite the primary outlet (Business
+    # Insider quoting the NYT). Follow outbound links to A/B-tier pages that discuss
+    # this fact and add them as sources.
+    if cfg.follow_citations and sources:
+        have = {s.url for s in sources}
+        links: list[str] = []
+        for s in sources:
+            if s.modality != "text":
+                continue
+            n = 0
+            for link in page_links(s.url):
+                dom = registered_domain(link)
+                if (dom != s.domain and classify_domain(link) in ("A", "B")
+                        and len(link.split("//", 1)[-1].split("/", 1)[-1]) > 12
+                        and link not in have and link not in links):
+                    links.append(link)
+                    n += 1
+                    if n >= 3:
+                        break
+        links = links[:6]
+        if links:
+            with ThreadPoolExecutor(max_workers=cfg.fetch_workers) as pool:
+                extra = list(pool.map(
+                    lambda u: _fetch_candidate({"url": u, "title": ""}, film_title,
+                                               film_info.get("year"), cfg, cache), links))
+            added = [s for s in extra if s is not None and s.url not in have
+                     and _fact_relevant(anchor.anchor_element, film_title,
+                                        getattr(s, "_body", ""))]
+            if added:
+                log.info("  followed citations -> %d page(s) for %r", len(added),
+                         anchor.anchor_element[:40])
+                sources += added
 
     # Nothing usable fetched (dead links, paywalls, off-topic hits)? Retry once
     # with broader fallback queries before giving up on the fact.

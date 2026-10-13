@@ -50,6 +50,9 @@ class Anchor:
     scene_dependency: str = "agnostic"   # agnostic | specific
     scene_hint: str = ""                 # where a scene-specific fact belongs
     origin: str = "anchor_discovery"  # anchor_discovery | title_sweep
+    # Pages the candidate-search model cited for this fact: [{"url","title"}].
+    # Research fetches these first; none = the model gave no source for it.
+    seed_sources: list = field(default_factory=list)
 
     @property
     def runtime_third(self) -> int:
@@ -127,6 +130,8 @@ class SceneFactCard:
     # its own anchor (set by the validation judge).
     spoiler_boundary_fraction: float = 0.0
     sources: list = field(default_factory=list)   # list[SourceRef]
+    # Mid-length version (<= cfg.long_cap chars) derived from long_description (the full fact).
+    long_version: str = ""
 
     @property
     def runtime_third(self) -> int:
@@ -190,6 +195,7 @@ class SceneFactCard:
             "factCategory": self.fact_category,
             "shortVersion": self.short_version,
             "longDescription": self.long_description,
+            "longVersion": self.long_version,
             "sources": sources,
             "sceneAnchor": scene_anchor,
             # For engineers: the exact windows during which the player may
@@ -224,6 +230,11 @@ class ValidationResult:
     confidence: str = ""
     confidence_reasons: list = field(default_factory=list)
     judge_notes: str = ""
+    # Interest judge (1-5, calibrated on reviewer ratings) and why.
+    interest: int = 0
+    interest_reason: str = ""
+    # Reasons a human should look at this card even though it passed.
+    review_reasons: list = field(default_factory=list)
 
     def to_dict(self):
         return asdict(self)
@@ -239,10 +250,16 @@ class CardRecord:
     validation: Optional[ValidationResult]
     status: str = "pending"           # emitted | rejected | error
     timings: dict = field(default_factory=dict)   # stage -> seconds (evaluation)
+    near_miss: bool = False           # failed only a soft check; usable to fill a title to the target
+    rank: int = 0                     # 1 = best among the title's kept cards (0 = unranked)
+    rank_score: int = 0               # 1-5 score from the ranking call
+    rank_note: str = ""               # one-line editor note from the ranking call
 
     def to_dict(self):
         return {
             "status": self.status,
+            "near_miss": self.near_miss,
+            "rank": self.rank, "rank_score": self.rank_score, "rank_note": self.rank_note,
             "sources_fetched": len(self.evidence.sources) if self.evidence else 0,
             "abstain_reason": (self.evidence.abstain_reason if self.evidence else ""),
             "timings": {k: round(v, 1) for k, v in self.timings.items()},

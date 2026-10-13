@@ -27,7 +27,10 @@ from .pipeline.assemble import assemble_card, repair_card
 from .pipeline.curiosity import judge_curiosity
 from .pipeline.leads import wikipedia_leads
 from .pipeline.research import research_anchor, research_stronger_sources
+from .pipeline.interest import interest_score, score_facts
 from .pipeline.title_sweep import title_sweep
+from .pipeline.polish import polish_cards
+from .pipeline.rank import rank_cards
 from .pipeline.validate import validate_card
 
 log = logging.getLogger("sceneiq")
@@ -91,6 +94,19 @@ def _process_anchor(
             except Exception as e:  # repair is best-effort; keep the original verdict
                 log.warning("  repair failed on %s: %s", anchor.anchor_element, e)
         record.validation = result
+
+        # Interest gate: rubric judge calibrated on reviewer ratings. Boring cards are
+        # rejected; borderline ones are kept but flagged for human review.
+        if result.passed and cfg.min_interest:
+            score, why = interest_score(client, film_info.get("title", ""),
+                                        card.short_version, card.long_description, cfg)
+            if score:
+                result.interest, result.interest_reason = score, why
+                if score < cfg.min_interest:
+                    result.passed = False
+                    result.rejection_reasons.append(f"interest: {score}/5 — {why}")
+        if result.passed:
+            result.review_reasons = _review_reasons(card, packet, result, cfg)
 
         # Viewer-value triage: curiosity judge runs on cards that survived
         # the factual gates. Advisory by default — scores land in the review
@@ -158,7 +174,7 @@ def _dedup(records: list[CardRecord]) -> list[CardRecord]:
         dup = key in seen_keys or any(
             SequenceMatcher(
                 None, r.card.short_version.lower(), k.card.short_version.lower()
-            ).ratio() > 0.75
+            ).ratio() > 0.88
             for k in kept
         )
         if dup:
@@ -169,6 +185,151 @@ def _dedup(records: list[CardRecord]) -> list[CardRecord]:
             seen_keys.add(key)
             kept.append(r)
     return kept
+
+
+_PREFILTERED: list = []   # facts dropped by the interest prefilter (kept for the review file)
+
+
+def _prefilter(client, cfg, film_info, anchors: list) -> list:
+    """Drop candidate facts the interest judge rates as clearly boring (<= prefilter_max_drop)
+    before spending research/writing/validation on them. Failures keep everything."""
+    if not anchors or not cfg.prefilter_max_drop:
+        return anchors
+    try:
+        scores = score_facts(client, film_info.get("title", ""),
+                             [a.anchor_element for a in anchors], cfg)
+    except Exception as e:  # never lose facts to a judge outage
+        log.warning("  interest prefilter failed (%s); keeping all", e)
+        return anchors
+    keep = []
+    for a, s in zip(anchors, scores):
+        if s is not None and s <= cfg.prefilter_max_drop:
+            log.info("  ✗ prefilter (interest %s/5): %s", s, a.anchor_element[:90])
+            _PREFILTERED.append({"fact": a.anchor_element, "interest": s,
+                                 "scene_dependency": a.scene_dependency})
+        else:
+            keep.append(a)
+    return keep
+
+
+_CLAIM_DEDUP_PROMPT = """Below are candidate facts about the film {film_title}. Group only those that \
+state the SAME SPECIFIC CLAIM in different words (same person, thing and detail). Facts that are merely \
+about the same topic, or add a different detail, are NOT repeats.
+
+FACTS:
+{fact_list}
+
+For each group of 2 or more repeats, choose keep_index (the most specific wording) and list in \
+covered_by_keep the others whose entire claim the kept fact already states. If unsure, do not group."""
+
+
+def _claim_dedup(client, cfg, film_info, anchors: list) -> list:
+    """Drop candidates that repeat another candidate's exact claim, before research."""
+    if len(anchors) < 2:
+        return anchors
+    fact_list = "\n".join(f"[{i}] {a.anchor_element}" for i, a in enumerate(anchors))
+    try:
+        data = client.structured(
+            cfg.quality_model,
+            _CLAIM_DEDUP_PROMPT.format(film_title=film_info.get("title", ""), fact_list=fact_list),
+            _TOPIC_DEDUP_SCHEMA, temperature=0.0)
+    except Exception:
+        return anchors
+    drop = set()
+    for g in data.get("groups", []):
+        idx = [i for i in g.get("indices", []) if 0 <= i < len(anchors)]
+        keep = g.get("keep_index")
+        if len(idx) < 2 or keep not in idx:
+            continue
+        for i in g.get("covered_by_keep") or []:
+            if i in idx and i != keep:
+                drop.add(i)
+                log.info("  ✗ repeat candidate: %s", anchors[i].anchor_element[:90])
+    return [a for i, a in enumerate(anchors) if i not in drop]
+
+
+_SOFT_FAILS = {"summary_entailment", "claim_entailment", "card_mismatch", "rubric", "taxonomy"}
+
+
+def _is_soft_fail(r) -> bool:
+    """A written card that failed only on source-support grounds (not on a policy rule):
+    usable as a near-miss when a title would otherwise have too few facts."""
+    if r.status == "emitted" or r.card is None or r.validation is None:
+        return False
+    reasons = r.validation.rejection_reasons or []
+    return bool(reasons) and all(x.split(":")[0] in _SOFT_FAILS for x in reasons)
+
+
+_REPEAT_PROMPT = """Cards for the film "{film}", best first. Find cards that tell the SAME core fact, even if one adds a detail the other lacks (for example two cards that both say the film was almost titled something, both say the premise came from the phrase "bunk beds", or both say the story is based on the producers' time at the same rink). A viewer who sees one has already learned the other. Cards about different facts on the same topic are NOT the same.
+
+{cards}
+
+Return groups of 2 or more cards that tell the same core fact."""
+_REPEAT_SCHEMA = {
+    "type": "object",
+    "properties": {"groups": {"type": "array", "items": {
+        "type": "object",
+        "properties": {"indices": {"type": "array", "items": {"type": "integer"}},
+                       "core": {"type": "string"}},
+        "required": ["indices", "core"]}}},
+    "required": ["groups"],
+}
+
+
+def _repeat_check(client, cfg, film_info, records: list) -> set:
+    """Final looser repeat check over the ranked cards: where several cards tell the same core
+    fact, keep the best-ranked and drop the rest (the pool is larger than the number shown, so
+    over-merging costs little while a visible repeat costs trust). Returns the dropped records."""
+    ranked = sorted((r for r in records if r.rank), key=lambda r: r.rank)
+    if len(ranked) < 2:
+        return set()
+    cards = "\n".join(f"[{i}] {r.card.short_version} | {r.card.long_description}"
+                      for i, r in enumerate(ranked))
+    try:
+        data = client.structured(
+            cfg.quality_model,
+            _REPEAT_PROMPT.format(film=film_info.get("title", ""), cards=cards),
+            _REPEAT_SCHEMA, temperature=0.0)
+    except Exception:
+        return set()
+    dropped = set()
+    for g in data.get("groups", []):
+        idx = sorted(i for i in g.get("indices", []) if 0 <= i < len(ranked))
+        for i in idx[1:]:
+            r = ranked[i]
+            if r in dropped:
+                continue
+            dropped.add(r)
+            r.status = "rejected"
+            r.near_miss = False
+            if r.validation:
+                r.validation.rejection_reasons.append(
+                    f"repeat: same core fact as a higher-ranked card ({ranked[idx[0]].card.short_version})")
+            log.info("  ✗ repeat: %s", r.card.short_version[:70])
+    return dropped
+
+
+def _review_reasons(card, packet, result, cfg) -> list:
+    """Why a card that passed still deserves a human look."""
+    why = []
+    by_url = {s.url: s for s in packet.sources}
+    cited = [by_url[b.source_url] for b in card.fact_beats if b.source_url in by_url]
+    if result.interest and result.interest == cfg.min_interest:
+        why.append(f"borderline interest ({result.interest}/5)")
+    if cited and not any(s.tier in ("A", "B") or s.evidence_class == "primary_direct"
+                         for s in cited):
+        why.append("no authoritative source (only pages from unlisted domains)")
+    if any(getattr(s, "body_kind", "") == "gemini_video" for s in cited):
+        why.append("relies on a video the model watched (not a verbatim transcript)")
+    if len(card.short_version) > cfg.short_cap:
+        why.append(f"headline is {len(card.short_version)} characters (cap {cfg.short_cap})")
+    if any(f.startswith("repaired") for f in result.flags):
+        why.append("wording was auto-repaired after a failed check")
+    if any("could not confirm" in f for f in result.flags):
+        why.append("some names were not found in the fetched source text")
+    if result.confidence == "low":
+        why.append("validation confidence is low")
+    return why
 
 
 _TOPIC_DEDUP_SCHEMA = {
@@ -182,31 +343,38 @@ _TOPIC_DEDUP_SCHEMA = {
                     "indices": {"type": "array", "items": {"type": "integer"}},
                     "keep_index": {"type": "integer"},
                     "story": {"type": "string"},
+                    # Other cards in the group whose ENTIRE claim the kept card already states.
+                    "covered_by_keep": {"type": "array", "items": {"type": "integer"}},
                 },
-                "required": ["indices", "keep_index", "story"],
+                "required": ["indices", "keep_index", "story", "covered_by_keep"],
             },
         },
     },
     "required": ["groups"],
 }
 
-_TOPIC_DEDUP_PROMPT = """You are deduplicating pause-screen fact cards for the film \
-{film_title}. Some cards below tell the SAME underlying story in different wordings \
-(e.g. four variations of "the cast cooked for real in a fully functional kitchen").
+_TOPIC_DEDUP_PROMPT = """You are removing REPEATED cards from a set of pause-screen fact cards for the \
+film {film_title}. Two cards are repeats only when they state the SAME SPECIFIC CLAIM: \
+the same fact about the same person, thing or event, told twice in different words.
 
 CARDS:
 {card_list}
 
-Group cards that tell substantially the same story. Compare the CLAIM of each card first: \
-two cards are duplicates when their primary claims would lead a viewer to tell the same \
-underlying story, even if the wording, sources, or secondary details differ. \
-They are DIFFERENT stories when each has a distinct headline fact a viewer would \
-experience as new (e.g. "Cooper based his character on three chefs" vs "a Michelin \
-chef scored the film's realism 9/10" are different even though both involve realism).
+Being about the same topic is NOT enough. These are DIFFERENT facts and must stay separate:
+- two homages, references or cameos in the same film (the 'Cobra Strike' move and the crane-kick \
+silhouette are two facts, not one)
+- two awards, two casting stories, two filming locations, two cast members' backgrounds
+- a fact about another film or person that is only linked to the first (a producer's other film)
+- the same subject with a different detail (training length vs who trained him; the title's \
+origin vs a character named after it)
+Repeats look like: "Jaden Smith trained for three months" and "Smith underwent three months of \
+training"; "Monica played the Waffle House waitress" told twice.
 
-Report ONLY groups of 2 or more cards. For each group choose keep_index — prefer \
-cards marked strict=True, then the card with the most specific, distinct details. \
-Unique cards must not appear in any group."""
+Report ONLY groups of 2 or more cards that are repeats. For each group choose keep_index: prefer \
+cards marked strict=True, then the card with the most specific details. In covered_by_keep list \
+the OTHER cards whose entire claim the kept card already states; a card that adds a fact the kept \
+card lacks must NOT be listed (it stays). If unsure whether two cards are the same claim, do not \
+group them."""
 
 
 def _topic_dedup(client: GeminiClient, cfg: config.PipelineConfig,
@@ -221,7 +389,7 @@ def _topic_dedup(client: GeminiClient, cfg: config.PipelineConfig,
     )
     try:
         data = client.structured(
-            cfg.fast_model,
+            cfg.quality_model,
             _TOPIC_DEDUP_PROMPT.format(
                 film_title=film_info.get("title", ""), card_list=card_list
             ),
@@ -236,16 +404,18 @@ def _topic_dedup(client: GeminiClient, cfg: config.PipelineConfig,
         keep = g.get("keep_index")
         if len(indices) < 2 or keep not in indices:
             continue
+        covered = set(g.get("covered_by_keep") or [])
         for i in indices:
-            if i != keep and i not in drop:
-                drop[i] = g.get("story", "same story")
+            if i != keep and i in covered and i not in drop:
+                drop[i] = (f"same claim as kept card [{keep}]: "
+                           f"{records[keep].card.short_version}")
     kept = []
     for i, r in enumerate(records):
         if i in drop:
             r.status = "rejected"
             if r.validation:
                 r.validation.rejection_reasons.append(
-                    f"dedup: same story as a kept card ({drop[i]})"
+                    f"dedup: {drop[i]}"
                 )
             log.info("  ✗ topic-dedup: %s (%s)", r.card.short_version, drop[i])
         else:
@@ -277,6 +447,11 @@ be shown to the same viewer during one film. Find cards that CONTRADICT each oth
 mutually incompatible factual claims (different numbers for the same quantity, \
 mutually exclusive statements about the same event).
 
+A contradiction needs two statements that CANNOT BOTH BE TRUE about the same thing. Cards about \
+different people, scenes or details never contradict (a screenplay credit and an improvised ending \
+do not conflict; a producer's role and a director's role do not conflict). In the issue, quote the \
+two incompatible statements.
+
 NOT contradictions: cards covering different aspects of the same topic, one card \
 being more specific than another, or complementary details. A card that CORRECTS a \
 reported figure (e.g. "records show the budget was actually X") contradicts a card \
@@ -289,6 +464,39 @@ For each contradiction group, choose keep_index — the card whose claim rests o
 stronger evidence (prefer domain authorities and official records, then strict=True, \
 then the more specific claim). Report the issue in one sentence. Return an empty \
 list when the set is consistent."""
+
+
+_CONFLICT_PROMPT = """Two cards about the film {film}.
+
+CARD A: {a}
+CARD B: {b}
+
+Can both cards be true at the same time? A conflict exists ONLY if they state incompatible FACTS about the same thing: different numbers or dates for the same quantity, different names for the same role, or mutually exclusive events. These are NOT conflicts: different words for the same thing (remake / reimagining), one card being more detailed, opinions or framing, and facts about different people, scenes or details (for example one actor having prior experience does not contradict a general statement about the rest of the cast).
+Return conflict=true only for a real incompatibility, and quote the exact words from each card that clash (quote_a from CARD A, quote_b from CARD B)."""
+
+_CONFLICT_SCHEMA = {
+    "type": "object",
+    "properties": {"conflict": {"type": "boolean"}, "quote_a": {"type": "string"},
+                   "quote_b": {"type": "string"}},
+    "required": ["conflict", "quote_a", "quote_b"],
+}
+
+
+def _confirm_conflict(client, cfg, film_info, ra, rb) -> bool:
+    """Second look at a suspected contradiction between two cards. Keeps it only when the
+    judge confirms an incompatibility AND the quoted words really appear in each card."""
+    def txt(r):
+        return f"{r.card.short_version} {r.card.long_description}"
+    try:
+        d = client.structured(
+            cfg.quality_model,
+            _CONFLICT_PROMPT.format(film=film_info.get("title", ""), a=txt(ra), b=txt(rb)),
+            _CONFLICT_SCHEMA, temperature=0.0)
+    except Exception:
+        return False
+    qa, qb = (d.get("quote_a") or "").strip().lower(), (d.get("quote_b") or "").strip().lower()
+    return bool(d.get("conflict") and len(qa) >= 8 and len(qb) >= 8
+                and qa in txt(ra).lower() and qb in txt(rb).lower())
 
 
 def _consistency_check(client: GeminiClient, cfg: config.PipelineConfig,
@@ -309,7 +517,7 @@ def _consistency_check(client: GeminiClient, cfg: config.PipelineConfig,
     )
     try:
         data = client.structured(
-            cfg.fast_model,
+            cfg.quality_model,
             _CONSISTENCY_PROMPT.format(
                 film_title=film_info.get("title", ""), card_list=card_list
             ),
@@ -326,10 +534,11 @@ def _consistency_check(client: GeminiClient, cfg: config.PipelineConfig,
         if len(indices) < 2 or keep not in indices:
             continue
         issue = g.get("issue", "contradiction")
-        keep_flag[keep] = issue
         for i in indices:
             if i != keep and i not in drop:
-                drop[i] = issue
+                if _confirm_conflict(client, cfg, film_info, records[keep], records[i]):
+                    drop[i] = issue
+                    keep_flag[keep] = issue
     kept = []
     for i, r in enumerate(records):
         if i in drop:
@@ -435,6 +644,7 @@ def run(
     moments_path: str | None = None,
 ) -> dict:
     cfg = cfg or config.PipelineConfig()
+    _PREFILTERED.clear()
     client = GeminiClient(api_key=api_key)
     t0 = time.time()
 
@@ -508,7 +718,7 @@ def run(
                 # window (scope="scene", real timecode) and leaves agnostic
                 # facts as GENERAL cards, so title-level coverage is preserved
                 # while specific facts gain timing.
-                swept = title_sweep(client, film_info, cfg, moments=moments)
+                swept = title_sweep(client, film_info, cfg, moments=moments, leads=leads)
             except Exception as e:  # sweep is additive — never kill the run
                 log.warning("  title sweep failed (%s); continuing without it", e)
                 swept = []
@@ -523,7 +733,8 @@ def run(
             anchors_proposed += len(sweep_anchors)
             futures += [
                     pool.submit(_process_anchor, client, film_info, a, cfg, cache)
-                    for a in sweep_anchors
+                    for a in _prefilter(client, cfg, film_info,
+                                        _claim_dedup(client, cfg, film_info, sweep_anchors))
                 ]
         for f in as_completed(futures):
             records.append(f.result())
@@ -552,11 +763,19 @@ def run(
                 em = _topic_dedup(client, cfg, film_info, em)
             return em
 
+        def _usable_count() -> int:
+            em = _current_approved()
+            return len(em) + sum(1 for r in records if _is_soft_fail(r))
+
         approved_so_far = len(_current_approved())
+        generic_mode = cfg.candidate_mode == "generic"
         sweep_round = 1
         max_rounds = cfg.annotation_sweep_rounds if cfg.annotation_mode else cfg.max_sweep_rounds
+        if generic_mode:
+            max_rounds = 2   # one more round only when too few usable cards were found
         while (cfg.use_title_sweep
-               and approved_so_far < target_early
+               and ((_usable_count() < cfg.target_cards) if generic_mode
+                    else approved_so_far < target_early)
                and sweep_round < max_rounds):
             sweep_round += 1
             log.info("Stage 1b: adaptive sweep round %d (%d/%d approved) ...",
@@ -582,7 +801,8 @@ def run(
             anchors_proposed += len(new_anchors)
             round_futs = [
                 pool.submit(_process_anchor, client, film_info, a, cfg, cache)
-                for a in new_anchors
+                for a in _prefilter(client, cfg, film_info,
+                                    _claim_dedup(client, cfg, film_info, new_anchors))
             ]
             for f in as_completed(round_futs):
                 records.append(f.result())
@@ -606,6 +826,21 @@ def run(
     )[: max(cfg.max_cards, cfg.annotation_target_cards if cfg.annotation_mode else 0)]
     general_records = [r for r in emitted if r.card.scope == "general"]
     emitted = scene_records + general_records
+
+    # Final editor pass: fix headlines (cap, agrees with the long text), then rank the kept
+    # cards against each other so the best can be picked.
+    pool_records = list(emitted)
+    if len(emitted) < cfg.target_cards:
+        for r in records:
+            if _is_soft_fail(r) and r not in emitted:
+                r.near_miss = True
+                pool_records.append(r)
+        log.info("  near-misses added to the pool: %d", len(pool_records) - len(emitted))
+    if pool_records:
+        polish_cards(client, cfg, film_info, pool_records)
+        rank_cards(client, cfg, film_info, pool_records)
+        gone = _repeat_check(client, cfg, film_info, pool_records)
+        emitted = [r for r in emitted if r not in gone]
 
     # Display schedule: exact windows for the player, 100% coverage target.
     duration_s = float(film_info.get("duration_sec") or (film_info.get("runtime_minutes") or 0) * 60)
@@ -696,7 +931,7 @@ def run(
             "errors": sum(1 for r in records if r.status == "error"),
             "elapsed_seconds": round(time.time() - t0, 1),
             "grounded_requests": client.grounded_calls,
-            "models": {"deep": cfg.deep_model, "fast": cfg.fast_model},
+            "models": {"deep": cfg.deep_model, "fast": cfg.fast_model, "quality": cfg.quality_model},
         },
     }
     log.info("grounded requests this title: %d (budget %s)",
@@ -704,5 +939,6 @@ def run(
     review = {
         "film": film_info,
         "candidates": [r.to_dict() for r in records],
+        "prefiltered": list(_PREFILTERED),
     }
     return {"report": report, "review": review}

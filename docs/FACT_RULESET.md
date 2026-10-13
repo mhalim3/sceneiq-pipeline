@@ -20,7 +20,7 @@ this file is the source of truth for reviewers.
 14. Scene-specific facts may be included when they directly relate to the title or central concept.
 15. Facts about the movie's central setting may include how it was built, recreated, filmed, or used.
 16. Technical facts may include CGI, motion capture, stunt work, practical effects, camera technology, set extensions, makeup, costumes, and production design.
-17. Do not include financial information such as budget, box office, profitability, opening weekend, or financial comparisons.
+17. Money facts ARE allowed when a source states the figures: budget, worldwide box office, how many times the budget a film earned, franchise records, and what a named lead actor was paid (changed Oct 2026; supersedes the original ban, pending stakeholder sign-off).
 18. Audience and critical reception may only be included when the contrast is interesting or meaningful.
 19. Do not include ratings or review scores by themselves unless they support an interesting reception contrast.
 20. Awards and nominations should only be included when they are notable, surprising, or connected to an important achievement.
