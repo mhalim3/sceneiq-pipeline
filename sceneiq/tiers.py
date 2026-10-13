@@ -38,6 +38,9 @@ def _rsp() -> dict:
         return {}
 
 
+_RSP_TIER = {"gr": "A", "nc": "B", "gu": "C", "d": "C", "b": "C"}
+
+
 def rsp_status(url: str) -> str:
     """Wikipedia perennial-sources status for the URL's domain ('' if unlisted)."""
     return _rsp().get(registered_domain(url), "")
@@ -46,32 +49,28 @@ def rsp_status(url: str) -> str:
 def classify_domain(url: str) -> str:
     """Return 'A' | 'B' | 'C' | 'unknown' for a URL.
 
-    Order: government and our A list; video platforms (judge decides, a verified
-    channel can be primary); Wikipedia perennial-sources verdict "unreliable",
-    "deprecated" or "blacklisted" -> C (lead only); our C list; Wikipedia
-    "generally reliable" -> B; our B list. Wikipedia "no consensus" never
-    changes our own tier (e.g. Screen Rant is fine for entertainment topics).
+    Tiers follow Wikipedia's Perennial Sources list:
+      A = generally reliable, B = no consensus (usable depending on context),
+      C = generally unreliable, deprecated or blacklisted (lead only).
+    Video platforms are always left to the judge (a verified channel can be
+    primary). For domains Wikipedia does not rate, the local lists in
+    source_policy.py (domain authorities, trade outlets, lead-only sites) and
+    any .gov decide. Everything else is 'unknown' and the judge decides.
     """
     dom = registered_domain(url)
     if not dom:
         return "unknown"
-    if dom in config.A_TIER_DOMAINS or dom.endswith(".gov"):
-        return "A"
     if dom in config.VIDEO_DOMAINS:
         return "unknown"
     rsp = _rsp().get(dom, "")
-    if rsp in ("gu", "d", "b"):
-        return "C"
+    if rsp:
+        return _RSP_TIER.get(rsp, "unknown")
+    if dom in config.A_TIER_DOMAINS or dom.endswith(".gov"):
+        return "A"
+    if dom in config.B_TIER_DOMAINS:
+        return "B"
     if dom in config.C_TIER_DOMAINS:
         return "C"
-    if rsp == "gr" or dom in config.B_TIER_DOMAINS:
-        return "B"
-    # Government records (film permits, city open data) are domain authorities
-    # per the PRD's A-tier examples (NYC Open Data, FilmLA).
-    if dom.endswith(".gov"):
-        return "A"
-    # Otherwise unknown -> judge decides, since an official studio/GQ channel
-    # video can be primary evidence despite an unranked domain.
     return "unknown"
 
 

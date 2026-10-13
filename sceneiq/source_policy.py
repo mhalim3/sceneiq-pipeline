@@ -63,7 +63,12 @@ RETRY_OUTLETS = [
 
 # --- Domain lists ----------------------------------------------------------------
 
-# A tier: domain authorities, primary within their category (plus any .gov).
+# LOCAL ADDITIONS. Tiers come from Wikipedia's perennial-sources list
+# (wikipedia_rsp.json: A = generally reliable, B = no consensus, C = unreliable /
+# deprecated / blacklisted). The three sets below apply ONLY to domains Wikipedia
+# does not rate; where Wikipedia has a verdict it wins.
+#
+# A: domain authorities, primary within their category (plus any .gov).
 A_TIER_DOMAINS = {
     "ascap.com",
     "ascmag.com",
@@ -74,7 +79,7 @@ A_TIER_DOMAINS = {
     "theasc.com",
 }
 
-# B tier: established editorial / trade press.
+# B: established editorial / trade press that Wikipedia does not rate.
 B_TIER_DOMAINS = {
     "avclub.com",
     "bbc.co.uk",
@@ -108,7 +113,7 @@ B_TIER_DOMAINS = {
     "wwd.com",
 }
 
-# C tier: discovery / lead sources only. Can never support a card.
+# C: discovery / lead sources only. Can never support a card.
 C_TIER_DOMAINS = {
     "afi.com",
     "bfi.org.uk",
