@@ -6,6 +6,9 @@ evidence class per claim. C-tier can never support emission.
 
 from __future__ import annotations
 
+import json
+from functools import lru_cache
+from pathlib import Path
 from urllib.parse import urlparse
 
 from . import config
@@ -25,17 +28,44 @@ def registered_domain(url: str) -> str:
     return host
 
 
+@lru_cache(maxsize=1)
+def _rsp() -> dict:
+    """Wikipedia's Perennial Sources list: domain -> gr | nc | gu | d | b."""
+    path = Path(__file__).with_name("wikipedia_rsp.json")
+    try:
+        return json.loads(path.read_text())["domains"]
+    except (OSError, ValueError, KeyError):
+        return {}
+
+
+def rsp_status(url: str) -> str:
+    """Wikipedia perennial-sources status for the URL's domain ('' if unlisted)."""
+    return _rsp().get(registered_domain(url), "")
+
+
 def classify_domain(url: str) -> str:
-    """Return 'A' | 'B' | 'C' | 'unknown' for a URL."""
+    """Return 'A' | 'B' | 'C' | 'unknown' for a URL.
+
+    Order: government and our A list; video platforms (judge decides, a verified
+    channel can be primary); Wikipedia perennial-sources verdict "unreliable",
+    "deprecated" or "blacklisted" -> C (lead only); our C list; Wikipedia
+    "generally reliable" -> B; our B list. Wikipedia "no consensus" never
+    changes our own tier (e.g. Screen Rant is fine for entertainment topics).
+    """
     dom = registered_domain(url)
     if not dom:
         return "unknown"
-    if dom in config.A_TIER_DOMAINS:
+    if dom in config.A_TIER_DOMAINS or dom.endswith(".gov"):
         return "A"
-    if dom in config.B_TIER_DOMAINS:
-        return "B"
+    if dom in config.VIDEO_DOMAINS:
+        return "unknown"
+    rsp = _rsp().get(dom, "")
+    if rsp in ("gu", "d", "b"):
+        return "C"
     if dom in config.C_TIER_DOMAINS:
         return "C"
+    if rsp == "gr" or dom in config.B_TIER_DOMAINS:
+        return "B"
     # Government records (film permits, city open data) are domain authorities
     # per the PRD's A-tier examples (NYC Open Data, FilmLA).
     if dom.endswith(".gov"):

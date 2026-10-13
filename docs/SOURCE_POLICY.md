@@ -28,3 +28,22 @@ Single source of truth: `sceneiq/source_policy.py`. Everything else reads it.
 
 ## Where it is used
 tiers.py (domain tiers) · validate.py (judge prompt + emission rule) · assemble.py (writer prompt) · research.py (research prompt, retry query) · orchestrator.py (weak-source retry)
+
+## Wikipedia perennial-sources layer
+
+`sceneiq/wikipedia_rsp.json` holds the verdicts from Wikipedia's
+[Reliable sources / Perennial sources](https://en.wikipedia.org/wiki/Wikipedia:Reliable_sources/Perennial_sources)
+list (fetched 2026-10-13; 748 domains). `tiers.classify_domain` applies it in this order:
+
+1. Government and the A-tier list: A.
+2. Video platforms (YouTube, Vimeo): unknown, the judge decides (a verified channel can be primary).
+3. Wikipedia "generally unreliable", "deprecated" or "blacklisted": C (lead only, never support). This is what keeps wordpress.com, blogspot.com, cracked.com and similar out.
+4. Our C-tier list: C.
+5. Wikipedia "generally reliable", or our B-tier list: B.
+6. Wikipedia "no consensus" never changes our own tier (Screen Rant stays B: Wikipedia calls it reliable for entertainment topics).
+7. Everything else: unknown, the judge decides.
+
+The list only covers sources that Wikipedia editors have repeatedly debated (about a third
+of the links cited in recent runs). Trade outlets such as Collider, Cartoon Brew and
+Animation Magazine are not on it, so they stay on our own lists or "unknown".
+To refresh, re-download the page and its subpages /1 to /8 and rebuild the JSON.
