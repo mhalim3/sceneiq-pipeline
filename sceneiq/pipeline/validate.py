@@ -313,6 +313,7 @@ def validate_card(
     card: SceneFactCard,
     packet: EvidencePacket,
     cfg: config.PipelineConfig,
+    corroboration: list | None = None,
 ) -> ValidationResult:
     result = ValidationResult(passed=False)
     checks = result.checks
@@ -582,8 +583,14 @@ def validate_card(
         s for s in supporting if s.evidence_class == "reputable_editorial"
         and (s.tier in ("A", "B") or not source_policy.UNKNOWN_DOMAIN_NEEDS_PRIMARY)
     ])
-    strict_emission = bool(primaries) or len(editorial_strict) >= source_policy.STRICT_MIN_EDITORIAL
-    relaxed_emission = bool(primaries) or len(editorial_relaxed) >= source_policy.RELAXED_MIN_EDITORIAL
+    # Corroboration: enough independent A/B outlets state the fact on their own.
+    corroborating = {c["domain"] for c in (corroboration or []) if c.get("tier") in ("A", "B")}
+    corroborated = len(corroborating) >= cfg.corroboration_target
+    checks["corroboration"] = len(corroborating)
+    strict_emission = (bool(primaries) or corroborated
+                       or len(editorial_strict) >= source_policy.STRICT_MIN_EDITORIAL)
+    relaxed_emission = (bool(primaries) or corroborated
+                        or len(editorial_relaxed) >= source_policy.RELAXED_MIN_EDITORIAL)
     emission_ok = relaxed_emission if relaxed else strict_emission
     checks["emission_policy"] = emission_ok
     if not emission_ok:

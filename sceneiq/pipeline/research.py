@@ -22,6 +22,7 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 
 from .. import config, source_policy
+from .. import domain_tiers
 from ..fetch import FetchCache, _run_with_timeout, page_links, title_grounded
 from ..gemini import GeminiClient
 from ..models import Anchor, EvidencePacket, SourceRef
@@ -108,11 +109,16 @@ def _fetch_candidate(cand: dict, film_title: str, film_year, cfg: config.Pipelin
     domain = registered_domain(final_url)
     if domain in config.SKIP_FETCH_DOMAINS:
         return None
+    tier = classify_domain(final_url)
+    if tier == "unknown" and client is not None and domain not in config.VIDEO_DOMAINS and body:
+        # Unlisted outlet: rate it once with Wikipedia's reliability criteria (cached).
+        domain_tiers.resolve(client, cfg, domain, cand.get("title", ""), body)
+        tier = classify_domain(final_url)
     src = SourceRef(
         url=final_url,
         title=cand.get("title", ""),
         domain=domain,
-        tier=classify_domain(final_url),
+        tier=tier,
         resolved=True,
     )
     if domain in config.VIDEO_DOMAINS:
@@ -229,7 +235,7 @@ def research_anchor(
             with ThreadPoolExecutor(max_workers=cfg.fetch_workers) as pool:
                 extra = list(pool.map(
                     lambda u: _fetch_candidate({"url": u, "title": ""}, film_title,
-                                               film_info.get("year"), cfg, cache), links))
+                                               film_info.get("year"), cfg, cache, client=client), links))
             added = [s for s in extra if s is not None and s.url not in have
                      and _fact_relevant(anchor.anchor_element, film_title,
                                         getattr(s, "_body", ""))]
@@ -253,8 +259,8 @@ def research_anchor(
                         retry_cands.append(s)
         with ThreadPoolExecutor(max_workers=cfg.fetch_workers) as pool:
             sources = [s for s in pool.map(
-                lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache),
-                retry_cands) if s is not None]
+                lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache,
+                                           client=client), retry_cands) if s is not None]
         uniq = {}
         for s in sources:
             uniq.setdefault(s.url, s)
@@ -292,7 +298,8 @@ def research_stronger_sources(
             cands.append(s)
     with ThreadPoolExecutor(max_workers=cfg.fetch_workers) as pool:
         fetched = pool.map(
-            lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache), cands)
+            lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache,
+                                       client=client), cands)
         found = [s for s in fetched if s is not None and s.tier in ("A", "B")
                  and s.url not in have_urls]
     uniq: dict[str, SourceRef] = {}

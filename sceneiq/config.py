@@ -165,6 +165,12 @@ class PipelineConfig:
     # When a card's only cited sources are unknown/C-tier, search once for A/B-tier
     # pages that state the fact and rewrite the card with them available.
     strengthen_weak_sources: bool = True
+    # Corroboration: after a card is written, find every A/B outlet that states the fact
+    # (checking the pages already fetched, then up to `corroboration_searches` extra
+    # searches). `corroboration_target` distinct A/B outlets pass the fact on their own.
+    corroborate: bool = True
+    corroboration_target: int = 3
+    corroboration_searches: int = 2
     # --- Quality settings (the three goals: interesting, well written, well sourced) ---
     # Judgement-heavy steps (card writing, repair, validation, interest, dedup, consistency)
     # run on the stronger model; broad search and structuring stay on the fast one.

@@ -254,6 +254,7 @@ class CardRecord:
     rank: int = 0                     # 1 = best among the title's kept cards (0 = unranked)
     rank_score: int = 0               # 1-5 score from the ranking call
     rank_note: str = ""               # one-line editor note from the ranking call
+    corroboration: list = field(default_factory=list)   # A/B pages that state the fact: {url, domain, tier, passage}
 
     def to_dict(self):
         return {
@@ -266,6 +267,7 @@ class CardRecord:
             "card": self.card.to_contract_dict() if self.card else None,
             "anchor": self.anchor.to_dict(),
             "sources": [s.to_dict() for s in (self.card.sources if self.card else [])],
+            "corroboration": self.corroboration,
             # PRD: "The review record must identify the evidence type and
             # source passage for each material claim."
             "claim_evidence": [

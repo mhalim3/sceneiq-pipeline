@@ -1,0 +1,143 @@
+"""Corroboration: find every A/B-tier page that states the fact.
+
+After a card is written, check the pages already fetched for it. If fewer than
+`cfg.corroboration_target` distinct A/B outlets state the fact, run a couple of
+extra searches for more. The result is a list of {url, domain, tier, passage},
+stored on the record and counted by the emission rule (3 independent A/B outlets
+pass a fact). A quoted passage must appear in the page text, so the model cannot
+invent support.
+"""
+
+from __future__ import annotations
+
+import logging
+import re
+from concurrent.futures import ThreadPoolExecutor
+
+from .. import config, source_policy
+from ..fetch import FetchCache
+from ..gemini import GeminiClient
+from ..models import Anchor, SceneFactCard, SourceRef
+from .research import _fetch_candidate, _run_query
+
+log = logging.getLogger("sceneiq")
+
+_STOP = set("the a an of to and in is was as for by with his her that this it on at from he she be who "
+            "film movie were are had has have their they them also into after before during while".split())
+
+_SCHEMA = {
+    "type": "object",
+    "properties": {"results": {"type": "array", "items": {
+        "type": "object",
+        "properties": {"id": {"type": "integer"}, "states_fact": {"type": "boolean"},
+                       "passage": {"type": "string"}},
+        "required": ["id", "states_fact", "passage"]}}},
+    "required": ["results"],
+}
+
+_PROMPT = """Fact about the film "{film}":
+{fact}
+
+For each numbered excerpt below, decide whether that page STATES this fact: it must say the same specific claim (the same people and the same detail). Related background, a different detail, or a passing mention of the topic does not count. If it does, copy ONE supporting passage word for word from the excerpt.
+
+{excerpts}
+
+Return one result per excerpt id. If states_fact is false, passage is an empty string."""
+
+
+def _words(t: str) -> set:
+    return {w for w in re.findall(r"[a-z0-9']+", (t or "").lower()) if len(w) > 2 and w not in _STOP}
+
+
+def _norm(t: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
+
+
+def _excerpt(body: str, fact: str, limit: int = 1800) -> str:
+    """The sentences of `body` that overlap the fact most, in page order."""
+    sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+|\n+", body or "") if len(s.strip()) > 25]
+    fw = _words(fact)
+    scored = sorted(range(len(sents)), key=lambda i: -len(fw & _words(sents[i])))
+    keep, total = [], 0
+    for i in scored:
+        if total + len(sents[i]) > limit:
+            continue
+        keep.append(i)
+        total += len(sents[i])
+        if total >= limit:
+            break
+    return " ".join(sents[i] for i in sorted(keep))
+
+
+def _check(client: GeminiClient, cfg: config.PipelineConfig, film: str, fact: str,
+           sources: list[SourceRef]) -> list[dict]:
+    if not sources:
+        return []
+    ex = "\n\n".join(f"[{i}] {s.domain}\n{_excerpt(getattr(s, '_body', ''), fact)}"
+                     for i, s in enumerate(sources))
+    try:
+        d = client.structured(cfg.quality_model, _PROMPT.format(film=film, fact=fact, excerpts=ex),
+                              _SCHEMA, temperature=0.0)
+    except Exception as e:
+        log.warning("  corroboration check failed: %s", e)
+        return []
+    out = []
+    for r in d.get("results", []):
+        i = r.get("id")
+        if not isinstance(i, int) or not 0 <= i < len(sources) or not r.get("states_fact"):
+            continue
+        s, psg = sources[i], (r.get("passage") or "").strip()
+        # The quoted passage must really be on the page.
+        if psg and _norm(psg) in _norm(getattr(s, "_body", "")):
+            out.append({"url": s.url, "domain": s.domain, "tier": s.tier, "passage": psg})
+    return out
+
+
+def _search_more(client, film_info, anchor, fact, cfg, cache, have: set) -> list[SourceRef]:
+    title = f"{film_info.get('title', '')} {film_info.get('year', '')}".strip()
+    qs = [f"{title} {fact[:200]}",
+          f"{title} {anchor.anchor_element} {source_policy.retry_query_suffix()}"][: cfg.corroboration_searches]
+    cands, seen = [], set(have)
+    with ThreadPoolExecutor(max_workers=max(1, len(qs))) as pool:
+        for _, grounded in pool.map(lambda q: _run_query(client, cfg, film_info, q), qs):
+            for s in grounded.sources:
+                url = (s.get("url") or "").strip()
+                if url and url not in seen:
+                    seen.add(url)
+                    cands.append(s)
+    film_title = str(film_info.get("title", ""))
+    with ThreadPoolExecutor(max_workers=cfg.fetch_workers) as pool:
+        got = pool.map(lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache,
+                                                  client=client), cands)
+        found = [s for s in got if s is not None and s.tier in ("A", "B")
+                 and s.modality == "text" and s.url not in have]
+    uniq: dict = {}
+    for s in found:
+        uniq.setdefault(s.url, s)
+    return list(uniq.values())
+
+
+def corroborate(client: GeminiClient, film_info: dict, anchor: Anchor, card: SceneFactCard,
+                packet, cfg: config.PipelineConfig, cache: FetchCache) -> list[dict]:
+    fact = card.long_description
+    film = str(film_info.get("title", ""))
+    pool = [s for s in packet.sources if s.tier in ("A", "B") and s.modality == "text"
+            and getattr(s, "_body", "")]
+    found = _check(client, cfg, film, fact, pool)
+    domains = {f["domain"] for f in found}
+    if len(domains) < cfg.corroboration_target and cfg.corroboration_searches > 0:
+        try:
+            extra = _search_more(client, film_info, anchor, fact, cfg, cache, {s.url for s in packet.sources})
+        except Exception as e:
+            log.warning("  corroboration search failed: %s", e)
+            extra = []
+        if extra:
+            packet.sources = list(packet.sources) + extra
+            found += _check(client, cfg, film, fact, extra)
+    # one entry per outlet
+    best: dict = {}
+    for f in found:
+        best.setdefault(f["domain"], f)
+    out = list(best.values())
+    log.info("  corroboration: %d A/B outlet(s) state it: %s", len(out), anchor.anchor_element[:50])
+    return out

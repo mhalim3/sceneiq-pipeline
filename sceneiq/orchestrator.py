@@ -24,6 +24,7 @@ from .moments import TitleMoments, load_moments
 from .pipeline.anchors import (discover_anchors, discover_anchors_from_moments,
                                identify_film)
 from .pipeline.assemble import assemble_card, repair_card
+from .pipeline.corroborate import corroborate
 from .pipeline.curiosity import judge_curiosity
 from .pipeline.leads import wikipedia_leads
 from .pipeline.research import research_anchor, research_stronger_sources
@@ -73,8 +74,15 @@ def _process_anchor(
             except Exception as e:  # best-effort; keep the original card
                 log.warning("  stronger-source retry failed on %s: %s", anchor.anchor_element, e)
         record.card = card
+        if cfg.corroborate:
+            _t = time.time()
+            try:
+                record.corroboration = corroborate(client, film_info, anchor, card, packet, cfg, cache)
+            except Exception as e:  # best-effort; the single-source rule still applies
+                log.warning("  corroboration failed on %s: %s", anchor.anchor_element[:50], e)
+            record.timings["corroborate"] = time.time() - _t
         _t = time.time()
-        result = validate_card(client, film_info, card, packet, cfg)
+        result = validate_card(client, film_info, card, packet, cfg, corroboration=record.corroboration)
         record.timings["validate"] = time.time() - _t
         # One repair attempt when the ONLY problems are fixable wording
         # (summary claims beyond the beats, maturity wording). The rewritten
@@ -85,7 +93,7 @@ def _process_anchor(
             problems = list(result.rejection_reasons)
             try:
                 if repair_card(client, film_info, card, problems, cfg):
-                    repaired = validate_card(client, film_info, card, packet, cfg)
+                    repaired = validate_card(client, film_info, card, packet, cfg, corroboration=record.corroboration)
                     if repaired.passed:
                         repaired.flags.append(
                             "repaired: rewritten after review — " + "; ".join(problems))

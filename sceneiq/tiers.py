@@ -11,7 +11,7 @@ from functools import lru_cache
 from pathlib import Path
 from urllib.parse import urlparse
 
-from . import config, source_policy
+from . import config, domain_tiers, source_policy
 
 # Minimal multi-label public suffixes we care about for registered-domain
 # extraction. Not a full PSL, but covers the tier tables.
@@ -89,7 +89,7 @@ def classify_domain(url: str) -> str:
         return "B"
     if dom in config.C_TIER_DOMAINS:
         return "C"
-    return "unknown"
+    return domain_tiers.lookup(dom) or "unknown"
 
 
 def independent(sources: list) -> list:
@@ -144,4 +144,4 @@ def tier_reason(url: str) -> str:
         return "trade outlet Wikipedia does not rate (our list)"
     if dom in config.C_TIER_DOMAINS:
         return "lead-only site (our list)"
-    return "not on Wikipedia's list or ours; judge decides"
+    return domain_tiers.reason(dom) or "not on Wikipedia's list or ours; judge decides"
