@@ -65,6 +65,10 @@ def classify_domain(url: str) -> str:
         return "unknown"
     if dom in config.VIDEO_DOMAINS:
         return "unknown"
+    if source_policy.OPINION_PATH_RE.search(urlparse(url).path or ""):
+        return "C"
+    if dom in source_policy.CONTRIBUTOR_HEAVY:
+        return "C"
     rsp = _rsp().get(dom, "")
     if dom in source_policy.PATH_TIERS:
         prefix, sec_tier, rest_tier = source_policy.PATH_TIERS[dom]
@@ -111,6 +115,10 @@ def tier_reason(url: str) -> str:
     dom = registered_domain(url)
     if dom in config.VIDEO_DOMAINS:
         return "video platform, the judge decides"
+    if source_policy.OPINION_PATH_RE.search(urlparse(url).path or ""):
+        return "opinion / contributor section: lead only, not fact-checked like staff reporting"
+    if dom in source_policy.CONTRIBUTOR_HEAVY:
+        return "contributor / community content dominates this site: lead only"
     rsp = _rsp().get(dom, "")
     if dom in source_policy.PATH_TIERS:
         prefix = source_policy.PATH_TIERS[dom][0]

@@ -29,8 +29,11 @@ NOT_AUTHORITATIVE = (
     "NOT AUTHORITATIVE (leads only, never support a card): listicles, trivia "
     "roundups and 'facts you didn't know' posts; aggregators; wikis, fan sites, "
     "forums and film databases (IMDb, TV Tropes, Fandom, Wikipedia); blogs and "
-    "marketing sites (test-prep, tour, merchandise, auction listings); and any "
-    "page that states a claim without naming where it came from."
+    "marketing sites (test-prep, tour, merchandise, auction listings); OPINION AND "
+    "CONTRIBUTOR CONTENT even on a reputable outlet (op-eds, columns, commentary, "
+    "editorials, contributor, community and 'council' posts, reader-submitted pages), "
+    "because it reflects the author's view and is not fact-checked like staff reporting; "
+    "and any page that states a claim without naming where it came from."
 )
 
 RULES = (
@@ -95,6 +98,22 @@ ESTABLISHED_A = {
 PATH_TIERS = {
     "forbes.com": ("/sites/", "C", "B"),
 }
+
+# Opinion and contributor sections on ANY site are lead only (tier C): they carry the
+# author's view and are not fact-checked like staff reporting, even at outlets such as
+# the NYT, Guardian or Washington Post (their opinion desks do edit, but the content is
+# opinion). Matched against the URL path; the judge prompt says the same in words.
+import re as _re
+OPINION_PATH_RE = _re.compile(
+    r"/(opinion|opinions|op-ed|op-eds|oped|editorial-board|editorials?|commentary|"
+    r"commentisfree|columnists?|columns?|perspectives?|viewpoints?|voices|"
+    r"contributors?|community|councils?|guest-posts?|letters)(/|$)"
+    r"|_b_\d+\.html",          # HuffPost's old contributor ("blog") post URLs
+    _re.I,
+)
+# Sites whose contributor/community content cannot be told apart by path. The whole
+# site is lead only unless the page is staff news (judged per page by the AI judge).
+CONTRIBUTOR_HEAVY = {"buzzfeed.com", "huffpost.com", "huffingtonpost.com"}
 NC_ENTERTAINMENT_OR_REFERENCE_B = {
     "screenrant.com", "mashable.com", "dexerto.com", "dexerto.es", "decider.com",
     "britannica.com", "guinnessworldrecords.com", "businessinsider.com",

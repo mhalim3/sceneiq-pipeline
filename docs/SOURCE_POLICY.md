@@ -44,3 +44,18 @@ tiers.py (domain tiers) · validate.py (judge prompt + emission rule) · assembl
 A and B are treated alike by the emission rules for now; C never supports.
 The full lists are in [SOURCE_LISTS.md](SOURCE_LISTS.md). To refresh the Wikipedia data,
 re-download the page and its subpages /1 to /8 and rebuild the JSON.
+
+## Opinion and contributor content is lead only (any site)
+
+Even at reputable outlets, opinion and contributor pieces are tier C (lead only, never
+support a fact): they carry the author's view and are not fact-checked like staff
+reporting. Implemented in `source_policy.OPINION_PATH_RE` and `tiers.classify_domain`:
+
+- URL paths containing `/opinion/`, `/opinions/`, `/op-ed/`, `/editorial(s)/`, `/commentary/`,
+  `/commentisfree/` (Guardian), `/columnist(s)/`, `/column(s)/`, `/perspective(s)/`, `/viewpoint(s)/`,
+  `/voices/`, `/contributor(s)/`, `/community/`, `/council(s)/`, `/guest-post(s)/`, `/letters/`;
+  HuffPost's old contributor URLs (`..._b_123456.html`).
+- Forbes: `/sites/` (contributors) and `/councils/` are C; Forbes staff pages stay B.
+- BuzzFeed and HuffPost are lead only as a whole (contributor and community content cannot be
+  told apart by URL). The judge prompt (`NOT_AUTHORITATIVE`) also tells the AI judge to treat
+  opinion, columns, contributor and community posts as leads even on a reputable outlet.
