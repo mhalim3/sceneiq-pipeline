@@ -48,9 +48,11 @@ def classify_domain(url: str) -> str:
 
     Tiers start from Wikipedia's Perennial Sources list ("generally reliable"
     is its top group) and add our own split, see source_policy.py:
-      A = generally reliable AND film/entertainment is the outlet's core beat;
-      B = generally reliable general-interest outlets, plus entertainment or
-          reference outlets Wikipedia rates "no consensus";
+      A = established mainstream newsrooms and major entertainment/culture
+          publications that Wikipedia rates generally reliable, plus film-permit records;
+      B = other generally reliable outlets (niche, specialist, foreign-language),
+          entertainment or reference outlets Wikipedia rates "no consensus",
+          and trade outlets Wikipedia does not rate;
       C = other "no consensus", and generally unreliable / deprecated / blacklisted
           (lead only, never support).
     Video platforms are always left to the judge (a verified channel can be
@@ -64,15 +66,20 @@ def classify_domain(url: str) -> str:
     if dom in config.VIDEO_DOMAINS:
         return "unknown"
     rsp = _rsp().get(dom, "")
+    if dom in source_policy.PATH_TIERS:
+        prefix, sec_tier, rest_tier = source_policy.PATH_TIERS[dom]
+        return sec_tier if (urlparse(url).path or "").startswith(prefix) else rest_tier
+    if rsp in ("gr", "mixed") and dom in source_policy.ESTABLISHED_A:
+        return "A"
     if rsp == "gr":
-        return "A" if dom in source_policy.GR_FILM_EXPERT_A else "B"
+        return "B"
     if rsp == "mixed":
         return "B"
     if rsp == "nc":
         return "B" if dom in source_policy.NC_ENTERTAINMENT_OR_REFERENCE_B else "C"
     if rsp in ("gu", "d", "b"):
         return "C"
-    if dom in config.A_TIER_DOMAINS or dom.endswith(".gov"):
+    if dom in config.A_TIER_DOMAINS:
         return "A"
     if dom in config.B_TIER_DOMAINS:
         return "B"
@@ -97,3 +104,36 @@ def independent(sources: list) -> list:
         seen.add(dom)
         out.append(s)
     return out
+
+
+def tier_reason(url: str) -> str:
+    """Plain-language reason for the domain's tier (for reports)."""
+    dom = registered_domain(url)
+    if dom in config.VIDEO_DOMAINS:
+        return "video platform, the judge decides"
+    rsp = _rsp().get(dom, "")
+    if dom in source_policy.PATH_TIERS:
+        prefix = source_policy.PATH_TIERS[dom][0]
+        if (urlparse(url).path or "").startswith(prefix):
+            return "Wikipedia: contributor section rated generally unreliable"
+        return "Wikipedia: staff content rated reliable or no consensus"
+    if rsp in ("gr", "mixed") and dom in source_policy.ESTABLISHED_A:
+        return "Wikipedia: generally reliable + established mainstream or major entertainment outlet"
+    if rsp == "gr":
+        return "Wikipedia: generally reliable, niche or specialist outlet"
+    if rsp == "mixed":
+        return "Wikipedia: entries disagree (reliable vs no consensus)"
+    if rsp == "nc":
+        if dom in source_policy.NC_ENTERTAINMENT_OR_REFERENCE_B:
+            return "Wikipedia: no consensus, entertainment/reference outlet"
+        return "Wikipedia: no consensus, not an entertainment/reference outlet"
+    if rsp in ("gu", "d", "b"):
+        return {"gu": "Wikipedia: generally unreliable", "d": "Wikipedia: deprecated",
+                "b": "Wikipedia: blacklisted"}[rsp]
+    if dom in config.A_TIER_DOMAINS:
+        return "official record / domain authority (our list)"
+    if dom in config.B_TIER_DOMAINS:
+        return "trade outlet Wikipedia does not rate (our list)"
+    if dom in config.C_TIER_DOMAINS:
+        return "lead-only site (our list)"
+    return "not on Wikipedia's list or ours; judge decides"

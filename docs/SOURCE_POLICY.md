@@ -36,8 +36,8 @@ tiers.py (domain tiers) · validate.py (judge prompt + emission rule) · assembl
 (fetched 2026-10-13). "Generally reliable" is its top group, so we split it ourselves
 (rules and domain sets in `source_policy.py`, applied in `tiers.classify_domain`):
 
-- **A** = generally reliable AND film/entertainment is the outlet's core beat (Variety, Hollywood Reporter, Deadline, TheWrap, Rolling Stone...), plus official records and domain authorities (ASCAP, BMI, FilmLA, ASC, Criterion, `.gov`).
-- **B** = generally reliable general-interest outlets (CNN, Reuters, NYT...); "no consensus" entertainment or reference outlets (Screen Rant, Britannica, Guinness...); sites whose Wikipedia entries disagree; trade outlets Wikipedia does not rate (Collider, SlashFilm, IndieWire, Empire).
+- **A** = generally reliable AND an established mainstream newsroom or major entertainment/culture publication (Variety, Hollywood Reporter, Deadline, NPR, ABC News, NYT, GQ, Vanity Fair...), plus film-permit records (nyc.gov, FilmLA) and ASCAP, BMI, ASC, Criterion.
+- **B** = other generally reliable outlets (niche, specialist, foreign-language); "no consensus" entertainment or reference outlets (Screen Rant, Britannica, Guinness...); sites whose Wikipedia entries disagree; trade outlets Wikipedia does not rate (Collider, SlashFilm, IndieWire, Empire, E! Online). Forbes staff pages are B; Forbes contributor pages (/sites/) are C.
 - **C** = other "no consensus" sites, plus "generally unreliable", "deprecated" and "blacklisted". Lead only, never support.
 - **unknown** = not rated; the judge decides per claim. Video platforms (YouTube, Vimeo) always go to the judge.
 

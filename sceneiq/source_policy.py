@@ -64,22 +64,36 @@ RETRY_OUTLETS = [
 # --- Domain lists ----------------------------------------------------------------
 
 # --- Our A/B split inside Wikipedia's verdicts ----------------------------------
-# Wikipedia "generally reliable" is the top group. We split it by film expertise:
-#   A = generally reliable AND film/entertainment is the outlet's core beat, so a
-#       film fact is inside its area of expertise (Wikipedia's own caveat).
-#   B = generally reliable, but a general-interest outlet; film is incidental.
+# Wikipedia "generally reliable" is the top group. We split it by standing:
+#   A = established, mainstream newsrooms and major entertainment/culture
+#       publications (the outlets a viewer or a manager would call authoritative
+#       for entertainment news), plus film-permit records.
+#   B = generally reliable but niche or specialist (games, tech, politics, science,
+#       fact-checkers, think tanks, foreign-language press), and every other
+#       outlet we rely on that is not in A.
 # Wikipedia "no consensus" is B or C, never A:
 #   B = an entertainment/film outlet with an editorial staff and bylines, or a
 #       records/reference authority.
 #   C = everything else (general-interest, tabloid, lifestyle, gossip, user-edited).
-# Domains whose entries disagree ("mixed", e.g. a culture section rated reliable
-# and the rest not) are B.
-GR_FILM_EXPERT_A = {
-    "avclub.com", "behindthevoiceactors.com", "deadline.com", "deadlinehollywooddaily.com",
-    "denofgeek.com", "digitalspy.co.uk", "digitalspy.com", "ew.com", "hollywoodreporter.com",
-    "idolator.com", "ign.com", "metacritic.com", "nme.com", "people.com", "polygon.com",
-    "rollingstone.com", "rottentomatoes.com", "themarysue.com", "thewrap.com", "tvguide.com",
-    "tvguidemagazine.com", "vanityfair.com", "variety.com",
+# Sites with a "generally unreliable" entry for part of the site (contributor
+# blogs) are C, except where listed in PATH_TIERS.
+# Domains whose entries disagree between reliable and no consensus are B, unless
+# listed in A.
+ESTABLISHED_A = {
+    # major entertainment and culture publications
+    "avclub.com", "deadline.com", "deadlinehollywooddaily.com", "ew.com", "gq.com",
+    "gq-magazine.co.uk", "hollywoodreporter.com", "newyorker.com", "people.com",
+    "rollingstone.com", "thewrap.com", "vanityfair.com", "variety.com", "vogue.com",
+    # mainstream newsrooms with established culture/entertainment coverage
+    "abcnews.com", "ap.org", "apnews.com", "bbc.co.uk", "bbc.com", "cnn.com",
+    "latimes.com", "nbcnews.com", "npr.org", "nytimes.com", "reuters.com", "theatlantic.com",
+    "theguardian.com", "theguardian.co.uk", "guardian.co.uk", "time.com", "usatoday.com",
+    "washingtonpost.com", "wsj.com",
+}
+# Sites with contributor sections Wikipedia rates unreliable: (path prefix, tier for
+# that section, tier for the rest of the site).
+PATH_TIERS = {
+    "forbes.com": ("/sites/", "C", "B"),
 }
 NC_ENTERTAINMENT_OR_REFERENCE_B = {
     "screenrant.com", "mashable.com", "dexerto.com", "dexerto.es", "decider.com",
@@ -104,6 +118,7 @@ A_TIER_DOMAINS = {
 
 # B: established editorial / trade press that Wikipedia does not rate.
 B_TIER_DOMAINS = {
+    "eonline.com",
     "avclub.com",
     "bbc.co.uk",
     "bbc.com",
