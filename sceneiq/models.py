@@ -20,6 +20,9 @@ class SourceRef:
     modality: str = "text"            # text | video (PRD: sourceModality)
     resolved: bool = False            # URL fetched with a 2xx/3xx
     body_kind: str = ""               # html | transcript | "" (nothing fetched)
+    channel: str = ""                 # YouTube channel name (video sources)
+    channel_verified: bool = False
+    channel_kind: str = ""            # outlet | studio_network | talent_or_crew | fan_or_creator | other
     verbatim_hits: list = field(default_factory=list)   # entities found in body
     verbatim_misses: list = field(default_factory=list)
 

@@ -82,7 +82,7 @@ _GENERIC_STRUCTURE_PROMPT = """These are answers from a general-purpose assistan
 
 Rules:
 - Keep every distinct fact the notes give. Merge duplicates (the same fact told twice is one fact). Do not otherwise judge how interesting a fact is: premise or remake links, casting stories, locations, budget and box office, and trivia all count, EXCEPT the kinds listed under LEAVE OUT below.
-- State each fact exactly as the notes give it, with the names and numbers. Do not add anything the notes do not say.
+- State each fact exactly as the notes give it, with the names and numbers. Do not add anything the notes do not say. In particular never add or change counts or quantity words (\"one-word\", \"single\", \"first\", \"only\", \"three\"): quote the words themselves instead (say the phrase \"bunk beds\", not \"a one-word pitch\").
 - Each fact must be understandable on its own: name characters and actors (never "the lead").
 - LEAVE OUT these kinds of fact entirely (they are not shown to viewers): {exclusions}
 - The notes carry citation markers like [S3] after sentences: the web page the assistant used for that sentence. For each fact, list in source_ids the marker numbers cited next to it (all of them; empty list if the fact has no marker). Never put markers in fact_summary.

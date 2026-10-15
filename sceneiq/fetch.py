@@ -8,12 +8,16 @@ timestamp attachment.
 
 from __future__ import annotations
 
+import logging
 import re
 import threading
+import time
 from difflib import SequenceMatcher
 from urllib.parse import parse_qs, urlparse
 
 import httpx
+
+log = logging.getLogger("sceneiq")
 
 # Full browser UA: some outlets (fashionista.com et al.) 403 obvious bots.
 _UA = {
@@ -127,6 +131,10 @@ def _run_with_timeout(fn, timeout_s: float, default):
     return out.get("v", default)
 
 
+_YT_SLOTS = threading.BoundedSemaphore(3)
+_YT_BLOCKED_UNTIL = 0.0
+
+
 def fetch_youtube_transcript(url: str, timeout_s: float = 30.0) -> tuple[bool, str, list[dict]]:
     """Returns (ok, concatenated_text, segments[{text, start, duration}])."""
     vid = youtube_video_id(url)
@@ -137,12 +145,32 @@ def fetch_youtube_transcript(url: str, timeout_s: float = 30.0) -> tuple[bool, s
     except ImportError:
         return False, "", []
 
-    def _fetch():
-        api = YouTubeTranscriptApi()
-        return api.fetch(vid, languages=["en", "en-US", "en-GB"])
+    global _YT_BLOCKED_UNTIL
+    if time.time() < _YT_BLOCKED_UNTIL:       # circuit breaker: YouTube blocked this IP recently
+        return False, "", []
+    err: dict = {}
 
-    fetched = _run_with_timeout(_fetch, timeout_s, None)
+    def _fetch():
+        try:
+            return YouTubeTranscriptApi().fetch(vid, languages=["en", "en-US", "en-GB"])
+        except Exception as e:                 # record why, so the log can say
+            err["e"] = e
+            raise
+
+    fetched = None
+    for attempt in range(3):
+        with _YT_SLOTS:                         # YouTube throttles bursts of transcript requests
+            fetched = _run_with_timeout(_fetch, timeout_s, None)
+        if fetched is not None:
+            break
+        if type(err.get("e")).__name__ in ("IpBlocked", "RequestBlocked"):
+            _YT_BLOCKED_UNTIL = time.time() + 900   # stop hammering; fall back for 15 minutes
+            log.warning("  YouTube is blocking transcript requests from this IP; "
+                        "falling back to Gemini video notes for 15 min")
+            break
+        time.sleep(1.5 * (attempt + 1))
     if fetched is None:
+        log.info("  transcript unavailable for %s: %s", vid, type(err.get("e")).__name__ or "timeout")
         return False, "", []
     segments = []
     for seg in fetched:

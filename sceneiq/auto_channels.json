@@ -1,0 +1,110 @@
+{
+ "UC-IxEJXZh_SrU8SHz41-dZQ": {
+  "name": "BAFTA Guru",
+  "handle": "@baftaguru",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "bafta.org",
+  "reason": "This is the official, verified channel for BAFTA (British Academy of Film and Television Arts), a major cultural and industry organization.",
+  "tier": "B"
+ },
+ "UC4fYBNAjjXqd4mH_KmFLgLQ": {
+  "name": "RealVideoUK",
+  "handle": "@RealVideoUK",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel that does not appear to be the official account for a known media outlet, studio, or person involved in the film.",
+  "tier": "C"
+ },
+ "UCAh90KLYVaMSj_HaWejnpYA": {
+  "name": "WGA West",
+  "handle": "@writersguildwest",
+  "verified": false,
+  "kind": "outlet",
+  "outlet_domain": "wga.org",
+  "reason": "This is the official channel for the Writers Guild of America, West, a trade organization for screenwriters.",
+  "tier": "C"
+ },
+ "UCBOOq97QvZy6a-PUk3K49Zg": {
+  "name": "Did You Catch This?",
+  "handle": "@DidYouCatchThisTV",
+  "verified": true,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel's name, \"Did You Catch This?\", indicates a focus on movie trivia and hidden details, which is characteristic of a fan or creator channel.",
+  "tier": "C"
+ },
+ "UCIPfzhYUUeRlJQOpK3JZcbw": {
+  "name": "Movies Unbound",
+  "handle": "@MoviesUnbound",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name does not correspond to an official studio, outlet, or talent, indicating it is a fan or creator channel.",
+  "tier": "C"
+ },
+ "UCOan0aqy1BjzFfCL8sXHmcA": {
+  "name": "JoBlo Behind-the-Scenes + Bloopers",
+  "handle": "@JoBloBehindTheScenes",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "joblo.com",
+  "reason": "This is the official verified channel for JoBlo, a long-running movie news and entertainment publication.",
+  "tier": "B"
+ },
+ "UCgCudMsK-kxYxB2RgiS3bzQ": {
+  "name": "TBS",
+  "handle": "@TBS",
+  "verified": true,
+  "kind": "studio_network",
+  "outlet_domain": "tbs.com",
+  "reason": "This is the official verified channel for the television network TBS.",
+  "tier": "B"
+ },
+ "UCkTtNUjvPcSc50HyO7sBtxg": {
+  "name": "MovieWeb",
+  "handle": "@movieweb",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This channel is not verified, so it cannot be confidently identified as the official channel for the MovieWeb outlet.",
+  "tier": "C"
+ },
+ "UCkjVgMjmyv94HJuiJzw8HHw": {
+  "name": "MovieBestBits",
+  "handle": "@MovieBestBits",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel name 'MovieBestBits' and the lack of a verified badge indicate this is a fan-run channel that uploads movie clips, not an official source.",
+  "tier": "C"
+ },
+ "UCpy3KkRJ_Nw23s1i3DOM0uQ": {
+  "name": "Iconic Star Rewind",
+  "handle": "@IconicStarRewind",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and the video title, \"10 Weird Facts You Didn’t Know!\", is a typical format for a fan or independent creator channel.",
+  "tier": "C"
+ },
+ "UCsEukrAd64fqA7FjwkmZ_Dw": {
+  "name": "GQ",
+  "handle": "@GQVideos",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "gq.com",
+  "reason": "This is the official verified YouTube channel for GQ, a men's magazine and entertainment/culture publication.",
+  "tier": "A"
+ },
+ "UCzfMa5hPJwPM9OsMmUOm8XQ": {
+  "name": "The Classic Rewind",
+  "handle": "@theclassicrewind",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is a fan or creator channel, as indicated by the 'hidden details' video format and the lack of a verified badge.",
+  "tier": "C"
+ }
+}

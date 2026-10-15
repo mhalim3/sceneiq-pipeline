@@ -22,7 +22,7 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 
 from .. import config, source_policy
-from .. import domain_tiers
+from .. import channel_tiers, domain_tiers
 from ..fetch import FetchCache, _run_with_timeout, page_links, title_grounded
 from ..gemini import GeminiClient
 from ..models import Anchor, EvidencePacket, SourceRef
@@ -63,13 +63,13 @@ def _run_query(client: GeminiClient, cfg: config.PipelineConfig, film_info: dict
     return q, grounded
 
 
-_VIDEO_PROMPT = """Watch this video. If it is NOT about the film "{title}" ({year}) or does not discuss the fact below, reply with exactly: NONE
+_VIDEO_PROMPT = """Watch this video. If it is NOT about the film "{title}" ({year}) or does not discuss the topic below, reply with exactly: NONE
 
-FACT: {fact}
+TOPIC: {fact}
 
 Otherwise reply in this form:
 VIDEO: <title and channel> | ABOUT: <what film or production it covers>
-Then transcribe, as close to word for word as you can, ONLY the spoken passages that discuss the fact, each preceded by its [mm:ss] timestamp and the speaker if known. Do not summarize and do not add anything that is not said."""
+Then transcribe, as close to word for word as you can, ONLY the spoken passages that discuss the topic, each preceded by its [mm:ss] timestamp and the speaker if known. Do not summarize, do not paraphrase, and do not add anything that is not said."""
 
 
 def _video_notes(client, cfg, url: str, film_title: str, film_year, fact: str) -> str | None:
@@ -87,6 +87,13 @@ def _video_notes(client, cfg, url: str, film_title: str, film_year, fact: str) -
     if not text or text.upper().startswith("NONE") or "VIDEO:" not in text:
         return None
     return text
+
+
+def _video_topic(anchor: Anchor, film_title: str) -> str:
+    """A neutral topic for the video note-taker. The claim itself is NOT passed in: a model
+    handed the claim tends to echo it back as if the video said it."""
+    qs = [q for q in (anchor.search_queries or []) if q]
+    return qs[0] if qs else f"making of {film_title}"
 
 
 def _fact_relevant(fact: str, film_title: str, body: str) -> bool:
@@ -122,6 +129,13 @@ def _fetch_candidate(cand: dict, film_title: str, film_year, cfg: config.Pipelin
         resolved=True,
     )
     if domain in config.VIDEO_DOMAINS:
+        if client is not None and "youtube" in domain:
+            ch = channel_tiers.rate_video(client, cfg, final_url)
+            if ch:
+                src.channel, src.channel_verified = ch["channel"], ch["verified"]
+                src.channel_kind = ch["kind"]
+                if ch["tier"] in ("A", "B", "C"):
+                    src.tier = ch["tier"]
         if video_budget is not None:
             with video_budget["lock"]:
                 if video_budget["n"] <= 0:
@@ -201,7 +215,7 @@ def research_anchor(
     with ThreadPoolExecutor(max_workers=cfg.fetch_workers) as pool:
         fetched = pool.map(
             lambda c: _fetch_candidate(c, film_title, film_info.get("year"), cfg, cache,
-                                       client=client, fact=anchor.anchor_element,
+                                       client=client, fact=_video_topic(anchor, film_title),
                                        video_budget=video_budget), candidates
         )
         sources = [s for s in fetched if s is not None]

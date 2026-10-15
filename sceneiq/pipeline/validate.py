@@ -289,6 +289,29 @@ def _maturity_rule(cfg: config.PipelineConfig, film_info: dict) -> str:
     )
 
 
+_NUM_EQUIV = {"one": {"one", "1", "single"}, "single": {"one", "1", "single"}, "1": {"one", "1", "single"},
+              "two": {"two", "2"}, "2": {"two", "2"}, "three": {"three", "3"}, "3": {"three", "3"},
+              "four": {"four", "4"}, "4": {"four", "4"}, "five": {"five", "5"}, "5": {"five", "5"},
+              "six": {"six", "6"}, "6": {"six", "6"}, "seven": {"seven", "7"}, "7": {"seven", "7"},
+              "eight": {"eight", "8"}, "8": {"eight", "8"}, "nine": {"nine", "9"}, "9": {"nine", "9"},
+              "ten": {"ten", "10"}, "10": {"ten", "10"}}
+_QUANT_RE = re.compile(r"\b(one|single|two|three|four|five|six|seven|eight|nine|ten|\d{1,2})[- ]"
+                       r"(word|phrase|sentence|line|take|page|day|hour|week|month|year|minute|second)s?\b", re.I)
+
+
+def _unsupported_quantities(card_text: str, bodies: list) -> list:
+    """Count+unit wording in the card ("one-word", "3 days") that no cited body supports.
+    Catches a paraphrase that quietly changes a number (a two-word phrase called one-word)."""
+    text = " ".join(bodies).lower()
+    bad = []
+    for m in _QUANT_RE.finditer(card_text):
+        num, unit = m.group(1).lower(), m.group(2).lower()
+        alts = "|".join(sorted(_NUM_EQUIV.get(num, {num})))
+        if not re.search(rf"\b(?:{alts})[- ]+{unit}s?\b", text):
+            bad.append(m.group(0))
+    return sorted(set(bad))
+
+
 def _judge_source_blocks(cited: list) -> str:
     blocks = []
     for s in cited:
@@ -533,6 +556,10 @@ def validate_card(
     all_bodies = [getattr(s, "_body", "") for s in cited if getattr(s, "_body", "")]
     text_bodies = [getattr(s, "_body", "") for s in cited
                    if getattr(s, "_body", "") and s.modality == "text"]
+    unsupported_q = _unsupported_quantities(f"{card.short_version} {card.long_description}", all_bodies)
+    if unsupported_q:
+        result.flags.append(
+            f"quantity wording not found in any cited source: {unsupported_q}")
     hits, misses = _entity_hits(entities, all_bodies)
     for s in cited:
         s.verbatim_hits, s.verbatim_misses = hits, misses
