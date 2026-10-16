@@ -10,7 +10,6 @@ from __future__ import annotations
 
 import html as _html
 import logging
-import os
 import re
 import threading
 import time
@@ -37,30 +36,6 @@ _last_search = 0.0
 _blocked_until = 0.0
 
 
-def _api_search(domain: str, query: str, n: int) -> list[str] | None:
-    """Real Google results through Serper (SERPER_API_KEY) or Brave (BRAVE_API_KEY).
-    Returns None when no key is configured, so the caller can fall back."""
-    q = f"site:{domain} {query}"
-    try:
-        if os.environ.get("SERPER_API_KEY"):
-            r = httpx.post("https://google.serper.dev/search", json={"q": q, "num": 10},
-                           headers={"X-API-KEY": os.environ["SERPER_API_KEY"]}, timeout=20)
-            r.raise_for_status()
-            links = [x.get("link", "") for x in r.json().get("organic", [])]
-        elif os.environ.get("BRAVE_API_KEY"):
-            r = httpx.get("https://api.search.brave.com/res/v1/web/search", params={"q": q, "count": 10},
-                          headers={"X-Subscription-Token": os.environ["BRAVE_API_KEY"],
-                                   "Accept": "application/json"}, timeout=20)
-            r.raise_for_status()
-            links = [x.get("url", "") for x in r.json().get("web", {}).get("results", [])]
-        else:
-            return None
-    except Exception as e:
-        log.warning("  search API failed for %s: %s", domain, e)
-        return []
-    return [u for u in dict.fromkeys(links) if u.startswith("http") and registered_domain(u) == domain][:n]
-
-
 def site_search(domain: str, query: str, n: int = 3) -> list[str]:
     """Top results for `query` on one site, via DuckDuckGo's HTML endpoint (the grounded
     search tool will not reliably return a named outlet's page, plain site: search does).
@@ -69,9 +44,6 @@ def site_search(domain: str, query: str, n: int = 3) -> list[str]:
     its bot check, this stops asking for 10 minutes. A real search API key would remove
     this limit."""
     global _last_search, _blocked_until
-    api = _api_search(domain, query, n)
-    if api is not None:
-        return api
     with _search_lock:
         if time.time() < _blocked_until:
             return []
