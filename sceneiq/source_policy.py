@@ -137,6 +137,8 @@ A_TIER_DOMAINS = {
 
 # B: established editorial / trade press that Wikipedia does not rate.
 B_TIER_DOMAINS = {
+    "thrillist.com",       # reviewer: the original source for the Matilda oral history
+    "hellomagazine.com",   # reviewer: reliable celebrity press
     "eonline.com",
     "avclub.com",
     "bbc.co.uk",

@@ -62,6 +62,19 @@ def _load() -> dict:
     return _cache
 
 
+def _save(cache: dict) -> None:
+    """Merge with what other processes wrote since we loaded, then replace the file atomically."""
+    try:
+        on_disk = json.loads(_PATH.read_text())
+    except (OSError, ValueError):
+        on_disk = {}
+    on_disk.update(cache)
+    cache.update(on_disk)
+    tmp = _PATH.with_suffix(".tmp")
+    tmp.write_text(json.dumps(dict(sorted(on_disk.items())), indent=1, ensure_ascii=False))
+    tmp.replace(_PATH)
+
+
 def video_id(url: str) -> str:
     m = re.search(r"(?:v=|shorts/|youtu\.be/)([\w-]{11})", url)
     return m.group(1) if m else ""
@@ -122,6 +135,6 @@ def rate_video(client, cfg, url: str) -> dict:
                  "reason": d.get("reason", "")}
             e["tier"] = _tier(e["kind"], e["verified"], e["outlet_domain"])
             cache[info["channel_id"]] = e
-            _PATH.write_text(json.dumps(dict(sorted(cache.items())), indent=1, ensure_ascii=False))
+            _save(cache)
             log.info("  rated channel %s (%s%s) -> %s", e["name"], e["kind"], ", verified" if e["verified"] else "", e["tier"])
     return {"tier": e["tier"], "channel": e["name"], "verified": e["verified"], "kind": e["kind"], "reason": e["reason"]}

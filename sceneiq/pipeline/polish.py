@@ -12,7 +12,7 @@ from __future__ import annotations
 import logging
 from concurrent.futures import ThreadPoolExecutor
 
-from .. import config
+from .. import config, editorial_guide
 from ..gemini import GeminiClient
 
 log = logging.getLogger("sceneiq")
@@ -26,7 +26,10 @@ FULL FACT: {long}
 2. standalone: true only if the headline is clear and interesting to someone who has not seen the film (no unexplained in-film devices like "his inner thought" or "this reboot").
 3. fixed_short: if the headline is longer than {cap} characters, or short_matches_long is false, or standalone is false, write a headline of at most {cap} characters that states the full fact's main claim, names the film or person it is about, and leads with the most surprising specific. Otherwise return an empty string.
 4. long_version: the full fact cut down to AT MOST {long_cap} characters (count them). It must stand on its own: name the people, restate the headline's claim, then keep the single most interesting specific (a quote, number, reason or second party). Complete sentences, plain words, no ellipsis. Use ONLY facts already in the full fact.
-Use only facts already in the full fact for everything you write."""
+Use only facts already in the full fact for everything you write.
+
+HOW REVIEWERS WANT THESE REWRITTEN (follow these, with their before/after examples):
+{examples}"""
 
 _SCHEMA = {
     "type": "object",
@@ -77,7 +80,8 @@ def _polish_one(client: GeminiClient, cfg: config.PipelineConfig, film: str, rec
             d = client.structured(
                 cfg.quality_model,
                 _PROMPT.format(film=film, short=card.short_version, long=card.long_description,
-                               cap=cfg.short_cap, long_cap=cfg.long_cap),
+                               cap=cfg.short_cap, long_cap=cfg.long_cap,
+                               examples=editorial_guide.wording_examples()),
                 _SCHEMA, temperature=0.0 if attempt == 0 else 0.3)
         except Exception:
             continue

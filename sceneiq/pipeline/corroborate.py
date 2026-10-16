@@ -18,6 +18,7 @@ from .. import config, source_policy
 from ..fetch import FetchCache
 from ..gemini import GeminiClient
 from ..models import Anchor, SceneFactCard, SourceRef
+from .origin_sources import find_named_origins
 from .research import _fetch_candidate, _run_query
 
 log = logging.getLogger("sceneiq")
@@ -124,6 +125,18 @@ def corroborate(client: GeminiClient, film_info: dict, anchor: Anchor, card: Sce
     pool = [s for s in packet.sources if s.tier in ("A", "B") and s.modality == "text"
             and getattr(s, "_body", "")]
     found = _check(client, cfg, film, fact, pool)
+    if cfg.find_named_origins:
+        # Pages often credit an outlet by name without linking (\"via Thrillist\"): find it.
+        try:
+            origin = find_named_origins(client, film_info, anchor, fact,
+                                        [s for s in packet.sources if s.modality == "text"], cfg, cache)
+        except Exception as e:
+            log.warning("  named-origin search failed: %s", e)
+            origin = []
+        origin = [s for s in origin if s.tier in ("A", "B")]
+        if origin:
+            packet.sources = list(packet.sources) + origin
+            found += _check(client, cfg, film, fact, origin)
     domains = {f["domain"] for f in found}
     if len(domains) < cfg.corroboration_target and cfg.corroboration_searches > 0:
         try:

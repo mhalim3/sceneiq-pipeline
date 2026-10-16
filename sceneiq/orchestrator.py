@@ -30,6 +30,7 @@ from .pipeline.leads import wikipedia_leads
 from .pipeline.research import research_anchor, research_stronger_sources
 from .pipeline.interest import interest_score, score_facts
 from .pipeline.title_sweep import title_sweep
+from .pipeline.mine_articles import mine_all
 from .pipeline.polish import polish_cards
 from .pipeline.rank import rank_cards
 from .pipeline.validate import validate_card
@@ -746,6 +747,24 @@ def run(
                 ]
         for f in as_completed(futures):
             records.append(f.result())
+
+        # Article mining: strong A/B articles found so far (an oral history, a long
+        # interview) hold more facts than the one the pipeline took from them. Read them
+        # in full and research each new fact like any other candidate.
+        if cfg.mine_articles:
+            try:
+                mined = mine_all(client, cfg, film_info, records, explored)
+            except Exception as e:
+                log.warning("  article mining failed (%s); continuing", e)
+                mined = []
+            if mined:
+                explored.extend(a.anchor_element for a in mined)
+                anchors_proposed += len(mined)
+                log.info("Stage 1c: researching %d fact(s) mined from strong articles ...", len(mined))
+                mfuts = [pool.submit(_process_anchor, client, film_info, a, cfg, cache)
+                         for a in _claim_dedup(client, cfg, film_info, mined)]
+                for f in as_completed(mfuts):
+                    records.append(f.result())
 
         # Adaptive sweep: title-level facts are the primary card class, so
         # when yield is short of the fact target, spend more sweep rounds

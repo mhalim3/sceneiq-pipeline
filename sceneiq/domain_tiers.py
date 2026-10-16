@@ -56,6 +56,19 @@ def _load() -> dict:
     return _cache
 
 
+def _save(cache: dict) -> None:
+    """Merge with what other processes wrote since we loaded, then replace the file atomically."""
+    try:
+        on_disk = json.loads(_PATH.read_text())
+    except (OSError, ValueError):
+        on_disk = {}
+    on_disk.update(cache)
+    cache.update(on_disk)
+    tmp = _PATH.with_suffix(".tmp")
+    tmp.write_text(json.dumps(dict(sorted(on_disk.items())), indent=1, ensure_ascii=False))
+    tmp.replace(_PATH)
+
+
 def lookup(domain: str) -> str:
     """Cached auto-rating ('B' | 'C') or '' when the domain has not been rated."""
     return _load().get(domain, {}).get("tier", "")
@@ -81,7 +94,7 @@ def resolve(client, cfg, domain: str, title: str = "", sample: str = "") -> str:
             tier = "B" if d.get("tier") == "B" else "C"
             cache[domain] = {"tier": tier, "outlet_type": d.get("outlet_type", ""),
                              "reason": d.get("reason", "")}
-            _PATH.write_text(json.dumps(dict(sorted(cache.items())), indent=1, ensure_ascii=False))
+            _save(cache)
             log.info("  auto-rated %s -> %s (%s)", domain, tier, d.get("outlet_type", ""))
             return tier
         except Exception as e:  # leave unknown; the judge still decides per page

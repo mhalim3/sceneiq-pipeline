@@ -157,6 +157,101 @@ PRINCIPLES = [
      "another says several actresses were offered the role). A 'based on the novel by Amanda "
      "Brown' card orients the viewer and makes later cards make sense.",
      []),
+    # --- Added from the reviewer's comments on the Step Brothers / Matilda round (Oct 2026) ---
+    ("film_title_is_not_needed",
+     "Do not open the short or long by naming the movie, and never write 'In <title>,' or "
+     "'<Title>' as a possessive when the title is also a character's name (Matilda). The "
+     "viewer is already watching it. Name the film only when the fact is about the film "
+     "itself or compares it to another.",
+     "Cards are read mid-movie. Introducing the title wastes the few characters of a short "
+     "and is confusing when the title is a person: 'Matilda's iconic cake scene' reads as if "
+     "Matilda owns it. It has come up on several facts.",
+     [("In Matilda, the Chokey's terrifying nails were actually made of harmless rubber.",
+       "The Chokey closet's terrifying nails were actually made of harmless rubber.",
+       "no title, and a few words say what the Chokey is"),
+      ("Step Brothers' Richard Jenkins once worked for co-star John C. Reilly's father.",
+       "Actor Richard Jenkins (Dale's Dad) worked for co-star John C. Reilly's dad.",
+       "drop the title, name the role instead")]),
+    ("famous_names_need_no_title",
+     "For household names (Danny DeVito, Brad Pitt, Leonardo DiCaprio, Will Ferrell) drop "
+     "'the actor' / 'the director'. Keep a short descriptor for people whose names are not "
+     "universally known (co-stars like John C. Reilly, crew, minor cast).",
+     "Saying 'director Danny DeVito' to a general audience adds length without helping; saying "
+     "just 'Reilly' to the same audience does not tell them who that is.",
+     [("Director Danny DeVito read 'Matilda' to his kids every night.",
+       "Danny DeVito's kids' love for the book inspired him to make the film.",
+       "no title for DeVito; also leads with the human angle")]),
+    ("role_in_parentheses",
+     "When there is room, say who a character is or which actor plays them, in parentheses: "
+     "'Derek (played by Adam Scott)', 'Richard Jenkins (Dale's Dad)'.",
+     "The viewer may not connect a name to a role. A few extra words let them place the fact.",
+     [("Jon Hamm was one of the finalists for the role of Derek.",
+       "Jon Hamm was one of the finalists for the role of Derek (played by Adam Scott).",
+       "uses the spare characters to say who Derek is")]),
+    ("explain_unfamiliar_terms",
+     "If the fact depends on an in-film name or term (the Chokey, the Catalina Wine Mixer, "
+     "Mr. Han), add a few words saying what it is.",
+     "A viewer who has not tracked every name cannot decode 'the Chokey'. A short descriptor "
+     "makes the fact stand alone.",
+     [("The nails in Matilda's Chokey were harmless rubber.",
+       "The nails in the torture closet, called the 'Chokey', were harmless rubber.",
+       "says what the Chokey is")]),
+    ("attribute_conflicts",
+     "When sources disagree on a number or detail, corroborate with other sources, prefer the "
+     "higher tier or the person who was there, and attribute it: 'According to Will Ferrell, "
+     "it cost $10,000.' Mention the other figure only if there is room.",
+     "Two outlets repeating different numbers makes a card wrong half the time. Attributing "
+     "to the person who knows keeps it true even if the other number is also reported.",
+     [("The prop testicles rubbed on the drum set cost up to $25,000.",
+       "According to Will Ferrell, the prop testicles cost $10,000.",
+       "Ferrell said $10,000; the director's commentary reportedly said $25,000")]),
+    ("real_world_actionable",
+     "If something from the film can be experienced in real life (an event, a place, a "
+     "product), say that plainly in the short: 'You can buy tickets to...', 'You can visit...'.",
+     "A viewer who can go do the thing will repeat the fact. Vague phrasing ('it is now a "
+     "three-day festival') hides the part that matters.",
+     [("The Catalina Wine Mixer began as a real event in 2015. It is now a three-day festival.",
+       "You can buy tickets to the real Catalina Wine Mixer.",
+       "state what the viewer can actually do")]),
+    ("juiciest_detail",
+     "Of the details a source gives, lead with the most vivid, specific one: the odd gift, the "
+     "exact count, the quotable line. Not the generic version of it.",
+     "'Shot 1.5 million feet of film' is fine; 'Kodak sent champagne' is what people repeat. "
+     "'The gardener had no idea' is fine; 'the most incredible bully to her clients' is the "
+     "line.",
+     [("Due to improv, the first cut of 'Step Brothers' was five hours long. The production "
+       "shot so much film that Kodak sent a note.",
+       "Step Brothers shot 1.5 million feet of film thanks to all the improv, and Kodak sent "
+       "over champagne.", "the champagne is the detail"),
+      ("Pam Ferris based Miss Trunchbull on her gardener, who had no idea.",
+       "Pam Ferris based Miss Trunchbull on her gardener, whom she called 'the most "
+       "incredible bully to her clients.'", "quote the memorable line"),
+      ("Painting on chocolate smudges made the cake scene take forever.",
+       "Cinematographer Stefan Czapsky says he shot 144 angles of Bruce eating the cake.",
+       "a count beats a vague 'took forever'")]),
+    ("name_the_reference",
+     "Name the actual thing a fact refers to (the song, the scene, the line) instead of an "
+     "unexplained phrase, so the viewer knows why it matters.",
+     "'Before the project was scrapped' means nothing to someone who does not know there was a "
+     "rap in the movie. Naming 'Boats N Hoes' ties the fact to something they just heard.",
+     [("A rap album was planned before the project was scrapped.",
+       "Adam McKay says they wrote 'four or five' rough raps for a Dale and Brennan album like "
+       "the movie's 'Boats N Hoes.'", "names the song")]),
+    ("only_what_sources_say",
+     "Use the words the source uses. Do not turn a phrase into a count ('one-word pitch' for "
+     "'bunk beds', which is two words) or add a motive or a sequence the source does not give.",
+     "A reviewer caught 'one-word pitch' for 'bunk beds'. The wording came from a paraphrase "
+     "that no source actually used. Quote the phrase itself instead.",
+     [("Sony greenlit Step Brothers based on a one-word pitch: 'bunk beds'.",
+       "Step Brothers grew from a one-line 'bunk beds' joke Will Ferrell and John C. Reilly "
+       "made while working on Talladega Nights.", "describes what the sources say")]),
+    ("easter_eggs_in_plain_words",
+     "Say plainly what the viewer can spot: 'the real Catalina Island is visible in the "
+     "background', not 'seen in the background' with no subject.",
+     "A trailing fragment ('seen in the background') forces the reader to rebuild the sentence.",
+     [("The Catalina Wine Mixer was not filmed on Catalina, seen in the background.",
+       "During the Catalina Wine Mixer, the real Catalina Island is a visible easter egg.",
+       "a complete sentence with the subject")]),
 ]
 
 # Kinds of fact SceneIQ does NOT show, from the reviewer's comments on the five-title
@@ -242,6 +337,21 @@ reads 22BLONDE; Elle scored a 179 on her LSAT."""
 # Principles about WHICH facts are interesting. Left out of the writer's guide while the
 # 1-5 interest scale is being redefined; the writer is only asked to PHRASE facts well.
 _SELECTION_PRINCIPLES = {"story_over_description", "not_obvious"}
+
+
+def wording_examples(limit: int = 14) -> str:
+    """Before -> after pairs from reviewer edits, for the final copy-edit prompt."""
+    ids = {"film_title_is_not_needed", "famous_names_need_no_title", "role_in_parentheses",
+           "explain_unfamiliar_terms", "attribute_conflicts", "real_world_actionable",
+           "juiciest_detail", "name_the_reference", "only_what_sources_say",
+           "easter_eggs_in_plain_words"}
+    out = []
+    for pid, rule, _why, ex in PRINCIPLES:
+        if pid in ids:
+            out.append(f"* {rule}")
+            for b, a, note in ex:
+                out.append(f'    BEFORE: "{b}"\n    AFTER:  "{a}"' + (f"   ({note})" if note else ""))
+    return "\n".join(out[: limit * 2])
 
 
 def writer_block() -> str:
