@@ -178,9 +178,10 @@ class PipelineConfig:
     # Read strong A/B articles in full and turn each interesting fact in them into a card
     # (the Ringer oral history, the Newsweek interview) instead of using them for one fact.
     mine_articles: bool = True
-    mine_max_articles: int = 3
+    mine_max_articles: int = 4
     mine_facts_per_article: int = 10
     mine_min_chars: int = 6000
+    mine_min_title_mentions: int = 8   # skip long pages that only mention the film in passing
     # --- Quality settings (the three goals: interesting, well written, well sourced) ---
     # Judgement-heavy steps (card writing, repair, validation, interest, dedup, consistency)
     # run on the stronger model; broad search and structuring stay on the fast one.

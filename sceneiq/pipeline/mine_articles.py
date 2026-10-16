@@ -52,8 +52,20 @@ def _norm(t: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
 
 
-def strong_articles(records: list, cfg: config.PipelineConfig) -> list:
-    """Unique long A/B text pages found while researching `records`, best first."""
+def _about_film(body: str, url: str, film_title: str) -> int:
+    """How strongly the page is about this film: title mentions, doubled if it is in the URL
+    or the first 600 characters (a long page that merely mentions the film does not count)."""
+    t = film_title.lower()
+    n = body.lower().count(t)
+    slug = re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+    head = body[:600].lower()
+    if slug in url.lower() or t in head:
+        n += 10
+    return n
+
+
+def strong_articles(records: list, cfg: config.PipelineConfig, film_title: str = "") -> list:
+    """Unique long A/B text pages about this film found while researching `records`, best first."""
     seen: dict = {}
     for r in records:
         packet = getattr(r, "evidence", None)
@@ -63,9 +75,12 @@ def strong_articles(records: list, cfg: config.PipelineConfig) -> list:
             body = getattr(s, "_body", "") or ""
             if s.modality != "text" or s.tier not in ("A", "B") or len(body) < cfg.mine_min_chars:
                 continue
+            if film_title and _about_film(body, s.url, film_title) < cfg.mine_min_title_mentions:
+                continue
             e = seen.setdefault(s.url, [s, 0])
             e[1] += 1
-    ranked = sorted(seen.values(), key=lambda e: (-(e[0].tier == "A"), -e[1], -len(getattr(e[0], "_body", ""))))
+    ranked = sorted(seen.values(), key=lambda e: (-_about_film(getattr(e[0], "_body", ""), e[0].url, film_title),
+                                                  -e[1], -len(getattr(e[0], "_body", ""))))
     return [e[0] for e in ranked[: cfg.mine_max_articles]]
 
 
@@ -107,7 +122,7 @@ def mine_article(client, cfg: config.PipelineConfig, film_info: dict, src, have:
 def mine_all(client, cfg, film_info, records: list, explored: list[str]) -> list[Anchor]:
     out: list[Anchor] = []
     have = list(explored)
-    for src in strong_articles(records, cfg):
+    for src in strong_articles(records, cfg, str(film_info.get("title", ""))):
         got = mine_article(client, cfg, film_info, src, have)
         have += [a.anchor_element for a in got]
         out += got
