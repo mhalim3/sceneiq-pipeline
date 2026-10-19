@@ -28,7 +28,7 @@ from tenacity import (
     retry_if_exception,
 )
 
-from . import claude_backend, config
+from . import config
 
 
 class SchemaViolation(Exception):
@@ -107,8 +107,6 @@ class GeminiClient:
         return self._grounded_calls
 
     def grounded(self, model: str, prompt: str, temperature: float = 0.3) -> GroundedResult:
-        if claude_backend.is_claude(model):        # Anthropic web search; not Google quota
-            return claude_backend.grounded(model, prompt, temperature)
         # Reserve one unit of budget BEFORE the (retried) call, so retries
         # don't double-count and concurrent workers can't overshoot the cap.
         with self._grounded_lock:
@@ -170,8 +168,6 @@ class GeminiClient:
     def structured(self, model: str, prompt: str, schema: dict, temperature: float = 0.2):
         """Schema-mode JSON generation. Retries schema violations up to
         MAX_RETRIES, then raises SchemaViolation (final rejection per PRD)."""
-        if claude_backend.is_claude(model):
-            return claude_backend.structured(model, prompt, schema, temperature)
         last_err: Exception | None = None
         for _ in range(config.MAX_RETRIES):
             try:

@@ -22,9 +22,6 @@ FAST_MODEL = os.environ.get("SCENEIQ_FAST_MODEL", "gemini-2.5-flash")
 # narrative. Flash is several times faster here at equivalent retrieval.
 RESEARCH_MODEL = os.environ.get("SCENEIQ_RESEARCH_MODEL", DEEP_MODEL)
 
-# Gemini watches YouTube videos (no Claude equivalent), whatever model does the research.
-VIDEO_MODEL = os.environ.get("SCENEIQ_VIDEO_MODEL", "gemini-2.5-pro")
-
 API_KEY_ENV = "GEMINI_API_KEY"
 
 # PRD: "Retry via tenacity on transient errors, with final rejection on
