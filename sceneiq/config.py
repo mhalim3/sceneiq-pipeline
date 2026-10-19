@@ -182,6 +182,20 @@ class PipelineConfig:
     mine_facts_per_article: int = 10
     mine_min_chars: int = 6000
     mine_min_title_mentions: int = 8   # skip long pages that only mention the film in passing
+    # Deep research: go to the trusted outlets by name, follow Wikipedia's references and the
+    # articles' own links, mine every strong article in several passes, and repeat on whatever
+    # new articles the mined facts lead to (see pipeline/deep_research.py).
+    deep_research: bool = True
+    deep_rounds: int = 3
+    deep_articles_per_round: int = 10
+    deep_mine_passes: int = 2
+    deep_min_chars: int = 3500
+    deep_min_title_mentions: int = 4
+    authority_outlets: int = 32
+    authority_per_outlet: int = 3
+    wiki_ref_max: int = 30
+    link_follow_max: int = 25
+    corroboration_outlets: int = 8     # per fact with <2 A/B outlets: look for it on this many top outlets
     # --- Quality settings (the three goals: interesting, well written, well sourced) ---
     # Judgement-heavy steps (card writing, repair, validation, interest, dedup, consistency)
     # run on the stronger model; broad search and structuring stay on the fast one.

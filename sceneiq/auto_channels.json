@@ -8,6 +8,33 @@
   "reason": "This is the official, verified channel for BAFTA (British Academy of Film and Television Arts), a major cultural and industry organization.",
   "tier": "B"
  },
+ "UC0EA6Ige7-T9OYqItq0LD-w": {
+  "name": "masusockvevo",
+  "handle": "@masusockvevo5401",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name does not correspond to any official studio, outlet, or talent associated with the film.",
+  "tier": "C"
+ },
+ "UC0GPhm-v6Otwgj9Th8-j3vg": {
+  "name": "expediTIously with Tip T.I. Harris",
+  "handle": "@ExpediTIouslywithTipTIHarris",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is a podcast channel hosted by actor T.I. Harris, but it is not verified.",
+  "tier": "C"
+ },
+ "UC14Nzb157QgC23rIYOROrYw": {
+  "name": "Showbiz Junkies",
+  "handle": "@ShowbizJunkies",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This channel is not verified, so it cannot be confidently identified as an official outlet and is classified as a fan or creator channel.",
+  "tier": "C"
+ },
  "UC4fYBNAjjXqd4mH_KmFLgLQ": {
   "name": "RealVideoUK",
   "handle": "@RealVideoUK",
@@ -16,6 +43,33 @@
   "outlet_domain": "",
   "reason": "This is an unverified channel that does not appear to be the official account for a known media outlet, studio, or person involved in the film.",
   "tier": "C"
+ },
+ "UC5JV9ytnZImNSqCJYCAckkw": {
+  "name": "Backstage",
+  "handle": "@BackstageCast",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This channel is not verified, so it cannot be confirmed as the official channel for the Backstage publication and is likely a fan or creator account.",
+  "tier": "C"
+ },
+ "UC5N5CzxqWoF1Far2rvRRoWg": {
+  "name": "Josh Horowitz Clips",
+  "handle": "@JoshHorowitzClips",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel with 'Clips' in the name, indicating it is a fan or creator channel that posts clips of interviews rather than an official channel.",
+  "tier": "C"
+ },
+ "UC8-Th83bH_thdKZDJCrn88g": {
+  "name": "The Tonight Show Starring Jimmy Fallon",
+  "handle": "@fallontonight",
+  "verified": true,
+  "kind": "studio_network",
+  "outlet_domain": "nbc.com",
+  "reason": "This is the official, verified YouTube channel for 'The Tonight Show Starring Jimmy Fallon,' a late-night talk show that airs on the NBC network.",
+  "tier": "B"
  },
  "UCAh90KLYVaMSj_HaWejnpYA": {
   "name": "WGA West",
@@ -35,6 +89,42 @@
   "reason": "The channel's name, \"Did You Catch This?\", indicates a focus on movie trivia and hidden details, which is characteristic of a fan or creator channel.",
   "tier": "C"
  },
+ "UCEHV7epH9Gkt343fdwCzMtg": {
+  "name": "csilver522",
+  "handle": "@csilver522",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and has a personal username, indicating it is a fan or independent creator who recorded a live event.",
+  "tier": "C"
+ },
+ "UCGbQJy-531_5vfphay-rChQ": {
+  "name": "People",
+  "handle": "@People",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "people.com",
+  "reason": "This is the official, verified YouTube channel for the entertainment news publication People magazine.",
+  "tier": "A"
+ },
+ "UCH3X35bYcT5opTh9TsUKX4A": {
+  "name": "AUC Backup",
+  "handle": "@aucbackup",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name, \"AUC Backup,\" suggests it is a fan or creator channel re-uploading content rather than an official source.",
+  "tier": "C"
+ },
+ "UCHvnMsLnyQZscrq-fOckiiw": {
+  "name": "BlackTree TV",
+  "handle": "@blacktreemedia",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "blacktree.tv",
+  "reason": "This is the official, verified channel for BlackTree TV, an entertainment media outlet that conducts interviews with film talent and crew.",
+  "tier": "B"
+ },
  "UCIPfzhYUUeRlJQOpK3JZcbw": {
   "name": "Movies Unbound",
   "handle": "@MoviesUnbound",
@@ -43,6 +133,42 @@
   "outlet_domain": "",
   "reason": "The channel is not verified and its name does not correspond to an official studio, outlet, or talent, indicating it is a fan or creator channel.",
   "tier": "C"
+ },
+ "UCJJap_3RGZ2UxqLTLz0K39g": {
+  "name": "Sony Pictures Releasing UK",
+  "handle": "@SonyPicsUK",
+  "verified": true,
+  "kind": "studio_network",
+  "outlet_domain": "",
+  "reason": "The channel name \"Sony Pictures Releasing UK\" and its verified badge indicate this is the official channel for the UK distribution arm of the film studio.",
+  "tier": "B"
+ },
+ "UCJofgG0xFsSOfhBlMikjL7w": {
+  "name": "Movie & TV Extras",
+  "handle": "@movietvextras",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel that posts movie clips and behind-the-scenes content, which is typical of a fan or independent creator.",
+  "tier": "C"
+ },
+ "UCLkC7MXQLYL2Z7w7HExNiwA": {
+  "name": "Curtis Akeem",
+  "handle": "@CurtisAkeem",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is the channel of an unverified individual creator who posts interviews and commentary.",
+  "tier": "C"
+ },
+ "UCNNTZgxNQuBrhbO0VrG8woA": {
+  "name": "No Jumper",
+  "handle": "@NoJumper",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "nojumper.com",
+  "reason": "This is the official channel for the No Jumper podcast and media platform, which functions as a culture and entertainment publication focused on interviews.",
+  "tier": "B"
  },
  "UCOan0aqy1BjzFfCL8sXHmcA": {
   "name": "JoBlo Behind-the-Scenes + Bloopers",
@@ -53,6 +179,96 @@
   "reason": "This is the official verified channel for JoBlo, a long-running movie news and entertainment publication.",
   "tier": "B"
  },
+ "UCQ2LRXxgB5BmwsDpBUmuspw": {
+  "name": "Golden Culture",
+  "handle": "@GoldenCultureHQ",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This unverified channel posts 'facts you missed' style videos, which is characteristic of a fan or independent creator.",
+  "tier": "C"
+ },
+ "UCTAo1IwS3UvYKkZfIx4CCng": {
+  "name": "GAFollowers",
+  "handle": "@gafollowers",
+  "verified": false,
+  "kind": "outlet",
+  "outlet_domain": "gafollowers.com",
+  "reason": "This is the channel for GAFollowers, a Georgia-based media outlet that posts original interviews and news content.",
+  "tier": "C"
+ },
+ "UCTTaZCYEMVp6mM9w0auHK3Q": {
+  "name": "Hollywood Suite",
+  "handle": "@HollywoodSuiteTV",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified, so it cannot be confidently identified as the official channel for the Hollywood Suite television network and is classified as a fan or creator channel.",
+  "tier": "C"
+ },
+ "UCYBxMDxY8_PZvY6gf7gW7Ew": {
+  "name": "Killercars4",
+  "handle": "@killercars4",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name, 'Killercars4', does not indicate it is an official channel for a studio, outlet, or talent.",
+  "tier": "C"
+ },
+ "UCYyDbdaja1UDNdFSwUrYVGA": {
+  "name": "John Campea",
+  "handle": "@johncampea",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "thejohncampeashow.com",
+  "reason": "This is the official, verified channel for John Campea, a professional film critic and host who runs his own entertainment news and commentary show.",
+  "tier": "B"
+ },
+ "UCZVRh-6RCAGg2gHVc0HoC_Q": {
+  "name": "Brud Gotts",
+  "handle": "@Brudgy",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This channel is not verified and does not appear to be an official outlet, studio, or person involved with the film, making it a fan or independent creator.",
+  "tier": "C"
+ },
+ "UCZyFMVqmTfv2s1omj0d1Kjg": {
+  "name": "TipImSerious",
+  "handle": "@TipImSerious",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel that appears to be a fan account re-uploading an old movie interview.",
+  "tier": "C"
+ },
+ "UCZzwjZPc6R_PbnDgFVMwlvQ": {
+  "name": "Capital",
+  "handle": "@CapitalOfficial",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "capitalfm.com",
+  "reason": "This is the official, verified channel for Capital, a UK radio network and entertainment media brand that conducts celebrity interviews.",
+  "tier": "B"
+ },
+ "UCatbb7X8J0TG3OiIY20hpyA": {
+  "name": "Yahoo Entertainment",
+  "handle": "@yahooentertainment",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "yahoo.com",
+  "reason": "This is the official, verified YouTube channel for Yahoo Entertainment, a major entertainment news publication.",
+  "tier": "B"
+ },
+ "UCfdPt9PMpzKgaEiSvbQN24g": {
+  "name": "Y it is I",
+  "handle": "@YitisI1985",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and has a generic, personal-sounding name, indicating it is a fan or independent creator.",
+  "tier": "C"
+ },
  "UCgCudMsK-kxYxB2RgiS3bzQ": {
   "name": "TBS",
   "handle": "@TBS",
@@ -60,6 +276,60 @@
   "kind": "studio_network",
   "outlet_domain": "tbs.com",
   "reason": "This is the official verified channel for the television network TBS.",
+  "tier": "B"
+ },
+ "UCgKkNPU2Ib7_TcyAl8M2S-w": {
+  "name": "Warner Bros. Entertainment",
+  "handle": "@warnerbrosentertainment",
+  "verified": true,
+  "kind": "studio_network",
+  "outlet_domain": "",
+  "reason": "The channel name, handle, and verified badge indicate this is the official YouTube channel for the film studio Warner Bros. Entertainment.",
+  "tier": "B"
+ },
+ "UCgcJaKZZ98YdmtcsyF0KThA": {
+  "name": "NOW PLAYING",
+  "handle": "@officialnowplaying",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and has a generic name, making it likely a fan or independent creator account rather than an official source.",
+  "tier": "C"
+ },
+ "UChECOUmv_1wTnirWCVVSHXQ": {
+  "name": "BLUFOX89",
+  "handle": "@blufox89",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name does not indicate it is an official outlet, studio, or talent channel.",
+  "tier": "C"
+ },
+ "UChwgB3XD2h__UI3bjOk_4Fg": {
+  "name": "Rap-Up",
+  "handle": "@RapUpTV",
+  "verified": false,
+  "kind": "outlet",
+  "outlet_domain": "rap-up.com",
+  "reason": "This is the official YouTube channel for the hip-hop and R&B news outlet Rap-Up.",
+  "tier": "C"
+ },
+ "UCi7GJNg51C3jgmYTUwqoUXA": {
+  "name": "Team Coco",
+  "handle": "@TeamCoco",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "teamcoco.com",
+  "reason": "This is the official, verified channel for Conan O'Brien's digital media company, Team Coco, which posts clips from his talk shows.",
+  "tier": "B"
+ },
+ "UCjDsbbzHgTrGc4Ff26TJtsA": {
+  "name": "E! News",
+  "handle": "@enews",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "eonline.com",
+  "reason": "This is the official, verified YouTube channel for the entertainment news outlet E! News.",
   "tier": "B"
  },
  "UCkTtNUjvPcSc50HyO7sBtxg": {
@@ -80,6 +350,33 @@
   "reason": "The channel name 'MovieBestBits' and the lack of a verified badge indicate this is a fan-run channel that uploads movie clips, not an official source.",
   "tier": "C"
  },
+ "UCl86gUsQB1IBE9b21ouDgUA": {
+  "name": "Brandi Hill Presents",
+  "handle": "@BrandiHillPresents",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and the video title is a trivia/\"hidden details\" style video, which is typical of an independent creator or fan channel.",
+  "tier": "C"
+ },
+ "UCm_sXUszgtxpLL-tP2_gkOg": {
+  "name": "Socially Complicated",
+  "handle": "@SociallyComplicated",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel that posts movie clips, which is typical of a fan or independent creator.",
+  "tier": "C"
+ },
+ "UCoEpkKAU5FWRblRzfcIY-Mw": {
+  "name": "HIVEMIND UNLIMITED",
+  "handle": "@HIVEMIND.UNLIMITED",
+  "verified": true,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is a verified independent creator channel that produces retrospective and analytical content about films.",
+  "tier": "C"
+ },
  "UCpy3KkRJ_Nw23s1i3DOM0uQ": {
   "name": "Iconic Star Rewind",
   "handle": "@IconicStarRewind",
@@ -89,6 +386,24 @@
   "reason": "The channel is not verified and the video title, \"10 Weird Facts You Didn’t Know!\", is a typical format for a fan or independent creator channel.",
   "tier": "C"
  },
+ "UCq1jDV9ov_L8jiwLplhI3-w": {
+  "name": "Star Fun Facts",
+  "handle": "@StarFunFacts",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel that posts movie trivia and fun facts, which is characteristic of a fan or independent creator.",
+  "tier": "C"
+ },
+ "UCqISR0F9-nCth-V2r4Qy75Q": {
+  "name": "REVOLT",
+  "handle": "@revolt",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "revolt.tv",
+  "reason": "This is the official verified channel for Revolt, a media company and digital cable network focused on music and hip-hop culture.",
+  "tier": "B"
+ },
  "UCsEukrAd64fqA7FjwkmZ_Dw": {
   "name": "GQ",
   "handle": "@GQVideos",
@@ -97,6 +412,15 @@
   "outlet_domain": "gq.com",
   "reason": "This is the official verified YouTube channel for GQ, a men's magazine and entertainment/culture publication.",
   "tier": "A"
+ },
+ "UCtbIhnDB5_Wzprlrk1STKAA": {
+  "name": "Mr. Thrasha",
+  "handle": "@Mr.Thrasha",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel for an independent creator whose content focuses on movie filming locations, which is a fan-centric topic.",
+  "tier": "C"
  },
  "UCzfMa5hPJwPM9OsMmUOm8XQ": {
   "name": "The Classic Rewind",

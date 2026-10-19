@@ -31,6 +31,7 @@ _NOT_ARTICLES = {"youtube.com", "youtu.be", "facebook.com", "instagram.com", "tw
 _UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
 
 
+_NEWS_SLOTS = threading.BoundedSemaphore(4)     # be polite to Google News
 _search_lock = threading.Lock()
 _last_search = 0.0
 _blocked_until = 0.0
@@ -45,9 +46,10 @@ def _news_search(domain: str, query: str, n: int) -> list[str]:
     except ImportError:
         return []
     try:
-        r = httpx.get("https://news.google.com/rss/search",
-                      params={"q": f"site:{domain} {query}", "hl": "en-US", "gl": "US", "ceid": "US:en"},
-                      headers=_UA, follow_redirects=True, timeout=20)
+        with _NEWS_SLOTS:
+            r = httpx.get("https://news.google.com/rss/search",
+                          params={"q": f"site:{domain} {query}", "hl": "en-US", "gl": "US", "ceid": "US:en"},
+                          headers=_UA, follow_redirects=True, timeout=20)
         links = [_html.unescape(m) for m in re.findall(r"<item>.*?<link>(.*?)</link>", r.text, re.S)]
     except Exception as e:
         log.warning("  news search failed for %s: %s", domain, e)

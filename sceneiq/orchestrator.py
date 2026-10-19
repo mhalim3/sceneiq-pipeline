@@ -30,6 +30,7 @@ from .pipeline.leads import wikipedia_leads
 from .pipeline.research import research_anchor, research_stronger_sources
 from .pipeline.interest import interest_score, score_facts
 from .pipeline.title_sweep import title_sweep
+from .pipeline.deep_research import deep_research
 from .pipeline.mine_articles import mine_all
 from .pipeline.polish import polish_cards
 from .pipeline.rank import rank_cards
@@ -828,7 +829,19 @@ def run(
         # "already have" list is every sweep anchor and every approved card, so mined facts repeat less.
         # Strong A/B articles (an oral history, a long interview) hold more facts than the one
         # the pipeline took from them: read them in full, research each new fact like any other.
-        if cfg.mine_articles:
+        if cfg.deep_research:
+            def _process(anchors):
+                futs = [pool.submit(_process_anchor, client, film_info, a, cfg, cache)
+                        for a in _claim_dedup(client, cfg, film_info, anchors)]
+                return [f.result() for f in as_completed(futs)]
+            try:
+                records.extend(deep_research(
+                    client, cfg, film_info, cache, records, explored,
+                    lambda: [r.card.long_description for r in records if r.status == "emitted" and r.card],
+                    _process))
+            except Exception as e:
+                log.warning("  deep research failed (%s); continuing", e)
+        elif cfg.mine_articles:
             try:
                 mined = mine_all(client, cfg, film_info, records,
                                  explored + [r.card.long_description for r in records

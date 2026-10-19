@@ -39,7 +39,7 @@ Rules:
 - Only facts this article states. Copy ONE supporting passage word for word from the article into "quote".
 - Skip anything on the "already have" list or that repeats it in different words.
 - Skip kinds of fact listed under DO NOT SHOW.
-- category_guess: one word (casting, filming, production, music, trivia, cast...). search_queries: 2 runnable searches that would find another source for it.
+{focus}- category_guess: one word (casting, filming, production, music, trivia, cast...). search_queries: 2 runnable searches that would find another source for it.
 
 ALREADY HAVE:
 {have}
@@ -84,7 +84,8 @@ def strong_articles(records: list, cfg: config.PipelineConfig, film_title: str =
     return [e[0] for e in ranked[: cfg.mine_max_articles]]
 
 
-def mine_article(client, cfg: config.PipelineConfig, film_info: dict, src, have: list[str]) -> list[Anchor]:
+def mine_article(client, cfg: config.PipelineConfig, film_info: dict, src, have: list[str],
+                 focus: str = "") -> list[Anchor]:
     body = getattr(src, "_body", "")[:60000]
     film = str(film_info.get("title", ""))
     try:
@@ -93,6 +94,7 @@ def mine_article(client, cfg: config.PipelineConfig, film_info: dict, src, have:
             _PROMPT.format(film=film, year=film_info.get("year", ""), domain=src.domain,
                            guide=editorial_guide.interest_block() + "\n\n" + editorial_guide.exclusions_block(),
                            max_facts=cfg.mine_facts_per_article,
+                           focus=(focus + "\n") if focus else "",
                            have="\n".join(f"- {h[:160]}" for h in have[-60:]) or "(nothing yet)",
                            body=body),
             _SCHEMA, temperature=0.2)

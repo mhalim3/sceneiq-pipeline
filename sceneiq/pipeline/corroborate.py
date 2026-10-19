@@ -18,6 +18,7 @@ from .. import config, source_policy
 from ..fetch import FetchCache
 from ..gemini import GeminiClient
 from ..models import Anchor, SceneFactCard, SourceRef
+from . import authority
 from .origin_sources import find_named_origins
 from .research import _fetch_candidate, _run_query
 
@@ -138,6 +139,25 @@ def corroborate(client: GeminiClient, film_info: dict, anchor: Anchor, card: Sce
             packet.sources = list(packet.sources) + origin
             found += _check(client, cfg, film, fact, origin)
     domains = {f["domain"] for f in found}
+    if len(domains) < 2 and cfg.corroboration_outlets > 0:
+        # Fewer than two outlets: look for the fact on the most reliable outlets by name
+        # (not just what search happens to rank), the way a person would.
+        try:
+            tops = [d for d in authority.AUTHORITY_OUTLETS if d not in domains][: cfg.corroboration_outlets]
+            kw = authority.key_words(film, fact)
+            qs = [f"{film} {kw}"]
+            with ThreadPoolExecutor(max_workers=4) as pool:
+                lists = list(pool.map(lambda d: authority.outlet_urls(d, qs, 2), tops))
+            have_urls = {s.url for s in packet.sources}
+            urls = [u for l in lists for u in l if u not in have_urls]
+            extra = authority._fetch_many(urls, film_info, cfg, cache, client, have_urls)
+        except Exception as e:
+            log.warning("  outlet corroboration failed: %s", e)
+            extra = []
+        if extra:
+            packet.sources = list(packet.sources) + extra
+            found += _check(client, cfg, film, fact, extra)
+            domains = {f["domain"] for f in found}
     if len(domains) < cfg.corroboration_target and cfg.corroboration_searches > 0:
         try:
             extra = _search_more(client, film_info, anchor, fact, cfg, cache, {s.url for s in packet.sources})
