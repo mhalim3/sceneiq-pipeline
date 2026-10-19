@@ -748,24 +748,6 @@ def run(
         for f in as_completed(futures):
             records.append(f.result())
 
-        # Article mining: strong A/B articles found so far (an oral history, a long
-        # interview) hold more facts than the one the pipeline took from them. Read them
-        # in full and research each new fact like any other candidate.
-        if cfg.mine_articles:
-            try:
-                mined = mine_all(client, cfg, film_info, records, explored)
-            except Exception as e:
-                log.warning("  article mining failed (%s); continuing", e)
-                mined = []
-            if mined:
-                explored.extend(a.anchor_element for a in mined)
-                anchors_proposed += len(mined)
-                log.info("Stage 1c: researching %d fact(s) mined from strong articles ...", len(mined))
-                mfuts = [pool.submit(_process_anchor, client, film_info, a, cfg, cache)
-                         for a in _claim_dedup(client, cfg, film_info, mined)]
-                for f in as_completed(mfuts):
-                    records.append(f.result())
-
         # Adaptive sweep: title-level facts are the primary card class, so
         # when yield is short of the fact target, spend more sweep rounds
         # (fresh query angles + avoid-list) rather than more scene passes.
@@ -839,6 +821,29 @@ def run(
                 log.info("  sweep round %d: nothing new approved — stopping", sweep_round)
                 break
             approved_so_far = now_approved
+
+        # Article mining runs AFTER the adaptive sweep rounds. Run first, its approvals
+        # counted toward the sweep target and switched the extra sweep rounds off, which
+        # cost more facts than mining added (Karate Kid went from 23 to 14). Here the
+        # "already have" list is every sweep anchor and every approved card, so mined facts repeat less.
+        # Strong A/B articles (an oral history, a long interview) hold more facts than the one
+        # the pipeline took from them: read them in full, research each new fact like any other.
+        if cfg.mine_articles:
+            try:
+                mined = mine_all(client, cfg, film_info, records,
+                                 explored + [r.card.long_description for r in records
+                                             if r.status == "emitted" and r.card])
+            except Exception as e:
+                log.warning("  article mining failed (%s); continuing", e)
+                mined = []
+            if mined:
+                explored.extend(a.anchor_element for a in mined)
+                anchors_proposed += len(mined)
+                log.info("Stage 1c: researching %d fact(s) mined from strong articles ...", len(mined))
+                mfuts = [pool.submit(_process_anchor, client, film_info, a, cfg, cache)
+                         for a in _claim_dedup(client, cfg, film_info, mined)]
+                for f in as_completed(mfuts):
+                    records.append(f.result())
 
     emitted = [r for r in records if r.status == "emitted"]
     emitted = _dedup(emitted)
