@@ -23,7 +23,7 @@ HEADLINE (short): {short}
 FULL FACT: {long}
 
 1. short_matches_long: true only if the headline states the SAME main claim as the first sentence of the full fact. False if the headline is about a different claim, detail, or name than the full fact leads with.
-2. standalone: true only if the headline is clear and interesting to someone who has not seen the film (no unexplained in-film devices like "his inner thought" or "this reboot").
+2. standalone: true only if the headline is clear and interesting to someone who has not seen the film (no unexplained in-film devices like "his inner thought" or "this reboot"). Also false if the headline carries a second clause or a named song/title/reference a viewer would have to look up: the headline is only the hook; the explanation belongs in the full fact.
 3. fixed_short: if the headline is longer than {cap} characters, or short_matches_long is false, or standalone is false, write a headline of at most {cap} characters that states the full fact's main claim, names the film or person it is about, and leads with the most surprising specific. Otherwise return an empty string.
 4. long_version: the full fact cut down to AT MOST {long_cap} characters (count them). It must stand on its own: name the people, restate the headline's claim, then keep the single most interesting specific (a quote, number, reason or second party). Complete sentences, plain words, no ellipsis. Use ONLY facts already in the full fact.
 Use only facts already in the full fact for everything you write.

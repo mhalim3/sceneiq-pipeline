@@ -227,13 +227,13 @@ PRINCIPLES = [
        "Pam Ferris based Miss Trunchbull on her gardener, whom she called 'the most "
        "incredible bully to her clients.'", "quote the memorable line"),
       ("Painting on chocolate smudges made the cake scene take forever.",
-       "Cinematographer Stefan Czapsky says he shot 144 angles of Bruce eating the cake.",
-       "a count beats a vague 'took forever'")]),
+       "Cinematographer Stefan Czapsky says the cake scene was shot 144 times from multiple angles.",
+       "a count beats a vague 'took forever'; keep the source's unit (shots, not angles)")]),
     ("name_the_reference",
      "Name the actual thing a fact refers to (the song, the scene, the line) instead of an "
      "unexplained phrase, so the viewer knows why it matters.",
      "'Before the project was scrapped' means nothing to someone who does not know there was a "
-     "rap in the movie. Naming 'Boats N Hoes' ties the fact to something they just heard.",
+     "rap in the movie. Naming 'Boats N Hoes' ties the fact to something they just heard. Put the name in the long, not the short.",
      [("A rap album was planned before the project was scrapped.",
        "Adam McKay says they wrote 'four or five' rough raps for a Dale and Brennan album like "
        "the movie's 'Boats N Hoes.'", "names the song")]),
@@ -245,6 +245,72 @@ PRINCIPLES = [
      [("Sony greenlit Step Brothers based on a one-word pitch: 'bunk beds'.",
        "Step Brothers grew from a one-line 'bunk beds' joke Will Ferrell and John C. Reilly "
        "made while working on Talladega Nights.", "describes what the sources say")]),
+    ("short_is_only_the_hook",
+     "The short is just the hook: one clean claim, with no extra clause and no reference the "
+     "viewer would have to look up. Put the explanation, the quote, or the named reference in "
+     "the long.",
+     "A reviewer found 'like Boats N Hoes' confusing in a short, and wanted the cake short left "
+     "as just 'almost cut'. The short has about 80 characters; every extra clause makes it harder "
+     "to read across a room.",
+     [("The cake scene was almost cut, but eating was Bruce's 'superpower.'",
+       "The iconic chocolate cake scene was actually almost cut!", "the short is only the hook"),
+      ("A full Dale and Brennan rap album was planned, like 'Boats N Hoes.'",
+       "A full Dale and Brennan rap album was planned.", "the named song belongs in the long")]),
+    ("answer_the_why",
+     "If a fact raises a question (why did they leave? why was it cut?), the card must answer it. "
+     "The reason is the interesting part. If the sources do not give the reason, look for it "
+     "before writing; if it cannot be found, do not write the card.",
+     "'Mothers took small children out of the first screening, and the team was depressed' was "
+     "rejected: the team being depressed is not interesting, why the mothers left is.",
+     [("Some mothers took small children out of the first screening, and the team was 'very depressed.'",
+       "At the first screening, some mothers walked out with their small children because "
+       "(the reason the source gives).", "the reason is the payoff")]),
+    ("numbers_need_a_benchmark",
+     "A bare number means little unless the viewer can tell if it is big. Add the comparison "
+     "the source gives (a normal length, the final version, the budget) or a ratio that follows "
+     "from numbers the sources state. If no comparison exists in the sources, find one or lower "
+     "the fact's priority.",
+     "'The first script was 180 pages' does not land unless you know a normal script is 90-120 pages. "
+     "The reviewer suggested the original being about 1.5x the final script, and the 8 or 9 "
+     "rewrites it took to cut it down.",
+     [("The first draft of the script was a massive 180 pages long.",
+       "The original Step Brothers script was almost 1.5x as long as the final one and took 8 or 9 "
+       "rewrites to cut down.", "gives the viewer a benchmark")]),
+    ("do_not_overstate",
+     "Describe what the source describes, no bigger. Do not upgrade a part to the whole "
+     "('improvised musical' for a commentary track with some songs), and do not state a hedged "
+     "figure as certain ('I think it might have been 144 shots'). Keep the source's own unit "
+     "and attribute the hedge ('reportedly', 'says').",
+     "A fact-check found the DVD commentary is mostly spoken commentary with musical moments, not "
+     "a full musical. The 144 figure was a guess in the interview and the unit was shots, not angles.",
+     [("The 'Step Brothers' DVD commentary is an improvised musical.",
+       "The 'Step Brothers' DVD commentary includes songs the cast improvised on the spot.",
+       "matches what the commentary actually is"),
+      ("The cake scene was shot from 144 different angles.",
+       "The chocolate cake scene was shot 144 times from multiple angles.", "the source's unit")]),
+    ("name_the_specific_thing",
+     "Name the specific place, brand or person when the source does, rather than a generic "
+     "stand-in ('a chef friend'). Add nothing the source does not say about it.",
+     "'A chef friend baked the cake, the Magnolia kind he loves' left out the one detail worth "
+     "knowing (the famous bakery) and added a preference nobody stated.",
+     [("A chef friend of Danny DeVito baked the cake, the Magnolia kind he loves.",
+       "Danny DeVito's friend, who works at the famous Magnolia Bakery, baked the iconic "
+       "chocolate cake.", "the specific, sourced detail")]),
+    ("cast_contrast_in_plain_words",
+     "When actors say a performer is the opposite of their character, say it directly and name "
+     "the character: 'Cast say Pam Ferris is the opposite of her mean Trunchbull character.' "
+     "Do not describe the actor as 'Trunchbull's actress'.",
+     "The reviewer rewrote it so the contrast is the first thing a viewer reads.",
+     [("Mara Wilson says terrifying Trunchbull's actress is 'the kindest' person.",
+       "Cast say Pam Ferris is the opposite of her mean Trunchbull character.", "the contrast first")]),
+    ("stunts_name_the_stunt_and_the_risk",
+     "For a stunt, say which stunt it was and how it was done, and lead the long with any injury "
+     "or near-miss a named person describes.",
+     "'The pigtail swing stunt used wires, fake braids and a crane. Pam Ferris said it nearly took "
+     "her finger off' is the version the reviewer wrote.",
+     [("The pigtail swing used wires through fake braids and a crane.",
+       "The pigtail swing stunt used wires through fake braids and a crane. Pam Ferris said it "
+       "nearly took her finger off.", "the near-miss is the new specific")]),
     ("easter_eggs_in_plain_words",
      "Say plainly what the viewer can spot: 'the real Catalina Island is visible in the "
      "background', not 'seen in the background' with no subject.",
@@ -339,12 +405,14 @@ reads 22BLONDE; Elle scored a 179 on her LSAT."""
 _SELECTION_PRINCIPLES = {"story_over_description", "not_obvious"}
 
 
-def wording_examples(limit: int = 14) -> str:
+def wording_examples(limit: int = 24) -> str:
     """Before -> after pairs from reviewer edits, for the final copy-edit prompt."""
     ids = {"film_title_is_not_needed", "famous_names_need_no_title", "role_in_parentheses",
            "explain_unfamiliar_terms", "attribute_conflicts", "real_world_actionable",
            "juiciest_detail", "name_the_reference", "only_what_sources_say",
-           "easter_eggs_in_plain_words"}
+           "easter_eggs_in_plain_words", "short_is_only_the_hook", "answer_the_why",
+           "numbers_need_a_benchmark", "do_not_overstate", "name_the_specific_thing",
+           "cast_contrast_in_plain_words", "stunts_name_the_stunt_and_the_risk"}
     out = []
     for pid, rule, _why, ex in PRINCIPLES:
         if pid in ids:

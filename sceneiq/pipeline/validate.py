@@ -137,6 +137,9 @@ _JUDGE_SCHEMA = {
         "matches_assigned_fact": {"type": "boolean"},
         "editorial_fit_pass": {"type": "boolean"},
         "editorial_fit_reason": {"type": "string"},
+        "overstated": {"type": "boolean"},
+        "overstated_reason": {"type": "string"},
+        "why_unanswered": {"type": "boolean"},
         "named_entities": {"type": "array", "items": {"type": "string"}},
         "notes": {"type": "string"},
     },
@@ -152,6 +155,8 @@ _JUDGE_SCHEMA = {
         "film_specific",
         "matches_assigned_fact",
         "editorial_fit_pass",
+        "overstated",
+        "why_unanswered",
         "named_entities",
     ],
 }
@@ -268,7 +273,11 @@ false ONLY if the card tells a DIFFERENT fact from the sources instead.
 
 12. editorial_fit_pass — {exclusions}
 Set false (and say which kind in editorial_fit_reason) if the card is one of the DO NOT SHOW kinds, or if its shortVersion would be unclear or uninteresting to someone who has not seen the film. \
-Casting stories (who was almost cast, who declined) are NOT cast credits and pass."""
+Casting stories (who was almost cast, who declined) are NOT cast credits and pass.
+
+13. overstated — true if the shortVersion or longDescription says MORE than the source: it turns part of something into the whole (a commentary track with a few songs called "a musical"), states a figure the speaker hedged ("I think it might have been 144") as certain, swaps the source's unit (shots vs angles), or adds an opinion, preference or detail the source never states. Say which in overstated_reason.
+
+14. why_unanswered — true if the card raises a question it does not answer: someone left, something was cut, someone refused, something failed, but the card does not say why and the reason is the interesting part."""
 
 
 def _maturity_rule(cfg: config.PipelineConfig, film_info: dict) -> str:
@@ -469,6 +478,13 @@ def validate_card(
     if not checks["editorial_fit"]:
         result.rejection_reasons.append(
             "editorial: " + (judge.get("editorial_fit_reason") or "excluded kind of fact"))
+    checks["not_overstated"] = not judge.get("overstated", False)
+    if judge.get("overstated"):
+        result.rejection_reasons.append(
+            "accuracy: wording says more than the source (" + (judge.get("overstated_reason") or "overstated") + ")")
+    checks["why_answered"] = not judge.get("why_unanswered", False)
+    if judge.get("why_unanswered"):
+        result.rejection_reasons.append("editorial: the card raises a why/how question and does not answer it")
     card.spoiler_boundary_fraction = 0.0  # binary policy: spoilers never emit
 
     checks["taxonomy"] = judge["category_correct"]
