@@ -77,7 +77,7 @@ def _video_notes(client, cfg, url: str, film_title: str, film_year, fact: str) -
     from google.genai import types
     def _call():
         resp = client._client.models.generate_content(
-            model=cfg.research_model,
+            model=config.VIDEO_MODEL,
             contents=types.Content(parts=[
                 types.Part(file_data=types.FileData(file_uri=url)),
                 types.Part(text=_VIDEO_PROMPT.format(title=film_title, year=film_year, fact=fact)),
