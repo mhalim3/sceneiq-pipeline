@@ -36,6 +36,36 @@ _last_search = 0.0
 _blocked_until = 0.0
 
 
+def _news_search(domain: str, query: str, n: int) -> list[str]:
+    """Articles on one site, from Google News's free RSS search (no key), with the News
+    redirect links decoded to the real article URL. Covers news and entertainment
+    outlets (Thrillist, Variety, The Ringer); it will not find every page on a site."""
+    try:
+        from googlenewsdecoder import gnewsdecoder
+    except ImportError:
+        return []
+    try:
+        r = httpx.get("https://news.google.com/rss/search",
+                      params={"q": f"site:{domain} {query}", "hl": "en-US", "gl": "US", "ceid": "US:en"},
+                      headers=_UA, follow_redirects=True, timeout=20)
+        links = [_html.unescape(m) for m in re.findall(r"<item>.*?<link>(.*?)</link>", r.text, re.S)]
+    except Exception as e:
+        log.warning("  news search failed for %s: %s", domain, e)
+        return []
+    out = []
+    for link in links[:6]:
+        try:
+            d = gnewsdecoder(link, interval=0.5)
+        except Exception:
+            continue
+        url = (d or {}).get("decoded_url") if isinstance(d, dict) else None
+        if url and registered_domain(url) == domain and url not in out:
+            out.append(url)
+        if len(out) >= n:
+            break
+    return out
+
+
 def site_search(domain: str, query: str, n: int = 3) -> list[str]:
     """Top results for `query` on one site, via DuckDuckGo's HTML endpoint (the grounded
     search tool will not reliably return a named outlet's page, plain site: search does).
@@ -44,6 +74,9 @@ def site_search(domain: str, query: str, n: int = 3) -> list[str]:
     its bot check, this stops asking for 10 minutes. A real search API key would remove
     this limit."""
     global _last_search, _blocked_until
+    found = _news_search(domain, query, n)      # free, reliable for news-indexed outlets
+    if found:
+        return found
     with _search_lock:
         if time.time() < _blocked_until:
             return []
@@ -92,17 +125,27 @@ Below are passages from web pages that discuss this fact. List every PUBLICATION
 {passages}"""
 
 
-def _passages(sources: list[SourceRef], fact: str, per: int = 900) -> str:
+_CREDIT_RE = re.compile(r"\b(?:told|spoke to|speaking to|spoke with|via|according to|reported (?:by|in)|"
+                        r"interview(?:ed)? with|interview for|per|said to|shared with|revealed to|"
+                        r"originally (?:published|reported) (?:in|by))\s+(?:the\s+)?[A-Z]")
+
+
+def _passages(sources: list[SourceRef], fact: str, per: int = 1200) -> str:
+    """For each page: the sentences that credit an outlet by name, then the sentences closest to the fact."""
     fw = {w for w in re.findall(r"[a-z0-9']+", fact.lower()) if len(w) > 2 and w not in _STOP}
     out = []
     for s in sources:
         body = getattr(s, "_body", "") or ""
         if not body or s.modality != "text":
             continue
-        sents = [x.strip() for x in re.split(r"(?<=[.!?])\s+|\n+", body) if len(x.strip()) > 25]
-        scored = sorted(range(len(sents)),
-                        key=lambda i: -len(fw & set(re.findall(r"[a-z0-9']+", sents[i].lower()))))[:5]
-        text = " ".join(sents[i] for i in sorted(scored))[:per]
+        # Credit phrases ("spoke to Thrillist") can sit inside very long unpunctuated text, so
+        # take a window around each match instead of splitting into sentences.
+        wins = [body[max(0, m.start() - 220): m.end() + 220] for m in _CREDIT_RE.finditer(body)]
+        wins = [w for w in wins if fw & set(re.findall(r"[a-z0-9']+", w.lower()))] or wins
+        sents = [x.strip() for x in re.split(r"(?<=[.!?])\s+|\n+", body) if 25 < len(x.strip()) < 600]
+        near = sorted(range(len(sents)),
+                      key=lambda i: -len(fw & set(re.findall(r"[a-z0-9']+", sents[i].lower()))))[:3]
+        text = " … ".join(wins[:6] + [sents[i] for i in sorted(near)])[:per * 2]
         out.append(f"[{s.domain}] {text}")
     return "\n\n".join(out[:8])
 
@@ -132,8 +175,16 @@ def find_named_origins(client, film_info: dict, anchor: Anchor, fact: str, sourc
         dom = registered_domain("https://" + o["domain"].lower().replace("https://", "").replace("http://", ""))
         if dom in _NOT_ARTICLES or "." not in dom:
             return o["name"], []
-        words = " ".join(w for w in re.findall(r"[A-Za-z0-9']+", fact) if w.lower() not in _STOP)[:90]
-        urls = site_search(dom, f"{film} {words}") or site_search(dom, f"{film} {film_info.get('year', '')}")
+        tt = {t.lower() for t in re.findall(r"[A-Za-z0-9']+", film)}
+        key = [w for w in re.findall(r"[A-Za-z0-9']+", fact) if w.lower() not in _STOP and w.lower() not in tt and len(w) > 3]
+        urls: list[str] = []
+        # News search wants short queries: title + a few key words, then fewer, then the title alone.
+        for q in (f"{film} {' '.join(key[:4])}", f"{film} {' '.join(key[:2])}", f"{film} {film_info.get('year', '')}"):
+            for u in site_search(dom, q.strip()):
+                if u not in urls:
+                    urls.append(u)
+            if len(urls) >= 3:
+                break
         found = []
         for u in urls:
             if u in have:
