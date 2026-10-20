@@ -101,12 +101,18 @@ class GeminiClient:
         self._grounded_budget = int(os.environ.get("SCENEIQ_GROUNDING_BUDGET", "800"))
         self._grounded_calls = 0
         self._grounded_lock = threading.Lock()
+        self._grounded_cache: dict = {}      # identical searches in one run are answered once
 
     @property
     def grounded_calls(self) -> int:
         return self._grounded_calls
 
     def grounded(self, model: str, prompt: str, temperature: float = 0.3) -> GroundedResult:
+        ck = (model, prompt, temperature)
+        with self._grounded_lock:
+            hit = self._grounded_cache.get(ck)
+        if hit is not None:
+            return hit
         # Reserve one unit of budget BEFORE the (retried) call, so retries
         # don't double-count and concurrent workers can't overshoot the cap.
         with self._grounded_lock:
@@ -116,7 +122,10 @@ class GeminiClient:
                     f"(SCENEIQ_GROUNDING_BUDGET). Shared project cap is 5,000/day."
                 )
             self._grounded_calls += 1
-        return self._grounded_call(model, prompt, temperature)
+        res = self._grounded_call(model, prompt, temperature)
+        with self._grounded_lock:
+            self._grounded_cache[ck] = res
+        return res
 
     @_retry
     def _grounded_call(self, model: str, prompt: str, temperature: float) -> GroundedResult:

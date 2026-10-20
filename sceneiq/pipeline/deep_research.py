@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor
 from difflib import SequenceMatcher
 
 from .. import config
-from . import authority, youtube_sources
+from . import authority, corroborate, youtube_sources
 from .mine_articles import _about_film, mine_article
 
 log = logging.getLogger("sceneiq")
@@ -92,6 +92,7 @@ def deep_research(client, cfg: config.PipelineConfig, film_info: dict, cache, re
             found += youtube_sources.discover(client, cfg, film_info, cache, seen_urls | {s.url for s in found})
         except Exception as e:
             log.warning("  youtube discovery failed (%s); continuing", e)
+    corroborate.register(found)
     seen_urls |= {s.url for s in found}
     added = _add(corpus, found, cfg, film)
     log.info("Deep research: %d strong article(s) in hand (%d new from outlets and Wikipedia's references)",

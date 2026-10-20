@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import logging
 import re
+import threading
 from concurrent.futures import ThreadPoolExecutor
 
 from .. import config, source_policy
@@ -119,13 +120,61 @@ def _search_more(client, film_info, anchor, fact, cfg, cache, have: set) -> list
     return list(uniq.values())
 
 
+_CORPUS: dict = {}            # url -> SourceRef: every A/B page read so far in this title's run
+_CORPUS_SENTS: dict = {}      # url -> list of word sets, one per sentence
+_CORPUS_LOCK = threading.Lock()
+
+
+def reset_corpus() -> None:
+    with _CORPUS_LOCK:
+        _CORPUS.clear()
+        _CORPUS_SENTS.clear()
+
+
+def register(sources) -> None:
+    with _CORPUS_LOCK:
+        for s in sources:
+            if s.tier in ("A", "B") and s.modality == "text" and getattr(s, "_body", ""):
+                _CORPUS.setdefault(s.url, s)
+
+
+def _corpus_candidates(fact: str, exclude: set, k: int) -> list:
+    """The pages already read that match this fact best (by shared words), not yet checked for it."""
+    fw = _words(fact)
+    if not fw:
+        return []
+    with _CORPUS_LOCK:
+        pages = [s for u, s in _CORPUS.items() if u not in exclude]
+    scored = []
+    for s in pages:
+        with _CORPUS_LOCK:
+            sents = _CORPUS_SENTS.get(s.url)
+        if sents is None:
+            sents = [_words(x) for x in re.split(r"(?<=[.!?])\s+|\n+", s._body) if len(x) > 25]
+            with _CORPUS_LOCK:
+                _CORPUS_SENTS[s.url] = sents
+        best = sorted((len(fw & w) for w in sents), reverse=True)[:3]
+        score = sum(best)
+        if best and best[0] >= max(3, len(fw) // 3):
+            scored.append((score, s))
+    scored.sort(key=lambda t: -t[0])
+    return [s for _, s in scored[:k]]
+
+
 def corroborate(client: GeminiClient, film_info: dict, anchor: Anchor, card: SceneFactCard,
                 packet, cfg: config.PipelineConfig, cache: FetchCache) -> list[dict]:
     fact = card.long_description
     film = str(film_info.get("title", ""))
     pool = [s for s in packet.sources if s.tier in ("A", "B") and s.modality == "text"
             and getattr(s, "_body", "")]
+    register(packet.sources)
     found = _check(client, cfg, film, fact, pool)
+    if cfg.corpus_corroboration:
+        # Every page read for ANY fact in this run is a candidate witness for this one (free:
+        # no search, only a read of pages we already hold).
+        near = _corpus_candidates(fact, {s.url for s in pool}, cfg.corpus_corroboration)
+        if near:
+            found += _check(client, cfg, film, fact, near)
     if cfg.find_named_origins:
         # Pages often credit an outlet by name without linking (\"via Thrillist\"): find it.
         try:

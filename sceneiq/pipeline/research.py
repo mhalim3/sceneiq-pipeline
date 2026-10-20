@@ -183,8 +183,12 @@ def research_anchor(
     # surface the article that actually states this specific claim.
     if anchor.search_queries:
         queries.append(f"{film_info.get('title', '')} {film_info.get('year', '')} {anchor.anchor_element}".strip())
+    # A fact mined from an article starts from that article: corroboration looks across everything
+    # already read and the named outlets, so it needs no search of its own.
+    if cfg.mined_skip_search and anchor.origin == "article_mining" and anchor.seed_sources:
+        queries = []
     # And look for a video interview/featurette that talks about it.
-    if cfg.use_video_sources:
+    elif cfg.use_video_sources and cfg.research_video_query:
         queries.append(f"{film_info.get('title', '')} {film_info.get('year', '')} "
                        f"{anchor.anchor_element[:120]} interview video YouTube")
     video_budget = {"n": cfg.max_video_sources, "lock": threading.Lock()}
@@ -199,7 +203,7 @@ def research_anchor(
         if url and url not in seen:
             seen.add(url)
             candidates.append(dict(sd))
-    with ThreadPoolExecutor(max_workers=len(queries)) as pool:
+    with ThreadPoolExecutor(max_workers=max(1, len(queries))) as pool:
         for q, grounded in pool.map(
             lambda q: _run_query(client, cfg, film_info, q), queries
         ):

@@ -174,7 +174,7 @@ class PipelineConfig:
     # searches). `corroboration_target` distinct A/B outlets pass the fact on their own.
     corroborate: bool = True
     corroboration_target: int = 3
-    corroboration_searches: int = 2
+    corroboration_searches: int = 0    # extra grounded searches per fact (the corpus + outlet search replace them)
     # When a page credits an outlet by name without linking ("via Thrillist"), search for that
     # outlet's own article and use it as a corroborating source.
     find_named_origins: bool = True
@@ -199,6 +199,10 @@ class PipelineConfig:
     authority_per_outlet: int = 3
     wiki_ref_max: int = 30
     link_follow_max: int = 25
+    mined_skip_search: bool = True     # facts mined from an article start from that article: no grounded search
+    research_video_query: bool = False  # per-fact 'interview video' search (YouTube discovery covers it)
+    corpus_corroboration: int = 12     # check each fact against this many of the best-matching pages already read
+    sweep_queries_per_request: int = 4  # later sweep rounds: this many queries share one grounded request
     youtube_sources: bool = True       # search YouTube for interviews on verified A/B channels
     youtube_max_videos: int = 12
     youtube_outlet_queries: int = 8

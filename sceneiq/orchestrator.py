@@ -24,7 +24,7 @@ from .moments import TitleMoments, load_moments
 from .pipeline.anchors import (discover_anchors, discover_anchors_from_moments,
                                identify_film)
 from .pipeline.assemble import assemble_card, repair_card
-from .pipeline.corroborate import corroborate
+from .pipeline.corroborate import corroborate, reset_corpus
 from .pipeline.curiosity import judge_curiosity
 from .pipeline.leads import wikipedia_leads
 from .pipeline.research import research_anchor, research_stronger_sources
@@ -696,6 +696,7 @@ def run(
     film_info: dict = {}
     anchors_proposed = 0
     cache = FetchCache(cfg.http_timeout_s)
+    reset_corpus()          # pages read for one film must not corroborate another
     with ThreadPoolExecutor(max_workers=cfg.max_workers) as pool:
         futures = []
         title_only = cfg.title_level_only or not moments

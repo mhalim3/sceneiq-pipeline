@@ -107,7 +107,7 @@ Rules:
 NOTES:
 {notes}"""
 
-_SWEEP_PROMPT = """Run a Google search for: {query}
+_SWEEP_PROMPT = """Run a Google search for each of these (one per line if several): {query}
 
 Read what the results say and report the most interesting, SPECIFIC facts about the \
 film {title} ({year}) that they attest. If a result points to a promising lead (a \
@@ -346,10 +346,14 @@ def title_sweep(
     else:
         queries = _SWEEP_QUERIES_LATER_SETS[(round_n - 3) % len(_SWEEP_QUERIES_LATER_SETS)]
 
+    if round_n >= 2 and cfg.sweep_queries_per_request > 1:
+        k = cfg.sweep_queries_per_request          # several queries share one grounded request
+        queries = ["\n".join(queries[i:i + k]) for i in range(0, len(queries), k)]
+
     def _run(q):
         return client.grounded(
             cfg.research_model,
-            _SWEEP_PROMPT.format(query=q.format(title=title, year=year),
+            _SWEEP_PROMPT.format(query="\n".join(x.format(title=title, year=year) for x in q.split("\n")),
                                  title=title, year=year),
             temperature=0.2,
         ).text
