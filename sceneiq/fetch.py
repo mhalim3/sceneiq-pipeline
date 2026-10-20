@@ -8,7 +8,9 @@ timestamp attachment.
 
 from __future__ import annotations
 
+import json
 import logging
+from pathlib import Path
 import re
 import threading
 import time
@@ -131,7 +133,26 @@ def _run_with_timeout(fn, timeout_s: float, default):
     return out.get("v", default)
 
 
-_YT_SLOTS = threading.BoundedSemaphore(3)
+_YT_SLOTS = threading.BoundedSemaphore(1)     # one at a time, spaced out: bursts get the IP blocked
+_YT_LAST = 0.0
+_YT_GAP_S = 2.5
+_TRANSCRIPT_DIR = Path(__file__).resolve().parent.parent / "data" / "transcripts"
+
+
+def _transcript_from_disk(vid: str):
+    """A transcript saved by an earlier run (<id>.json) or pasted in by hand (<id>.txt)."""
+    try:
+        j = _TRANSCRIPT_DIR / f"{vid}.json"
+        if j.exists():
+            segs = json.loads(j.read_text())
+            return True, " ".join(x["text"] for x in segs), segs
+        t = _TRANSCRIPT_DIR / f"{vid}.txt"
+        if t.exists() and t.read_text().strip():
+            return True, t.read_text().strip(), []
+    except Exception:
+        pass
+    return None
+
 _YT_BLOCKED_UNTIL = 0.0
 
 
@@ -145,7 +166,10 @@ def fetch_youtube_transcript(url: str, timeout_s: float = 30.0) -> tuple[bool, s
     except ImportError:
         return False, "", []
 
-    global _YT_BLOCKED_UNTIL
+    global _YT_BLOCKED_UNTIL, _YT_LAST
+    saved = _transcript_from_disk(vid)
+    if saved:
+        return saved
     if time.time() < _YT_BLOCKED_UNTIL:       # circuit breaker: YouTube blocked this IP recently
         return False, "", []
     err: dict = {}
@@ -160,7 +184,9 @@ def fetch_youtube_transcript(url: str, timeout_s: float = 30.0) -> tuple[bool, s
     fetched = None
     for attempt in range(3):
         with _YT_SLOTS:                         # YouTube throttles bursts of transcript requests
+            time.sleep(max(0.0, _YT_GAP_S - (time.time() - _YT_LAST)))
             fetched = _run_with_timeout(_fetch, timeout_s, None)
+            _YT_LAST = time.time()
         if fetched is not None:
             break
         if type(err.get("e")).__name__ in ("IpBlocked", "RequestBlocked"):
@@ -180,6 +206,11 @@ def fetch_youtube_transcript(url: str, timeout_s: float = 30.0) -> tuple[bool, s
         else:
             segments.append({"text": getattr(seg, "text", ""), "start": getattr(seg, "start", 0.0),
                              "duration": getattr(seg, "duration", 0.0)})
+    try:                                        # keep it: never fetch the same video twice
+        _TRANSCRIPT_DIR.mkdir(parents=True, exist_ok=True)
+        (_TRANSCRIPT_DIR / f"{vid}.json").write_text(json.dumps(segments))
+    except Exception:
+        pass
     return True, " ".join(s["text"] for s in segments), segments
 
 

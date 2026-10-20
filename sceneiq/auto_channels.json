@@ -44,6 +44,15 @@
   "reason": "This is an unverified channel that does not appear to be the official account for a known media outlet, studio, or person involved in the film.",
   "tier": "C"
  },
+ "UC4gUHFjIivp1sPm7TEQqGiA": {
+  "name": "Ximboz",
+  "handle": "@Ximboz",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel that posts movie clips and is not the official channel for the studio or any talent involved.",
+  "tier": "C"
+ },
  "UC5JV9ytnZImNSqCJYCAckkw": {
   "name": "Backstage",
   "handle": "@BackstageCast",
@@ -51,6 +60,15 @@
   "kind": "fan_or_creator",
   "outlet_domain": "",
   "reason": "This channel is not verified, so it cannot be confirmed as the official channel for the Backstage publication and is likely a fan or creator account.",
+  "tier": "C"
+ },
+ "UC5N2asRYkdATmJ9dtr1fO1w": {
+  "name": "Scene City",
+  "handle": "@SceneCityOfficial",
+  "verified": true,
+  "kind": "other",
+  "outlet_domain": "",
+  "reason": "This verified channel is a licensed aggregator that posts movie clips from various studios, not the official channel for a specific publication, studio, or person.",
   "tier": "C"
  },
  "UC5N5CzxqWoF1Far2rvRRoWg": {
@@ -70,6 +88,15 @@
   "outlet_domain": "nbc.com",
   "reason": "This is the official, verified YouTube channel for 'The Tonight Show Starring Jimmy Fallon,' a late-night talk show that airs on the NBC network.",
   "tier": "B"
+ },
+ "UCAcSQCXWqFGjMBwcqQ2Gpmw": {
+  "name": "chrissmash",
+  "handle": "@chrissmash",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel with a generic creator-style name that posts clips from movies, which is characteristic of a fan channel.",
+  "tier": "C"
  },
  "UCAh90KLYVaMSj_HaWejnpYA": {
   "name": "WGA West",
@@ -116,6 +143,15 @@
   "reason": "The channel is not verified and its name, \"AUC Backup,\" suggests it is a fan or creator channel re-uploading content rather than an official source.",
   "tier": "C"
  },
+ "UCHSOjOg8bldp-qfJDZ0_iyA": {
+  "name": "theoffcamerashow",
+  "handle": "@theoffcamerashow",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "offcamera.com",
+  "reason": "This is the official verified channel for 'Off Camera with Sam Jones,' an entertainment interview show and publication.",
+  "tier": "B"
+ },
  "UCHvnMsLnyQZscrq-fOckiiw": {
   "name": "BlackTree TV",
   "handle": "@blacktreemedia",
@@ -142,6 +178,15 @@
   "outlet_domain": "",
   "reason": "The channel name \"Sony Pictures Releasing UK\" and its verified badge indicate this is the official channel for the UK distribution arm of the film studio.",
   "tier": "B"
+ },
+ "UCJMwPJQ7ggHeBo6DaTplbFg": {
+  "name": "Movies Explained Shorts",
+  "handle": "@MoviesExplained-33",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel name 'Movies Explained Shorts' and lack of a verified badge indicate this is an independent creator or fan channel, not an official entity.",
+  "tier": "C"
  },
  "UCJofgG0xFsSOfhBlMikjL7w": {
   "name": "Movie & TV Extras",
@@ -332,6 +377,15 @@
   "reason": "This is the official, verified YouTube channel for the entertainment news outlet E! News.",
   "tier": "B"
  },
+ "UCjqCDtuJZjmFPtCvmdRL7ZA": {
+  "name": "The Making of Your Favs",
+  "handle": "@themakingofyourfavs5066",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and has a generic name, indicating it is a fan account that uploads behind-the-scenes content rather than an official studio or outlet.",
+  "tier": "C"
+ },
  "UCkTtNUjvPcSc50HyO7sBtxg": {
   "name": "MovieWeb",
   "handle": "@movieweb",
@@ -357,6 +411,15 @@
   "kind": "fan_or_creator",
   "outlet_domain": "",
   "reason": "The channel is not verified and the video title is a trivia/\"hidden details\" style video, which is typical of an independent creator or fan channel.",
+  "tier": "C"
+ },
+ "UCmQynT5NWU3Vsa9t0OGUhcA": {
+  "name": "FilmIsNow Epic Movie Zone",
+  "handle": "@FilmIsNowEpicMovieZone",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This channel is not verified and aggregates movie clips like bloopers and gag reels, which is characteristic of a fan or independent creator channel.",
   "tier": "C"
  },
  "UCm_sXUszgtxpLL-tP2_gkOg": {
@@ -404,6 +467,15 @@
   "reason": "This is the official verified channel for Revolt, a media company and digital cable network focused on music and hip-hop culture.",
   "tier": "B"
  },
+ "UCqMtxjKnR7ySbEZSs2N-v0Q": {
+  "name": "The Rich Eisen Show",
+  "handle": "@RichEisenShow",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "richeisenshow.com",
+  "reason": "This is the official, verified YouTube channel for The Rich Eisen Show, a syndicated sports and entertainment talk show.",
+  "tier": "B"
+ },
  "UCsEukrAd64fqA7FjwkmZ_Dw": {
   "name": "GQ",
   "handle": "@GQVideos",
@@ -413,6 +485,15 @@
   "reason": "This is the official verified YouTube channel for GQ, a men's magazine and entertainment/culture publication.",
   "tier": "A"
  },
+ "UCtUypkiFmd17MuLzsFB_r3g": {
+  "name": "Hollywood Archives",
+  "handle": "@HollywoodArchive",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name suggests it is a fan account that archives and re-uploads content rather than an official entity.",
+  "tier": "C"
+ },
  "UCtbIhnDB5_Wzprlrk1STKAA": {
   "name": "Mr. Thrasha",
   "handle": "@Mr.Thrasha",
@@ -420,6 +501,42 @@
   "kind": "fan_or_creator",
   "outlet_domain": "",
   "reason": "This is an unverified channel for an independent creator whose content focuses on movie filming locations, which is a fan-centric topic.",
+  "tier": "C"
+ },
+ "UCtdi-fK9xntbHLa8g7w5FYw": {
+  "name": "TheAujalyn",
+  "handle": "@TheAujalyn",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified personal channel that posts movie clips, not an official outlet, studio, or talent.",
+  "tier": "C"
+ },
+ "UCu6Ok6bezRHujeDWCA0sNkw": {
+  "name": "ImprovNerdPodcast",
+  "handle": "@Improvnerdpodcast",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel name 'ImprovNerdPodcast' and lack of a verified badge indicate this is an independent creator's podcast channel.",
+  "tier": "C"
+ },
+ "UCy1iruS87WaAxn3w_aysQ_Q": {
+  "name": "Big Bro with Kid Cudi",
+  "handle": "@BigBroCudi",
+  "verified": true,
+  "kind": "talent_or_crew",
+  "outlet_domain": "",
+  "reason": "This is the official, verified YouTube channel for the musician and actor Kid Cudi.",
+  "tier": "B"
+ },
+ "UCzYGogJCpT7V1CXrAgiZtGg": {
+  "name": "greenroompr",
+  "handle": "@greenroompr",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and appears to be a public relations firm or a fan account posting a movie clip, not an official studio or outlet.",
   "tier": "C"
  },
  "UCzfMa5hPJwPM9OsMmUOm8XQ": {
