@@ -105,6 +105,24 @@ def _process_anchor(
                 log.warning("  repair failed on %s: %s", anchor.anchor_element, e)
         record.validation = result
 
+        # Copying check: a card that lifts a run of words from its source is reworded once.
+        if cfg.copy_check and result.passed and any(f.startswith("copying:") for f in result.flags):
+            try:
+                from .pipeline.overlap import copied_runs
+                bodies = [getattr(s, "_body", "") for s in packet.sources if getattr(s, "_body", "")]
+                runs = [r for t in (card.short_version, card.long_description)
+                        for r in copied_runs(t, bodies, cfg.copy_min_words)]
+                if runs and repair_card(client, film_info, card,
+                                        [f'copying: "{r}" is word for word from a source; say it in your own words, '
+                                         "keeping every fact" for r in runs[:3]], cfg):
+                    again = validate_card(client, film_info, card, packet, cfg, corroboration=record.corroboration)
+                    if again.passed:
+                        again.flags.append("reworded: the first draft copied wording from a source")
+                    result = again
+                    record.validation = result
+            except Exception as e:
+                log.warning("  reword failed on %s: %s", anchor.anchor_element[:50], e)
+
         # Interest gate: rubric judge calibrated on reviewer ratings. Boring cards are
         # rejected; borderline ones are kept but flagged for human review.
         if result.passed and cfg.min_interest:

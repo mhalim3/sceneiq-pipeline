@@ -61,6 +61,22 @@ _SWEEP_QUERIES_LATER_SETS = [
         "{title} {year} budget worldwide box office how much it made compared to budget franchise record",
         "{title} {year} cast interview told Vulture Variety EW on set story",
     ],
+    [   # film "lenses": awards, reception, franchise, title origin, marketing, era, objects, rules
+        "{title} {year} awards nominations festival premiere and what the award is",
+        "{title} {year} critics versus audience reception legacy cult status years later",
+        "{title} {year} sequel prequel franchise spin-off remake earlier films",
+        "{title} {year} why it is called that title origin working title",
+        "{title} {year} famous poster tagline marketing campaign trailer",
+        "{title} {year} time period setting era props historical accuracy",
+        "{title} {year} real brand vehicle object shown in the film and its history",
+        "{title} {year} real law profession institution shown versus the movie expert",
+    ],
+    [   # people lenses: public, professional facts about widely known people only
+        "{title} {year} director first feature earlier collaborations with cast and crew",
+        "{title} {year} cast members who worked together before in other films reunion",
+        "{title} {year} lead actor breakthrough role career first job before acting education (professional facts only)",
+        "{title} {year} cast member whose famous parent child or sibling is also an actor (public facts only, no minors)",
+    ],
     [
         "{title} {year} lead actor real life personality versus the character they play",
         "{title} {year} lead actor typecast role similar to their other roles",
@@ -368,7 +384,7 @@ def title_sweep(
         out.append(raw[last:].decode("utf-8", "ignore"))
         return "".join(out)
 
-    with ThreadPoolExecutor(max_workers=max(1, len(queries) + len(_BASIC_PROMPTS))) as pool:
+    with ThreadPoolExecutor(max_workers=max(1, min(16, len(queries) + len(_BASIC_PROMPTS)))) as pool:
         basic_futs = ([pool.submit(_basic, p) for p in _BASIC_PROMPTS]
                       if (round_n <= 1 and (cfg.use_basic_prompts or generic)) else [])
         notes = list(pool.map(_run, queries))
