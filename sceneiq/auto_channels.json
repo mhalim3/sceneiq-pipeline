@@ -1,4 +1,13 @@
 {
+ "UC-4-Itv3ved9ZWkSso9VE8A": {
+  "name": "Renzy",
+  "handle": "@Renzy_YT",
+  "verified": true,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is a verified independent creator who makes video essays and analysis about movies.",
+  "tier": "C"
+ },
  "UC-IxEJXZh_SrU8SHz41-dZQ": {
   "name": "BAFTA Guru",
   "handle": "@baftaguru",
@@ -34,6 +43,15 @@
   "outlet_domain": "",
   "reason": "This channel is not verified, so it cannot be confidently identified as an official outlet and is classified as a fan or creator channel.",
   "tier": "C"
+ },
+ "UC3gNmTGu-TTbFPpfSs5kNkg": {
+  "name": "Movieclips",
+  "handle": "@MOVIECLIPS",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "fandango.com",
+  "reason": "This is the official, verified channel for Movieclips, which is owned by the entertainment company Fandango and hosts a large library of licensed movie clips.",
+  "tier": "B"
  },
  "UC4fYBNAjjXqd4mH_KmFLgLQ": {
   "name": "RealVideoUK",
@@ -242,6 +260,15 @@
   "reason": "This is the channel for GAFollowers, a Georgia-based media outlet that posts original interviews and news content.",
   "tier": "C"
  },
+ "UCTCjFFoX1un-j7ni4B6HJ3Q": {
+  "name": "Rotten Tomatoes Classic Trailers",
+  "handle": "@RottenTomatoesCLASSICTRAILERS",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "rottentomatoes.com",
+  "reason": "This is an official, verified channel for Rotten Tomatoes, a major entertainment and review aggregation publication.",
+  "tier": "B"
+ },
  "UCTTaZCYEMVp6mM9w0auHK3Q": {
   "name": "Hollywood Suite",
   "handle": "@HollywoodSuiteTV",
@@ -303,6 +330,15 @@
   "kind": "outlet",
   "outlet_domain": "yahoo.com",
   "reason": "This is the official, verified YouTube channel for Yahoo Entertainment, a major entertainment news publication.",
+  "tier": "B"
+ },
+ "UCawXRnfJ0RB_vZtxecZeMvA": {
+  "name": "Pete Holmes",
+  "handle": "@peteholmes",
+  "verified": true,
+  "kind": "talent_or_crew",
+  "outlet_domain": "",
+  "reason": "This is the official, verified YouTube channel for comedian and actor Pete Holmes.",
   "tier": "B"
  },
  "UCfdPt9PMpzKgaEiSvbQN24g": {
@@ -528,6 +564,15 @@
   "kind": "talent_or_crew",
   "outlet_domain": "",
   "reason": "This is the official, verified YouTube channel for the musician and actor Kid Cudi.",
+  "tier": "B"
+ },
+ "UCz97F7dMxBNOfGYu3rx8aCw": {
+  "name": "Sony Pictures Entertainment",
+  "handle": "@sonypictures",
+  "verified": true,
+  "kind": "studio_network",
+  "outlet_domain": "",
+  "reason": "This is the official, verified YouTube channel for the film studio Sony Pictures Entertainment.",
   "tier": "B"
  },
  "UCzYGogJCpT7V1CXrAgiZtGg": {

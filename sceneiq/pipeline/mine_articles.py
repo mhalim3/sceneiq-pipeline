@@ -92,7 +92,7 @@ def mine_article(client, cfg: config.PipelineConfig, film_info: dict, src, have:
     try:
         d = client.structured(
             cfg.quality_model,
-            _PROMPT.format(film=film, year=film_info.get("year", ""), domain=src.domain,
+            _PROMPT.format(film=film, year=film_info.get("year", ""), domain=(getattr(src, "channel", "") and f"the YouTube channel {src.channel}") or src.domain,
                            guide=editorial_guide.interest_block() + "\n\n" + editorial_guide.exclusions_block(),
                            max_facts=cfg.mine_facts_per_article,
                            focus=(focus + "\n") if focus else "",

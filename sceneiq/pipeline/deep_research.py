@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor
 from difflib import SequenceMatcher
 
 from .. import config
-from . import authority
+from . import authority, youtube_sources
 from .mine_articles import _about_film, mine_article
 
 log = logging.getLogger("sceneiq")
@@ -31,6 +31,8 @@ _PASS_FOCUS = [
 
 def _is_strong(s, cfg, film: str) -> bool:
     body = getattr(s, "_body", "") or ""
+    if s.modality == "video":      # a transcript from a rated A/B channel (found by title match)
+        return s.tier in ("A", "B") and getattr(s, "body_kind", "") == "transcript" and len(body) >= 1200
     return (s.modality == "text" and s.tier in ("A", "B") and len(body) >= cfg.deep_min_chars
             and _about_film(body, s.url, film) >= cfg.deep_min_title_mentions)
 
@@ -85,6 +87,11 @@ def deep_research(client, cfg: config.PipelineConfig, film_info: dict, cache, re
         found += authority.wikipedia_references(client, cfg, film_info, cache, seen_urls | {s.url for s in found})
     except Exception as e:
         log.warning("  wikipedia references failed (%s); continuing", e)
+    if cfg.youtube_sources:
+        try:
+            found += youtube_sources.discover(client, cfg, film_info, cache, seen_urls | {s.url for s in found})
+        except Exception as e:
+            log.warning("  youtube discovery failed (%s); continuing", e)
     seen_urls |= {s.url for s in found}
     added = _add(corpus, found, cfg, film)
     log.info("Deep research: %d strong article(s) in hand (%d new from outlets and Wikipedia's references)",
