@@ -133,6 +133,10 @@ def merge_title(client, title, year, fab, gem, top):
     return ranked[:top], d["excluded"]
 
 
+def fable_has_ab(s):
+    return any(classify_domain(u) in ("A", "B") for u in re.findall(r"<(https?://[^>]+)>", s or ""))
+
+
 def src_html_fable(s):
     parts = re.split(r"\s*(?=\d\)\s)", s)
     out = []
@@ -141,11 +145,13 @@ def src_html_fable(s):
         if not m:
             continue
         url = m.group(1)
-        tier = (re.search(r">,\s*([ABC])\b", p) or [None, "?"])[1]
+        tier = classify_domain(url)
+        tier = "UNRATED" if tier == "unknown" else "TIER " + tier
         host = re.sub(r"^www\.", "", url.split("/")[2])
         q = (re.search(r"—\s*(.*)$", p) or [None, ""])[1].strip()
+        q = re.split(r"\s;\s", q)[0].strip()      # drop the trailing "; Other outlet (...)" notes
         q = q[:200].rsplit(" ", 1)[0] + " …" if len(q) > 200 else q
-        out.append(f'<a href="{EA(url)}">{E_(host)}</a> | TIER {tier}' + (f"<br><i>Passage:</i> {E_(q)}" if q else ""))
+        out.append(f'<a href="{EA(url)}">{E_(host)}</a> | {tier}' + (f"<br><i>Passage:</i> {E_(q)}" if q else ""))
     return "<br>".join(out)
 
 
@@ -166,8 +172,14 @@ def main(fable_md, gdir, out, top=30):
     client = GeminiClient()
     years = {t: json.load(open(f))["film"].get("year") for f in glob.glob(f"{gdir}/*.review.json")
              for t in [json.load(open(f))["film"]["title"]]}
-    with ThreadPoolExecutor(max_workers=5) as pool:
-        res = list(pool.map(lambda t: merge_title(client, t, years[t], fab[t], gem[t], top), titles))
+    saved = out.replace(".html", ".json")
+    if "--render-only" in sys.argv and Path(saved).exists():
+        byid = {t: {it["id"]: it for it in fab[t] + gem[t]} for t in titles}
+        sv = {x[0]: x for x in json.load(open(saved))}
+        res = [([(byid[t][w], [byid[t][o] for o in oo if o in byid[t]], why) for w, oo, why in sv[t][1]], sv[t][2]) for t in titles]
+    else:
+        with ThreadPoolExecutor(max_workers=5) as pool:
+            res = list(pool.map(lambda t: merge_title(client, t, years[t], fab[t], gem[t], top), titles))
     body, summ = [], []
     for t, (ranked, excl) in zip(titles, res):
         both = sum(1 for _, o, _ in ranked if o and ({w.get("model") for w in o} - {_}))
@@ -187,7 +199,9 @@ def main(fable_md, gdir, out, top=30):
                 o = oth[0]
                 alt = f'<p><b>Other version ({o["model"]}):</b> {E_(o["short"])}</p>'
             fl = w.get("flags", "")
-            body.append(f'<h3>{n}. ✅ {E_(w["label"].replace("PASSES: ", "PASSES: "))}{E_(tag)}</h3>'
+            lab = ("✅ " + w["label"]) if (w["model"] == "Gemini" or fable_has_ab(w["sources"])) else \
+                  "🔶 Fable marks this as passing, but none of its listed sources is A/B in our outlet lists"
+            body.append(f'<h3>{n}. {E_(lab)}{E_(tag)}</h3>'
                         f'<p><b>Full fact:</b> {E_(w["full"])}</p><p><b>Short:</b> {E_(clean_len(w["short"]))}</p>'
                         f'<p><b>Long:</b> {E_(clean_len(w["long"]))}</p><p><b>Top sources:</b><br>{srcs}</p>' + alt
                         + (f"<p><b>Why review:</b> {E_(fl)}</p>" if fl and fl.lower() not in ("none", "none.") else ""))
@@ -200,10 +214,12 @@ def main(fable_md, gdir, out, top=30):
             '<table border="1" cellpadding="4"><tr><th>Title</th><th>Facts</th><th>Fable version used</th><th>Gemini version used</th>'
             f"<th>Found by both</th><th>Pool size (Fable / Gemini)</th></tr>{rows}</table>")
     Path(out).write_text(head + "\n".join(body))
-    json.dump([[t, [(w["id"], [o["id"] for o in oo], why) for w, oo, why in rk], ex] for t, (rk, ex) in zip(titles, res)],
-              open(out.replace(".html", ".json"), "w"), indent=1)
+    if "--render-only" not in sys.argv:
+        json.dump([[t, [(w["id"], [o["id"] for o in oo], why) for w, oo, why in rk], ex] for t, (rk, ex) in zip(titles, res)],
+                  open(saved, "w"), indent=1)
     print(summ)
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], sys.argv[3], int(sys.argv[4]) if len(sys.argv) > 4 else 30)
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    main(args[0], args[1], args[2], int(args[3]) if len(args) > 3 else 30)

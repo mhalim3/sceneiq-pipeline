@@ -9,6 +9,16 @@
   "outlet_type": "Radio station website",
   "reason": "This is the website for a local radio station, and its entertainment news articles are published under a generic byline without a clear editorial process or named author."
  },
+ "1045wjjk.com": {
+  "tier": "C",
+  "outlet_type": "Local radio station website",
+  "reason": "This is the website for a local radio station, which is not a primary source for film news and lacks a reputation for editorial oversight or fact-checking on this topic."
+ },
+ "10magazine.com": {
+  "tier": "B",
+  "outlet_type": "fashion and culture magazine",
+  "reason": "This is an established fashion and culture magazine with bylined articles and editorial oversight, making it a reliable source for its area of coverage."
+ },
  "225batonrouge.com": {
   "tier": "B",
   "outlet_type": "local lifestyle magazine",
@@ -18,6 +28,16 @@
   "tier": "C",
   "outlet_type": "movie review podcast",
   "reason": "This is a personal podcast and blog focused on reviews and opinions, not factual reporting, and it lacks any visible editorial process or reputation for fact-checking."
+ },
+ "8days.sg": {
+  "tier": "B",
+  "outlet_type": "entertainment magazine",
+  "reason": "This is an established entertainment magazine published by major Singaporean media company Mediacorp, which indicates professional staff and editorial oversight."
+ },
+ "8dio.com": {
+  "tier": "C",
+  "outlet_type": "audio software company blog",
+  "reason": "This is a commercial site for an audio software company, and its articles are a form of content marketing, not independent journalism with editorial oversight."
  },
  "aalbc.com": {
   "tier": "B",
@@ -29,10 +49,25 @@
   "outlet_type": "Lifestyle and interest group magazine",
   "reason": "AARP is a major organization with a professionally staffed and edited publication that covers culture and entertainment."
  },
+ "academymuseumstore.org": {
+  "tier": "C",
+  "outlet_type": "Museum merchandise store",
+  "reason": "This is a commercial website selling merchandise, not a publication with an editorial process for presenting facts."
+ },
  "actfourscreenplays.com": {
   "tier": "C",
   "outlet_type": "screenwriting consultant's site",
   "reason": "This is a commercial site for an individual screenwriting consultant selling books and services, not an independent publication with editorial oversight."
+ },
+ "actionewz.com": {
+  "tier": "C",
+  "outlet_type": "Fan news site",
+  "reason": "This is a fan-oriented news and interview site that lacks the clear editorial oversight and reputation for fact-checking required of a reliable source."
+ },
+ "actorsaccentcoach.com": {
+  "tier": "C",
+  "outlet_type": "Professional's blog",
+  "reason": "This is a self-published source from an individual professional, which lacks the editorial oversight and reputation for fact-checking of a reliable outlet."
  },
  "africanfilmny.org": {
   "tier": "B",
@@ -79,10 +114,20 @@
   "outlet_type": "Martial arts school website",
   "reason": "This is a commercial website for a martial arts school, not a publication with an editorial process for reporting on films."
  },
+ "alltherightmovies.com": {
+  "tier": "C",
+  "outlet_type": "Film enthusiast site",
+  "reason": "The site is run by a collective of enthusiasts and lacks the visible editorial oversight or fact-checking process required of a reliable source."
+ },
  "allthetropes.org": {
   "tier": "C",
   "outlet_type": "user-generated wiki",
   "reason": "This is a user-generated wiki that lacks the professional editorial oversight and fact-checking processes of a reliable source."
+ },
+ "alternateending.com": {
+  "tier": "C",
+  "outlet_type": "Film review site",
+  "reason": "This site consists of reviews and opinion pieces from named critics, but it does not have the reputation for institutional fact-checking and editorial oversight required of a reliable source for facts."
  },
  "alternativemagazineonline.co.uk": {
   "tier": "C",
@@ -94,6 +139,11 @@
   "outlet_type": "free-hosted blog",
   "reason": "This site is hosted on Altervista, a free blogging platform, and shows no signs of editorial oversight or a professional staff."
  },
+ "alwaysmountaintime.com": {
+  "tier": "C",
+  "outlet_type": "local radio station website",
+  "reason": "This is the website for a local radio station, not a publication with a reputation for original reporting or fact-checking on the film industry."
+ },
  "ambrosiaforheads.com": {
   "tier": "B",
   "outlet_type": "Hip-hop culture site",
@@ -104,15 +154,40 @@
   "outlet_type": "animal-welfare monitor",
   "reason": "As the official organization behind the \"No Animals Were Harmed\" certification, it is a reliable primary source for facts about animal safety in film productions."
  },
+ "amysrobot.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This site has the structure and content of a personal blog, which lacks the editorial oversight and reputation for fact-checking required for a reliable source."
+ },
+ "animatedviews.com": {
+  "tier": "C",
+  "outlet_type": "Animation news and review site",
+  "reason": "The site's content, as shown in the example, consists of reprinted studio press releases, which lacks the independent reporting and editorial oversight required for a reliable source."
+ },
  "animationmagazine.net": {
   "tier": "B",
   "outlet_type": "Trade publication",
   "reason": "This is a long-running, established trade magazine for the animation industry with clear editorial oversight."
  },
+ "animationscoop.com": {
+  "tier": "C",
+  "outlet_type": "Animation news blog",
+  "reason": "While run by a respected animation historian, the site is primarily a blog and lacks the visible editorial oversight and formal fact-checking process of a major publication."
+ },
+ "annecyfestival.com": {
+  "tier": "B",
+  "outlet_type": "official film festival site",
+  "reason": "This is the official website for a major, long-running film festival, making it a reliable primary source for information about its own events and premieres."
+ },
  "antwone-fisher.com": {
   "tier": "B",
   "outlet_type": "Official personal website",
   "reason": "This is the official website of the screenwriter and author, making it a reliable primary source for information about him and his work."
+ },
+ "anygoodfilms.com": {
+  "tier": "C",
+  "outlet_type": "Film news and review site",
+  "reason": "While the site features original content like interviews, there is no evidence of a professional editorial staff, fact-checking process, or established reputation for accuracy."
  },
  "apparelmagazine.co.nz": {
   "tier": "C",
@@ -134,10 +209,60 @@
   "outlet_type": "digital archive",
   "reason": "This is a digital archive that hosts other sources of varying reliability and lacks its own editorial process over the archived content."
  },
+ "archpaper.com": {
+  "tier": "B",
+  "outlet_type": "Architecture and design publication",
+  "reason": "This is an established trade publication for architecture and design, making it a reliable source for facts about a film's set design, locations, and scenery."
+ },
+ "arrirental.com": {
+  "tier": "B",
+  "outlet_type": "Film equipment rental company",
+  "reason": "This is the official website for a major film equipment rental company, making it a reliable primary source for facts about its own products and their use in productions."
+ },
+ "artofgears.com": {
+  "tier": "C",
+  "outlet_type": "Automotive blog",
+  "reason": "This is a niche automotive blog within the FanSided network, which does not have the reputation for editorial oversight or film expertise required of a reliable source for movie facts."
+ },
+ "artofvfx.com": {
+  "tier": "B",
+  "outlet_type": "VFX trade publication",
+  "reason": "This is an established and respected trade publication that conducts original, in-depth interviews with named VFX professionals about their work on specific films."
+ },
+ "as.com": {
+  "tier": "B",
+  "outlet_type": "Sports news outlet",
+  "reason": "AS.com is a long-standing international sports newspaper with a professional editorial process that also covers entertainment news."
+ },
+ "ashleyhajimirsadeghi.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is the personal website and blog of an individual writer, which lacks the editorial oversight and fact-checking processes of an established publication."
+ },
+ "asoundeffect.com": {
+  "tier": "C",
+  "outlet_type": "Specialty audio blog and store",
+  "reason": "This is a commercial site selling sound effects, with its articles functioning as content marketing rather than independent, fact-checked journalism."
+ },
+ "atlantablackstar.com": {
+  "tier": "B",
+  "outlet_type": "News and culture publication",
+  "reason": "This is an established news outlet with a named editorial staff, a stated ethics policy, and clear editorial oversight."
+ },
  "atlantafi.com": {
   "tier": "C",
   "outlet_type": "Local news and lifestyle blog",
   "reason": "This is a local lifestyle blog that aggregates news like casting calls, but it lacks the established reputation for fact-checking and editorial oversight required of a reliable source."
+ },
+ "atomicredhead.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is a personal blog focused on travel and filming locations, which lacks the editorial oversight and reputation for fact-checking required by Wikipedia's reliable source guidelines."
+ },
+ "austinchronicle.com": {
+  "tier": "B",
+  "outlet_type": "Local alternative newspaper",
+  "reason": "The Austin Chronicle is a long-running alternative weekly newspaper with an established editorial staff and a reputation for arts and culture coverage, including film reviews."
  },
  "avid.wiki": {
   "tier": "C",
@@ -154,25 +279,90 @@
   "outlet_type": "Film awards news site",
   "reason": "This is an established publication with named professional staff and a clear editorial focus on the film industry and awards season."
  },
+ "awardswatch.com": {
+  "tier": "B",
+  "outlet_type": "Film awards news and analysis site",
+  "reason": "This is an established outlet with a named editor-in-chief and staff that focuses on film industry news and analysis."
+ },
  "awn.com": {
   "tier": "B",
   "outlet_type": "Animation industry trade publication",
   "reason": "Animation World Network is an established trade publication with professional staff and editorial oversight covering the animation and visual effects industries."
+ },
+ "azlyrics.com": {
+  "tier": "C",
+  "outlet_type": "song lyrics database",
+  "reason": "This website is a database for song lyrics, often user-submitted, and is not a reliable source for facts about movies."
+ },
+ "backstage.com": {
+  "tier": "B",
+  "outlet_type": "Entertainment trade publication",
+  "reason": "Backstage is a long-established trade publication for actors and the entertainment industry with named authors and clear editorial oversight."
+ },
+ "badgerherald.com": {
+  "tier": "C",
+  "outlet_type": "student newspaper",
+  "reason": "Student newspapers are generally considered reliable for news about their university, but not as expert sources for broader topics like film analysis."
  },
  "bandmine.com": {
   "tier": "C",
   "outlet_type": "content aggregator",
   "reason": "This site appears to be a user-generated aggregator that re-publishes content from other sources and lacks evidence of an editorial process."
  },
+ "bandsaboutmovies.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "The site's own text states it is owned and operated by a single person as the sole proprietor and chief writer, indicating it is a personal blog without editorial oversight."
+ },
  "bangpremier.com": {
   "tier": "C",
   "outlet_type": "Entertainment news agency",
   "reason": "This outlet appears to be an entertainment news wire service, but lacks visible editorial oversight and contains errors, such as a future publication date, which casts doubt on its reliability."
  },
+ "bartleby.com": {
+  "tier": "C",
+  "outlet_type": "user-generated essay site",
+  "reason": "The site hosts user-generated essays which lack the editorial oversight and fact-checking required for a reliable source."
+ },
+ "beforesandafters.com": {
+  "tier": "B",
+  "outlet_type": "VFX trade publication",
+  "reason": "This is a specialized trade publication for the visual effects industry, run by a professional journalist and featuring interviews with key production personnel."
+ },
+ "behindthelensonline.net": {
+  "tier": "B",
+  "outlet_type": "Film news and interview site",
+  "reason": "The site has named editors and publishers and produces original content, including interviews with film industry professionals, indicating editorial oversight."
+ },
+ "beliefnet.com": {
+  "tier": "B",
+  "outlet_type": "Faith and culture publication",
+  "reason": "This is an established online magazine with an editorial staff and a long history of publishing interviews and articles on entertainment from a faith-based perspective."
+ },
+ "belloflostsouls.net": {
+  "tier": "B",
+  "outlet_type": "Pop culture and gaming news site",
+  "reason": "This is an established news and commentary site focused on gaming and pop culture with a named editorial staff and clear oversight."
+ },
  "beltline.org": {
   "tier": "C",
   "outlet_type": "Organizational blog",
   "reason": "This is the official blog for a civic project, not a publication with expertise or editorial oversight dedicated to film."
+ },
+ "bengans.com": {
+  "tier": "C",
+  "outlet_type": "Merchandise retail site",
+  "reason": "This is a commercial website for selling physical media, not a publication with an editorial process for fact-checking."
+ },
+ "berkeleybeacon.com": {
+  "tier": "C",
+  "outlet_type": "college newspaper",
+  "reason": "As a student-run college newspaper, it lacks the professional editorial oversight and reputation for fact-checking required to be considered a reliable source for facts."
+ },
+ "bibliocommons.com": {
+  "tier": "C",
+  "outlet_type": "Library community platform",
+  "reason": "This is a library platform featuring user-generated content, such as the example \"community-created list,\" which lacks editorial oversight."
  },
  "biffbampop.com": {
   "tier": "C",
@@ -194,6 +384,11 @@
   "outlet_type": "film news and criticism site",
   "reason": "This was an established online publication with a professional editorial staff known for film news, reviews, and essays."
  },
+ "bjjee.com": {
+  "tier": "C",
+  "outlet_type": "martial arts blog",
+  "reason": "This is a niche publication focused on martial arts, not an established source with editorial oversight for facts about movies."
+ },
  "blackartstory.org": {
   "tier": "C",
   "outlet_type": "Art blog",
@@ -214,6 +409,11 @@
   "outlet_type": "Entertainment and culture publication",
   "reason": "This is an established publication with named staff and an editorial process that produces original journalistic content like interviews and reviews."
  },
+ "blackmenshealth.com": {
+  "tier": "C",
+  "outlet_type": "Men's health website",
+  "reason": "This is a men's health and lifestyle website, not a publication with a focus on or editorial oversight for film industry news or facts."
+ },
  "blackwatchmovies.com": {
   "tier": "C",
   "outlet_type": "personal blog",
@@ -229,6 +429,11 @@
   "outlet_type": "Screenwriting trade blog",
   "reason": "This is the official blog of The Black List, a reputable screenwriting industry organization, and features interviews and articles by named professionals."
  },
+ "bleedingcool.com": {
+  "tier": "C",
+  "outlet_type": "Pop culture news and rumor site",
+  "reason": "The site is well-known for publishing industry rumors, gossip, and unverified scoops, and lacks a strong reputation for fact-checking and corrections."
+ },
  "blu-ray.com": {
   "tier": "C",
   "outlet_type": "Home media news and community forum",
@@ -243,6 +448,16 @@
   "tier": "C",
   "outlet_type": "film data blog",
   "reason": "The site lacks any visible editorial process, named authors, or masthead, making it impossible to verify its reliability or reputation for fact-checking."
+ },
+ "bookhero.co.nz": {
+  "tier": "C",
+  "outlet_type": "Online bookstore",
+  "reason": "This is a commercial e-commerce site selling books and other merchandise, not a publication with an editorial process for fact-checking."
+ },
+ "borisfx.com": {
+  "tier": "C",
+  "outlet_type": "Software company website",
+  "reason": "This is the commercial website for a visual effects software company, and its content primarily serves to market its own products."
  },
  "bossip.com": {
   "tier": "C",
@@ -269,6 +484,11 @@
   "outlet_type": "box office data aggregator",
   "reason": "This site appears to be a database that aggregates information from other sources and lacks a visible editorial staff, corrections policy, or established reputation for fact-checking."
  },
+ "boxofficemojo.com": {
+  "tier": "B",
+  "outlet_type": "box office data website",
+  "reason": "It is a long-established and widely cited source for film box office data, considered a standard reference in the industry."
+ },
  "boxofficeprophets.com": {
   "tier": "B",
   "outlet_type": "Box office analysis site",
@@ -289,6 +509,11 @@
   "outlet_type": "personal blog",
   "reason": "This is the personal blog of a single film critic and lacks the editorial oversight required of a reliable source."
  },
+ "bricksmagazine.co.uk": {
+  "tier": "C",
+  "outlet_type": "arts and culture magazine",
+  "reason": "This is an arts and culture magazine whose film-related content consists of opinion and commentary rather than factual reporting."
+ },
  "bridgekeys.pro": {
   "tier": "C",
   "outlet_type": "inactive or non-existent site",
@@ -299,10 +524,20 @@
   "outlet_type": "Content farm and listicle site",
   "reason": "The site is a content farm that publishes aggregated listicles and lacks the visible editorial process required for a reliable source."
  },
+ "britishcinematographer.co.uk": {
+  "tier": "B",
+  "outlet_type": "Film industry trade publication",
+  "reason": "This is a professional trade publication for the film industry, focusing on the craft of cinematography with interviews and technical articles."
+ },
  "brobible.com": {
   "tier": "C",
   "outlet_type": "Men's lifestyle and entertainment blog",
   "reason": "This is a lifestyle and entertainment blog that aggregates content and lacks the editorial oversight and reputation for fact-checking required for a reliable source."
+ },
+ "brooklynmuseum.org": {
+  "tier": "C",
+  "outlet_type": "Museum website",
+  "reason": "While a reputable institution, its area of expertise is art and history, not cinema."
  },
  "bucksco.today": {
   "tier": "B",
@@ -323,6 +558,16 @@
   "tier": "C",
   "outlet_type": "podcast hosting platform",
   "reason": "This is a platform for hosting user-generated podcasts and does not have its own editorial oversight or fact-checking process."
+ },
+ "california.com": {
+  "tier": "C",
+  "outlet_type": "Regional lifestyle site",
+  "reason": "This is a commercial lifestyle and business promotion site that lacks the editorial oversight and reputation for fact-checking required of a reliable source."
+ },
+ "cartoonbrew.com": {
+  "tier": "B",
+  "outlet_type": "Animation industry news site",
+  "reason": "This is an established and professionally-staffed trade publication focused on the animation industry, with a history of original reporting and editorial oversight."
  },
  "cbc.ca": {
   "tier": "B",
@@ -349,6 +594,21 @@
   "outlet_type": "Entertainment trade press",
   "reason": "This is an established trade publication for the entertainment industry with named professional staff and a clear editorial structure."
  },
+ "centraltrack.com": {
+  "tier": "C",
+  "outlet_type": "Local culture publication",
+  "reason": "This is a local culture publication, and its reputation for editorial oversight and fact-checking on the subject of film is not established."
+ },
+ "cgmeetup.com": {
+  "tier": "C",
+  "outlet_type": "CG industry community site",
+  "reason": "This is a professional community and marketplace site where content, such as company profiles, is user-generated and lacks evidence of editorial oversight or fact-checking."
+ },
+ "chaos.com": {
+  "tier": "C",
+  "outlet_type": "VFX software company website",
+  "reason": "This is a commercial website for a software company, not an independent publication with editorial oversight for film facts."
+ },
  "charlestoncitypaper.com": {
   "tier": "B",
   "outlet_type": "Local alternative newspaper",
@@ -363,6 +623,16 @@
   "tier": "B",
   "outlet_type": "Entertainment news site",
   "reason": "This is an established entertainment news outlet with named professional staff, editorial oversight, and original reporting in the form of interviews."
+ },
+ "cheezburger.com": {
+  "tier": "C",
+  "outlet_type": "Meme and entertainment aggregator",
+  "reason": "This is a humor and internet culture site focused on memes and aggregated listicles, not a journalistic source with a reputation for fact-checking."
+ },
+ "chicagotribune.com": {
+  "tier": "B",
+  "outlet_type": "Major newspaper",
+  "reason": "The Chicago Tribune is a major, long-established newspaper with a reputation for fact-checking and editorial oversight."
  },
  "chinavistas.com": {
   "tier": "C",
@@ -399,15 +669,65 @@
   "outlet_type": "Entertainment news site",
   "reason": "CinemaBlend is an established entertainment news website with a professional staff, bylined articles, and editorial oversight."
  },
+ "cinemadailyus.com": {
+  "tier": "B",
+  "outlet_type": "Film news and interview site",
+  "reason": "The site has a named editorial staff and publishes original content like exclusive interviews, indicating it has an editorial process."
+ },
+ "cinemaexpress.com": {
+  "tier": "B",
+  "outlet_type": "Entertainment news site",
+  "reason": "This is the cinema-focused publication of The New Indian Express, a major newspaper, and it features named authors and editorial oversight."
+ },
+ "cinemascholars.com": {
+  "tier": "C",
+  "outlet_type": "Film analysis site",
+  "reason": "This appears to be a publication by enthusiasts and lacks evidence of a formal editorial process, professional staff, or a reputation for fact-checking required for a reliable source."
+ },
+ "cinemascore.com": {
+  "tier": "B",
+  "outlet_type": "Market research firm",
+  "reason": "This is the official site for a long-established market research firm whose audience polling data is widely cited as a reliable industry standard."
+ },
+ "cinemasight.com": {
+  "tier": "C",
+  "outlet_type": "Film review blog",
+  "reason": "The site appears to be a personal blog run by a single individual, which lacks the editorial oversight required for a reliable source."
+ },
  "cinemotic.com": {
   "tier": "C",
   "outlet_type": "personal blog",
   "reason": "This appears to be a personal blog with a single author and no evidence of the editorial oversight required for a reliable source."
  },
+ "cinemovie.tv": {
+  "tier": "B",
+  "outlet_type": "Film news site",
+  "reason": "This outlet features original interviews with industry figures conducted by named professional staff, indicating it is an established publication with editorial oversight."
+ },
+ "cinetrii.com": {
+  "tier": "C",
+  "outlet_type": "film connection aggregator",
+  "reason": "This site algorithmically aggregates data from unspecified film reviews and lacks the editorial oversight of an established publication."
+ },
+ "claireheffer.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is a personal design portfolio and blog with no evidence of editorial oversight or a fact-checking process."
+ },
+ "classiccinemas.com.au": {
+  "tier": "C",
+  "outlet_type": "Movie theater chain website",
+  "reason": "This is a commercial website for a movie theater chain, and its content consists of marketing copy and showtimes, not independently researched facts."
+ },
  "clip.cafe": {
   "tier": "C",
   "outlet_type": "movie clip database",
   "reason": "This is a database of movie clips with no visible editorial process, named authors, or reputation for fact-checking."
+ },
+ "closerweekly.com": {
+  "tier": "C",
+  "outlet_type": "celebrity gossip magazine",
+  "reason": "This is a celebrity gossip magazine, a type of outlet that Wikipedia's guidelines generally consider unreliable for factual reporting."
  },
  "co.ke": {
   "tier": "C",
@@ -418,6 +738,11 @@
   "tier": "C",
   "outlet_type": "media industry trade publication",
   "reason": "This site focuses on media, marketing, and publicity, meaning its content about films is likely to be promotional or based on press releases rather than independent, factual reporting."
+ },
+ "coffeeordie.com": {
+  "tier": "C",
+  "outlet_type": "Brand-affiliated lifestyle magazine",
+  "reason": "The site is a form of brand journalism for the Black Rifle Coffee Company, not an independent publication with a primary focus on film reporting."
  },
  "com.gh": {
   "tier": "C",
@@ -439,6 +764,11 @@
   "outlet_type": "Entertainment news site",
   "reason": "This is an established commercial news outlet with named professional staff and editorial oversight covering pop culture and entertainment."
  },
+ "comicbookmovie.com": {
+  "tier": "C",
+  "outlet_type": "Fan-centric movie news site",
+  "reason": "The site mixes professional-style content like interviews with user-generated content like fan-fiction and unverified 'scoops,' which makes its editorial oversight and reliability questionable."
+ },
  "comicsverse.com": {
   "tier": "B",
   "outlet_type": "Comics and pop culture site",
@@ -449,15 +779,30 @@
   "outlet_type": "Entertainment news site",
   "reason": "This is an established entertainment news outlet with a long history, named professional staff, and a clear editorial process."
  },
+ "company3.com": {
+  "tier": "C",
+  "outlet_type": "Post-production company website",
+  "reason": "This is the commercial website for a post-production services company, not a journalistic or reference source for general film facts."
+ },
  "complex.com": {
   "tier": "B",
   "outlet_type": "Pop culture news site",
   "reason": "Complex is an established pop culture and entertainment news outlet with named professional staff and clear editorial oversight."
  },
+ "comscore.com": {
+  "tier": "B",
+  "outlet_type": "Media analytics company",
+  "reason": "Comscore is a widely-cited and reputable media analytics company that provides primary data on box office performance."
+ },
  "consequence.net": {
   "tier": "B",
   "outlet_type": "Entertainment news and culture publication",
   "reason": "This is an established online magazine for music and film news and criticism with a professional editorial staff and clear bylines."
+ },
+ "consumerguide.com": {
+  "tier": "C",
+  "outlet_type": "Automotive consumer guide",
+  "reason": "This outlet's primary focus is on automobiles, not film, making it an unreliable source for facts about movies."
  },
  "coolpapae.com": {
   "tier": "C",
@@ -479,10 +824,20 @@
   "outlet_type": "User forum",
   "reason": "This is a user-generated discussion forum, which lacks the editorial oversight and fact-checking required for a reliable source."
  },
+ "cultureslate.com": {
+  "tier": "C",
+  "outlet_type": "Entertainment news and commentary site",
+  "reason": "This appears to be a fan-centric pop culture site that does not have a clear, established reputation for fact-checking and editorial oversight comparable to a major news organization or trade publication."
+ },
  "culveronfilm.com": {
   "tier": "C",
   "outlet_type": "personal blog",
   "reason": "The site is written from a personal, first-person perspective and presents its own original research, indicating it is a personal blog without editorial oversight."
+ },
+ "dailybruin.com": {
+  "tier": "B",
+  "outlet_type": "University student newspaper",
+  "reason": "This is the established student newspaper for UCLA, which demonstrates editorial oversight with bylines and a process for issuing corrections."
  },
  "dailyexcelsior.com": {
   "tier": "B",
@@ -504,6 +859,11 @@
   "outlet_type": "National newspaper",
   "reason": "The Daily Record is an established national newspaper in Scotland with clear editorial oversight and professional staff."
  },
+ "damian-lewis.com": {
+  "tier": "C",
+  "outlet_type": "fan site",
+  "reason": "This is a fan-run website dedicated to a single celebrity and lacks the editorial oversight of a reliable publication."
+ },
  "dancemagazine.com": {
   "tier": "B",
   "outlet_type": "Dance trade publication",
@@ -513,6 +873,16 @@
   "tier": "B",
   "outlet_type": "film news site",
   "reason": "This is a long-running, established entertainment news outlet with a named editor and a history of original reporting and reviews."
+ },
+ "darrengrantvisuals.com": {
+  "tier": "C",
+  "outlet_type": "Filmmaker's professional website",
+  "reason": "This is a self-published promotional website for an individual filmmaker and lacks the editorial oversight required of a reliable source."
+ },
+ "davidclaessen.com": {
+  "tier": "C",
+  "outlet_type": "personal website",
+  "reason": "This is the personal curriculum vitae of a single film professional and lacks the independent editorial oversight required of a reliable source."
  },
  "deepfocusreview.com": {
   "tier": "C",
@@ -524,15 +894,30 @@
   "outlet_type": "Community newspaper",
   "reason": "This is an established news publication with a long history, professional staff, and clear editorial oversight."
  },
+ "definitionmagazine.com": {
+  "tier": "B",
+  "outlet_type": "film industry trade magazine",
+  "reason": "This is an established trade magazine for film industry professionals with named authors and clear editorial oversight."
+ },
  "defunkd.com": {
   "tier": "C",
   "outlet_type": "Niche blog and marketplace",
   "reason": "This is a commercial site and blog focused on vintage t-shirts, not an established publication with a reputation for fact-checking."
  },
+ "delawareredpitbulls.com": {
+  "tier": "C",
+  "outlet_type": "Dog breeder website",
+  "reason": "This is the commercial website for a dog breeder and is not a source of information about movies."
+ },
  "designingsound.org": {
   "tier": "B",
   "outlet_type": "sound design trade publication",
   "reason": "This is a specialized trade publication with named authors and original interviews with industry professionals, indicating editorial oversight."
+ },
+ "dezeen.com": {
+  "tier": "B",
+  "outlet_type": "Architecture and design magazine",
+  "reason": "This is a well-established and reputable professional magazine with clear editorial oversight that covers film from a design perspective."
  },
  "dictionary.com": {
   "tier": "B",
@@ -544,10 +929,45 @@
   "outlet_type": "Health and diet blog",
   "reason": "This is a blog focused on diets, supplements, and health products, not a reliable source for information about movies."
  },
+ "digitaldomain.com": {
+  "tier": "B",
+  "outlet_type": "Visual effects studio",
+  "reason": "This is the official website for the visual effects company that worked on the film, making it a reliable primary source for its own contributions."
+ },
  "diply.com": {
   "tier": "C",
   "outlet_type": "Listicle and content aggregation site",
   "reason": "This is a content farm that publishes listicles and aggregated viral content with no evidence of a rigorous editorial or fact-checking process."
+ },
+ "diy.org": {
+  "tier": "C",
+  "outlet_type": "children's educational site",
+  "reason": "This is a learning platform for children that simplifies information and does not have the editorial oversight or reputation for fact-checking required of a reliable source."
+ },
+ "dolby.com": {
+  "tier": "B",
+  "outlet_type": "Official company site",
+  "reason": "This is the official website for a major film industry technology company, making it a reliable primary source for interviews with professionals about their work."
+ },
+ "dove.org": {
+  "tier": "C",
+  "outlet_type": "Faith-based film review site",
+  "reason": "This is a special-interest publication that provides reviews and ratings from a specific faith-based perspective, rather than a journalistic source focused on objective fact-checking."
+ },
+ "dreamworks.com": {
+  "tier": "B",
+  "outlet_type": "Official studio site",
+  "reason": "This is the official website for the film studio, which is considered a reliable primary source for facts about its own productions."
+ },
+ "drifttravel.com": {
+  "tier": "C",
+  "outlet_type": "Travel magazine",
+  "reason": "This is a travel and lifestyle publication, not an established outlet with editorial oversight or expertise in film journalism or history."
+ },
+ "drivencarguide.co.nz": {
+  "tier": "B",
+  "outlet_type": "Automotive news site",
+  "reason": "This is a professional automotive news site published by a major media company, NZME, with named authors and editorial oversight."
  },
  "drumeo.com": {
   "tier": "C",
@@ -584,6 +1004,11 @@
   "outlet_type": "educational institution blog",
   "reason": "This is a blog on an educational institution's website, not an established publication with a reputation for fact-checking in film journalism."
  },
+ "eewmagazineonline.com": {
+  "tier": "C",
+  "outlet_type": "Faith-based lifestyle magazine",
+  "reason": "This is a faith-based lifestyle magazine whose primary purpose is inspiration and ministry, not factual reporting on the film industry."
+ },
  "elcinema.com": {
   "tier": "C",
   "outlet_type": "film database",
@@ -594,10 +1019,20 @@
   "outlet_type": "Lifestyle and entertainment site",
   "reason": "This is a lifestyle and entertainment publication aimed at millennials, which lacks the reputation for rigorous fact-checking of a dedicated news or trade press outlet."
  },
+ "elle.com.au": {
+  "tier": "B",
+  "outlet_type": "Lifestyle and fashion magazine",
+  "reason": "This is the online presence of a major international lifestyle and fashion magazine with a professional editorial staff and oversight."
+ },
  "emanuellevy.com": {
   "tier": "C",
   "outlet_type": "Film critic's blog",
   "reason": "While the author is a respected professional critic, this is a self-published site that lacks the independent editorial oversight of a larger publication."
+ },
+ "emol.org": {
+  "tier": "C",
+  "outlet_type": "press release aggregator",
+  "reason": "This site appears to republish studio-provided production notes, which are a form of press release, without any editorial oversight."
  },
  "entertainment.ie": {
   "tier": "B",
@@ -608,6 +1043,11 @@
   "tier": "B",
   "outlet_type": "Lifestyle and culture magazine",
   "reason": "Esquire is a long-established magazine with a professional editorial staff, clear authorship, and a reputation for fact-checking, meeting the criteria for a reliable source."
+ },
+ "esquireme.com": {
+  "tier": "B",
+  "outlet_type": "regional lifestyle magazine",
+  "reason": "This is the Middle East edition of Esquire, a long-established international magazine with professional editorial standards."
  },
  "essence.com": {
   "tier": "B",
@@ -654,6 +1094,11 @@
   "outlet_type": "fandom news site",
   "reason": "This is a fan-focused publication with a mix of staff-written articles and user-generated forums, making its overall editorial rigor and reputation for fact-checking unclear."
  },
+ "fanboysoftheuniverse.com": {
+  "tier": "C",
+  "outlet_type": "Film analysis blog",
+  "reason": "This site focuses on reviews and cultural analysis from a fan perspective, and shows no evidence of the editorial oversight or fact-checking process required of a reliable source."
+ },
  "fandango.com": {
   "tier": "C",
   "outlet_type": "Movie ticketing site",
@@ -674,6 +1119,11 @@
   "outlet_type": "personal blog",
   "reason": "The site is written in a subjective, first-person style and appears to be a personal blog with no evidence of editorial oversight."
  },
+ "fdtimes.com": {
+  "tier": "B",
+  "outlet_type": "Film industry trade publication",
+  "reason": "This is a long-running trade publication for the film and digital production industry, indicating it has professional editorial standards."
+ },
  "female.com.au": {
   "tier": "C",
   "outlet_type": "Lifestyle website",
@@ -684,6 +1134,11 @@
   "outlet_type": "online lifestyle magazine",
   "reason": "This is an online lifestyle magazine focused on celebrity news and gossip, which lacks a reputation for the rigorous fact-checking required of a reliable source."
  },
+ "fergusonlynch.com": {
+  "tier": "C",
+  "outlet_type": "personal website",
+  "reason": "This appears to be a personal website or portfolio with no indication of editorial oversight, fact-checking, or status as an established publication."
+ },
  "fernbyfilms.com": {
   "tier": "C",
   "outlet_type": "Personal blog",
@@ -693,6 +1148,11 @@
   "tier": "C",
   "outlet_type": "Film review blog",
   "reason": "The site has no visible editorial staff, masthead, or fact-checking process, and its content includes listicles typical of a blog or content farm rather than an established publication."
+ },
+ "film-nerd.com": {
+  "tier": "C",
+  "outlet_type": "film review blog",
+  "reason": "The site lacks evidence of editorial oversight or named professional staff, appearing to be a personal blog."
  },
  "film-news.co.uk": {
   "tier": "B",
@@ -719,15 +1179,40 @@
   "outlet_type": "Merchandise affiliate blog",
   "reason": "This is a commercial site focused on identifying and selling merchandise via affiliate links, not a source with editorial oversight for factual reporting."
  },
+ "filmgrouch.com": {
+  "tier": "C",
+  "outlet_type": "Film review blog",
+  "reason": "This appears to be a group blog for film reviews and rants, lacking the visible editorial oversight and reputation for fact-checking required of a reliable source."
+ },
  "filmindustry.network": {
   "tier": "C",
   "outlet_type": "Film news site",
   "reason": "The site uses anonymous bylines like 'FIN Staff' and lacks a clear editorial policy or masthead, making it difficult to assess its journalistic standards."
  },
+ "filmingmap.com": {
+  "tier": "C",
+  "outlet_type": "filming locations database",
+  "reason": "This specialty database of filming locations lacks any visible editorial oversight or information about its fact-checking process."
+ },
  "filmlink.io": {
   "tier": "C",
   "outlet_type": "Movie trivia game",
   "reason": "This is a movie-themed game that aggregates data from other sources and has no visible editorial process or staff."
+ },
+ "filmmakermagazine.com": {
+  "tier": "B",
+  "outlet_type": "film industry magazine",
+  "reason": "Filmmaker Magazine is a long-running, reputable trade publication with professional staff and editorial oversight that focuses on the art and business of filmmaking."
+ },
+ "filmmining101.com": {
+  "tier": "C",
+  "outlet_type": "Film analysis blog",
+  "reason": "This appears to be a personal or niche blog with no evidence of editorial oversight, a professional staff, or a reputation for fact-checking."
+ },
+ "filmmusicmedia.com": {
+  "tier": "C",
+  "outlet_type": "film music review site",
+  "reason": "This appears to be a niche publication or blog with no clear evidence of a professional editorial staff, fact-checking process, or established reputation for accuracy."
  },
  "filmmusicreporter.com": {
   "tier": "B",
@@ -744,15 +1229,35 @@
   "outlet_type": "Film news site",
   "reason": "The site has a named editorial staff and a stated corrections policy, indicating a professional editorial process."
  },
+ "filmograph.tv": {
+  "tier": "B",
+  "outlet_type": "Design studio portfolio",
+  "reason": "This is the official portfolio for the design studio Filmograph, making it a reliable primary source for facts about the title sequences it has created."
+ },
  "filmreviewdaily.com": {
   "tier": "B",
   "outlet_type": "Film review and news site",
   "reason": "The site's structure, including sections for 'News & Features' and 'Contributors', indicates a professional publication with editorial oversight."
  },
+ "filmscoremonthly.com": {
+  "tier": "B",
+  "outlet_type": "Specialist film publication",
+  "reason": "The site is a long-running, specialized magazine with a clear editorial structure (e.g., 'Editorial,' 'Contributors,' 'News'), indicating it is a professional publication with editorial oversight."
+ },
+ "filmscouts.com": {
+  "tier": "C",
+  "outlet_type": "Defunct film review site",
+  "reason": "This appears to be a defunct film review and news website from the late 1990s/early 2000s whose modern reputation for fact-checking and editorial standards is difficult to verify."
+ },
  "filmsethunter.co.uk": {
   "tier": "C",
   "outlet_type": "Film location blog",
   "reason": "This appears to be a personal or hobbyist blog with no evidence of a formal editorial process or fact-checking."
+ },
+ "filmsinreview.com": {
+  "tier": "B",
+  "outlet_type": "Film publication",
+  "reason": "This is the online presence of a long-running film magazine (since 1950) with named contributors and an editorial structure."
  },
  "filmsounddaily.com": {
   "tier": "C",
@@ -774,6 +1279,11 @@
   "outlet_type": "Software company blog",
   "reason": "This is the commercial website and content marketing blog for a screenwriting software company, not an independent publication with journalistic oversight."
  },
+ "fitnyc.edu": {
+  "tier": "B",
+  "outlet_type": "University publication",
+  "reason": "The Fashion Institute of Technology is a reputable academic institution, and its publications are considered scholarly sources with editorial oversight."
+ },
  "flex-digital.net": {
   "tier": "C",
   "outlet_type": "Content farm",
@@ -783,6 +1293,11 @@
   "tier": "B",
   "outlet_type": "entertainment news and review site",
   "reason": "The site has a named editorial staff and publishes original news, reviews, and features, indicating it is an established outlet with editorial oversight."
+ },
+ "fountaindale.org": {
+  "tier": "B",
+  "outlet_type": "public library catalog",
+  "reason": "This is a bibliographic reference work from an established public institution, created by professional staff following standardized cataloging rules."
  },
  "fox13news.com": {
   "tier": "B",
@@ -794,10 +1309,20 @@
   "outlet_type": "Local TV news station",
   "reason": "This is the official website for a major local television news station, which has professional staff and editorial oversight."
  },
+ "fox5ny.com": {
+  "tier": "B",
+  "outlet_type": "Local TV news station",
+  "reason": "This is the website for an established local news organization with professional staff and editorial oversight."
+ },
  "freshairarchive.org": {
   "tier": "B",
   "outlet_type": "Public radio interview archive",
   "reason": "This is the official archive for 'Fresh Air,' a professionally produced interview program from the established public radio organization WHYY/NPR."
+ },
+ "freshfiction.tv": {
+  "tier": "B",
+  "outlet_type": "entertainment news site",
+  "reason": "This is an established publication with named editorial staff that produces original interviews and reviews."
  },
  "fromtailorswithlove.co.uk": {
   "tier": "C",
@@ -809,6 +1334,11 @@
   "outlet_type": "movie merchandise site",
   "reason": "This is a commercial site focused on identifying and linking to movie-related merchandise, not a source with editorial oversight for factual reporting."
  },
+ "frostmagazine.com": {
+  "tier": "C",
+  "outlet_type": "Lifestyle magazine",
+  "reason": "This is a general lifestyle magazine that lacks a clear reputation for fact-checking or editorial rigor regarding film industry facts."
+ },
  "funnyordie.com": {
   "tier": "C",
   "outlet_type": "comedy video website",
@@ -819,15 +1349,35 @@
   "outlet_type": "User-generated trivia site",
   "reason": "The site's content is user-generated, consisting of quizzes and Q&A sections that lack a formal editorial process or reputation for fact-checking."
  },
+ "gamepressure.com": {
+  "tier": "C",
+  "outlet_type": "Gaming and entertainment news site",
+  "reason": "This is a publication primarily focused on video games, not an established or authoritative source for facts about movies."
+ },
  "gamerant.com": {
   "tier": "C",
   "outlet_type": "Gaming and entertainment news site",
   "reason": "This is a high-volume entertainment news site whose content often consists of listicles, opinion, and speculation rather than original, fact-checked reporting."
  },
+ "gamereactor.eu": {
+  "tier": "C",
+  "outlet_type": "Gaming news site",
+  "reason": "This is an established publication for video game news, but it is not an authoritative or specialized source for information about movies."
+ },
  "gamesradar.com": {
   "tier": "B",
   "outlet_type": "Entertainment news site",
   "reason": "GamesRadar+ is an established entertainment news outlet with a public editorial staff, bylined articles, and a reputation for fact-checking."
+ },
+ "gamingbible.com": {
+  "tier": "B",
+  "outlet_type": "Entertainment news site",
+  "reason": "This is an established outlet with named professional staff and editorial oversight as part of the larger LADbible Group media company."
+ },
+ "gatamagazine.com": {
+  "tier": "C",
+  "outlet_type": "Online culture magazine",
+  "reason": "The site's content is primarily opinion and analysis, and it lacks an established reputation for fact-checking or rigorous editorial oversight required for sourcing facts."
  },
  "gazette-news.co.uk": {
   "tier": "B",
@@ -838,6 +1388,11 @@
   "tier": "B",
   "outlet_type": "local newspaper",
   "reason": "This is the website for an established local newspaper with clear editorial oversight and professional staff, making it a reliable source for news and interviews."
+ },
+ "geeksofdoom.com": {
+  "tier": "C",
+  "outlet_type": "Niche entertainment site",
+  "reason": "This is a fan-oriented entertainment site focused on reviews and opinion pieces, which lacks the rigorous editorial process of a reliable news outlet."
  },
  "geektyrant.com": {
   "tier": "B",
@@ -858,6 +1413,11 @@
   "tier": "B",
   "outlet_type": "photo agency",
   "reason": "Getty is a reputable photo agency with professional staff who provide factual, editorially-vetted captions for their images."
+ },
+ "getyarn.io": {
+  "tier": "C",
+  "outlet_type": "video clip database",
+  "reason": "This is a database of video clips that lacks the editorial oversight, fact-checking, and named staff required of a reliable source."
  },
  "giantfreakinrobot.com": {
   "tier": "C",
@@ -884,10 +1444,20 @@
   "outlet_type": "National news organization",
   "reason": "Global News is a major Canadian news organization with a reputation for fact-checking and editorial oversight."
  },
+ "gocreativeshow.com": {
+  "tier": "C",
+  "outlet_type": "podcast and blog",
+  "reason": "This outlet lacks clear editorial oversight, as evidenced by the prominent inclusion of unrelated sponsored content for CBD products."
+ },
  "gofugyourself.com": {
   "tier": "C",
   "outlet_type": "Celebrity fashion blog",
   "reason": "This is a long-running blog focused on celebrity fashion commentary, not a journalistic outlet with a reputation for fact-checking about the film industry."
+ },
+ "goldenglobes.com": {
+  "tier": "B",
+  "outlet_type": "Awards organization site",
+  "reason": "This is the official website for the Golden Globe Awards, making it a primary and reliable source for information about its own nominations and winners."
  },
  "google.com": {
   "tier": "C",
@@ -899,10 +1469,25 @@
   "outlet_type": "Gossip site",
   "reason": "Wikipedia's guidelines explicitly list rumor and gossip sites as unreliable sources for factual information."
  },
+ "gower.st": {
+  "tier": "B",
+  "outlet_type": "Film industry data analyst",
+  "reason": "This is a professional analytics firm that provides original data and analysis for the film industry, making it a reliable source for box office statistics."
+ },
  "gpb.org": {
   "tier": "B",
   "outlet_type": "public broadcasting station",
   "reason": "As a PBS and NPR member station, Georgia Public Broadcasting is an established news and culture outlet with a reputation for fact-checking and editorial oversight."
+ },
+ "grailed.com": {
+  "tier": "C",
+  "outlet_type": "Fashion marketplace blog",
+  "reason": "This is the blog section of a commercial marketplace for clothing, not an established publication with a reputation for fact-checking."
+ },
+ "graziamagazine.com": {
+  "tier": "B",
+  "outlet_type": "Lifestyle and fashion magazine",
+  "reason": "Grazia is an established international magazine with editorial oversight that publishes original interviews and entertainment news."
  },
  "grokipedia.com": {
   "tier": "C",
@@ -914,10 +1499,25 @@
   "outlet_type": "film critic's blog",
   "reason": "This site is a self-published collection of reviews by a single critic and lacks the editorial oversight of an established publication."
  },
+ "grunge.com": {
+  "tier": "C",
+  "outlet_type": "Entertainment listicle site",
+  "reason": "This site is a content farm or listicle aggregator, a type of source that is generally considered unreliable due to its focus on SEO-driven content over rigorous fact-checking."
+ },
+ "guardianbookshop.com": {
+  "tier": "C",
+  "outlet_type": "online bookshop",
+  "reason": "This is a commercial storefront for selling books, not an editorial source for facts about films."
+ },
  "guilfordian.com": {
   "tier": "B",
   "outlet_type": "College newspaper",
   "reason": "This is the student newspaper for Guilford College, and it has a public staff list and a corrections policy, indicating editorial oversight."
+ },
+ "gunnoracle.com": {
+  "tier": "C",
+  "outlet_type": "Student newspaper",
+  "reason": "This is a high school student newspaper, which lacks the professional editorial oversight and reputation for fact-checking required for a reliable source on topics outside the school."
  },
  "gvsd.org": {
   "tier": "C",
@@ -929,10 +1529,25 @@
   "outlet_type": "Radio station website",
   "reason": "This is the website for a radio station, which focuses on light entertainment news rather than in-depth, fact-checked film journalism."
  },
+ "hauteliving.com": {
+  "tier": "B",
+  "outlet_type": "luxury lifestyle magazine",
+  "reason": "This is an established lifestyle magazine with editorial oversight that conducts and publishes its own interviews with industry figures."
+ },
+ "hbcubuzz.com": {
+  "tier": "B",
+  "outlet_type": "niche news site",
+  "reason": "This is an established news outlet with an editorial staff covering topics, including entertainment, relevant to the HBCU community."
+ },
  "hbo.com": {
   "tier": "B",
   "outlet_type": "Official studio/distributor site",
   "reason": "As the official website for the content producer and distributor, it is considered a reliable primary source for facts about its own films."
+ },
+ "hero-magazine.com": {
+  "tier": "B",
+  "outlet_type": "Fashion and culture magazine",
+  "reason": "This is an established magazine with named authors and editorial oversight, publishing interviews with film industry professionals."
  },
  "heyuguys.com": {
   "tier": "B",
@@ -949,10 +1564,25 @@
   "outlet_type": "Niche home media news site",
   "reason": "This is an established, niche publication with a named editor and staff that provides factual news and reviews about home media releases."
  },
+ "highonfilms.com": {
+  "tier": "C",
+  "outlet_type": "Film analysis site",
+  "reason": "While the site has named writers and an editorial structure, it lacks a clear, established reputation for fact-checking and accuracy, making its reliability uncertain."
+ },
+ "highsnobiety.com": {
+  "tier": "B",
+  "outlet_type": "online culture magazine",
+  "reason": "This is an established online culture and fashion magazine with professional staff and clear editorial oversight."
+ },
  "hillvets.org": {
   "tier": "C",
   "outlet_type": "veterans' advocacy organization",
   "reason": "This is the website for a non-profit organization focused on veterans, not a publication with editorial oversight for facts about film or entertainment."
+ },
+ "hindustantimes.com": {
+  "tier": "B",
+  "outlet_type": "national newspaper",
+  "reason": "Hindustan Times is a major Indian national newspaper with a long history and clear editorial oversight, making it a reliable source for news and interviews."
  },
  "hiphopwired.com": {
   "tier": "B",
@@ -964,6 +1594,11 @@
   "outlet_type": "stock footage archive",
   "reason": "This is a commercial archive for licensing stock footage, not a publication with editorial oversight for reporting facts about films."
  },
+ "historyvshollywood.com": {
+  "tier": "B",
+  "outlet_type": "Fact-checking site",
+  "reason": "This is an established site with a long-standing reputation for fact-checking the historical accuracy of films and citing its sources."
+ },
  "hitsdailydouble.com": {
   "tier": "C",
   "outlet_type": "Music industry trade publication",
@@ -973,6 +1608,11 @@
   "tier": "B",
   "outlet_type": "Entertainment news site",
   "reason": "This is an established entertainment news outlet with a long history of publication and apparent editorial oversight."
+ },
+ "hollywoodinsider.com": {
+  "tier": "C",
+  "outlet_type": "Online entertainment magazine",
+  "reason": "This outlet appears to rely heavily on contributors and lacks a clear, established reputation for rigorous fact-checking or editorial oversight compared to major trade publications."
  },
  "hollywoodscriptshop.com": {
   "tier": "C",
@@ -1014,6 +1654,16 @@
   "outlet_type": "local newspaper",
   "reason": "This is a local newspaper with a standard editorial structure and named columnists, making it a reliable source for its arts and entertainment coverage."
  },
+ "hypebae.com": {
+  "tier": "B",
+  "outlet_type": "Lifestyle and entertainment site",
+  "reason": "This is an established online publication with named authors and editorial oversight, covering culture and entertainment news."
+ },
+ "hypebeast.com": {
+  "tier": "B",
+  "outlet_type": "Culture and lifestyle publication",
+  "reason": "Hypebeast is an established online publication with a professional staff and editorial oversight that covers culture and entertainment news."
+ },
  "hypehair.com": {
   "tier": "C",
   "outlet_type": "Lifestyle and beauty magazine",
@@ -1039,10 +1689,30 @@
   "outlet_type": "Internet radio and pop culture site",
   "reason": "This is primarily an internet radio station and music site, not a dedicated news outlet with a reputation for fact-checking in the area of film."
  },
+ "igorstudios.net": {
+  "tier": "C",
+  "outlet_type": "Special effects studio website",
+  "reason": "This is a commercial portfolio for a company that provides production services, not an independent journalistic or reference source with editorial oversight."
+ },
+ "iheart.com": {
+  "tier": "C",
+  "outlet_type": "Audio streaming service",
+  "reason": "This is a platform for music, radio, and podcasts, not a publication with an editorial process for fact-checking information about films."
+ },
  "ihearts143quotes.com": {
   "tier": "C",
   "outlet_type": "content farm and celebrity news blog",
   "reason": "This site is primarily a quote aggregator and content farm with no visible editorial process, professional staff, or reputation for fact-checking."
+ },
+ "illumination.com": {
+  "tier": "B",
+  "outlet_type": "Film studio site",
+  "reason": "This is the official website for the film studio Illumination, making it a reliable primary source for facts about its own films."
+ },
+ "illuminationstudiosparis.com": {
+  "tier": "B",
+  "outlet_type": "Official studio website",
+  "reason": "This is the official website for the film studio, making it a reliable primary source for facts about its own productions."
  },
  "ilovekent.net": {
   "tier": "C",
@@ -1054,10 +1724,25 @@
   "outlet_type": "Talent agency website",
   "reason": "This is the official website for a talent management agency, making it a promotional primary source with a conflict of interest, not an independent reliable source."
  },
+ "impawards.com": {
+  "tier": "C",
+  "outlet_type": "Movie poster archive",
+  "reason": "The site is a large archive of movie posters but lacks a visible editorial staff or fact-checking process to verify the data it presents."
+ },
+ "imsdb.com": {
+  "tier": "C",
+  "outlet_type": "movie script database",
+  "reason": "The site is a repository of movie scripts with no visible editorial process to verify their authenticity or accuracy."
+ },
  "incluvie.com": {
   "tier": "C",
   "outlet_type": "Film review and analysis site",
   "reason": "This appears to be a niche publication focused on commentary and reviews, and it lacks evidence of a formal editorial process or an established reputation for fact-checking."
+ },
+ "indepthcine.com": {
+  "tier": "C",
+  "outlet_type": "film analysis blog",
+  "reason": "This is a personal blog and video essay site from a single creator, which lacks the editorial oversight of an established publication."
  },
  "indiatimes.com": {
   "tier": "B",
@@ -1069,6 +1754,11 @@
   "outlet_type": "Entertainment news site",
   "reason": "This is an established online publication with named professional staff who conduct and write original interviews and reviews."
  },
+ "industrycentral.net": {
+  "tier": "C",
+  "outlet_type": "film industry portal",
+  "reason": "While the site has sections that suggest professional content, there is no information to confirm it has an editorial process, named staff, or a reputation for fact-checking."
+ },
  "indyweek.com": {
   "tier": "B",
   "outlet_type": "local alternative newspaper",
@@ -1079,10 +1769,30 @@
   "outlet_type": "major daily newspaper",
   "reason": "The Philadelphia Inquirer is a major, long-running newspaper with a reputation for fact-checking and editorial oversight."
  },
+ "insidehook.com": {
+  "tier": "C",
+  "outlet_type": "Men's lifestyle publication",
+  "reason": "This is a general lifestyle publication, not a specialized source with an established reputation for rigorous fact-checking on film industry topics."
+ },
+ "insidepulse.com": {
+  "tier": "C",
+  "outlet_type": "Pop culture review site",
+  "reason": "This is a multi-author pop culture site focused on reviews and commentary, but it lacks a clear reputation for fact-checking or rigorous editorial oversight."
+ },
+ "insighteditions.com": {
+  "tier": "B",
+  "outlet_type": "Book publisher",
+  "reason": "This is an established publisher of licensed, official books and reference works which have editorial oversight."
+ },
  "interlochenpublicradio.org": {
   "tier": "B",
   "outlet_type": "Public radio station",
   "reason": "This is the website for a public radio station, a type of established news organization with clear editorial oversight."
+ },
+ "intomore.com": {
+  "tier": "B",
+  "outlet_type": "LGBTQ+ culture and entertainment site",
+  "reason": "This is an established publication with named authors and editorial oversight as part of the Q.Digital media group."
  },
  "inverse.com": {
   "tier": "B",
@@ -1094,20 +1804,40 @@
   "outlet_type": "National newspaper",
   "reason": "The Irish Examiner is a long-established national newspaper with clear editorial oversight and a reputation for fact-checking."
  },
+ "irishtimes.com": {
+  "tier": "B",
+  "outlet_type": "National newspaper",
+  "reason": "The Irish Times is a long-established national newspaper with a reputation for fact-checking and editorial oversight."
+ },
  "jacquelinesteiger.com": {
   "tier": "B",
   "outlet_type": "Official actor website",
   "reason": "This is the official website of the actress Jacqueline Steiger, making it a reliable source for facts about herself under Wikipedia's guidelines for self-published sources."
+ },
+ "jamaicaobserver.com": {
+  "tier": "B",
+  "outlet_type": "national newspaper",
+  "reason": "The Jamaica Observer is a major national newspaper with editorial oversight, making it a reliable source for general and entertainment news."
  },
  "japantimes.co.jp": {
   "tier": "B",
   "outlet_type": "national newspaper",
   "reason": "The Japan Times is a major, long-running national newspaper with a reputation for fact-checking and editorial oversight."
  },
+ "jerseyarts.com": {
+  "tier": "B",
+  "outlet_type": "regional arts publication",
+  "reason": "This is an established publication for a non-profit arts foundation, indicating editorial oversight and a reputation for providing factual information about local cultural events."
+ },
  "jesusfreakhideout.com": {
   "tier": "C",
   "outlet_type": "Christian music and culture site",
   "reason": "This is a niche publication focused on reviewing entertainment from a specific religious perspective, not a mainstream source for objective film facts."
+ },
+ "jhu.edu": {
+  "tier": "B",
+  "outlet_type": "academic database",
+  "reason": "Project MUSE is an academic database of peer-reviewed books and journals from university presses, which have strong editorial oversight."
  },
  "joblo.com": {
   "tier": "B",
@@ -1119,10 +1849,40 @@
   "outlet_type": "Entertainment news site",
   "reason": "This is a general entertainment and lifestyle news site that lacks the reputation for rigorous fact-checking and editorial standards of a top-tier trade publication."
  },
+ "joelcorcia.com": {
+  "tier": "C",
+  "outlet_type": "Artist portfolio",
+  "reason": "This is a self-published personal portfolio that lacks the editorial oversight required of a reliable source."
+ },
+ "johnwickcoin.com": {
+  "tier": "C",
+  "outlet_type": "Fan site",
+  "reason": "This is a fan-run site dedicated to the franchise, which lacks the editorial oversight and professional staff of a reliable source."
+ },
+ "jonathanrosenbaum.net": {
+  "tier": "B",
+  "outlet_type": "Personal website of a film critic",
+  "reason": "The site is the self-published work of Jonathan Rosenbaum, a widely published and highly regarded professional film critic, making it a reliable source for his expert opinion."
+ },
+ "jpbox-office.com": {
+  "tier": "C",
+  "outlet_type": "box office data aggregator",
+  "reason": "The site is a data aggregator that lacks a visible editorial process or professional staff, making its reputation for fact-checking difficult to ascertain."
+ },
  "justjared.com": {
   "tier": "C",
   "outlet_type": "Celebrity gossip site",
   "reason": "This is a long-running celebrity gossip site which is not considered a reliable source as it lacks the rigorous editorial oversight and fact-checking of a news organization."
+ },
+ "justlovemovies.com": {
+  "tier": "C",
+  "outlet_type": "Movie review blog",
+  "reason": "This site appears to be a personal blog with no evidence of editorial oversight, a professional staff, or a reputation for fact-checking."
+ },
+ "karliray.blog": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is a personal blog written by an individual and lacks the editorial oversight and fact-checking process of a reliable publication."
  },
  "kathleencross.com": {
   "tier": "C",
@@ -1154,6 +1914,11 @@
   "outlet_type": "Wiki-based children's encyclopedia",
   "reason": "This site's encyclopedia content is based on Wikipedia, which is considered a user-generated and unreliable source by Wikipedia's own guidelines."
  },
+ "kids-in-mind.com": {
+  "tier": "C",
+  "outlet_type": "Parental guidance movie review site",
+  "reason": "This is a niche review site with a small staff that provides its own specific, subjective content ratings rather than general, fact-checked information about films."
+ },
  "kieransomers.com": {
   "tier": "C",
   "outlet_type": "personal blog",
@@ -1164,6 +1929,11 @@
   "outlet_type": "Movie database and ticketing site",
   "reason": "This is a commercial movie database and ticketing site with no visible editorial process or named staff, making the origin and accuracy of its data unclear."
  },
+ "kinokuniya.com": {
+  "tier": "C",
+  "outlet_type": "Bookstore / e-commerce site",
+  "reason": "This is a commercial website for a bookstore, not a publication with editorial oversight for facts about films."
+ },
  "kiss104fm.com": {
   "tier": "C",
   "outlet_type": "local radio station website",
@@ -1173,6 +1943,11 @@
   "tier": "C",
   "outlet_type": "personal blog",
   "reason": "This is a personal lifestyle blog with no evidence of an editorial process or a reputation for fact-checking."
+ },
+ "kodak.com": {
+  "tier": "B",
+  "outlet_type": "Manufacturer's official site",
+  "reason": "As the official site of the film manufacturer, it is a reliable primary source for facts about the use of its own products."
  },
  "koimoi.com": {
   "tier": "C",
@@ -1188,6 +1963,11 @@
   "tier": "C",
   "outlet_type": "Niche film publication",
   "reason": "While this specialty site has named authors, it lacks the established reputation for fact-checking and strong editorial oversight required of a reliable source."
+ },
+ "kureansiklopedi.com": {
+  "tier": "C",
+  "outlet_type": "online encyclopedia",
+  "reason": "This site uses automatic translation for its articles, which is not a reliable process and indicates a lack of human editorial oversight."
  },
  "kveller.com": {
   "tier": "B",
@@ -1209,6 +1989,21 @@
   "outlet_type": "City magazine",
   "reason": "Los Angeles Magazine is a long-established city magazine with professional staff and clear editorial oversight."
  },
+ "lambdaliteraryreview.org": {
+  "tier": "C",
+  "outlet_type": "Literary review",
+  "reason": "This outlet publishes reviews and cultural criticism, which are primarily opinion and analysis rather than objective factual reporting about films."
+ },
+ "laper.ai": {
+  "tier": "C",
+  "outlet_type": "Screenplay repository",
+  "reason": "This site is a repository for screenplays and lacks any visible editorial process, named staff, or reputation for fact-checking."
+ },
+ "latestly.com": {
+  "tier": "B",
+  "outlet_type": "News and entertainment site",
+  "reason": "The site is a news organization with a named editorial staff and published fact-checking and corrections policies."
+ },
  "latlong.net": {
   "tier": "C",
   "outlet_type": "filming location database",
@@ -1219,20 +2014,60 @@
   "outlet_type": "fan site aggregator",
   "reason": "This site is a directory of links to fan-created sites and shows no evidence of editorial oversight or a fact-checking process."
  },
+ "leonardmaltin.com": {
+  "tier": "B",
+  "outlet_type": "film critic's website",
+  "reason": "The site is the official outlet for Leonard Maltin, a widely published and respected professional film critic and historian, making it a reliable expert source."
+ },
  "libsyn.com": {
   "tier": "C",
   "outlet_type": "Podcast hosting platform",
   "reason": "This is a podcast hosting platform for user-generated content, which lacks the editorial oversight and reputation for fact-checking required of a reliable source."
+ },
+ "liftgammagain.com": {
+  "tier": "C",
+  "outlet_type": "user-generated forum",
+  "reason": "This is a user-generated forum for industry professionals and lacks the editorial oversight required to be considered a reliable source."
+ },
+ "liftsinfilm.com": {
+  "tier": "C",
+  "outlet_type": "niche film blog",
+  "reason": "This appears to be a personal blog or niche interest site with no evidence of editorial oversight, a professional staff, or a reputation for fact-checking."
+ },
+ "lionsgate.com": {
+  "tier": "C",
+  "outlet_type": "Studio merchandise shop",
+  "reason": "This is a commercial page for selling official merchandise, not a source of encyclopedic facts about the film."
  },
  "listverse.com": {
   "tier": "C",
   "outlet_type": "Listicle website",
   "reason": "This is a listicle website that relies on freelance and user-submitted content and lacks the reputation for rigorous fact-checking of an established publication."
  },
+ "lithub.com": {
+  "tier": "B",
+  "outlet_type": "Literary and cultural publication",
+  "reason": "This is an established literary and cultural publication with a named editorial staff and clear oversight."
+ },
+ "littlethings.com": {
+  "tier": "C",
+  "outlet_type": "Lifestyle and entertainment website",
+  "reason": "This is a general lifestyle and entertainment website that does not have the reputation for fact-checking and editorial oversight required of a reliable source."
+ },
  "liveforlivemusic.com": {
   "tier": "C",
   "outlet_type": "Music news site",
   "reason": "This outlet focuses on music news and reviews, not film, making it an inappropriate source for facts about movies."
+ },
+ "local695.com": {
+  "tier": "B",
+  "outlet_type": "Professional guild publication",
+  "reason": "This is the official website and magazine for a professional industry guild (IATSE Local 695), making it a reliable source for information related to its members' work on productions."
+ },
+ "locationmanagers.org": {
+  "tier": "B",
+  "outlet_type": "Professional guild site",
+  "reason": "This is the official website for the Location Managers Guild International, a professional trade organization, making it a reliable source for its area of expertise."
  },
  "loeb.com": {
   "tier": "C",
@@ -1249,6 +2084,11 @@
   "outlet_type": "Entertainment listicle site",
   "reason": "This is a content farm-style entertainment site that primarily publishes listicles and opinion pieces rather than original, fact-checked reporting."
  },
+ "lothype.com": {
+  "tier": "C",
+  "outlet_type": "niche community site",
+  "reason": "The site features user-generated content such as forums, a community board, and video submissions, and lacks any visible editorial oversight or fact-checking process."
+ },
  "lovecatalina.com": {
   "tier": "C",
   "outlet_type": "Tourism website",
@@ -1259,6 +2099,16 @@
   "outlet_type": "Used media retailer",
   "reason": "This is a commercial website for selling used movies, not a publication with editorial oversight designed to provide facts."
  },
+ "lrmonline.com": {
+  "tier": "C",
+  "outlet_type": "Pop culture news and opinion site",
+  "reason": "This is a fan-oriented site that mixes news with opinion and unsourced rumors, and it lacks the strong reputation for fact-checking and editorial oversight required for a reliable source."
+ },
+ "ludogavillet.com": {
+  "tier": "C",
+  "outlet_type": "artist portfolio",
+  "reason": "This is the personal portfolio of an individual artist, not an established publication with editorial oversight."
+ },
  "lunchticket.org": {
   "tier": "C",
   "outlet_type": "University literary journal",
@@ -1268,6 +2118,11 @@
   "tier": "B",
   "outlet_type": "Film criticism magazine",
   "reason": "Little White Lies is an established and respected film magazine with named professional staff, clear editorial oversight, and a reputation for quality criticism."
+ },
+ "madmuseum.org": {
+  "tier": "B",
+  "outlet_type": "Museum website",
+  "reason": "This is the official website for an established cultural institution, which is considered a reliable source for information about its own programming."
  },
  "maintitles.net": {
   "tier": "C",
@@ -1282,6 +2137,11 @@
  "marieclaire.co.uk": {
   "tier": "B",
   "outlet_type": "Women's magazine",
+  "reason": "Marie Claire is a long-established international magazine with a professional editorial staff and a reputation for fact-checking."
+ },
+ "marieclaire.com": {
+  "tier": "B",
+  "outlet_type": "Women's lifestyle magazine",
   "reason": "Marie Claire is a long-established international magazine with a professional editorial staff and a reputation for fact-checking."
  },
  "marketrealist.com": {
@@ -1309,6 +2169,16 @@
   "outlet_type": "fan site",
   "reason": "This appears to be a niche, fan-run site with no indication of an editorial process, professional staff, or a reputation for fact-checking."
  },
+ "mediachomp.com": {
+  "tier": "C",
+  "outlet_type": "geek culture blog",
+  "reason": "This is a personal blog with no evidence of an editorial staff, fact-checking process, or corrections policy."
+ },
+ "mediamilwaukee.com": {
+  "tier": "C",
+  "outlet_type": "Student newspaper",
+  "reason": "This is a student-run publication for the University of Wisconsin-Milwaukee, which lacks the established reputation for fact-checking of a professional news organization."
+ },
  "mediastinger.com": {
   "tier": "C",
   "outlet_type": "Crowdsourced movie database",
@@ -1323,6 +2193,11 @@
   "tier": "C",
   "outlet_type": "Niche film review site",
   "reason": "While it has named writers and an editorial mission, it is a niche publication that lacks the established reputation for fact-checking and broad editorial oversight of a major news or trade outlet."
+ },
+ "menshealth.com.au": {
+  "tier": "B",
+  "outlet_type": "Men's lifestyle magazine",
+  "reason": "Men's Health is a long-established international magazine brand with clear editorial standards and professional staff."
  },
  "mensxp.com": {
   "tier": "C",
@@ -1349,6 +2224,11 @@
   "outlet_type": "travel blog",
   "reason": "This is a commercial travel blog whose primary purpose is selling travel deals, not a publication with expertise or a reputation for fact-checking on the subject of film."
  },
+ "miraheze.org": {
+  "tier": "C",
+  "outlet_type": "User-generated wiki",
+  "reason": "Miraheze is a free wiki hosting service, and its content is user-generated, which lacks the editorial oversight required for a reliable source."
+ },
  "mix106radio.com": {
   "tier": "C",
   "outlet_type": "Local radio station website",
@@ -1358,6 +2238,11 @@
   "tier": "C",
   "outlet_type": "investment firm",
   "reason": "This is the commercial website for a financial services company, not an independent publication with journalistic oversight for facts about movies."
+ },
+ "monstersandcritics.com": {
+  "tier": "B",
+  "outlet_type": "Entertainment news site",
+  "reason": "This is an established entertainment news outlet with named authors, a visible editorial structure, and a corrections policy."
  },
  "moriareviews.com": {
   "tier": "C",
@@ -1373,6 +2258,11 @@
   "tier": "C",
   "outlet_type": "Parenting and lifestyle website",
   "reason": "This is a parenting and lifestyle website whose primary focus is not film news, and it is not considered an established or authoritative source for this topic."
+ },
+ "motionpictures.org": {
+  "tier": "B",
+  "outlet_type": "Industry trade group",
+  "reason": "This is the official website of the Motion Picture Association (MPA), a major film industry trade organization, making it a reliable source for industry information."
  },
  "movie-censorship.com": {
   "tier": "C",
@@ -1429,15 +2319,60 @@
   "outlet_type": "Specialist blog",
   "reason": "While written by a long-standing expert, the site is effectively a personal blog and lacks the formal, multi-person editorial oversight required of a reliable source."
  },
+ "moviepaws.com": {
+  "tier": "B",
+  "outlet_type": "niche film publication",
+  "reason": "The site is a specialty publication with named professional journalist contributors, indicating editorial standards and reliability for its specific subject matter."
+ },
  "movies.ie": {
   "tier": "B",
   "outlet_type": "Film news site",
   "reason": "The site is an established publication with distinct sections for news, features, and original interviews, indicating editorial oversight."
  },
+ "moviesanddrinks.com": {
+  "tier": "C",
+  "outlet_type": "personal film blog",
+  "reason": "This appears to be a personal blog for film discussion and reviews, with no indication of a professional editorial staff or fact-checking process."
+ },
+ "moviesunlimited.com": {
+  "tier": "C",
+  "outlet_type": "Online movie retailer",
+  "reason": "This is a commercial website for selling movie merchandise and lacks the editorial oversight required for a reliable source."
+ },
  "movieweb.com": {
   "tier": "B",
   "outlet_type": "Entertainment news site",
   "reason": "MovieWeb is a long-established entertainment news outlet with named professional staff, editorial oversight, and a variety of content types like news, reviews, and interviews."
+ },
+ "msn.com": {
+  "tier": "C",
+  "outlet_type": "news and content aggregator",
+  "reason": "MSN primarily republishes content from other sources of varying quality and is not the original publisher of the information."
+ },
+ "mtpr.org": {
+  "tier": "B",
+  "outlet_type": "public radio station",
+  "reason": "As an NPR affiliate, Montana Public Radio is a news organization with a reputation for fact-checking and editorial oversight."
+ },
+ "mtv.com": {
+  "tier": "B",
+  "outlet_type": "Entertainment news site",
+  "reason": "MTV is a long-established media brand and entertainment news outlet with professional editorial oversight."
+ },
+ "mubi.com": {
+  "tier": "B",
+  "outlet_type": "film publication and database",
+  "reason": "MUBI is an established, curated streaming service that also operates a film publication (Notebook) with editorial oversight and articles by named critics."
+ },
+ "murthaskouras.com": {
+  "tier": "B",
+  "outlet_type": "talent agency website",
+  "reason": "This is the official website for a talent agency, making it a reliable primary source for information about the artists it represents."
+ },
+ "musingsofamiddleagedgeek.blog": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is a personal blog written under a pseudonym with no evidence of editorial oversight or a fact-checking process."
  },
  "mybluehost.me": {
   "tier": "C",
@@ -1454,30 +2389,90 @@
   "outlet_type": "General news outlet",
   "reason": "This is a major, established news organization in Ghana with clear editorial oversight, making it a reliable source for news reporting."
  },
+ "n4g.com": {
+  "tier": "C",
+  "outlet_type": "user-generated news aggregator",
+  "reason": "This is a social news aggregator where users submit links to articles from other websites, rather than an original source with editorial oversight."
+ },
+ "n7nz.org": {
+  "tier": "C",
+  "outlet_type": "Religious review site",
+  "reason": "This site offers movie reviews from a specific religious viewpoint and has no visible editorial process, staff, or reputation for fact-checking."
+ },
+ "naturalborncoaches.com": {
+  "tier": "C",
+  "outlet_type": "Business coaching blog",
+  "reason": "This is a business coaching blog, not an outlet with a reputation for fact-checking or editorial oversight concerning film."
+ },
  "nbc.com": {
   "tier": "B",
   "outlet_type": "Official network website",
   "reason": "This is the official website for the television network, making it a reliable primary source for facts about its own programming."
+ },
+ "nealpetty.co.uk": {
+  "tier": "C",
+  "outlet_type": "personal portfolio",
+  "reason": "This is the personal portfolio of a single artist and lacks the editorial oversight required for a reliable source."
  },
  "neatorama.com": {
   "tier": "C",
   "outlet_type": "entertainment blog",
   "reason": "This is a long-running entertainment blog that aggregates content and lacks the formal editorial process and reputation for fact-checking of a reliable journalistic source."
  },
+ "neocities.org": {
+  "tier": "C",
+  "outlet_type": "free web hosting service",
+  "reason": "Neocities is a platform for hosting user-generated personal websites, which do not have the editorial oversight or reputation for fact-checking required of a reliable source."
+ },
  "nerdbot.com": {
   "tier": "C",
   "outlet_type": "Pop culture news blog",
   "reason": "This appears to be a fan-oriented news and opinion blog with no clear evidence of a professional editorial process or fact-checking standards."
+ },
+ "nerdist.com": {
+  "tier": "B",
+  "outlet_type": "Pop culture news and analysis site",
+  "reason": "Nerdist is an established entertainment publication with named professional staff and editorial oversight, making it a reliable source for film analysis and news."
  },
  "nerdkungfu.com": {
   "tier": "C",
   "outlet_type": "merchandise store",
   "reason": "This is a commercial website selling T-shirts and other merchandise, not a source of factual information about films."
  },
+ "net.nz": {
+  "tier": "B",
+  "outlet_type": "radio station website",
+  "reason": "This is the website for an established radio station with named professional staff and corporate oversight, qualifying it as a form of entertainment press."
+ },
+ "netflix.com": {
+  "tier": "B",
+  "outlet_type": "Official studio/distributor site",
+  "reason": "As the official site for the studio and distributor, it is a reliable primary source for facts about its own productions."
+ },
+ "networkworld.com": {
+  "tier": "C",
+  "outlet_type": "Technology news site",
+  "reason": "This is a publication focused on information technology and networking, not film, making it an inappropriate and unreliable source for facts about movies."
+ },
+ "newschool.edu": {
+  "tier": "B",
+  "outlet_type": "University website",
+  "reason": "As the official website of an academic institution, it is a reliable primary source for biographical information about its faculty."
+ },
  "newsday.com": {
   "tier": "B",
   "outlet_type": "local newspaper",
   "reason": "Newsday is a long-established newspaper with a professional staff and a reputation for fact-checking and editorial oversight."
+ },
+ "newsshopper.co.uk": {
+  "tier": "B",
+  "outlet_type": "local newspaper",
+  "reason": "This is a local newspaper, which is a type of established news organization with editorial oversight."
+ },
+ "nextbestpicture.com": {
+  "tier": "B",
+  "outlet_type": "Film awards and criticism site",
+  "reason": "This is an established outlet in the film awards space with a named editor-in-chief and staff, indicating editorial oversight over its original content and interviews."
  },
  "nickiswift.com": {
   "tier": "C",
@@ -1489,6 +2484,26 @@
   "outlet_type": "personal blog",
   "reason": "This is the personal website of an individual filmmaker and writer, which lacks the editorial oversight of a reliable publication."
  },
+ "nielsen.com": {
+  "tier": "B",
+  "outlet_type": "Audience measurement and data analytics firm",
+  "reason": "Nielsen is a globally recognized and widely cited source for audience measurement and market data, with a strong reputation for accuracy and independence."
+ },
+ "nofilmschool.com": {
+  "tier": "B",
+  "outlet_type": "Filmmaking trade publication",
+  "reason": "This is an established trade publication for filmmakers with named professional staff, an ethics policy, and a clear editorial focus on the craft of filmmaking."
+ },
+ "nprillinois.org": {
+  "tier": "B",
+  "outlet_type": "Public radio station",
+  "reason": "This is the website for a local affiliate of National Public Radio (NPR), a major news organization with a strong reputation for fact-checking and editorial oversight."
+ },
+ "nylon.com": {
+  "tier": "B",
+  "outlet_type": "Pop culture and lifestyle magazine",
+  "reason": "Nylon is a long-established publication with a professional editorial staff that covers film and culture."
+ },
  "observer.com": {
   "tier": "B",
   "outlet_type": "Online news publication",
@@ -1499,6 +2514,11 @@
   "outlet_type": "Alternative weekly newspaper",
   "reason": "This was an established local news and culture publication with a professional staff and editorial oversight."
  },
+ "offscreencentral.com": {
+  "tier": "B",
+  "outlet_type": "Film criticism and news site",
+  "reason": "The site publishes original content including interviews, news, and reviews, and has a named editorial staff, indicating it is a professional publication with editorial oversight."
+ },
  "okayplayer.com": {
   "tier": "B",
   "outlet_type": "Music and culture publication",
@@ -1508,6 +2528,16 @@
   "tier": "C",
   "outlet_type": "podcast hosting platform",
   "reason": "This is a platform that hosts user-generated podcasts and does not function as a publisher with its own editorial oversight."
+ },
+ "onthesetofnewyork.com": {
+  "tier": "C",
+  "outlet_type": "filming location blog",
+  "reason": "This appears to be a personal or specialty blog with no visible editorial staff, fact-checking process, or masthead, making it an unreliable source by Wikipedia's standards."
+ },
+ "operabase.com": {
+  "tier": "C",
+  "outlet_type": "performance database",
+  "reason": "This is a commercial database and ticketing portal for live opera and classical music performances, not a source with editorial oversight for film facts."
  },
  "opusdata.com": {
   "tier": "B",
@@ -1524,10 +2554,25 @@
   "outlet_type": "local newspaper",
   "reason": "This is an established local newspaper with professional staff and editorial oversight, making it a reliable source for news and reviews."
  },
+ "panavision.com": {
+  "tier": "B",
+  "outlet_type": "Film equipment manufacturer",
+  "reason": "As the official site for a major motion picture equipment company, it is a reliable primary source for facts about its own products and their use in specific films."
+ },
+ "paramount.com": {
+  "tier": "B",
+  "outlet_type": "Official studio site",
+  "reason": "This is the official corporate website for the film studio Paramount, making it a reliable primary source for information about its own productions."
+ },
  "paramountmovies.com": {
   "tier": "B",
   "outlet_type": "Official studio site",
   "reason": "This is the official website for the film studio Paramount Pictures, making it a reliable primary source for information about its own films."
+ },
+ "parentpreviews.com": {
+  "tier": "B",
+  "outlet_type": "Movie review site for parents",
+  "reason": "This is an established, long-running review site with named professional staff and a clear editorial focus on providing content analysis for parents."
  },
  "parkour3.com": {
   "tier": "C",
@@ -1538,6 +2583,21 @@
   "tier": "C",
   "outlet_type": "Online entertainment magazine",
   "reason": "While this outlet has been around for some time and has named staff, it does not have a clear, established reputation for fact-checking or editorial rigor."
+ },
+ "pastemagazine.com": {
+  "tier": "B",
+  "outlet_type": "online culture magazine",
+  "reason": "Paste is a long-running digital magazine with a professional editorial staff that covers film, music, and culture."
+ },
+ "patch.com": {
+  "tier": "C",
+  "outlet_type": "Local news and community blog platform",
+  "reason": "The site explicitly states that some of its content is contributed by community members, making it user-generated and not subject to editorial oversight."
+ },
+ "peachtreetv.com": {
+  "tier": "B",
+  "outlet_type": "local TV station website",
+  "reason": "This is the website for an established local television station, which qualifies as a news organization with editorial oversight."
  },
  "pearlanddean.com": {
   "tier": "C",
@@ -1559,6 +2619,31 @@
   "outlet_type": "local news outlet",
   "reason": "This is a professional local news outlet with named staff and editorial oversight that covers news and culture."
  },
+ "philstar.com": {
+  "tier": "B",
+  "outlet_type": "National newspaper",
+  "reason": "This is the online portal for The Philippine Star, a major national newspaper with a history of editorial oversight."
+ },
+ "pickyourtrail.com": {
+  "tier": "C",
+  "outlet_type": "Travel agency blog",
+  "reason": "This is a commercial travel agency using movie locations as content marketing, not a publication with a reputation for fact-checking or editorial oversight on film production."
+ },
+ "pipelineartists.com": {
+  "tier": "B",
+  "outlet_type": "Screenwriting trade publication",
+  "reason": "This is a trade publication for screenwriters with named professional staff and editorial oversight, making it a reliable source for industry interviews."
+ },
+ "pipelinecomics.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is a personal blog by a single author and lacks the editorial oversight and fact-checking process of a reliable publication."
+ },
+ "playbill.com": {
+  "tier": "B",
+  "outlet_type": "theatre trade publication",
+  "reason": "Playbill is a long-established and reputable trade publication for the theatre industry with professional editorial oversight."
+ },
  "plex.tv": {
   "tier": "C",
   "outlet_type": "Streaming service database",
@@ -1569,10 +2654,50 @@
   "outlet_type": "Christian media review site",
   "reason": "This site, a publication of Focus on the Family, reviews entertainment from a specific religious viewpoint, making it a source for opinion rather than neutral, objective facts."
  },
+ "pocculture.com": {
+  "tier": "B",
+  "outlet_type": "Entertainment news site",
+  "reason": "The site conducts and publishes original interviews with industry professionals, indicating it is a publication with editorial oversight and not a content aggregator."
+ },
+ "poddtoppen.se": {
+  "tier": "C",
+  "outlet_type": "podcast aggregator",
+  "reason": "This is a podcast directory that aggregates content from other sources like iTunes and does not have its own editorial oversight or fact-checking process."
+ },
+ "pop-culturalist.com": {
+  "tier": "C",
+  "outlet_type": "Pop culture blog",
+  "reason": "This outlet appears to be a blog-style publication without a clear, established reputation for fact-checking or rigorous editorial oversight."
+ },
+ "popculture.com": {
+  "tier": "B",
+  "outlet_type": "Entertainment news site",
+  "reason": "This is an established entertainment news outlet with named authors and original reporting, such as exclusive interviews."
+ },
+ "popdisciple.com": {
+  "tier": "C",
+  "outlet_type": "film music interview site",
+  "reason": "This appears to be a niche publication or blog that lacks a visible editorial staff, masthead, or evidence of a fact-checking process."
+ },
+ "popgeeks.com": {
+  "tier": "C",
+  "outlet_type": "discussion forum",
+  "reason": "This is a discussion forum, which is considered a user-generated source without editorial oversight."
+ },
  "popmatters.com": {
   "tier": "B",
   "outlet_type": "online culture magazine",
   "reason": "PopMatters is a long-running, established publication of cultural criticism with named professional staff and clear editorial oversight."
+ },
+ "postmagazine.com": {
+  "tier": "B",
+  "outlet_type": "post-production trade magazine",
+  "reason": "This is an established trade publication for the post-production industry with named authors and clear editorial oversight."
+ },
+ "postperspective.com": {
+  "tier": "B",
+  "outlet_type": "Industry trade press",
+  "reason": "This is an established trade publication for the post-production industry with named professional staff and clear editorial oversight."
  },
  "pr.com": {
   "tier": "C",
@@ -1584,6 +2709,11 @@
   "outlet_type": "Open publishing platform",
   "reason": "This is a platform that allows users to self-publish content, and it lacks the institutional editorial oversight and reputation for fact-checking of a reliable publisher."
  },
+ "presspassla.com": {
+  "tier": "C",
+  "outlet_type": "Entertainment news and events site",
+  "reason": "The site's content largely consists of republished press releases and event announcements, lacking the original reporting and editorial oversight required for a reliable source."
+ },
  "prezi.com": {
   "tier": "C",
   "outlet_type": "User-generated presentation platform",
@@ -1594,10 +2724,25 @@
   "outlet_type": "Lifestyle and culture magazine",
   "reason": "This is an established magazine with clear editorial sections, including entertainment news and features, indicating professional oversight."
  },
+ "primevideo.com": {
+  "tier": "C",
+  "outlet_type": "Streaming service and store",
+  "reason": "This is a commercial streaming platform and digital store, not a journalistic or reference source with editorial oversight for fact-checking."
+ },
  "productionlist.com": {
   "tier": "B",
   "outlet_type": "Film industry production database",
   "reason": "This is a professional trade resource for the film and television industry that provides factual data about productions."
+ },
+ "proprofs.com": {
+  "tier": "C",
+  "outlet_type": "User-generated quiz site",
+  "reason": "This is a platform for user-generated quizzes and lacks the editorial oversight and fact-checking processes required for a reliable source."
+ },
+ "propstore.com": {
+  "tier": "C",
+  "outlet_type": "Movie prop auction site",
+  "reason": "This is a commercial site for selling merchandise, which is not considered a reliable source for encyclopedic facts."
  },
  "punchdrunkcritics.com": {
   "tier": "C",
@@ -1623,6 +2768,21 @@
   "tier": "B",
   "outlet_type": "music and entertainment news site",
   "reason": "This is an established online publication focused on R&B music and related entertainment news, with named authors and an editorial process."
+ },
+ "realtor.com": {
+  "tier": "C",
+  "outlet_type": "real estate listings site",
+  "reason": "This is a commercial website for real estate listings, not an outlet with editorial oversight focused on the film industry."
+ },
+ "redapplelounge.com": {
+  "tier": "C",
+  "outlet_type": "business blog",
+  "reason": "This is the promotional blog for a commercial establishment (a bar), not an independent publication with a reputation for fact-checking."
+ },
+ "redsharknews.com": {
+  "tier": "B",
+  "outlet_type": "Film industry trade publication",
+  "reason": "This is an established trade publication for film and video professionals with named editorial staff, covering the technical aspects of the industry."
  },
  "reelingreviews.com": {
   "tier": "C",
@@ -1659,10 +2819,20 @@
   "outlet_type": "restaurant website",
   "reason": "This is the commercial website for a restaurant and is not a reliable source for facts about movies."
  },
+ "roalddahl.com": {
+  "tier": "B",
+  "outlet_type": "Official author/brand website",
+  "reason": "This is the official website for the Roald Dahl brand and is considered a reliable primary source for information about its own properties."
+ },
  "roalddahlfans.com": {
   "tier": "C",
   "outlet_type": "Fan site",
   "reason": "The website explicitly identifies itself as a fan site, which lacks the editorial oversight and reputation for fact-checking required for a reliable source."
+ },
+ "rodeofx.com": {
+  "tier": "B",
+  "outlet_type": "Visual effects studio",
+  "reason": "As the official website for the visual effects company that worked on the film, it is a reliable primary source for facts about its own contributions."
  },
  "rogersmovienation.com": {
   "tier": "C",
@@ -1678,6 +2848,16 @@
   "tier": "B",
   "outlet_type": "Culture and entertainment magazine",
   "reason": "Rolling Stone is a long-established entertainment and culture magazine with a reputation for professional journalism and editorial oversight."
+ },
+ "romper.com": {
+  "tier": "B",
+  "outlet_type": "Lifestyle and entertainment site",
+  "reason": "Romper is a publication with named authors and editorial oversight, owned by the established Bustle Digital Group."
+ },
+ "rootedinrights.org": {
+  "tier": "C",
+  "outlet_type": "advocacy organization blog",
+  "reason": "This is the blog for a disability rights advocacy group, not an outlet with a reputation for fact-checking or expertise in the film industry."
  },
  "roundaboutatlanta.com": {
   "tier": "C",
@@ -1714,6 +2894,26 @@
   "outlet_type": "LGBTQ+ culture magazine",
   "reason": "This is an established magazine with named authors, distinct editorial sections, and a professional publication format, indicating editorial oversight."
  },
+ "sciencefictionarchives.com": {
+  "tier": "C",
+  "outlet_type": "Online archive of science fiction memorabilia",
+  "reason": "The site is an online archive and collection that rents its items, and it lacks the visible editorial oversight or fact-checking process of a reliable publication."
+ },
+ "scoringnotes.com": {
+  "tier": "B",
+  "outlet_type": "Niche music publication",
+  "reason": "This is a specialized publication with named professional staff and editorial oversight, making it a reliable source for its specific subject of film scores."
+ },
+ "scottadkinsworld.com": {
+  "tier": "C",
+  "outlet_type": "Fan site",
+  "reason": "This is a fan-run website dedicated to a single actor and lacks the editorial oversight and reputation for fact-checking required of a reliable source."
+ },
+ "scrapsfromtheloft.com": {
+  "tier": "C",
+  "outlet_type": "Transcript website",
+  "reason": "The site lacks a visible editorial staff, masthead, or corrections policy, and its primary content consists of unattributed transcripts rather than original reporting or analysis."
+ },
  "screen-connections.com": {
   "tier": "C",
   "outlet_type": "Film review blog",
@@ -1729,20 +2929,45 @@
   "outlet_type": "film industry trade publication",
   "reason": "Screen Daily is the online presence of Screen International, a long-established and reputable trade publication for the global film industry with professional editorial oversight."
  },
+ "screendollars.com": {
+  "tier": "C",
+  "outlet_type": "film industry data aggregator",
+  "reason": "The site appears to be a content farm and data aggregator that reprints press releases and lacks clear evidence of an editorial process or fact-checking."
+ },
  "screenplayoutlines.com": {
   "tier": "C",
   "outlet_type": "personal blog",
   "reason": "This site appears to be a personal blog offering analysis and lacks any indication of editorial oversight, fact-checking, or a staff of professional writers."
+ },
+ "scriptmag.com": {
+  "tier": "B",
+  "outlet_type": "Screenwriting trade publication",
+  "reason": "This is an established trade publication for screenwriters with named authors and a clear editorial process, making it a reliable source for interviews and industry information."
+ },
+ "scripts-onscreen.com": {
+  "tier": "C",
+  "outlet_type": "script database",
+  "reason": "This site is a script aggregator with no visible editorial staff, oversight, or information about the provenance of its content."
  },
  "scripts.com": {
   "tier": "C",
   "outlet_type": "Script database",
   "reason": "This is a database of movie scripts with no clear editorial oversight or verification process for the accuracy of its user-submitted or aggregated content."
  },
+ "scrybe.to": {
+  "tier": "C",
+  "outlet_type": "screenplay database",
+  "reason": "This site is a database for downloading screenplays and lacks the editorial oversight or reputation for fact-checking required of a reliable source."
+ },
  "seattlemedium.com": {
   "tier": "B",
   "outlet_type": "local newspaper",
   "reason": "This is an established local newspaper with clear editorial oversight, making it a reliable source for news and reviews."
+ },
+ "seattletimes.com": {
+  "tier": "B",
+  "outlet_type": "major daily newspaper",
+  "reason": "The Seattle Times is a long-standing, reputable news organization with professional staff and clear editorial oversight."
  },
  "seeing-stars.com": {
   "tier": "C",
@@ -1769,6 +2994,11 @@
   "outlet_type": "personal blog",
   "reason": "This is a personal blog by a film location hobbyist and shows no evidence of the editorial oversight required for a reliable source."
  },
+ "setjett.com": {
+  "tier": "C",
+  "outlet_type": "film location travel guide",
+  "reason": "This is a niche travel guide for film fans that does not have a visible editorial process, named professional staff, or a reputation for fact-checking."
+ },
  "sevendaysvt.com": {
   "tier": "B",
   "outlet_type": "local newspaper",
@@ -1789,10 +3019,40 @@
   "outlet_type": "Film review site",
   "reason": "This is the professional outlet for Rich Cline, a recognized film critic and member of the London Film Critics' Circle."
  },
+ "shakespearesglobe.com": {
+  "tier": "C",
+  "outlet_type": "Theatre organization blog",
+  "reason": "This is the blog of a theatre organization, not a publication with expertise or a reputation for fact-checking in the film industry."
+ },
+ "shapes.inc": {
+  "tier": "C",
+  "outlet_type": "Movie fan site",
+  "reason": "The site shows no evidence of an editorial process, fact-checking, or named professional staff, and its content structure is similar to a user-generated fan wiki."
+ },
+ "shockya.com": {
+  "tier": "B",
+  "outlet_type": "Entertainment news site",
+  "reason": "The site is an established entertainment news outlet with named authors and original content, such as interviews, indicating an editorial process."
+ },
+ "shootonline.com": {
+  "tier": "B",
+  "outlet_type": "Entertainment trade publication",
+  "reason": "This is an established trade publication for the commercial production and entertainment industry with clear editorial oversight and professional staff."
+ },
  "shortlist.com": {
   "tier": "B",
   "outlet_type": "Entertainment news site",
   "reason": "Shortlist is an established entertainment and lifestyle publication with editorial oversight, owned by the major media company Future plc."
+ },
+ "shotonwhat.com": {
+  "tier": "C",
+  "outlet_type": "user-generated database",
+  "reason": "The site allows users to add and update information, indicating it is user-generated content without a visible editorial process."
+ },
+ "shouldiseeit.net": {
+  "tier": "C",
+  "outlet_type": "Film review blog",
+  "reason": "While written by a named critic, this appears to be a personal outlet that lacks the evidence of a multi-person editorial process or fact-checking reputation required of a reliable source."
  },
  "siasat.com": {
   "tier": "B",
@@ -1809,6 +3069,26 @@
   "outlet_type": "Personal blog of a film critic",
   "reason": "This is a self-published blog by a single film critic and lacks the formal editorial oversight of a major publication, even though the author is an established expert."
  },
+ "siriusxm.com": {
+  "tier": "C",
+  "outlet_type": "Broadcasting company website",
+  "reason": "This is the commercial and support website for a satellite radio service, not a publication with a primary focus on fact-checked reporting about film."
+ },
+ "sknr.net": {
+  "tier": "C",
+  "outlet_type": "Entertainment news and review site",
+  "reason": "This appears to be a small entertainment review site that lacks evidence of a rigorous editorial process or a reputation for fact-checking."
+ },
+ "skwigly.co.uk": {
+  "tier": "B",
+  "outlet_type": "Animation magazine",
+  "reason": "This is an established online magazine focused on the animation industry, with named editorial staff and a history of publishing news, reviews, and interviews."
+ },
+ "socalpulse.com": {
+  "tier": "C",
+  "outlet_type": "Regional lifestyle publication",
+  "reason": "This is a regional lifestyle publication whose reputation for rigorous fact-checking and editorial oversight for film-related facts is not clearly established."
+ },
  "solzyatthemovies.com": {
   "tier": "C",
   "outlet_type": "Film review blog",
@@ -1818,6 +3098,16 @@
   "tier": "B",
   "outlet_type": "Official studio site",
   "reason": "This is the official website for the film's studio, which is considered a reliable primary source for facts about its own productions."
+ },
+ "sonypictures.com.au": {
+  "tier": "B",
+  "outlet_type": "Official studio site",
+  "reason": "This is the official website for the film studio, which is considered a reliable primary source for information about its own productions."
+ },
+ "soulrideblog.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is a personal blog about vintage culture and lacks the editorial oversight and reputation for fact-checking required of a reliable source."
  },
  "soundsofcinema.com": {
   "tier": "C",
@@ -1849,6 +3139,16 @@
   "outlet_type": "Streaming service / TV network",
   "reason": "The official website for a TV network is considered a reliable primary source for facts about its own content."
  },
+ "staytunedmag.com": {
+  "tier": "B",
+  "outlet_type": "Pop culture magazine",
+  "reason": "This is the online presence for ReMIND Magazine, a print publication from an established publisher, which indicates editorial oversight."
+ },
+ "stealdeal.com": {
+  "tier": "C",
+  "outlet_type": "commercial site",
+  "reason": "This appears to be a commercial or development site with no evidence of an editorial process or a reputation for fact-checking."
+ },
  "steemit.com": {
   "tier": "C",
   "outlet_type": "User-generated blog platform",
@@ -1868,6 +3168,11 @@
   "tier": "C",
   "outlet_type": "Independent culture magazine",
   "reason": "This appears to be a long-running but niche, independent culture magazine focused on reviews and opinion, and it is unclear if it has a rigorous fact-checking process."
+ },
+ "straightdope.com": {
+  "tier": "C",
+  "outlet_type": "Internet forum",
+  "reason": "The example page is from a message board, which is a form of user-generated content explicitly listed as unreliable."
  },
  "studiobinder.com": {
   "tier": "C",
@@ -1889,10 +3194,55 @@
   "outlet_type": "Convention promotional site",
   "reason": "This is the official website for a commercial comic convention, and its articles serve as content marketing rather than independent journalism with a reputation for fact-checking."
  },
+ "supercarblondie.com": {
+  "tier": "C",
+  "outlet_type": "Automotive and lifestyle brand",
+  "reason": "This is a personality-driven brand focused on luxury vehicles and lifestyle, not a journalistic outlet with a reputation for fact-checking movie information."
+ },
  "supermarcey.com": {
   "tier": "C",
   "outlet_type": "personal blog",
   "reason": "This is a personal blog and podcast network that lacks the editorial oversight and reputation for fact-checking required of a reliable source."
+ },
+ "svg.com": {
+  "tier": "C",
+  "outlet_type": "Gaming and entertainment news site",
+  "reason": "This outlet is part of a network of sites often considered to be a content farm, which generally lacks the reputation for fact-checking required of a reliable source."
+ },
+ "swank.com": {
+  "tier": "C",
+  "outlet_type": "Movie licensing company",
+  "reason": "This is a commercial site for licensing films, not a journalistic or reference work with editorial oversight."
+ },
+ "sydney-yaeko.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is a personal blog written by a single individual, which lacks the editorial oversight and reputation for fact-checking required of a reliable source."
+ },
+ "talknerdytome.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This appears to be a personal blog with no evidence of an editorial team, fact-checking process, or established reputation for accuracy."
+ },
+ "tammytuckey.com": {
+  "tier": "C",
+  "outlet_type": "Personal podcast",
+  "reason": "This is the personal website for an individual's podcast and lacks the editorial oversight and fact-checking processes of an established publication."
+ },
+ "tarantino.info": {
+  "tier": "C",
+  "outlet_type": "fan site",
+  "reason": "This is a fan-run archive that includes a wiki and community forums, which are forms of user-generated content lacking formal editorial oversight."
+ },
+ "target.com": {
+  "tier": "C",
+  "outlet_type": "Retailer",
+  "reason": "This is a commercial page for selling merchandise, which is not considered a reliable source for encyclopedic facts about a film."
+ },
+ "tbs.com": {
+  "tier": "B",
+  "outlet_type": "Official television network site",
+  "reason": "This is the official website for the TBS television network, making it a reliable primary source for information about its own programming and schedule."
  },
  "teamcoco.com": {
   "tier": "C",
@@ -1908,6 +3258,11 @@
   "tier": "C",
   "outlet_type": "merchandise retailer",
   "reason": "This is an e-commerce website that sells merchandise and does not produce factual content about movies."
+ },
+ "televisionacademy.com": {
+  "tier": "B",
+  "outlet_type": "Professional industry organization",
+  "reason": "This is the official website of the Television Academy, a major professional organization that serves as an authoritative source on the history of television and its creators."
  },
  "televisionstats.com": {
   "tier": "C",
@@ -1934,6 +3289,26 @@
   "outlet_type": "Group film blog",
   "reason": "This site describes itself as being 'by lovers of film' and appears to be a group blog focused on opinion and reviews, lacking evidence of a formal editorial process or reputation for fact-checking."
  },
+ "theanimatedfilmindustry.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This site has the format of a personal blog and lacks any visible evidence of the editorial oversight or fact-checking process required of a reliable source."
+ },
+ "theanimationcommendation.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "The site's informal tone and sections like 'My Thoughts Index' indicate it is a personal blog with no evidence of a formal editorial process."
+ },
+ "theartofcostume.com": {
+  "tier": "C",
+  "outlet_type": "specialist blog",
+  "reason": "This is a niche publication or personal blog focused on a specific topic, and it lacks evidence of a formal editorial process or a reputation for fact-checking."
+ },
+ "theaterbyte.com": {
+  "tier": "C",
+  "outlet_type": "Film review blog",
+  "reason": "This appears to be a niche review site that lacks evidence of a formal editorial process or a reputation for fact-checking required by the reliable source guidelines."
+ },
  "theaterhopper.com": {
   "tier": "C",
   "outlet_type": "personal blog and webcomic",
@@ -1943,6 +3318,11 @@
   "tier": "C",
   "outlet_type": "Student newspaper",
   "reason": "This is a student newspaper, which does not meet the standard for a professional publication with a reputation for fact-checking and accuracy."
+ },
+ "thebedlamfiles.com": {
+  "tier": "C",
+  "outlet_type": "Film review blog",
+  "reason": "The site appears to be a group blog focused on reviews and commentary, with no evidence of a formal editorial process or fact-checking standards."
  },
  "theblackmedia.org": {
   "tier": "C",
@@ -1969,6 +3349,11 @@
   "outlet_type": "Business magazine",
   "reason": "This is an established business magazine with editorial oversight that covers the business and executive side of the film industry."
  },
+ "thecglab.com": {
+  "tier": "C",
+  "outlet_type": "specialist blog",
+  "reason": "The site appears to be a personal or specialist blog and lacks the visible editorial oversight and established reputation of a reliable publication."
+ },
  "thecherrypicks.com": {
   "tier": "B",
   "outlet_type": "Film review aggregator and culture site",
@@ -1988,6 +3373,21 @@
   "tier": "B",
   "outlet_type": "Niche comedy news site",
   "reason": "The site is an established publication in the comedy niche, run by a named professional journalist and featuring original reporting and interviews."
+ },
+ "thedailytexan.com": {
+  "tier": "B",
+  "outlet_type": "Student newspaper",
+  "reason": "This is the established student newspaper for the University of Texas at Austin, which has editorial oversight and follows journalistic standards."
+ },
+ "thedigitalfix.com": {
+  "tier": "B",
+  "outlet_type": "entertainment news site",
+  "reason": "This is an established entertainment news outlet with named authors and editorial oversight from its parent company, Network N."
+ },
+ "thedrive.com": {
+  "tier": "B",
+  "outlet_type": "automotive news site",
+  "reason": "This is an established publication with named professional staff and editorial oversight covering a topic (stunt driving) within its area of expertise."
  },
  "thedullwoodexperiment.com": {
   "tier": "C",
@@ -2019,10 +3419,20 @@
   "outlet_type": "film news and review site",
   "reason": "This is an established publication with named staff, original reviews and news coverage, and clear editorial oversight."
  },
+ "thefincheranalyst.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is a personal blog focused on a single director and lacks the editorial oversight and fact-checking processes of a reliable publication."
+ },
  "thehobbledehoy.com": {
   "tier": "C",
   "outlet_type": "personal blog",
   "reason": "The site's tagline, \"A CURIOUS MIX OF BRITISH FOLK MUSIC AND AMERICAN POLITICS,\" and eclectic menu indicate it is a personal blog with no evidence of editorial oversight or a reputation for fact-checking."
+ },
+ "thehooghlyreview.com": {
+  "tier": "C",
+  "outlet_type": "literary and arts journal",
+  "reason": "As a recently established (2022) publication focusing on cultural interpretation, it has not yet built the reputation for fact-checking and editorial oversight required for a reliable source of facts."
  },
  "thehoya.com": {
   "tier": "C",
@@ -2033,6 +3443,11 @@
   "tier": "C",
   "outlet_type": "personal blog",
   "reason": "This is the personal blog of a single film critic and lacks the editorial oversight of a larger publication."
+ },
+ "thejasminebrand.com": {
+  "tier": "C",
+  "outlet_type": "Celebrity news and gossip blog",
+  "reason": "This is a celebrity news and gossip blog that lacks a clear editorial process or a reputation for rigorous fact-checking."
  },
  "theknockturnal.com": {
   "tier": "B",
@@ -2059,6 +3474,11 @@
   "outlet_type": "entertainment and gossip site",
   "reason": "This outlet is a content farm focused on celebrity news and listicles, which lacks the reputation for fact-checking required for a reliable source."
  },
+ "thelocationguide.com": {
+  "tier": "B",
+  "outlet_type": "Film industry trade publication",
+  "reason": "This is an established trade publication for the film production industry with named staff and editorial content, such as interviews with professionals."
+ },
  "thelog.com": {
   "tier": "C",
   "outlet_type": "Boating newspaper",
@@ -2074,25 +3494,60 @@
   "outlet_type": "film review blog",
   "reason": "This appears to be the personal website of a single critic, which lacks the editorial oversight of a larger, established publication."
  },
+ "thenewbev.com": {
+  "tier": "C",
+  "outlet_type": "official movie theater website",
+  "reason": "This is the official website for a theater owned by a specific director, making it a primary source for a particular viewpoint rather than an independent source for facts."
+ },
  "thenigerianvoice.com": {
   "tier": "C",
   "outlet_type": "General news website",
   "reason": "This general news website lacks bylines from named authors and has no clear evidence of a rigorous editorial process, making its reliability uncertain."
+ },
+ "thenikkisin.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is a personal blog expressing the opinions of a single author, with no evidence of editorial oversight or a fact-checking process."
+ },
+ "thennowmovielocations.com": {
+  "tier": "C",
+  "outlet_type": "Personal blog",
+  "reason": "The site appears to be a personal project or hobbyist blog with no visible editorial oversight, named authors, or fact-checking process."
  },
  "theplaylist.net": {
   "tier": "B",
   "outlet_type": "Film news and review site",
   "reason": "The site is an established publication with named editorial staff that produces original news, reviews, and interviews about the film industry."
  },
+ "thepopinsider.com": {
+  "tier": "C",
+  "outlet_type": "Pop culture and merchandise site",
+  "reason": "While the site has an editorial staff, its heavy focus on merchandise and consumer products raises questions about its editorial independence from the subjects it covers."
+ },
  "theqgentleman.com": {
   "tier": "C",
   "outlet_type": "Lifestyle and culture publication",
   "reason": "This appears to be a lifestyle and culture publication that lacks a clear reputation for fact-checking or rigorous editorial oversight."
  },
+ "theronin.org": {
+  "tier": "C",
+  "outlet_type": "Film news blog",
+  "reason": "This appears to be a small news blog run by an individual, and it lacks the robust editorial oversight and reputation for fact-checking of an established news organization."
+ },
  "theroot.com": {
   "tier": "B",
   "outlet_type": "news and culture magazine",
   "reason": "The Root is an established news and culture publication with professional staff and clear editorial oversight."
+ },
+ "theroughcutpod.com": {
+  "tier": "C",
+  "outlet_type": "Podcast website",
+  "reason": "This website is the home of a podcast, which consists of primary-source interviews and lacks the formal editorial oversight or fact-checking process of an established publication."
+ },
+ "thescorecardreview.com": {
+  "tier": "C",
+  "outlet_type": "personal film review blog",
+  "reason": "The site's owner states that he does not update the site very often, indicating it is a personal project lacking a formal editorial process."
  },
  "theshaderoom.com": {
   "tier": "C",
@@ -2119,10 +3574,35 @@
   "outlet_type": "Entertainment listicle site",
   "reason": "This is a pop culture content farm that primarily publishes listicles and aggregated content, and it lacks a reputation for rigorous fact-checking or original reporting."
  },
+ "thetrainline.com": {
+  "tier": "C",
+  "outlet_type": "Travel ticket vendor",
+  "reason": "This is a commercial website for a train ticket vendor, not an established publication with a reputation for fact-checking information about films."
+ },
+ "theweek.com": {
+  "tier": "B",
+  "outlet_type": "News magazine",
+  "reason": "The Week is an established news magazine with editorial oversight, professional staff, and a reputation for fact-checking."
+ },
+ "theyard-vfx.com": {
+  "tier": "B",
+  "outlet_type": "VFX company website",
+  "reason": "This is the official website for the visual effects company that worked on the film, making it a reliable primary source for its own work."
+ },
  "thirdcoastreview.com": {
   "tier": "B",
   "outlet_type": "online arts and culture magazine",
   "reason": "This is an established online publication with named professional writers, clear editorial sections, and an 'About Us' page, indicating editorial oversight."
+ },
+ "thirstyinla.com": {
+  "tier": "C",
+  "outlet_type": "cocktail and bar blog",
+  "reason": "This is a niche blog focused on the Los Angeles bar scene, not an established publication with a visible editorial process or reputation for fact-checking."
+ },
+ "thriftbooks.com": {
+  "tier": "C",
+  "outlet_type": "online book retailer",
+  "reason": "This is a commercial website for selling books, not a source with an editorial process for creating factual content about films."
  },
  "timeout.com": {
   "tier": "B",
@@ -2134,10 +3614,25 @@
   "outlet_type": "local newspaper",
   "reason": "This is a long-established local newspaper with a professional staff and editorial oversight, making it a reliable source for its published content."
  },
+ "tinseltine.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is a personal blog written by a single individual and lacks the editorial oversight required to be considered a reliable source."
+ },
+ "titanbooks.com": {
+  "tier": "C",
+  "outlet_type": "Book publisher",
+  "reason": "This is the commercial website for a book publisher, and its primary purpose is to sell products rather than provide independent, factual reporting."
+ },
  "todayifoundout.com": {
   "tier": "C",
   "outlet_type": "Trivia website",
   "reason": "This is a general interest trivia website that lacks the rigorous editorial process and reputation for fact-checking required of a reliable source."
+ },
+ "tomrichmond.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This is the personal blog of an individual artist, which lacks the editorial oversight of a reliable publication."
  },
  "tonymacklin.net": {
   "tier": "C",
@@ -2149,10 +3644,25 @@
   "outlet_type": "music chart aggregator",
   "reason": "This site aggregates music chart data and is not a source for information about movies."
  },
+ "tpr.org": {
+  "tier": "B",
+  "outlet_type": "public radio station",
+  "reason": "TPR (Texas Public Radio) is an established news organization with clear editorial oversight and a reputation for fact-checking."
+ },
+ "travelandleisureasia.com": {
+  "tier": "C",
+  "outlet_type": "Travel and lifestyle magazine",
+  "reason": "This is a travel and lifestyle publication, not an outlet with expertise in film production or the film industry."
+ },
  "triblive.com": {
   "tier": "B",
   "outlet_type": "local newspaper",
   "reason": "This is the website for the Pittsburgh Tribune-Review, an established regional newspaper with professional staff and editorial oversight."
+ },
+ "tumblr.com": {
+  "tier": "C",
+  "outlet_type": "personal blog platform",
+  "reason": "Tumblr is a user-generated personal blog platform that lacks the editorial oversight and reputation for fact-checking required of a reliable source."
  },
  "tvinsider.com": {
   "tier": "B",
@@ -2169,6 +3679,11 @@
   "outlet_type": "Online merchandise store",
   "reason": "This is a commercial e-commerce website selling merchandise, not a publication with editorial oversight for providing factual information."
  },
+ "tvweek.com": {
+  "tier": "B",
+  "outlet_type": "Entertainment trade publication",
+  "reason": "TVWeek was a long-running trade publication for the television industry with professional editorial oversight."
+ },
  "twistedsifter.com": {
   "tier": "C",
   "outlet_type": "Listicle and content aggregation site",
@@ -2179,10 +3694,20 @@
   "outlet_type": "Lifestyle and entertainment site",
   "reason": "This is a lifestyle and entertainment publication that focuses on viral content and celebrity news rather than in-depth, fact-checked reporting."
  },
+ "tylerperry.com": {
+  "tier": "B",
+  "outlet_type": "Official filmmaker/studio website",
+  "reason": "This is the official website for the filmmaker and his studio, making it a reliable primary source for facts about his own productions."
+ },
  "uatl.com": {
   "tier": "B",
   "outlet_type": "Newspaper culture vertical",
   "reason": "This is a culture and entertainment vertical of the Atlanta Journal-Constitution, a major newspaper with a reputation for fact-checking and editorial oversight."
+ },
+ "ucsf.edu": {
+  "tier": "B",
+  "outlet_type": "University research project",
+  "reason": "This is a research project from a major university, making it a reliable source for its specific subject matter of tobacco in media."
  },
  "umbc.edu": {
   "tier": "C",
@@ -2194,10 +3719,25 @@
   "outlet_type": "Viral content and entertainment site",
   "reason": "This outlet is primarily a viral content aggregator and lacks the reputation for rigorous fact-checking and editorial oversight of a reliable source."
  },
+ "universalpicturesathome.com": {
+  "tier": "B",
+  "outlet_type": "Official studio website",
+  "reason": "This is the official home entertainment website for Universal Pictures, making it a reliable primary source for information about its own films."
+ },
+ "upcomingdiscs.com": {
+  "tier": "C",
+  "outlet_type": "Physical media review site",
+  "reason": "While written by a named author, the site's editorial oversight and reputation for fact-checking are not established, making it more akin to a niche blog than a reliable publication."
+ },
  "uproxx.com": {
   "tier": "B",
   "outlet_type": "entertainment news site",
   "reason": "Uproxx is an established digital media outlet with editorial oversight and named professional staff covering entertainment and culture."
+ },
+ "upsocl.com": {
+  "tier": "C",
+  "outlet_type": "viral content site",
+  "reason": "This is a viral content and listicle site that lacks the editorial oversight and reputation for fact-checking required of a reliable source."
  },
  "upworthy.com": {
   "tier": "C",
@@ -2224,6 +3764,36 @@
   "outlet_type": "podcast website",
   "reason": "This is the website for a personal podcast, which does not have the editorial oversight or reputation for fact-checking required of a reliable source."
  },
+ "vfxblog.com": {
+  "tier": "B",
+  "outlet_type": "specialist trade blog",
+  "reason": "The site is written by a named, professional journalist specializing in visual effects and features in-depth articles and interviews with industry professionals."
+ },
+ "vfxhq.com": {
+  "tier": "C",
+  "outlet_type": "personal website",
+  "reason": "This is a personal project by an individual VFX artist and lacks the editorial oversight required of a reliable source."
+ },
+ "vibe.com": {
+  "tier": "B",
+  "outlet_type": "entertainment and culture magazine",
+  "reason": "Vibe is a long-established entertainment and culture magazine with a professional editorial staff and oversight."
+ },
+ "victoriaadvocate.com": {
+  "tier": "B",
+  "outlet_type": "local newspaper",
+  "reason": "This is the website for a local newspaper, which is a reliable source with established editorial standards and professional staff."
+ },
+ "viddy-well.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This site appears to be a personal blog with no evidence of editorial oversight, as suggested by the generic Gmail contact address and informal site structure."
+ },
+ "vintag.es": {
+  "tier": "C",
+  "outlet_type": "Photo blog and listicle site",
+  "reason": "This is a blog-style site that aggregates vintage photos and presents them in listicles, but it lacks any visible editorial process, named professional staff, or reputation for fact-checking."
+ },
  "visitcatalinaisland.com": {
   "tier": "C",
   "outlet_type": "tourism blog",
@@ -2238,6 +3808,11 @@
   "tier": "C",
   "outlet_type": "user-generated content platform",
   "reason": "This is a platform where individual users can publish their own content, which lacks the editorial oversight and fact-checking processes of a reliable source."
+ },
+ "voraciousfilmgoer.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "This appears to be a personal film review blog with no evidence of editorial oversight, a reputation for fact-checking, or professional staff."
  },
  "walkoffame.com": {
   "tier": "B",
@@ -2269,15 +3844,40 @@
   "outlet_type": "Movie news and review blog",
   "reason": "This appears to be a fan-run blog collective that lacks the clear editorial oversight and reputation for fact-checking of an established news organization."
  },
+ "weatheranchormama.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "The site appears to be a personal blog, which lacks the editorial oversight and reputation for fact-checking required to be a reliable source."
+ },
  "weebly.com": {
   "tier": "C",
   "outlet_type": "Personal project on a free host",
   "reason": "Weebly is a free website building platform, and sites hosted on it are considered personal projects or blogs, which lack the editorial oversight required for a reliable source."
  },
+ "westsideseattle.com": {
+  "tier": "B",
+  "outlet_type": "local newspaper",
+  "reason": "This is an established local newspaper with clear editorial oversight, making its published reviews and articles reliable secondary sources."
+ },
+ "weststudio.com": {
+  "tier": "B",
+  "outlet_type": "Production studio portfolio",
+  "reason": "This is the official website for a creative studio, making it a reliable primary source for facts about its own work and involvement in a film project."
+ },
+ "wetransfer.com": {
+  "tier": "C",
+  "outlet_type": "corporate arts platform",
+  "reason": "This is a branded content and arts platform for a file-transfer service, not an independent news or reference outlet with a reputation for fact-checking."
+ },
  "whqr.org": {
   "tier": "B",
   "outlet_type": "Public radio station",
   "reason": "This is the website for an NPR-affiliated public radio station, which has a professional staff and adheres to journalistic standards of editorial oversight and fact-checking."
+ },
+ "whyevolutionistrue.com": {
+  "tier": "C",
+  "outlet_type": "personal blog",
+  "reason": "The site describes itself as a personal blog written by an individual, which lacks the editorial oversight of a reliable publication."
  },
  "whysoblu.com": {
   "tier": "C",
@@ -2294,10 +3894,20 @@
   "outlet_type": "User-generated textbook wiki",
   "reason": "This is a user-generated wiki, which is explicitly defined as an unreliable source type by the provided criteria."
  },
+ "wikivoyage.org": {
+  "tier": "C",
+  "outlet_type": "User-generated travel wiki",
+  "reason": "The site is user-generated wiki content, which is explicitly defined as an unreliable source by the criteria."
+ },
  "wildchina.com": {
   "tier": "C",
   "outlet_type": "Travel company website",
   "reason": "This is a commercial website for a travel company, not a publication with editorial oversight or a reputation for fact-checking on the topic of film."
+ },
+ "wire.com": {
+  "tier": "C",
+  "outlet_type": "corporate product website",
+  "reason": "This is the corporate website for a secure messaging application and is not a source for information about movies."
  },
  "wlrn.org": {
   "tier": "B",
@@ -2319,10 +3929,25 @@
   "outlet_type": "film news and opinion blog",
   "reason": "The site is primarily the work of a single author and lacks the robust editorial oversight and staff of an established news organization."
  },
+ "wpsu.org": {
+  "tier": "B",
+  "outlet_type": "Public media station",
+  "reason": "WPSU is a PBS and NPR member station, which is an established media outlet with a reputation for editorial oversight and fact-checking."
+ },
+ "wrvo.org": {
+  "tier": "B",
+  "outlet_type": "public radio station",
+  "reason": "This is the website for an NPR-affiliated public radio station, which adheres to professional journalistic standards."
+ },
  "wsbradio.com": {
   "tier": "B",
   "outlet_type": "Local news radio station",
   "reason": "This is the website for an established local news radio station, which is a reliable news organization with editorial oversight."
+ },
+ "wwno.org": {
+  "tier": "B",
+  "outlet_type": "public radio station",
+  "reason": "This is an NPR member station, a professional news organization with a reputation for fact-checking and editorial oversight."
  },
  "wyldcatalog.org": {
   "tier": "C",
@@ -2338,6 +3963,11 @@
   "tier": "C",
   "outlet_type": "Sports and entertainment site",
   "reason": "This is primarily a sports-focused outlet, and its entertainment content consists of listicles that are not produced with the editorial rigor of a dedicated film publication."
+ },
+ "ymcinema.com": {
+  "tier": "B",
+  "outlet_type": "Filmmaking technology magazine",
+  "reason": "This is an established trade publication focused on the technology of filmmaking, with named professional staff and editorial oversight."
  },
  "yourprops.com": {
   "tier": "C",

@@ -17,6 +17,15 @@
   "reason": "This is the official, verified channel for BAFTA (British Academy of Film and Television Arts), a major cultural and industry organization.",
   "tier": "B"
  },
+ "UC-qqLQb47WNUXk_TIdwWDUA": {
+  "name": "FILM DISCUSSION",
+  "handle": "@Film_Discussion",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel has a generic name and is not verified, indicating it is a fan or independent creator channel rather than an official source.",
+  "tier": "C"
+ },
  "UC0EA6Ige7-T9OYqItq0LD-w": {
   "name": "masusockvevo",
   "handle": "@masusockvevo5401",
@@ -44,6 +53,15 @@
   "reason": "This channel is not verified, so it cannot be confidently identified as an official outlet and is classified as a fan or creator channel.",
   "tier": "C"
  },
+ "UC3DOMNPaR3_YihbzMsOJKQw": {
+  "name": "STREAM WARS",
+  "handle": "@STREAMWARS",
+  "verified": true,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This channel creates compilation videos of behind-the-scenes footage and is not an official outlet, studio, or talent associated with the film.",
+  "tier": "C"
+ },
  "UC3gNmTGu-TTbFPpfSs5kNkg": {
   "name": "Movieclips",
   "handle": "@MOVIECLIPS",
@@ -52,6 +70,15 @@
   "outlet_domain": "fandango.com",
   "reason": "This is the official, verified channel for Movieclips, which is owned by the entertainment company Fandango and hosts a large library of licensed movie clips.",
   "tier": "B"
+ },
+ "UC3gwItUAj-bdfRRLaAzKaTg": {
+  "name": "DVDXtras",
+  "handle": "@DVDXtras_",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel that appears to compile and upload bonus content from DVDs, making it a fan or creator channel.",
+  "tier": "C"
  },
  "UC4fYBNAjjXqd4mH_KmFLgLQ": {
   "name": "RealVideoUK",
@@ -80,6 +107,15 @@
   "reason": "This channel is not verified, so it cannot be confirmed as the official channel for the Backstage publication and is likely a fan or creator account.",
   "tier": "C"
  },
+ "UC5KD40UCDRUbR-od7sp9cuA": {
+  "name": "Collider Interviews",
+  "handle": "@ColliderInterviews",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "Although the channel name suggests it is related to the entertainment outlet Collider, it lacks a verified badge and is therefore classified as a fan or creator channel per the instructions.",
+  "tier": "C"
+ },
  "UC5N2asRYkdATmJ9dtr1fO1w": {
   "name": "Scene City",
   "handle": "@SceneCityOfficial",
@@ -98,6 +134,42 @@
   "reason": "This is an unverified channel with 'Clips' in the name, indicating it is a fan or creator channel that posts clips of interviews rather than an official channel.",
   "tier": "C"
  },
+ "UC5iWkiQaHHMi1oGAxN0-g-g": {
+  "name": "Mod Wallet",
+  "handle": "@ModwalletOFFICIAL",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name, 'Mod Wallet', does not correspond to an official studio, outlet, or talent associated with the film.",
+  "tier": "C"
+ },
+ "UC60c_hIbmw9dMWDwfJ-U5Eg": {
+  "name": "Kaitlin Urka",
+  "handle": "@kmurka",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is the personal, unverified channel of an individual creator who is conducting an interview.",
+  "tier": "C"
+ },
+ "UC6ykMHpI9B1d1DDqjh8H8sQ": {
+  "name": "KingdomOfDreamsPodcast",
+  "handle": "@kingdomofdreamspodcast",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel name indicates it is an independent podcast, and it lacks a verified badge, so it is classified as a fan or creator channel.",
+  "tier": "C"
+ },
+ "UC7yRILFFJ2QZCykymr8LPwA": {
+  "name": "New Rockstars",
+  "handle": "@NewRockstars",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "newrockstars.com",
+  "reason": "New Rockstars is a professional digital media publication that produces analysis, theory, and 'ending explained' videos for film and television.",
+  "tier": "B"
+ },
  "UC8-Th83bH_thdKZDJCrn88g": {
   "name": "The Tonight Show Starring Jimmy Fallon",
   "handle": "@fallontonight",
@@ -106,6 +178,15 @@
   "outlet_domain": "nbc.com",
   "reason": "This is the official, verified YouTube channel for 'The Tonight Show Starring Jimmy Fallon,' a late-night talk show that airs on the NBC network.",
   "tier": "B"
+ },
+ "UC9rG5vRl27yFHDvycdSmh8g": {
+  "name": "Maison of Elegance",
+  "handle": "@MaisonofElegance",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel for an independent creator whose content explains topics like film costumes.",
+  "tier": "C"
  },
  "UCAcSQCXWqFGjMBwcqQ2Gpmw": {
   "name": "chrissmash",
@@ -125,6 +206,15 @@
   "reason": "This is the official channel for the Writers Guild of America, West, a trade organization for screenwriters.",
   "tier": "C"
  },
+ "UCB1z6rlaCVPBnnhjG7YEK7Q": {
+  "name": "Cyber Chaos Crew",
+  "handle": "@CyberChaosCrew",
+  "verified": true,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel name and content are characteristic of a fan or independent creator channel, not an official studio, outlet, or talent.",
+  "tier": "C"
+ },
  "UCBOOq97QvZy6a-PUk3K49Zg": {
   "name": "Did You Catch This?",
   "handle": "@DidYouCatchThisTV",
@@ -133,6 +223,51 @@
   "outlet_domain": "",
   "reason": "The channel's name, \"Did You Catch This?\", indicates a focus on movie trivia and hidden details, which is characteristic of a fan or creator channel.",
   "tier": "C"
+ },
+ "UCCYfsEmEIyLB0nVIg4zkXmA": {
+  "name": "STRATS TV",
+  "handle": "@STRATSTV",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and appears to be an independent creator or fan channel rather than an official outlet, studio, or talent.",
+  "tier": "C"
+ },
+ "UCCkyR_VzqLhJLruJ3Yq8pxQ": {
+  "name": "Channel T",
+  "handle": "@timhulsizer",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified personal channel re-uploading a 'making of' special that originally aired on the Sci Fi Channel, which is characteristic of a fan or creator channel.",
+  "tier": "C"
+ },
+ "UCD6uT7g3JqRGayLBbWQ4Xhw": {
+  "name": "History Exposed Shorts",
+  "handle": "@HistorryExposed",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name, \"History Exposed Shorts\", does not belong to an official outlet, studio, or talent associated with the film.",
+  "tier": "C"
+ },
+ "UCDi89zKKAOE-5IBMcEVmDWw": {
+  "name": "JoBlo Celebrity Access",
+  "handle": "@JoBloCelebrityAccess",
+  "verified": false,
+  "kind": "outlet",
+  "outlet_domain": "joblo.com",
+  "reason": "This is an official channel for the movie news and review website JoBlo.com, which conducts interviews with talent and crew.",
+  "tier": "B"
+ },
+ "UCE8aa83wFg-VE1zcaVCZdIA": {
+  "name": "Moviefone",
+  "handle": "@moviefone",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "moviefone.com",
+  "reason": "Moviefone is a verified entertainment media brand and publication that provides movie news, interviews, and trailers.",
+  "tier": "B"
  },
  "UCEHV7epH9Gkt343fdwCzMtg": {
   "name": "csilver522",
@@ -151,6 +286,15 @@
   "outlet_domain": "people.com",
   "reason": "This is the official, verified YouTube channel for the entertainment news publication People magazine.",
   "tier": "A"
+ },
+ "UCH1oRy1dINbMVp3UFWrKP0w": {
+  "name": "Good Morning America",
+  "handle": "@GMA",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "goodmorningamerica.com",
+  "reason": "This is the official, verified YouTube channel for the ABC news and entertainment program Good Morning America.",
+  "tier": "B"
  },
  "UCH3X35bYcT5opTh9TsUKX4A": {
   "name": "AUC Backup",
@@ -188,6 +332,24 @@
   "reason": "The channel is not verified and its name does not correspond to an official studio, outlet, or talent, indicating it is a fan or creator channel.",
   "tier": "C"
  },
+ "UCJ3P8KTy3e_dqYk5inEYOMw": {
+  "name": "ScreenSlam",
+  "handle": "@ScreenSlam",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "screenslam.com",
+  "reason": "This is the official, verified channel for the entertainment news outlet ScreenSlam, which posts official movie interviews and junket footage.",
+  "tier": "B"
+ },
+ "UCJ3lh_RGlrKecYSgbaXkbYw": {
+  "name": "HuntleyFilmArchives",
+  "handle": "@HuntleyFilmArchives",
+  "verified": false,
+  "kind": "other",
+  "outlet_domain": "huntleyarchives.com",
+  "reason": "This is the official channel for a commercial film archive that licenses historical footage.",
+  "tier": "C"
+ },
  "UCJJap_3RGZ2UxqLTLz0K39g": {
   "name": "Sony Pictures Releasing UK",
   "handle": "@SonyPicsUK",
@@ -206,6 +368,15 @@
   "reason": "The channel name 'Movies Explained Shorts' and lack of a verified badge indicate this is an independent creator or fan channel, not an official entity.",
   "tier": "C"
  },
+ "UCJPIr8AiO0qwClbzH3HAAVA": {
+  "name": "SYFY",
+  "handle": "@Syfy",
+  "verified": true,
+  "kind": "studio_network",
+  "outlet_domain": "syfy.com",
+  "reason": "This is the official, verified YouTube channel for the SYFY television network.",
+  "tier": "B"
+ },
  "UCJofgG0xFsSOfhBlMikjL7w": {
   "name": "Movie & TV Extras",
   "handle": "@movietvextras",
@@ -215,6 +386,51 @@
   "reason": "This is an unverified channel that posts movie clips and behind-the-scenes content, which is typical of a fan or independent creator.",
   "tier": "C"
  },
+ "UCJrh3FRGIUwHLezSQ3vv6rw": {
+  "name": "John Berge",
+  "handle": "@JOHNBERGE-NORWAY",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This appears to be a personal channel from an individual creator and is not verified as an official outlet, studio, or talent.",
+  "tier": "C"
+ },
+ "UCK7lKOYd46F7G5JGFadC_ew": {
+  "name": "ComingSoon.net",
+  "handle": "@comingsoon",
+  "verified": false,
+  "kind": "outlet",
+  "outlet_domain": "comingsoon.net",
+  "reason": "The channel is named after the entertainment news and reviews website ComingSoon.net.",
+  "tier": "B"
+ },
+ "UCKUqxpClWIlcPhh25CCGR0Q": {
+  "name": "blackfilmandtv",
+  "handle": "@blackfilmandtv",
+  "verified": false,
+  "kind": "outlet",
+  "outlet_domain": "blackfilm.com",
+  "reason": "The channel name and video title indicate this is the official channel for the entertainment publication Blackfilm.com.",
+  "tier": "B"
+ },
+ "UCKdoYLGzo7m8hDaWwMtVWfA": {
+  "name": "Nerdtropolis",
+  "handle": "@Nerdtropolis",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel for an independent pop culture news and review creator.",
+  "tier": "C"
+ },
+ "UCKy1dAqELo0zrOtPkf0eTMw": {
+  "name": "IGN",
+  "handle": "@IGN",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "ign.com",
+  "reason": "IGN is a major entertainment and gaming news publication, and the channel is verified.",
+  "tier": "B"
+ },
  "UCLkC7MXQLYL2Z7w7HExNiwA": {
   "name": "Curtis Akeem",
   "handle": "@CurtisAkeem",
@@ -222,6 +438,15 @@
   "kind": "fan_or_creator",
   "outlet_domain": "",
   "reason": "This is the channel of an unverified individual creator who posts interviews and commentary.",
+  "tier": "C"
+ },
+ "UCMiHBwzsM7qZbP9rXrXJVhg": {
+  "name": "Midday Reviews",
+  "handle": "@middayreviews",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel name 'Midday Reviews' and lack of a verified badge indicate this is an independent creator or fan channel.",
   "tier": "C"
  },
  "UCNNTZgxNQuBrhbO0VrG8woA": {
@@ -251,6 +476,33 @@
   "reason": "This unverified channel posts 'facts you missed' style videos, which is characteristic of a fan or independent creator.",
   "tier": "C"
  },
+ "UCQLqbL7lkfrroSLd7pIEZ5w": {
+  "name": "VHS BTS",
+  "handle": "@VHSBTS",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name, VHS BTS, suggests it is a fan or independent creator who curates behind-the-scenes content.",
+  "tier": "C"
+ },
+ "UCRXiA3h1no_PFkb1JCP0yMA": {
+  "name": "Vogue",
+  "handle": "@Vogue",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "vogue.com",
+  "reason": "This is the official, verified YouTube channel for Vogue, a major fashion and culture publication.",
+  "tier": "A"
+ },
+ "UCS2Vs11wi3NY9OJJTOReKWg": {
+  "name": "watchginotv",
+  "handle": "@watchginotv",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel that appears to be a fan or creator account posting clips of interviews, not an official outlet or talent channel.",
+  "tier": "C"
+ },
  "UCTAo1IwS3UvYKkZfIx4CCng": {
   "name": "GAFollowers",
   "handle": "@gafollowers",
@@ -278,6 +530,60 @@
   "reason": "The channel is not verified, so it cannot be confidently identified as the official channel for the Hollywood Suite television network and is classified as a fan or creator channel.",
   "tier": "C"
  },
+ "UCUFoQUaVRt3MVFxqwPUMLCQ": {
+  "name": "StudioBinder",
+  "handle": "@StudioBinder",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "studiobinder.com",
+  "reason": "StudioBinder is a company that provides production management software and educational resources for filmmakers, functioning as a trade publication for the industry.",
+  "tier": "B"
+ },
+ "UCV2w-yGLZXK6eCRm_gQhogw": {
+  "name": "Cinema Legends",
+  "handle": "@CinemaLegends-VF",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This channel is not verified and its video title has a sensationalized style typical of an independent creator or fan channel.",
+  "tier": "C"
+ },
+ "UCV67NAEFcb3pwrtHp1oR6RA": {
+  "name": "Windy City LIVE",
+  "handle": "@WindyCityLIVETV",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This channel for the local talk show \"Windy City LIVE\" is not verified, so it is likely a fan or creator channel uploading clips rather than the official source.",
+  "tier": "C"
+ },
+ "UCV9eBnGxjNz1fJ7Y9T1IonQ": {
+  "name": "That's Entertainment",
+  "handle": "@thatsentertainment5602",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and has a generic name and handle, indicating it is a fan or independent creator account.",
+  "tier": "C"
+ },
+ "UCVjS9AuBloqJJjhsy3vIfug": {
+  "name": "Sony",
+  "handle": "@Sony",
+  "verified": true,
+  "kind": "studio_network",
+  "outlet_domain": "",
+  "reason": "This is the official verified channel for Sony, the parent company of the major film studio Sony Pictures Entertainment.",
+  "tier": "B"
+ },
+ "UCWs71f-4vLO2T19Jp0OG--g": {
+  "name": "NBC Connecticut",
+  "handle": "@nbcconnecticut",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "Although the name suggests a local news outlet, the channel is not verified and therefore cannot be confirmed as the official source.",
+  "tier": "C"
+ },
  "UCYBxMDxY8_PZvY6gf7gW7Ew": {
   "name": "Killercars4",
   "handle": "@killercars4",
@@ -285,6 +591,15 @@
   "kind": "fan_or_creator",
   "outlet_domain": "",
   "reason": "The channel is not verified and its name, 'Killercars4', does not indicate it is an official channel for a studio, outlet, or talent.",
+  "tier": "C"
+ },
+ "UCYJPxK4bnjUuCMfz-GC6Llg": {
+  "name": "Old Film Vault",
+  "handle": "@OldFilmVault-yt",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name and video title, a list of \"shocking facts,\" are characteristic of a fan or independent creator.",
   "tier": "C"
  },
  "UCYyDbdaja1UDNdFSwUrYVGA": {
@@ -295,6 +610,15 @@
   "outlet_domain": "thejohncampeashow.com",
   "reason": "This is the official, verified channel for John Campea, a professional film critic and host who runs his own entertainment news and commentary show.",
   "tier": "B"
+ },
+ "UCZFuuu7-mtoQjkUjqqUYtkg": {
+  "name": "Critqal",
+  "handle": "@critqal",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel that appears to be an independent creator, not an official outlet, studio, or talent.",
+  "tier": "C"
  },
  "UCZVRh-6RCAGg2gHVc0HoC_Q": {
   "name": "Brud Gotts",
@@ -323,6 +647,15 @@
   "reason": "This is the official, verified channel for Capital, a UK radio network and entertainment media brand that conducts celebrity interviews.",
   "tier": "B"
  },
+ "UC_TTz3vTPWqSgrqGdW2LLlQ": {
+  "name": "The Movie Blog",
+  "handle": "@Themovieblog",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This channel is not verified, so it cannot be confidently identified as the official channel for a professional outlet and is more likely a fan or independent creator channel.",
+  "tier": "C"
+ },
  "UCatbb7X8J0TG3OiIY20hpyA": {
   "name": "Yahoo Entertainment",
   "handle": "@yahooentertainment",
@@ -340,6 +673,51 @@
   "outlet_domain": "",
   "reason": "This is the official, verified YouTube channel for comedian and actor Pete Holmes.",
   "tier": "B"
+ },
+ "UCclrbthmUelEXCPDByvEiQQ": {
+  "name": "Jrsports23",
+  "handle": "@Jrsports23",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel with a generic username that posts clips from movies, indicating it is a fan or creator account.",
+  "tier": "C"
+ },
+ "UCdtXPiqI2cLorKaPrfpKc4g": {
+  "name": "Entertainment Tonight",
+  "handle": "@EntertainmentTonight",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "etonline.com",
+  "reason": "This is the official, verified YouTube channel for the entertainment news publication Entertainment Tonight.",
+  "tier": "B"
+ },
+ "UCeKGLAbxf1eHwpkAhX7LPVA": {
+  "name": "DScreenFilms Shorts",
+  "handle": "@DScreenFilms_Shorts",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel whose name and sensational video title suggest it is an independent creator or fan channel.",
+  "tier": "C"
+ },
+ "UCf3SpupfoGnXEpgaGRGPbqg": {
+  "name": "Josh Horowitz",
+  "handle": "@JoshHorowitz",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "",
+  "reason": "This is the official, verified channel for entertainment journalist Josh Horowitz and his interview show/podcast 'Happy Sad Confused'.",
+  "tier": "B"
+ },
+ "UCfWMxyvASxrO_j_HcMwBZ-A": {
+  "name": "SonyPicturesDVD",
+  "handle": "@SonyPicturesDVD",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "Although the name suggests it is an official studio channel, it lacks a verified badge.",
+  "tier": "C"
  },
  "UCfdPt9PMpzKgaEiSvbQN24g": {
   "name": "Y it is I",
@@ -368,6 +746,15 @@
   "reason": "The channel name, handle, and verified badge indicate this is the official YouTube channel for the film studio Warner Bros. Entertainment.",
   "tier": "B"
  },
+ "UCgRQHK8Ttr1j9xCEpCAlgbQ": {
+  "name": "Variety",
+  "handle": "@variety",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "variety.com",
+  "reason": "This is the official, verified YouTube channel for Variety, a major entertainment trade publication.",
+  "tier": "A"
+ },
  "UCgcJaKZZ98YdmtcsyF0KThA": {
   "name": "NOW PLAYING",
   "handle": "@officialnowplaying",
@@ -376,6 +763,15 @@
   "outlet_domain": "",
   "reason": "The channel is not verified and has a generic name, making it likely a fan or independent creator account rather than an official source.",
   "tier": "C"
+ },
+ "UChDKyKQ59fYz3JO2fl0Z6sg": {
+  "name": "TODAY",
+  "handle": "@TODAY",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "today.com",
+  "reason": "This is the official, verified YouTube channel for the NBC news and entertainment program 'TODAY'.",
+  "tier": "B"
  },
  "UChECOUmv_1wTnirWCVVSHXQ": {
   "name": "BLUFOX89",
@@ -403,6 +799,15 @@
   "outlet_domain": "teamcoco.com",
   "reason": "This is the official, verified channel for Conan O'Brien's digital media company, Team Coco, which posts clips from his talk shows.",
   "tier": "B"
+ },
+ "UCilLwsT0voJFhv95zsDqBoQ": {
+  "name": "Hollywood+",
+  "handle": "@WatchHollywoodPlus",
+  "verified": true,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This appears to be a creator channel that aggregates movie-related content like interviews, rather than being the official channel for a specific publication or studio.",
+  "tier": "C"
  },
  "UCjDsbbzHgTrGc4Ff26TJtsA": {
   "name": "E! News",
@@ -440,6 +845,15 @@
   "reason": "The channel name 'MovieBestBits' and the lack of a verified badge indicate this is a fan-run channel that uploads movie clips, not an official source.",
   "tier": "C"
  },
+ "UCkoryPF1C6Rf4Th2CfPNVFw": {
+  "name": "WHUT |  Howard University Television",
+  "handle": "@WHUTTV",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "Although the channel name suggests it is a television station, it is not verified, so it cannot be confirmed as an official outlet.",
+  "tier": "C"
+ },
  "UCl86gUsQB1IBE9b21ouDgUA": {
   "name": "Brandi Hill Presents",
   "handle": "@BrandiHillPresents",
@@ -448,6 +862,33 @@
   "outlet_domain": "",
   "reason": "The channel is not verified and the video title is a trivia/\"hidden details\" style video, which is typical of an independent creator or fan channel.",
   "tier": "C"
+ },
+ "UClWCQNaggkMW7SDtS3BkEBg": {
+  "name": "Entertainment Weekly",
+  "handle": "@entertainmentweekly",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "ew.com",
+  "reason": "This is the official, verified YouTube channel for the entertainment publication Entertainment Weekly.",
+  "tier": "A"
+ },
+ "UClZmCCcrhNaXhWYvZNIolWg": {
+  "name": "BUILD Series",
+  "handle": "@BUILDSeriesNYC",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "yahoo.com",
+  "reason": "This is the official verified channel for the BUILD Series, a live interview show from Yahoo that features actors and directors discussing their work.",
+  "tier": "B"
+ },
+ "UCmO_WjaWDwimv8Kl7GHFxAA": {
+  "name": "American Film Institute",
+  "handle": "@afi",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "afi.com",
+  "reason": "This is the official channel for the American Film Institute, a major cultural organization dedicated to celebrating and preserving film history.",
+  "tier": "B"
  },
  "UCmQynT5NWU3Vsa9t0OGUhcA": {
   "name": "FilmIsNow Epic Movie Zone",
@@ -465,6 +906,15 @@
   "kind": "fan_or_creator",
   "outlet_domain": "",
   "reason": "This is an unverified channel that posts movie clips, which is typical of a fan or independent creator.",
+  "tier": "C"
+ },
+ "UCmenfoDMVVPPTyYZGPbnUVw": {
+  "name": "TrailerBrasil",
+  "handle": "@TrailerBrasil",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified channel that appears to be a fan or creator account that aggregates movie trailers and promotional material for a Brazilian audience.",
   "tier": "C"
  },
  "UCoEpkKAU5FWRblRzfcIY-Mw": {
@@ -512,6 +962,24 @@
   "reason": "This is the official, verified YouTube channel for The Rich Eisen Show, a syndicated sports and entertainment talk show.",
   "tier": "B"
  },
+ "UCqhUJp9rCgcpZg3TsTxBGsA": {
+  "name": "ScreenRant Plus",
+  "handle": "@ScreenRantPlus",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "Although the name is similar to the entertainment outlet ScreenRant, the channel is not verified, so it is likely a fan or creator channel.",
+  "tier": "C"
+ },
+ "UCruX_t9_qJq1ALupfn6Yd3g": {
+  "name": "Fresh Point",
+  "handle": "@fresh_point",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This channel is not verified and its name does not correspond to an official outlet, studio, or person involved with the film, indicating it is a fan or independent creator channel.",
+  "tier": "C"
+ },
  "UCsEukrAd64fqA7FjwkmZ_Dw": {
   "name": "GQ",
   "handle": "@GQVideos",
@@ -520,6 +988,15 @@
   "outlet_domain": "gq.com",
   "reason": "This is the official verified YouTube channel for GQ, a men's magazine and entertainment/culture publication.",
   "tier": "A"
+ },
+ "UCsqlZVTg15Fl0nnHLS6RSag": {
+  "name": "Movie Club",
+  "handle": "@MovieeClubb",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and the video title format is typical of a fan or independent creator channel.",
+  "tier": "C"
  },
  "UCtUypkiFmd17MuLzsFB_r3g": {
   "name": "Hollywood Archives",
@@ -548,6 +1025,15 @@
   "reason": "This is an unverified personal channel that posts movie clips, not an official outlet, studio, or talent.",
   "tier": "C"
  },
+ "UCtoMyXF4VFY3cB8fUcn7N4A": {
+  "name": "AMC Theatres",
+  "handle": "@amctheatres",
+  "verified": true,
+  "kind": "studio_network",
+  "outlet_domain": "",
+  "reason": "This is the official, verified YouTube channel for the major movie theater chain AMC Theatres.",
+  "tier": "B"
+ },
  "UCu6Ok6bezRHujeDWCA0sNkw": {
   "name": "ImprovNerdPodcast",
   "handle": "@Improvnerdpodcast",
@@ -557,6 +1043,42 @@
   "reason": "The channel name 'ImprovNerdPodcast' and lack of a verified badge indicate this is an independent creator's podcast channel.",
   "tier": "C"
  },
+ "UCuvKfbROougLMwfXcyqFX-g": {
+  "name": "Dominic Rossi (BIRTHDAY MONTH)",
+  "handle": "@dominicrossi838",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "This is an unverified personal channel posting movie-related content, indicating it is a fan or independent creator.",
+  "tier": "C"
+ },
+ "UCvqfU23ZmeRt8ScjvSODHsQ": {
+  "name": "Manny The Movie Guy",
+  "handle": "@MannyTheMovieGuy",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel name 'Manny The Movie Guy' and the lack of a verified badge indicate this is an independent creator or reviewer.",
+  "tier": "C"
+ },
+ "UCwijHSdy_O16J6kiyFuDnxg": {
+  "name": "Addicted to TV",
+  "handle": "@addictedtotelevision",
+  "verified": false,
+  "kind": "fan_or_creator",
+  "outlet_domain": "",
+  "reason": "The channel is not verified and its name suggests it is run by a fan or independent creator rather than an official outlet or studio.",
+  "tier": "C"
+ },
+ "UCxzcBfvmeLmUNjlyM7FMgFg": {
+  "name": "Larry King",
+  "handle": "@LarryKing",
+  "verified": true,
+  "kind": "outlet",
+  "outlet_domain": "ora.tv",
+  "reason": "This is the official, verified channel for the late television host Larry King, whose interview shows function as a news and entertainment media outlet.",
+  "tier": "B"
+ },
  "UCy1iruS87WaAxn3w_aysQ_Q": {
   "name": "Big Bro with Kid Cudi",
   "handle": "@BigBroCudi",
@@ -564,6 +1086,15 @@
   "kind": "talent_or_crew",
   "outlet_domain": "",
   "reason": "This is the official, verified YouTube channel for the musician and actor Kid Cudi.",
+  "tier": "B"
+ },
+ "UCy6D16zE_mMEm1HVD20WFxA": {
+  "name": "Watch What Happens Live with Andy Cohen",
+  "handle": "@wwhl",
+  "verified": true,
+  "kind": "studio_network",
+  "outlet_domain": "",
+  "reason": "This is the official YouTube channel for the Bravo network's talk show 'Watch What Happens Live with Andy Cohen'.",
   "tier": "B"
  },
  "UCz97F7dMxBNOfGYu3rx8aCw": {
