@@ -26,8 +26,9 @@ UN = lambda s: re.sub(r"\\(.)", r"\1", s or "").strip()
 
 def parse_fable(path):
     t = open(path).read()
-    heads = [(m.start(), m.group(1).strip(), m.group(2)) for m in re.finditer(r"^# ([^#\n]*?) \((\d{4})\)\s*$", t, re.M)
-             if not m.group(1).startswith("Scene Facts")]
+    skip = ("Scene Facts", "Index", "Pipeline prompt")
+    heads = [(m.start(), re.sub(r"\s*\(\d{4}\)\s*$", "", m.group(1)).strip(), None)
+             for m in re.finditer(r"^# ([^#\n]+?)\s*$", t, re.M) if not m.group(1).startswith(skip)]
     out = {}
     for i, (pos, title, year) in enumerate(heads):
         end = heads[i + 1][0] if i + 1 < len(heads) else len(t)
