@@ -14,8 +14,8 @@ from dataclasses import dataclass, field
 # --- GenAI stack (PRD: "Gemini via the google-genai SDK. Grounded search
 # enabled at generation time. Deep model for topic clustering, fast model for
 # validation.") ---
-DEEP_MODEL = os.environ.get("SCENEIQ_DEEP_MODEL", "gemini-2.5-pro")
-FAST_MODEL = os.environ.get("SCENEIQ_FAST_MODEL", "gemini-2.5-flash")
+DEEP_MODEL = os.environ.get("SCENEIQ_DEEP_MODEL", "gemini-3.1-pro-preview")
+FAST_MODEL = os.environ.get("SCENEIQ_FAST_MODEL", "gemini-3.8-flash")
 # Research search calls are retrieval, not reasoning ("run this search,
 # describe results, never invent URLs") — the grounding citations come from
 # Google Search itself, and assembly reads fetched bodies, not the search
