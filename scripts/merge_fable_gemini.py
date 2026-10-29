@@ -27,8 +27,15 @@ UN = lambda s: re.sub(r"\\(.)", r"\1", s or "").strip()
 def parse_fable(path):
     t = open(path).read()
     skip = ("Scene Facts", "Index", "Pipeline prompt")
-    heads = [(m.start(), re.sub(r"\s*\(\d{4}\)\s*$", "", m.group(1)).strip(), None)
-             for m in re.finditer(r"^# ([^#\n]+?)\s*$", t, re.M) if not m.group(1).startswith(skip)]
+
+    def norm(h):  # "Scene Facts (pipeline prompt): Title (2009) — content ID 1" -> "Title"
+        h = re.sub(r"^Scene Facts \(pipeline prompt\):\s*", "", h)
+        h = re.sub(r"\s+—\s+content ID.*$", "", h)
+        h = re.sub(r"\s*\(\d{4}\)\s*$", "", h).strip()
+        return {"GoodFellas": "Goodfellas"}.get(h, h)  # match the pipeline's spelling
+    heads = [(m.start(), norm(m.group(1)), None)
+             for m in re.finditer(r"^# ([^#\n]+?)\s*$", t, re.M)
+             if not m.group(1).startswith(skip) or m.group(1).startswith("Scene Facts (pipeline prompt):")]
     out = {}
     for i, (pos, title, year) in enumerate(heads):
         end = heads[i + 1][0] if i + 1 < len(heads) else len(t)

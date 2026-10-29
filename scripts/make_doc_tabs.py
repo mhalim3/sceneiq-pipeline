@@ -13,6 +13,8 @@ import merge_fable_gemini as m
 from sceneiq.tiers import classify_domain
 
 SETS = [("data/outputs_v16", "/tmp/fable_doc.md"), ("data/outputs_v17", "/tmp/fable_doc2.md")]
+if len(sys.argv) > 2:  # optional overrides: GDIR:FABLE_MD ...
+    SETS = [tuple(a.split(":", 1)) for a in sys.argv[2:]]
 u16 = lambda s: len(s.encode("utf-16-le")) // 2
 
 
