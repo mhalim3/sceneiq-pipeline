@@ -23,6 +23,9 @@ RUNS = [  # (slug, run dir, model)
     ("colombiana", "data/outputs_v20", "Gemini 3.1 Pro"), ("guess-who", "data/outputs_v20", "Gemini 3.1 Pro"),
     ("goodfellas", "data/outputs_v20", "Gemini 3.1 Pro"), ("john-wick", "data/outputs_v20", "Gemini 3.1 Pro"),
     ("sidelined-3", "data/outputs_v20", "Gemini 3.1 Pro"),
+    ("john-wick-chapter-2", "data/outputs_v21", "Gemini 3.1 Pro"), ("the-maze-runner", "data/outputs_v21", "Gemini 3.1 Pro"),
+    ("bringing-down-the-house", "data/outputs_v21", "Gemini 3.1 Pro"), ("pearl-harbor", "data/outputs_v21", "Gemini 3.1 Pro"),
+    ("the-shawshank-redemption", "data/outputs_v21", "Gemini 3.1 Pro"),
 ]
 u16 = lambda s: len(s.encode("utf-16-le")) // 2
 tidy = lambda s, n: (lambda t: t if len(t) <= n else t[:n].rsplit(" ", 1)[0] + " …")(re.sub(r"\s+", " ", s or "").strip())
@@ -37,7 +40,7 @@ def build(title, year, model, items):
         if link:
             a, b, url = link; links.append((pos + a, pos + b, url))
         text.append(line + "\n"); pos += u16(line) + 1
-    add(f"{title} ({year}): Gemini facts", "HEADING_1")
+    add(f"{title} ({year}): Gemini facts" if year else f"{title}: Gemini facts", "HEADING_1")
     add(f"Model: {model}. Current prompts. {len(items)} approved facts, ranked best first by the pipeline. Every fact passed the pipeline's source checks; tiers use our outlet lists.")
     for n, it in enumerate(items, 1):
         add(f"{n}. {it['label']}" + (" | from article mining" if it.get("mined") else ""), "HEADING_3")
@@ -60,8 +63,10 @@ for slug, gdir, model in RUNS:
     rf = Path(gdir) / f"{slug}.review.json"
     if not rf.exists(): continue
     d = json.load(open(rf)); title, year = d["film"]["title"], d["film"].get("year")
+    if d["film"].get("anchor_source") == "title_only" and slug == "sidelined-3":
+        year = None  # the pipeline guessed this year (title-only mode); leave it out
     items = m.gemini_pool(gdir).get(title, [])[:top]
     if not items: continue
     body, reqs = build(title, year, model, items)
-    json.dump({"title": f"{title} ({year})", "text": body, "style_requests": reqs}, open(out / f"{slug}.json", "w"))
+    json.dump({"title": f"{title} ({year})" if year else title, "text": body, "style_requests": reqs}, open(out / f"{slug}.json", "w"))
     print(slug, len(items), "facts |", len(body), "chars")
