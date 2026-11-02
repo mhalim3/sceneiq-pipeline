@@ -21,13 +21,17 @@ u16 = lambda s: len(s.encode("utf-16-le")) // 2
 def sources(w):
     out = []
     if w["model"] == "Fable":
-        for p in re.split(r"\s*(?=\d\)\s)", w["sources"]):
-            mm = re.search(r"<(https?://[^>]+)>", p)
+        raw = w["sources"]
+        parts = [x for x in re.split(r"(?m)^\s*[*-]\s+", raw) if x.strip()]
+        if len(parts) <= 1 and "<http" in raw:
+            parts = re.split(r"\s*(?=\d\\?\)\s)", raw)
+        for p in parts:
+            mm = re.search(r"<(https?://[^>]+)>", p) or re.search(r"\]\((https?://[^)]+)\)", p)
             if not mm:
                 continue
             url = mm.group(1)
-            q = (re.search(r"—\s*(.*)$", p) or [None, ""])[1].strip()
-            q = re.split(r"\s;\s", q)[0].strip()
+            q = (re.search(r"Passage:\s*(.*)$", p, re.S) or re.search(r"—\s*(.*)$", p, re.S) or [None, ""])[1].strip()
+            q = re.split(r"\s;\s", q)[0].strip().strip('"').replace("\\", "")
             out.append((url, classify_domain(url), q))
     else:
         for t, url, psg in w["srcs"]:
